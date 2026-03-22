@@ -1,1 +1,44 @@
-{"data":"J3VzZSBjbGllbnQnOwoKaW1wb3J0IHsgdXNlRWZmZWN0IH0gZnJvbSAncmVhY3QnOwppbXBvcnQgeyBBbGVydFRyaWFuZ2xlLCBSZWZyZXNoQ3cgfSBmcm9tICdsdWNpZGUtcmVhY3QnOwoKaW50ZXJmYWNlIEVycm9yUHJvcHMgewogIGVycm9yOiBFcnJvciAmIHsgZGlnZXN0Pzogc3RyaW5nIH07CiAgcmVzZXQ6ICgpID0+IHZvaWQ7Cn0KCmV4cG9ydCBkZWZhdWx0IGZ1bmN0aW9uIEdsb2JhbEVycm9yKHsgZXJyb3IsIHJlc2V0IH06IEVycm9yUHJvcHMpIHsKICB1c2VFZmZlY3QoKCkgPT4gewogICAgY29uc29sZS5lcnJvcignR2xvYmFsIGVycm9yOicsIGVycm9yKTsKICB9LCBbZXJyb3JdKTsKCiAgcmV0dXJuICgKICAgIDxkaXYgY2xhc3NOYW1lPSJtaW4taC1zY3JlZW4gYmctYmxhY2sgZmxleCBmbGV4LWNvbCBpdGVtcy1jZW50ZXIganVzdGlmeS1jZW50ZXIgcHgtNiB0ZXh0LWNlbnRlciI+CiAgICAgIDxkaXYgY2xhc3NOYW1lPSJ3LTIwIGgtMjAgYmctcmVkLTUwMC8yMCByb3VuZGVkLWZ1bGwgZmxleCBpdGVtcy1jZW50ZXIganVzdGlmeS1jZW50ZXIgbWItNiI+CiAgICAgICAgPEFsZXJ0VHJpYW5nbGUgY2xhc3NOYW1lPSJ3LTEwIGgtMTAgdGV4dC1yZWQtNDAwIiAvPgogICAgICA8L2Rpdj4KCiAgICAgIDxoMSBjbGFzc05hbWU9InRleHQtd2hpdGUgdGV4dC0yeGwgZm9udC1ib2xkIG1iLTMiPlNvbWV0aGluZyB3ZW50IHdyb25nPC9oMT4KICAgICAgPHAgY2xhc3NOYW1lPSJ0ZXh0LWdyYXktNDAwIHRleHQtc20gbWItOCBtYXgtdy14cyI+CiAgICAgICAgQW4gdW5leHBlY3RlZCBlcnJvciBvY2N1cnJlZC4gUGxlYXNlIHRyeSBhZ2FpbiBvciBnbyBiYWNrIHRvIHRoZSBob21lIHBhZ2UuCiAgICAgIDwvcD4KCiAgICAgIDxkaXYgY2xhc3NOYW1lPSJmbGV4IGZsZXgtY29sIHNtOmZsZXgtcm93IGdhcC0zIj4KICAgICAgICA8YnV0dG9uCiAgICAgICAgICBvbkNsaWNrPXtyZXNldH0KICAgICAgICAgIGNsYXNzTmFtZT0iZmxleCBpdGVtcy1jZW50ZXIganVzdGlmeS1jZW50ZXIgZ2FwLTIgYmctZ3JhZGllbnQtdG8tciBmcm9tLXJlZC01MDAgdG8tcGluay01MDAgaG92ZXI6ZnJvbS1yZWQtNjAwIGhvdmVyOnRvLXBpbmstNjAwIHRleHQtd2hpdGUgZm9udC1zZW1pYm9sZCBweC02IHB5LTMgcm91bmRlZC1mdWxsIHRyYW5zaXRpb24iCiAgICAgICAgPgogICAgICAgICAgPFJlZnJlc2hDdyBjbGFzc05hbWU9InctNCBoLTQiIC8+CiAgICAgICAgICBUcnkgYWdhaW4KICAgICAgICA8L2J1dHRvbj4KICAgICAgICA8YQogICAgICAgICAgaHJlZj0iLyIKICAgICAgICAgIGNsYXNzTmFtZT0iZmxleCBpdGVtcy1jZW50ZXIganVzdGlmeS1jZW50ZXIgZ2FwLTIgYmctZ3JheS04MDAgaG92ZXI6YmctZ3JheS03MDAgdGV4dC13aGl0ZSBmb250LXNlbWlib2xkIHB4LTYgcHktMyByb3VuZGVkLWZ1bGwgdHJhbnNpdGlvbiIKICAgICAgICA+CiAgICAgICAgICBHbyBIb21lCiAgICAgICAgPC9hPgogICAgICA8L2Rpdj4KICAgIDwvZGl2PgogICk7Cn0K"}
+'use client';
+
+import { useEffect } from 'react';
+import { AlertTriangle, RefreshCw } from 'lucide-react';
+
+interface ErrorProps {
+  error: Error & { digest?: string };
+  reset: () => void;
+}
+
+export default function GlobalError({ error, reset }: ErrorProps) {
+  useEffect(() => {
+    console.error('Global error:', error);
+  }, [error]);
+
+  return (
+    <div className="min-h-screen bg-black flex flex-col items-center justify-center px-6 text-center">
+      <div className="w-20 h-20 bg-red-500/20 rounded-full flex items-center justify-center mb-6">
+        <AlertTriangle className="w-10 h-10 text-red-400" />
+      </div>
+
+      <h1 className="text-white text-2xl font-bold mb-3">Something went wrong</h1>
+      <p className="text-gray-400 text-sm mb-8 max-w-xs">
+        An unexpected error occurred. Please try again or go back to the home page.
+      </p>
+
+      <div className="flex flex-col sm:flex-row gap-3">
+        <button
+          onClick={reset}
+          className="flex items-center justify-center gap-2 bg-gradient-to-r from-red-500 to-pink-500 hover:from-red-600 hover:to-pink-600 text-white font-semibold px-6 py-3 rounded-full transition"
+        >
+          <RefreshCw className="w-4 h-4" />
+          Try again
+        </button>
+        <a
+          href="/"
+          className="flex items-center justify-center gap-2 bg-gray-800 hover:bg-gray-700 text-white font-semibold px-6 py-3 rounded-full transition"
+        >
+          Go Home
+        </a>
+      </div>
+    </div>
+  );
+}

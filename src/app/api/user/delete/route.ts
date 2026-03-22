@@ -1,1 +1,74 @@
-{"data":"aW1wb3J0IHsgTmV4dFJlcXVlc3QsIE5leHRSZXNwb25zZSB9IGZyb20gJ25leHQvc2VydmVyJzsKaW1wb3J0IHsgY3JlYXRlU2VydmVyU3VwYWJhc2VDbGllbnQgfSBmcm9tICdAL2xpYi9zdXBhYmFzZS1zZXJ2ZXInOwppbXBvcnQgcHJpc21hIGZyb20gJ0AvbGliL3ByaXNtYSc7CgovKioKICogUE9TVCAvYXBpL3VzZXIvZGVsZXRlCiAqIFBlcm1hbmVudGx5IGRlbGV0ZXMgdGhlIGN1cnJlbnQgdXNlcidzIGFjY291bnQgYW5kIGFsbCBhc3NvY2lhdGVkIGRhdGEuCiAqCiAqIEJvZHk6IHsgY29uZmlybWF0aW9uOiAiREVMRVRFIiB9CiAqCiAqIERlbGV0ZXMgKGluIG9yZGVyKTogd2F0Y2ggaGlzdG9yeSwgY29pbiB0cmFuc2FjdGlvbnMsIGVwaXNvZGUgcHVyY2hhc2VzLAogKiBzdWJzY3JpcHRpb25zLCBhbmQgdGhlIHVzZXIgcmVjb3JkIGl0c2VsZi4gVGhlbiBzaWducyBvdXQgb2YgU3VwYWJhc2UuCiAqIERvZXMgTk9UIGRlbGV0ZSB0aGUgU3VwYWJhc2UgQXV0aCB1c2VyIChyZXF1aXJlcyBhZG1pbiBBUEkpLgogKi8KZXhwb3J0IGFzeW5jIGZ1bmN0aW9uIFBPU1QocmVxdWVzdDogTmV4dFJlcXVlc3QpIHsKICBjb25zdCBzdXBhYmFzZSA9IGF3YWl0IGNyZWF0ZVNlcnZlclN1cGFiYXNlQ2xpZW50KCk7CiAgY29uc3QgewogICAgZGF0YTogeyB1c2VyOiBzdXBhYmFzZVVzZXIgfSwKICB9ID0gYXdhaXQgc3VwYWJhc2UuYXV0aC5nZXRVc2VyKCk7CgogIGlmICghc3VwYWJhc2VVc2VyKSB7CiAgICByZXR1cm4gTmV4dFJlc3BvbnNlLmpzb24oeyBlcnJvcjogJ1VuYXV0aG9yaXplZCcgfSwgeyBzdGF0dXM6IDQwMSB9KTsKICB9CgogIGxldCBib2R5OiB7IGNvbmZpcm1hdGlvbj86IHN0cmluZyB9OwogIHRyeSB7CiAgICBib2R5ID0gYXdhaXQgcmVxdWVzdC5qc29uKCk7CiAgfSBjYXRjaCB7CiAgICByZXR1cm4gTmV4dFJlc3BvbnNlLmpzb24oeyBlcnJvcjogJ0ludmFsaWQgSlNPTicgfSwgeyBzdGF0dXM6IDQwMCB9KTsKICB9CgogIGlmIChib2R5LmNvbmZpcm1hdGlvbiAhPT0gJ0RFTEVURScpIHsKICAgIHJldHVybiBOZXh0UmVzcG9uc2UuanNvbigKICAgICAgeyBlcnJvcjogJ0NvbmZpcm1hdGlvbiByZXF1aXJlZC4gU2VuZCB7IGNvbmZpcm1hdGlvbjogIkRFTEVURSIgfScgfSwKICAgICAgeyBzdGF0dXM6IDQwMCB9CiAgICApOwogIH0KCiAgdHJ5IHsKICAgIGNvbnN0IGRiVXNlciA9IGF3YWl0IHByaXNtYS51c2VyLmZpbmRGaXJzdCh7CiAgICAgIHdoZXJlOiB7CiAgICAgICAgT1I6IFsKICAgICAgICAgIHsgc3VwYWJhc2VJZDogc3VwYWJhc2VVc2VyLmlkIH0sCiAgICAgICAgICAuLi4oc3VwYWJhc2VVc2VyLmVtYWlsID8gW3sgZW1haWw6IHN1cGFiYXNlVXNlci5lbWFpbCB9XSA6IFtdKSwKICAgICAgICAgIC4uLihzdXBhYmFzZVVzZXIucGhvbmUgPyBbeyBwaG9uZTogc3VwYWJhc2VVc2VyLnBob25lIH1dIDogW10pLAogICAgICAgIF0sCiAgICAgIH0sCiAgICAgIHNlbGVjdDogeyBpZDogdHJ1ZSB9LAogICAgfSk7CgogICAgaWYgKCFkYlVzZXIpIHsKICAgICAgcmV0dXJuIE5leHRSZXNwb25zZS5qc29uKHsgZXJyb3I6ICdVc2VyIG5vdCBmb3VuZCcgfSwgeyBzdGF0dXM6IDQwNCB9KTsKICAgIH0KCiAgICBjb25zdCB1c2VySWQgPSBkYlVzZXIuaWQ7CgogICAgLy8gRGVsZXRlIGFsbCByZWxhdGVkIGRhdGEgZmlyc3QgKENhc2NhZGUgaGFuZGxlcyBtb3N0LCBidXQgYmUgZXhwbGljaXQpCiAgICBhd2FpdCBwcmlzbWEuJHRyYW5zYWN0aW9uKFsKICAgICAgcHJpc21hLndhdGNoSGlzdG9yeS5kZWxldGVNYW55KHsgd2hlcmU6IHsgdXNlcklkIH0gfSksCiAgICAgIHByaXNtYS5jb2luVHJhbnNhY3Rpb24uZGVsZXRlTWFueSh7IHdoZXJlOiB7IHVzZXJJZCB9IH0pLAogICAgICBwcmlzbWEuZXBpc29kZVB1cmNoYXNlLmRlbGV0ZU1hbnkoeyB3aGVyZTogeyB1c2VySWQgfSB9KSwKICAgICAgcHJpc21hLnN1YnNjcmlwdGlvbi5kZWxldGVNYW55KHsgd2hlcmU6IHsgdXNlcklkIH0gfSksCiAgICAgIHByaXNtYS51c2VyLmRlbGV0ZSh7IHdoZXJlOiB7IGlkOiB1c2VySWQgfSB9KSwKICAgIF0pOwoKICAgIC8vIFNpZ24gb3V0IGZyb20gU3VwYWJhc2UgKGJlc3QgZWZmb3J0IOKAlCB1c2VyIGlzIGFscmVhZHkgZGVsZXRlZCBmcm9tIERCKQogICAgYXdhaXQgc3VwYWJhc2UuYXV0aC5zaWduT3V0KCk7CgogICAgcmV0dXJuIE5leHRSZXNwb25zZS5qc29uKHsgc3VjY2VzczogdHJ1ZSwgbWVzc2FnZTogJ0FjY291bnQgZGVsZXRlZC4nIH0pOwogIH0gY2F0Y2ggKGVycm9yKSB7CiAgICBjb25zb2xlLmVycm9yKCdQT1NUIC9hcGkvdXNlci9kZWxldGUgZXJyb3I6JywgZXJyb3IpOwogICAgcmV0dXJuIE5leHRSZXNwb25zZS5qc29uKHsgZXJyb3I6ICdJbnRlcm5hbCBlcnJvcicgfSwgeyBzdGF0dXM6IDUwMCB9KTsKICB9Cn0K"}
+import { NextRequest, NextResponse } from 'next/server';
+import { createServerSupabaseClient } from '@/lib/supabase-server';
+import prisma from '@/lib/prisma';
+
+/**
+ * POST /api/user/delete
+ * Permanently deletes the current user's account and all associated data.
+ *
+ * Body: { confirmation: "DELETE" }
+ *
+ * Deletes (in order): watch history, coin transactions, episode purchases,
+ * subscriptions, and the user record itself. Then signs out of Supabase.
+ * Does NOT delete the Supabase Auth user (requires admin API).
+ */
+export async function POST(request: NextRequest) {
+  const supabase = await createServerSupabaseClient();
+  const {
+    data: { user: supabaseUser },
+  } = await supabase.auth.getUser();
+
+  if (!supabaseUser) {
+    return NextResponse.json({ error: 'Unauthorized' }, { status: 401 });
+  }
+
+  let body: { confirmation?: string };
+  try {
+    body = await request.json();
+  } catch {
+    return NextResponse.json({ error: 'Invalid JSON' }, { status: 400 });
+  }
+
+  if (body.confirmation !== 'DELETE') {
+    return NextResponse.json(
+      { error: 'Confirmation required. Send { confirmation: "DELETE" }' },
+      { status: 400 }
+    );
+  }
+
+  try {
+    const dbUser = await prisma.user.findFirst({
+      where: {
+        OR: [
+          { supabaseId: supabaseUser.id },
+          ...(supabaseUser.email ? [{ email: supabaseUser.email }] : []),
+          ...(supabaseUser.phone ? [{ phone: supabaseUser.phone }] : []),
+        ],
+      },
+      select: { id: true },
+    });
+
+    if (!dbUser) {
+      return NextResponse.json({ error: 'User not found' }, { status: 404 });
+    }
+
+    const userId = dbUser.id;
+
+    // Delete all related data first (Cascade handles most, but be explicit)
+    await prisma.$transaction([
+      prisma.watchHistory.deleteMany({ where: { userId } }),
+      prisma.coinTransaction.deleteMany({ where: { userId } }),
+      prisma.episodePurchase.deleteMany({ where: { userId } }),
+      prisma.subscription.deleteMany({ where: { userId } }),
+      prisma.user.delete({ where: { id: userId } }),
+    ]);
+
+    // Sign out from Supabase (best effort — user is already deleted from DB)
+    await supabase.auth.signOut();
+
+    return NextResponse.json({ success: true, message: 'Account deleted.' });
+  } catch (error) {
+    console.error('POST /api/user/delete error:', error);
+    return NextResponse.json({ error: 'Internal error' }, { status: 500 });
+  }
+}

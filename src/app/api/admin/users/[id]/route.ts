@@ -1,1 +1,106 @@
-{"data":"aW1wb3J0IHsgTmV4dFJlcXVlc3QsIE5leHRSZXNwb25zZSB9IGZyb20gJ25leHQvc2VydmVyJzsKaW1wb3J0IHByaXNtYSBmcm9tICdAL2xpYi9wcmlzbWEnOwppbXBvcnQgeyByZXF1aXJlQWRtaW4gfSBmcm9tICdAL2xpYi9hZG1pbi1hdXRoJzsKCmV4cG9ydCBhc3luYyBmdW5jdGlvbiBHRVQoCiAgX3JlcXVlc3Q6IE5leHRSZXF1ZXN0LAogIHsgcGFyYW1zIH06IHsgcGFyYW1zOiBQcm9taXNlPHsgaWQ6IHN0cmluZyB9PiB9CikgewogIGNvbnN0IGFkbWluID0gYXdhaXQgcmVxdWlyZUFkbWluKCk7CiAgaWYgKCFhZG1pbikgewogICAgcmV0dXJuIE5leHRSZXNwb25zZS5qc29uKHsgZXJyb3I6ICdVbmF1dGhvcml6ZWQnIH0sIHsgc3RhdHVzOiA0MDEgfSk7CiAgfQoKICBjb25zdCB7IGlkIH0gPSBhd2FpdCBwYXJhbXM7CiAgY29uc3QgdXNlciA9IGF3YWl0IHByaXNtYS51c2VyLmZpbmRVbmlxdWUoewogICAgd2hlcmU6IHsgaWQgfSwKICAgIHNlbGVjdDogewogICAgICBpZDogdHJ1ZSwKICAgICAgbmFtZTogdHJ1ZSwKICAgICAgZW1haWw6IHRydWUsCiAgICAgIHBob25lOiB0cnVlLAogICAgICBhdmF0YXI6IHRydWUsCiAgICAgIGNvaW5CYWxhbmNlOiB0cnVlLAogICAgICByb2xlOiB0cnVlLAogICAgICBiYW5uZWQ6IHRydWUsCiAgICAgIGJhblJlYXNvbjogdHJ1ZSwKICAgICAgcHJvdmlkZXI6IHRydWUsCiAgICAgIGxvY2FsZTogdHJ1ZSwKICAgICAgY3JlYXRlZEF0OiB0cnVlLAogICAgICBsYXN0TG9naW5BdDogdHJ1ZSwKICAgICAgY29pblRyYW5zYWN0aW9uczogewogICAgICAgIG9yZGVyQnk6IHsgY3JlYXRlZEF0OiAnZGVzYycgfSwKICAgICAgICB0YWtlOiA1MCwKICAgICAgfSwKICAgICAgX2NvdW50OiB7CiAgICAgICAgc2VsZWN0OiB7CiAgICAgICAgICB3YXRjaEhpc3Rvcnk6IHRydWUsCiAgICAgICAgICBlcGlzb2RlUHVyY2hhc2VzOiB0cnVlLAogICAgICAgIH0sCiAgICAgIH0sCiAgICB9LAogIH0pOwoKICBpZiAoIXVzZXIpIHsKICAgIHJldHVybiBOZXh0UmVzcG9uc2UuanNvbih7IGVycm9yOiAnVXNlciBub3QgZm91bmQnIH0sIHsgc3RhdHVzOiA0MDQgfSk7CiAgfQoKICByZXR1cm4gTmV4dFJlc3BvbnNlLmpzb24oeyB1c2VyIH0pOwp9CgpleHBvcnQgYXN5bmMgZnVuY3Rpb24gUEFUQ0goCiAgcmVxdWVzdDogTmV4dFJlcXVlc3QsCiAgeyBwYXJhbXMgfTogeyBwYXJhbXM6IFByb21pc2U8eyBpZDogc3RyaW5nIH0+IH0KKSB7CiAgY29uc3QgYWRtaW4gPSBhd2FpdCByZXF1aXJlQWRtaW4oKTsKICBpZiAoIWFkbWluKSB7CiAgICByZXR1cm4gTmV4dFJlc3BvbnNlLmpzb24oeyBlcnJvcjogJ1VuYXV0aG9yaXplZCcgfSwgeyBzdGF0dXM6IDQwMSB9KTsKICB9CgogIGNvbnN0IHsgaWQgfSA9IGF3YWl0IHBhcmFtczsKICB0cnkgewogICAgY29uc3QgYm9keSA9IGF3YWl0IHJlcXVlc3QuanNvbigpOwogICAgY29uc3QgeyBjb2luQWRqdXN0bWVudCwgYmFubmVkLCBiYW5SZWFzb24sIHJvbGUgfSA9IGJvZHk7CgogICAgY29uc3QgdXBkYXRlRGF0YTogUmVjb3JkPHN0cmluZywgdW5rbm93bj4gPSB7fTsKCiAgICBpZiAodHlwZW9mIGJhbm5lZCA9PT0gJ2Jvb2xlYW4nKSB7CiAgICAgIHVwZGF0ZURhdGEuYmFubmVkID0gYmFubmVkOwogICAgICBpZiAoYmFubmVkICYmIGJhblJlYXNvbikgewogICAgICAgIHVwZGF0ZURhdGEuYmFuUmVhc29uID0gYmFuUmVhc29uOwogICAgICB9IGVsc2UgaWYgKCFiYW5uZWQpIHsKICAgICAgICB1cGRhdGVEYXRhLmJhblJlYXNvbiA9IG51bGw7CiAgICAgIH0KICAgIH0KCiAgICBpZiAocm9sZSAmJiBbJ3VzZXInLCAnYWRtaW4nLCAnc3VwZXJhZG1pbiddLmluY2x1ZGVzKHJvbGUpKSB7CiAgICAgIHVwZGF0ZURhdGEucm9sZSA9IHJvbGU7CiAgICB9CgogICAgaWYgKHR5cGVvZiBjb2luQWRqdXN0bWVudCA9PT0gJ251bWJlcicgJiYgY29pbkFkanVzdG1lbnQgIT09IDApIHsKICAgICAgdXBkYXRlRGF0YS5jb2luQmFsYW5jZSA9IHsgaW5jcmVtZW50OiBjb2luQWRqdXN0bWVudCB9OwogICAgfQoKICAgIGNvbnN0IHVzZXIgPSBhd2FpdCBwcmlzbWEudXNlci51cGRhdGUoewogICAgICB3aGVyZTogeyBpZCB9LAogICAgICBkYXRhOiB1cGRhdGVEYXRhLAogICAgfSk7CgogICAgLy8gTG9nIGNvaW4gYWRqdXN0bWVudCBhcyB0cmFuc2FjdGlvbiBpZiBhcHBsaWNhYmxlCiAgICBpZiAodHlwZW9mIGNvaW5BZGp1c3RtZW50ID09PSAnbnVtYmVyJyAmJiBjb2luQWRqdXN0bWVudCAhPT0gMCkgewogICAgICBhd2FpdCBwcmlzbWEuY29pblRyYW5zYWN0aW9uLmNyZWF0ZSh7CiAgICAgICAgZGF0YTogewogICAgICAgICAgdXNlcklkOiBpZCwKICAgICAgICAgIGFtb3VudDogY29pbkFkanVzdG1lbnQsCiAgICAgICAgICB0eXBlOiAnQk9OVVMnLAogICAgICAgICAgZGVzY3JpcHRpb246IGBBZG1pbiBhZGp1c3RtZW50IGJ5ICR7YWRtaW4uaWR9YCwKICAgICAgICB9LAogICAgICB9KTsKICAgIH0KCiAgICByZXR1cm4gTmV4dFJlc3BvbnNlLmpzb24oeyB1c2VyIH0pOwogIH0gY2F0Y2ggKGVycm9yKSB7CiAgICBjb25zb2xlLmVycm9yKCdVcGRhdGUgdXNlciBlcnJvcjonLCBlcnJvcik7CiAgICByZXR1cm4gTmV4dFJlc3BvbnNlLmpzb24oeyBlcnJvcjogJ0ZhaWxlZCB0byB1cGRhdGUgdXNlcicgfSwgeyBzdGF0dXM6IDUwMCB9KTsKICB9Cn0K"}
+import { NextRequest, NextResponse } from 'next/server';
+import prisma from '@/lib/prisma';
+import { requireAdmin } from '@/lib/admin-auth';
+
+export async function GET(
+  _request: NextRequest,
+  { params }: { params: Promise<{ id: string }> }
+) {
+  const admin = await requireAdmin();
+  if (!admin) {
+    return NextResponse.json({ error: 'Unauthorized' }, { status: 401 });
+  }
+
+  const { id } = await params;
+  const user = await prisma.user.findUnique({
+    where: { id },
+    select: {
+      id: true,
+      name: true,
+      email: true,
+      phone: true,
+      avatar: true,
+      coinBalance: true,
+      role: true,
+      banned: true,
+      banReason: true,
+      provider: true,
+      locale: true,
+      createdAt: true,
+      lastLoginAt: true,
+      coinTransactions: {
+        orderBy: { createdAt: 'desc' },
+        take: 50,
+      },
+      _count: {
+        select: {
+          watchHistory: true,
+          episodePurchases: true,
+        },
+      },
+    },
+  });
+
+  if (!user) {
+    return NextResponse.json({ error: 'User not found' }, { status: 404 });
+  }
+
+  return NextResponse.json({ user });
+}
+
+export async function PATCH(
+  request: NextRequest,
+  { params }: { params: Promise<{ id: string }> }
+) {
+  const admin = await requireAdmin();
+  if (!admin) {
+    return NextResponse.json({ error: 'Unauthorized' }, { status: 401 });
+  }
+
+  const { id } = await params;
+  try {
+    const body = await request.json();
+    const { coinAdjustment, banned, banReason, role } = body;
+
+    const updateData: Record<string, unknown> = {};
+
+    if (typeof banned === 'boolean') {
+      updateData.banned = banned;
+      if (banned && banReason) {
+        updateData.banReason = banReason;
+      } else if (!banned) {
+        updateData.banReason = null;
+      }
+    }
+
+    if (role && ['user', 'admin', 'superadmin'].includes(role)) {
+      updateData.role = role;
+    }
+
+    if (typeof coinAdjustment === 'number' && coinAdjustment !== 0) {
+      updateData.coinBalance = { increment: coinAdjustment };
+    }
+
+    const user = await prisma.user.update({
+      where: { id },
+      data: updateData,
+    });
+
+    // Log coin adjustment as transaction if applicable
+    if (typeof coinAdjustment === 'number' && coinAdjustment !== 0) {
+      await prisma.coinTransaction.create({
+        data: {
+          userId: id,
+          amount: coinAdjustment,
+          type: 'BONUS',
+          description: `Admin adjustment by ${admin.id}`,
+        },
+      });
+    }
+
+    return NextResponse.json({ user });
+  } catch (error) {
+    console.error('Update user error:', error);
+    return NextResponse.json({ error: 'Failed to update user' }, { status: 500 });
+  }
+}

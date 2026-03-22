@@ -1,1 +1,150 @@
-{"data":"J3VzZSBjbGllbnQnOwoKaW1wb3J0IHsgdXNlU3RhdGUgfSBmcm9tICdyZWFjdCc7CmltcG9ydCB7IExvY2ssIENvaW5zLCBQbGF5IH0gZnJvbSAnbHVjaWRlLXJlYWN0JzsKaW1wb3J0IHsgdXNlQXV0aFN0b3JlIH0gZnJvbSAnQC9zdG9yZXMvdXNlQXV0aFN0b3JlJzsKaW1wb3J0IHsgdXNlUm91dGVyIH0gZnJvbSAnbmV4dC9uYXZpZ2F0aW9uJzsKCmludGVyZmFjZSBQYXl3YWxsT3ZlcmxheVByb3BzIHsKICBlcGlzb2RlSWQ6IHN0cmluZzsKICBjb2luUHJpY2U/OiBudW1iZXI7Cn0KCmV4cG9ydCBkZWZhdWx0IGZ1bmN0aW9uIFBheXdhbGxPdmVybGF5KHsgZXBpc29kZUlkLCBjb2luUHJpY2UgPSAxMCB9OiBQYXl3YWxsT3ZlcmxheVByb3BzKSB7CiAgY29uc3QgW2lzVW5sb2NraW5nLCBzZXRJc1VubG9ja2luZ10gPSB1c2VTdGF0ZShmYWxzZSk7CiAgY29uc3QgW2lzV2F0Y2hpbmdBZCwgc2V0SXNXYXRjaGluZ0FkXSA9IHVzZVN0YXRlKGZhbHNlKTsKICBjb25zdCB7IHVzZXIsIHVwZGF0ZUNvaW5CYWxhbmNlIH0gPSB1c2VBdXRoU3RvcmUoKTsKICBjb25zdCByb3V0ZXIgPSB1c2VSb3V0ZXIoKTsKCiAgY29uc3QgaGFuZGxlVW5sb2NrV2l0aENvaW5zID0gYXN5bmMgKCkgPT4gewogICAgaWYgKCF1c2VyKSB7CiAgICAgIGNvbnN0IHJldHVyblVybCA9IGVuY29kZVVSSUNvbXBvbmVudCh3aW5kb3cubG9jYXRpb24ucGF0aG5hbWUpOwogICAgICByb3V0ZXIucHVzaChgL2F1dGgvbG9naW4/cmVkaXJlY3RUbz0ke3JldHVyblVybH1gKTsKICAgICAgcmV0dXJuOwogICAgfQoKICAgIGlmICh1c2VyLmNvaW5CYWxhbmNlIDwgY29pblByaWNlKSB7CiAgICAgIHJvdXRlci5wdXNoKCcvd2FsbGV0Jyk7CiAgICAgIHJldHVybjsKICAgIH0KCiAgICBzZXRJc1VubG9ja2luZyh0cnVlKTsKICAgIAogICAgdHJ5IHsKICAgICAgY29uc3QgcmVzcG9uc2UgPSBhd2FpdCBmZXRjaCgnL2FwaS9lcGlzb2Rlcy91bmxvY2snLCB7CiAgICAgICAgbWV0aG9kOiAnUE9TVCcsCiAgICAgICAgaGVhZGVyczogeyAnQ29udGVudC1UeXBlJzogJ2FwcGxpY2F0aW9uL2pzb24nIH0sCiAgICAgICAgYm9keTogSlNPTi5zdHJpbmdpZnkoeyBlcGlzb2RlSWQgfSksCiAgICAgIH0pOwoKICAgICAgaWYgKCFyZXNwb25zZS5vaykgewogICAgICAgIHRocm93IG5ldyBFcnJvcignRmFpbGVkIHRvIHVubG9jayBlcGlzb2RlJyk7CiAgICAgIH0KCiAgICAgIGNvbnN0IGRhdGEgPSBhd2FpdCByZXNwb25zZS5qc29uKCk7CiAgICAgIHVwZGF0ZUNvaW5CYWxhbmNlKGRhdGEubmV3QmFsYW5jZSk7CiAgICAgIAogICAgICAvLyBSZWxvYWQgdG8gc2hvdyB1bmxvY2tlZCB2aWRlbwogICAgICByb3V0ZXIucmVmcmVzaCgpOwogICAgfSBjYXRjaCAoZXJyb3IpIHsKICAgICAgY29uc29sZS5lcnJvcignVW5sb2NrIGZhaWxlZDonLCBlcnJvcik7CiAgICAgIGFsZXJ0KCdGYWlsZWQgdG8gdW5sb2NrIGVwaXNvZGUuIFBsZWFzZSB0cnkgYWdhaW4uJyk7CiAgICB9IGZpbmFsbHkgewogICAgICBzZXRJc1VubG9ja2luZyhmYWxzZSk7CiAgICB9CiAgfTsKCiAgY29uc3QgaGFuZGxlV2F0Y2hBZCA9IGFzeW5jICgpID0+IHsKICAgIHNldElzV2F0Y2hpbmdBZCh0cnVlKTsKICAgIAogICAgLy8gSW4gcHJvZHVjdGlvbiwgaW50ZWdyYXRlIHdpdGggYWQgbmV0d29yayAoR29vZ2xlIEFkTW9iLCBVbml0eSBBZHMsIGV0Yy4pCiAgICAvLyBGb3Igbm93LCBzaW11bGF0ZSBhZCB3YXRjaGluZwogICAgc2V0VGltZW91dChhc3luYyAoKSA9PiB7CiAgICAgIHRyeSB7CiAgICAgICAgY29uc3QgcmVzcG9uc2UgPSBhd2FpdCBmZXRjaCgnL2FwaS9jb2lucy9hZC1yZXdhcmQnLCB7CiAgICAgICAgICBtZXRob2Q6ICdQT1NUJywKICAgICAgICAgIGhlYWRlcnM6IHsgJ0NvbnRlbnQtVHlwZSc6ICdhcHBsaWNhdGlvbi9qc29uJyB9LAogICAgICAgIH0pOwoKICAgICAgICBpZiAocmVzcG9uc2Uub2spIHsKICAgICAgICAgIGNvbnN0IGRhdGEgPSBhd2FpdCByZXNwb25zZS5qc29uKCk7CiAgICAgICAgICB1cGRhdGVDb2luQmFsYW5jZShkYXRhLm5ld0JhbGFuY2UpOwogICAgICAgICAgYWxlcnQoYFlvdSBlYXJuZWQgJHtkYXRhLmNvaW5zRWFybmVkfSBjb2lucyFgKTsKICAgICAgICB9CiAgICAgIH0gY2F0Y2ggKGVycm9yKSB7CiAgICAgICAgY29uc29sZS5lcnJvcignQWQgcmV3YXJkIGZhaWxlZDonLCBlcnJvcik7CiAgICAgIH0gZmluYWxseSB7CiAgICAgICAgc2V0SXNXYXRjaGluZ0FkKGZhbHNlKTsKICAgICAgfQogICAgfSwgMzAwMCk7CiAgfTsKCiAgcmV0dXJuICgKICAgIDxkaXYgY2xhc3NOYW1lPSJmaXhlZCBpbnNldC0wIGJnLWdyYWRpZW50LXRvLWIgZnJvbS1ncmF5LTkwMCB2aWEtYmxhY2sgdG8tZ3JheS05MDAgZmxleCBmbGV4LWNvbCBpdGVtcy1jZW50ZXIganVzdGlmeS1jZW50ZXIgcC02Ij4KICAgICAgPGRpdiBjbGFzc05hbWU9Im1heC13LXNtIHctZnVsbCB0ZXh0LWNlbnRlciI+CiAgICAgICAgPGRpdiBjbGFzc05hbWU9Im1iLTgiPgogICAgICAgICAgPGRpdiBjbGFzc05hbWU9InctMjQgaC0yNCBiZy1ncmFkaWVudC10by1iciBmcm9tLXJlZC01MDAgdG8tcGluay01MDAgcm91bmRlZC1mdWxsIGZsZXggaXRlbXMtY2VudGVyIGp1c3RpZnktY2VudGVyIG14LWF1dG8gbWItNiI+CiAgICAgICAgICAgIDxMb2NrIGNsYXNzTmFtZT0idy0xMiBoLTEyIHRleHQtd2hpdGUiIC8+CiAgICAgICAgICA8L2Rpdj4KICAgICAgICAgIAogICAgICAgICAgPGgyIGNsYXNzTmFtZT0idGV4dC0yeGwgZm9udC1ib2xkIHRleHQtd2hpdGUgbWItMiI+CiAgICAgICAgICAgIEVwaXNvZGUgTG9ja2VkCiAgICAgICAgICA8L2gyPgogICAgICAgICAgPHAgY2xhc3NOYW1lPSJ0ZXh0LWdyYXktNDAwIHRleHQtc20iPgogICAgICAgICAgICBVbmxvY2sgdGhpcyBlcGlzb2RlIHRvIGNvbnRpbnVlIHdhdGNoaW5nCiAgICAgICAgICA8L3A+CiAgICAgICAgPC9kaXY+CgogICAgICAgIDxkaXYgY2xhc3NOYW1lPSJzcGFjZS15LTMgbWItNiI+CiAgICAgICAgICA8YnV0dG9uCiAgICAgICAgICAgIG9uQ2xpY2s9e2hhbmRsZVVubG9ja1dpdGhDb2luc30KICAgICAgICAgICAgZGlzYWJsZWQ9e2lzVW5sb2NraW5nfQogICAgICAgICAgICBjbGFzc05hbWU9InctZnVsbCBiZy1ncmFkaWVudC10by1yIGZyb20teWVsbG93LTUwMCB0by1vcmFuZ2UtNTAwIGhvdmVyOmZyb20teWVsbG93LTYwMCBob3Zlcjp0by1vcmFuZ2UtNjAwIGRpc2FibGVkOm9wYWNpdHktNTAgZGlzYWJsZWQ6Y3Vyc29yLW5vdC1hbGxvd2VkIHRleHQtd2hpdGUgZm9udC1zZW1pYm9sZCBweS00IHB4LTYgcm91bmRlZC14bCBmbGV4IGl0ZW1zLWNlbnRlciBqdXN0aWZ5LWNlbnRlciBnYXAtMyB0cmFuc2l0aW9uLWFsbCB0cmFuc2Zvcm0gaG92ZXI6c2NhbGUtMTA1IgogICAgICAgICAgPgogICAgICAgICAgICA8Q29pbnMgY2xhc3NOYW1lPSJ3LTUgaC01IiAvPgogICAgICAgICAgICA8c3Bhbj4KICAgICAgICAgICAgICB7aXNVbmxvY2tpbmcgPyAnVW5sb2NraW5nLi4uJyA6IGBVbmxvY2sgd2l0aCAke2NvaW5QcmljZX0gQ29pbnNgfQogICAgICAgICAgICA8L3NwYW4+CiAgICAgICAgICA8L2J1dHRvbj4KCiAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT0icmVsYXRpdmUiPgogICAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT0iYWJzb2x1dGUgaW5zZXQtMCBmbGV4IGl0ZW1zLWNlbnRlciI+CiAgICAgICAgICAgICAgPGRpdiBjbGFzc05hbWU9InctZnVsbCBib3JkZXItdCBib3JkZXItZ3JheS03MDAiPjwvZGl2PgogICAgICAgICAgICA8L2Rpdj4KICAgICAgICAgICAgPGRpdiBjbGFzc05hbWU9InJlbGF0aXZlIGZsZXgganVzdGlmeS1jZW50ZXIgdGV4dC14cyI+CiAgICAgICAgICAgICAgPHNwYW4gY2xhc3NOYW1lPSJweC0yIGJnLWJsYWNrIHRleHQtZ3JheS01MDAiPk9SPC9zcGFuPgogICAgICAgICAgICA8L2Rpdj4KICAgICAgICAgIDwvZGl2PgoKICAgICAgICAgIDxidXR0b24KICAgICAgICAgICAgb25DbGljaz17aGFuZGxlV2F0Y2hBZH0KICAgICAgICAgICAgZGlzYWJsZWQ9e2lzV2F0Y2hpbmdBZH0KICAgICAgICAgICAgY2xhc3NOYW1lPSJ3LWZ1bGwgYmctZ3JheS04MDAgaG92ZXI6YmctZ3JheS03MDAgZGlzYWJsZWQ6b3BhY2l0eS01MCBkaXNhYmxlZDpjdXJzb3Itbm90LWFsbG93ZWQgdGV4dC13aGl0ZSBmb250LXNlbWlib2xkIHB5LTQgcHgtNiByb3VuZGVkLXhsIGZsZXggaXRlbXMtY2VudGVyIGp1c3RpZnktY2VudGVyIGdhcC0zIHRyYW5zaXRpb24tYWxsIGJvcmRlciBib3JkZXItZ3JheS03MDAiCiAgICAgICAgICA+CiAgICAgICAgICAgIDxQbGF5IGNsYXNzTmFtZT0idy01IGgtNSIgLz4KICAgICAgICAgICAgPHNwYW4+CiAgICAgICAgICAgICAge2lzV2F0Y2hpbmdBZCA/ICdMb2FkaW5nIEFkLi4uJyA6ICdXYXRjaCBBZCB0byBFYXJuIENvaW5zJ30KICAgICAgICAgICAgPC9zcGFuPgogICAgICAgICAgPC9idXR0b24+CiAgICAgICAgPC9kaXY+CgogICAgICAgIDxkaXYgY2xhc3NOYW1lPSJ0ZXh0LWNlbnRlciI+CiAgICAgICAgICA8cCBjbGFzc05hbWU9InRleHQtZ3JheS01MDAgdGV4dC14cyBtYi0yIj5Zb3VyIEJhbGFuY2U8L3A+CiAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT0iZmxleCBpdGVtcy1jZW50ZXIganVzdGlmeS1jZW50ZXIgZ2FwLTIiPgogICAgICAgICAgICA8Q29pbnMgY2xhc3NOYW1lPSJ3LTUgaC01IHRleHQteWVsbG93LTUwMCIgLz4KICAgICAgICAgICAgPHNwYW4gY2xhc3NOYW1lPSJ0ZXh0LTJ4bCBmb250LWJvbGQgdGV4dC13aGl0ZSI+CiAgICAgICAgICAgICAge3VzZXI/LmNvaW5CYWxhbmNlIHx8IDB9CiAgICAgICAgICAgIDwvc3Bhbj4KICAgICAgICAgIDwvZGl2PgogICAgICAgICAgCiAgICAgICAgICA8YnV0dG9uCiAgICAgICAgICAgIG9uQ2xpY2s9eygpID0+IHJvdXRlci5wdXNoKCcvd2FsbGV0Jyl9CiAgICAgICAgICAgIGNsYXNzTmFtZT0ibXQtNCB0ZXh0LXJlZC01MDAgaG92ZXI6dGV4dC1yZWQtNDAwIHRleHQtc20gZm9udC1tZWRpdW0iCiAgICAgICAgICA+CiAgICAgICAgICAgIEJ1eSBNb3JlIENvaW5zIOKGkgogICAgICAgICAgPC9idXR0b24+CiAgICAgICAgPC9kaXY+CiAgICAgIDwvZGl2PgogICAgPC9kaXY+CiAgKTsKfQo="}
+'use client';
+
+import { useState } from 'react';
+import { Lock, Coins, Play } from 'lucide-react';
+import { useAuthStore } from '@/stores/useAuthStore';
+import { useRouter } from 'next/navigation';
+
+interface PaywallOverlayProps {
+  episodeId: string;
+  coinPrice?: number;
+}
+
+export default function PaywallOverlay({ episodeId, coinPrice = 10 }: PaywallOverlayProps) {
+  const [isUnlocking, setIsUnlocking] = useState(false);
+  const [isWatchingAd, setIsWatchingAd] = useState(false);
+  const { user, updateCoinBalance } = useAuthStore();
+  const router = useRouter();
+
+  const handleUnlockWithCoins = async () => {
+    if (!user) {
+      const returnUrl = encodeURIComponent(window.location.pathname);
+      router.push(`/auth/login?redirectTo=${returnUrl}`);
+      return;
+    }
+
+    if (user.coinBalance < coinPrice) {
+      router.push('/wallet');
+      return;
+    }
+
+    setIsUnlocking(true);
+    
+    try {
+      const response = await fetch('/api/episodes/unlock', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ episodeId }),
+      });
+
+      if (!response.ok) {
+        throw new Error('Failed to unlock episode');
+      }
+
+      const data = await response.json();
+      updateCoinBalance(data.newBalance);
+      
+      // Reload to show unlocked video
+      router.refresh();
+    } catch (error) {
+      console.error('Unlock failed:', error);
+      alert('Failed to unlock episode. Please try again.');
+    } finally {
+      setIsUnlocking(false);
+    }
+  };
+
+  const handleWatchAd = async () => {
+    setIsWatchingAd(true);
+    
+    // In production, integrate with ad network (Google AdMob, Unity Ads, etc.)
+    // For now, simulate ad watching
+    setTimeout(async () => {
+      try {
+        const response = await fetch('/api/coins/ad-reward', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+        });
+
+        if (response.ok) {
+          const data = await response.json();
+          updateCoinBalance(data.newBalance);
+          alert(`You earned ${data.coinsEarned} coins!`);
+        }
+      } catch (error) {
+        console.error('Ad reward failed:', error);
+      } finally {
+        setIsWatchingAd(false);
+      }
+    }, 3000);
+  };
+
+  return (
+    <div className="fixed inset-0 bg-gradient-to-b from-gray-900 via-black to-gray-900 flex flex-col items-center justify-center p-6">
+      <div className="max-w-sm w-full text-center">
+        <div className="mb-8">
+          <div className="w-24 h-24 bg-gradient-to-br from-red-500 to-pink-500 rounded-full flex items-center justify-center mx-auto mb-6">
+            <Lock className="w-12 h-12 text-white" />
+          </div>
+          
+          <h2 className="text-2xl font-bold text-white mb-2">
+            Episode Locked
+          </h2>
+          <p className="text-gray-400 text-sm">
+            Unlock this episode to continue watching
+          </p>
+        </div>
+
+        <div className="space-y-3 mb-6">
+          <button
+            onClick={handleUnlockWithCoins}
+            disabled={isUnlocking}
+            className="w-full bg-gradient-to-r from-yellow-500 to-orange-500 hover:from-yellow-600 hover:to-orange-600 disabled:opacity-50 disabled:cursor-not-allowed text-white font-semibold py-4 px-6 rounded-xl flex items-center justify-center gap-3 transition-all transform hover:scale-105"
+          >
+            <Coins className="w-5 h-5" />
+            <span>
+              {isUnlocking ? 'Unlocking...' : `Unlock with ${coinPrice} Coins`}
+            </span>
+          </button>
+
+          <div className="relative">
+            <div className="absolute inset-0 flex items-center">
+              <div className="w-full border-t border-gray-700"></div>
+            </div>
+            <div className="relative flex justify-center text-xs">
+              <span className="px-2 bg-black text-gray-500">OR</span>
+            </div>
+          </div>
+
+          <button
+            onClick={handleWatchAd}
+            disabled={isWatchingAd}
+            className="w-full bg-gray-800 hover:bg-gray-700 disabled:opacity-50 disabled:cursor-not-allowed text-white font-semibold py-4 px-6 rounded-xl flex items-center justify-center gap-3 transition-all border border-gray-700"
+          >
+            <Play className="w-5 h-5" />
+            <span>
+              {isWatchingAd ? 'Loading Ad...' : 'Watch Ad to Earn Coins'}
+            </span>
+          </button>
+        </div>
+
+        <div className="text-center">
+          <p className="text-gray-500 text-xs mb-2">Your Balance</p>
+          <div className="flex items-center justify-center gap-2">
+            <Coins className="w-5 h-5 text-yellow-500" />
+            <span className="text-2xl font-bold text-white">
+              {user?.coinBalance || 0}
+            </span>
+          </div>
+          
+          <button
+            onClick={() => router.push('/wallet')}
+            className="mt-4 text-red-500 hover:text-red-400 text-sm font-medium"
+          >
+            Buy More Coins →
+          </button>
+        </div>
+      </div>
+    </div>
+  );
+}

@@ -1,1 +1,77 @@
-{"data":"J3VzZSBjbGllbnQnOwoKaW1wb3J0IHsgQWxlcnRUcmlhbmdsZSwgWCB9IGZyb20gJ2x1Y2lkZS1yZWFjdCc7CgppbnRlcmZhY2UgQ29uZmlybURpYWxvZ1Byb3BzIHsKICBvcGVuOiBib29sZWFuOwogIHRpdGxlOiBzdHJpbmc7CiAgbWVzc2FnZTogc3RyaW5nOwogIGNvbmZpcm1MYWJlbD86IHN0cmluZzsKICBjYW5jZWxMYWJlbD86IHN0cmluZzsKICBkYW5nZXJvdXM/OiBib29sZWFuOwogIGxvYWRpbmc/OiBib29sZWFuOwogIG9uQ29uZmlybTogKCkgPT4gdm9pZDsKICBvbkNhbmNlbDogKCkgPT4gdm9pZDsKfQoKZXhwb3J0IGRlZmF1bHQgZnVuY3Rpb24gQ29uZmlybURpYWxvZyh7CiAgb3BlbiwKICB0aXRsZSwKICBtZXNzYWdlLAogIGNvbmZpcm1MYWJlbCA9ICdDb25maXJtJywKICBjYW5jZWxMYWJlbCA9ICdDYW5jZWwnLAogIGRhbmdlcm91cyA9IGZhbHNlLAogIGxvYWRpbmcgPSBmYWxzZSwKICBvbkNvbmZpcm0sCiAgb25DYW5jZWwsCn06IENvbmZpcm1EaWFsb2dQcm9wcykgewogIGlmICghb3BlbikgcmV0dXJuIG51bGw7CgogIHJldHVybiAoCiAgICA8ZGl2IGNsYXNzTmFtZT0iZml4ZWQgaW5zZXQtMCB6LTUwIGZsZXggaXRlbXMtY2VudGVyIGp1c3RpZnktY2VudGVyIHAtNCI+CiAgICAgIHsvKiBCYWNrZHJvcCAqL30KICAgICAgPGRpdiBjbGFzc05hbWU9ImFic29sdXRlIGluc2V0LTAgYmctYmxhY2svNzAiIG9uQ2xpY2s9e29uQ2FuY2VsfSAvPgoKICAgICAgey8qIERpYWxvZyAqL30KICAgICAgPGRpdiBjbGFzc05hbWU9InJlbGF0aXZlIGJnLWdyYXktOTAwIGJvcmRlciBib3JkZXItZ3JheS03MDAgcm91bmRlZC14bCBzaGFkb3ctMnhsIHctZnVsbCBtYXgtdy1tZCBwLTYiPgogICAgICAgIDxidXR0b24KICAgICAgICAgIG9uQ2xpY2s9e29uQ2FuY2VsfQogICAgICAgICAgY2xhc3NOYW1lPSJhYnNvbHV0ZSB0b3AtNCByaWdodC00IHRleHQtZ3JheS01MDAgaG92ZXI6dGV4dC1ncmF5LTMwMCB0cmFuc2l0aW9uLWNvbG9ycyIKICAgICAgICA+CiAgICAgICAgICA8WCBzaXplPXsxOH0gLz4KICAgICAgICA8L2J1dHRvbj4KCiAgICAgICAgPGRpdiBjbGFzc05hbWU9ImZsZXggaXRlbXMtc3RhcnQgZ2FwLTQiPgogICAgICAgICAgPGRpdiBjbGFzc05hbWU9e2BwLTIgcm91bmRlZC1sZyBzaHJpbmstMCAke2Rhbmdlcm91cyA/ICdiZy1yZWQtOTAwLzQwIHRleHQtcmVkLTUwMCcgOiAnYmctZ3JheS04MDAgdGV4dC1ncmF5LTQwMCd9YH0+CiAgICAgICAgICAgIDxBbGVydFRyaWFuZ2xlIHNpemU9ezIwfSAvPgogICAgICAgICAgPC9kaXY+CiAgICAgICAgICA8ZGl2PgogICAgICAgICAgICA8aDMgY2xhc3NOYW1lPSJ0ZXh0LXdoaXRlIGZvbnQtc2VtaWJvbGQgdGV4dC1sZyI+e3RpdGxlfTwvaDM+CiAgICAgICAgICAgIDxwIGNsYXNzTmFtZT0idGV4dC1ncmF5LTQwMCB0ZXh0LXNtIG10LTEiPnttZXNzYWdlfTwvcD4KICAgICAgICAgIDwvZGl2PgogICAgICAgIDwvZGl2PgoKICAgICAgICA8ZGl2IGNsYXNzTmFtZT0iZmxleCBnYXAtMyBtdC02IGp1c3RpZnktZW5kIj4KICAgICAgICAgIDxidXR0b24KICAgICAgICAgICAgb25DbGljaz17b25DYW5jZWx9CiAgICAgICAgICAgIGRpc2FibGVkPXtsb2FkaW5nfQogICAgICAgICAgICBjbGFzc05hbWU9InB4LTQgcHktMiByb3VuZGVkLWxnIGJnLWdyYXktODAwIHRleHQtZ3JheS0zMDAgaG92ZXI6YmctZ3JheS03MDAgdHJhbnNpdGlvbi1jb2xvcnMgdGV4dC1zbSBmb250LW1lZGl1bSBkaXNhYmxlZDpvcGFjaXR5LTUwIgogICAgICAgICAgPgogICAgICAgICAgICB7Y2FuY2VsTGFiZWx9CiAgICAgICAgICA8L2J1dHRvbj4KICAgICAgICAgIDxidXR0b24KICAgICAgICAgICAgb25DbGljaz17b25Db25maXJtfQogICAgICAgICAgICBkaXNhYmxlZD17bG9hZGluZ30KICAgICAgICAgICAgY2xhc3NOYW1lPXtgcHgtNCBweS0yIHJvdW5kZWQtbGcgdGV4dC1zbSBmb250LW1lZGl1bSB0cmFuc2l0aW9uLWNvbG9ycyBkaXNhYmxlZDpvcGFjaXR5LTUwICR7CiAgICAgICAgICAgICAgZGFuZ2Vyb3VzCiAgICAgICAgICAgICAgICA/ICdiZy1yZWQtNjAwIGhvdmVyOmJnLXJlZC03MDAgdGV4dC13aGl0ZScKICAgICAgICAgICAgICAgIDogJ2JnLWJsdWUtNjAwIGhvdmVyOmJnLWJsdWUtNzAwIHRleHQtd2hpdGUnCiAgICAgICAgICAgIH1gfQogICAgICAgICAgPgogICAgICAgICAgICB7bG9hZGluZyA/ICdQcm9jZXNzaW5nLi4uJyA6IGNvbmZpcm1MYWJlbH0KICAgICAgICAgIDwvYnV0dG9uPgogICAgICAgIDwvZGl2PgogICAgICA8L2Rpdj4KICAgIDwvZGl2PgogICk7Cn0K"}
+'use client';
+
+import { AlertTriangle, X } from 'lucide-react';
+
+interface ConfirmDialogProps {
+  open: boolean;
+  title: string;
+  message: string;
+  confirmLabel?: string;
+  cancelLabel?: string;
+  dangerous?: boolean;
+  loading?: boolean;
+  onConfirm: () => void;
+  onCancel: () => void;
+}
+
+export default function ConfirmDialog({
+  open,
+  title,
+  message,
+  confirmLabel = 'Confirm',
+  cancelLabel = 'Cancel',
+  dangerous = false,
+  loading = false,
+  onConfirm,
+  onCancel,
+}: ConfirmDialogProps) {
+  if (!open) return null;
+
+  return (
+    <div className="fixed inset-0 z-50 flex items-center justify-center p-4">
+      {/* Backdrop */}
+      <div className="absolute inset-0 bg-black/70" onClick={onCancel} />
+
+      {/* Dialog */}
+      <div className="relative bg-gray-900 border border-gray-700 rounded-xl shadow-2xl w-full max-w-md p-6">
+        <button
+          onClick={onCancel}
+          className="absolute top-4 right-4 text-gray-500 hover:text-gray-300 transition-colors"
+        >
+          <X size={18} />
+        </button>
+
+        <div className="flex items-start gap-4">
+          <div className={`p-2 rounded-lg shrink-0 ${dangerous ? 'bg-red-900/40 text-red-500' : 'bg-gray-800 text-gray-400'}`}>
+            <AlertTriangle size={20} />
+          </div>
+          <div>
+            <h3 className="text-white font-semibold text-lg">{title}</h3>
+            <p className="text-gray-400 text-sm mt-1">{message}</p>
+          </div>
+        </div>
+
+        <div className="flex gap-3 mt-6 justify-end">
+          <button
+            onClick={onCancel}
+            disabled={loading}
+            className="px-4 py-2 rounded-lg bg-gray-800 text-gray-300 hover:bg-gray-700 transition-colors text-sm font-medium disabled:opacity-50"
+          >
+            {cancelLabel}
+          </button>
+          <button
+            onClick={onConfirm}
+            disabled={loading}
+            className={`px-4 py-2 rounded-lg text-sm font-medium transition-colors disabled:opacity-50 ${
+              dangerous
+                ? 'bg-red-600 hover:bg-red-700 text-white'
+                : 'bg-blue-600 hover:bg-blue-700 text-white'
+            }`}
+          >
+            {loading ? 'Processing...' : confirmLabel}
+          </button>
+        </div>
+      </div>
+    </div>
+  );
+}

@@ -1,1 +1,11 @@
-{"data":"aW1wb3J0IEhvbWVGZWVkIGZyb20gJ0AvY29tcG9uZW50cy9Ib21lRmVlZCc7CmltcG9ydCB7IFN0cnVjdHVyZWREYXRhIH0gZnJvbSAnQC9jb21wb25lbnRzL1N0cnVjdHVyZWREYXRhJzsKCmV4cG9ydCBkZWZhdWx0IGZ1bmN0aW9uIEhvbWVQYWdlKCkgewogIHJldHVybiAoCiAgICA8PgogICAgICA8U3RydWN0dXJlZERhdGEgdHlwZT0iV2ViU2l0ZSIgLz4KICAgICAgPEhvbWVGZWVkIC8+CiAgICA8Lz4KICApOwp9Cg=="}
+import HomeFeed from '@/components/HomeFeed';
+import { StructuredData } from '@/components/StructuredData';
+
+export default function HomePage() {
+  return (
+    <>
+      <StructuredData type="WebSite" />
+      <HomeFeed />
+    </>
+  );
+}

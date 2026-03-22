@@ -1,1 +1,6 @@
-{"data":"LyoqCiAqIEF1dGggbGF5b3V0IOKAlCBzdHJpcHMgdGhlIGFwcCBzaGVsbCAoSGVhZGVyLCBCb3R0b21OYXYpIGZvciBjbGVhbiBsb2dpbiBwYWdlcy4KICovCmV4cG9ydCBkZWZhdWx0IGZ1bmN0aW9uIEF1dGhMYXlvdXQoeyBjaGlsZHJlbiB9OiB7IGNoaWxkcmVuOiBSZWFjdC5SZWFjdE5vZGUgfSkgewogIHJldHVybiA8PntjaGlsZHJlbn08Lz47Cn0K"}
+/**
+ * Auth layout — strips the app shell (Header, BottomNav) for clean login pages.
+ */
+export default function AuthLayout({ children }: { children: React.ReactNode }) {
+  return <>{children}</>;
+}

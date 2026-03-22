@@ -1,1 +1,64 @@
-{"data":"aW1wb3J0IHsgTmV4dFJlc3BvbnNlLCB0eXBlIE5leHRSZXF1ZXN0IH0gZnJvbSAnbmV4dC9zZXJ2ZXInOwppbXBvcnQgeyBjcmVhdGVTZXJ2ZXJDbGllbnQgfSBmcm9tICdAc3VwYWJhc2Uvc3NyJzsKCi8vIFJvdXRlcyB0aGF0IHJlcXVpcmUgYXV0aGVudGljYXRpb24KY29uc3QgUFJPVEVDVEVEX1JPVVRFUyA9IFsnL3Byb2ZpbGUnLCAnL3dhbGxldCcsICcvYWRtaW4nXTsKCmV4cG9ydCBhc3luYyBmdW5jdGlvbiBtaWRkbGV3YXJlKHJlcXVlc3Q6IE5leHRSZXF1ZXN0KSB7CiAgbGV0IHN1cGFiYXNlUmVzcG9uc2UgPSBOZXh0UmVzcG9uc2UubmV4dCh7IHJlcXVlc3QgfSk7CgogIGNvbnN0IHN1cGFiYXNlID0gY3JlYXRlU2VydmVyQ2xpZW50KAogICAgcHJvY2Vzcy5lbnYuTkVYVF9QVUJMSUNfU1VQQUJBU0VfVVJMISwKICAgIHByb2Nlc3MuZW52Lk5FWFRfUFVCTElDX1NVUEFCQVNFX0FOT05fS0VZISwKICAgIHsKICAgICAgY29va2llczogewogICAgICAgIGdldEFsbCgpIHsKICAgICAgICAgIHJldHVybiByZXF1ZXN0LmNvb2tpZXMuZ2V0QWxsKCk7CiAgICAgICAgfSwKICAgICAgICBzZXRBbGwoY29va2llc1RvU2V0KSB7CiAgICAgICAgICBjb29raWVzVG9TZXQuZm9yRWFjaCgoeyBuYW1lLCB2YWx1ZSB9KSA9PgogICAgICAgICAgICByZXF1ZXN0LmNvb2tpZXMuc2V0KG5hbWUsIHZhbHVlKQogICAgICAgICAgKTsKICAgICAgICAgIHN1cGFiYXNlUmVzcG9uc2UgPSBOZXh0UmVzcG9uc2UubmV4dCh7IHJlcXVlc3QgfSk7CiAgICAgICAgICBjb29raWVzVG9TZXQuZm9yRWFjaCgoeyBuYW1lLCB2YWx1ZSwgb3B0aW9ucyB9KSA9PgogICAgICAgICAgICBzdXBhYmFzZVJlc3BvbnNlLmNvb2tpZXMuc2V0KG5hbWUsIHZhbHVlLCBvcHRpb25zKQogICAgICAgICAgKTsKICAgICAgICB9LAogICAgICB9LAogICAgfQogICk7CgogIC8vIFJlZnJlc2ggc2Vzc2lvbiDigJQgcmVxdWlyZWQgZm9yIFNTUiB0b2tlbiByZWZyZXNoIHRvIHdvcmsKICBjb25zdCB7CiAgICBkYXRhOiB7IHVzZXIgfSwKICB9ID0gYXdhaXQgc3VwYWJhc2UuYXV0aC5nZXRVc2VyKCk7CgogIGNvbnN0IHBhdGhuYW1lID0gcmVxdWVzdC5uZXh0VXJsLnBhdGhuYW1lOwoKICAvLyBQcm90ZWN0IHJvdXRlcwogIGNvbnN0IGlzUHJvdGVjdGVkID0gUFJPVEVDVEVEX1JPVVRFUy5zb21lKChyb3V0ZSkgPT4KICAgIHBhdGhuYW1lLnN0YXJ0c1dpdGgocm91dGUpCiAgKTsKCiAgaWYgKGlzUHJvdGVjdGVkICYmICF1c2VyKSB7CiAgICBjb25zdCBsb2dpblVybCA9IG5ldyBVUkwoJy9hdXRoL2xvZ2luJywgcmVxdWVzdC51cmwpOwogICAgbG9naW5Vcmwuc2VhcmNoUGFyYW1zLnNldCgncmVkaXJlY3RUbycsIHBhdGhuYW1lKTsKICAgIHJldHVybiBOZXh0UmVzcG9uc2UucmVkaXJlY3QobG9naW5VcmwpOwogIH0KCiAgcmV0dXJuIHN1cGFiYXNlUmVzcG9uc2U7Cn0KCmV4cG9ydCBjb25zdCBjb25maWcgPSB7CiAgbWF0Y2hlcjogWwogICAgLyoKICAgICAqIE1hdGNoIGFsbCByZXF1ZXN0IHBhdGhzIGV4Y2VwdDoKICAgICAqIC0gX25leHQvc3RhdGljIChzdGF0aWMgZmlsZXMpCiAgICAgKiAtIF9uZXh0L2ltYWdlIChpbWFnZSBvcHRpbWl6YXRpb24pCiAgICAgKiAtIGZhdmljb24uaWNvCiAgICAgKiAtIHB1YmxpYyBmb2xkZXIKICAgICAqIC0gQVBJIHJvdXRlcyAoYXV0aCBoYW5kbGVkIHBlci1yb3V0ZSkKICAgICAqLwogICAgJy8oKD8hX25leHQvc3RhdGljfF9uZXh0L2ltYWdlfGZhdmljb24uaWNvfC4qXFwuKD86c3ZnfHBuZ3xqcGd8anBlZ3xnaWZ8d2VicCkkKS4qKScsCiAgXSwKfTsK"}
+import { NextResponse, type NextRequest } from 'next/server';
+import { createServerClient } from '@supabase/ssr';
+
+// Routes that require authentication
+const PROTECTED_ROUTES = ['/profile', '/wallet', '/admin'];
+
+export async function middleware(request: NextRequest) {
+  let supabaseResponse = NextResponse.next({ request });
+
+  const supabase = createServerClient(
+    process.env.NEXT_PUBLIC_SUPABASE_URL!,
+    process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!,
+    {
+      cookies: {
+        getAll() {
+          return request.cookies.getAll();
+        },
+        setAll(cookiesToSet) {
+          cookiesToSet.forEach(({ name, value }) =>
+            request.cookies.set(name, value)
+          );
+          supabaseResponse = NextResponse.next({ request });
+          cookiesToSet.forEach(({ name, value, options }) =>
+            supabaseResponse.cookies.set(name, value, options)
+          );
+        },
+      },
+    }
+  );
+
+  // Refresh session — required for SSR token refresh to work
+  const {
+    data: { user },
+  } = await supabase.auth.getUser();
+
+  const pathname = request.nextUrl.pathname;
+
+  // Protect routes
+  const isProtected = PROTECTED_ROUTES.some((route) =>
+    pathname.startsWith(route)
+  );
+
+  if (isProtected && !user) {
+    const loginUrl = new URL('/auth/login', request.url);
+    loginUrl.searchParams.set('redirectTo', pathname);
+    return NextResponse.redirect(loginUrl);
+  }
+
+  return supabaseResponse;
+}
+
+export const config = {
+  matcher: [
+    /*
+     * Match all request paths except:
+     * - _next/static (static files)
+     * - _next/image (image optimization)
+     * - favicon.ico
+     * - public folder
+     * - API routes (auth handled per-route)
+     */
+    '/((?!_next/static|_next/image|favicon.ico|.*\\.(?:svg|png|jpg|jpeg|gif|webp)$).*)',
+  ],
+};

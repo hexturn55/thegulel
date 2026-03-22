@@ -1,1 +1,61 @@
-{"data":"aW1wb3J0ICogYXMgZG90ZW52IGZyb20gJ2RvdGVudic7CmltcG9ydCAqIGFzIHBhdGggZnJvbSAncGF0aCc7CmRvdGVudi5jb25maWcoeyBwYXRoOiBwYXRoLnJlc29sdmUoX19kaXJuYW1lLCAnLi4vLmVudicpIH0pOwoKaW1wb3J0IHsgUHJpc21hQ2xpZW50IH0gZnJvbSAnLi4vc3JjL2dlbmVyYXRlZC9wcmlzbWEnOwppbXBvcnQgeyBQcmlzbWFQZyB9IGZyb20gJ0BwcmlzbWEvYWRhcHRlci1wZyc7CmltcG9ydCB7IFBvb2wgfSBmcm9tICdwZyc7CgovLyBVc2UgRElSRUNUX1VSTCBmb3Igc2VlZGluZyAoYnlwYXNzZXMgcGdib3VuY2VyKQpjb25zdCBjb25uZWN0aW9uU3RyaW5nID0gcHJvY2Vzcy5lbnYuRElSRUNUX1VSTCA/PyBwcm9jZXNzLmVudi5EQVRBQkFTRV9VUkw7CmNvbnN0IHBvb2wgPSBuZXcgUG9vbCh7IGNvbm5lY3Rpb25TdHJpbmcgfSk7CmNvbnN0IGFkYXB0ZXIgPSBuZXcgUHJpc21hUGcocG9vbCk7CmNvbnN0IHByaXNtYSA9IG5ldyBQcmlzbWFDbGllbnQoeyBhZGFwdGVyIH0pOwoKYXN5bmMgZnVuY3Rpb24gbWFpbigpIHsKICBjb25zb2xlLmxvZygnU2VlZGluZyBkYXRhYmFzZS4uLicpOwoKICAvLyBDbGVhciBleGlzdGluZyBjb2luIHBhY2thZ2VzCiAgYXdhaXQgcHJpc21hLmNvaW5QYWNrYWdlLmRlbGV0ZU1hbnkoKTsKCiAgLy8gU2VlZCBjb2luIHBhY2thZ2VzCiAgY29uc3QgcGFja2FnZXMgPSBbCiAgICB7IG5hbWU6ICdTdGFydGVyIFBhY2snLCBjb2luczogMTAwLCBwcmljZVVTRDogMS45OSwgcHJpY2VJTlI6IDE0OSwgcG9wdWxhcjogZmFsc2UgfSwKICAgIHsgbmFtZTogJ1BvcHVsYXIgUGFjaycsIGNvaW5zOiA1MDAsIHByaWNlVVNEOiA3Ljk5LCBwcmljZUlOUjogNTk5LCBwb3B1bGFyOiB0cnVlIH0sCiAgICB7IG5hbWU6ICdTdXBlciBQYWNrJywgY29pbnM6IDEyMDAsIHByaWNlVVNEOiAxNC45OSwgcHJpY2VJTlI6IDEwOTksIHBvcHVsYXI6IGZhbHNlIH0sCiAgICB7IG5hbWU6ICdNZWdhIFBhY2snLCBjb2luczogMzAwMCwgcHJpY2VVU0Q6IDI5Ljk5LCBwcmljZUlOUjogMjQ5OSwgcG9wdWxhcjogZmFsc2UgfSwKICBdOwoKICBmb3IgKGNvbnN0IHBrZyBvZiBwYWNrYWdlcykgewogICAgYXdhaXQgcHJpc21hLmNvaW5QYWNrYWdlLmNyZWF0ZSh7IGRhdGE6IHsgLi4ucGtnLCBhY3RpdmU6IHRydWUgfSB9KTsKICB9CgogIGNvbnNvbGUubG9nKCfinIUgQ29pbiBwYWNrYWdlcyBzZWVkZWQnKTsKCiAgLy8gQ3JlYXRlIGEgZGVtbyBzZXJpZXMKICBhd2FpdCBwcmlzbWEuc2VyaWVzLnVwc2VydCh7CiAgICB3aGVyZTogeyBpZDogJ2RlbW8tc2VyaWVzJyB9LAogICAgdXBkYXRlOiB7fSwKICAgIGNyZWF0ZTogewogICAgICBpZDogJ2RlbW8tc2VyaWVzJywKICAgICAgdGl0bGU6ICdUaGUgU2VjcmV0IEFsbGlhbmNlJywKICAgICAgdGl0bGVIaTogJ+Ckl+ClgeCkquCljeCkpCDgpJfgpKDgpKzgpILgpKfgpKgnLAogICAgICB0aXRsZVpoOiAn56eY5a+G6IGU55ufJywKICAgICAgZGVzY3JpcHRpb246ICdBIHRocmlsbGluZyB2ZXJ0aWNhbCBkcmFtYSBhYm91dCBjb3Jwb3JhdGUgZXNwaW9uYWdlIGFuZCBoaWRkZW4gaWRlbnRpdGllcy4nLAogICAgICB0aHVtYm5haWw6ICdodHRwczovL3BsYWNlaG9sZC5jby83MjB4MTI4MC8xZTI5M2IvZmZmZmZmL3BuZz90ZXh0PVRoZStTZWNyZXQrQWxsaWFuY2UnLAogICAgICBnZW5yZTogJ1RocmlsbGVyJywKICAgICAgdGFnczogWydTdXNwZW5zZScsICdDb3Jwb3JhdGUnLCAnTXlzdGVyeSddLAogICAgICBmcmVlRXBpc29kZXM6IDUsCiAgICAgIGNvaW5QcmljZTogMTAsCiAgICAgIHN0YXR1czogJ1BVQkxJU0hFRCcsCiAgICAgIGZlYXR1cmVkOiB0cnVlLAogICAgfSwKICB9KTsKCiAgY29uc29sZS5sb2coJ+KchSBEZW1vIHNlcmllcyBjcmVhdGVkJyk7CiAgY29uc29sZS5sb2coJ/CfjokgU2VlZGluZyBjb21wbGV0ZSEnKTsKfQoKbWFpbigpCiAgLmNhdGNoKChlKSA9PiB7IGNvbnNvbGUuZXJyb3IoJ+KdjCBTZWVkaW5nIGZhaWxlZDonLCBlKTsgcHJvY2Vzcy5leGl0KDEpOyB9KQogIC5maW5hbGx5KGFzeW5jICgpID0+IHsgYXdhaXQgcHJpc21hLiRkaXNjb25uZWN0KCk7IH0pOwo="}
+import * as dotenv from 'dotenv';
+import * as path from 'path';
+dotenv.config({ path: path.resolve(__dirname, '../.env') });
+
+import { PrismaClient } from '../src/generated/prisma';
+import { PrismaPg } from '@prisma/adapter-pg';
+import { Pool } from 'pg';
+
+// Use DIRECT_URL for seeding (bypasses pgbouncer)
+const connectionString = process.env.DIRECT_URL ?? process.env.DATABASE_URL;
+const pool = new Pool({ connectionString });
+const adapter = new PrismaPg(pool);
+const prisma = new PrismaClient({ adapter });
+
+async function main() {
+  console.log('Seeding database...');
+
+  // Clear existing coin packages
+  await prisma.coinPackage.deleteMany();
+
+  // Seed coin packages
+  const packages = [
+    { name: 'Starter Pack', coins: 100, priceUSD: 1.99, priceINR: 149, popular: false },
+    { name: 'Popular Pack', coins: 500, priceUSD: 7.99, priceINR: 599, popular: true },
+    { name: 'Super Pack', coins: 1200, priceUSD: 14.99, priceINR: 1099, popular: false },
+    { name: 'Mega Pack', coins: 3000, priceUSD: 29.99, priceINR: 2499, popular: false },
+  ];
+
+  for (const pkg of packages) {
+    await prisma.coinPackage.create({ data: { ...pkg, active: true } });
+  }
+
+  console.log('✅ Coin packages seeded');
+
+  // Create a demo series
+  await prisma.series.upsert({
+    where: { id: 'demo-series' },
+    update: {},
+    create: {
+      id: 'demo-series',
+      title: 'The Secret Alliance',
+      titleHi: 'गुप्त गठबंधन',
+      titleZh: '秘密联盟',
+      description: 'A thrilling vertical drama about corporate espionage and hidden identities.',
+      thumbnail: 'https://placehold.co/720x1280/1e293b/ffffff/png?text=The+Secret+Alliance',
+      genre: 'Thriller',
+      tags: ['Suspense', 'Corporate', 'Mystery'],
+      freeEpisodes: 5,
+      coinPrice: 10,
+      status: 'PUBLISHED',
+      featured: true,
+    },
+  });
+
+  console.log('✅ Demo series created');
+  console.log('🎉 Seeding complete!');
+}
+
+main()
+  .catch((e) => { console.error('❌ Seeding failed:', e); process.exit(1); })
+  .finally(async () => { await prisma.$disconnect(); });

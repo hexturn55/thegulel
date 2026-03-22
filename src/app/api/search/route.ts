@@ -1,1 +1,68 @@
-{"data":"aW1wb3J0IHsgTmV4dFJlcXVlc3QsIE5leHRSZXNwb25zZSB9IGZyb20gJ25leHQvc2VydmVyJzsKaW1wb3J0IHByaXNtYSBmcm9tICdAL2xpYi9wcmlzbWEnOwppbXBvcnQgeyBjcmVhdGVTZXJ2ZXJTdXBhYmFzZUNsaWVudCB9IGZyb20gJ0AvbGliL3N1cGFiYXNlLXNlcnZlcic7CgpleHBvcnQgYXN5bmMgZnVuY3Rpb24gR0VUKHJlcXVlc3Q6IE5leHRSZXF1ZXN0KSB7CiAgY29uc3QgeyBzZWFyY2hQYXJhbXMgfSA9IG5ldyBVUkwocmVxdWVzdC51cmwpOwogIGNvbnN0IHEgPSBzZWFyY2hQYXJhbXMuZ2V0KCdxJyk/LnRyaW0oKSA/PyAnJzsKCiAgaWYgKCFxKSB7CiAgICByZXR1cm4gTmV4dFJlc3BvbnNlLmpzb24oeyBzZXJpZXM6IFtdIH0pOwogIH0KCiAgY29uc3Qgc2VyaWVzID0gYXdhaXQgcHJpc21hLnNlcmllcy5maW5kTWFueSh7CiAgICB3aGVyZTogewogICAgICBzdGF0dXM6ICdQVUJMSVNIRUQnLAogICAgICBPUjogWwogICAgICAgIHsgdGl0bGU6IHsgY29udGFpbnM6IHEsIG1vZGU6ICdpbnNlbnNpdGl2ZScgfSB9LAogICAgICAgIHsgdGl0bGVIaTogeyBjb250YWluczogcSwgbW9kZTogJ2luc2Vuc2l0aXZlJyB9IH0sCiAgICAgICAgeyB0aXRsZVpoOiB7IGNvbnRhaW5zOiBxLCBtb2RlOiAnaW5zZW5zaXRpdmUnIH0gfSwKICAgICAgICB7IGdlbnJlOiB7IGNvbnRhaW5zOiBxLCBtb2RlOiAnaW5zZW5zaXRpdmUnIH0gfSwKICAgICAgICB7IHRhZ3M6IHsgaGFzOiBxIH0gfSwKICAgICAgXSwKICAgIH0sCiAgICBzZWxlY3Q6IHsKICAgICAgaWQ6IHRydWUsCiAgICAgIHRpdGxlOiB0cnVlLAogICAgICB0aXRsZUhpOiB0cnVlLAogICAgICB0aXRsZVpoOiB0cnVlLAogICAgICBkZXNjcmlwdGlvbjogdHJ1ZSwKICAgICAgdGh1bWJuYWlsOiB0cnVlLAogICAgICBnZW5yZTogdHJ1ZSwKICAgICAgdGFnczogdHJ1ZSwKICAgICAgdG90YWxFcGlzb2RlczogdHJ1ZSwKICAgICAgZnJlZUVwaXNvZGVzOiB0cnVlLAogICAgICBjb2luUHJpY2U6IHRydWUsCiAgICAgIGZlYXR1cmVkOiB0cnVlLAogICAgICBjcmVhdGVkQXQ6IHRydWUsCiAgICB9LAogICAgb3JkZXJCeTogW3sgZmVhdHVyZWQ6ICdkZXNjJyB9LCB7IGNyZWF0ZWRBdDogJ2Rlc2MnIH1dLAogICAgdGFrZTogMjAsCiAgfSk7CgogIC8vIE9wdGlvbmFsbHkgbG9nIHNlYXJjaCBmb3IgYW5hbHl0aWNzIChmaXJlLWFuZC1mb3JnZXQsIGRvbid0IGF3YWl0KQogIGxldCB1c2VySWQ6IHN0cmluZyB8IHVuZGVmaW5lZDsKICB0cnkgewogICAgY29uc3Qgc3VwYWJhc2UgPSBhd2FpdCBjcmVhdGVTZXJ2ZXJTdXBhYmFzZUNsaWVudCgpOwogICAgY29uc3QgeyBkYXRhOiB7IHVzZXI6IHN1cGFiYXNlVXNlciB9IH0gPSBhd2FpdCBzdXBhYmFzZS5hdXRoLmdldFVzZXIoKTsKICAgIGlmIChzdXBhYmFzZVVzZXIpIHsKICAgICAgY29uc3QgZGJVc2VyID0gYXdhaXQgcHJpc21hLnVzZXIuZmluZEZpcnN0KHsKICAgICAgICB3aGVyZTogeyBzdXBhYmFzZUlkOiBzdXBhYmFzZVVzZXIuaWQgfSwKICAgICAgICBzZWxlY3Q6IHsgaWQ6IHRydWUgfSwKICAgICAgfSk7CiAgICAgIHVzZXJJZCA9IGRiVXNlcj8uaWQ7CiAgICB9CiAgfSBjYXRjaCB7CiAgICAvLyBBdXRoIGVycm9ycyBhcmUgbm9uLWZhdGFsIGZvciBzZWFyY2gKICB9CgogIHByaXNtYS5zZWFyY2hMb2cuY3JlYXRlKHsKICAgIGRhdGE6IHsKICAgICAgcXVlcnk6IHEsCiAgICAgIHVzZXJJZDogdXNlcklkID8/IG51bGwsCiAgICAgIHJlc3VsdHM6IHNlcmllcy5sZW5ndGgsCiAgICB9LAogIH0pLmNhdGNoKChlcnI6IHVua25vd24pID0+IGNvbnNvbGUuZXJyb3IoJ1NlYXJjaExvZyBlcnJvcjonLCBlcnIpKTsKCiAgcmV0dXJuIE5leHRSZXNwb25zZS5qc29uKHsgc2VyaWVzLCB0b3RhbDogc2VyaWVzLmxlbmd0aCB9KTsKfQo="}
+import { NextRequest, NextResponse } from 'next/server';
+import prisma from '@/lib/prisma';
+import { createServerSupabaseClient } from '@/lib/supabase-server';
+
+export async function GET(request: NextRequest) {
+  const { searchParams } = new URL(request.url);
+  const q = searchParams.get('q')?.trim() ?? '';
+
+  if (!q) {
+    return NextResponse.json({ series: [] });
+  }
+
+  const series = await prisma.series.findMany({
+    where: {
+      status: 'PUBLISHED',
+      OR: [
+        { title: { contains: q, mode: 'insensitive' } },
+        { titleHi: { contains: q, mode: 'insensitive' } },
+        { titleZh: { contains: q, mode: 'insensitive' } },
+        { genre: { contains: q, mode: 'insensitive' } },
+        { tags: { has: q } },
+      ],
+    },
+    select: {
+      id: true,
+      title: true,
+      titleHi: true,
+      titleZh: true,
+      description: true,
+      thumbnail: true,
+      genre: true,
+      tags: true,
+      totalEpisodes: true,
+      freeEpisodes: true,
+      coinPrice: true,
+      featured: true,
+      createdAt: true,
+    },
+    orderBy: [{ featured: 'desc' }, { createdAt: 'desc' }],
+    take: 20,
+  });
+
+  // Optionally log search for analytics (fire-and-forget, don't await)
+  let userId: string | undefined;
+  try {
+    const supabase = await createServerSupabaseClient();
+    const { data: { user: supabaseUser } } = await supabase.auth.getUser();
+    if (supabaseUser) {
+      const dbUser = await prisma.user.findFirst({
+        where: { supabaseId: supabaseUser.id },
+        select: { id: true },
+      });
+      userId = dbUser?.id;
+    }
+  } catch {
+    // Auth errors are non-fatal for search
+  }
+
+  prisma.searchLog.create({
+    data: {
+      query: q,
+      userId: userId ?? null,
+      results: series.length,
+    },
+  }).catch((err: unknown) => console.error('SearchLog error:', err));
+
+  return NextResponse.json({ series, total: series.length });
+}

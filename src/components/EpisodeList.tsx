@@ -1,1 +1,92 @@
-{"data":"J3VzZSBjbGllbnQnOwoKaW1wb3J0IExpbmsgZnJvbSAnbmV4dC9saW5rJzsKaW1wb3J0IEltYWdlIGZyb20gJ25leHQvaW1hZ2UnOwppbXBvcnQgeyBMb2NrLCBDaGVjaywgUGxheSB9IGZyb20gJ2x1Y2lkZS1yZWFjdCc7CmltcG9ydCB7IGZvcm1hdER1cmF0aW9uIH0gZnJvbSAnQC9saWIvdXRpbHMnOwoKaW50ZXJmYWNlIEVwaXNvZGUgewogIGlkOiBzdHJpbmc7CiAgZXBpc29kZU51bWJlcjogbnVtYmVyOwogIHRpdGxlOiBzdHJpbmc7CiAgdGh1bWJuYWlsOiBzdHJpbmc7CiAgZHVyYXRpb246IG51bWJlcjsKICBpc0ZyZWU6IGJvb2xlYW47CiAgaXNVbmxvY2tlZDogYm9vbGVhbjsKICB3YXRjaFByb2dyZXNzPzogbnVtYmVyOwp9CgppbnRlcmZhY2UgRXBpc29kZUxpc3RQcm9wcyB7CiAgZXBpc29kZXM6IEVwaXNvZGVbXTsKICBzZXJpZXNJZDogc3RyaW5nOwp9CgpleHBvcnQgZGVmYXVsdCBmdW5jdGlvbiBFcGlzb2RlTGlzdCh7IGVwaXNvZGVzLCBzZXJpZXNJZCB9OiBFcGlzb2RlTGlzdFByb3BzKSB7CiAgcmV0dXJuICgKICAgIDxkaXYgY2xhc3NOYW1lPSJzcGFjZS15LTMiPgogICAgICB7ZXBpc29kZXMubWFwKChlcGlzb2RlKSA9PiAoCiAgICAgICAgPExpbmsga2V5PXtlcGlzb2RlLmlkfSBocmVmPXtgL3dhdGNoLyR7ZXBpc29kZS5pZH1gfT4KICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPSJncm91cCBiZy1ncmF5LTkwMCByb3VuZGVkLXhsIG92ZXJmbG93LWhpZGRlbiBmbGV4IGdhcC0zIGhvdmVyOmJnLWdyYXktODAwIHRyYW5zaXRpb24gY3Vyc29yLXBvaW50ZXIiPgogICAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT0icmVsYXRpdmUgdy0zMiBhc3BlY3QtWzkvMTZdIGZsZXgtc2hyaW5rLTAiPgogICAgICAgICAgICAgIDxJbWFnZQogICAgICAgICAgICAgICAgc3JjPXtlcGlzb2RlLnRodW1ibmFpbH0KICAgICAgICAgICAgICAgIGFsdD17ZXBpc29kZS50aXRsZX0KICAgICAgICAgICAgICAgIGZpbGwKICAgICAgICAgICAgICAgIGNsYXNzTmFtZT0ib2JqZWN0LWNvdmVyIgogICAgICAgICAgICAgICAgc2l6ZXM9IjEyOHB4IgogICAgICAgICAgICAgIC8+CiAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgey8qIFBsYXkgb3ZlcmxheSAqL30KICAgICAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT0iYWJzb2x1dGUgaW5zZXQtMCBiZy1ibGFjay80MCBmbGV4IGl0ZW1zLWNlbnRlciBqdXN0aWZ5LWNlbnRlciBvcGFjaXR5LTAgZ3JvdXAtaG92ZXI6b3BhY2l0eS0xMDAgdHJhbnNpdGlvbiI+CiAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT0idy0xMCBoLTEwIGJnLXJlZC01MDAgcm91bmRlZC1mdWxsIGZsZXggaXRlbXMtY2VudGVyIGp1c3RpZnktY2VudGVyIj4KICAgICAgICAgICAgICAgICAgPFBsYXkgY2xhc3NOYW1lPSJ3LTUgaC01IHRleHQtd2hpdGUgZmlsbC13aGl0ZSIgLz4KICAgICAgICAgICAgICAgIDwvZGl2PgogICAgICAgICAgICAgIDwvZGl2PgoKICAgICAgICAgICAgICB7LyogRHVyYXRpb24gKi99CiAgICAgICAgICAgICAgPGRpdiBjbGFzc05hbWU9ImFic29sdXRlIGJvdHRvbS0yIHJpZ2h0LTIgYmctYmxhY2svODAgcHgtMiBweS0wLjUgcm91bmRlZCB0ZXh0LXdoaXRlIHRleHQteHMgZm9udC1tZWRpdW0iPgogICAgICAgICAgICAgICAge2Zvcm1hdER1cmF0aW9uKGVwaXNvZGUuZHVyYXRpb24pfQogICAgICAgICAgICAgIDwvZGl2PgoKICAgICAgICAgICAgICB7LyogUHJvZ3Jlc3MgYmFyICovfQogICAgICAgICAgICAgIHtlcGlzb2RlLndhdGNoUHJvZ3Jlc3MgJiYgZXBpc29kZS53YXRjaFByb2dyZXNzID4gMCAmJiAoCiAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT0iYWJzb2x1dGUgYm90dG9tLTAgbGVmdC0wIHJpZ2h0LTAgaC0xIGJnLWdyYXktNzAwIj4KICAgICAgICAgICAgICAgICAgPGRpdgogICAgICAgICAgICAgICAgICAgIGNsYXNzTmFtZT0iaC1mdWxsIGJnLXJlZC01MDAiCiAgICAgICAgICAgICAgICAgICAgc3R5bGU9e3sKICAgICAgICAgICAgICAgICAgICAgIHdpZHRoOiBgJHsoZXBpc29kZS53YXRjaFByb2dyZXNzIC8gZXBpc29kZS5kdXJhdGlvbikgKiAxMDB9JWAsCiAgICAgICAgICAgICAgICAgICAgfX0KICAgICAgICAgICAgICAgICAgLz4KICAgICAgICAgICAgICAgIDwvZGl2PgogICAgICAgICAgICAgICl9CiAgICAgICAgICAgIDwvZGl2PgoKICAgICAgICAgICAgPGRpdiBjbGFzc05hbWU9ImZsZXgtMSBweS0zIHByLTQgZmxleCBmbGV4LWNvbCBqdXN0aWZ5LWJldHdlZW4gbWluLXctMCI+CiAgICAgICAgICAgICAgPGRpdj4KICAgICAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPSJmbGV4IGl0ZW1zLWNlbnRlciBnYXAtMiBtYi0xIj4KICAgICAgICAgICAgICAgICAgPHNwYW4gY2xhc3NOYW1lPSJ0ZXh0LWdyYXktNDAwIHRleHQtc20gZm9udC1tZWRpdW0iPgogICAgICAgICAgICAgICAgICAgIEVwaXNvZGUge2VwaXNvZGUuZXBpc29kZU51bWJlcn0KICAgICAgICAgICAgICAgICAgPC9zcGFuPgogICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAge2VwaXNvZGUuaXNGcmVlID8gKAogICAgICAgICAgICAgICAgICAgIDxzcGFuIGNsYXNzTmFtZT0iYmctZ3JlZW4tNTAwLzIwIHRleHQtZ3JlZW4tNDAwIHB4LTIgcHktMC41IHJvdW5kZWQgdGV4dC14cyBmb250LW1lZGl1bSI+CiAgICAgICAgICAgICAgICAgICAgICBGcmVlCiAgICAgICAgICAgICAgICAgICAgPC9zcGFuPgogICAgICAgICAgICAgICAgICApIDogZXBpc29kZS5pc1VubG9ja2VkID8gKAogICAgICAgICAgICAgICAgICAgIDxDaGVjayBjbGFzc05hbWU9InctNCBoLTQgdGV4dC1ncmVlbi01MDAiIC8+CiAgICAgICAgICAgICAgICAgICkgOiAoCiAgICAgICAgICAgICAgICAgICAgPExvY2sgY2xhc3NOYW1lPSJ3LTQgaC00IHRleHQtZ3JheS01MDAiIC8+CiAgICAgICAgICAgICAgICAgICl9CiAgICAgICAgICAgICAgICA8L2Rpdj4KICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgPGg0IGNsYXNzTmFtZT0idGV4dC13aGl0ZSBmb250LW1lZGl1bSB0ZXh0LXNtIGxpbmUtY2xhbXAtMiI+CiAgICAgICAgICAgICAgICAgIHtlcGlzb2RlLnRpdGxlfQogICAgICAgICAgICAgICAgPC9oND4KICAgICAgICAgICAgICA8L2Rpdj4KICAgICAgICAgICAgPC9kaXY+CiAgICAgICAgICA8L2Rpdj4KICAgICAgICA8L0xpbms+CiAgICAgICkpfQogICAgPC9kaXY+CiAgKTsKfQo="}
+'use client';
+
+import Link from 'next/link';
+import Image from 'next/image';
+import { Lock, Check, Play } from 'lucide-react';
+import { formatDuration } from '@/lib/utils';
+
+interface Episode {
+  id: string;
+  episodeNumber: number;
+  title: string;
+  thumbnail: string;
+  duration: number;
+  isFree: boolean;
+  isUnlocked: boolean;
+  watchProgress?: number;
+}
+
+interface EpisodeListProps {
+  episodes: Episode[];
+  seriesId: string;
+}
+
+export default function EpisodeList({ episodes, seriesId }: EpisodeListProps) {
+  return (
+    <div className="space-y-3">
+      {episodes.map((episode) => (
+        <Link key={episode.id} href={`/watch/${episode.id}`}>
+          <div className="group bg-gray-900 rounded-xl overflow-hidden flex gap-3 hover:bg-gray-800 transition cursor-pointer">
+            <div className="relative w-32 aspect-[9/16] flex-shrink-0">
+              <Image
+                src={episode.thumbnail}
+                alt={episode.title}
+                fill
+                className="object-cover"
+                sizes="128px"
+              />
+              
+              {/* Play overlay */}
+              <div className="absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition">
+                <div className="w-10 h-10 bg-red-500 rounded-full flex items-center justify-center">
+                  <Play className="w-5 h-5 text-white fill-white" />
+                </div>
+              </div>
+
+              {/* Duration */}
+              <div className="absolute bottom-2 right-2 bg-black/80 px-2 py-0.5 rounded text-white text-xs font-medium">
+                {formatDuration(episode.duration)}
+              </div>
+
+              {/* Progress bar */}
+              {episode.watchProgress && episode.watchProgress > 0 && (
+                <div className="absolute bottom-0 left-0 right-0 h-1 bg-gray-700">
+                  <div
+                    className="h-full bg-red-500"
+                    style={{
+                      width: `${(episode.watchProgress / episode.duration) * 100}%`,
+                    }}
+                  />
+                </div>
+              )}
+            </div>
+
+            <div className="flex-1 py-3 pr-4 flex flex-col justify-between min-w-0">
+              <div>
+                <div className="flex items-center gap-2 mb-1">
+                  <span className="text-gray-400 text-sm font-medium">
+                    Episode {episode.episodeNumber}
+                  </span>
+                  
+                  {episode.isFree ? (
+                    <span className="bg-green-500/20 text-green-400 px-2 py-0.5 rounded text-xs font-medium">
+                      Free
+                    </span>
+                  ) : episode.isUnlocked ? (
+                    <Check className="w-4 h-4 text-green-500" />
+                  ) : (
+                    <Lock className="w-4 h-4 text-gray-500" />
+                  )}
+                </div>
+                
+                <h4 className="text-white font-medium text-sm line-clamp-2">
+                  {episode.title}
+                </h4>
+              </div>
+            </div>
+          </div>
+        </Link>
+      ))}
+    </div>
+  );
+}

@@ -1,1 +1,26 @@
-{"data":"J3VzZSBjbGllbnQnOwoKaW1wb3J0IHsgV2lmaU9mZiwgUmVmcmVzaEN3IH0gZnJvbSAnbHVjaWRlLXJlYWN0JzsKCmV4cG9ydCBkZWZhdWx0IGZ1bmN0aW9uIE9mZmxpbmVQYWdlKCkgewogIHJldHVybiAoCiAgICA8ZGl2IGNsYXNzTmFtZT0ibWluLWgtc2NyZWVuIGJnLWJsYWNrIGZsZXggZmxleC1jb2wgaXRlbXMtY2VudGVyIGp1c3RpZnktY2VudGVyIHB4LTYgdGV4dC1jZW50ZXIiPgogICAgICA8ZGl2IGNsYXNzTmFtZT0idy0yMCBoLTIwIGJnLWdyYWRpZW50LXRvLWJyIGZyb20tcmVkLTUwMCB0by1waW5rLTUwMCByb3VuZGVkLWZ1bGwgZmxleCBpdGVtcy1jZW50ZXIganVzdGlmeS1jZW50ZXIgbWItNiI+CiAgICAgICAgPFdpZmlPZmYgY2xhc3NOYW1lPSJ3LTEwIGgtMTAgdGV4dC13aGl0ZSIgLz4KICAgICAgPC9kaXY+CgogICAgICA8aDEgY2xhc3NOYW1lPSJ0ZXh0LXdoaXRlIHRleHQtMnhsIGZvbnQtYm9sZCBtYi0zIj5Zb3UncmUgb2ZmbGluZTwvaDE+CiAgICAgIDxwIGNsYXNzTmFtZT0idGV4dC1ncmF5LTQwMCB0ZXh0LWJhc2UgbWItOCBtYXgtdy14cyI+CiAgICAgICAgQ2hlY2sgeW91ciBjb25uZWN0aW9uIGFuZCB0cnkgYWdhaW4uCiAgICAgIDwvcD4KCiAgICAgIDxidXR0b24KICAgICAgICBvbkNsaWNrPXsoKSA9PiB3aW5kb3cubG9jYXRpb24ucmVsb2FkKCl9CiAgICAgICAgY2xhc3NOYW1lPSJmbGV4IGl0ZW1zLWNlbnRlciBnYXAtMiBiZy1ncmFkaWVudC10by1yIGZyb20tcmVkLTUwMCB0by1waW5rLTUwMCBob3Zlcjpmcm9tLXJlZC02MDAgaG92ZXI6dG8tcGluay02MDAgdGV4dC13aGl0ZSBmb250LXNlbWlib2xkIHB4LTYgcHktMyByb3VuZGVkLWZ1bGwgdHJhbnNpdGlvbiIKICAgICAgPgogICAgICAgIDxSZWZyZXNoQ3cgY2xhc3NOYW1lPSJ3LTQgaC00IiAvPgogICAgICAgIFRyeSBhZ2FpbgogICAgICA8L2J1dHRvbj4KICAgIDwvZGl2PgogICk7Cn0K"}
+'use client';
+
+import { WifiOff, RefreshCw } from 'lucide-react';
+
+export default function OfflinePage() {
+  return (
+    <div className="min-h-screen bg-black flex flex-col items-center justify-center px-6 text-center">
+      <div className="w-20 h-20 bg-gradient-to-br from-red-500 to-pink-500 rounded-full flex items-center justify-center mb-6">
+        <WifiOff className="w-10 h-10 text-white" />
+      </div>
+
+      <h1 className="text-white text-2xl font-bold mb-3">You're offline</h1>
+      <p className="text-gray-400 text-base mb-8 max-w-xs">
+        Check your connection and try again.
+      </p>
+
+      <button
+        onClick={() => window.location.reload()}
+        className="flex items-center gap-2 bg-gradient-to-r from-red-500 to-pink-500 hover:from-red-600 hover:to-pink-600 text-white font-semibold px-6 py-3 rounded-full transition"
+      >
+        <RefreshCw className="w-4 h-4" />
+        Try again
+      </button>
+    </div>
+  );
+}

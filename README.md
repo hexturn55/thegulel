@@ -1,1 +1,318 @@
-{"data":"IyBHdWxlbCBPVFQgLSBWZXJ0aWNhbCBNaWNybyBEcmFtYSBTdHJlYW1pbmcgUGxhdGZvcm0KCkEgbW9kZXJuLCBtb2JpbGUtZmlyc3QgdmVydGljYWwgdmlkZW8gc3RyZWFtaW5nIHBsYXRmb3JtIGJ1aWx0IGZvciBzaG9ydC1mb3JtIG1pY3JvIGRyYW1hcywgc2ltaWxhciB0byBSZWVsU2hvcnQgYW5kIERyYW1hQm94LiBCdWlsdCB3aXRoIE5leHQuanMgMTUsIFR5cGVTY3JpcHQsIGFuZCBUYWlsd2luZCBDU1MuCgojIyDwn46vIE92ZXJ2aWV3CgpHdWxlbCBPVFQgaXMgYSBmcmVlbWl1bSBzdHJlYW1pbmcgcGxhdGZvcm0gb3B0aW1pemVkIGZvciA5OjE2IHZlcnRpY2FsIG1pY3JvIGRyYW1hcyB3aXRoOgotIEVwaXNvZGVzIDEtMyBtaW51dGVzIGxvbmcKLSA0MC0xMDAgZXBpc29kZXMgcGVyIHNlcmllcwotIENvaW4tYmFzZWQgbW9uZXRpemF0aW9uCi0gQWQtc3VwcG9ydGVkIGZyZWUgdGllcgotIFByZW1pdW0gc3Vic2NyaXB0aW9uIG9wdGlvbgoKIyMg8J+boCBUZWNoIFN0YWNrCgojIyMgRnJvbnRlbmQKLSAqKk5leHQuanMgMTUqKiAoQXBwIFJvdXRlcikKLSAqKlR5cGVTY3JpcHQqKiAtIFR5cGUgc2FmZXR5Ci0gKipUYWlsd2luZCBDU1MqKiAtIFN0eWxpbmcKLSAqKlp1c3RhbmQqKiAtIFN0YXRlIG1hbmFnZW1lbnQKLSAqKkhMUy5qcyoqIC0gVmlkZW8gcGxheWJhY2sKCiMjIyBCYWNrZW5kCi0gKipQb3N0Z3JlU1FMKiogLSBEYXRhYmFzZSAodmlhIFN1cGFiYXNlKQotICoqUHJpc21hIE9STSoqIC0gRGF0YWJhc2UgYWNjZXNzCi0gKipDbG91ZGZsYXJlIFN0cmVhbSoqIC0gVmlkZW8gaG9zdGluZyAmIHN0cmVhbWluZwoKIyMjIFBheW1lbnRzCi0gKipTdHJpcGUqKiAtIEdsb2JhbCBwYXltZW50cwotICoqUmF6b3JwYXkqKiAtIEluZGlhIHBheW1lbnRzCgojIyMgQXV0aGVudGljYXRpb24KLSBQaG9uZSBPVFAgYXV0aGVudGljYXRpb24KLSBKV1QgdG9rZW5zCi0gSFRUUC1vbmx5IGNvb2tpZXMKCiMjIPCfk6YgSW5zdGFsbGF0aW9uCgojIyMgUHJlcmVxdWlzaXRlcwotIE5vZGUuanMgMTgrCi0gUG9zdGdyZVNRTCBkYXRhYmFzZQotIENsb3VkZmxhcmUgU3RyZWFtIGFjY291bnQKLSBTdHJpcGUgYWNjb3VudAotIChPcHRpb25hbCkgUmF6b3JwYXkgYWNjb3VudCBmb3IgSW5kaWEKCiMjIyBTZXR1cAoKMS4gKipDbG9uZSBhbmQgaW5zdGFsbCBkZXBlbmRlbmNpZXM6KioKYGBgYmFzaApjZCBndWxlbC1vdHQKbnBtIGluc3RhbGwKYGBgCgoyLiAqKlNldCB1cCBlbnZpcm9ubWVudCB2YXJpYWJsZXM6KioKYGBgYmFzaApjcCAuZW52LmV4YW1wbGUgLmVudgpgYGAKCkVkaXQgYC5lbnZgIHdpdGggeW91ciBjcmVkZW50aWFsczoKLSBEYXRhYmFzZSBVUkwgKFN1cGFiYXNlIFBvc3RncmVTUUwpCi0gQ2xvdWRmbGFyZSBTdHJlYW0gY3JlZGVudGlhbHMKLSBTdHJpcGUgQVBJIGtleXMKLSBSYXpvcnBheSBBUEkga2V5cyAob3B0aW9uYWwpCi0gSldUIHNlY3JldAotIFR3aWxpby9TTVMgcHJvdmlkZXIgY3JlZGVudGlhbHMKCjMuICoqSW5pdGlhbGl6ZSB0aGUgZGF0YWJhc2U6KioKYGBgYmFzaApucHggcHJpc21hIGdlbmVyYXRlCm5weCBwcmlzbWEgZGIgcHVzaApgYGAKCjQuICoqU2VlZCBpbml0aWFsIGRhdGEgKGNvaW4gcGFja2FnZXMpOioqCmBgYGJhc2gKbnB4IHByaXNtYSBzdHVkaW8KYGBgCgpDcmVhdGUgY29pbiBwYWNrYWdlcyBpbiBQcmlzbWEgU3R1ZGlvIG9yIHZpYSBzZWVkIHNjcmlwdC4KCjUuICoqUnVuIGRldmVsb3BtZW50IHNlcnZlcjoqKgpgYGBiYXNoCm5wbSBydW4gZGV2CmBgYAoKVmlzaXQgaHR0cDovL2xvY2FsaG9zdDozMDAwCgojIyDwn4+XIEFyY2hpdGVjdHVyZQoKIyMjIERhdGFiYXNlIFNjaGVtYQoKIyMjIyBVc2VyCi0gUGhvbmUtYmFzZWQgYXV0aGVudGljYXRpb24KLSBDb2luIGJhbGFuY2UKLSBNdWx0aWxpbmd1YWwgc3VwcG9ydCAoZW4vaGkvemgpCgojIyMjIFNlcmllcwotIE11bHRpLWxhbmd1YWdlIHRpdGxlcyAmIGRlc2NyaXB0aW9ucwotIEdlbnJlIGNhdGVnb3JpemF0aW9uCi0gRmVhdHVyZWQgZmxhZwotIFN0YXR1cyAoRFJBRlQvUFVCTElTSEVEL0FSQ0hJVkVEKQoKIyMjIyBFcGlzb2RlCi0gVmVydGljYWwgOToxNiB2aWRlbwotIE11bHRpLWxhbmd1YWdlIHN1YnRpdGxlcwotIEZyZWUvcGFpZCBmbGFnCi0gQ2xvdWRmbGFyZSBTdHJlYW0gaW50ZWdyYXRpb24KCiMjIyMgTW9uZXRpemF0aW9uCi0gKipDb2luUGFja2FnZSoqIC0gUHVyY2hhc2FibGUgY29pbiBidW5kbGVzCi0gKipDb2luVHJhbnNhY3Rpb24qKiAtIFRyYW5zYWN0aW9uIGhpc3RvcnkKLSAqKkVwaXNvZGVQdXJjaGFzZSoqIC0gRXBpc29kZSB1bmxvY2tzCi0gKipTdWJzY3JpcHRpb24qKiAtIFByZW1pdW0gdGllcnMKLSAqKldhdGNoSGlzdG9yeSoqIC0gUHJvZ3Jlc3MgdHJhY2tpbmcKCiMjIyBLZXkgRmVhdHVyZXMKCiMjIyMg8J+OrCBWaWRlbyBQbGF5ZXIKLSBGdWxsLXNjcmVlbiB2ZXJ0aWNhbCAoOToxNikgcGxheWJhY2sKLSBITFMgc3RyZWFtaW5nIHZpYSBDbG91ZGZsYXJlCi0gU3dpcGUgbmF2aWdhdGlvbiAodXAvZG93biBmb3IgcHJldi9uZXh0IGVwaXNvZGUpCi0gU3VidGl0bGUgc3VwcG9ydCAoZW4vaGkvemgpCi0gUHJvZ3Jlc3MgdHJhY2tpbmcKLSBQYXl3YWxsIGludGVncmF0aW9uCgojIyMjIPCfkrAgTW9uZXRpemF0aW9uCi0gKipGcmVlbWl1bSBNb2RlbDoqKgogIC0gRmlyc3QgMy01IGVwaXNvZGVzIGZyZWUgcGVyIHNlcmllcwogIC0gVW5sb2NrIGVwaXNvZGVzIHdpdGggY29pbnMKICAtIFdhdGNoIGFkcyB0byBlYXJuIGNvaW5zCiAgLSBPcHRpb25hbCBzdWJzY3JpcHRpb24gZm9yIHVubGltaXRlZCBhY2Nlc3MKCi0gKipDb2luIFN5c3RlbToqKgogIC0gUHVyY2hhc2UgY29pbiBwYWNrYWdlcwogIC0gRWFybiBmcm9tIGFkcwogIC0gU3BlbmQgdG8gdW5sb2NrIGVwaXNvZGVzCiAgLSBUcmFuc2FjdGlvbiBoaXN0b3J5CgojIyMjIPCflJAgQXV0aGVudGljYXRpb24KLSBQaG9uZSBPVFAgbG9naW4KLSBKV1QgdG9rZW5zCi0gU2VjdXJlIEhUVFAtb25seSBjb29raWVzCi0gV2VsY29tZSBib251cyBvbiBzaWdudXAKCiMjIyMg8J+MjSBJbnRlcm5hdGlvbmFsaXphdGlvbgotIEVuZ2xpc2ggKGVuKQotIEhpbmRpIChoaSkKLSBDaGluZXNlICh6aCkKLSBNdWx0aS1sYW5ndWFnZSBjb250ZW50IHN1cHBvcnQKCiMjIPCfk7EgUGFnZXMKCi0gYC9gIC0gSG9tZSBmZWVkIHdpdGggZ2VucmUgZmlsdGVyaW5nCi0gYC9zZXJpZXMvW2lkXWAgLSBTZXJpZXMgZGV0YWlsIHdpdGggZXBpc29kZSBsaXN0Ci0gYC93YXRjaC9bZXBpc29kZUlkXWAgLSBGdWxsLXNjcmVlbiB2aWRlbyBwbGF5ZXIKLSBgL3dhbGxldGAgLSBDb2luIGJhbGFuY2UgJiBwdXJjaGFzZQotIGAvcHJvZmlsZWAgLSBVc2VyIHByb2ZpbGUgJiB3YXRjaCBoaXN0b3J5Ci0gYC9hZG1pbmAgLSBBZG1pbiBkYXNoYm9hcmQKCiMjIPCflIwgQVBJIEVuZHBvaW50cwoKIyMjIEF1dGhlbnRpY2F0aW9uCi0gYFBPU1QgL2FwaS9hdXRoL290cC9zZW5kYCAtIFNlbmQgT1RQCi0gYFBPU1QgL2FwaS9hdXRoL290cC92ZXJpZnlgIC0gVmVyaWZ5IE9UUCAmIGxvZ2luCgojIyMgQ29pbnMKLSBgR0VUIC9hcGkvY29pbnMvcHVyY2hhc2VgIC0gR2V0IGNvaW4gcGFja2FnZXMKLSBgUE9TVCAvYXBpL2NvaW5zL3B1cmNoYXNlYCAtIEJ1eSBjb2lucwotIGBQT1NUIC9hcGkvY29pbnMvYWQtcmV3YXJkYCAtIEVhcm4gY29pbnMgZnJvbSBhZAoKIyMjIEVwaXNvZGVzCi0gYFBPU1QgL2FwaS9lcGlzb2Rlcy91bmxvY2tgIC0gVW5sb2NrIGVwaXNvZGUgd2l0aCBjb2lucwoKIyMjIFNlcmllcwotIGBHRVQgL2FwaS9zZXJpZXNgIC0gTGlzdCBzZXJpZXMKLSBgUE9TVCAvYXBpL3Nlcmllc2AgLSBDcmVhdGUgc2VyaWVzCi0gYEdFVCAvYXBpL3Nlcmllcy9baWRdL2VwaXNvZGVzYCAtIExpc3QgZXBpc29kZXMKLSBgUE9TVCAvYXBpL3Nlcmllcy9baWRdL2VwaXNvZGVzYCAtIENyZWF0ZSBlcGlzb2RlCgojIyMgV2F0Y2gKLSBgUE9TVCAvYXBpL3dhdGNoL3Byb2dyZXNzYCAtIFNhdmUgd2F0Y2ggcHJvZ3Jlc3MKLSBgR0VUIC9hcGkvd2F0Y2gvcHJvZ3Jlc3NgIC0gR2V0IHdhdGNoIGhpc3RvcnkKCiMjIyBXZWJob29rcwotIGBQT1NUIC9hcGkvd2ViaG9va3Mvc3RyaXBlYCAtIFN0cmlwZSBwYXltZW50IHdlYmhvb2tzCi0gYFBPU1QgL2FwaS93ZWJob29rcy9yYXpvcnBheWAgLSBSYXpvcnBheSBwYXltZW50IHdlYmhvb2tzCgojIyDwn46oIERlc2lnbgoKLSAqKkRhcmsgdGhlbWUqKiB0aHJvdWdob3V0Ci0gKipNb2JpbGUtZmlyc3QqKiByZXNwb25zaXZlIGRlc2lnbgotICoqOToxNiBhc3BlY3QgcmF0aW8qKiBvcHRpbWl6YXRpb24KLSAqKkJvdHRvbSBuYXZpZ2F0aW9uKiogZm9yIG1vYmlsZSBVWAotICoqR3JhZGllbnQgYWNjZW50cyoqIGZvciBwcmVtaXVtIGZlZWwKCiMjIPCfmoAgRGVwbG95bWVudAoKIyMjIFZlcmNlbCAoUmVjb21tZW5kZWQpCgoxLiBQdXNoIHRvIEdpdEh1YgoyLiBJbXBvcnQgdG8gVmVyY2VsCjMuIEFkZCBlbnZpcm9ubWVudCB2YXJpYWJsZXMKNC4gRGVwbG95CgojIyMgRGF0YWJhc2UgTWlncmF0aW9uCmBgYGJhc2gKbnB4IHByaXNtYSBtaWdyYXRlIGRlcGxveQpgYGAKCiMjIyBXZWJob29rIFNldHVwCgpDb25maWd1cmUgd2ViaG9va3MgaW4gcGF5bWVudCBwcm92aWRlciBkYXNoYm9hcmRzOgoKKipTdHJpcGU6KioKLSBVUkw6IGBodHRwczovL3lvdXItZG9tYWluLmNvbS9hcGkvd2ViaG9va3Mvc3RyaXBlYAotIEV2ZW50czogYGNoZWNrb3V0LnNlc3Npb24uY29tcGxldGVkYCwgYHBheW1lbnRfaW50ZW50LnBheW1lbnRfZmFpbGVkYAoKKipSYXpvcnBheToqKgotIFVSTDogYGh0dHBzOi8veW91ci1kb21haW4uY29tL2FwaS93ZWJob29rcy9yYXpvcnBheWAKLSBFdmVudHM6IGBwYXltZW50LmNhcHR1cmVkYCwgYHBheW1lbnQuZmFpbGVkYAoKIyMg8J+TiiBBZG1pbiBUYXNrcwoKIyMjIEFkZGluZyBDb250ZW50CgoxLiAqKlVwbG9hZCB2aWRlbyB0byBDbG91ZGZsYXJlIFN0cmVhbToqKgogICAtIEdldCB2aWRlbyBJRCBhbmQgSExTIFVSTAogICAtIEdlbmVyYXRlIHRodW1ibmFpbAoKMi4gKipDcmVhdGUgc2VyaWVzOioqCiAgIC0gUE9TVCB0byBgL2FwaS9zZXJpZXNgIHdpdGggbWV0YWRhdGEKCjMuICoqQWRkIGVwaXNvZGVzOioqCiAgIC0gUE9TVCB0byBgL2FwaS9zZXJpZXMvW2lkXS9lcGlzb2Rlc2AKICAgLSBFcGlzb2RlcyDiiaQgYGZyZWVFcGlzb2Rlc2AgYXJlIGF1dG9tYXRpY2FsbHkgZnJlZQoKIyMjIE1hbmFnaW5nIENvaW4gUGFja2FnZXMKClVzZSBQcmlzbWEgU3R1ZGlvIG9yIGNyZWF0ZSB2aWEgQVBJOgpgYGB0eXBlc2NyaXB0CmF3YWl0IHByaXNtYS5jb2luUGFja2FnZS5jcmVhdGUoewogIGRhdGE6IHsKICAgIG5hbWU6ICJTdGFydGVyIFBhY2siLAogICAgY29pbnM6IDEwMCwKICAgIHByaWNlVVNEOiA0Ljk5LAogICAgcHJpY2VJTlI6IDM5OSwKICAgIHBvcHVsYXI6IGZhbHNlLAogICAgYWN0aXZlOiB0cnVlLAogIH0sCn0pOwpgYGAKCiMjIPCflJIgU2VjdXJpdHkKCi0gSldUIHRva2VucyB3aXRoIEhUVFAtb25seSBjb29raWVzCi0gQ09SUyBwcm90ZWN0aW9uCi0gUmF0ZSBsaW1pdGluZyBvbiBzZW5zaXRpdmUgZW5kcG9pbnRzCi0gV2ViaG9vayBzaWduYXR1cmUgdmVyaWZpY2F0aW9uCi0gU1FMIGluamVjdGlvbiBwcm90ZWN0aW9uIChQcmlzbWEpCgojIyDwn6eqIFRlc3RpbmcKCmBgYGJhc2gKIyBSdW4gbGludGVyCm5wbSBydW4gbGludAoKIyBUeXBlIGNoZWNrCm5weCB0c2MgLS1ub0VtaXQKCiMgQnVpbGQKbnBtIHJ1biBidWlsZApgYGAKCiMjIPCfk50gRW52aXJvbm1lbnQgVmFyaWFibGVzIFJlZmVyZW5jZQoKfCBWYXJpYWJsZSB8IERlc2NyaXB0aW9uIHwgUmVxdWlyZWQgfAp8LS0tLS0tLS0tLXwtLS0tLS0tLS0tLS0tfC0tLS0tLS0tLS18CnwgYERBVEFCQVNFX1VSTGAgfCBQb3N0Z3JlU1FMIGNvbm5lY3Rpb24gc3RyaW5nIHwg4pyFIHwKfCBgTkVYVF9QVUJMSUNfU1VQQUJBU0VfVVJMYCB8IFN1cGFiYXNlIHByb2plY3QgVVJMIHwg4pyFIHwKfCBgTkVYVF9QVUJMSUNfU1VQQUJBU0VfQU5PTl9LRVlgIHwgU3VwYWJhc2UgYW5vbiBrZXkgfCDinIUgfAp8IGBDTE9VREZMQVJFX0FDQ09VTlRfSURgIHwgQ2xvdWRmbGFyZSBhY2NvdW50IElEIHwg4pyFIHwKfCBgQ0xPVURGTEFSRV9BUElfVE9LRU5gIHwgQ2xvdWRmbGFyZSBBUEkgdG9rZW4gfCDinIUgfAp8IGBORVhUX1BVQkxJQ19DTE9VREZMQVJFX0NVU1RPTUVSX1NVQkRPTUFJTmAgfCBTdHJlYW0gc3ViZG9tYWluIHwg4pyFIHwKfCBgU1RSSVBFX1NFQ1JFVF9LRVlgIHwgU3RyaXBlIHNlY3JldCBrZXkgfCDinIUgfAp8IGBTVFJJUEVfV0VCSE9PS19TRUNSRVRgIHwgU3RyaXBlIHdlYmhvb2sgc2VjcmV0IHwg4pyFIHwKfCBgTkVYVF9QVUJMSUNfU1RSSVBFX1BVQkxJU0hBQkxFX0tFWWAgfCBTdHJpcGUgcHVibGljIGtleSB8IOKchSB8CnwgYFJBWk9SUEFZX0tFWV9JRGAgfCBSYXpvcnBheSBrZXkgSUQgfCDimqDvuI8gfAp8IGBSQVpPUlBBWV9LRVlfU0VDUkVUYCB8IFJhem9ycGF5IHNlY3JldCB8IOKaoO+4jyB8CnwgYEpXVF9TRUNSRVRgIHwgSldUIHNpZ25pbmcgc2VjcmV0ICgzMisgY2hhcnMpIHwg4pyFIHwKfCBgVFdJTElPX0FDQ09VTlRfU0lEYCB8IFR3aWxpbyBhY2NvdW50IFNJRCB8IOKchSB8CnwgYFRXSUxJT19BVVRIX1RPS0VOYCB8IFR3aWxpbyBhdXRoIHRva2VuIHwg4pyFIHwKfCBgVFdJTElPX1BIT05FX05VTUJFUmAgfCBUd2lsaW8gcGhvbmUgbnVtYmVyIHwg4pyFIHwKCuKaoO+4jyA9IE9wdGlvbmFsIChJbmRpYS1zcGVjaWZpYykKCiMjIPCfjq8gUm9hZG1hcAoKLSBbIF0gU2VhcmNoIGZ1bmN0aW9uYWxpdHkKLSBbIF0gVXNlciByZXZpZXdzICYgcmF0aW5ncwotIFsgXSBXYXRjaGxpc3QgLyBmYXZvcml0ZXMKLSBbIF0gRG93bmxvYWQgZm9yIG9mZmxpbmUgdmlld2luZwotIFsgXSBTb2NpYWwgc2hhcmluZwotIFsgXSBSZWZlcnJhbCBwcm9ncmFtCi0gWyBdIFB1c2ggbm90aWZpY2F0aW9ucwotIFsgXSBBbmFseXRpY3MgZGFzaGJvYXJkCi0gWyBdIENvbnRlbnQgcmVjb21tZW5kYXRpb25zCi0gWyBdIE11bHRpLWRldmljZSBzeW5jCgojIyDwn5OEIExpY2Vuc2UKClByb3ByaWV0YXJ5IC0gR3VsZWwgRW50ZXJ0YWlubWVudAoKIyMg8J+knSBDb250cmlidXRpbmcKCkludGVybmFsIHByb2plY3QgLSBjb250YWN0IHRlYW0gbGVhZCBmb3IgY29udHJpYnV0aW9uIGd1aWRlbGluZXMuCgotLS0KCioqQnVpbHQgd2l0aCDinaTvuI8gZm9yIEd1bGVsIEVudGVydGFpbm1lbnQqKgo="}
+# Gulel OTT - Vertical Micro Drama Streaming Platform
+
+A modern, mobile-first vertical video streaming platform built for short-form micro dramas, similar to ReelShort and DramaBox. Built with Next.js 15, TypeScript, and Tailwind CSS.
+
+## 🎯 Overview
+
+Gulel OTT is a freemium streaming platform optimized for 9:16 vertical micro dramas with:
+- Episodes 1-3 minutes long
+- 40-100 episodes per series
+- Coin-based monetization
+- Ad-supported free tier
+- Premium subscription option
+
+## 🛠 Tech Stack
+
+### Frontend
+- **Next.js 15** (App Router)
+- **TypeScript** - Type safety
+- **Tailwind CSS** - Styling
+- **Zustand** - State management
+- **HLS.js** - Video playback
+
+### Backend
+- **PostgreSQL** - Database (via Supabase)
+- **Prisma ORM** - Database access
+- **Cloudflare Stream** - Video hosting & streaming
+
+### Payments
+- **Stripe** - Global payments
+- **Razorpay** - India payments
+
+### Authentication
+- Phone OTP authentication
+- JWT tokens
+- HTTP-only cookies
+
+## 📦 Installation
+
+### Prerequisites
+- Node.js 18+
+- PostgreSQL database
+- Cloudflare Stream account
+- Stripe account
+- (Optional) Razorpay account for India
+
+### Setup
+
+1. **Clone and install dependencies:**
+```bash
+cd gulel-ott
+npm install
+```
+
+2. **Set up environment variables:**
+```bash
+cp .env.example .env
+```
+
+Edit `.env` with your credentials:
+- Database URL (Supabase PostgreSQL)
+- Cloudflare Stream credentials
+- Stripe API keys
+- Razorpay API keys (optional)
+- JWT secret
+- Twilio/SMS provider credentials
+
+3. **Initialize the database:**
+```bash
+npx prisma generate
+npx prisma db push
+```
+
+4. **Seed initial data (coin packages):**
+```bash
+npx prisma studio
+```
+
+Create coin packages in Prisma Studio or via seed script.
+
+5. **Run development server:**
+```bash
+npm run dev
+```
+
+Visit http://localhost:3000
+
+## 🏗 Architecture
+
+### Database Schema
+
+#### User
+- Phone-based authentication
+- Coin balance
+- Multilingual support (en/hi/zh)
+
+#### Series
+- Multi-language titles & descriptions
+- Genre categorization
+- Featured flag
+- Status (DRAFT/PUBLISHED/ARCHIVED)
+
+#### Episode
+- Vertical 9:16 video
+- Multi-language subtitles
+- Free/paid flag
+- Cloudflare Stream integration
+
+#### Monetization
+- **CoinPackage** - Purchasable coin bundles
+- **CoinTransaction** - Transaction history
+- **EpisodePurchase** - Episode unlocks
+- **Subscription** - Premium tiers
+- **WatchHistory** - Progress tracking
+
+### Key Features
+
+#### 🎬 Video Player
+- Full-screen vertical (9:16) playback
+- HLS streaming via Cloudflare
+- Swipe navigation (up/down for prev/next episode)
+- Subtitle support (en/hi/zh)
+- Progress tracking
+- Paywall integration
+
+#### 💰 Monetization
+- **Freemium Model:**
+  - First 3-5 episodes free per series
+  - Unlock episodes with coins
+  - Watch ads to earn coins
+  - Optional subscription for unlimited access
+
+- **Coin System:**
+  - Purchase coin packages
+  - Earn from ads
+  - Spend to unlock episodes
+  - Transaction history
+
+#### 🔐 Authentication
+- Phone OTP login
+- JWT tokens
+- Secure HTTP-only cookies
+- Welcome bonus on signup
+
+#### 🌍 Internationalization
+- English (en)
+- Hindi (hi)
+- Chinese (zh)
+- Multi-language content support
+
+## 📱 Pages
+
+- `/` - Home feed with genre filtering
+- `/series/[id]` - Series detail with episode list
+- `/watch/[episodeId]` - Full-screen video player
+- `/wallet` - Coin balance & purchase
+- `/profile` - User profile & watch history
+- `/admin` - Admin dashboard
+
+## 🔌 API Endpoints
+
+### Authentication
+- `POST /api/auth/otp/send` - Send OTP
+- `POST /api/auth/otp/verify` - Verify OTP & login
+
+### Coins
+- `GET /api/coins/purchase` - Get coin packages
+- `POST /api/coins/purchase` - Buy coins
+- `POST /api/coins/ad-reward` - Earn coins from ad
+
+### Episodes
+- `POST /api/episodes/unlock` - Unlock episode with coins
+
+### Series
+- `GET /api/series` - List series
+- `POST /api/series` - Create series
+- `GET /api/series/[id]/episodes` - List episodes
+- `POST /api/series/[id]/episodes` - Create episode
+
+### Watch
+- `POST /api/watch/progress` - Save watch progress
+- `GET /api/watch/progress` - Get watch history
+
+### Webhooks
+- `POST /api/webhooks/stripe` - Stripe payment webhooks
+- `POST /api/webhooks/razorpay` - Razorpay payment webhooks
+
+## 🎨 Design
+
+- **Dark theme** throughout
+- **Mobile-first** responsive design
+- **9:16 aspect ratio** optimization
+- **Bottom navigation** for mobile UX
+- **Gradient accents** for premium feel
+
+## 🚀 Deployment
+
+### Vercel (Recommended)
+
+1. Push to GitHub
+2. Import to Vercel
+3. Add environment variables
+4. Deploy
+
+### Database Migration
+```bash
+npx prisma migrate deploy
+```
+
+### Webhook Setup
+
+Configure webhooks in payment provider dashboards:
+
+**Stripe:**
+- URL: `https://your-domain.com/api/webhooks/stripe`
+- Events: `checkout.session.completed`, `payment_intent.payment_failed`
+
+**Razorpay:**
+- URL: `https://your-domain.com/api/webhooks/razorpay`
+- Events: `payment.captured`, `payment.failed`
+
+## 📊 Admin Tasks
+
+### Adding Content
+
+1. **Upload video to Cloudflare Stream:**
+   - Get video ID and HLS URL
+   - Generate thumbnail
+
+2. **Create series:**
+   - POST to `/api/series` with metadata
+
+3. **Add episodes:**
+   - POST to `/api/series/[id]/episodes`
+   - Episodes ≤ `freeEpisodes` are automatically free
+
+### Managing Coin Packages
+
+Use Prisma Studio or create via API:
+```typescript
+await prisma.coinPackage.create({
+  data: {
+    name: "Starter Pack",
+    coins: 100,
+    priceUSD: 4.99,
+    priceINR: 399,
+    popular: false,
+    active: true,
+  },
+});
+```
+
+## 🔒 Security
+
+- JWT tokens with HTTP-only cookies
+- CORS protection
+- Rate limiting on sensitive endpoints
+- Webhook signature verification
+- SQL injection protection (Prisma)
+
+## 🧪 Testing
+
+```bash
+# Run linter
+npm run lint
+
+# Type check
+npx tsc --noEmit
+
+# Build
+npm run build
+```
+
+## 📝 Environment Variables Reference
+
+| Variable | Description | Required |
+|----------|-------------|----------|
+| `DATABASE_URL` | PostgreSQL connection string | ✅ |
+| `NEXT_PUBLIC_SUPABASE_URL` | Supabase project URL | ✅ |
+| `NEXT_PUBLIC_SUPABASE_ANON_KEY` | Supabase anon key | ✅ |
+| `CLOUDFLARE_ACCOUNT_ID` | Cloudflare account ID | ✅ |
+| `CLOUDFLARE_API_TOKEN` | Cloudflare API token | ✅ |
+| `NEXT_PUBLIC_CLOUDFLARE_CUSTOMER_SUBDOMAIN` | Stream subdomain | ✅ |
+| `STRIPE_SECRET_KEY` | Stripe secret key | ✅ |
+| `STRIPE_WEBHOOK_SECRET` | Stripe webhook secret | ✅ |
+| `NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY` | Stripe public key | ✅ |
+| `RAZORPAY_KEY_ID` | Razorpay key ID | ⚠️ |
+| `RAZORPAY_KEY_SECRET` | Razorpay secret | ⚠️ |
+| `JWT_SECRET` | JWT signing secret (32+ chars) | ✅ |
+| `TWILIO_ACCOUNT_SID` | Twilio account SID | ✅ |
+| `TWILIO_AUTH_TOKEN` | Twilio auth token | ✅ |
+| `TWILIO_PHONE_NUMBER` | Twilio phone number | ✅ |
+
+⚠️ = Optional (India-specific)
+
+## 🎯 Roadmap
+
+- [ ] Search functionality
+- [ ] User reviews & ratings
+- [ ] Watchlist / favorites
+- [ ] Download for offline viewing
+- [ ] Social sharing
+- [ ] Referral program
+- [ ] Push notifications
+- [ ] Analytics dashboard
+- [ ] Content recommendations
+- [ ] Multi-device sync
+
+## 📄 License
+
+Proprietary - Gulel Entertainment
+
+## 🤝 Contributing
+
+Internal project - contact team lead for contribution guidelines.
+
+---
+
+**Built with ❤️ for Gulel Entertainment**

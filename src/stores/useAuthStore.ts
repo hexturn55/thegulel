@@ -1,1 +1,159 @@
-{"data":"aW1wb3J0IHsgY3JlYXRlIH0gZnJvbSAnenVzdGFuZCc7CmltcG9ydCB7IHBlcnNpc3QgfSBmcm9tICd6dXN0YW5kL21pZGRsZXdhcmUnOwppbXBvcnQgeyBjcmVhdGVDbGllbnQgfSBmcm9tICdAL2xpYi9zdXBhYmFzZSc7CgpleHBvcnQgdHlwZSBBdXRoUHJvdmlkZXIgPSAnZ29vZ2xlJyB8ICdmYWNlYm9vaycgfCAnbGluZScgfCAncGhvbmUnIHwgbnVsbDsKCmludGVyZmFjZSBVc2VyIHsKICBpZDogc3RyaW5nOwogIHN1cGFiYXNlSWQ/OiBzdHJpbmc7CiAgcGhvbmU/OiBzdHJpbmc7CiAgZW1haWw/OiBzdHJpbmc7CiAgbmFtZT86IHN0cmluZzsKICBhdmF0YXI/OiBzdHJpbmc7CiAgbG9jYWxlOiBzdHJpbmc7CiAgcHJvdmlkZXI/OiBBdXRoUHJvdmlkZXI7CiAgY29pbkJhbGFuY2U6IG51bWJlcjsKfQoKaW50ZXJmYWNlIEF1dGhTdGF0ZSB7CiAgdXNlcjogVXNlciB8IG51bGw7CiAgdG9rZW46IHN0cmluZyB8IG51bGw7CiAgaXNBdXRoZW50aWNhdGVkOiBib29sZWFuOwoKICAvLyBBY3Rpb25zCiAgc2V0VXNlcjogKHVzZXI6IFVzZXIgfCBudWxsKSA9PiB2b2lkOwogIHNldFRva2VuOiAodG9rZW46IHN0cmluZyB8IG51bGwpID0+IHZvaWQ7CiAgbG9nb3V0OiAoKSA9PiBQcm9taXNlPHZvaWQ+OwogIHVwZGF0ZUNvaW5CYWxhbmNlOiAoYmFsYW5jZTogbnVtYmVyKSA9PiB2b2lkOwoKICAvKiogU3luYyBhdXRoIHN0YXRlIGZyb20gU3VwYWJhc2Ugc2Vzc2lvbiAoY2FsbCBvbiBhcHAgbW91bnQpICovCiAgY2hlY2tTZXNzaW9uOiAoKSA9PiBQcm9taXNlPHZvaWQ+Owp9CgpleHBvcnQgY29uc3QgdXNlQXV0aFN0b3JlID0gY3JlYXRlPEF1dGhTdGF0ZT4oKSgKICBwZXJzaXN0KAogICAgKHNldCwgZ2V0KSA9PiAoewogICAgICB1c2VyOiBudWxsLAogICAgICB0b2tlbjogbnVsbCwKICAgICAgaXNBdXRoZW50aWNhdGVkOiBmYWxzZSwKCiAgICAgIHNldFVzZXI6ICh1c2VyKSA9PgogICAgICAgIHNldCh7CiAgICAgICAgICB1c2VyLAogICAgICAgICAgaXNBdXRoZW50aWNhdGVkOiAhIXVzZXIsCiAgICAgICAgfSksCgogICAgICBzZXRUb2tlbjogKHRva2VuKSA9PiBzZXQoeyB0b2tlbiB9KSwKCiAgICAgIGxvZ291dDogYXN5bmMgKCkgPT4gewogICAgICAgIGNvbnN0IHN1cGFiYXNlID0gY3JlYXRlQ2xpZW50KCk7CiAgICAgICAgYXdhaXQgc3VwYWJhc2UuYXV0aC5zaWduT3V0KCk7CiAgICAgICAgc2V0KHsgdXNlcjogbnVsbCwgdG9rZW46IG51bGwsIGlzQXV0aGVudGljYXRlZDogZmFsc2UgfSk7CiAgICAgIH0sCgogICAgICB1cGRhdGVDb2luQmFsYW5jZTogKGJhbGFuY2UpID0+CiAgICAgICAgc2V0KChzdGF0ZSkgPT4KICAgICAgICAgIHN0YXRlLnVzZXIKICAgICAgICAgICAgPyB7IHVzZXI6IHsgLi4uc3RhdGUudXNlciwgY29pbkJhbGFuY2U6IGJhbGFuY2UgfSB9CiAgICAgICAgICAgIDoge30KICAgICAgICApLAoKICAgICAgY2hlY2tTZXNzaW9uOiBhc3luYyAoKSA9PiB7CiAgICAgICAgY29uc3Qgc3VwYWJhc2UgPSBjcmVhdGVDbGllbnQoKTsKICAgICAgICBjb25zdCB7CiAgICAgICAgICBkYXRhOiB7IHNlc3Npb24gfSwKICAgICAgICB9ID0gYXdhaXQgc3VwYWJhc2UuYXV0aC5nZXRTZXNzaW9uKCk7CgogICAgICAgIGlmICghc2Vzc2lvbj8udXNlcikgewogICAgICAgICAgc2V0KHsgdXNlcjogbnVsbCwgdG9rZW46IG51bGwsIGlzQXV0aGVudGljYXRlZDogZmFsc2UgfSk7CiAgICAgICAgICByZXR1cm47CiAgICAgICAgfQoKICAgICAgICBjb25zdCBzdXBhYmFzZVVzZXIgPSBzZXNzaW9uLnVzZXI7CiAgICAgICAgY29uc3QgcHJvdmlkZXIgPQogICAgICAgICAgKHN1cGFiYXNlVXNlci5hcHBfbWV0YWRhdGE/LnByb3ZpZGVyIGFzIEF1dGhQcm92aWRlcikgPz8gbnVsbDsKCiAgICAgICAgLy8gRmV0Y2ggUHJpc21hIHVzZXIgZGF0YSAoY29pbiBiYWxhbmNlIGV0Yy4pIGZyb20gdGhlIERCIHZpYSBBUEkKICAgICAgICB0cnkgewogICAgICAgICAgY29uc3QgcmVzID0gYXdhaXQgZmV0Y2goJy9hcGkvYXV0aC9tZScpOwogICAgICAgICAgaWYgKHJlcy5vaykgewogICAgICAgICAgICBjb25zdCBkYXRhID0gYXdhaXQgcmVzLmpzb24oKTsKICAgICAgICAgICAgc2V0KHsKICAgICAgICAgICAgICB1c2VyOiB7CiAgICAgICAgICAgICAgICBpZDogZGF0YS5pZCwKICAgICAgICAgICAgICAgIHN1cGFiYXNlSWQ6IHN1cGFiYXNlVXNlci5pZCwKICAgICAgICAgICAgICAgIHBob25lOiBkYXRhLnBob25lID8/IHN1cGFiYXNlVXNlci5waG9uZSA/PyB1bmRlZmluZWQsCiAgICAgICAgICAgICAgICBlbWFpbDogZGF0YS5lbWFpbCA/PyBzdXBhYmFzZVVzZXIuZW1haWwgPz8gdW5kZWZpbmVkLAogICAgICAgICAgICAgICAgbmFtZToKICAgICAgICAgICAgICAgICAgZGF0YS5uYW1lID8/CiAgICAgICAgICAgICAgICAgIHN1cGFiYXNlVXNlci51c2VyX21ldGFkYXRhPy5mdWxsX25hbWUgPz8KICAgICAgICAgICAgICAgICAgc3VwYWJhc2VVc2VyLnVzZXJfbWV0YWRhdGE/Lm5hbWUgPz8KICAgICAgICAgICAgICAgICAgdW5kZWZpbmVkLAogICAgICAgICAgICAgICAgYXZhdGFyOgogICAgICAgICAgICAgICAgICBkYXRhLmF2YXRhciA/PwogICAgICAgICAgICAgICAgICBzdXBhYmFzZVVzZXIudXNlcl9tZXRhZGF0YT8uYXZhdGFyX3VybCA/PwogICAgICAgICAgICAgICAgICBzdXBhYmFzZVVzZXIudXNlcl9tZXRhZGF0YT8ucGljdHVyZSA/PwogICAgICAgICAgICAgICAgICB1bmRlZmluZWQsCiAgICAgICAgICAgICAgICBsb2NhbGU6IGRhdGEubG9jYWxlID8/ICdlbicsCiAgICAgICAgICAgICAgICBwcm92aWRlciwKICAgICAgICAgICAgICAgIGNvaW5CYWxhbmNlOiBkYXRhLmNvaW5CYWxhbmNlID8/IDAsCiAgICAgICAgICAgICAgfSwKICAgICAgICAgICAgICB0b2tlbjogc2Vzc2lvbi5hY2Nlc3NfdG9rZW4sCiAgICAgICAgICAgICAgaXNBdXRoZW50aWNhdGVkOiB0cnVlLAogICAgICAgICAgICB9KTsKICAgICAgICAgIH0gZWxzZSB7CiAgICAgICAgICAgIC8vIEZhbGxiYWNrOiBwb3B1bGF0ZSBmcm9tIFN1cGFiYXNlIHNlc3Npb24gb25seQogICAgICAgICAgICBzZXQoewogICAgICAgICAgICAgIHVzZXI6IHsKICAgICAgICAgICAgICAgIGlkOiBzdXBhYmFzZVVzZXIuaWQsCiAgICAgICAgICAgICAgICBzdXBhYmFzZUlkOiBzdXBhYmFzZVVzZXIuaWQsCiAgICAgICAgICAgICAgICBwaG9uZTogc3VwYWJhc2VVc2VyLnBob25lID8/IHVuZGVmaW5lZCwKICAgICAgICAgICAgICAgIGVtYWlsOiBzdXBhYmFzZVVzZXIuZW1haWwgPz8gdW5kZWZpbmVkLAogICAgICAgICAgICAgICAgbmFtZToKICAgICAgICAgICAgICAgICAgc3VwYWJhc2VVc2VyLnVzZXJfbWV0YWRhdGE/LmZ1bGxfbmFtZSA/PwogICAgICAgICAgICAgICAgICBzdXBhYmFzZVVzZXIudXNlcl9tZXRhZGF0YT8ubmFtZSA/PwogICAgICAgICAgICAgICAgICB1bmRlZmluZWQsCiAgICAgICAgICAgICAgICBhdmF0YXI6CiAgICAgICAgICAgICAgICAgIHN1cGFiYXNlVXNlci51c2VyX21ldGFkYXRhPy5hdmF0YXJfdXJsID8/CiAgICAgICAgICAgICAgICAgIHN1cGFiYXNlVXNlci51c2VyX21ldGFkYXRhPy5waWN0dXJlID8/CiAgICAgICAgICAgICAgICAgIHVuZGVmaW5lZCwKICAgICAgICAgICAgICAgIGxvY2FsZTogJ2VuJywKICAgICAgICAgICAgICAgIHByb3ZpZGVyLAogICAgICAgICAgICAgICAgY29pbkJhbGFuY2U6IDAsCiAgICAgICAgICAgICAgfSwKICAgICAgICAgICAgICB0b2tlbjogc2Vzc2lvbi5hY2Nlc3NfdG9rZW4sCiAgICAgICAgICAgICAgaXNBdXRoZW50aWNhdGVkOiB0cnVlLAogICAgICAgICAgICB9KTsKICAgICAgICAgIH0KICAgICAgICB9IGNhdGNoIHsKICAgICAgICAgIC8vIE5ldHdvcmsgZXJyb3Ig4oCUIHN0aWxsIG1hcmsgYXMgYXV0aGVudGljYXRlZCB3aXRoIHNlc3Npb24gZGF0YQogICAgICAgICAgc2V0KHsKICAgICAgICAgICAgdXNlcjogewogICAgICAgICAgICAgIGlkOiBzdXBhYmFzZVVzZXIuaWQsCiAgICAgICAgICAgICAgc3VwYWJhc2VJZDogc3VwYWJhc2VVc2VyLmlkLAogICAgICAgICAgICAgIHBob25lOiBzdXBhYmFzZVVzZXIucGhvbmUgPz8gdW5kZWZpbmVkLAogICAgICAgICAgICAgIGVtYWlsOiBzdXBhYmFzZVVzZXIuZW1haWwgPz8gdW5kZWZpbmVkLAogICAgICAgICAgICAgIG5hbWU6CiAgICAgICAgICAgICAgICBzdXBhYmFzZVVzZXIudXNlcl9tZXRhZGF0YT8uZnVsbF9uYW1lID8/CiAgICAgICAgICAgICAgICBzdXBhYmFzZVVzZXIudXNlcl9tZXRhZGF0YT8ubmFtZSA/PwogICAgICAgICAgICAgICAgdW5kZWZpbmVkLAogICAgICAgICAgICAgIGF2YXRhcjoKICAgICAgICAgICAgICAgIHN1cGFiYXNlVXNlci51c2VyX21ldGFkYXRhPy5hdmF0YXJfdXJsID8/CiAgICAgICAgICAgICAgICBzdXBhYmFzZVVzZXIudXNlcl9tZXRhZGF0YT8ucGljdHVyZSA/PwogICAgICAgICAgICAgICAgdW5kZWZpbmVkLAogICAgICAgICAgICAgIGxvY2FsZTogJ2VuJywKICAgICAgICAgICAgICBwcm92aWRlciwKICAgICAgICAgICAgICBjb2luQmFsYW5jZTogMCwKICAgICAgICAgICAgfSwKICAgICAgICAgICAgdG9rZW46IHNlc3Npb24uYWNjZXNzX3Rva2VuLAogICAgICAgICAgICBpc0F1dGhlbnRpY2F0ZWQ6IHRydWUsCiAgICAgICAgICB9KTsKICAgICAgICB9CiAgICAgIH0sCiAgICB9KSwKICAgIHsKICAgICAgbmFtZTogJ2F1dGgtc3RvcmFnZScsCiAgICB9CiAgKQopOwo="}
+import { create } from 'zustand';
+import { persist } from 'zustand/middleware';
+import { createClient } from '@/lib/supabase';
+
+export type AuthProvider = 'google' | 'facebook' | 'line' | 'phone' | null;
+
+interface User {
+  id: string;
+  supabaseId?: string;
+  phone?: string;
+  email?: string;
+  name?: string;
+  avatar?: string;
+  locale: string;
+  provider?: AuthProvider;
+  coinBalance: number;
+}
+
+interface AuthState {
+  user: User | null;
+  token: string | null;
+  isAuthenticated: boolean;
+
+  // Actions
+  setUser: (user: User | null) => void;
+  setToken: (token: string | null) => void;
+  logout: () => Promise<void>;
+  updateCoinBalance: (balance: number) => void;
+
+  /** Sync auth state from Supabase session (call on app mount) */
+  checkSession: () => Promise<void>;
+}
+
+export const useAuthStore = create<AuthState>()(
+  persist(
+    (set, get) => ({
+      user: null,
+      token: null,
+      isAuthenticated: false,
+
+      setUser: (user) =>
+        set({
+          user,
+          isAuthenticated: !!user,
+        }),
+
+      setToken: (token) => set({ token }),
+
+      logout: async () => {
+        const supabase = createClient();
+        await supabase.auth.signOut();
+        set({ user: null, token: null, isAuthenticated: false });
+      },
+
+      updateCoinBalance: (balance) =>
+        set((state) =>
+          state.user
+            ? { user: { ...state.user, coinBalance: balance } }
+            : {}
+        ),
+
+      checkSession: async () => {
+        const supabase = createClient();
+        const {
+          data: { session },
+        } = await supabase.auth.getSession();
+
+        if (!session?.user) {
+          set({ user: null, token: null, isAuthenticated: false });
+          return;
+        }
+
+        const supabaseUser = session.user;
+        const provider =
+          (supabaseUser.app_metadata?.provider as AuthProvider) ?? null;
+
+        // Fetch Prisma user data (coin balance etc.) from the DB via API
+        try {
+          const res = await fetch('/api/auth/me');
+          if (res.ok) {
+            const data = await res.json();
+            set({
+              user: {
+                id: data.id,
+                supabaseId: supabaseUser.id,
+                phone: data.phone ?? supabaseUser.phone ?? undefined,
+                email: data.email ?? supabaseUser.email ?? undefined,
+                name:
+                  data.name ??
+                  supabaseUser.user_metadata?.full_name ??
+                  supabaseUser.user_metadata?.name ??
+                  undefined,
+                avatar:
+                  data.avatar ??
+                  supabaseUser.user_metadata?.avatar_url ??
+                  supabaseUser.user_metadata?.picture ??
+                  undefined,
+                locale: data.locale ?? 'en',
+                provider,
+                coinBalance: data.coinBalance ?? 0,
+              },
+              token: session.access_token,
+              isAuthenticated: true,
+            });
+          } else {
+            // Fallback: populate from Supabase session only
+            set({
+              user: {
+                id: supabaseUser.id,
+                supabaseId: supabaseUser.id,
+                phone: supabaseUser.phone ?? undefined,
+                email: supabaseUser.email ?? undefined,
+                name:
+                  supabaseUser.user_metadata?.full_name ??
+                  supabaseUser.user_metadata?.name ??
+                  undefined,
+                avatar:
+                  supabaseUser.user_metadata?.avatar_url ??
+                  supabaseUser.user_metadata?.picture ??
+                  undefined,
+                locale: 'en',
+                provider,
+                coinBalance: 0,
+              },
+              token: session.access_token,
+              isAuthenticated: true,
+            });
+          }
+        } catch {
+          // Network error — still mark as authenticated with session data
+          set({
+            user: {
+              id: supabaseUser.id,
+              supabaseId: supabaseUser.id,
+              phone: supabaseUser.phone ?? undefined,
+              email: supabaseUser.email ?? undefined,
+              name:
+                supabaseUser.user_metadata?.full_name ??
+                supabaseUser.user_metadata?.name ??
+                undefined,
+              avatar:
+                supabaseUser.user_metadata?.avatar_url ??
+                supabaseUser.user_metadata?.picture ??
+                undefined,
+              locale: 'en',
+              provider,
+              coinBalance: 0,
+            },
+            token: session.access_token,
+            isAuthenticated: true,
+          });
+        }
+      },
+    }),
+    {
+      name: 'auth-storage',
+    }
+  )
+);

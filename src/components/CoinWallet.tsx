@@ -1,1 +1,175 @@
-{"data":"J3VzZSBjbGllbnQnOwoKaW1wb3J0IHsgdXNlU3RhdGUsIHVzZUVmZmVjdCB9IGZyb20gJ3JlYWN0JzsKaW1wb3J0IHsgQ29pbnMsIFNwYXJrbGVzLCBDcmVkaXRDYXJkIH0gZnJvbSAnbHVjaWRlLXJlYWN0JzsKaW1wb3J0IHsgdXNlQXV0aFN0b3JlIH0gZnJvbSAnQC9zdG9yZXMvdXNlQXV0aFN0b3JlJzsKaW1wb3J0IHsgdXNlQ29pblN0b3JlIH0gZnJvbSAnQC9zdG9yZXMvdXNlQ29pblN0b3JlJzsKaW1wb3J0IHsgZm9ybWF0UHJpY2UgfSBmcm9tICdAL2xpYi91dGlscyc7CgppbnRlcmZhY2UgQ29pblBhY2thZ2UgewogIGlkOiBzdHJpbmc7CiAgbmFtZTogc3RyaW5nOwogIGNvaW5zOiBudW1iZXI7CiAgcHJpY2VVU0Q6IG51bWJlcjsKICBwcmljZUlOUjogbnVtYmVyOwogIHBvcHVsYXI6IGJvb2xlYW47Cn0KCmV4cG9ydCBkZWZhdWx0IGZ1bmN0aW9uIENvaW5XYWxsZXQoKSB7CiAgY29uc3QgeyB1c2VyIH0gPSB1c2VBdXRoU3RvcmUoKTsKICBjb25zdCB7IHBhY2thZ2VzLCBzZXRQYWNrYWdlcyB9ID0gdXNlQ29pblN0b3JlKCk7CiAgY29uc3QgW2lzUHVyY2hhc2luZywgc2V0SXNQdXJjaGFzaW5nXSA9IHVzZVN0YXRlPHN0cmluZyB8IG51bGw+KG51bGwpOwogIGNvbnN0IFtjdXJyZW5jeSwgc2V0Q3VycmVuY3ldID0gdXNlU3RhdGU8J1VTRCcgfCAnSU5SJz4oJ1VTRCcpOwoKICB1c2VFZmZlY3QoKCkgPT4gewogICAgZmV0Y2hQYWNrYWdlcygpOwogIH0sIFtdKTsKCiAgY29uc3QgZmV0Y2hQYWNrYWdlcyA9IGFzeW5jICgpID0+IHsKICAgIHRyeSB7CiAgICAgIGNvbnN0IHJlc3BvbnNlID0gYXdhaXQgZmV0Y2goJy9hcGkvY29pbnMvcGFja2FnZXMnKTsKICAgICAgaWYgKHJlc3BvbnNlLm9rKSB7CiAgICAgICAgY29uc3QgZGF0YSA9IGF3YWl0IHJlc3BvbnNlLmpzb24oKTsKICAgICAgICBzZXRQYWNrYWdlcyhkYXRhLnBhY2thZ2VzKTsKICAgICAgfQogICAgfSBjYXRjaCAoZXJyb3IpIHsKICAgICAgY29uc29sZS5lcnJvcignRmFpbGVkIHRvIGZldGNoIHBhY2thZ2VzOicsIGVycm9yKTsKICAgIH0KICB9OwoKICBjb25zdCBoYW5kbGVQdXJjaGFzZSA9IGFzeW5jIChwa2c6IENvaW5QYWNrYWdlKSA9PiB7CiAgICBpZiAoIXVzZXIpIHJldHVybjsKICAgIAogICAgc2V0SXNQdXJjaGFzaW5nKHBrZy5pZCk7CgogICAgdHJ5IHsKICAgICAgY29uc3QgcmVzcG9uc2UgPSBhd2FpdCBmZXRjaCgnL2FwaS9jb2lucy9wdXJjaGFzZScsIHsKICAgICAgICBtZXRob2Q6ICdQT1NUJywKICAgICAgICBoZWFkZXJzOiB7ICdDb250ZW50LVR5cGUnOiAnYXBwbGljYXRpb24vanNvbicgfSwKICAgICAgICBib2R5OiBKU09OLnN0cmluZ2lmeSh7CiAgICAgICAgICBwYWNrYWdlSWQ6IHBrZy5pZCwKICAgICAgICAgIGN1cnJlbmN5LAogICAgICAgIH0pLAogICAgICB9KTsKCiAgICAgIGlmICghcmVzcG9uc2Uub2spIHsKICAgICAgICB0aHJvdyBuZXcgRXJyb3IoJ1B1cmNoYXNlIGZhaWxlZCcpOwogICAgICB9CgogICAgICBjb25zdCB7IHVybCB9ID0gYXdhaXQgcmVzcG9uc2UuanNvbigpOwogICAgICAKICAgICAgLy8gUmVkaXJlY3QgdG8gU3RyaXBlIENoZWNrb3V0CiAgICAgIHdpbmRvdy5sb2NhdGlvbi5ocmVmID0gdXJsOwogICAgfSBjYXRjaCAoZXJyb3IpIHsKICAgICAgY29uc29sZS5lcnJvcignUHVyY2hhc2UgZXJyb3I6JywgZXJyb3IpOwogICAgICBhbGVydCgnUHVyY2hhc2UgZmFpbGVkLiBQbGVhc2UgdHJ5IGFnYWluLicpOwogICAgfSBmaW5hbGx5IHsKICAgICAgc2V0SXNQdXJjaGFzaW5nKG51bGwpOwogICAgfQogIH07CgogIHJldHVybiAoCiAgICA8ZGl2IGNsYXNzTmFtZT0ibWluLWgtc2NyZWVuIGJnLWJsYWNrIHBiLTIwIj4KICAgICAgey8qIEJhbGFuY2UgaGVhZGVyICovfQogICAgICA8ZGl2IGNsYXNzTmFtZT0iYmctZ3JhZGllbnQtdG8tYnIgZnJvbS15ZWxsb3ctNTAwIHRvLW9yYW5nZS01MDAgcC04IHRleHQtY2VudGVyIj4KICAgICAgICA8ZGl2IGNsYXNzTmFtZT0iZmxleCBpdGVtcy1jZW50ZXIganVzdGlmeS1jZW50ZXIgZ2FwLTIgbWItMiI+CiAgICAgICAgICA8Q29pbnMgY2xhc3NOYW1lPSJ3LTggaC04IHRleHQtd2hpdGUiIC8+CiAgICAgICAgICA8c3BhbiBjbGFzc05hbWU9InRleHQtNXhsIGZvbnQtYm9sZCB0ZXh0LXdoaXRlIj4KICAgICAgICAgICAge3VzZXI/LmNvaW5CYWxhbmNlIHx8IDB9CiAgICAgICAgICA8L3NwYW4+CiAgICAgICAgPC9kaXY+CiAgICAgICAgPHAgY2xhc3NOYW1lPSJ0ZXh0LXdoaXRlLzkwIHRleHQtc20iPllvdXIgQ29pbiBCYWxhbmNlPC9wPgogICAgICA8L2Rpdj4KCiAgICAgIHsvKiBDdXJyZW5jeSB0b2dnbGUgKi99CiAgICAgIDxkaXYgY2xhc3NOYW1lPSJweC00IHB5LTQgYm9yZGVyLWIgYm9yZGVyLWdyYXktODAwIj4KICAgICAgICA8ZGl2IGNsYXNzTmFtZT0iZmxleCBnYXAtMiBqdXN0aWZ5LWNlbnRlciI+CiAgICAgICAgICA8YnV0dG9uCiAgICAgICAgICAgIG9uQ2xpY2s9eygpID0+IHNldEN1cnJlbmN5KCdVU0QnKX0KICAgICAgICAgICAgY2xhc3NOYW1lPXtgcHgtNiBweS0yIHJvdW5kZWQtZnVsbCBmb250LW1lZGl1bSB0cmFuc2l0aW9uICR7CiAgICAgICAgICAgICAgY3VycmVuY3kgPT09ICdVU0QnCiAgICAgICAgICAgICAgICA/ICdiZy1yZWQtNTAwIHRleHQtd2hpdGUnCiAgICAgICAgICAgICAgICA6ICdiZy1ncmF5LTgwMCB0ZXh0LWdyYXktNDAwIGhvdmVyOmJnLWdyYXktNzAwJwogICAgICAgICAgICB9YH0KICAgICAgICAgID4KICAgICAgICAgICAgVVNEICgkKQogICAgICAgICAgPC9idXR0b24+CiAgICAgICAgICA8YnV0dG9uCiAgICAgICAgICAgIG9uQ2xpY2s9eygpID0+IHNldEN1cnJlbmN5KCdJTlInKX0KICAgICAgICAgICAgY2xhc3NOYW1lPXtgcHgtNiBweS0yIHJvdW5kZWQtZnVsbCBmb250LW1lZGl1bSB0cmFuc2l0aW9uICR7CiAgICAgICAgICAgICAgY3VycmVuY3kgPT09ICdJTlInCiAgICAgICAgICAgICAgICA/ICdiZy1yZWQtNTAwIHRleHQtd2hpdGUnCiAgICAgICAgICAgICAgICA6ICdiZy1ncmF5LTgwMCB0ZXh0LWdyYXktNDAwIGhvdmVyOmJnLWdyYXktNzAwJwogICAgICAgICAgICB9YH0KICAgICAgICAgID4KICAgICAgICAgICAgSU5SICjigrkpCiAgICAgICAgICA8L2J1dHRvbj4KICAgICAgICA8L2Rpdj4KICAgICAgPC9kaXY+CgogICAgICB7LyogUGFja2FnZXMgKi99CiAgICAgIDxkaXYgY2xhc3NOYW1lPSJweC00IHB5LTYiPgogICAgICAgIDxoMiBjbGFzc05hbWU9InRleHQtd2hpdGUgdGV4dC14bCBmb250LWJvbGQgbWItNCI+Q29pbiBQYWNrYWdlczwvaDI+CiAgICAgICAgCiAgICAgICAgPGRpdiBjbGFzc05hbWU9ImdyaWQgZ3JpZC1jb2xzLTEgbWQ6Z3JpZC1jb2xzLTIgbGc6Z3JpZC1jb2xzLTMgZ2FwLTQiPgogICAgICAgICAge3BhY2thZ2VzLm1hcCgocGtnKSA9PiAoCiAgICAgICAgICAgIDxkaXYKICAgICAgICAgICAgICBrZXk9e3BrZy5pZH0KICAgICAgICAgICAgICBjbGFzc05hbWU9e2ByZWxhdGl2ZSBiZy1ncmF5LTkwMCByb3VuZGVkLTJ4bCBwLTYgYm9yZGVyLTIgdHJhbnNpdGlvbiAkewogICAgICAgICAgICAgICAgcGtnLnBvcHVsYXIKICAgICAgICAgICAgICAgICAgPyAnYm9yZGVyLXllbGxvdy01MDAgc2hhZG93LWxnIHNoYWRvdy15ZWxsb3ctNTAwLzIwJwogICAgICAgICAgICAgICAgICA6ICdib3JkZXItZ3JheS04MDAgaG92ZXI6Ym9yZGVyLWdyYXktNzAwJwogICAgICAgICAgICAgIH1gfQogICAgICAgICAgICA+CiAgICAgICAgICAgICAge3BrZy5wb3B1bGFyICYmICgKICAgICAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPSJhYnNvbHV0ZSAtdG9wLTMgbGVmdC0xLzIgLXRyYW5zbGF0ZS14LTEvMiBiZy15ZWxsb3ctNTAwIHRleHQtYmxhY2sgcHgtNCBweS0xIHJvdW5kZWQtZnVsbCB0ZXh0LXhzIGZvbnQtYm9sZCBmbGV4IGl0ZW1zLWNlbnRlciBnYXAtMSI+CiAgICAgICAgICAgICAgICAgIDxTcGFya2xlcyBjbGFzc05hbWU9InctMyBoLTMiIC8+CiAgICAgICAgICAgICAgICAgIE1vc3QgUG9wdWxhcgogICAgICAgICAgICAgICAgPC9kaXY+CiAgICAgICAgICAgICAgKX0KCiAgICAgICAgICAgICAgPGRpdiBjbGFzc05hbWU9InRleHQtY2VudGVyIG1iLTQiPgogICAgICAgICAgICAgICAgPGRpdiBjbGFzc05hbWU9ImZsZXggaXRlbXMtY2VudGVyIGp1c3RpZnktY2VudGVyIGdhcC0yIG1iLTIiPgogICAgICAgICAgICAgICAgICA8Q29pbnMgY2xhc3NOYW1lPSJ3LTYgaC02IHRleHQteWVsbG93LTUwMCIgLz4KICAgICAgICAgICAgICAgICAgPHNwYW4gY2xhc3NOYW1lPSJ0ZXh0LTN4bCBmb250LWJvbGQgdGV4dC13aGl0ZSI+CiAgICAgICAgICAgICAgICAgICAge3BrZy5jb2lucy50b0xvY2FsZVN0cmluZygpfQogICAgICAgICAgICAgICAgICA8L3NwYW4+CiAgICAgICAgICAgICAgICA8L2Rpdj4KICAgICAgICAgICAgICAgIDxwIGNsYXNzTmFtZT0idGV4dC1ncmF5LTQwMCB0ZXh0LXNtIj57cGtnLm5hbWV9PC9wPgogICAgICAgICAgICAgIDwvZGl2PgoKICAgICAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT0idGV4dC1jZW50ZXIgbWItNCI+CiAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT0idGV4dC0yeGwgZm9udC1ib2xkIHRleHQtd2hpdGUiPgogICAgICAgICAgICAgICAgICB7Zm9ybWF0UHJpY2UoCiAgICAgICAgICAgICAgICAgICAgY3VycmVuY3kgPT09ICdVU0QnID8gcGtnLnByaWNlVVNEIDogcGtnLnByaWNlSU5SLAogICAgICAgICAgICAgICAgICAgIGN1cnJlbmN5CiAgICAgICAgICAgICAgICAgICl9CiAgICAgICAgICAgICAgICA8L2Rpdj4KICAgICAgICAgICAgICAgIDxwIGNsYXNzTmFtZT0idGV4dC1ncmF5LTUwMCB0ZXh0LXhzIG10LTEiPgogICAgICAgICAgICAgICAgICB7KAogICAgICAgICAgICAgICAgICAgIChjdXJyZW5jeSA9PT0gJ1VTRCcgPyBwa2cucHJpY2VVU0QgOiBwa2cucHJpY2VJTlIpIC8KICAgICAgICAgICAgICAgICAgICBwa2cuY29pbnMKICAgICAgICAgICAgICAgICAgKS50b0ZpeGVkKDMpfXsnICd9CiAgICAgICAgICAgICAgICAgIHtjdXJyZW5jeSA9PT0gJ1VTRCcgPyAnJCcgOiAn4oK5J30gcGVyIGNvaW4KICAgICAgICAgICAgICAgIDwvcD4KICAgICAgICAgICAgICA8L2Rpdj4KCiAgICAgICAgICAgICAgPGJ1dHRvbgogICAgICAgICAgICAgICAgb25DbGljaz17KCkgPT4gaGFuZGxlUHVyY2hhc2UocGtnKX0KICAgICAgICAgICAgICAgIGRpc2FibGVkPXtpc1B1cmNoYXNpbmcgPT09IHBrZy5pZH0KICAgICAgICAgICAgICAgIGNsYXNzTmFtZT17YHctZnVsbCBweS0zIHJvdW5kZWQteGwgZm9udC1zZW1pYm9sZCBmbGV4IGl0ZW1zLWNlbnRlciBqdXN0aWZ5LWNlbnRlciBnYXAtMiB0cmFuc2l0aW9uICR7CiAgICAgICAgICAgICAgICAgIHBrZy5wb3B1bGFyCiAgICAgICAgICAgICAgICAgICAgPyAnYmcteWVsbG93LTUwMCBob3ZlcjpiZy15ZWxsb3ctNjAwIHRleHQtYmxhY2snCiAgICAgICAgICAgICAgICAgICAgOiAnYmctcmVkLTUwMCBob3ZlcjpiZy1yZWQtNjAwIHRleHQtd2hpdGUnCiAgICAgICAgICAgICAgICB9IGRpc2FibGVkOm9wYWNpdHktNTAgZGlzYWJsZWQ6Y3Vyc29yLW5vdC1hbGxvd2VkYH0KICAgICAgICAgICAgICA+CiAgICAgICAgICAgICAgICA8Q3JlZGl0Q2FyZCBjbGFzc05hbWU9InctNCBoLTQiIC8+CiAgICAgICAgICAgICAgICB7aXNQdXJjaGFzaW5nID09PSBwa2cuaWQgPyAnUHJvY2Vzc2luZy4uLicgOiAnQnV5IE5vdyd9CiAgICAgICAgICAgICAgPC9idXR0b24+CiAgICAgICAgICAgIDwvZGl2PgogICAgICAgICAgKSl9CiAgICAgICAgPC9kaXY+CiAgICAgIDwvZGl2PgogICAgPC9kaXY+CiAgKTsKfQo="}
+'use client';
+
+import { useState, useEffect } from 'react';
+import { Coins, Sparkles, CreditCard } from 'lucide-react';
+import { useAuthStore } from '@/stores/useAuthStore';
+import { useCoinStore } from '@/stores/useCoinStore';
+import { formatPrice } from '@/lib/utils';
+
+interface CoinPackage {
+  id: string;
+  name: string;
+  coins: number;
+  priceUSD: number;
+  priceINR: number;
+  popular: boolean;
+}
+
+export default function CoinWallet() {
+  const { user } = useAuthStore();
+  const { packages, setPackages } = useCoinStore();
+  const [isPurchasing, setIsPurchasing] = useState<string | null>(null);
+  const [currency, setCurrency] = useState<'USD' | 'INR'>('USD');
+
+  useEffect(() => {
+    fetchPackages();
+  }, []);
+
+  const fetchPackages = async () => {
+    try {
+      const response = await fetch('/api/coins/packages');
+      if (response.ok) {
+        const data = await response.json();
+        setPackages(data.packages);
+      }
+    } catch (error) {
+      console.error('Failed to fetch packages:', error);
+    }
+  };
+
+  const handlePurchase = async (pkg: CoinPackage) => {
+    if (!user) return;
+    
+    setIsPurchasing(pkg.id);
+
+    try {
+      const response = await fetch('/api/coins/purchase', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          packageId: pkg.id,
+          currency,
+        }),
+      });
+
+      if (!response.ok) {
+        throw new Error('Purchase failed');
+      }
+
+      const { url } = await response.json();
+      
+      // Redirect to Stripe Checkout
+      window.location.href = url;
+    } catch (error) {
+      console.error('Purchase error:', error);
+      alert('Purchase failed. Please try again.');
+    } finally {
+      setIsPurchasing(null);
+    }
+  };
+
+  return (
+    <div className="min-h-screen bg-black pb-20">
+      {/* Balance header */}
+      <div className="bg-gradient-to-br from-yellow-500 to-orange-500 p-8 text-center">
+        <div className="flex items-center justify-center gap-2 mb-2">
+          <Coins className="w-8 h-8 text-white" />
+          <span className="text-5xl font-bold text-white">
+            {user?.coinBalance || 0}
+          </span>
+        </div>
+        <p className="text-white/90 text-sm">Your Coin Balance</p>
+      </div>
+
+      {/* Currency toggle */}
+      <div className="px-4 py-4 border-b border-gray-800">
+        <div className="flex gap-2 justify-center">
+          <button
+            onClick={() => setCurrency('USD')}
+            className={`px-6 py-2 rounded-full font-medium transition ${
+              currency === 'USD'
+                ? 'bg-red-500 text-white'
+                : 'bg-gray-800 text-gray-400 hover:bg-gray-700'
+            }`}
+          >
+            USD ($)
+          </button>
+          <button
+            onClick={() => setCurrency('INR')}
+            className={`px-6 py-2 rounded-full font-medium transition ${
+              currency === 'INR'
+                ? 'bg-red-500 text-white'
+                : 'bg-gray-800 text-gray-400 hover:bg-gray-700'
+            }`}
+          >
+            INR (₹)
+          </button>
+        </div>
+      </div>
+
+      {/* Packages */}
+      <div className="px-4 py-6">
+        <h2 className="text-white text-xl font-bold mb-4">Coin Packages</h2>
+        
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+          {packages.map((pkg) => (
+            <div
+              key={pkg.id}
+              className={`relative bg-gray-900 rounded-2xl p-6 border-2 transition ${
+                pkg.popular
+                  ? 'border-yellow-500 shadow-lg shadow-yellow-500/20'
+                  : 'border-gray-800 hover:border-gray-700'
+              }`}
+            >
+              {pkg.popular && (
+                <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-yellow-500 text-black px-4 py-1 rounded-full text-xs font-bold flex items-center gap-1">
+                  <Sparkles className="w-3 h-3" />
+                  Most Popular
+                </div>
+              )}
+
+              <div className="text-center mb-4">
+                <div className="flex items-center justify-center gap-2 mb-2">
+                  <Coins className="w-6 h-6 text-yellow-500" />
+                  <span className="text-3xl font-bold text-white">
+                    {pkg.coins.toLocaleString()}
+                  </span>
+                </div>
+                <p className="text-gray-400 text-sm">{pkg.name}</p>
+              </div>
+
+              <div className="text-center mb-4">
+                <div className="text-2xl font-bold text-white">
+                  {formatPrice(
+                    currency === 'USD' ? pkg.priceUSD : pkg.priceINR,
+                    currency
+                  )}
+                </div>
+                <p className="text-gray-500 text-xs mt-1">
+                  {(
+                    (currency === 'USD' ? pkg.priceUSD : pkg.priceINR) /
+                    pkg.coins
+                  ).toFixed(3)}{' '}
+                  {currency === 'USD' ? '$' : '₹'} per coin
+                </p>
+              </div>
+
+              <button
+                onClick={() => handlePurchase(pkg)}
+                disabled={isPurchasing === pkg.id}
+                className={`w-full py-3 rounded-xl font-semibold flex items-center justify-center gap-2 transition ${
+                  pkg.popular
+                    ? 'bg-yellow-500 hover:bg-yellow-600 text-black'
+                    : 'bg-red-500 hover:bg-red-600 text-white'
+                } disabled:opacity-50 disabled:cursor-not-allowed`}
+              >
+                <CreditCard className="w-4 h-4" />
+                {isPurchasing === pkg.id ? 'Processing...' : 'Buy Now'}
+              </button>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  );
+}

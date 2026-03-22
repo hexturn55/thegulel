@@ -1,1 +1,381 @@
-{"data":"J3VzZSBjbGllbnQnOwoKaW1wb3J0IHsgdXNlU3RhdGUsIHVzZVJlZiB9IGZyb20gJ3JlYWN0JzsKaW1wb3J0IHsgdXNlUGFyYW1zLCB1c2VSb3V0ZXIgfSBmcm9tICduZXh0L25hdmlnYXRpb24nOwppbXBvcnQgeyBVcGxvYWQsIENoZWNrQ2lyY2xlLCBBbGVydENpcmNsZSwgRmlsbSB9IGZyb20gJ2x1Y2lkZS1yZWFjdCc7CmltcG9ydCB7IHVzZVRvYXN0IH0gZnJvbSAnQC9jb21wb25lbnRzL2FkbWluL1RvYXN0JzsKCmludGVyZmFjZSBVcGxvYWREYXRhIHsKICB1cGxvYWRVcmw6IHN0cmluZzsKICB2aWRlb0lkOiBzdHJpbmc7CiAgdGh1bWJuYWlsVXJsPzogc3RyaW5nOwp9CgpleHBvcnQgZGVmYXVsdCBmdW5jdGlvbiBOZXdFcGlzb2RlUGFnZSgpIHsKICBjb25zdCB7IGlkOiBzZXJpZXNJZCB9ID0gdXNlUGFyYW1zPHsgaWQ6IHN0cmluZyB9PigpOwogIGNvbnN0IHJvdXRlciA9IHVzZVJvdXRlcigpOwogIGNvbnN0IHsgdG9hc3QgfSA9IHVzZVRvYXN0KCk7CiAgY29uc3QgZmlsZUlucHV0UmVmID0gdXNlUmVmPEhUTUxJbnB1dEVsZW1lbnQ+KG51bGwpOwoKICAvLyBGb3JtIHN0YXRlCiAgY29uc3QgW2Zvcm0sIHNldEZvcm1dID0gdXNlU3RhdGUoewogICAgZXBpc29kZU51bWJlcjogMSwKICAgIHRpdGxlOiAnJywKICAgIHRpdGxlSGk6ICcnLAogICAgdGl0bGVaaDogJycsCiAgICBkdXJhdGlvbjogJycsCiAgICBpc0ZyZWU6IGZhbHNlLAogIH0pOwoKICAvLyBVcGxvYWQgc3RhdGUKICBjb25zdCBbdXBsb2FkRGF0YSwgc2V0VXBsb2FkRGF0YV0gPSB1c2VTdGF0ZTxVcGxvYWREYXRhIHwgbnVsbD4obnVsbCk7CiAgY29uc3QgW3VwbG9hZFByb2dyZXNzLCBzZXRVcGxvYWRQcm9ncmVzc10gPSB1c2VTdGF0ZSgwKTsKICBjb25zdCBbdXBsb2FkU3RhdHVzLCBzZXRVcGxvYWRTdGF0dXNdID0gdXNlU3RhdGU8J2lkbGUnIHwgJ2ZldGNoaW5nLXVybCcgfCAndXBsb2FkaW5nJyB8ICdkb25lJyB8ICdlcnJvcic+KCdpZGxlJyk7CiAgY29uc3QgW3NlbGVjdGVkRmlsZSwgc2V0U2VsZWN0ZWRGaWxlXSA9IHVzZVN0YXRlPEZpbGUgfCBudWxsPihudWxsKTsKICBjb25zdCBbc3VibWl0dGluZywgc2V0U3VibWl0dGluZ10gPSB1c2VTdGF0ZShmYWxzZSk7CgogIGNvbnN0IHVwZGF0ZSA9IChmaWVsZDogc3RyaW5nLCB2YWx1ZTogdW5rbm93bikgPT4KICAgIHNldEZvcm0oKHByZXYpID0+ICh7IC4uLnByZXYsIFtmaWVsZF06IHZhbHVlIH0pKTsKCiAgY29uc3QgaGFuZGxlR2V0VXBsb2FkVXJsID0gYXN5bmMgKCkgPT4gewogICAgc2V0VXBsb2FkU3RhdHVzKCdmZXRjaGluZy11cmwnKTsKICAgIHRyeSB7CiAgICAgIGNvbnN0IHJlcyA9IGF3YWl0IGZldGNoKCcvYXBpL2FkbWluL3VwbG9hZCcsIHsgbWV0aG9kOiAnUE9TVCcgfSk7CiAgICAgIGlmICghcmVzLm9rKSB0aHJvdyBuZXcgRXJyb3IoJ0ZhaWxlZCB0byBnZXQgdXBsb2FkIFVSTCcpOwogICAgICBjb25zdCBkYXRhOiBVcGxvYWREYXRhID0gYXdhaXQgcmVzLmpzb24oKTsKICAgICAgc2V0VXBsb2FkRGF0YShkYXRhKTsKICAgICAgc2V0VXBsb2FkU3RhdHVzKCdpZGxlJyk7CiAgICAgIHRvYXN0KCdVcGxvYWQgVVJMIHJlYWR5IOKAlCBzZWxlY3QgYSB2aWRlbyBmaWxlJywgJ3N1Y2Nlc3MnKTsKICAgIH0gY2F0Y2ggKGVycikgewogICAgICB0b2FzdChlcnIgaW5zdGFuY2VvZiBFcnJvciA/IGVyci5tZXNzYWdlIDogJ0ZhaWxlZCB0byBnZXQgdXBsb2FkIFVSTCcsICdlcnJvcicpOwogICAgICBzZXRVcGxvYWRTdGF0dXMoJ2Vycm9yJyk7CiAgICB9CiAgfTsKCiAgY29uc3QgaGFuZGxlRmlsZVNlbGVjdCA9IChlOiBSZWFjdC5DaGFuZ2VFdmVudDxIVE1MSW5wdXRFbGVtZW50PikgPT4gewogICAgY29uc3QgZmlsZSA9IGUudGFyZ2V0LmZpbGVzPy5bMF07CiAgICBpZiAoZmlsZSkgc2V0U2VsZWN0ZWRGaWxlKGZpbGUpOwogIH07CgogIGNvbnN0IGhhbmRsZVVwbG9hZCA9IGFzeW5jICgpID0+IHsKICAgIGlmICghdXBsb2FkRGF0YSB8fCAhc2VsZWN0ZWRGaWxlKSByZXR1cm47CiAgICBzZXRVcGxvYWRTdGF0dXMoJ3VwbG9hZGluZycpOwogICAgc2V0VXBsb2FkUHJvZ3Jlc3MoMCk7CgogICAgdHJ5IHsKICAgICAgLy8gVXNlIFhIUiBmb3IgcHJvZ3Jlc3MgdHJhY2tpbmcKICAgICAgYXdhaXQgbmV3IFByb21pc2U8dm9pZD4oKHJlc29sdmUsIHJlamVjdCkgPT4gewogICAgICAgIGNvbnN0IHhociA9IG5ldyBYTUxIdHRwUmVxdWVzdCgpOwogICAgICAgIHhoci51cGxvYWQuYWRkRXZlbnRMaXN0ZW5lcigncHJvZ3Jlc3MnLCAoZSkgPT4gewogICAgICAgICAgaWYgKGUubGVuZ3RoQ29tcHV0YWJsZSkgewogICAgICAgICAgICBzZXRVcGxvYWRQcm9ncmVzcyhNYXRoLnJvdW5kKChlLmxvYWRlZCAvIGUudG90YWwpICogMTAwKSk7CiAgICAgICAgICB9CiAgICAgICAgfSk7CiAgICAgICAgeGhyLmFkZEV2ZW50TGlzdGVuZXIoJ2xvYWQnLCAoKSA9PiB7CiAgICAgICAgICBpZiAoeGhyLnN0YXR1cyA+PSAyMDAgJiYgeGhyLnN0YXR1cyA8IDMwMCkgewogICAgICAgICAgICByZXNvbHZlKCk7CiAgICAgICAgICB9IGVsc2UgewogICAgICAgICAgICByZWplY3QobmV3IEVycm9yKGBVcGxvYWQgZmFpbGVkOiAke3hoci5zdGF0dXN9YCkpOwogICAgICAgICAgfQogICAgICAgIH0pOwogICAgICAgIHhoci5hZGRFdmVudExpc3RlbmVyKCdlcnJvcicsICgpID0+IHJlamVjdChuZXcgRXJyb3IoJ05ldHdvcmsgZXJyb3InKSkpOwogICAgICAgIHhoci5vcGVuKCdQT1NUJywgdXBsb2FkRGF0YS51cGxvYWRVcmwpOwoKICAgICAgICBjb25zdCBmb3JtRGF0YSA9IG5ldyBGb3JtRGF0YSgpOwogICAgICAgIGZvcm1EYXRhLmFwcGVuZCgnZmlsZScsIHNlbGVjdGVkRmlsZSk7CiAgICAgICAgeGhyLnNlbmQoZm9ybURhdGEpOwogICAgICB9KTsKCiAgICAgIHNldFVwbG9hZFN0YXR1cygnZG9uZScpOwogICAgICBzZXRVcGxvYWRQcm9ncmVzcygxMDApOwogICAgICB0b2FzdCgnVmlkZW8gdXBsb2FkZWQgc3VjY2Vzc2Z1bGx5IScsICdzdWNjZXNzJyk7CiAgICB9IGNhdGNoIChlcnIpIHsKICAgICAgc2V0VXBsb2FkU3RhdHVzKCdlcnJvcicpOwogICAgICB0b2FzdChlcnIgaW5zdGFuY2VvZiBFcnJvciA/IGVyci5tZXNzYWdlIDogJ1VwbG9hZCBmYWlsZWQnLCAnZXJyb3InKTsKICAgIH0KICB9OwoKICBjb25zdCBoYW5kbGVTdWJtaXQgPSBhc3luYyAoZTogUmVhY3QuRm9ybUV2ZW50KSA9PiB7CiAgICBlLnByZXZlbnREZWZhdWx0KCk7CgogICAgaWYgKCFmb3JtLnRpdGxlKSB7CiAgICAgIHRvYXN0KCdUaXRsZSBpcyByZXF1aXJlZCcsICdlcnJvcicpOwogICAgICByZXR1cm47CiAgICB9CgogICAgc2V0U3VibWl0dGluZyh0cnVlKTsKICAgIHRyeSB7CiAgICAgIGNvbnN0IHBheWxvYWQgPSB7CiAgICAgICAgZXBpc29kZU51bWJlcjogTnVtYmVyKGZvcm0uZXBpc29kZU51bWJlciksCiAgICAgICAgdGl0bGU6IGZvcm0udGl0bGUsCiAgICAgICAgdGl0bGVIaTogZm9ybS50aXRsZUhpIHx8IHVuZGVmaW5lZCwKICAgICAgICB0aXRsZVpoOiBmb3JtLnRpdGxlWmggfHwgdW5kZWZpbmVkLAogICAgICAgIGR1cmF0aW9uOiBmb3JtLmR1cmF0aW9uID8gTnVtYmVyKGZvcm0uZHVyYXRpb24pIDogdW5kZWZpbmVkLAogICAgICAgIGlzRnJlZTogZm9ybS5pc0ZyZWUsCiAgICAgICAgdmlkZW9JZDogdXBsb2FkRGF0YT8udmlkZW9JZCwKICAgICAgICB0aHVtYm5haWw6IHVwbG9hZERhdGE/LnRodW1ibmFpbFVybCwKICAgICAgfTsKCiAgICAgIGNvbnN0IHJlcyA9IGF3YWl0IGZldGNoKGAvYXBpL2FkbWluL3Nlcmllcy8ke3Nlcmllc0lkfS9lcGlzb2Rlc2AsIHsKICAgICAgICBtZXRob2Q6ICdQT1NUJywKICAgICAgICBoZWFkZXJzOiB7ICdDb250ZW50LVR5cGUnOiAnYXBwbGljYXRpb24vanNvbicgfSwKICAgICAgICBib2R5OiBKU09OLnN0cmluZ2lmeShwYXlsb2FkKSwKICAgICAgfSk7CgogICAgICBpZiAoIXJlcy5vaykgewogICAgICAgIGNvbnN0IGVyciA9IGF3YWl0IHJlcy5qc29uKCkuY2F0Y2goKCkgPT4gKHt9KSk7CiAgICAgICAgdGhyb3cgbmV3IEVycm9yKGVyci5lcnJvciA/PyAnRmFpbGVkIHRvIGNyZWF0ZSBlcGlzb2RlJyk7CiAgICAgIH0KCiAgICAgIHRvYXN0KCdFcGlzb2RlIGNyZWF0ZWQhJywgJ3N1Y2Nlc3MnKTsKICAgICAgcm91dGVyLnB1c2goYC9hZG1pbi9zZXJpZXMvJHtzZXJpZXNJZH1gKTsKICAgIH0gY2F0Y2ggKGVycikgewogICAgICB0b2FzdChlcnIgaW5zdGFuY2VvZiBFcnJvciA/IGVyci5tZXNzYWdlIDogJ1NvbWV0aGluZyB3ZW50IHdyb25nJywgJ2Vycm9yJyk7CiAgICB9IGZpbmFsbHkgewogICAgICBzZXRTdWJtaXR0aW5nKGZhbHNlKTsKICAgIH0KICB9OwoKICByZXR1cm4gKAogICAgPGRpdiBjbGFzc05hbWU9Im1heC13LTN4bCBteC1hdXRvIHNwYWNlLXktNiI+CiAgICAgIDxkaXY+CiAgICAgICAgPGgxIGNsYXNzTmFtZT0idGV4dC0yeGwgZm9udC1ib2xkIHRleHQtd2hpdGUiPkFkZCBFcGlzb2RlPC9oMT4KICAgICAgICA8cCBjbGFzc05hbWU9InRleHQtZ3JheS01MDAgdGV4dC1zbSBtdC0wLjUiPkNyZWF0ZSBhIG5ldyBlcGlzb2RlIGZvciB0aGlzIHNlcmllcy48L3A+CiAgICAgIDwvZGl2PgoKICAgICAgPGZvcm0gb25TdWJtaXQ9e2hhbmRsZVN1Ym1pdH0gY2xhc3NOYW1lPSJzcGFjZS15LTYiPgogICAgICAgIHsvKiBFcGlzb2RlIERldGFpbHMgKi99CiAgICAgICAgPHNlY3Rpb24gY2xhc3NOYW1lPSJiZy1ncmF5LTkwMCBib3JkZXIgYm9yZGVyLWdyYXktODAwIHJvdW5kZWQteGwgcC02IHNwYWNlLXktNSI+CiAgICAgICAgICA8aDIgY2xhc3NOYW1lPSJ0ZXh0LXNtIGZvbnQtc2VtaWJvbGQgdGV4dC1ncmF5LTQwMCB1cHBlcmNhc2UgdHJhY2tpbmctd2lkZXIiPkVwaXNvZGUgRGV0YWlsczwvaDI+CgogICAgICAgICAgPGRpdiBjbGFzc05hbWU9ImdyaWQgZ3JpZC1jb2xzLTIgZ2FwLTUiPgogICAgICAgICAgICA8RmllbGQgbGFiZWw9IkVwaXNvZGUgTnVtYmVyIiByZXF1aXJlZD4KICAgICAgICAgICAgICA8aW5wdXQKICAgICAgICAgICAgICAgIHR5cGU9Im51bWJlciIKICAgICAgICAgICAgICAgIG1pbj17MX0KICAgICAgICAgICAgICAgIHJlcXVpcmVkCiAgICAgICAgICAgICAgICB2YWx1ZT17Zm9ybS5lcGlzb2RlTnVtYmVyfQogICAgICAgICAgICAgICAgb25DaGFuZ2U9eyhlKSA9PiB1cGRhdGUoJ2VwaXNvZGVOdW1iZXInLCBlLnRhcmdldC52YWx1ZSl9CiAgICAgICAgICAgICAgICBjbGFzc05hbWU9e2lucHV0Q2xhc3N9CiAgICAgICAgICAgICAgLz4KICAgICAgICAgICAgPC9GaWVsZD4KICAgICAgICAgICAgPEZpZWxkIGxhYmVsPSJEdXJhdGlvbiAoc2Vjb25kcykiPgogICAgICAgICAgICAgIDxpbnB1dAogICAgICAgICAgICAgICAgdHlwZT0ibnVtYmVyIgogICAgICAgICAgICAgICAgbWluPXswfQogICAgICAgICAgICAgICAgdmFsdWU9e2Zvcm0uZHVyYXRpb259CiAgICAgICAgICAgICAgICBvbkNoYW5nZT17KGUpID0+IHVwZGF0ZSgnZHVyYXRpb24nLCBlLnRhcmdldC52YWx1ZSl9CiAgICAgICAgICAgICAgICBwbGFjZWhvbGRlcj0iZS5nLiAxMzIwIgogICAgICAgICAgICAgICAgY2xhc3NOYW1lPXtpbnB1dENsYXNzfQogICAgICAgICAgICAgIC8+CiAgICAgICAgICAgIDwvRmllbGQ+CiAgICAgICAgICA8L2Rpdj4KCiAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT0iZ3JpZCBncmlkLWNvbHMtMSBtZDpncmlkLWNvbHMtMyBnYXAtNSI+CiAgICAgICAgICAgIDxGaWVsZCBsYWJlbD0iVGl0bGUgKEVOKSIgcmVxdWlyZWQ+CiAgICAgICAgICAgICAgPGlucHV0CiAgICAgICAgICAgICAgICByZXF1aXJlZAogICAgICAgICAgICAgICAgdmFsdWU9e2Zvcm0udGl0bGV9CiAgICAgICAgICAgICAgICBvbkNoYW5nZT17KGUpID0+IHVwZGF0ZSgndGl0bGUnLCBlLnRhcmdldC52YWx1ZSl9CiAgICAgICAgICAgICAgICBwbGFjZWhvbGRlcj0iRXBpc29kZSB0aXRsZSIKICAgICAgICAgICAgICAgIGNsYXNzTmFtZT17aW5wdXRDbGFzc30KICAgICAgICAgICAgICAvPgogICAgICAgICAgICA8L0ZpZWxkPgogICAgICAgICAgICA8RmllbGQgbGFiZWw9IlRpdGxlIChIaW5kaSkiPgogICAgICAgICAgICAgIDxpbnB1dAogICAgICAgICAgICAgICAgdmFsdWU9e2Zvcm0udGl0bGVIaX0KICAgICAgICAgICAgICAgIG9uQ2hhbmdlPXsoZSkgPT4gdXBkYXRlKCd0aXRsZUhpJywgZS50YXJnZXQudmFsdWUpfQogICAgICAgICAgICAgICAgcGxhY2Vob2xkZXI9IuCkueCkv+CkguCkpuClgCDgpLbgpYDgpLDgpY3gpLfgpJUiCiAgICAgICAgICAgICAgICBjbGFzc05hbWU9e2lucHV0Q2xhc3N9CiAgICAgICAgICAgICAgLz4KICAgICAgICAgICAgPC9GaWVsZD4KICAgICAgICAgICAgPEZpZWxkIGxhYmVsPSJUaXRsZSAoQ2hpbmVzZSkiPgogICAgICAgICAgICAgIDxpbnB1dAogICAgICAgICAgICAgICAgdmFsdWU9e2Zvcm0udGl0bGVaaH0KICAgICAgICAgICAgICAgIG9uQ2hhbmdlPXsoZSkgPT4gdXBkYXRlKCd0aXRsZVpoJywgZS50YXJnZXQudmFsdWUpfQogICAgICAgICAgICAgICAgcGxhY2Vob2xkZXI9IuS4reaWh+agh+mimCIKICAgICAgICAgICAgICAgIGNsYXNzTmFtZT17aW5wdXRDbGFzc30KICAgICAgICAgICAgICAvPgogICAgICAgICAgICA8L0ZpZWxkPgogICAgICAgICAgPC9kaXY+CgogICAgICAgICAgPEZpZWxkIGxhYmVsPSJBY2Nlc3MiPgogICAgICAgICAgICA8bGFiZWwgY2xhc3NOYW1lPSJmbGV4IGl0ZW1zLWNlbnRlciBnYXAtMyBjdXJzb3ItcG9pbnRlciI+CiAgICAgICAgICAgICAgPGRpdgogICAgICAgICAgICAgICAgb25DbGljaz17KCkgPT4gdXBkYXRlKCdpc0ZyZWUnLCAhZm9ybS5pc0ZyZWUpfQogICAgICAgICAgICAgICAgY2xhc3NOYW1lPXtgdy0xMCBoLTYgcm91bmRlZC1mdWxsIHRyYW5zaXRpb24tY29sb3JzIHJlbGF0aXZlIGN1cnNvci1wb2ludGVyICR7CiAgICAgICAgICAgICAgICAgIGZvcm0uaXNGcmVlID8gJ2JnLWdyZWVuLTYwMCcgOiAnYmctZ3JheS03MDAnCiAgICAgICAgICAgICAgICB9YH0KICAgICAgICAgICAgICA+CiAgICAgICAgICAgICAgICA8ZGl2CiAgICAgICAgICAgICAgICAgIGNsYXNzTmFtZT17YGFic29sdXRlIHRvcC0xIHctNCBoLTQgYmctd2hpdGUgcm91bmRlZC1mdWxsIHRyYW5zaXRpb24tdHJhbnNmb3JtICR7CiAgICAgICAgICAgICAgICAgICAgZm9ybS5pc0ZyZWUgPyAndHJhbnNsYXRlLXgtNScgOiAndHJhbnNsYXRlLXgtMScKICAgICAgICAgICAgICAgICAgfWB9CiAgICAgICAgICAgICAgICAvPgogICAgICAgICAgICAgIDwvZGl2PgogICAgICAgICAgICAgIDxzcGFuIGNsYXNzTmFtZT0idGV4dC1zbSB0ZXh0LWdyYXktMzAwIj57Zm9ybS5pc0ZyZWUgPyAnRnJlZSBlcGlzb2RlJyA6ICdQYWlkIChjb2luIHJlcXVpcmVkKSd9PC9zcGFuPgogICAgICAgICAgICA8L2xhYmVsPgogICAgICAgICAgPC9GaWVsZD4KICAgICAgICA8L3NlY3Rpb24+CgogICAgICAgIHsvKiBWaWRlbyBVcGxvYWQgKi99CiAgICAgICAgPHNlY3Rpb24gY2xhc3NOYW1lPSJiZy1ncmF5LTkwMCBib3JkZXIgYm9yZGVyLWdyYXktODAwIHJvdW5kZWQteGwgcC02IHNwYWNlLXktNSI+CiAgICAgICAgICA8aDIgY2xhc3NOYW1lPSJ0ZXh0LXNtIGZvbnQtc2VtaWJvbGQgdGV4dC1ncmF5LTQwMCB1cHBlcmNhc2UgdHJhY2tpbmctd2lkZXIiPlZpZGVvIFVwbG9hZDwvaDI+CgogICAgICAgICAgPGRpdiBjbGFzc05hbWU9InNwYWNlLXktNCI+CiAgICAgICAgICAgIHsvKiBTdGVwIDE6IEdldCB1cGxvYWQgVVJMICovfQogICAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT0iZmxleCBpdGVtcy1jZW50ZXIgZ2FwLTQiPgogICAgICAgICAgICAgIDxidXR0b24KICAgICAgICAgICAgICAgIHR5cGU9ImJ1dHRvbiIKICAgICAgICAgICAgICAgIG9uQ2xpY2s9e2hhbmRsZUdldFVwbG9hZFVybH0KICAgICAgICAgICAgICAgIGRpc2FibGVkPXt1cGxvYWRTdGF0dXMgPT09ICdmZXRjaGluZy11cmwnIHx8ICEhdXBsb2FkRGF0YX0KICAgICAgICAgICAgICAgIGNsYXNzTmFtZT0iZmxleCBpdGVtcy1jZW50ZXIgZ2FwLTIgcHgtNCBweS0yLjUgYmctZ3JheS04MDAgaG92ZXI6YmctZ3JheS03MDAgdGV4dC1ncmF5LTMwMCByb3VuZGVkLWxnIHRleHQtc20gZm9udC1tZWRpdW0gdHJhbnNpdGlvbi1jb2xvcnMgZGlzYWJsZWQ6b3BhY2l0eS01MCIKICAgICAgICAgICAgICA+CiAgICAgICAgICAgICAgICA8RmlsbSBzaXplPXsxNX0gLz4KICAgICAgICAgICAgICAgIHt1cGxvYWRTdGF0dXMgPT09ICdmZXRjaGluZy11cmwnID8gJ0dldHRpbmcgVVJMLi4uJyA6IHVwbG9hZERhdGEgPyAnVVJMIFJlYWR5IOKckycgOiAnR2V0IFVwbG9hZCBVUkwnfQogICAgICAgICAgICAgIDwvYnV0dG9uPgogICAgICAgICAgICAgIHt1cGxvYWREYXRhICYmICgKICAgICAgICAgICAgICAgIDxzcGFuIGNsYXNzTmFtZT0idGV4dC14cyB0ZXh0LWdyZWVuLTQwMCBmbGV4IGl0ZW1zLWNlbnRlciBnYXAtMSI+CiAgICAgICAgICAgICAgICAgIDxDaGVja0NpcmNsZSBzaXplPXsxMn0gLz4gVXBsb2FkIFVSTCByZWFkeQogICAgICAgICAgICAgICAgPC9zcGFuPgogICAgICAgICAgICAgICl9CiAgICAgICAgICAgIDwvZGl2PgoKICAgICAgICAgICAgey8qIFN0ZXAgMjogU2VsZWN0IGFuZCB1cGxvYWQgZmlsZSAqL30KICAgICAgICAgICAge3VwbG9hZERhdGEgJiYgdXBsb2FkU3RhdHVzICE9PSAnZG9uZScgJiYgKAogICAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPSJib3JkZXIgYm9yZGVyLWRhc2hlZCBib3JkZXItZ3JheS03MDAgcm91bmRlZC14bCBwLTYgc3BhY2UteS00Ij4KICAgICAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPSJmbGV4IGZsZXgtY29sIGl0ZW1zLWNlbnRlciBnYXAtMyB0ZXh0LWNlbnRlciI+CiAgICAgICAgICAgICAgICAgIDxVcGxvYWQgc2l6ZT17MzJ9IGNsYXNzTmFtZT0idGV4dC1ncmF5LTYwMCIgLz4KICAgICAgICAgICAgICAgICAgPGRpdj4KICAgICAgICAgICAgICAgICAgICA8cCBjbGFzc05hbWU9InRleHQtc20gdGV4dC1ncmF5LTQwMCI+U2VsZWN0IGEgdmlkZW8gZmlsZSB0byB1cGxvYWQ8L3A+CiAgICAgICAgICAgICAgICAgICAgPHAgY2xhc3NOYW1lPSJ0ZXh0LXhzIHRleHQtZ3JheS02MDAgbXQtMC41Ij5NUDQsIE1PViwgb3IgV2ViTTwvcD4KICAgICAgICAgICAgICAgICAgPC9kaXY+CiAgICAgICAgICAgICAgICAgIDxpbnB1dAogICAgICAgICAgICAgICAgICAgIHJlZj17ZmlsZUlucHV0UmVmfQogICAgICAgICAgICAgICAgICAgIHR5cGU9ImZpbGUiCiAgICAgICAgICAgICAgICAgICAgYWNjZXB0PSJ2aWRlby8qIgogICAgICAgICAgICAgICAgICAgIG9uQ2hhbmdlPXtoYW5kbGVGaWxlU2VsZWN0fQogICAgICAgICAgICAgICAgICAgIGNsYXNzTmFtZT0iaGlkZGVuIgogICAgICAgICAgICAgICAgICAvPgogICAgICAgICAgICAgICAgICA8YnV0dG9uCiAgICAgICAgICAgICAgICAgICAgdHlwZT0iYnV0dG9uIgogICAgICAgICAgICAgICAgICAgIG9uQ2xpY2s9eygpID0+IGZpbGVJbnB1dFJlZi5jdXJyZW50Py5jbGljaygpfQogICAgICAgICAgICAgICAgICAgIGNsYXNzTmFtZT0icHgtNCBweS0yIGJnLWdyYXktODAwIGhvdmVyOmJnLWdyYXktNzAwIHRleHQtZ3JheS0zMDAgcm91bmRlZC1sZyB0ZXh0LXNtIHRyYW5zaXRpb24tY29sb3JzIgogICAgICAgICAgICAgICAgICA+CiAgICAgICAgICAgICAgICAgICAgQ2hvb3NlIEZpbGUKICAgICAgICAgICAgICAgICAgPC9idXR0b24+CiAgICAgICAgICAgICAgICAgIHtzZWxlY3RlZEZpbGUgJiYgKAogICAgICAgICAgICAgICAgICAgIDxwIGNsYXNzTmFtZT0idGV4dC14cyB0ZXh0LWdyYXktNDAwIj4KICAgICAgICAgICAgICAgICAgICAgIFNlbGVjdGVkOiA8c3BhbiBjbGFzc05hbWU9InRleHQtd2hpdGUiPntzZWxlY3RlZEZpbGUubmFtZX08L3NwYW4+eycgJ30KICAgICAgICAgICAgICAgICAgICAgICh7KHNlbGVjdGVkRmlsZS5zaXplIC8gMTAyNCAvIDEwMjQpLnRvRml4ZWQoMSl9IE1CKQogICAgICAgICAgICAgICAgICAgIDwvcD4KICAgICAgICAgICAgICAgICAgKX0KICAgICAgICAgICAgICAgIDwvZGl2PgoKICAgICAgICAgICAgICAgIHtzZWxlY3RlZEZpbGUgJiYgdXBsb2FkU3RhdHVzICE9PSAndXBsb2FkaW5nJyAmJiAoCiAgICAgICAgICAgICAgICAgIDxidXR0b24KICAgICAgICAgICAgICAgICAgICB0eXBlPSJidXR0b24iCiAgICAgICAgICAgICAgICAgICAgb25DbGljaz17aGFuZGxlVXBsb2FkfQogICAgICAgICAgICAgICAgICAgIGNsYXNzTmFtZT0idy1mdWxsIHB5LTIuNSBiZy1yZWQtNjAwIGhvdmVyOmJnLXJlZC03MDAgdGV4dC13aGl0ZSByb3VuZGVkLWxnIHRleHQtc20gZm9udC1tZWRpdW0gdHJhbnNpdGlvbi1jb2xvcnMiCiAgICAgICAgICAgICAgICAgID4KICAgICAgICAgICAgICAgICAgICBVcGxvYWQgVmlkZW8KICAgICAgICAgICAgICAgICAgPC9idXR0b24+CiAgICAgICAgICAgICAgICApfQoKICAgICAgICAgICAgICAgIHt1cGxvYWRTdGF0dXMgPT09ICd1cGxvYWRpbmcnICYmICgKICAgICAgICAgICAgICAgICAgPGRpdiBjbGFzc05hbWU9InNwYWNlLXktMiI+CiAgICAgICAgICAgICAgICAgICAgPGRpdiBjbGFzc05hbWU9ImZsZXgganVzdGlmeS1iZXR3ZWVuIHRleHQteHMgdGV4dC1ncmF5LTQwMCI+CiAgICAgICAgICAgICAgICAgICAgICA8c3Bhbj5VcGxvYWRpbmcuLi48L3NwYW4+CiAgICAgICAgICAgICAgICAgICAgICA8c3Bhbj57dXBsb2FkUHJvZ3Jlc3N9JTwvc3Bhbj4KICAgICAgICAgICAgICAgICAgICA8L2Rpdj4KICAgICAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT0iaC0yIGJnLWdyYXktODAwIHJvdW5kZWQtZnVsbCBvdmVyZmxvdy1oaWRkZW4iPgogICAgICAgICAgICAgICAgICAgICAgPGRpdgogICAgICAgICAgICAgICAgICAgICAgICBjbGFzc05hbWU9ImgtZnVsbCBiZy1yZWQtNjAwIHJvdW5kZWQtZnVsbCB0cmFuc2l0aW9uLWFsbCBkdXJhdGlvbi0zMDAiCiAgICAgICAgICAgICAgICAgICAgICAgIHN0eWxlPXt7IHdpZHRoOiBgJHt1cGxvYWRQcm9ncmVzc30lYCB9fQogICAgICAgICAgICAgICAgICAgICAgLz4KICAgICAgICAgICAgICAgICAgICA8L2Rpdj4KICAgICAgICAgICAgICAgICAgPC9kaXY+CiAgICAgICAgICAgICAgICApfQogICAgICAgICAgICAgIDwvZGl2PgogICAgICAgICAgICApfQoKICAgICAgICAgICAgey8qIFVwbG9hZCBzdWNjZXNzICovfQogICAgICAgICAgICB7dXBsb2FkU3RhdHVzID09PSAnZG9uZScgJiYgdXBsb2FkRGF0YSAmJiAoCiAgICAgICAgICAgICAgPGRpdiBjbGFzc05hbWU9ImJnLWdyZWVuLTkwMC8yMCBib3JkZXIgYm9yZGVyLWdyZWVuLTgwMCByb3VuZGVkLXhsIHAtNCBzcGFjZS15LTIiPgogICAgICAgICAgICAgICAgPGRpdiBjbGFzc05hbWU9ImZsZXggaXRlbXMtY2VudGVyIGdhcC0yIHRleHQtZ3JlZW4tNDAwIGZvbnQtbWVkaXVtIHRleHQtc20iPgogICAgICAgICAgICAgICAgICA8Q2hlY2tDaXJjbGUgc2l6ZT17MTZ9IC8+CiAgICAgICAgICAgICAgICAgIFZpZGVvIHVwbG9hZGVkIHN1Y2Nlc3NmdWxseSEKICAgICAgICAgICAgICAgIDwvZGl2PgogICAgICAgICAgICAgICAgPGRpdiBjbGFzc05hbWU9InRleHQteHMgdGV4dC1ncmF5LTQwMCBmb250LW1vbm8iPgogICAgICAgICAgICAgICAgICBWaWRlbyBJRDogPHNwYW4gY2xhc3NOYW1lPSJ0ZXh0LXdoaXRlIj57dXBsb2FkRGF0YS52aWRlb0lkfTwvc3Bhbj4KICAgICAgICAgICAgICAgIDwvZGl2PgogICAgICAgICAgICAgICAge3VwbG9hZERhdGEudGh1bWJuYWlsVXJsICYmICgKICAgICAgICAgICAgICAgICAgPGRpdiBjbGFzc05hbWU9InNwYWNlLXktMSI+CiAgICAgICAgICAgICAgICAgICAgPHAgY2xhc3NOYW1lPSJ0ZXh0LXhzIHRleHQtZ3JheS01MDAiPkF1dG8tZ2VuZXJhdGVkIHRodW1ibmFpbDo8L3A+CiAgICAgICAgICAgICAgICAgICAgPGltZwogICAgICAgICAgICAgICAgICAgICAgc3JjPXt1cGxvYWREYXRhLnRodW1ibmFpbFVybH0KICAgICAgICAgICAgICAgICAgICAgIGFsdD0iVmlkZW8gdGh1bWJuYWlsIgogICAgICAgICAgICAgICAgICAgICAgY2xhc3NOYW1lPSJoLTIwIHctYXV0byByb3VuZGVkLWxnIGJvcmRlciBib3JkZXItZ3JheS03MDAgb2JqZWN0LWNvdmVyIgogICAgICAgICAgICAgICAgICAgIC8+CiAgICAgICAgICAgICAgICAgIDwvZGl2PgogICAgICAgICAgICAgICAgKX0KICAgICAgICAgICAgICA8L2Rpdj4KICAgICAgICAgICAgKX0KCiAgICAgICAgICAgIHt1cGxvYWRTdGF0dXMgPT09ICdlcnJvcicgJiYgKAogICAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPSJmbGV4IGl0ZW1zLWNlbnRlciBnYXAtMiB0ZXh0LXJlZC00MDAgdGV4dC1zbSI+CiAgICAgICAgICAgICAgICA8QWxlcnRDaXJjbGUgc2l6ZT17MTR9IC8+CiAgICAgICAgICAgICAgICBVcGxvYWQgZmFpbGVkLiBUcnkgYWdhaW4uCiAgICAgICAgICAgICAgPC9kaXY+CiAgICAgICAgICAgICl9CgogICAgICAgICAgICA8cCBjbGFzc05hbWU9InRleHQteHMgdGV4dC1ncmF5LTYwMCI+CiAgICAgICAgICAgICAgWW91IGNhbiBzYXZlIHdpdGhvdXQgYSB2aWRlbyDigJQgaXQgY2FuIGJlIGFkZGVkIGxhdGVyIGJ5IGVkaXRpbmcgdGhlIGVwaXNvZGUuCiAgICAgICAgICAgIDwvcD4KICAgICAgICAgIDwvZGl2PgogICAgICAgIDwvc2VjdGlvbj4KCiAgICAgICAgey8qIFN1Ym1pdCAqL30KICAgICAgICA8ZGl2IGNsYXNzTmFtZT0iZmxleCBpdGVtcy1jZW50ZXIgZ2FwLTQiPgogICAgICAgICAgPGJ1dHRvbgogICAgICAgICAgICB0eXBlPSJzdWJtaXQiCiAgICAgICAgICAgIGRpc2FibGVkPXtzdWJtaXR0aW5nfQogICAgICAgICAgICBjbGFzc05hbWU9InB4LTYgcHktMi41IGJnLXJlZC02MDAgaG92ZXI6YmctcmVkLTcwMCB0ZXh0LXdoaXRlIHJvdW5kZWQtbGcgdGV4dC1zbSBmb250LW1lZGl1bSB0cmFuc2l0aW9uLWNvbG9ycyBkaXNhYmxlZDpvcGFjaXR5LTUwIgogICAgICAgICAgPgogICAgICAgICAgICB7c3VibWl0dGluZyA/ICdDcmVhdGluZy4uLicgOiAnQ3JlYXRlIEVwaXNvZGUnfQogICAgICAgICAgPC9idXR0b24+CiAgICAgICAgICA8YnV0dG9uCiAgICAgICAgICAgIHR5cGU9ImJ1dHRvbiIKICAgICAgICAgICAgb25DbGljaz17KCkgPT4gcm91dGVyLmJhY2soKX0KICAgICAgICAgICAgY2xhc3NOYW1lPSJweC02IHB5LTIuNSBiZy1ncmF5LTgwMCBob3ZlcjpiZy1ncmF5LTcwMCB0ZXh0LWdyYXktMzAwIHJvdW5kZWQtbGcgdGV4dC1zbSBmb250LW1lZGl1bSB0cmFuc2l0aW9uLWNvbG9ycyIKICAgICAgICAgID4KICAgICAgICAgICAgQ2FuY2VsCiAgICAgICAgICA8L2J1dHRvbj4KICAgICAgICA8L2Rpdj4KICAgICAgPC9mb3JtPgogICAgPC9kaXY+CiAgKTsKfQoKZnVuY3Rpb24gRmllbGQoewogIGxhYmVsLAogIHJlcXVpcmVkLAogIGNoaWxkcmVuLAp9OiB7CiAgbGFiZWw6IHN0cmluZzsKICByZXF1aXJlZD86IGJvb2xlYW47CiAgY2hpbGRyZW46IFJlYWN0LlJlYWN0Tm9kZTsKfSkgewogIHJldHVybiAoCiAgICA8ZGl2IGNsYXNzTmFtZT0iZmxleCBmbGV4LWNvbCBnYXAtMS41Ij4KICAgICAgPGxhYmVsIGNsYXNzTmFtZT0idGV4dC14cyBmb250LW1lZGl1bSB0ZXh0LWdyYXktNDAwIj4KICAgICAgICB7bGFiZWx9CiAgICAgICAge3JlcXVpcmVkICYmIDxzcGFuIGNsYXNzTmFtZT0idGV4dC1yZWQtNTAwIG1sLTEiPio8L3NwYW4+fQogICAgICA8L2xhYmVsPgogICAgICB7Y2hpbGRyZW59CiAgICA8L2Rpdj4KICApOwp9Cgpjb25zdCBpbnB1dENsYXNzID0KICAndy1mdWxsIHB4LTMgcHktMi41IGJnLWdyYXktOTUwIGJvcmRlciBib3JkZXItZ3JheS03MDAgcm91bmRlZC1sZyB0ZXh0LXNtIHRleHQtd2hpdGUgcGxhY2Vob2xkZXItZ3JheS02MDAgZm9jdXM6b3V0bGluZS1ub25lIGZvY3VzOmJvcmRlci1yZWQtNjAwIHRyYW5zaXRpb24tY29sb3JzJzsK"}
+'use client';
+
+import { useState, useRef } from 'react';
+import { useParams, useRouter } from 'next/navigation';
+import { Upload, CheckCircle, AlertCircle, Film } from 'lucide-react';
+import { useToast } from '@/components/admin/Toast';
+
+interface UploadData {
+  uploadUrl: string;
+  videoId: string;
+  thumbnailUrl?: string;
+}
+
+export default function NewEpisodePage() {
+  const { id: seriesId } = useParams<{ id: string }>();
+  const router = useRouter();
+  const { toast } = useToast();
+  const fileInputRef = useRef<HTMLInputElement>(null);
+
+  // Form state
+  const [form, setForm] = useState({
+    episodeNumber: 1,
+    title: '',
+    titleHi: '',
+    titleZh: '',
+    duration: '',
+    isFree: false,
+  });
+
+  // Upload state
+  const [uploadData, setUploadData] = useState<UploadData | null>(null);
+  const [uploadProgress, setUploadProgress] = useState(0);
+  const [uploadStatus, setUploadStatus] = useState<'idle' | 'fetching-url' | 'uploading' | 'done' | 'error'>('idle');
+  const [selectedFile, setSelectedFile] = useState<File | null>(null);
+  const [submitting, setSubmitting] = useState(false);
+
+  const update = (field: string, value: unknown) =>
+    setForm((prev) => ({ ...prev, [field]: value }));
+
+  const handleGetUploadUrl = async () => {
+    setUploadStatus('fetching-url');
+    try {
+      const res = await fetch('/api/admin/upload', { method: 'POST' });
+      if (!res.ok) throw new Error('Failed to get upload URL');
+      const data: UploadData = await res.json();
+      setUploadData(data);
+      setUploadStatus('idle');
+      toast('Upload URL ready — select a video file', 'success');
+    } catch (err) {
+      toast(err instanceof Error ? err.message : 'Failed to get upload URL', 'error');
+      setUploadStatus('error');
+    }
+  };
+
+  const handleFileSelect = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const file = e.target.files?.[0];
+    if (file) setSelectedFile(file);
+  };
+
+  const handleUpload = async () => {
+    if (!uploadData || !selectedFile) return;
+    setUploadStatus('uploading');
+    setUploadProgress(0);
+
+    try {
+      // Use XHR for progress tracking
+      await new Promise<void>((resolve, reject) => {
+        const xhr = new XMLHttpRequest();
+        xhr.upload.addEventListener('progress', (e) => {
+          if (e.lengthComputable) {
+            setUploadProgress(Math.round((e.loaded / e.total) * 100));
+          }
+        });
+        xhr.addEventListener('load', () => {
+          if (xhr.status >= 200 && xhr.status < 300) {
+            resolve();
+          } else {
+            reject(new Error(`Upload failed: ${xhr.status}`));
+          }
+        });
+        xhr.addEventListener('error', () => reject(new Error('Network error')));
+        xhr.open('POST', uploadData.uploadUrl);
+
+        const formData = new FormData();
+        formData.append('file', selectedFile);
+        xhr.send(formData);
+      });
+
+      setUploadStatus('done');
+      setUploadProgress(100);
+      toast('Video uploaded successfully!', 'success');
+    } catch (err) {
+      setUploadStatus('error');
+      toast(err instanceof Error ? err.message : 'Upload failed', 'error');
+    }
+  };
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+
+    if (!form.title) {
+      toast('Title is required', 'error');
+      return;
+    }
+
+    setSubmitting(true);
+    try {
+      const payload = {
+        episodeNumber: Number(form.episodeNumber),
+        title: form.title,
+        titleHi: form.titleHi || undefined,
+        titleZh: form.titleZh || undefined,
+        duration: form.duration ? Number(form.duration) : undefined,
+        isFree: form.isFree,
+        videoId: uploadData?.videoId,
+        thumbnail: uploadData?.thumbnailUrl,
+      };
+
+      const res = await fetch(`/api/admin/series/${seriesId}/episodes`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(payload),
+      });
+
+      if (!res.ok) {
+        const err = await res.json().catch(() => ({}));
+        throw new Error(err.error ?? 'Failed to create episode');
+      }
+
+      toast('Episode created!', 'success');
+      router.push(`/admin/series/${seriesId}`);
+    } catch (err) {
+      toast(err instanceof Error ? err.message : 'Something went wrong', 'error');
+    } finally {
+      setSubmitting(false);
+    }
+  };
+
+  return (
+    <div className="max-w-3xl mx-auto space-y-6">
+      <div>
+        <h1 className="text-2xl font-bold text-white">Add Episode</h1>
+        <p className="text-gray-500 text-sm mt-0.5">Create a new episode for this series.</p>
+      </div>
+
+      <form onSubmit={handleSubmit} className="space-y-6">
+        {/* Episode Details */}
+        <section className="bg-gray-900 border border-gray-800 rounded-xl p-6 space-y-5">
+          <h2 className="text-sm font-semibold text-gray-400 uppercase tracking-wider">Episode Details</h2>
+
+          <div className="grid grid-cols-2 gap-5">
+            <Field label="Episode Number" required>
+              <input
+                type="number"
+                min={1}
+                required
+                value={form.episodeNumber}
+                onChange={(e) => update('episodeNumber', e.target.value)}
+                className={inputClass}
+              />
+            </Field>
+            <Field label="Duration (seconds)">
+              <input
+                type="number"
+                min={0}
+                value={form.duration}
+                onChange={(e) => update('duration', e.target.value)}
+                placeholder="e.g. 1320"
+                className={inputClass}
+              />
+            </Field>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
+            <Field label="Title (EN)" required>
+              <input
+                required
+                value={form.title}
+                onChange={(e) => update('title', e.target.value)}
+                placeholder="Episode title"
+                className={inputClass}
+              />
+            </Field>
+            <Field label="Title (Hindi)">
+              <input
+                value={form.titleHi}
+                onChange={(e) => update('titleHi', e.target.value)}
+                placeholder="हिंदी शीर्षक"
+                className={inputClass}
+              />
+            </Field>
+            <Field label="Title (Chinese)">
+              <input
+                value={form.titleZh}
+                onChange={(e) => update('titleZh', e.target.value)}
+                placeholder="中文标题"
+                className={inputClass}
+              />
+            </Field>
+          </div>
+
+          <Field label="Access">
+            <label className="flex items-center gap-3 cursor-pointer">
+              <div
+                onClick={() => update('isFree', !form.isFree)}
+                className={`w-10 h-6 rounded-full transition-colors relative cursor-pointer ${
+                  form.isFree ? 'bg-green-600' : 'bg-gray-700'
+                }`}
+              >
+                <div
+                  className={`absolute top-1 w-4 h-4 bg-white rounded-full transition-transform ${
+                    form.isFree ? 'translate-x-5' : 'translate-x-1'
+                  }`}
+                />
+              </div>
+              <span className="text-sm text-gray-300">{form.isFree ? 'Free episode' : 'Paid (coin required)'}</span>
+            </label>
+          </Field>
+        </section>
+
+        {/* Video Upload */}
+        <section className="bg-gray-900 border border-gray-800 rounded-xl p-6 space-y-5">
+          <h2 className="text-sm font-semibold text-gray-400 uppercase tracking-wider">Video Upload</h2>
+
+          <div className="space-y-4">
+            {/* Step 1: Get upload URL */}
+            <div className="flex items-center gap-4">
+              <button
+                type="button"
+                onClick={handleGetUploadUrl}
+                disabled={uploadStatus === 'fetching-url' || !!uploadData}
+                className="flex items-center gap-2 px-4 py-2.5 bg-gray-800 hover:bg-gray-700 text-gray-300 rounded-lg text-sm font-medium transition-colors disabled:opacity-50"
+              >
+                <Film size={15} />
+                {uploadStatus === 'fetching-url' ? 'Getting URL...' : uploadData ? 'URL Ready ✓' : 'Get Upload URL'}
+              </button>
+              {uploadData && (
+                <span className="text-xs text-green-400 flex items-center gap-1">
+                  <CheckCircle size={12} /> Upload URL ready
+                </span>
+              )}
+            </div>
+
+            {/* Step 2: Select and upload file */}
+            {uploadData && uploadStatus !== 'done' && (
+              <div className="border border-dashed border-gray-700 rounded-xl p-6 space-y-4">
+                <div className="flex flex-col items-center gap-3 text-center">
+                  <Upload size={32} className="text-gray-600" />
+                  <div>
+                    <p className="text-sm text-gray-400">Select a video file to upload</p>
+                    <p className="text-xs text-gray-600 mt-0.5">MP4, MOV, or WebM</p>
+                  </div>
+                  <input
+                    ref={fileInputRef}
+                    type="file"
+                    accept="video/*"
+                    onChange={handleFileSelect}
+                    className="hidden"
+                  />
+                  <button
+                    type="button"
+                    onClick={() => fileInputRef.current?.click()}
+                    className="px-4 py-2 bg-gray-800 hover:bg-gray-700 text-gray-300 rounded-lg text-sm transition-colors"
+                  >
+                    Choose File
+                  </button>
+                  {selectedFile && (
+                    <p className="text-xs text-gray-400">
+                      Selected: <span className="text-white">{selectedFile.name}</span>{' '}
+                      ({(selectedFile.size / 1024 / 1024).toFixed(1)} MB)
+                    </p>
+                  )}
+                </div>
+
+                {selectedFile && uploadStatus !== 'uploading' && (
+                  <button
+                    type="button"
+                    onClick={handleUpload}
+                    className="w-full py-2.5 bg-red-600 hover:bg-red-700 text-white rounded-lg text-sm font-medium transition-colors"
+                  >
+                    Upload Video
+                  </button>
+                )}
+
+                {uploadStatus === 'uploading' && (
+                  <div className="space-y-2">
+                    <div className="flex justify-between text-xs text-gray-400">
+                      <span>Uploading...</span>
+                      <span>{uploadProgress}%</span>
+                    </div>
+                    <div className="h-2 bg-gray-800 rounded-full overflow-hidden">
+                      <div
+                        className="h-full bg-red-600 rounded-full transition-all duration-300"
+                        style={{ width: `${uploadProgress}%` }}
+                      />
+                    </div>
+                  </div>
+                )}
+              </div>
+            )}
+
+            {/* Upload success */}
+            {uploadStatus === 'done' && uploadData && (
+              <div className="bg-green-900/20 border border-green-800 rounded-xl p-4 space-y-2">
+                <div className="flex items-center gap-2 text-green-400 font-medium text-sm">
+                  <CheckCircle size={16} />
+                  Video uploaded successfully!
+                </div>
+                <div className="text-xs text-gray-400 font-mono">
+                  Video ID: <span className="text-white">{uploadData.videoId}</span>
+                </div>
+                {uploadData.thumbnailUrl && (
+                  <div className="space-y-1">
+                    <p className="text-xs text-gray-500">Auto-generated thumbnail:</p>
+                    <img
+                      src={uploadData.thumbnailUrl}
+                      alt="Video thumbnail"
+                      className="h-20 w-auto rounded-lg border border-gray-700 object-cover"
+                    />
+                  </div>
+                )}
+              </div>
+            )}
+
+            {uploadStatus === 'error' && (
+              <div className="flex items-center gap-2 text-red-400 text-sm">
+                <AlertCircle size={14} />
+                Upload failed. Try again.
+              </div>
+            )}
+
+            <p className="text-xs text-gray-600">
+              You can save without a video — it can be added later by editing the episode.
+            </p>
+          </div>
+        </section>
+
+        {/* Submit */}
+        <div className="flex items-center gap-4">
+          <button
+            type="submit"
+            disabled={submitting}
+            className="px-6 py-2.5 bg-red-600 hover:bg-red-700 text-white rounded-lg text-sm font-medium transition-colors disabled:opacity-50"
+          >
+            {submitting ? 'Creating...' : 'Create Episode'}
+          </button>
+          <button
+            type="button"
+            onClick={() => router.back()}
+            className="px-6 py-2.5 bg-gray-800 hover:bg-gray-700 text-gray-300 rounded-lg text-sm font-medium transition-colors"
+          >
+            Cancel
+          </button>
+        </div>
+      </form>
+    </div>
+  );
+}
+
+function Field({
+  label,
+  required,
+  children,
+}: {
+  label: string;
+  required?: boolean;
+  children: React.ReactNode;
+}) {
+  return (
+    <div className="flex flex-col gap-1.5">
+      <label className="text-xs font-medium text-gray-400">
+        {label}
+        {required && <span className="text-red-500 ml-1">*</span>}
+      </label>
+      {children}
+    </div>
+  );
+}
+
+const inputClass =
+  'w-full px-3 py-2.5 bg-gray-950 border border-gray-700 rounded-lg text-sm text-white placeholder-gray-600 focus:outline-none focus:border-red-600 transition-colors';

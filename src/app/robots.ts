@@ -1,1 +1,14 @@
-{"data":"aW1wb3J0IHsgTWV0YWRhdGFSb3V0ZSB9IGZyb20gJ25leHQnOwoKZXhwb3J0IGRlZmF1bHQgZnVuY3Rpb24gcm9ib3RzKCk6IE1ldGFkYXRhUm91dGUuUm9ib3RzIHsKICByZXR1cm4gewogICAgcnVsZXM6IFsKICAgICAgewogICAgICAgIHVzZXJBZ2VudDogJyonLAogICAgICAgIGFsbG93OiAnLycsCiAgICAgICAgZGlzYWxsb3c6IFsnL2FkbWluJywgJy9hcGkvJywgJy9hdXRoLyddLAogICAgICB9LAogICAgXSwKICAgIHNpdGVtYXA6ICdodHRwczovL3RoZWd1bGVsLmNvbS9zaXRlbWFwLnhtbCcsCiAgfTsKfQo="}
+import { MetadataRoute } from 'next';
+
+export default function robots(): MetadataRoute.Robots {
+  return {
+    rules: [
+      {
+        userAgent: '*',
+        allow: '/',
+        disallow: ['/admin', '/api/', '/auth/'],
+      },
+    ],
+    sitemap: 'https://thegulel.com/sitemap.xml',
+  };
+}

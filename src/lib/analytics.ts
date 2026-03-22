@@ -1,1 +1,38 @@
-{"data":"Ly8gQ3VzdG9tIGV2ZW50IHRyYWNraW5nIGZvciBHQTQgKyBGQiBQaXhlbApleHBvcnQgZnVuY3Rpb24gdHJhY2tFdmVudChldmVudE5hbWU6IHN0cmluZywgcGFyYW1zPzogUmVjb3JkPHN0cmluZywgdW5rbm93bj4pIHsKICAvLyBHQTQKICBpZiAodHlwZW9mIHdpbmRvdyAhPT0gJ3VuZGVmaW5lZCcgJiYgKHdpbmRvdyBhcyBhbnkpLmd0YWcpIHsKICAgICh3aW5kb3cgYXMgYW55KS5ndGFnKCdldmVudCcsIGV2ZW50TmFtZSwgcGFyYW1zKTsKICB9CiAgLy8gRkIgUGl4ZWwKICBpZiAodHlwZW9mIHdpbmRvdyAhPT0gJ3VuZGVmaW5lZCcgJiYgKHdpbmRvdyBhcyBhbnkpLmZicSkgewogICAgKHdpbmRvdyBhcyBhbnkpLmZicSgndHJhY2tDdXN0b20nLCBldmVudE5hbWUsIHBhcmFtcyk7CiAgfQp9CgovLyBQcmUtZGVmaW5lZCBldmVudHMKZXhwb3J0IGNvbnN0IGFuYWx5dGljcyA9IHsKICBlcGlzb2RlVmlldzogKHNlcmllc0lkOiBzdHJpbmcsIGVwaXNvZGVJZDogc3RyaW5nLCBlcGlzb2RlTnVtYmVyOiBudW1iZXIpID0+CiAgICB0cmFja0V2ZW50KCdlcGlzb2RlX3ZpZXcnLCB7IHNlcmllc19pZDogc2VyaWVzSWQsIGVwaXNvZGVfaWQ6IGVwaXNvZGVJZCwgZXBpc29kZV9udW1iZXI6IGVwaXNvZGVOdW1iZXIgfSksCgogIGVwaXNvZGVVbmxvY2s6IChlcGlzb2RlSWQ6IHN0cmluZywgY29pbnNTcGVudDogbnVtYmVyKSA9PgogICAgdHJhY2tFdmVudCgnZXBpc29kZV91bmxvY2snLCB7IGVwaXNvZGVfaWQ6IGVwaXNvZGVJZCwgY29pbnNfc3BlbnQ6IGNvaW5zU3BlbnQgfSksCgogIGNvaW5QdXJjaGFzZTogKHBhY2thZ2VOYW1lOiBzdHJpbmcsIGFtb3VudDogbnVtYmVyLCBjdXJyZW5jeTogc3RyaW5nKSA9PgogICAgdHJhY2tFdmVudCgnY29pbl9wdXJjaGFzZScsIHsgcGFja2FnZV9uYW1lOiBwYWNrYWdlTmFtZSwgdmFsdWU6IGFtb3VudCwgY3VycmVuY3kgfSksCgogIGFkV2F0Y2g6ICgpID0+CiAgICB0cmFja0V2ZW50KCdhZF93YXRjaCcpLAoKICBzaWduVXA6IChwcm92aWRlcjogc3RyaW5nKSA9PgogICAgdHJhY2tFdmVudCgnc2lnbl91cCcsIHsgbWV0aG9kOiBwcm92aWRlciB9KSwKCiAgc2VyaWVzVmlldzogKHNlcmllc0lkOiBzdHJpbmcsIHRpdGxlOiBzdHJpbmcpID0+CiAgICB0cmFja0V2ZW50KCdzZXJpZXNfdmlldycsIHsgc2VyaWVzX2lkOiBzZXJpZXNJZCwgc2VyaWVzX3RpdGxlOiB0aXRsZSB9KSwKCiAgc2VhcmNoOiAocXVlcnk6IHN0cmluZywgcmVzdWx0c0NvdW50OiBudW1iZXIpID0+CiAgICB0cmFja0V2ZW50KCdzZWFyY2gnLCB7IHNlYXJjaF90ZXJtOiBxdWVyeSwgcmVzdWx0c19jb3VudDogcmVzdWx0c0NvdW50IH0pLAoKICBzaGFyZTogKHBsYXRmb3JtOiBzdHJpbmcsIHNlcmllc0lkOiBzdHJpbmcpID0+CiAgICB0cmFja0V2ZW50KCdzaGFyZScsIHsgbWV0aG9kOiBwbGF0Zm9ybSwgY29udGVudF9pZDogc2VyaWVzSWQgfSksCn07Cg=="}
+// Custom event tracking for GA4 + FB Pixel
+export function trackEvent(eventName: string, params?: Record<string, unknown>) {
+  // GA4
+  if (typeof window !== 'undefined' && (window as any).gtag) {
+    (window as any).gtag('event', eventName, params);
+  }
+  // FB Pixel
+  if (typeof window !== 'undefined' && (window as any).fbq) {
+    (window as any).fbq('trackCustom', eventName, params);
+  }
+}
+
+// Pre-defined events
+export const analytics = {
+  episodeView: (seriesId: string, episodeId: string, episodeNumber: number) =>
+    trackEvent('episode_view', { series_id: seriesId, episode_id: episodeId, episode_number: episodeNumber }),
+
+  episodeUnlock: (episodeId: string, coinsSpent: number) =>
+    trackEvent('episode_unlock', { episode_id: episodeId, coins_spent: coinsSpent }),
+
+  coinPurchase: (packageName: string, amount: number, currency: string) =>
+    trackEvent('coin_purchase', { package_name: packageName, value: amount, currency }),
+
+  adWatch: () =>
+    trackEvent('ad_watch'),
+
+  signUp: (provider: string) =>
+    trackEvent('sign_up', { method: provider }),
+
+  seriesView: (seriesId: string, title: string) =>
+    trackEvent('series_view', { series_id: seriesId, series_title: title }),
+
+  search: (query: string, resultsCount: number) =>
+    trackEvent('search', { search_term: query, results_count: resultsCount }),
+
+  share: (platform: string, seriesId: string) =>
+    trackEvent('share', { method: platform, content_id: seriesId }),
+};

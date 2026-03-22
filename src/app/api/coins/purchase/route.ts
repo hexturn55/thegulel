@@ -1,1 +1,94 @@
-{"data":"aW1wb3J0IHsgTmV4dFJlcXVlc3QsIE5leHRSZXNwb25zZSB9IGZyb20gJ25leHQvc2VydmVyJzsKaW1wb3J0IHsgc3RyaXBlIH0gZnJvbSAnQC9saWIvc3RyaXBlJzsKaW1wb3J0IHByaXNtYSBmcm9tICdAL2xpYi9wcmlzbWEnOwoKZXhwb3J0IGFzeW5jIGZ1bmN0aW9uIFBPU1QocmVxdWVzdDogTmV4dFJlcXVlc3QpIHsKICB0cnkgewogICAgY29uc3QgeyBwYWNrYWdlSWQsIGN1cnJlbmN5ID0gJ1VTRCcgfSA9IGF3YWl0IHJlcXVlc3QuanNvbigpOwogICAgY29uc3QgdXNlcklkID0gcmVxdWVzdC5jb29raWVzLmdldCgndXNlcklkJyk/LnZhbHVlOwoKICAgIGlmICghdXNlcklkKSB7CiAgICAgIHJldHVybiBOZXh0UmVzcG9uc2UuanNvbigKICAgICAgICB7IGVycm9yOiAnTm90IGF1dGhlbnRpY2F0ZWQnIH0sCiAgICAgICAgeyBzdGF0dXM6IDQwMSB9CiAgICAgICk7CiAgICB9CgogICAgLy8gR2V0IGNvaW4gcGFja2FnZQogICAgY29uc3QgcGtnID0gYXdhaXQgcHJpc21hLmNvaW5QYWNrYWdlLmZpbmRVbmlxdWUoewogICAgICB3aGVyZTogeyBpZDogcGFja2FnZUlkLCBhY3RpdmU6IHRydWUgfSwKICAgIH0pOwoKICAgIGlmICghcGtnKSB7CiAgICAgIHJldHVybiBOZXh0UmVzcG9uc2UuanNvbigKICAgICAgICB7IGVycm9yOiAnUGFja2FnZSBub3QgZm91bmQnIH0sCiAgICAgICAgeyBzdGF0dXM6IDQwNCB9CiAgICAgICk7CiAgICB9CgogICAgY29uc3QgdXNlciA9IGF3YWl0IHByaXNtYS51c2VyLmZpbmRVbmlxdWUoewogICAgICB3aGVyZTogeyBpZDogdXNlcklkIH0sCiAgICB9KTsKCiAgICBpZiAoIXVzZXIpIHsKICAgICAgcmV0dXJuIE5leHRSZXNwb25zZS5qc29uKAogICAgICAgIHsgZXJyb3I6ICdVc2VyIG5vdCBmb3VuZCcgfSwKICAgICAgICB7IHN0YXR1czogNDA0IH0KICAgICAgKTsKICAgIH0KCiAgICAvLyBDcmVhdGUgU3RyaXBlIGNoZWNrb3V0IHNlc3Npb24KICAgIGNvbnN0IHNlc3Npb24gPSBhd2FpdCBzdHJpcGUuY2hlY2tvdXQuc2Vzc2lvbnMuY3JlYXRlKHsKICAgICAgcGF5bWVudF9tZXRob2RfdHlwZXM6IFsnY2FyZCddLAogICAgICBsaW5lX2l0ZW1zOiBbCiAgICAgICAgewogICAgICAgICAgcHJpY2VfZGF0YTogewogICAgICAgICAgICBjdXJyZW5jeTogY3VycmVuY3kudG9Mb3dlckNhc2UoKSwKICAgICAgICAgICAgcHJvZHVjdF9kYXRhOiB7CiAgICAgICAgICAgICAgbmFtZTogcGtnLm5hbWUsCiAgICAgICAgICAgICAgZGVzY3JpcHRpb246IGAke3BrZy5jb2luc30gR3VsZWwgQ29pbnNgLAogICAgICAgICAgICB9LAogICAgICAgICAgICB1bml0X2Ftb3VudDoKICAgICAgICAgICAgICBNYXRoLnJvdW5kKAogICAgICAgICAgICAgICAgKGN1cnJlbmN5ID09PSAnVVNEJyA/IHBrZy5wcmljZVVTRCA6IHBrZy5wcmljZUlOUikgKiAxMDAKICAgICAgICAgICAgICApLAogICAgICAgICAgfSwKICAgICAgICAgIHF1YW50aXR5OiAxLAogICAgICAgIH0sCiAgICAgIF0sCiAgICAgIG1vZGU6ICdwYXltZW50JywKICAgICAgc3VjY2Vzc191cmw6IGAke3Byb2Nlc3MuZW52Lk5FWFRfUFVCTElDX0FQUF9VUkx9L3dhbGxldD9zdWNjZXNzPXRydWVgLAogICAgICBjYW5jZWxfdXJsOiBgJHtwcm9jZXNzLmVudi5ORVhUX1BVQkxJQ19BUFBfVVJMfS93YWxsZXQ/Y2FuY2VsZWQ9dHJ1ZWAsCiAgICAgIG1ldGFkYXRhOiB7CiAgICAgICAgdXNlcklkOiB1c2VyLmlkLAogICAgICAgIHBhY2thZ2VJZDogcGtnLmlkLAogICAgICAgIGNvaW5zOiBwa2cuY29pbnMudG9TdHJpbmcoKSwKICAgICAgfSwKICAgIH0pOwoKICAgIHJldHVybiBOZXh0UmVzcG9uc2UuanNvbih7IHVybDogc2Vzc2lvbi51cmwsIHNlc3Npb25JZDogc2Vzc2lvbi5pZCB9KTsKICB9IGNhdGNoIChlcnJvcikgewogICAgY29uc29sZS5lcnJvcignQ29pbiBwdXJjaGFzZSBlcnJvcjonLCBlcnJvcik7CiAgICByZXR1cm4gTmV4dFJlc3BvbnNlLmpzb24oCiAgICAgIHsgZXJyb3I6ICdQdXJjaGFzZSBmYWlsZWQnIH0sCiAgICAgIHsgc3RhdHVzOiA1MDAgfQogICAgKTsKICB9Cn0KCmV4cG9ydCBhc3luYyBmdW5jdGlvbiBHRVQocmVxdWVzdDogTmV4dFJlcXVlc3QpIHsKICB0cnkgewogICAgY29uc3QgcGFja2FnZXMgPSBhd2FpdCBwcmlzbWEuY29pblBhY2thZ2UuZmluZE1hbnkoewogICAgICB3aGVyZTogeyBhY3RpdmU6IHRydWUgfSwKICAgICAgb3JkZXJCeTogeyBjb2luczogJ2FzYycgfSwKICAgIH0pOwoKICAgIHJldHVybiBOZXh0UmVzcG9uc2UuanNvbih7IHBhY2thZ2VzIH0pOwogIH0gY2F0Y2ggKGVycm9yKSB7CiAgICBjb25zb2xlLmVycm9yKCdGZXRjaCBwYWNrYWdlcyBlcnJvcjonLCBlcnJvcik7CiAgICByZXR1cm4gTmV4dFJlc3BvbnNlLmpzb24oCiAgICAgIHsgZXJyb3I6ICdGYWlsZWQgdG8gZmV0Y2ggcGFja2FnZXMnIH0sCiAgICAgIHsgc3RhdHVzOiA1MDAgfQogICAgKTsKICB9Cn0K"}
+import { NextRequest, NextResponse } from 'next/server';
+import { stripe } from '@/lib/stripe';
+import prisma from '@/lib/prisma';
+
+export async function POST(request: NextRequest) {
+  try {
+    const { packageId, currency = 'USD' } = await request.json();
+    const userId = request.cookies.get('userId')?.value;
+
+    if (!userId) {
+      return NextResponse.json(
+        { error: 'Not authenticated' },
+        { status: 401 }
+      );
+    }
+
+    // Get coin package
+    const pkg = await prisma.coinPackage.findUnique({
+      where: { id: packageId, active: true },
+    });
+
+    if (!pkg) {
+      return NextResponse.json(
+        { error: 'Package not found' },
+        { status: 404 }
+      );
+    }
+
+    const user = await prisma.user.findUnique({
+      where: { id: userId },
+    });
+
+    if (!user) {
+      return NextResponse.json(
+        { error: 'User not found' },
+        { status: 404 }
+      );
+    }
+
+    // Create Stripe checkout session
+    const session = await stripe.checkout.sessions.create({
+      payment_method_types: ['card'],
+      line_items: [
+        {
+          price_data: {
+            currency: currency.toLowerCase(),
+            product_data: {
+              name: pkg.name,
+              description: `${pkg.coins} Gulel Coins`,
+            },
+            unit_amount:
+              Math.round(
+                (currency === 'USD' ? pkg.priceUSD : pkg.priceINR) * 100
+              ),
+          },
+          quantity: 1,
+        },
+      ],
+      mode: 'payment',
+      success_url: `${process.env.NEXT_PUBLIC_APP_URL}/wallet?success=true`,
+      cancel_url: `${process.env.NEXT_PUBLIC_APP_URL}/wallet?canceled=true`,
+      metadata: {
+        userId: user.id,
+        packageId: pkg.id,
+        coins: pkg.coins.toString(),
+      },
+    });
+
+    return NextResponse.json({ url: session.url, sessionId: session.id });
+  } catch (error) {
+    console.error('Coin purchase error:', error);
+    return NextResponse.json(
+      { error: 'Purchase failed' },
+      { status: 500 }
+    );
+  }
+}
+
+export async function GET(request: NextRequest) {
+  try {
+    const packages = await prisma.coinPackage.findMany({
+      where: { active: true },
+      orderBy: { coins: 'asc' },
+    });
+
+    return NextResponse.json({ packages });
+  } catch (error) {
+    console.error('Fetch packages error:', error);
+    return NextResponse.json(
+      { error: 'Failed to fetch packages' },
+      { status: 500 }
+    );
+  }
+}

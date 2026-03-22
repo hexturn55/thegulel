@@ -1,1 +1,92 @@
-{"data":"aW1wb3J0IHsgTmV4dFJlcXVlc3QsIE5leHRSZXNwb25zZSB9IGZyb20gJ25leHQvc2VydmVyJzsKaW1wb3J0IHsgY3JlYXRlU2VydmVyU3VwYWJhc2VDbGllbnQgfSBmcm9tICdAL2xpYi9zdXBhYmFzZS1zZXJ2ZXInOwppbXBvcnQgcHJpc21hIGZyb20gJ0AvbGliL3ByaXNtYSc7CgovKioKICogUE9TVCAvYXBpL2F1dGgvb3RwL3ZlcmlmeQogKgogKiBMZWdhY3kgc2VydmVyLXNpZGUgdmVyaWZ5LiBUaGUgbG9naW4gcGFnZSBub3cgdXNlcyBzdXBhYmFzZS5hdXRoLnZlcmlmeU90cCgpCiAqIGRpcmVjdGx5IG9uIHRoZSBjbGllbnQsIHRoZW4gcmVkaXJlY3RzIHRvIC9hdXRoL2NhbGxiYWNrIGZvciBEQiBzeW5jLgogKgogKiBUaGlzIHJvdXRlIGhhbmRsZXMgY2FzZXMgd2hlcmUgdmVyaWZpY2F0aW9uICsgREIgc3luYyBuZWVkIHRvIGhhcHBlbiBzZXJ2ZXItc2lkZS4KICovCmV4cG9ydCBhc3luYyBmdW5jdGlvbiBQT1NUKHJlcXVlc3Q6IE5leHRSZXF1ZXN0KSB7CiAgdHJ5IHsKICAgIGNvbnN0IHsgcGhvbmUsIHRva2VuIH0gPSBhd2FpdCByZXF1ZXN0Lmpzb24oKTsKCiAgICBpZiAoIXBob25lIHx8ICF0b2tlbikgewogICAgICByZXR1cm4gTmV4dFJlc3BvbnNlLmpzb24oCiAgICAgICAgeyBlcnJvcjogJ1Bob25lIGFuZCB0b2tlbiBhcmUgcmVxdWlyZWQnIH0sCiAgICAgICAgeyBzdGF0dXM6IDQwMCB9CiAgICAgICk7CiAgICB9CgogICAgY29uc3Qgc3VwYWJhc2UgPSBhd2FpdCBjcmVhdGVTZXJ2ZXJTdXBhYmFzZUNsaWVudCgpOwoKICAgIC8vIFZlcmlmeSBPVFAgd2l0aCBTdXBhYmFzZQogICAgY29uc3QgeyBkYXRhLCBlcnJvciB9ID0gYXdhaXQgc3VwYWJhc2UuYXV0aC52ZXJpZnlPdHAoewogICAgICBwaG9uZSwKICAgICAgdG9rZW4sCiAgICAgIHR5cGU6ICdzbXMnLAogICAgfSk7CgogICAgaWYgKGVycm9yIHx8ICFkYXRhLnVzZXIpIHsKICAgICAgcmV0dXJuIE5leHRSZXNwb25zZS5qc29uKAogICAgICAgIHsgZXJyb3I6IGVycm9yPy5tZXNzYWdlID8/ICdJbnZhbGlkIG9yIGV4cGlyZWQgY29kZScgfSwKICAgICAgICB7IHN0YXR1czogNDAwIH0KICAgICAgKTsKICAgIH0KCiAgICBjb25zdCBzdXBhYmFzZVVzZXIgPSBkYXRhLnVzZXI7CgogICAgLy8gRmluZCBvciBjcmVhdGUgUHJpc21hIHVzZXIKICAgIGxldCB1c2VyID0gYXdhaXQgcHJpc21hLnVzZXIuZmluZEZpcnN0KHsKICAgICAgd2hlcmU6IHsKICAgICAgICBPUjogW3sgc3VwYWJhc2VJZDogc3VwYWJhc2VVc2VyLmlkIH0sIHsgcGhvbmUgfV0sCiAgICAgIH0sCiAgICB9KTsKCiAgICBpZiAoIXVzZXIpIHsKICAgICAgdXNlciA9IGF3YWl0IHByaXNtYS51c2VyLmNyZWF0ZSh7CiAgICAgICAgZGF0YTogewogICAgICAgICAgc3VwYWJhc2VJZDogc3VwYWJhc2VVc2VyLmlkLAogICAgICAgICAgcGhvbmUsCiAgICAgICAgICBwcm92aWRlcjogJ3Bob25lJywKICAgICAgICAgIGNvaW5CYWxhbmNlOiA1MCwKICAgICAgICB9LAogICAgICB9KTsKCiAgICAgIGF3YWl0IHByaXNtYS5jb2luVHJhbnNhY3Rpb24uY3JlYXRlKHsKICAgICAgICBkYXRhOiB7CiAgICAgICAgICB1c2VySWQ6IHVzZXIuaWQsCiAgICAgICAgICBhbW91bnQ6IDUwLAogICAgICAgICAgdHlwZTogJ0JPTlVTJywKICAgICAgICAgIGRlc2NyaXB0aW9uOiAnV2VsY29tZSBib251cycsCiAgICAgICAgfSwKICAgICAgfSk7CiAgICB9IGVsc2UgaWYgKCF1c2VyLnN1cGFiYXNlSWQpIHsKICAgICAgLy8gQmFja2ZpbGwgc3VwYWJhc2VJZCBmb3IgbGVnYWN5IHVzZXJzCiAgICAgIHVzZXIgPSBhd2FpdCBwcmlzbWEudXNlci51cGRhdGUoewogICAgICAgIHdoZXJlOiB7IGlkOiB1c2VyLmlkIH0sCiAgICAgICAgZGF0YTogeyBzdXBhYmFzZUlkOiBzdXBhYmFzZVVzZXIuaWQsIHByb3ZpZGVyOiAncGhvbmUnIH0sCiAgICAgIH0pOwogICAgfQoKICAgIHJldHVybiBOZXh0UmVzcG9uc2UuanNvbih7CiAgICAgIHN1Y2Nlc3M6IHRydWUsCiAgICAgIHVzZXI6IHsKICAgICAgICBpZDogdXNlci5pZCwKICAgICAgICBwaG9uZTogdXNlci5waG9uZSwKICAgICAgICBlbWFpbDogdXNlci5lbWFpbCwKICAgICAgICBuYW1lOiB1c2VyLm5hbWUsCiAgICAgICAgYXZhdGFyOiB1c2VyLmF2YXRhciwKICAgICAgICBsb2NhbGU6IHVzZXIubG9jYWxlLAogICAgICAgIHByb3ZpZGVyOiB1c2VyLnByb3ZpZGVyLAogICAgICAgIGNvaW5CYWxhbmNlOiB1c2VyLmNvaW5CYWxhbmNlLAogICAgICB9LAogICAgfSk7CiAgfSBjYXRjaCAoZXJyb3IpIHsKICAgIGNvbnNvbGUuZXJyb3IoJ1ZlcmlmeSBPVFAgZXJyb3I6JywgZXJyb3IpOwogICAgcmV0dXJuIE5leHRSZXNwb25zZS5qc29uKHsgZXJyb3I6ICdGYWlsZWQgdG8gdmVyaWZ5IE9UUCcgfSwgeyBzdGF0dXM6IDUwMCB9KTsKICB9Cn0K"}
+import { NextRequest, NextResponse } from 'next/server';
+import { createServerSupabaseClient } from '@/lib/supabase-server';
+import prisma from '@/lib/prisma';
+
+/**
+ * POST /api/auth/otp/verify
+ *
+ * Legacy server-side verify. The login page now uses supabase.auth.verifyOtp()
+ * directly on the client, then redirects to /auth/callback for DB sync.
+ *
+ * This route handles cases where verification + DB sync need to happen server-side.
+ */
+export async function POST(request: NextRequest) {
+  try {
+    const { phone, token } = await request.json();
+
+    if (!phone || !token) {
+      return NextResponse.json(
+        { error: 'Phone and token are required' },
+        { status: 400 }
+      );
+    }
+
+    const supabase = await createServerSupabaseClient();
+
+    // Verify OTP with Supabase
+    const { data, error } = await supabase.auth.verifyOtp({
+      phone,
+      token,
+      type: 'sms',
+    });
+
+    if (error || !data.user) {
+      return NextResponse.json(
+        { error: error?.message ?? 'Invalid or expired code' },
+        { status: 400 }
+      );
+    }
+
+    const supabaseUser = data.user;
+
+    // Find or create Prisma user
+    let user = await prisma.user.findFirst({
+      where: {
+        OR: [{ supabaseId: supabaseUser.id }, { phone }],
+      },
+    });
+
+    if (!user) {
+      user = await prisma.user.create({
+        data: {
+          supabaseId: supabaseUser.id,
+          phone,
+          provider: 'phone',
+          coinBalance: 50,
+        },
+      });
+
+      await prisma.coinTransaction.create({
+        data: {
+          userId: user.id,
+          amount: 50,
+          type: 'BONUS',
+          description: 'Welcome bonus',
+        },
+      });
+    } else if (!user.supabaseId) {
+      // Backfill supabaseId for legacy users
+      user = await prisma.user.update({
+        where: { id: user.id },
+        data: { supabaseId: supabaseUser.id, provider: 'phone' },
+      });
+    }
+
+    return NextResponse.json({
+      success: true,
+      user: {
+        id: user.id,
+        phone: user.phone,
+        email: user.email,
+        name: user.name,
+        avatar: user.avatar,
+        locale: user.locale,
+        provider: user.provider,
+        coinBalance: user.coinBalance,
+      },
+    });
+  } catch (error) {
+    console.error('Verify OTP error:', error);
+    return NextResponse.json({ error: 'Failed to verify OTP' }, { status: 500 });
+  }
+}

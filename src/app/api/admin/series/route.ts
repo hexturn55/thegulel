@@ -1,1 +1,82 @@
-{"data":"aW1wb3J0IHsgTmV4dFJlcXVlc3QsIE5leHRSZXNwb25zZSB9IGZyb20gJ25leHQvc2VydmVyJzsKaW1wb3J0IHByaXNtYSBmcm9tICdAL2xpYi9wcmlzbWEnOwppbXBvcnQgeyByZXF1aXJlQWRtaW4gfSBmcm9tICdAL2xpYi9hZG1pbi1hdXRoJzsKCmV4cG9ydCBhc3luYyBmdW5jdGlvbiBHRVQocmVxdWVzdDogTmV4dFJlcXVlc3QpIHsKICBjb25zdCBhZG1pbiA9IGF3YWl0IHJlcXVpcmVBZG1pbigpOwogIGlmICghYWRtaW4pIHsKICAgIHJldHVybiBOZXh0UmVzcG9uc2UuanNvbih7IGVycm9yOiAnVW5hdXRob3JpemVkJyB9LCB7IHN0YXR1czogNDAxIH0pOwogIH0KCiAgY29uc3QgeyBzZWFyY2hQYXJhbXMgfSA9IG5ldyBVUkwocmVxdWVzdC51cmwpOwogIGNvbnN0IHBhZ2UgPSBwYXJzZUludChzZWFyY2hQYXJhbXMuZ2V0KCdwYWdlJykgPz8gJzEnLCAxMCk7CiAgY29uc3QgbGltaXQgPSBwYXJzZUludChzZWFyY2hQYXJhbXMuZ2V0KCdsaW1pdCcpID8/ICcyMCcsIDEwKTsKICBjb25zdCBzZWFyY2ggPSBzZWFyY2hQYXJhbXMuZ2V0KCdzZWFyY2gnKSA/PyAnJzsKICBjb25zdCBzdGF0dXMgPSBzZWFyY2hQYXJhbXMuZ2V0KCdzdGF0dXMnKSA/PyAnJzsKCiAgY29uc3Qgd2hlcmU6IFJlY29yZDxzdHJpbmcsIHVua25vd24+ID0ge307CiAgaWYgKHNlYXJjaCkgewogICAgd2hlcmUudGl0bGUgPSB7IGNvbnRhaW5zOiBzZWFyY2gsIG1vZGU6ICdpbnNlbnNpdGl2ZScgfTsKICB9CiAgaWYgKHN0YXR1cykgewogICAgd2hlcmUuc3RhdHVzID0gc3RhdHVzOwogIH0KCiAgY29uc3QgW3NlcmllcywgdG90YWxdID0gYXdhaXQgUHJvbWlzZS5hbGwoWwogICAgcHJpc21hLnNlcmllcy5maW5kTWFueSh7CiAgICAgIHdoZXJlLAogICAgICBza2lwOiAocGFnZSAtIDEpICogbGltaXQsCiAgICAgIHRha2U6IGxpbWl0LAogICAgICBvcmRlckJ5OiB7IGNyZWF0ZWRBdDogJ2Rlc2MnIH0sCiAgICAgIGluY2x1ZGU6IHsgX2NvdW50OiB7IHNlbGVjdDogeyBlcGlzb2RlczogdHJ1ZSB9IH0gfSwKICAgIH0pLAogICAgcHJpc21hLnNlcmllcy5jb3VudCh7IHdoZXJlIH0pLAogIF0pOwoKICByZXR1cm4gTmV4dFJlc3BvbnNlLmpzb24oewogICAgc2VyaWVzLAogICAgcGFnaW5hdGlvbjogeyBwYWdlLCBsaW1pdCwgdG90YWwsIHBhZ2VzOiBNYXRoLmNlaWwodG90YWwgLyBsaW1pdCkgfSwKICB9KTsKfQoKZXhwb3J0IGFzeW5jIGZ1bmN0aW9uIFBPU1QocmVxdWVzdDogTmV4dFJlcXVlc3QpIHsKICBjb25zdCBhZG1pbiA9IGF3YWl0IHJlcXVpcmVBZG1pbigpOwogIGlmICghYWRtaW4pIHsKICAgIHJldHVybiBOZXh0UmVzcG9uc2UuanNvbih7IGVycm9yOiAnVW5hdXRob3JpemVkJyB9LCB7IHN0YXR1czogNDAxIH0pOwogIH0KCiAgdHJ5IHsKICAgIGNvbnN0IGJvZHkgPSBhd2FpdCByZXF1ZXN0Lmpzb24oKTsKICAgIGNvbnN0IHsKICAgICAgdGl0bGUsIHRpdGxlSGksIHRpdGxlWmgsCiAgICAgIGRlc2NyaXB0aW9uLCBkZXNjcmlwdGlvbkhpLCBkZXNjcmlwdGlvblpoLAogICAgICB0aHVtYm5haWwsIGdlbnJlLCB0YWdzLAogICAgICBmcmVlRXBpc29kZXMsIGNvaW5QcmljZSwgc3RhdHVzLCBmZWF0dXJlZCwKICAgIH0gPSBib2R5OwoKICAgIGlmICghdGl0bGUgfHwgIWRlc2NyaXB0aW9uIHx8ICF0aHVtYm5haWwgfHwgIWdlbnJlKSB7CiAgICAgIHJldHVybiBOZXh0UmVzcG9uc2UuanNvbigKICAgICAgICB7IGVycm9yOiAndGl0bGUsIGRlc2NyaXB0aW9uLCB0aHVtYm5haWwsIGFuZCBnZW5yZSBhcmUgcmVxdWlyZWQnIH0sCiAgICAgICAgeyBzdGF0dXM6IDQwMCB9CiAgICAgICk7CiAgICB9CgogICAgY29uc3Qgc2VyaWVzID0gYXdhaXQgcHJpc21hLnNlcmllcy5jcmVhdGUoewogICAgICBkYXRhOiB7CiAgICAgICAgdGl0bGUsIHRpdGxlSGksIHRpdGxlWmgsCiAgICAgICAgZGVzY3JpcHRpb24sIGRlc2NyaXB0aW9uSGksIGRlc2NyaXB0aW9uWmgsCiAgICAgICAgdGh1bWJuYWlsLCBnZW5yZSwKICAgICAgICB0YWdzOiB0YWdzID8/IFtdLAogICAgICAgIGZyZWVFcGlzb2RlczogZnJlZUVwaXNvZGVzID8/IDUsCiAgICAgICAgY29pblByaWNlOiBjb2luUHJpY2UgPz8gMTAsCiAgICAgICAgc3RhdHVzOiBzdGF0dXMgPz8gJ0RSQUZUJywKICAgICAgICBmZWF0dXJlZDogZmVhdHVyZWQgPz8gZmFsc2UsCiAgICAgIH0sCiAgICB9KTsKCiAgICByZXR1cm4gTmV4dFJlc3BvbnNlLmpzb24oeyBzZXJpZXMgfSwgeyBzdGF0dXM6IDIwMSB9KTsKICB9IGNhdGNoIChlcnJvcikgewogICAgY29uc29sZS5lcnJvcignQ3JlYXRlIHNlcmllcyBlcnJvcjonLCBlcnJvcik7CiAgICByZXR1cm4gTmV4dFJlc3BvbnNlLmpzb24oeyBlcnJvcjogJ0ZhaWxlZCB0byBjcmVhdGUgc2VyaWVzJyB9LCB7IHN0YXR1czogNTAwIH0pOwogIH0KfQo="}
+import { NextRequest, NextResponse } from 'next/server';
+import prisma from '@/lib/prisma';
+import { requireAdmin } from '@/lib/admin-auth';
+
+export async function GET(request: NextRequest) {
+  const admin = await requireAdmin();
+  if (!admin) {
+    return NextResponse.json({ error: 'Unauthorized' }, { status: 401 });
+  }
+
+  const { searchParams } = new URL(request.url);
+  const page = parseInt(searchParams.get('page') ?? '1', 10);
+  const limit = parseInt(searchParams.get('limit') ?? '20', 10);
+  const search = searchParams.get('search') ?? '';
+  const status = searchParams.get('status') ?? '';
+
+  const where: Record<string, unknown> = {};
+  if (search) {
+    where.title = { contains: search, mode: 'insensitive' };
+  }
+  if (status) {
+    where.status = status;
+  }
+
+  const [series, total] = await Promise.all([
+    prisma.series.findMany({
+      where,
+      skip: (page - 1) * limit,
+      take: limit,
+      orderBy: { createdAt: 'desc' },
+      include: { _count: { select: { episodes: true } } },
+    }),
+    prisma.series.count({ where }),
+  ]);
+
+  return NextResponse.json({
+    series,
+    pagination: { page, limit, total, pages: Math.ceil(total / limit) },
+  });
+}
+
+export async function POST(request: NextRequest) {
+  const admin = await requireAdmin();
+  if (!admin) {
+    return NextResponse.json({ error: 'Unauthorized' }, { status: 401 });
+  }
+
+  try {
+    const body = await request.json();
+    const {
+      title, titleHi, titleZh,
+      description, descriptionHi, descriptionZh,
+      thumbnail, genre, tags,
+      freeEpisodes, coinPrice, status, featured,
+    } = body;
+
+    if (!title || !description || !thumbnail || !genre) {
+      return NextResponse.json(
+        { error: 'title, description, thumbnail, and genre are required' },
+        { status: 400 }
+      );
+    }
+
+    const series = await prisma.series.create({
+      data: {
+        title, titleHi, titleZh,
+        description, descriptionHi, descriptionZh,
+        thumbnail, genre,
+        tags: tags ?? [],
+        freeEpisodes: freeEpisodes ?? 5,
+        coinPrice: coinPrice ?? 10,
+        status: status ?? 'DRAFT',
+        featured: featured ?? false,
+      },
+    });
+
+    return NextResponse.json({ series }, { status: 201 });
+  } catch (error) {
+    console.error('Create series error:', error);
+    return NextResponse.json({ error: 'Failed to create series' }, { status: 500 });
+  }
+}

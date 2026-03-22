@@ -1,1 +1,151 @@
-{"data":"J3VzZSBjbGllbnQnOwoKaW1wb3J0IHsgdXNlU3RhdGUgfSBmcm9tICdyZWFjdCc7CmltcG9ydCB7IENoZXZyb25SaWdodCwgR2xvYmUsIEJlbGwsIE1vb24sIEluZm8sIFRyYXNoMiB9IGZyb20gJ2x1Y2lkZS1yZWFjdCc7Cgpjb25zdCBMQU5HVUFHRVMgPSBbCiAgeyBjb2RlOiAnZW4nLCBsYWJlbDogJ0VuZ2xpc2gnIH0sCiAgeyBjb2RlOiAnaGknLCBsYWJlbDogJ0hpbmRpJyB9LAogIHsgY29kZTogJ3poJywgbGFiZWw6ICdDaGluZXNlJyB9LApdOwoKY29uc3QgQVBQX1ZFUlNJT04gPSAnMS4wLjAnOwoKZXhwb3J0IGRlZmF1bHQgZnVuY3Rpb24gU2V0dGluZ3NQYWdlKCkgewogIGNvbnN0IFtsYW5ndWFnZSwgc2V0TGFuZ3VhZ2VdID0gdXNlU3RhdGUoJ2VuJyk7CiAgY29uc3QgW25vdGlmaWNhdGlvbnMsIHNldE5vdGlmaWNhdGlvbnNdID0gdXNlU3RhdGUodHJ1ZSk7CgogIHJldHVybiAoCiAgICA8ZGl2IGNsYXNzTmFtZT0ibWluLWgtc2NyZWVuIGJnLWJsYWNrIHBiLTI0Ij4KICAgICAgey8qIEhlYWRlciAqL30KICAgICAgPGRpdiBjbGFzc05hbWU9InB4LTQgcHktNiBib3JkZXItYiBib3JkZXItZ3JheS04MDAiPgogICAgICAgIDxoMSBjbGFzc05hbWU9InRleHQtd2hpdGUgdGV4dC0yeGwgZm9udC1ib2xkIj5TZXR0aW5nczwvaDE+CiAgICAgIDwvZGl2PgoKICAgICAgPGRpdiBjbGFzc05hbWU9InB4LTQgcHktNCBzcGFjZS15LTYiPgoKICAgICAgICB7LyogTGFuZ3VhZ2UgKi99CiAgICAgICAgPHNlY3Rpb24+CiAgICAgICAgICA8aDIgY2xhc3NOYW1lPSJ0ZXh0LWdyYXktNDAwIHRleHQteHMgZm9udC1zZW1pYm9sZCB1cHBlcmNhc2UgdHJhY2tpbmctd2lkZXIgbWItMyBweC0xIj4KICAgICAgICAgICAgTGFuZ3VhZ2UKICAgICAgICAgIDwvaDI+CiAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT0iYmctZ3JheS05MDAgcm91bmRlZC0yeGwgb3ZlcmZsb3ctaGlkZGVuIGRpdmlkZS15IGRpdmlkZS1ncmF5LTgwMCI+CiAgICAgICAgICAgIHtMQU5HVUFHRVMubWFwKCh7IGNvZGUsIGxhYmVsIH0pID0+ICgKICAgICAgICAgICAgICA8YnV0dG9uCiAgICAgICAgICAgICAgICBrZXk9e2NvZGV9CiAgICAgICAgICAgICAgICBvbkNsaWNrPXsoKSA9PiBzZXRMYW5ndWFnZShjb2RlKX0KICAgICAgICAgICAgICAgIGNsYXNzTmFtZT0idy1mdWxsIGZsZXggaXRlbXMtY2VudGVyIGp1c3RpZnktYmV0d2VlbiBweC00IHB5LTQgaG92ZXI6YmctZ3JheS04MDAgdHJhbnNpdGlvbiIKICAgICAgICAgICAgICA+CiAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT0iZmxleCBpdGVtcy1jZW50ZXIgZ2FwLTMiPgogICAgICAgICAgICAgICAgICA8R2xvYmUgY2xhc3NOYW1lPSJ3LTUgaC01IHRleHQtZ3JheS00MDAiIC8+CiAgICAgICAgICAgICAgICAgIDxzcGFuIGNsYXNzTmFtZT0idGV4dC13aGl0ZSB0ZXh0LXNtIj57bGFiZWx9PC9zcGFuPgogICAgICAgICAgICAgICAgPC9kaXY+CiAgICAgICAgICAgICAgICA8ZGl2CiAgICAgICAgICAgICAgICAgIGNsYXNzTmFtZT17YHctNSBoLTUgcm91bmRlZC1mdWxsIGJvcmRlci0yIGZsZXggaXRlbXMtY2VudGVyIGp1c3RpZnktY2VudGVyIHRyYW5zaXRpb24gJHsKICAgICAgICAgICAgICAgICAgICBsYW5ndWFnZSA9PT0gY29kZQogICAgICAgICAgICAgICAgICAgICAgPyAnYm9yZGVyLXJlZC01MDAgYmctcmVkLTUwMCcKICAgICAgICAgICAgICAgICAgICAgIDogJ2JvcmRlci1ncmF5LTYwMCcKICAgICAgICAgICAgICAgICAgfWB9CiAgICAgICAgICAgICAgICA+CiAgICAgICAgICAgICAgICAgIHtsYW5ndWFnZSA9PT0gY29kZSAmJiAoCiAgICAgICAgICAgICAgICAgICAgPGRpdiBjbGFzc05hbWU9InctMiBoLTIgcm91bmRlZC1mdWxsIGJnLXdoaXRlIiAvPgogICAgICAgICAgICAgICAgICApfQogICAgICAgICAgICAgICAgPC9kaXY+CiAgICAgICAgICAgICAgPC9idXR0b24+CiAgICAgICAgICAgICkpfQogICAgICAgICAgPC9kaXY+CiAgICAgICAgPC9zZWN0aW9uPgoKICAgICAgICB7LyogTm90aWZpY2F0aW9ucyAqL30KICAgICAgICA8c2VjdGlvbj4KICAgICAgICAgIDxoMiBjbGFzc05hbWU9InRleHQtZ3JheS00MDAgdGV4dC14cyBmb250LXNlbWlib2xkIHVwcGVyY2FzZSB0cmFja2luZy13aWRlciBtYi0zIHB4LTEiPgogICAgICAgICAgICBOb3RpZmljYXRpb25zCiAgICAgICAgICA8L2gyPgogICAgICAgICAgPGRpdiBjbGFzc05hbWU9ImJnLWdyYXktOTAwIHJvdW5kZWQtMnhsIG92ZXJmbG93LWhpZGRlbiI+CiAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPSJmbGV4IGl0ZW1zLWNlbnRlciBqdXN0aWZ5LWJldHdlZW4gcHgtNCBweS00Ij4KICAgICAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT0iZmxleCBpdGVtcy1jZW50ZXIgZ2FwLTMiPgogICAgICAgICAgICAgICAgPEJlbGwgY2xhc3NOYW1lPSJ3LTUgaC01IHRleHQtZ3JheS00MDAiIC8+CiAgICAgICAgICAgICAgICA8ZGl2PgogICAgICAgICAgICAgICAgICA8cCBjbGFzc05hbWU9InRleHQtd2hpdGUgdGV4dC1zbSI+UHVzaCBOb3RpZmljYXRpb25zPC9wPgogICAgICAgICAgICAgICAgICA8cCBjbGFzc05hbWU9InRleHQtZ3JheS01MDAgdGV4dC14cyBtdC0wLjUiPk5ldyBlcGlzb2RlcyBhbmQgdXBkYXRlczwvcD4KICAgICAgICAgICAgICAgIDwvZGl2PgogICAgICAgICAgICAgIDwvZGl2PgogICAgICAgICAgICAgIHsvKiBUb2dnbGUgKi99CiAgICAgICAgICAgICAgPGJ1dHRvbgogICAgICAgICAgICAgICAgb25DbGljaz17KCkgPT4gc2V0Tm90aWZpY2F0aW9ucygodikgPT4gIXYpfQogICAgICAgICAgICAgICAgY2xhc3NOYW1lPXtgcmVsYXRpdmUgdy0xMiBoLTYgcm91bmRlZC1mdWxsIHRyYW5zaXRpb24tY29sb3JzIGR1cmF0aW9uLTIwMCAkewogICAgICAgICAgICAgICAgICBub3RpZmljYXRpb25zID8gJ2JnLXJlZC01MDAnIDogJ2JnLWdyYXktNzAwJwogICAgICAgICAgICAgICAgfWB9CiAgICAgICAgICAgICAgPgogICAgICAgICAgICAgICAgPHNwYW4KICAgICAgICAgICAgICAgICAgY2xhc3NOYW1lPXtgYWJzb2x1dGUgdG9wLTAuNSBsZWZ0LTAuNSB3LTUgaC01IGJnLXdoaXRlIHJvdW5kZWQtZnVsbCBzaGFkb3cgdHJhbnNpdGlvbi10cmFuc2Zvcm0gZHVyYXRpb24tMjAwICR7CiAgICAgICAgICAgICAgICAgICAgbm90aWZpY2F0aW9ucyA/ICd0cmFuc2xhdGUteC02JyA6ICd0cmFuc2xhdGUteC0wJwogICAgICAgICAgICAgICAgICB9YH0KICAgICAgICAgICAgICAgIC8+CiAgICAgICAgICAgICAgPC9idXR0b24+CiAgICAgICAgICAgIDwvZGl2PgogICAgICAgICAgPC9kaXY+CiAgICAgICAgPC9zZWN0aW9uPgoKICAgICAgICB7LyogQXBwZWFyYW5jZSAqL30KICAgICAgICA8c2VjdGlvbj4KICAgICAgICAgIDxoMiBjbGFzc05hbWU9InRleHQtZ3JheS00MDAgdGV4dC14cyBmb250LXNlbWlib2xkIHVwcGVyY2FzZSB0cmFja2luZy13aWRlciBtYi0zIHB4LTEiPgogICAgICAgICAgICBBcHBlYXJhbmNlCiAgICAgICAgICA8L2gyPgogICAgICAgICAgPGRpdiBjbGFzc05hbWU9ImJnLWdyYXktOTAwIHJvdW5kZWQtMnhsIG92ZXJmbG93LWhpZGRlbiI+CiAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPSJmbGV4IGl0ZW1zLWNlbnRlciBqdXN0aWZ5LWJldHdlZW4gcHgtNCBweS00Ij4KICAgICAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT0iZmxleCBpdGVtcy1jZW50ZXIgZ2FwLTMiPgogICAgICAgICAgICAgICAgPE1vb24gY2xhc3NOYW1lPSJ3LTUgaC01IHRleHQtZ3JheS00MDAiIC8+CiAgICAgICAgICAgICAgICA8ZGl2PgogICAgICAgICAgICAgICAgICA8cCBjbGFzc05hbWU9InRleHQtd2hpdGUgdGV4dC1zbSI+RGFyayBNb2RlPC9wPgogICAgICAgICAgICAgICAgICA8cCBjbGFzc05hbWU9InRleHQtZ3JheS01MDAgdGV4dC14cyBtdC0wLjUiPkFsd2F5cyBvbiBmb3IgdGhlIGJlc3QgZXhwZXJpZW5jZTwvcD4KICAgICAgICAgICAgICAgIDwvZGl2PgogICAgICAgICAgICAgIDwvZGl2PgogICAgICAgICAgICAgIDxzcGFuIGNsYXNzTmFtZT0idGV4dC1ncmF5LTUwMCB0ZXh0LXNtIj5Pbjwvc3Bhbj4KICAgICAgICAgICAgPC9kaXY+CiAgICAgICAgICA8L2Rpdj4KICAgICAgICA8L3NlY3Rpb24+CgogICAgICAgIHsvKiBBYm91dCAqL30KICAgICAgICA8c2VjdGlvbj4KICAgICAgICAgIDxoMiBjbGFzc05hbWU9InRleHQtZ3JheS00MDAgdGV4dC14cyBmb250LXNlbWlib2xkIHVwcGVyY2FzZSB0cmFja2luZy13aWRlciBtYi0zIHB4LTEiPgogICAgICAgICAgICBBYm91dAogICAgICAgICAgPC9oMj4KICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPSJiZy1ncmF5LTkwMCByb3VuZGVkLTJ4bCBvdmVyZmxvdy1oaWRkZW4gZGl2aWRlLXkgZGl2aWRlLWdyYXktODAwIj4KICAgICAgICAgICAgPGRpdiBjbGFzc05hbWU9ImZsZXggaXRlbXMtY2VudGVyIGp1c3RpZnktYmV0d2VlbiBweC00IHB5LTQiPgogICAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPSJmbGV4IGl0ZW1zLWNlbnRlciBnYXAtMyI+CiAgICAgICAgICAgICAgICA8SW5mbyBjbGFzc05hbWU9InctNSBoLTUgdGV4dC1ncmF5LTQwMCIgLz4KICAgICAgICAgICAgICAgIDxzcGFuIGNsYXNzTmFtZT0idGV4dC13aGl0ZSB0ZXh0LXNtIj5WZXJzaW9uPC9zcGFuPgogICAgICAgICAgICAgIDwvZGl2PgogICAgICAgICAgICAgIDxzcGFuIGNsYXNzTmFtZT0idGV4dC1ncmF5LTUwMCB0ZXh0LXNtIj57QVBQX1ZFUlNJT059PC9zcGFuPgogICAgICAgICAgICA8L2Rpdj4KCiAgICAgICAgICAgIDxidXR0b24gY2xhc3NOYW1lPSJ3LWZ1bGwgZmxleCBpdGVtcy1jZW50ZXIganVzdGlmeS1iZXR3ZWVuIHB4LTQgcHktNCBob3ZlcjpiZy1ncmF5LTgwMCB0cmFuc2l0aW9uIj4KICAgICAgICAgICAgICA8c3BhbiBjbGFzc05hbWU9InRleHQtd2hpdGUgdGV4dC1zbSI+UHJpdmFjeSBQb2xpY3k8L3NwYW4+CiAgICAgICAgICAgICAgPENoZXZyb25SaWdodCBjbGFzc05hbWU9InctNCBoLTQgdGV4dC1ncmF5LTYwMCIgLz4KICAgICAgICAgICAgPC9idXR0b24+CgogICAgICAgICAgICA8YnV0dG9uIGNsYXNzTmFtZT0idy1mdWxsIGZsZXggaXRlbXMtY2VudGVyIGp1c3RpZnktYmV0d2VlbiBweC00IHB5LTQgaG92ZXI6YmctZ3JheS04MDAgdHJhbnNpdGlvbiI+CiAgICAgICAgICAgICAgPHNwYW4gY2xhc3NOYW1lPSJ0ZXh0LXdoaXRlIHRleHQtc20iPlRlcm1zIG9mIFNlcnZpY2U8L3NwYW4+CiAgICAgICAgICAgICAgPENoZXZyb25SaWdodCBjbGFzc05hbWU9InctNCBoLTQgdGV4dC1ncmF5LTYwMCIgLz4KICAgICAgICAgICAgPC9idXR0b24+CiAgICAgICAgICA8L2Rpdj4KICAgICAgICA8L3NlY3Rpb24+CgogICAgICAgIHsvKiBEYW5nZXIgem9uZSAqL30KICAgICAgICA8c2VjdGlvbj4KICAgICAgICAgIDxoMiBjbGFzc05hbWU9InRleHQtZ3JheS00MDAgdGV4dC14cyBmb250LXNlbWlib2xkIHVwcGVyY2FzZSB0cmFja2luZy13aWRlciBtYi0zIHB4LTEiPgogICAgICAgICAgICBEYW5nZXIgWm9uZQogICAgICAgICAgPC9oMj4KICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPSJiZy1ncmF5LTkwMCByb3VuZGVkLTJ4bCBvdmVyZmxvdy1oaWRkZW4iPgogICAgICAgICAgICA8YnV0dG9uIGNsYXNzTmFtZT0idy1mdWxsIGZsZXggaXRlbXMtY2VudGVyIGdhcC0zIHB4LTQgcHktNCBob3ZlcjpiZy1ncmF5LTgwMCB0cmFuc2l0aW9uIj4KICAgICAgICAgICAgICA8VHJhc2gyIGNsYXNzTmFtZT0idy01IGgtNSB0ZXh0LXJlZC00MDAiIC8+CiAgICAgICAgICAgICAgPHNwYW4gY2xhc3NOYW1lPSJ0ZXh0LXJlZC00MDAgdGV4dC1zbSI+RGVsZXRlIEFjY291bnQ8L3NwYW4+CiAgICAgICAgICAgIDwvYnV0dG9uPgogICAgICAgICAgPC9kaXY+CiAgICAgICAgPC9zZWN0aW9uPgoKICAgICAgPC9kaXY+CiAgICA8L2Rpdj4KICApOwp9Cg=="}
+'use client';
+
+import { useState } from 'react';
+import { ChevronRight, Globe, Bell, Moon, Info, Trash2 } from 'lucide-react';
+
+const LANGUAGES = [
+  { code: 'en', label: 'English' },
+  { code: 'hi', label: 'Hindi' },
+  { code: 'zh', label: 'Chinese' },
+];
+
+const APP_VERSION = '1.0.0';
+
+export default function SettingsPage() {
+  const [language, setLanguage] = useState('en');
+  const [notifications, setNotifications] = useState(true);
+
+  return (
+    <div className="min-h-screen bg-black pb-24">
+      {/* Header */}
+      <div className="px-4 py-6 border-b border-gray-800">
+        <h1 className="text-white text-2xl font-bold">Settings</h1>
+      </div>
+
+      <div className="px-4 py-4 space-y-6">
+
+        {/* Language */}
+        <section>
+          <h2 className="text-gray-400 text-xs font-semibold uppercase tracking-wider mb-3 px-1">
+            Language
+          </h2>
+          <div className="bg-gray-900 rounded-2xl overflow-hidden divide-y divide-gray-800">
+            {LANGUAGES.map(({ code, label }) => (
+              <button
+                key={code}
+                onClick={() => setLanguage(code)}
+                className="w-full flex items-center justify-between px-4 py-4 hover:bg-gray-800 transition"
+              >
+                <div className="flex items-center gap-3">
+                  <Globe className="w-5 h-5 text-gray-400" />
+                  <span className="text-white text-sm">{label}</span>
+                </div>
+                <div
+                  className={`w-5 h-5 rounded-full border-2 flex items-center justify-center transition ${
+                    language === code
+                      ? 'border-red-500 bg-red-500'
+                      : 'border-gray-600'
+                  }`}
+                >
+                  {language === code && (
+                    <div className="w-2 h-2 rounded-full bg-white" />
+                  )}
+                </div>
+              </button>
+            ))}
+          </div>
+        </section>
+
+        {/* Notifications */}
+        <section>
+          <h2 className="text-gray-400 text-xs font-semibold uppercase tracking-wider mb-3 px-1">
+            Notifications
+          </h2>
+          <div className="bg-gray-900 rounded-2xl overflow-hidden">
+            <div className="flex items-center justify-between px-4 py-4">
+              <div className="flex items-center gap-3">
+                <Bell className="w-5 h-5 text-gray-400" />
+                <div>
+                  <p className="text-white text-sm">Push Notifications</p>
+                  <p className="text-gray-500 text-xs mt-0.5">New episodes and updates</p>
+                </div>
+              </div>
+              {/* Toggle */}
+              <button
+                onClick={() => setNotifications((v) => !v)}
+                className={`relative w-12 h-6 rounded-full transition-colors duration-200 ${
+                  notifications ? 'bg-red-500' : 'bg-gray-700'
+                }`}
+              >
+                <span
+                  className={`absolute top-0.5 left-0.5 w-5 h-5 bg-white rounded-full shadow transition-transform duration-200 ${
+                    notifications ? 'translate-x-6' : 'translate-x-0'
+                  }`}
+                />
+              </button>
+            </div>
+          </div>
+        </section>
+
+        {/* Appearance */}
+        <section>
+          <h2 className="text-gray-400 text-xs font-semibold uppercase tracking-wider mb-3 px-1">
+            Appearance
+          </h2>
+          <div className="bg-gray-900 rounded-2xl overflow-hidden">
+            <div className="flex items-center justify-between px-4 py-4">
+              <div className="flex items-center gap-3">
+                <Moon className="w-5 h-5 text-gray-400" />
+                <div>
+                  <p className="text-white text-sm">Dark Mode</p>
+                  <p className="text-gray-500 text-xs mt-0.5">Always on for the best experience</p>
+                </div>
+              </div>
+              <span className="text-gray-500 text-sm">On</span>
+            </div>
+          </div>
+        </section>
+
+        {/* About */}
+        <section>
+          <h2 className="text-gray-400 text-xs font-semibold uppercase tracking-wider mb-3 px-1">
+            About
+          </h2>
+          <div className="bg-gray-900 rounded-2xl overflow-hidden divide-y divide-gray-800">
+            <div className="flex items-center justify-between px-4 py-4">
+              <div className="flex items-center gap-3">
+                <Info className="w-5 h-5 text-gray-400" />
+                <span className="text-white text-sm">Version</span>
+              </div>
+              <span className="text-gray-500 text-sm">{APP_VERSION}</span>
+            </div>
+
+            <button className="w-full flex items-center justify-between px-4 py-4 hover:bg-gray-800 transition">
+              <span className="text-white text-sm">Privacy Policy</span>
+              <ChevronRight className="w-4 h-4 text-gray-600" />
+            </button>
+
+            <button className="w-full flex items-center justify-between px-4 py-4 hover:bg-gray-800 transition">
+              <span className="text-white text-sm">Terms of Service</span>
+              <ChevronRight className="w-4 h-4 text-gray-600" />
+            </button>
+          </div>
+        </section>
+
+        {/* Danger zone */}
+        <section>
+          <h2 className="text-gray-400 text-xs font-semibold uppercase tracking-wider mb-3 px-1">
+            Danger Zone
+          </h2>
+          <div className="bg-gray-900 rounded-2xl overflow-hidden">
+            <button className="w-full flex items-center gap-3 px-4 py-4 hover:bg-gray-800 transition">
+              <Trash2 className="w-5 h-5 text-red-400" />
+              <span className="text-red-400 text-sm">Delete Account</span>
+            </button>
+          </div>
+        </section>
+
+      </div>
+    </div>
+  );
+}

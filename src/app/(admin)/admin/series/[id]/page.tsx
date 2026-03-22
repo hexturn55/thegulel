@@ -1,1 +1,239 @@
-{"data":"J3VzZSBjbGllbnQnOwoKaW1wb3J0IHsgdXNlRWZmZWN0LCB1c2VTdGF0ZSB9IGZyb20gJ3JlYWN0JzsKaW1wb3J0IHsgdXNlUGFyYW1zLCB1c2VSb3V0ZXIgfSBmcm9tICduZXh0L25hdmlnYXRpb24nOwppbXBvcnQgTGluayBmcm9tICduZXh0L2xpbmsnOwppbXBvcnQgeyBQbHVzQ2lyY2xlLCBFZGl0MiwgVHJhc2gyLCBDbG9jaywgTG9jaywgVW5sb2NrIH0gZnJvbSAnbHVjaWRlLXJlYWN0JzsKaW1wb3J0IFNlcmllc0Zvcm0gZnJvbSAnQC9jb21wb25lbnRzL2FkbWluL1Nlcmllc0Zvcm0nOwppbXBvcnQgQ29uZmlybURpYWxvZyBmcm9tICdAL2NvbXBvbmVudHMvYWRtaW4vQ29uZmlybURpYWxvZyc7CmltcG9ydCB7IHVzZVRvYXN0IH0gZnJvbSAnQC9jb21wb25lbnRzL2FkbWluL1RvYXN0JzsKCmludGVyZmFjZSBFcGlzb2RlIHsKICBpZDogc3RyaW5nOwogIGVwaXNvZGVOdW1iZXI6IG51bWJlcjsKICB0aXRsZTogc3RyaW5nOwogIGR1cmF0aW9uPzogbnVtYmVyOwogIGlzRnJlZTogYm9vbGVhbjsKICB2aWRlb0lkPzogc3RyaW5nOwogIGNyZWF0ZWRBdDogc3RyaW5nOwp9CgppbnRlcmZhY2UgU2VyaWVzRGV0YWlsIHsKICBpZDogc3RyaW5nOwogIHRpdGxlOiBzdHJpbmc7CiAgdGl0bGVIaT86IHN0cmluZzsKICB0aXRsZVpoPzogc3RyaW5nOwogIGRlc2NyaXB0aW9uPzogc3RyaW5nOwogIGRlc2NyaXB0aW9uSGk/OiBzdHJpbmc7CiAgZGVzY3JpcHRpb25aaD86IHN0cmluZzsKICBnZW5yZT86IHN0cmluZzsKICB0YWdzPzogc3RyaW5nW107CiAgdGh1bWJuYWlsPzogc3RyaW5nOwogIGZyZWVFcGlzb2Rlcz86IG51bWJlcjsKICBjb2luUHJpY2U/OiBudW1iZXI7CiAgZmVhdHVyZWQ/OiBib29sZWFuOwogIHN0YXR1cz86IHN0cmluZzsKICBlcGlzb2Rlcz86IEVwaXNvZGVbXTsKfQoKZXhwb3J0IGRlZmF1bHQgZnVuY3Rpb24gRWRpdFNlcmllc1BhZ2UoKSB7CiAgY29uc3QgeyBpZCB9ID0gdXNlUGFyYW1zPHsgaWQ6IHN0cmluZyB9PigpOwogIGNvbnN0IHJvdXRlciA9IHVzZVJvdXRlcigpOwogIGNvbnN0IHsgdG9hc3QgfSA9IHVzZVRvYXN0KCk7CiAgY29uc3QgW3Nlcmllcywgc2V0U2VyaWVzXSA9IHVzZVN0YXRlPFNlcmllc0RldGFpbCB8IG51bGw+KG51bGwpOwogIGNvbnN0IFtsb2FkaW5nLCBzZXRMb2FkaW5nXSA9IHVzZVN0YXRlKHRydWUpOwogIGNvbnN0IFtkZWxldGVFcCwgc2V0RGVsZXRlRXBdID0gdXNlU3RhdGU8RXBpc29kZSB8IG51bGw+KG51bGwpOwogIGNvbnN0IFtkZWxldGVMb2FkaW5nLCBzZXREZWxldGVMb2FkaW5nXSA9IHVzZVN0YXRlKGZhbHNlKTsKCiAgdXNlRWZmZWN0KCgpID0+IHsKICAgIGZldGNoKGAvYXBpL2FkbWluL3Nlcmllcy8ke2lkfWApCiAgICAgIC50aGVuKChyKSA9PiByLmpzb24oKSkKICAgICAgLnRoZW4oKGRhdGEpID0+IHsKICAgICAgICBzZXRTZXJpZXMoZGF0YSk7CiAgICAgICAgc2V0TG9hZGluZyhmYWxzZSk7CiAgICAgIH0pCiAgICAgIC5jYXRjaCgoKSA9PiB7CiAgICAgICAgdG9hc3QoJ0ZhaWxlZCB0byBsb2FkIHNlcmllcycsICdlcnJvcicpOwogICAgICAgIHNldExvYWRpbmcoZmFsc2UpOwogICAgICB9KTsKICB9LCBbaWQsIHRvYXN0XSk7CgogIGNvbnN0IGhhbmRsZURlbGV0ZUVwaXNvZGUgPSBhc3luYyAoKSA9PiB7CiAgICBpZiAoIWRlbGV0ZUVwKSByZXR1cm47CiAgICBzZXREZWxldGVMb2FkaW5nKHRydWUpOwogICAgdHJ5IHsKICAgICAgY29uc3QgcmVzID0gYXdhaXQgZmV0Y2goYC9hcGkvYWRtaW4vc2VyaWVzLyR7aWR9L2VwaXNvZGVzLyR7ZGVsZXRlRXAuaWR9YCwgeyBtZXRob2Q6ICdERUxFVEUnIH0pOwogICAgICBpZiAoIXJlcy5vaykgdGhyb3cgbmV3IEVycm9yKCk7CiAgICAgIHRvYXN0KCdFcGlzb2RlIGRlbGV0ZWQnLCAnc3VjY2VzcycpOwogICAgICBzZXREZWxldGVFcChudWxsKTsKICAgICAgLy8gUmVmcmVzaAogICAgICBjb25zdCB1cGRhdGVkID0gYXdhaXQgZmV0Y2goYC9hcGkvYWRtaW4vc2VyaWVzLyR7aWR9YCkudGhlbigocikgPT4gci5qc29uKCkpOwogICAgICBzZXRTZXJpZXModXBkYXRlZCk7CiAgICB9IGNhdGNoIHsKICAgICAgdG9hc3QoJ0ZhaWxlZCB0byBkZWxldGUgZXBpc29kZScsICdlcnJvcicpOwogICAgfSBmaW5hbGx5IHsKICAgICAgc2V0RGVsZXRlTG9hZGluZyhmYWxzZSk7CiAgICB9CiAgfTsKCiAgY29uc3QgZm9ybWF0RHVyYXRpb24gPSAoc2Vjb25kcz86IG51bWJlcikgPT4gewogICAgaWYgKCFzZWNvbmRzKSByZXR1cm4gJ+KAlCc7CiAgICBjb25zdCBtID0gTWF0aC5mbG9vcihzZWNvbmRzIC8gNjApOwogICAgY29uc3QgcyA9IHNlY29uZHMgJSA2MDsKICAgIHJldHVybiBgJHttfToke1N0cmluZyhzKS5wYWRTdGFydCgyLCAnMCcpfWA7CiAgfTsKCiAgaWYgKGxvYWRpbmcpIHsKICAgIHJldHVybiAoCiAgICAgIDxkaXYgY2xhc3NOYW1lPSJtYXgtdy00eGwgbXgtYXV0byBzcGFjZS15LTUiPgogICAgICAgIDxkaXYgY2xhc3NOYW1lPSJoLTggYmctZ3JheS04MDAgcm91bmRlZCBhbmltYXRlLXB1bHNlIHctNDgiIC8+CiAgICAgICAgPGRpdiBjbGFzc05hbWU9ImgtNjQgYmctZ3JheS05MDAgYm9yZGVyIGJvcmRlci1ncmF5LTgwMCByb3VuZGVkLXhsIGFuaW1hdGUtcHVsc2UiIC8+CiAgICAgIDwvZGl2PgogICAgKTsKICB9CgogIGlmICghc2VyaWVzKSB7CiAgICByZXR1cm4gKAogICAgICA8ZGl2IGNsYXNzTmFtZT0idGV4dC1jZW50ZXIgcHktMjAgdGV4dC1ncmF5LTUwMCI+CiAgICAgICAgU2VyaWVzIG5vdCBmb3VuZC57JyAnfQogICAgICAgIDxMaW5rIGhyZWY9Ii9hZG1pbi9zZXJpZXMiIGNsYXNzTmFtZT0idGV4dC1yZWQtNTAwIGhvdmVyOnVuZGVybGluZSI+R28gYmFjazwvTGluaz4KICAgICAgPC9kaXY+CiAgICApOwogIH0KCiAgY29uc3QgaW5pdGlhbERhdGEgPSB7CiAgICB0aXRsZTogc2VyaWVzLnRpdGxlID8/ICcnLAogICAgdGl0bGVIaTogc2VyaWVzLnRpdGxlSGkgPz8gJycsCiAgICB0aXRsZVpoOiBzZXJpZXMudGl0bGVaaCA/PyAnJywKICAgIGRlc2NyaXB0aW9uOiBzZXJpZXMuZGVzY3JpcHRpb24gPz8gJycsCiAgICBkZXNjcmlwdGlvbkhpOiBzZXJpZXMuZGVzY3JpcHRpb25IaSA/PyAnJywKICAgIGRlc2NyaXB0aW9uWmg6IHNlcmllcy5kZXNjcmlwdGlvblpoID8/ICcnLAogICAgZ2VucmU6IHNlcmllcy5nZW5yZSA/PyAnJywKICAgIHRhZ3M6IChzZXJpZXMudGFncyA/PyBbXSkuam9pbignLCAnKSwKICAgIHRodW1ibmFpbDogc2VyaWVzLnRodW1ibmFpbCA/PyAnJywKICAgIGZyZWVFcGlzb2Rlczogc2VyaWVzLmZyZWVFcGlzb2RlcyA/PyAxLAogICAgY29pblByaWNlOiBzZXJpZXMuY29pblByaWNlID8/IDUsCiAgICBmZWF0dXJlZDogc2VyaWVzLmZlYXR1cmVkID8/IGZhbHNlLAogICAgc3RhdHVzOiBzZXJpZXMuc3RhdHVzID8/ICdkcmFmdCcsCiAgfTsKCiAgY29uc3QgZXBpc29kZXMgPSBzZXJpZXMuZXBpc29kZXMgPz8gW107CgogIHJldHVybiAoCiAgICA8ZGl2IGNsYXNzTmFtZT0ibWF4LXctNHhsIG14LWF1dG8gc3BhY2UteS04Ij4KICAgICAgey8qIEhlYWRlciAqL30KICAgICAgPGRpdj4KICAgICAgICA8aDEgY2xhc3NOYW1lPSJ0ZXh0LTJ4bCBmb250LWJvbGQgdGV4dC13aGl0ZSI+RWRpdCBTZXJpZXM8L2gxPgogICAgICAgIDxwIGNsYXNzTmFtZT0idGV4dC1ncmF5LTUwMCB0ZXh0LXNtIG10LTAuNSI+CiAgICAgICAgICBFZGl0aW5nOiA8c3BhbiBjbGFzc05hbWU9InRleHQtZ3JheS0zMDAiPntzZXJpZXMudGl0bGV9PC9zcGFuPgogICAgICAgIDwvcD4KICAgICAgPC9kaXY+CgogICAgICB7LyogRWRpdCBmb3JtICovfQogICAgICA8U2VyaWVzRm9ybSBpbml0aWFsRGF0YT17aW5pdGlhbERhdGF9IHNlcmllc0lkPXtpZH0gLz4KCiAgICAgIHsvKiBFcGlzb2RlcyBzZWN0aW9uICovfQogICAgICA8c2VjdGlvbiBjbGFzc05hbWU9InNwYWNlLXktNCI+CiAgICAgICAgPGRpdiBjbGFzc05hbWU9ImZsZXggaXRlbXMtY2VudGVyIGp1c3RpZnktYmV0d2VlbiI+CiAgICAgICAgICA8ZGl2PgogICAgICAgICAgICA8aDIgY2xhc3NOYW1lPSJ0ZXh0LXhsIGZvbnQtYm9sZCB0ZXh0LXdoaXRlIj5FcGlzb2RlczwvaDI+CiAgICAgICAgICAgIDxwIGNsYXNzTmFtZT0idGV4dC1ncmF5LTUwMCB0ZXh0LXNtIj57ZXBpc29kZXMubGVuZ3RofSBlcGlzb2RlcyBpbiB0aGlzIHNlcmllczwvcD4KICAgICAgICAgIDwvZGl2PgogICAgICAgICAgPExpbmsKICAgICAgICAgICAgaHJlZj17YC9hZG1pbi9zZXJpZXMvJHtpZH0vZXBpc29kZXMvbmV3YH0KICAgICAgICAgICAgY2xhc3NOYW1lPSJmbGV4IGl0ZW1zLWNlbnRlciBnYXAtMiBweC00IHB5LTIgYmctcmVkLTYwMCBob3ZlcjpiZy1yZWQtNzAwIHRleHQtd2hpdGUgcm91bmRlZC1sZyB0ZXh0LXNtIGZvbnQtbWVkaXVtIHRyYW5zaXRpb24tY29sb3JzIgogICAgICAgICAgPgogICAgICAgICAgICA8UGx1c0NpcmNsZSBzaXplPXsxNX0gLz4KICAgICAgICAgICAgQWRkIEVwaXNvZGUKICAgICAgICAgIDwvTGluaz4KICAgICAgICA8L2Rpdj4KCiAgICAgICAge2VwaXNvZGVzLmxlbmd0aCA9PT0gMCA/ICgKICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPSJiZy1ncmF5LTkwMCBib3JkZXIgYm9yZGVyLWdyYXktODAwIHJvdW5kZWQteGwgcC0xMiB0ZXh0LWNlbnRlciI+CiAgICAgICAgICAgIDxwIGNsYXNzTmFtZT0idGV4dC1ncmF5LTUwMCBtYi0zIj5ObyBlcGlzb2RlcyB5ZXQuPC9wPgogICAgICAgICAgICA8TGluawogICAgICAgICAgICAgIGhyZWY9e2AvYWRtaW4vc2VyaWVzLyR7aWR9L2VwaXNvZGVzL25ld2B9CiAgICAgICAgICAgICAgY2xhc3NOYW1lPSJpbmxpbmUtZmxleCBpdGVtcy1jZW50ZXIgZ2FwLTIgcHgtNCBweS0yIGJnLXJlZC02MDAgaG92ZXI6YmctcmVkLTcwMCB0ZXh0LXdoaXRlIHJvdW5kZWQtbGcgdGV4dC1zbSBmb250LW1lZGl1bSB0cmFuc2l0aW9uLWNvbG9ycyIKICAgICAgICAgICAgPgogICAgICAgICAgICAgIDxQbHVzQ2lyY2xlIHNpemU9ezE1fSAvPgogICAgICAgICAgICAgIEFkZCBGaXJzdCBFcGlzb2RlCiAgICAgICAgICAgIDwvTGluaz4KICAgICAgICAgIDwvZGl2PgogICAgICAgICkgOiAoCiAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT0iYmctZ3JheS05MDAgYm9yZGVyIGJvcmRlci1ncmF5LTgwMCByb3VuZGVkLXhsIG92ZXJmbG93LWhpZGRlbiI+CiAgICAgICAgICAgIHtlcGlzb2RlcwogICAgICAgICAgICAgIC5zb3J0KChhLCBiKSA9PiBhLmVwaXNvZGVOdW1iZXIgLSBiLmVwaXNvZGVOdW1iZXIpCiAgICAgICAgICAgICAgLm1hcCgoZXAsIGkpID0+ICgKICAgICAgICAgICAgICAgIDxkaXYKICAgICAgICAgICAgICAgICAga2V5PXtlcC5pZH0KICAgICAgICAgICAgICAgICAgY2xhc3NOYW1lPXtgZmxleCBpdGVtcy1jZW50ZXIgZ2FwLTQgcHgtNSBweS00ICR7CiAgICAgICAgICAgICAgICAgICAgaSA8IGVwaXNvZGVzLmxlbmd0aCAtIDEgPyAnYm9yZGVyLWIgYm9yZGVyLWdyYXktODAwJyA6ICcnCiAgICAgICAgICAgICAgICAgIH0gaG92ZXI6YmctZ3JheS05NTAgdHJhbnNpdGlvbi1jb2xvcnNgfQogICAgICAgICAgICAgICAgPgogICAgICAgICAgICAgICAgICB7LyogRXBpc29kZSBudW1iZXIgKi99CiAgICAgICAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPSJ3LTggaC04IHJvdW5kZWQtbGcgYmctZ3JheS04MDAgZmxleCBpdGVtcy1jZW50ZXIganVzdGlmeS1jZW50ZXIgdGV4dC14cyBmb250LWJvbGQgdGV4dC1ncmF5LTQwMCBzaHJpbmstMCI+CiAgICAgICAgICAgICAgICAgICAge2VwLmVwaXNvZGVOdW1iZXJ9CiAgICAgICAgICAgICAgICAgIDwvZGl2PgoKICAgICAgICAgICAgICAgICAgey8qIEluZm8gKi99CiAgICAgICAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPSJmbGV4LTEgbWluLXctMCI+CiAgICAgICAgICAgICAgICAgICAgPGRpdiBjbGFzc05hbWU9ImZvbnQtbWVkaXVtIHRleHQtd2hpdGUgdGV4dC1zbSB0cnVuY2F0ZSI+e2VwLnRpdGxlfTwvZGl2PgogICAgICAgICAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPSJmbGV4IGl0ZW1zLWNlbnRlciBnYXAtMyBtdC0wLjUiPgogICAgICAgICAgICAgICAgICAgICAgPHNwYW4gY2xhc3NOYW1lPSJ0ZXh0LXhzIHRleHQtZ3JheS01MDAgZmxleCBpdGVtcy1jZW50ZXIgZ2FwLTEiPgogICAgICAgICAgICAgICAgICAgICAgICA8Q2xvY2sgc2l6ZT17MTB9IC8+IHtmb3JtYXREdXJhdGlvbihlcC5kdXJhdGlvbil9CiAgICAgICAgICAgICAgICAgICAgICA8L3NwYW4+CiAgICAgICAgICAgICAgICAgICAgICB7ZXAudmlkZW9JZCAmJiAoCiAgICAgICAgICAgICAgICAgICAgICAgIDxzcGFuIGNsYXNzTmFtZT0idGV4dC14cyB0ZXh0LWdyYXktNjAwIGZvbnQtbW9ubyI+SUQ6IHtlcC52aWRlb0lkLnNsaWNlKDAsIDgpfeKApjwvc3Bhbj4KICAgICAgICAgICAgICAgICAgICAgICl9CiAgICAgICAgICAgICAgICAgICAgPC9kaXY+CiAgICAgICAgICAgICAgICAgIDwvZGl2PgoKICAgICAgICAgICAgICAgICAgey8qIEZyZWUvbG9ja2VkICovfQogICAgICAgICAgICAgICAgICA8ZGl2PgogICAgICAgICAgICAgICAgICAgIHtlcC5pc0ZyZWUgPyAoCiAgICAgICAgICAgICAgICAgICAgICA8c3BhbiBjbGFzc05hbWU9ImZsZXggaXRlbXMtY2VudGVyIGdhcC0xIHRleHQteHMgdGV4dC1ncmVlbi00MDAiPgogICAgICAgICAgICAgICAgICAgICAgICA8VW5sb2NrIHNpemU9ezExfSAvPiBGcmVlCiAgICAgICAgICAgICAgICAgICAgICA8L3NwYW4+CiAgICAgICAgICAgICAgICAgICAgKSA6ICgKICAgICAgICAgICAgICAgICAgICAgIDxzcGFuIGNsYXNzTmFtZT0iZmxleCBpdGVtcy1jZW50ZXIgZ2FwLTEgdGV4dC14cyB0ZXh0LWdyYXktNTAwIj4KICAgICAgICAgICAgICAgICAgICAgICAgPExvY2sgc2l6ZT17MTF9IC8+IFBhaWQKICAgICAgICAgICAgICAgICAgICAgIDwvc3Bhbj4KICAgICAgICAgICAgICAgICAgICApfQogICAgICAgICAgICAgICAgICA8L2Rpdj4KCiAgICAgICAgICAgICAgICAgIHsvKiBBY3Rpb25zICovfQogICAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT0iZmxleCBpdGVtcy1jZW50ZXIgZ2FwLTEiPgogICAgICAgICAgICAgICAgICAgIDxMaW5rCiAgICAgICAgICAgICAgICAgICAgICBocmVmPXtgL2FkbWluL3Nlcmllcy8ke2lkfS9lcGlzb2Rlcy8ke2VwLmlkfS9lZGl0YH0KICAgICAgICAgICAgICAgICAgICAgIGNsYXNzTmFtZT0icC0xLjUgcm91bmRlZC1sZyB0ZXh0LWdyYXktNDAwIGhvdmVyOmJnLWdyYXktODAwIGhvdmVyOnRleHQtd2hpdGUgdHJhbnNpdGlvbi1jb2xvcnMiCiAgICAgICAgICAgICAgICAgICAgICB0aXRsZT0iRWRpdCBlcGlzb2RlIgogICAgICAgICAgICAgICAgICAgID4KICAgICAgICAgICAgICAgICAgICAgIDxFZGl0MiBzaXplPXsxNH0gLz4KICAgICAgICAgICAgICAgICAgICA8L0xpbms+CiAgICAgICAgICAgICAgICAgICAgPGJ1dHRvbgogICAgICAgICAgICAgICAgICAgICAgb25DbGljaz17KCkgPT4gc2V0RGVsZXRlRXAoZXApfQogICAgICAgICAgICAgICAgICAgICAgY2xhc3NOYW1lPSJwLTEuNSByb3VuZGVkLWxnIHRleHQtZ3JheS00MDAgaG92ZXI6YmctcmVkLTkwMC81MCBob3Zlcjp0ZXh0LXJlZC00MDAgdHJhbnNpdGlvbi1jb2xvcnMiCiAgICAgICAgICAgICAgICAgICAgICB0aXRsZT0iRGVsZXRlIGVwaXNvZGUiCiAgICAgICAgICAgICAgICAgICAgPgogICAgICAgICAgICAgICAgICAgICAgPFRyYXNoMiBzaXplPXsxNH0gLz4KICAgICAgICAgICAgICAgICAgICA8L2J1dHRvbj4KICAgICAgICAgICAgICAgICAgPC9kaXY+CiAgICAgICAgICAgICAgICA8L2Rpdj4KICAgICAgICAgICAgICApKX0KICAgICAgICAgIDwvZGl2PgogICAgICAgICl9CiAgICAgIDwvc2VjdGlvbj4KCiAgICAgIDxDb25maXJtRGlhbG9nCiAgICAgICAgb3Blbj17ISFkZWxldGVFcH0KICAgICAgICB0aXRsZT0iRGVsZXRlIEVwaXNvZGUiCiAgICAgICAgbWVzc2FnZT17YERlbGV0ZSAiRXAgJHtkZWxldGVFcD8uZXBpc29kZU51bWJlcn06ICR7ZGVsZXRlRXA/LnRpdGxlfSI/IFRoaXMgY2Fubm90IGJlIHVuZG9uZS5gfQogICAgICAgIGNvbmZpcm1MYWJlbD0iRGVsZXRlIgogICAgICAgIGRhbmdlcm91cwogICAgICAgIGxvYWRpbmc9e2RlbGV0ZUxvYWRpbmd9CiAgICAgICAgb25Db25maXJtPXtoYW5kbGVEZWxldGVFcGlzb2RlfQogICAgICAgIG9uQ2FuY2VsPXsoKSA9PiBzZXREZWxldGVFcChudWxsKX0KICAgICAgLz4KICAgIDwvZGl2PgogICk7Cn0K"}
+'use client';
+
+import { useEffect, useState } from 'react';
+import { useParams, useRouter } from 'next/navigation';
+import Link from 'next/link';
+import { PlusCircle, Edit2, Trash2, Clock, Lock, Unlock } from 'lucide-react';
+import SeriesForm from '@/components/admin/SeriesForm';
+import ConfirmDialog from '@/components/admin/ConfirmDialog';
+import { useToast } from '@/components/admin/Toast';
+
+interface Episode {
+  id: string;
+  episodeNumber: number;
+  title: string;
+  duration?: number;
+  isFree: boolean;
+  videoId?: string;
+  createdAt: string;
+}
+
+interface SeriesDetail {
+  id: string;
+  title: string;
+  titleHi?: string;
+  titleZh?: string;
+  description?: string;
+  descriptionHi?: string;
+  descriptionZh?: string;
+  genre?: string;
+  tags?: string[];
+  thumbnail?: string;
+  freeEpisodes?: number;
+  coinPrice?: number;
+  featured?: boolean;
+  status?: string;
+  episodes?: Episode[];
+}
+
+export default function EditSeriesPage() {
+  const { id } = useParams<{ id: string }>();
+  const router = useRouter();
+  const { toast } = useToast();
+  const [series, setSeries] = useState<SeriesDetail | null>(null);
+  const [loading, setLoading] = useState(true);
+  const [deleteEp, setDeleteEp] = useState<Episode | null>(null);
+  const [deleteLoading, setDeleteLoading] = useState(false);
+
+  useEffect(() => {
+    fetch(`/api/admin/series/${id}`)
+      .then((r) => r.json())
+      .then((data) => {
+        setSeries(data);
+        setLoading(false);
+      })
+      .catch(() => {
+        toast('Failed to load series', 'error');
+        setLoading(false);
+      });
+  }, [id, toast]);
+
+  const handleDeleteEpisode = async () => {
+    if (!deleteEp) return;
+    setDeleteLoading(true);
+    try {
+      const res = await fetch(`/api/admin/series/${id}/episodes/${deleteEp.id}`, { method: 'DELETE' });
+      if (!res.ok) throw new Error();
+      toast('Episode deleted', 'success');
+      setDeleteEp(null);
+      // Refresh
+      const updated = await fetch(`/api/admin/series/${id}`).then((r) => r.json());
+      setSeries(updated);
+    } catch {
+      toast('Failed to delete episode', 'error');
+    } finally {
+      setDeleteLoading(false);
+    }
+  };
+
+  const formatDuration = (seconds?: number) => {
+    if (!seconds) return '—';
+    const m = Math.floor(seconds / 60);
+    const s = seconds % 60;
+    return `${m}:${String(s).padStart(2, '0')}`;
+  };
+
+  if (loading) {
+    return (
+      <div className="max-w-4xl mx-auto space-y-5">
+        <div className="h-8 bg-gray-800 rounded animate-pulse w-48" />
+        <div className="h-64 bg-gray-900 border border-gray-800 rounded-xl animate-pulse" />
+      </div>
+    );
+  }
+
+  if (!series) {
+    return (
+      <div className="text-center py-20 text-gray-500">
+        Series not found.{' '}
+        <Link href="/admin/series" className="text-red-500 hover:underline">Go back</Link>
+      </div>
+    );
+  }
+
+  const initialData = {
+    title: series.title ?? '',
+    titleHi: series.titleHi ?? '',
+    titleZh: series.titleZh ?? '',
+    description: series.description ?? '',
+    descriptionHi: series.descriptionHi ?? '',
+    descriptionZh: series.descriptionZh ?? '',
+    genre: series.genre ?? '',
+    tags: (series.tags ?? []).join(', '),
+    thumbnail: series.thumbnail ?? '',
+    freeEpisodes: series.freeEpisodes ?? 1,
+    coinPrice: series.coinPrice ?? 5,
+    featured: series.featured ?? false,
+    status: series.status ?? 'draft',
+  };
+
+  const episodes = series.episodes ?? [];
+
+  return (
+    <div className="max-w-4xl mx-auto space-y-8">
+      {/* Header */}
+      <div>
+        <h1 className="text-2xl font-bold text-white">Edit Series</h1>
+        <p className="text-gray-500 text-sm mt-0.5">
+          Editing: <span className="text-gray-300">{series.title}</span>
+        </p>
+      </div>
+
+      {/* Edit form */}
+      <SeriesForm initialData={initialData} seriesId={id} />
+
+      {/* Episodes section */}
+      <section className="space-y-4">
+        <div className="flex items-center justify-between">
+          <div>
+            <h2 className="text-xl font-bold text-white">Episodes</h2>
+            <p className="text-gray-500 text-sm">{episodes.length} episodes in this series</p>
+          </div>
+          <Link
+            href={`/admin/series/${id}/episodes/new`}
+            className="flex items-center gap-2 px-4 py-2 bg-red-600 hover:bg-red-700 text-white rounded-lg text-sm font-medium transition-colors"
+          >
+            <PlusCircle size={15} />
+            Add Episode
+          </Link>
+        </div>
+
+        {episodes.length === 0 ? (
+          <div className="bg-gray-900 border border-gray-800 rounded-xl p-12 text-center">
+            <p className="text-gray-500 mb-3">No episodes yet.</p>
+            <Link
+              href={`/admin/series/${id}/episodes/new`}
+              className="inline-flex items-center gap-2 px-4 py-2 bg-red-600 hover:bg-red-700 text-white rounded-lg text-sm font-medium transition-colors"
+            >
+              <PlusCircle size={15} />
+              Add First Episode
+            </Link>
+          </div>
+        ) : (
+          <div className="bg-gray-900 border border-gray-800 rounded-xl overflow-hidden">
+            {episodes
+              .sort((a, b) => a.episodeNumber - b.episodeNumber)
+              .map((ep, i) => (
+                <div
+                  key={ep.id}
+                  className={`flex items-center gap-4 px-5 py-4 ${
+                    i < episodes.length - 1 ? 'border-b border-gray-800' : ''
+                  } hover:bg-gray-950 transition-colors`}
+                >
+                  {/* Episode number */}
+                  <div className="w-8 h-8 rounded-lg bg-gray-800 flex items-center justify-center text-xs font-bold text-gray-400 shrink-0">
+                    {ep.episodeNumber}
+                  </div>
+
+                  {/* Info */}
+                  <div className="flex-1 min-w-0">
+                    <div className="font-medium text-white text-sm truncate">{ep.title}</div>
+                    <div className="flex items-center gap-3 mt-0.5">
+                      <span className="text-xs text-gray-500 flex items-center gap-1">
+                        <Clock size={10} /> {formatDuration(ep.duration)}
+                      </span>
+                      {ep.videoId && (
+                        <span className="text-xs text-gray-600 font-mono">ID: {ep.videoId.slice(0, 8)}…</span>
+                      )}
+                    </div>
+                  </div>
+
+                  {/* Free/locked */}
+                  <div>
+                    {ep.isFree ? (
+                      <span className="flex items-center gap-1 text-xs text-green-400">
+                        <Unlock size={11} /> Free
+                      </span>
+                    ) : (
+                      <span className="flex items-center gap-1 text-xs text-gray-500">
+                        <Lock size={11} /> Paid
+                      </span>
+                    )}
+                  </div>
+
+                  {/* Actions */}
+                  <div className="flex items-center gap-1">
+                    <Link
+                      href={`/admin/series/${id}/episodes/${ep.id}/edit`}
+                      className="p-1.5 rounded-lg text-gray-400 hover:bg-gray-800 hover:text-white transition-colors"
+                      title="Edit episode"
+                    >
+                      <Edit2 size={14} />
+                    </Link>
+                    <button
+                      onClick={() => setDeleteEp(ep)}
+                      className="p-1.5 rounded-lg text-gray-400 hover:bg-red-900/50 hover:text-red-400 transition-colors"
+                      title="Delete episode"
+                    >
+                      <Trash2 size={14} />
+                    </button>
+                  </div>
+                </div>
+              ))}
+          </div>
+        )}
+      </section>
+
+      <ConfirmDialog
+        open={!!deleteEp}
+        title="Delete Episode"
+        message={`Delete "Ep ${deleteEp?.episodeNumber}: ${deleteEp?.title}"? This cannot be undone.`}
+        confirmLabel="Delete"
+        dangerous
+        loading={deleteLoading}
+        onConfirm={handleDeleteEpisode}
+        onCancel={() => setDeleteEp(null)}
+      />
+    </div>
+  );
+}

@@ -1,1 +1,24 @@
-{"data":"aW1wb3J0IHsgY3JlYXRlIH0gZnJvbSAnenVzdGFuZCc7CgppbnRlcmZhY2UgQ29pblBhY2thZ2UgewogIGlkOiBzdHJpbmc7CiAgbmFtZTogc3RyaW5nOwogIGNvaW5zOiBudW1iZXI7CiAgcHJpY2VVU0Q6IG51bWJlcjsKICBwcmljZUlOUjogbnVtYmVyOwogIHBvcHVsYXI6IGJvb2xlYW47Cn0KCmludGVyZmFjZSBDb2luU3RhdGUgewogIHBhY2thZ2VzOiBDb2luUGFja2FnZVtdOwogIHNlbGVjdGVkUGFja2FnZTogQ29pblBhY2thZ2UgfCBudWxsOwogIHNldFBhY2thZ2VzOiAocGFja2FnZXM6IENvaW5QYWNrYWdlW10pID0+IHZvaWQ7CiAgc2VsZWN0UGFja2FnZTogKHBrZzogQ29pblBhY2thZ2UgfCBudWxsKSA9PiB2b2lkOwp9CgpleHBvcnQgY29uc3QgdXNlQ29pblN0b3JlID0gY3JlYXRlPENvaW5TdGF0ZT4oKHNldCkgPT4gKHsKICBwYWNrYWdlczogW10sCiAgc2VsZWN0ZWRQYWNrYWdlOiBudWxsLAogIHNldFBhY2thZ2VzOiAocGFja2FnZXMpID0+IHNldCh7IHBhY2thZ2VzIH0pLAogIHNlbGVjdFBhY2thZ2U6IChwa2cpID0+IHNldCh7IHNlbGVjdGVkUGFja2FnZTogcGtnIH0pLAp9KSk7Cg=="}
+import { create } from 'zustand';
+
+interface CoinPackage {
+  id: string;
+  name: string;
+  coins: number;
+  priceUSD: number;
+  priceINR: number;
+  popular: boolean;
+}
+
+interface CoinState {
+  packages: CoinPackage[];
+  selectedPackage: CoinPackage | null;
+  setPackages: (packages: CoinPackage[]) => void;
+  selectPackage: (pkg: CoinPackage | null) => void;
+}
+
+export const useCoinStore = create<CoinState>((set) => ({
+  packages: [],
+  selectedPackage: null,
+  setPackages: (packages) => set({ packages }),
+  selectPackage: (pkg) => set({ selectedPackage: pkg }),
+}));

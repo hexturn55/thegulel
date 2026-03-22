@@ -1,1 +1,72 @@
-{"data":"aW1wb3J0IHsgTmV4dFJlcXVlc3QsIE5leHRSZXNwb25zZSB9IGZyb20gJ25leHQvc2VydmVyJzsKaW1wb3J0IHsgY3JlYXRlU2VydmVyU3VwYWJhc2VDbGllbnQgfSBmcm9tICdAL2xpYi9zdXBhYmFzZS1zZXJ2ZXInOwppbXBvcnQgcHJpc21hIGZyb20gJ0AvbGliL3ByaXNtYSc7CgovKioKICogR0VUIC9hcGkvdXNlci90cmFuc2FjdGlvbnMKICogUmV0dXJucyBwYWdpbmF0ZWQgY29pbiB0cmFuc2FjdGlvbiBoaXN0b3J5IGZvciB0aGUgY3VycmVudCB1c2VyLgogKgogKiBRdWVyeSBwYXJhbXM6CiAqICAgcGFnZSAg4oCUIHBhZ2UgbnVtYmVyIChkZWZhdWx0OiAxKQogKiAgIGxpbWl0IOKAlCBpdGVtcyBwZXIgcGFnZSAoZGVmYXVsdDogMjApCiAqLwpleHBvcnQgYXN5bmMgZnVuY3Rpb24gR0VUKHJlcXVlc3Q6IE5leHRSZXF1ZXN0KSB7CiAgY29uc3Qgc3VwYWJhc2UgPSBhd2FpdCBjcmVhdGVTZXJ2ZXJTdXBhYmFzZUNsaWVudCgpOwogIGNvbnN0IHsKICAgIGRhdGE6IHsgdXNlcjogc3VwYWJhc2VVc2VyIH0sCiAgfSA9IGF3YWl0IHN1cGFiYXNlLmF1dGguZ2V0VXNlcigpOwoKICBpZiAoIXN1cGFiYXNlVXNlcikgewogICAgcmV0dXJuIE5leHRSZXNwb25zZS5qc29uKHsgZXJyb3I6ICdVbmF1dGhvcml6ZWQnIH0sIHsgc3RhdHVzOiA0MDEgfSk7CiAgfQoKICBjb25zdCB7IHNlYXJjaFBhcmFtcyB9ID0gbmV3IFVSTChyZXF1ZXN0LnVybCk7CiAgY29uc3QgcGFnZSA9IE1hdGgubWF4KDEsIHBhcnNlSW50KHNlYXJjaFBhcmFtcy5nZXQoJ3BhZ2UnKSA/PyAnMScsIDEwKSk7CiAgY29uc3QgbGltaXQgPSBNYXRoLm1pbigxMDAsIE1hdGgubWF4KDEsIHBhcnNlSW50KHNlYXJjaFBhcmFtcy5nZXQoJ2xpbWl0JykgPz8gJzIwJywgMTApKSk7CiAgY29uc3Qgc2tpcCA9IChwYWdlIC0gMSkgKiBsaW1pdDsKCiAgdHJ5IHsKICAgIGNvbnN0IGRiVXNlciA9IGF3YWl0IHByaXNtYS51c2VyLmZpbmRGaXJzdCh7CiAgICAgIHdoZXJlOiB7CiAgICAgICAgT1I6IFsKICAgICAgICAgIHsgc3VwYWJhc2VJZDogc3VwYWJhc2VVc2VyLmlkIH0sCiAgICAgICAgICAuLi4oc3VwYWJhc2VVc2VyLmVtYWlsID8gW3sgZW1haWw6IHN1cGFiYXNlVXNlci5lbWFpbCB9XSA6IFtdKSwKICAgICAgICAgIC4uLihzdXBhYmFzZVVzZXIucGhvbmUgPyBbeyBwaG9uZTogc3VwYWJhc2VVc2VyLnBob25lIH1dIDogW10pLAogICAgICAgIF0sCiAgICAgIH0sCiAgICAgIHNlbGVjdDogeyBpZDogdHJ1ZSB9LAogICAgfSk7CgogICAgaWYgKCFkYlVzZXIpIHsKICAgICAgcmV0dXJuIE5leHRSZXNwb25zZS5qc29uKHsgZXJyb3I6ICdVc2VyIG5vdCBmb3VuZCcgfSwgeyBzdGF0dXM6IDQwNCB9KTsKICAgIH0KCiAgICBjb25zdCBbdHJhbnNhY3Rpb25zLCB0b3RhbF0gPSBhd2FpdCBQcm9taXNlLmFsbChbCiAgICAgIHByaXNtYS5jb2luVHJhbnNhY3Rpb24uZmluZE1hbnkoewogICAgICAgIHdoZXJlOiB7IHVzZXJJZDogZGJVc2VyLmlkIH0sCiAgICAgICAgb3JkZXJCeTogeyBjcmVhdGVkQXQ6ICdkZXNjJyB9LAogICAgICAgIHNraXAsCiAgICAgICAgdGFrZTogbGltaXQsCiAgICAgICAgc2VsZWN0OiB7CiAgICAgICAgICBpZDogdHJ1ZSwKICAgICAgICAgIGFtb3VudDogdHJ1ZSwKICAgICAgICAgIHR5cGU6IHRydWUsCiAgICAgICAgICBkZXNjcmlwdGlvbjogdHJ1ZSwKICAgICAgICAgIGNyZWF0ZWRBdDogdHJ1ZSwKICAgICAgICB9LAogICAgICB9KSwKICAgICAgcHJpc21hLmNvaW5UcmFuc2FjdGlvbi5jb3VudCh7IHdoZXJlOiB7IHVzZXJJZDogZGJVc2VyLmlkIH0gfSksCiAgICBdKTsKCiAgICByZXR1cm4gTmV4dFJlc3BvbnNlLmpzb24oewogICAgICB0cmFuc2FjdGlvbnMsCiAgICAgIHRvdGFsLAogICAgICBwYWdlLAogICAgICBsaW1pdCwKICAgICAgaGFzTW9yZTogc2tpcCArIHRyYW5zYWN0aW9ucy5sZW5ndGggPCB0b3RhbCwKICAgIH0pOwogIH0gY2F0Y2ggKGVycm9yKSB7CiAgICBjb25zb2xlLmVycm9yKCdHRVQgL2FwaS91c2VyL3RyYW5zYWN0aW9ucyBlcnJvcjonLCBlcnJvcik7CiAgICByZXR1cm4gTmV4dFJlc3BvbnNlLmpzb24oeyBlcnJvcjogJ0ludGVybmFsIGVycm9yJyB9LCB7IHN0YXR1czogNTAwIH0pOwogIH0KfQo="}
+import { NextRequest, NextResponse } from 'next/server';
+import { createServerSupabaseClient } from '@/lib/supabase-server';
+import prisma from '@/lib/prisma';
+
+/**
+ * GET /api/user/transactions
+ * Returns paginated coin transaction history for the current user.
+ *
+ * Query params:
+ *   page  — page number (default: 1)
+ *   limit — items per page (default: 20)
+ */
+export async function GET(request: NextRequest) {
+  const supabase = await createServerSupabaseClient();
+  const {
+    data: { user: supabaseUser },
+  } = await supabase.auth.getUser();
+
+  if (!supabaseUser) {
+    return NextResponse.json({ error: 'Unauthorized' }, { status: 401 });
+  }
+
+  const { searchParams } = new URL(request.url);
+  const page = Math.max(1, parseInt(searchParams.get('page') ?? '1', 10));
+  const limit = Math.min(100, Math.max(1, parseInt(searchParams.get('limit') ?? '20', 10)));
+  const skip = (page - 1) * limit;
+
+  try {
+    const dbUser = await prisma.user.findFirst({
+      where: {
+        OR: [
+          { supabaseId: supabaseUser.id },
+          ...(supabaseUser.email ? [{ email: supabaseUser.email }] : []),
+          ...(supabaseUser.phone ? [{ phone: supabaseUser.phone }] : []),
+        ],
+      },
+      select: { id: true },
+    });
+
+    if (!dbUser) {
+      return NextResponse.json({ error: 'User not found' }, { status: 404 });
+    }
+
+    const [transactions, total] = await Promise.all([
+      prisma.coinTransaction.findMany({
+        where: { userId: dbUser.id },
+        orderBy: { createdAt: 'desc' },
+        skip,
+        take: limit,
+        select: {
+          id: true,
+          amount: true,
+          type: true,
+          description: true,
+          createdAt: true,
+        },
+      }),
+      prisma.coinTransaction.count({ where: { userId: dbUser.id } }),
+    ]);
+
+    return NextResponse.json({
+      transactions,
+      total,
+      page,
+      limit,
+      hasMore: skip + transactions.length < total,
+    });
+  } catch (error) {
+    console.error('GET /api/user/transactions error:', error);
+    return NextResponse.json({ error: 'Internal error' }, { status: 500 });
+  }
+}

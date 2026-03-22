@@ -1,1 +1,7 @@
-{"data":"aW1wb3J0IHNoYXJwIGZyb20gJ3NoYXJwJzsKCmF3YWl0IHNoYXJwKCdwdWJsaWMvbG9nby1vcHRpb24xLnBuZycpCiAgLm5lZ2F0ZSh7IGFscGhhOiBmYWxzZSB9KQogIC50b0ZpbGUoJ3B1YmxpYy9sb2dvLnBuZycpOwoKY29uc29sZS5sb2coJ0RvbmUgLSBsb2dvLnBuZyB1cGRhdGVkIHdpdGggd2hpdGUgdmVyc2lvbiBvZiBsb2dvLW9wdGlvbjEnKTsK"}
+import sharp from 'sharp';
+
+await sharp('public/logo-option1.png')
+  .negate({ alpha: false })
+  .toFile('public/logo.png');
+
+console.log('Done - logo.png updated with white version of logo-option1');

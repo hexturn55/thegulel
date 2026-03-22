@@ -1,1 +1,75 @@
-{"data":"J3VzZSBjbGllbnQnOwoKaW1wb3J0IHsgY3JlYXRlQ29udGV4dCwgdXNlQ29udGV4dCwgdXNlU3RhdGUsIHVzZUNhbGxiYWNrLCBSZWFjdE5vZGUgfSBmcm9tICdyZWFjdCc7CmltcG9ydCB7IENoZWNrQ2lyY2xlLCBYQ2lyY2xlLCBBbGVydENpcmNsZSwgWCB9IGZyb20gJ2x1Y2lkZS1yZWFjdCc7Cgp0eXBlIFRvYXN0VHlwZSA9ICdzdWNjZXNzJyB8ICdlcnJvcicgfCAnaW5mbyc7CgppbnRlcmZhY2UgVG9hc3QgewogIGlkOiBzdHJpbmc7CiAgdHlwZTogVG9hc3RUeXBlOwogIG1lc3NhZ2U6IHN0cmluZzsKfQoKaW50ZXJmYWNlIFRvYXN0Q29udGV4dFZhbHVlIHsKICB0b2FzdDogKG1lc3NhZ2U6IHN0cmluZywgdHlwZT86IFRvYXN0VHlwZSkgPT4gdm9pZDsKfQoKY29uc3QgVG9hc3RDb250ZXh0ID0gY3JlYXRlQ29udGV4dDxUb2FzdENvbnRleHRWYWx1ZT4oeyB0b2FzdDogKCkgPT4ge30gfSk7CgpleHBvcnQgZnVuY3Rpb24gdXNlVG9hc3QoKSB7CiAgcmV0dXJuIHVzZUNvbnRleHQoVG9hc3RDb250ZXh0KTsKfQoKY29uc3QgSUNPTlMgPSB7CiAgc3VjY2VzczogQ2hlY2tDaXJjbGUsCiAgZXJyb3I6IFhDaXJjbGUsCiAgaW5mbzogQWxlcnRDaXJjbGUsCn07Cgpjb25zdCBTVFlMRVMgPSB7CiAgc3VjY2VzczogJ2JvcmRlci1ncmVlbi03MDAgYmctZ3JlZW4tOTAwLzgwIHRleHQtZ3JlZW4tMzAwJywKICBlcnJvcjogJ2JvcmRlci1yZWQtNzAwIGJnLXJlZC05MDAvODAgdGV4dC1yZWQtMzAwJywKICBpbmZvOiAnYm9yZGVyLWJsdWUtNzAwIGJnLWJsdWUtOTAwLzgwIHRleHQtYmx1ZS0zMDAnLAp9OwoKZXhwb3J0IGZ1bmN0aW9uIFRvYXN0UHJvdmlkZXIoeyBjaGlsZHJlbiB9OiB7IGNoaWxkcmVuOiBSZWFjdE5vZGUgfSkgewogIGNvbnN0IFt0b2FzdHMsIHNldFRvYXN0c10gPSB1c2VTdGF0ZTxUb2FzdFtdPihbXSk7CgogIGNvbnN0IHRvYXN0ID0gdXNlQ2FsbGJhY2soKG1lc3NhZ2U6IHN0cmluZywgdHlwZTogVG9hc3RUeXBlID0gJ2luZm8nKSA9PiB7CiAgICBjb25zdCBpZCA9IE1hdGgucmFuZG9tKCkudG9TdHJpbmcoMzYpLnNsaWNlKDIpOwogICAgc2V0VG9hc3RzKChwcmV2KSA9PiBbLi4ucHJldiwgeyBpZCwgdHlwZSwgbWVzc2FnZSB9XSk7CiAgICBzZXRUaW1lb3V0KCgpID0+IHsKICAgICAgc2V0VG9hc3RzKChwcmV2KSA9PiBwcmV2LmZpbHRlcigodCkgPT4gdC5pZCAhPT0gaWQpKTsKICAgIH0sIDQwMDApOwogIH0sIFtdKTsKCiAgY29uc3QgcmVtb3ZlID0gKGlkOiBzdHJpbmcpID0+IHNldFRvYXN0cygocHJldikgPT4gcHJldi5maWx0ZXIoKHQpID0+IHQuaWQgIT09IGlkKSk7CgogIHJldHVybiAoCiAgICA8VG9hc3RDb250ZXh0LlByb3ZpZGVyIHZhbHVlPXt7IHRvYXN0IH19PgogICAgICB7Y2hpbGRyZW59CiAgICAgIHsvKiBUb2FzdCBjb250YWluZXIgKi99CiAgICAgIDxkaXYgY2xhc3NOYW1lPSJmaXhlZCBib3R0b20tNCByaWdodC00IHotWzEwMF0gZmxleCBmbGV4LWNvbCBnYXAtMiBwb2ludGVyLWV2ZW50cy1ub25lIj4KICAgICAgICB7dG9hc3RzLm1hcCgodCkgPT4gewogICAgICAgICAgY29uc3QgSWNvbiA9IElDT05TW3QudHlwZV07CiAgICAgICAgICByZXR1cm4gKAogICAgICAgICAgICA8ZGl2CiAgICAgICAgICAgICAga2V5PXt0LmlkfQogICAgICAgICAgICAgIGNsYXNzTmFtZT17YHBvaW50ZXItZXZlbnRzLWF1dG8gZmxleCBpdGVtcy1jZW50ZXIgZ2FwLTMgcHgtNCBweS0zIHJvdW5kZWQteGwgYm9yZGVyIHNoYWRvdy0yeGwgdGV4dC1zbSBmb250LW1lZGl1bSBiYWNrZHJvcC1ibHVyLXNtIG1heC13LXNtICR7U1RZTEVTW3QudHlwZV19YH0KICAgICAgICAgICAgPgogICAgICAgICAgICAgIDxJY29uIHNpemU9ezE2fSBjbGFzc05hbWU9InNocmluay0wIiAvPgogICAgICAgICAgICAgIDxzcGFuIGNsYXNzTmFtZT0iZmxleC0xIj57dC5tZXNzYWdlfTwvc3Bhbj4KICAgICAgICAgICAgICA8YnV0dG9uCiAgICAgICAgICAgICAgICBvbkNsaWNrPXsoKSA9PiByZW1vdmUodC5pZCl9CiAgICAgICAgICAgICAgICBjbGFzc05hbWU9InNocmluay0wIG9wYWNpdHktNjAgaG92ZXI6b3BhY2l0eS0xMDAgdHJhbnNpdGlvbi1vcGFjaXR5IgogICAgICAgICAgICAgID4KICAgICAgICAgICAgICAgIDxYIHNpemU9ezE0fSAvPgogICAgICAgICAgICAgIDwvYnV0dG9uPgogICAgICAgICAgICA8L2Rpdj4KICAgICAgICAgICk7CiAgICAgICAgfSl9CiAgICAgIDwvZGl2PgogICAgPC9Ub2FzdENvbnRleHQuUHJvdmlkZXI+CiAgKTsKfQo="}
+'use client';
+
+import { createContext, useContext, useState, useCallback, ReactNode } from 'react';
+import { CheckCircle, XCircle, AlertCircle, X } from 'lucide-react';
+
+type ToastType = 'success' | 'error' | 'info';
+
+interface Toast {
+  id: string;
+  type: ToastType;
+  message: string;
+}
+
+interface ToastContextValue {
+  toast: (message: string, type?: ToastType) => void;
+}
+
+const ToastContext = createContext<ToastContextValue>({ toast: () => {} });
+
+export function useToast() {
+  return useContext(ToastContext);
+}
+
+const ICONS = {
+  success: CheckCircle,
+  error: XCircle,
+  info: AlertCircle,
+};
+
+const STYLES = {
+  success: 'border-green-700 bg-green-900/80 text-green-300',
+  error: 'border-red-700 bg-red-900/80 text-red-300',
+  info: 'border-blue-700 bg-blue-900/80 text-blue-300',
+};
+
+export function ToastProvider({ children }: { children: ReactNode }) {
+  const [toasts, setToasts] = useState<Toast[]>([]);
+
+  const toast = useCallback((message: string, type: ToastType = 'info') => {
+    const id = Math.random().toString(36).slice(2);
+    setToasts((prev) => [...prev, { id, type, message }]);
+    setTimeout(() => {
+      setToasts((prev) => prev.filter((t) => t.id !== id));
+    }, 4000);
+  }, []);
+
+  const remove = (id: string) => setToasts((prev) => prev.filter((t) => t.id !== id));
+
+  return (
+    <ToastContext.Provider value={{ toast }}>
+      {children}
+      {/* Toast container */}
+      <div className="fixed bottom-4 right-4 z-[100] flex flex-col gap-2 pointer-events-none">
+        {toasts.map((t) => {
+          const Icon = ICONS[t.type];
+          return (
+            <div
+              key={t.id}
+              className={`pointer-events-auto flex items-center gap-3 px-4 py-3 rounded-xl border shadow-2xl text-sm font-medium backdrop-blur-sm max-w-sm ${STYLES[t.type]}`}
+            >
+              <Icon size={16} className="shrink-0" />
+              <span className="flex-1">{t.message}</span>
+              <button
+                onClick={() => remove(t.id)}
+                className="shrink-0 opacity-60 hover:opacity-100 transition-opacity"
+              >
+                <X size={14} />
+              </button>
+            </div>
+          );
+        })}
+      </div>
+    </ToastContext.Provider>
+  );
+}

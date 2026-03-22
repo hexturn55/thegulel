@@ -1,1 +1,29 @@
-{"data":"dHlwZSBTdGF0dXMgPSAnZHJhZnQnIHwgJ3B1Ymxpc2hlZCcgfCAnYXJjaGl2ZWQnIHwgc3RyaW5nOwoKY29uc3QgU1RBVFVTX1NUWUxFUzogUmVjb3JkPHN0cmluZywgc3RyaW5nPiA9IHsKICBkcmFmdDogJ2JnLWdyYXktNzAwIHRleHQtZ3JheS0zMDAgYm9yZGVyLWdyYXktNjAwJywKICBwdWJsaXNoZWQ6ICdiZy1ncmVlbi05MDAvNTAgdGV4dC1ncmVlbi00MDAgYm9yZGVyLWdyZWVuLTcwMCcsCiAgYXJjaGl2ZWQ6ICdiZy15ZWxsb3ctOTAwLzUwIHRleHQteWVsbG93LTQwMCBib3JkZXIteWVsbG93LTcwMCcsCn07Cgpjb25zdCBTVEFUVVNfTEFCRUxTOiBSZWNvcmQ8c3RyaW5nLCBzdHJpbmc+ID0gewogIGRyYWZ0OiAnRHJhZnQnLAogIHB1Ymxpc2hlZDogJ1B1Ymxpc2hlZCcsCiAgYXJjaGl2ZWQ6ICdBcmNoaXZlZCcsCn07CgppbnRlcmZhY2UgU3RhdHVzQmFkZ2VQcm9wcyB7CiAgc3RhdHVzOiBTdGF0dXM7Cn0KCmV4cG9ydCBkZWZhdWx0IGZ1bmN0aW9uIFN0YXR1c0JhZGdlKHsgc3RhdHVzIH06IFN0YXR1c0JhZGdlUHJvcHMpIHsKICBjb25zdCBub3JtYWxpemVkID0gc3RhdHVzLnRvTG93ZXJDYXNlKCk7CiAgY29uc3Qgc3R5bGUgPSBTVEFUVVNfU1RZTEVTW25vcm1hbGl6ZWRdID8/ICdiZy1ncmF5LTcwMCB0ZXh0LWdyYXktMzAwIGJvcmRlci1ncmF5LTYwMCc7CiAgY29uc3QgbGFiZWwgPSBTVEFUVVNfTEFCRUxTW25vcm1hbGl6ZWRdID8/IHN0YXR1czsKCiAgcmV0dXJuICgKICAgIDxzcGFuIGNsYXNzTmFtZT17YGlubGluZS1mbGV4IGl0ZW1zLWNlbnRlciBweC0yIHB5LTAuNSByb3VuZGVkIHRleHQteHMgZm9udC1tZWRpdW0gYm9yZGVyICR7c3R5bGV9YH0+CiAgICAgIHtsYWJlbH0KICAgIDwvc3Bhbj4KICApOwp9Cg=="}
+type Status = 'draft' | 'published' | 'archived' | string;
+
+const STATUS_STYLES: Record<string, string> = {
+  draft: 'bg-gray-700 text-gray-300 border-gray-600',
+  published: 'bg-green-900/50 text-green-400 border-green-700',
+  archived: 'bg-yellow-900/50 text-yellow-400 border-yellow-700',
+};
+
+const STATUS_LABELS: Record<string, string> = {
+  draft: 'Draft',
+  published: 'Published',
+  archived: 'Archived',
+};
+
+interface StatusBadgeProps {
+  status: Status;
+}
+
+export default function StatusBadge({ status }: StatusBadgeProps) {
+  const normalized = status.toLowerCase();
+  const style = STATUS_STYLES[normalized] ?? 'bg-gray-700 text-gray-300 border-gray-600';
+  const label = STATUS_LABELS[normalized] ?? status;
+
+  return (
+    <span className={`inline-flex items-center px-2 py-0.5 rounded text-xs font-medium border ${style}`}>
+      {label}
+    </span>
+  );
+}

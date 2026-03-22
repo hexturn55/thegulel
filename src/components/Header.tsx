@@ -1,1 +1,147 @@
-{"data":"J3VzZSBjbGllbnQnOwoKaW1wb3J0IExpbmsgZnJvbSAnbmV4dC9saW5rJzsKaW1wb3J0IEltYWdlIGZyb20gJ25leHQvaW1hZ2UnOwppbXBvcnQgeyB1c2VFZmZlY3QsIHVzZVJlZiwgdXNlU3RhdGUgfSBmcm9tICdyZWFjdCc7CmltcG9ydCB7IENvaW5zLCBMb2dPdXQsIFVzZXIgYXMgVXNlckljb24sIFdhbGxldCB9IGZyb20gJ2x1Y2lkZS1yZWFjdCc7CmltcG9ydCB7IHVzZUF1dGhTdG9yZSB9IGZyb20gJ0Avc3RvcmVzL3VzZUF1dGhTdG9yZSc7CgpleHBvcnQgZGVmYXVsdCBmdW5jdGlvbiBIZWFkZXIoKSB7CiAgY29uc3QgeyB1c2VyLCBpc0F1dGhlbnRpY2F0ZWQsIGxvZ291dCwgY2hlY2tTZXNzaW9uIH0gPSB1c2VBdXRoU3RvcmUoKTsKICBjb25zdCBbbWVudU9wZW4sIHNldE1lbnVPcGVuXSA9IHVzZVN0YXRlKGZhbHNlKTsKICBjb25zdCBtZW51UmVmID0gdXNlUmVmPEhUTUxEaXZFbGVtZW50PihudWxsKTsKCiAgLy8gU3luYyBhdXRoIHN0YXRlIG9uIG1vdW50CiAgdXNlRWZmZWN0KCgpID0+IHsKICAgIGNoZWNrU2Vzc2lvbigpOwogIH0sIFtdKTsKCiAgLy8gQ2xvc2UgbWVudSBvbiBvdXRzaWRlIGNsaWNrCiAgdXNlRWZmZWN0KCgpID0+IHsKICAgIGZ1bmN0aW9uIGhhbmRsZUNsaWNrT3V0c2lkZShlOiBNb3VzZUV2ZW50KSB7CiAgICAgIGlmIChtZW51UmVmLmN1cnJlbnQgJiYgIW1lbnVSZWYuY3VycmVudC5jb250YWlucyhlLnRhcmdldCBhcyBOb2RlKSkgewogICAgICAgIHNldE1lbnVPcGVuKGZhbHNlKTsKICAgICAgfQogICAgfQogICAgZG9jdW1lbnQuYWRkRXZlbnRMaXN0ZW5lcignbW91c2Vkb3duJywgaGFuZGxlQ2xpY2tPdXRzaWRlKTsKICAgIHJldHVybiAoKSA9PiBkb2N1bWVudC5yZW1vdmVFdmVudExpc3RlbmVyKCdtb3VzZWRvd24nLCBoYW5kbGVDbGlja091dHNpZGUpOwogIH0sIFtdKTsKCiAgY29uc3QgaGFuZGxlTG9nb3V0ID0gYXN5bmMgKCkgPT4gewogICAgc2V0TWVudU9wZW4oZmFsc2UpOwogICAgYXdhaXQgbG9nb3V0KCk7CiAgfTsKCiAgcmV0dXJuICgKICAgIDxoZWFkZXIKICAgICAgY2xhc3NOYW1lPSJzdGlja3kgdG9wLTAgei0yMCBiZy1ibGFjay85NSBiYWNrZHJvcC1ibHVyLXNtIGJvcmRlci1iIGJvcmRlci1ncmF5LTgwMCIKICAgICAgc3R5bGU9e3sgcGFkZGluZ1RvcDogJ2VudihzYWZlLWFyZWEtaW5zZXQtdG9wKScgfX0KICAgID4KICAgICAgPGRpdiBjbGFzc05hbWU9InB4LTQgcHktMyBmbGV4IGl0ZW1zLWNlbnRlciBqdXN0aWZ5LWJldHdlZW4iPgogICAgICAgIHsvKiBMb2dvICovfQogICAgICAgIDxMaW5rIGhyZWY9Ii8iIGNsYXNzTmFtZT0iZmxleCBpdGVtcy1jZW50ZXIiPgogICAgICAgICAgPEltYWdlCiAgICAgICAgICAgIHNyYz0iL2xvZ28ucG5nIgogICAgICAgICAgICBhbHQ9IlRoZSBHdWxlbCIKICAgICAgICAgICAgd2lkdGg9ezE0MH0KICAgICAgICAgICAgaGVpZ2h0PXszOH0KICAgICAgICAgICAgY2xhc3NOYW1lPSJoLTkgdy1hdXRvIgogICAgICAgICAgICBwcmlvcml0eQogICAgICAgICAgLz4KICAgICAgICA8L0xpbms+CgogICAgICAgIDxkaXYgY2xhc3NOYW1lPSJmbGV4IGl0ZW1zLWNlbnRlciBnYXAtMiI+CiAgICAgICAgICB7aXNBdXRoZW50aWNhdGVkICYmIHVzZXIgPyAoCiAgICAgICAgICAgIDw+CiAgICAgICAgICAgICAgey8qIENvaW4gYmFsYW5jZSBiYWRnZSAqL30KICAgICAgICAgICAgICA8TGluawogICAgICAgICAgICAgICAgaHJlZj0iL3dhbGxldCIKICAgICAgICAgICAgICAgIGNsYXNzTmFtZT0iZmxleCBpdGVtcy1jZW50ZXIgZ2FwLTEuNSBiZy1ncmFkaWVudC10by1yIGZyb20teWVsbG93LTUwMCB0by1vcmFuZ2UtNTAwIGhvdmVyOmZyb20teWVsbG93LTYwMCBob3Zlcjp0by1vcmFuZ2UtNjAwIHB4LTMgcHktMS41IHJvdW5kZWQtZnVsbCB0cmFuc2l0aW9uIgogICAgICAgICAgICAgID4KICAgICAgICAgICAgICAgIDxDb2lucyBjbGFzc05hbWU9InctMy41IGgtMy41IHRleHQtd2hpdGUiIC8+CiAgICAgICAgICAgICAgICA8c3BhbiBjbGFzc05hbWU9InRleHQtd2hpdGUgZm9udC1zZW1pYm9sZCB0ZXh0LXNtIj4KICAgICAgICAgICAgICAgICAge3VzZXIuY29pbkJhbGFuY2UudG9Mb2NhbGVTdHJpbmcoKX0KICAgICAgICAgICAgICAgIDwvc3Bhbj4KICAgICAgICAgICAgICA8L0xpbms+CgogICAgICAgICAgICAgIHsvKiBBdmF0YXIgLyB1c2VyIG1lbnUgKi99CiAgICAgICAgICAgICAgPGRpdiBjbGFzc05hbWU9InJlbGF0aXZlIiByZWY9e21lbnVSZWZ9PgogICAgICAgICAgICAgICAgPGJ1dHRvbgogICAgICAgICAgICAgICAgICBvbkNsaWNrPXsoKSA9PiBzZXRNZW51T3BlbigodikgPT4gIXYpfQogICAgICAgICAgICAgICAgICBjbGFzc05hbWU9ImZsZXggaXRlbXMtY2VudGVyIGdhcC0yIHAtMSByb3VuZGVkLWZ1bGwgaG92ZXI6YmctZ3JheS04MDAgdHJhbnNpdGlvbiBmb2N1czpvdXRsaW5lLW5vbmUiCiAgICAgICAgICAgICAgICAgIGFyaWEtbGFiZWw9IlVzZXIgbWVudSIKICAgICAgICAgICAgICAgID4KICAgICAgICAgICAgICAgICAge3VzZXIuYXZhdGFyID8gKAogICAgICAgICAgICAgICAgICAgIDxJbWFnZQogICAgICAgICAgICAgICAgICAgICAgc3JjPXt1c2VyLmF2YXRhcn0KICAgICAgICAgICAgICAgICAgICAgIGFsdD17dXNlci5uYW1lID8/ICdVc2VyJ30KICAgICAgICAgICAgICAgICAgICAgIHdpZHRoPXszMn0KICAgICAgICAgICAgICAgICAgICAgIGhlaWdodD17MzJ9CiAgICAgICAgICAgICAgICAgICAgICBjbGFzc05hbWU9InctOCBoLTggcm91bmRlZC1mdWxsIG9iamVjdC1jb3ZlciByaW5nLTIgcmluZy1ncmF5LTcwMCIKICAgICAgICAgICAgICAgICAgICAvPgogICAgICAgICAgICAgICAgICApIDogKAogICAgICAgICAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPSJ3LTggaC04IHJvdW5kZWQtZnVsbCBiZy1ncmFkaWVudC10by1iciBmcm9tLXJlZC01MDAgdG8tcGluay01MDAgZmxleCBpdGVtcy1jZW50ZXIganVzdGlmeS1jZW50ZXIgcmluZy0yIHJpbmctZ3JheS03MDAiPgogICAgICAgICAgICAgICAgICAgICAgPHNwYW4gY2xhc3NOYW1lPSJ0ZXh0LXdoaXRlIHRleHQtc20gZm9udC1ib2xkIj4KICAgICAgICAgICAgICAgICAgICAgICAgeyh1c2VyLm5hbWU/LlswXSA/PyB1c2VyLmVtYWlsPy5bMF0gPz8gdXNlci5waG9uZT8uWzBdID8/ICdVJykudG9VcHBlckNhc2UoKX0KICAgICAgICAgICAgICAgICAgICAgIDwvc3Bhbj4KICAgICAgICAgICAgICAgICAgICA8L2Rpdj4KICAgICAgICAgICAgICAgICAgKX0KICAgICAgICAgICAgICAgIDwvYnV0dG9uPgoKICAgICAgICAgICAgICAgIHsvKiBEcm9wZG93biAqL30KICAgICAgICAgICAgICAgIHttZW51T3BlbiAmJiAoCiAgICAgICAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPSJhYnNvbHV0ZSByaWdodC0wIG10LTIgdy01NiBiZy1ncmF5LTkwMCBib3JkZXIgYm9yZGVyLWdyYXktNzAwIHJvdW5kZWQteGwgc2hhZG93LXhsIG92ZXJmbG93LWhpZGRlbiI+CiAgICAgICAgICAgICAgICAgICAgey8qIFVzZXIgaW5mbyAqL30KICAgICAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT0icHgtNCBweS0zIGJvcmRlci1iIGJvcmRlci1ncmF5LTgwMCI+CiAgICAgICAgICAgICAgICAgICAgICA8cCBjbGFzc05hbWU9InRleHQtd2hpdGUgdGV4dC1zbSBmb250LXNlbWlib2xkIHRydW5jYXRlIj4KICAgICAgICAgICAgICAgICAgICAgICAge3VzZXIubmFtZSA/PyB1c2VyLmVtYWlsID8/IHVzZXIucGhvbmUgPz8gJ1VzZXInfQogICAgICAgICAgICAgICAgICAgICAgPC9wPgogICAgICAgICAgICAgICAgICAgICAgPHAgY2xhc3NOYW1lPSJ0ZXh0LWdyYXktNTAwIHRleHQteHMgdHJ1bmNhdGUiPgogICAgICAgICAgICAgICAgICAgICAgICB7dXNlci5lbWFpbCA/PyB1c2VyLnBob25lID8/ICcnfQogICAgICAgICAgICAgICAgICAgICAgPC9wPgogICAgICAgICAgICAgICAgICAgIDwvZGl2PgoKICAgICAgICAgICAgICAgICAgICB7LyogTWVudSBpdGVtcyAqL30KICAgICAgICAgICAgICAgICAgICA8TGluawogICAgICAgICAgICAgICAgICAgICAgaHJlZj0iL3Byb2ZpbGUiCiAgICAgICAgICAgICAgICAgICAgICBvbkNsaWNrPXsoKSA9PiBzZXRNZW51T3BlbihmYWxzZSl9CiAgICAgICAgICAgICAgICAgICAgICBjbGFzc05hbWU9ImZsZXggaXRlbXMtY2VudGVyIGdhcC0zIHB4LTQgcHktMyB0ZXh0LWdyYXktMzAwIGhvdmVyOnRleHQtd2hpdGUgaG92ZXI6YmctZ3JheS04MDAgdHJhbnNpdGlvbiB0ZXh0LXNtIgogICAgICAgICAgICAgICAgICAgID4KICAgICAgICAgICAgICAgICAgICAgIDxVc2VySWNvbiBjbGFzc05hbWU9InctNCBoLTQiIC8+CiAgICAgICAgICAgICAgICAgICAgICBNeSBQcm9maWxlCiAgICAgICAgICAgICAgICAgICAgPC9MaW5rPgogICAgICAgICAgICAgICAgICAgIDxMaW5rCiAgICAgICAgICAgICAgICAgICAgICBocmVmPSIvd2FsbGV0IgogICAgICAgICAgICAgICAgICAgICAgb25DbGljaz17KCkgPT4gc2V0TWVudU9wZW4oZmFsc2UpfQogICAgICAgICAgICAgICAgICAgICAgY2xhc3NOYW1lPSJmbGV4IGl0ZW1zLWNlbnRlciBnYXAtMyBweC00IHB5LTMgdGV4dC1ncmF5LTMwMCBob3Zlcjp0ZXh0LXdoaXRlIGhvdmVyOmJnLWdyYXktODAwIHRyYW5zaXRpb24gdGV4dC1zbSIKICAgICAgICAgICAgICAgICAgICA+CiAgICAgICAgICAgICAgICAgICAgICA8V2FsbGV0IGNsYXNzTmFtZT0idy00IGgtNCIgLz4KICAgICAgICAgICAgICAgICAgICAgIFdhbGxldCDigJQge3VzZXIuY29pbkJhbGFuY2UudG9Mb2NhbGVTdHJpbmcoKX0gY29pbnMKICAgICAgICAgICAgICAgICAgICA8L0xpbms+CgogICAgICAgICAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPSJib3JkZXItdCBib3JkZXItZ3JheS04MDAiIC8+CgogICAgICAgICAgICAgICAgICAgIDxidXR0b24KICAgICAgICAgICAgICAgICAgICAgIG9uQ2xpY2s9e2hhbmRsZUxvZ291dH0KICAgICAgICAgICAgICAgICAgICAgIGNsYXNzTmFtZT0idy1mdWxsIGZsZXggaXRlbXMtY2VudGVyIGdhcC0zIHB4LTQgcHktMyB0ZXh0LXJlZC00MDAgaG92ZXI6dGV4dC1yZWQtMzAwIGhvdmVyOmJnLWdyYXktODAwIHRyYW5zaXRpb24gdGV4dC1zbSIKICAgICAgICAgICAgICAgICAgICA+CiAgICAgICAgICAgICAgICAgICAgICA8TG9nT3V0IGNsYXNzTmFtZT0idy00IGgtNCIgLz4KICAgICAgICAgICAgICAgICAgICAgIFNpZ24gT3V0CiAgICAgICAgICAgICAgICAgICAgPC9idXR0b24+CiAgICAgICAgICAgICAgICAgIDwvZGl2PgogICAgICAgICAgICAgICAgKX0KICAgICAgICAgICAgICA8L2Rpdj4KICAgICAgICAgICAgPC8+CiAgICAgICAgICApIDogKAogICAgICAgICAgICA8TGluawogICAgICAgICAgICAgIGhyZWY9Ii9hdXRoL2xvZ2luIgogICAgICAgICAgICAgIGNsYXNzTmFtZT0iYmctZ3JhZGllbnQtdG8tciBmcm9tLXJlZC01MDAgdG8tcGluay01MDAgaG92ZXI6ZnJvbS1yZWQtNjAwIGhvdmVyOnRvLXBpbmstNjAwIHRleHQtd2hpdGUgdGV4dC1zbSBmb250LXNlbWlib2xkIHB4LTQgcHktMiByb3VuZGVkLWZ1bGwgdHJhbnNpdGlvbiIKICAgICAgICAgICAgPgogICAgICAgICAgICAgIFNpZ24gSW4KICAgICAgICAgICAgPC9MaW5rPgogICAgICAgICAgKX0KICAgICAgICA8L2Rpdj4KICAgICAgPC9kaXY+CiAgICA8L2hlYWRlcj4KICApOwp9Cg=="}
+'use client';
+
+import Link from 'next/link';
+import Image from 'next/image';
+import { useEffect, useRef, useState } from 'react';
+import { Coins, LogOut, User as UserIcon, Wallet } from 'lucide-react';
+import { useAuthStore } from '@/stores/useAuthStore';
+
+export default function Header() {
+  const { user, isAuthenticated, logout, checkSession } = useAuthStore();
+  const [menuOpen, setMenuOpen] = useState(false);
+  const menuRef = useRef<HTMLDivElement>(null);
+
+  // Sync auth state on mount
+  useEffect(() => {
+    checkSession();
+  }, []);
+
+  // Close menu on outside click
+  useEffect(() => {
+    function handleClickOutside(e: MouseEvent) {
+      if (menuRef.current && !menuRef.current.contains(e.target as Node)) {
+        setMenuOpen(false);
+      }
+    }
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => document.removeEventListener('mousedown', handleClickOutside);
+  }, []);
+
+  const handleLogout = async () => {
+    setMenuOpen(false);
+    await logout();
+  };
+
+  return (
+    <header
+      className="sticky top-0 z-20 bg-black/95 backdrop-blur-sm border-b border-gray-800"
+      style={{ paddingTop: 'env(safe-area-inset-top)' }}
+    >
+      <div className="px-4 py-3 flex items-center justify-between">
+        {/* Logo */}
+        <Link href="/" className="flex items-center">
+          <Image
+            src="/logo.png"
+            alt="The Gulel"
+            width={140}
+            height={38}
+            className="h-9 w-auto"
+            priority
+          />
+        </Link>
+
+        <div className="flex items-center gap-2">
+          {isAuthenticated && user ? (
+            <>
+              {/* Coin balance badge */}
+              <Link
+                href="/wallet"
+                className="flex items-center gap-1.5 bg-gradient-to-r from-yellow-500 to-orange-500 hover:from-yellow-600 hover:to-orange-600 px-3 py-1.5 rounded-full transition"
+              >
+                <Coins className="w-3.5 h-3.5 text-white" />
+                <span className="text-white font-semibold text-sm">
+                  {user.coinBalance.toLocaleString()}
+                </span>
+              </Link>
+
+              {/* Avatar / user menu */}
+              <div className="relative" ref={menuRef}>
+                <button
+                  onClick={() => setMenuOpen((v) => !v)}
+                  className="flex items-center gap-2 p-1 rounded-full hover:bg-gray-800 transition focus:outline-none"
+                  aria-label="User menu"
+                >
+                  {user.avatar ? (
+                    <Image
+                      src={user.avatar}
+                      alt={user.name ?? 'User'}
+                      width={32}
+                      height={32}
+                      className="w-8 h-8 rounded-full object-cover ring-2 ring-gray-700"
+                    />
+                  ) : (
+                    <div className="w-8 h-8 rounded-full bg-gradient-to-br from-red-500 to-pink-500 flex items-center justify-center ring-2 ring-gray-700">
+                      <span className="text-white text-sm font-bold">
+                        {(user.name?.[0] ?? user.email?.[0] ?? user.phone?.[0] ?? 'U').toUpperCase()}
+                      </span>
+                    </div>
+                  )}
+                </button>
+
+                {/* Dropdown */}
+                {menuOpen && (
+                  <div className="absolute right-0 mt-2 w-56 bg-gray-900 border border-gray-700 rounded-xl shadow-xl overflow-hidden">
+                    {/* User info */}
+                    <div className="px-4 py-3 border-b border-gray-800">
+                      <p className="text-white text-sm font-semibold truncate">
+                        {user.name ?? user.email ?? user.phone ?? 'User'}
+                      </p>
+                      <p className="text-gray-500 text-xs truncate">
+                        {user.email ?? user.phone ?? ''}
+                      </p>
+                    </div>
+
+                    {/* Menu items */}
+                    <Link
+                      href="/profile"
+                      onClick={() => setMenuOpen(false)}
+                      className="flex items-center gap-3 px-4 py-3 text-gray-300 hover:text-white hover:bg-gray-800 transition text-sm"
+                    >
+                      <UserIcon className="w-4 h-4" />
+                      My Profile
+                    </Link>
+                    <Link
+                      href="/wallet"
+                      onClick={() => setMenuOpen(false)}
+                      className="flex items-center gap-3 px-4 py-3 text-gray-300 hover:text-white hover:bg-gray-800 transition text-sm"
+                    >
+                      <Wallet className="w-4 h-4" />
+                      Wallet — {user.coinBalance.toLocaleString()} coins
+                    </Link>
+
+                    <div className="border-t border-gray-800" />
+
+                    <button
+                      onClick={handleLogout}
+                      className="w-full flex items-center gap-3 px-4 py-3 text-red-400 hover:text-red-300 hover:bg-gray-800 transition text-sm"
+                    >
+                      <LogOut className="w-4 h-4" />
+                      Sign Out
+                    </button>
+                  </div>
+                )}
+              </div>
+            </>
+          ) : (
+            <Link
+              href="/auth/login"
+              className="bg-gradient-to-r from-red-500 to-pink-500 hover:from-red-600 hover:to-pink-600 text-white text-sm font-semibold px-4 py-2 rounded-full transition"
+            >
+              Sign In
+            </Link>
+          )}
+        </div>
+      </div>
+    </header>
+  );
+}

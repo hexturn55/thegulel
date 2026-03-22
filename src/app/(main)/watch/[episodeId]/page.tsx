@@ -1,1 +1,93 @@
-{"data":"aW1wb3J0IHsgbm90Rm91bmQgfSBmcm9tICduZXh0L25hdmlnYXRpb24nOwppbXBvcnQgeyBjb29raWVzIH0gZnJvbSAnbmV4dC9oZWFkZXJzJzsKaW1wb3J0IHByaXNtYSBmcm9tICdAL2xpYi9wcmlzbWEnOwppbXBvcnQgeyBnZXRTdHJlYW1VcmwgfSBmcm9tICdAL2xpYi9jbG91ZGZsYXJlJzsKaW1wb3J0IFdhdGNoQ2xpZW50IGZyb20gJy4vV2F0Y2hDbGllbnQnOwoKaW50ZXJmYWNlIFBhZ2VQcm9wcyB7CiAgcGFyYW1zOiBQcm9taXNlPHsgZXBpc29kZUlkOiBzdHJpbmcgfT47Cn0KCmFzeW5jIGZ1bmN0aW9uIGdldEVwaXNvZGVEYXRhKGVwaXNvZGVJZDogc3RyaW5nLCB1c2VySWQ/OiBzdHJpbmcpIHsKICBjb25zdCBlcGlzb2RlID0gYXdhaXQgcHJpc21hLmVwaXNvZGUuZmluZFVuaXF1ZSh7CiAgICB3aGVyZTogeyBpZDogZXBpc29kZUlkIH0sCiAgICBpbmNsdWRlOiB7CiAgICAgIHNlcmllczogewogICAgICAgIGluY2x1ZGU6IHsKICAgICAgICAgIGVwaXNvZGVzOiB7CiAgICAgICAgICAgIG9yZGVyQnk6IHsgZXBpc29kZU51bWJlcjogJ2FzYycgfSwKICAgICAgICAgICAgc2VsZWN0OiB7IGlkOiB0cnVlLCBlcGlzb2RlTnVtYmVyOiB0cnVlIH0sCiAgICAgICAgICB9LAogICAgICAgIH0sCiAgICAgIH0sCiAgICB9LAogIH0pOwoKICBpZiAoIWVwaXNvZGUpIHJldHVybiBudWxsOwoKICBsZXQgaXNVbmxvY2tlZCA9IGVwaXNvZGUuaXNGcmVlOwoKICBpZiAoIWlzVW5sb2NrZWQgJiYgdXNlcklkKSB7CiAgICBjb25zdCBwdXJjaGFzZSA9IGF3YWl0IHByaXNtYS5lcGlzb2RlUHVyY2hhc2UuZmluZFVuaXF1ZSh7CiAgICAgIHdoZXJlOiB7CiAgICAgICAgdXNlcklkX2VwaXNvZGVJZDogewogICAgICAgICAgdXNlcklkLAogICAgICAgICAgZXBpc29kZUlkLAogICAgICAgIH0sCiAgICAgIH0sCiAgICB9KTsKICAgIGlzVW5sb2NrZWQgPSAhIXB1cmNoYXNlOwoKICAgIC8vIEFsc28gY2hlY2sgZm9yIGFjdGl2ZSBzdWJzY3JpcHRpb24KICAgIGNvbnN0IHN1YnNjcmlwdGlvbiA9IGF3YWl0IHByaXNtYS5zdWJzY3JpcHRpb24uZmluZEZpcnN0KHsKICAgICAgd2hlcmU6IHsKICAgICAgICB1c2VySWQsCiAgICAgICAgc3RhdHVzOiAnQUNUSVZFJywKICAgICAgICBlbmREYXRlOiB7IGd0ZTogbmV3IERhdGUoKSB9LAogICAgICB9LAogICAgfSk7CiAgICBpZiAoc3Vic2NyaXB0aW9uKSB7CiAgICAgIGlzVW5sb2NrZWQgPSB0cnVlOwogICAgfQogIH0KCiAgY29uc3QgY3VycmVudEluZGV4ID0gZXBpc29kZS5zZXJpZXMuZXBpc29kZXMuZmluZEluZGV4KChlKSA9PiBlLmlkID09PSBlcGlzb2RlSWQpOwogIGNvbnN0IG5leHRFcGlzb2RlID0gZXBpc29kZS5zZXJpZXMuZXBpc29kZXNbY3VycmVudEluZGV4ICsgMV07CiAgY29uc3QgcHJldkVwaXNvZGUgPSBlcGlzb2RlLnNlcmllcy5lcGlzb2Rlc1tjdXJyZW50SW5kZXggLSAxXTsKCiAgcmV0dXJuIHsKICAgIGVwaXNvZGUsCiAgICBpc1VubG9ja2VkLAogICAgbmV4dEVwaXNvZGUsCiAgICBwcmV2RXBpc29kZSwKICB9Owp9CgpleHBvcnQgZGVmYXVsdCBhc3luYyBmdW5jdGlvbiBXYXRjaFBhZ2UoeyBwYXJhbXMgfTogUGFnZVByb3BzKSB7CiAgY29uc3QgeyBlcGlzb2RlSWQgfSA9IGF3YWl0IHBhcmFtczsKICBjb25zdCBjb29raWVTdG9yZSA9IGF3YWl0IGNvb2tpZXMoKTsKICBjb25zdCB1c2VySWQgPSBjb29raWVTdG9yZS5nZXQoJ3VzZXJJZCcpPy52YWx1ZTsKCiAgY29uc3QgZGF0YSA9IGF3YWl0IGdldEVwaXNvZGVEYXRhKGVwaXNvZGVJZCwgdXNlcklkKTsKCiAgaWYgKCFkYXRhKSB7CiAgICBub3RGb3VuZCgpOwogIH0KCiAgY29uc3QgeyBlcGlzb2RlLCBpc1VubG9ja2VkLCBuZXh0RXBpc29kZSwgcHJldkVwaXNvZGUgfSA9IGRhdGE7CiAgY29uc3QgdmlkZW9VcmwgPSBnZXRTdHJlYW1VcmwoZXBpc29kZS52aWRlb0lkKTsKCiAgcmV0dXJuICgKICAgIDxkaXYgY2xhc3NOYW1lPSJmaXhlZCBpbnNldC0wIGJnLWJsYWNrIj4KICAgICAgPFdhdGNoQ2xpZW50CiAgICAgICAgZXBpc29kZUlkPXtlcGlzb2RlLmlkfQogICAgICAgIHZpZGVvVXJsPXt2aWRlb1VybH0KICAgICAgICB2aWRlb0lkPXtlcGlzb2RlLnZpZGVvSWR9CiAgICAgICAgaXNGcmVlPXtlcGlzb2RlLmlzRnJlZX0KICAgICAgICBpc1VubG9ja2VkPXtpc1VubG9ja2VkfQogICAgICAgIG5leHRFcGlzb2RlSWQ9e25leHRFcGlzb2RlPy5pZH0KICAgICAgICBwcmV2RXBpc29kZUlkPXtwcmV2RXBpc29kZT8uaWR9CiAgICAgIC8+CiAgICA8L2Rpdj4KICApOwp9Cg=="}
+import { notFound } from 'next/navigation';
+import { cookies } from 'next/headers';
+import prisma from '@/lib/prisma';
+import { getStreamUrl } from '@/lib/cloudflare';
+import WatchClient from './WatchClient';
+
+interface PageProps {
+  params: Promise<{ episodeId: string }>;
+}
+
+async function getEpisodeData(episodeId: string, userId?: string) {
+  const episode = await prisma.episode.findUnique({
+    where: { id: episodeId },
+    include: {
+      series: {
+        include: {
+          episodes: {
+            orderBy: { episodeNumber: 'asc' },
+            select: { id: true, episodeNumber: true },
+          },
+        },
+      },
+    },
+  });
+
+  if (!episode) return null;
+
+  let isUnlocked = episode.isFree;
+
+  if (!isUnlocked && userId) {
+    const purchase = await prisma.episodePurchase.findUnique({
+      where: {
+        userId_episodeId: {
+          userId,
+          episodeId,
+        },
+      },
+    });
+    isUnlocked = !!purchase;
+
+    // Also check for active subscription
+    const subscription = await prisma.subscription.findFirst({
+      where: {
+        userId,
+        status: 'ACTIVE',
+        endDate: { gte: new Date() },
+      },
+    });
+    if (subscription) {
+      isUnlocked = true;
+    }
+  }
+
+  const currentIndex = episode.series.episodes.findIndex((e) => e.id === episodeId);
+  const nextEpisode = episode.series.episodes[currentIndex + 1];
+  const prevEpisode = episode.series.episodes[currentIndex - 1];
+
+  return {
+    episode,
+    isUnlocked,
+    nextEpisode,
+    prevEpisode,
+  };
+}
+
+export default async function WatchPage({ params }: PageProps) {
+  const { episodeId } = await params;
+  const cookieStore = await cookies();
+  const userId = cookieStore.get('userId')?.value;
+
+  const data = await getEpisodeData(episodeId, userId);
+
+  if (!data) {
+    notFound();
+  }
+
+  const { episode, isUnlocked, nextEpisode, prevEpisode } = data;
+  const videoUrl = getStreamUrl(episode.videoId);
+
+  return (
+    <div className="fixed inset-0 bg-black">
+      <WatchClient
+        episodeId={episode.id}
+        videoUrl={videoUrl}
+        videoId={episode.videoId}
+        isFree={episode.isFree}
+        isUnlocked={isUnlocked}
+        nextEpisodeId={nextEpisode?.id}
+        prevEpisodeId={prevEpisode?.id}
+      />
+    </div>
+  );
+}

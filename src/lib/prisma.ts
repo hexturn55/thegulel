@@ -1,1 +1,17 @@
-{"data":"aW1wb3J0IHsgUHJpc21hQ2xpZW50IH0gZnJvbSAnQC9nZW5lcmF0ZWQvcHJpc21hJzsKaW1wb3J0IHsgUHJpc21hUGcgfSBmcm9tICdAcHJpc21hL2FkYXB0ZXItcGcnOwoKY29uc3QgZ2xvYmFsRm9yUHJpc21hID0gZ2xvYmFsVGhpcyBhcyB1bmtub3duIGFzIHsKICBwcmlzbWE6IFByaXNtYUNsaWVudCB8IHVuZGVmaW5lZDsKfTsKCmZ1bmN0aW9uIGNyZWF0ZVByaXNtYUNsaWVudCgpIHsKICBjb25zdCBhZGFwdGVyID0gbmV3IFByaXNtYVBnKHsgY29ubmVjdGlvblN0cmluZzogcHJvY2Vzcy5lbnYuREFUQUJBU0VfVVJMISB9KTsKICByZXR1cm4gbmV3IFByaXNtYUNsaWVudCh7IGFkYXB0ZXIgfSk7Cn0KCmV4cG9ydCBjb25zdCBwcmlzbWEgPSBnbG9iYWxGb3JQcmlzbWEucHJpc21hID8/IGNyZWF0ZVByaXNtYUNsaWVudCgpOwoKaWYgKHByb2Nlc3MuZW52Lk5PREVfRU5WICE9PSAncHJvZHVjdGlvbicpIGdsb2JhbEZvclByaXNtYS5wcmlzbWEgPSBwcmlzbWE7CgpleHBvcnQgZGVmYXVsdCBwcmlzbWE7Cg=="}
+import { PrismaClient } from '@/generated/prisma';
+import { PrismaPg } from '@prisma/adapter-pg';
+
+const globalForPrisma = globalThis as unknown as {
+  prisma: PrismaClient | undefined;
+};
+
+function createPrismaClient() {
+  const adapter = new PrismaPg({ connectionString: process.env.DATABASE_URL! });
+  return new PrismaClient({ adapter });
+}
+
+export const prisma = globalForPrisma.prisma ?? createPrismaClient();
+
+if (process.env.NODE_ENV !== 'production') globalForPrisma.prisma = prisma;
+
+export default prisma;

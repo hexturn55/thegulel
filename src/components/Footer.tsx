@@ -1,1 +1,82 @@
-{"data":"aW1wb3J0IExpbmsgZnJvbSAnbmV4dC9saW5rJzsKaW1wb3J0IHsgSW5zdGFncmFtLCBZb3V0dWJlLCBUd2l0dGVyLCBGYWNlYm9vayB9IGZyb20gJ2x1Y2lkZS1yZWFjdCc7CgovLyBUaWtUb2sgZG9lc24ndCBoYXZlIGEgbHVjaWRlIGljb24g4oCUIHVzZSBTVkcgaW5saW5lCmZ1bmN0aW9uIFRpa1Rva0ljb24oeyBjbGFzc05hbWUgfTogeyBjbGFzc05hbWU/OiBzdHJpbmcgfSkgewogIHJldHVybiAoCiAgICA8c3ZnIGNsYXNzTmFtZT17Y2xhc3NOYW1lfSB2aWV3Qm94PSIwIDAgMjQgMjQiIGZpbGw9ImN1cnJlbnRDb2xvciIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICAgICAgPHBhdGggZD0iTTE5LjU5IDYuNjlhNC44MyA0LjgzIDAgMDEtMy43Ny00LjI1VjJoLTMuNDV2MTMuNjdhMi44OSAyLjg5IDAgMDEtMi44OCAyLjUgMi44OSAyLjg5IDAgMDEtMi44OS0yLjg5IDIuODkgMi44OSAwIDAxMi44OS0yLjg5Yy4yOCAwIC41NC4wNC43OS4xVjkuMDFhNi4zMyA2LjMzIDAgMDAtLjc5LS4wNSA2LjM0IDYuMzQgMCAwMC02LjM0IDYuMzQgNi4zNCA2LjM0IDAgMDA2LjM0IDYuMzQgNi4zNCA2LjM0IDAgMDA2LjMzLTYuMzRWOC42OWE4LjE4IDguMTggMCAwMDQuNzggMS41MlY2Ljc1YTQuODUgNC44NSAwIDAxLTEuMDEtLjA2eiIgLz4KICAgIDwvc3ZnPgogICk7Cn0KCmV4cG9ydCBmdW5jdGlvbiBGb290ZXIoKSB7CiAgY29uc3Qgc29jaWFsTGlua3MgPSBbCiAgICB7CiAgICAgIGxhYmVsOiAnSW5zdGFncmFtJywKICAgICAgaHJlZjogcHJvY2Vzcy5lbnYuTkVYVF9QVUJMSUNfSU5TVEFHUkFNX1VSTCB8fCAnaHR0cHM6Ly9pbnN0YWdyYW0uY29tJywKICAgICAgaWNvbjogPEluc3RhZ3JhbSBjbGFzc05hbWU9InctNSBoLTUiIC8+LAogICAgfSwKICAgIHsKICAgICAgbGFiZWw6ICdZb3VUdWJlJywKICAgICAgaHJlZjogcHJvY2Vzcy5lbnYuTkVYVF9QVUJMSUNfWU9VVFVCRV9VUkwgfHwgJ2h0dHBzOi8veW91dHViZS5jb20nLAogICAgICBpY29uOiA8WW91dHViZSBjbGFzc05hbWU9InctNSBoLTUiIC8+LAogICAgfSwKICAgIHsKICAgICAgbGFiZWw6ICdYIC8gVHdpdHRlcicsCiAgICAgIGhyZWY6IHByb2Nlc3MuZW52Lk5FWFRfUFVCTElDX1RXSVRURVJfVVJMIHx8ICdodHRwczovL3guY29tJywKICAgICAgaWNvbjogPFR3aXR0ZXIgY2xhc3NOYW1lPSJ3LTUgaC01IiAvPiwKICAgIH0sCiAgICB7CiAgICAgIGxhYmVsOiAnRmFjZWJvb2snLAogICAgICBocmVmOiBwcm9jZXNzLmVudi5ORVhUX1BVQkxJQ19GQUNFQk9PS19VUkwgfHwgJ2h0dHBzOi8vZmFjZWJvb2suY29tJywKICAgICAgaWNvbjogPEZhY2Vib29rIGNsYXNzTmFtZT0idy01IGgtNSIgLz4sCiAgICB9LAogICAgewogICAgICBsYWJlbDogJ1Rpa1RvaycsCiAgICAgIGhyZWY6IHByb2Nlc3MuZW52Lk5FWFRfUFVCTElDX1RJS1RPS19VUkwgfHwgJ2h0dHBzOi8vdGlrdG9rLmNvbScsCiAgICAgIGljb246IDxUaWtUb2tJY29uIGNsYXNzTmFtZT0idy01IGgtNSIgLz4sCiAgICB9LAogIF07CgogIHJldHVybiAoCiAgICA8Zm9vdGVyIGNsYXNzTmFtZT0iYmctemluYy05NTAgYm9yZGVyLXQgYm9yZGVyLXppbmMtODAwIHRleHQtZ3JheS00MDAgdGV4dC1zbSI+CiAgICAgIDxkaXYgY2xhc3NOYW1lPSJtYXgtdy01eGwgbXgtYXV0byBweC02IHB5LTEwIj4KICAgICAgICB7LyogQnJhbmQgKyB0YWdsaW5lICovfQogICAgICAgIDxkaXYgY2xhc3NOYW1lPSJtYi04IHRleHQtY2VudGVyIj4KICAgICAgICAgIDxpbWcgc3JjPSIvbG9nby5wbmciIGFsdD0iVGhlIEd1bGVsIiBjbGFzc05hbWU9ImgtMTAgdy1hdXRvIG14LWF1dG8gbWItMiIgLz4KICAgICAgICAgIDxwIGNsYXNzTmFtZT0idGV4dC1ncmF5LTUwMCB0ZXh0LXhzIG10LTEiPlZlcnRpY2FsIG1pY3JvIGRyYW1hcywgYW55d2hlcmUgeW91IGdvLjwvcD4KICAgICAgICA8L2Rpdj4KCiAgICAgICAgey8qIExpbmtzICovfQogICAgICAgIDxuYXYgY2xhc3NOYW1lPSJmbGV4IGZsZXgtd3JhcCBqdXN0aWZ5LWNlbnRlciBnYXAteC02IGdhcC15LTIgbWItOCI+CiAgICAgICAgICA8TGluayBocmVmPSIvYWJvdXQiIGNsYXNzTmFtZT0iaG92ZXI6dGV4dC13aGl0ZSB0cmFuc2l0aW9uIj5BYm91dDwvTGluaz4KICAgICAgICAgIDxMaW5rIGhyZWY9Ii90ZXJtcyIgY2xhc3NOYW1lPSJob3Zlcjp0ZXh0LXdoaXRlIHRyYW5zaXRpb24iPlRlcm1zPC9MaW5rPgogICAgICAgICAgPExpbmsgaHJlZj0iL3ByaXZhY3kiIGNsYXNzTmFtZT0iaG92ZXI6dGV4dC13aGl0ZSB0cmFuc2l0aW9uIj5Qcml2YWN5PC9MaW5rPgogICAgICAgICAgPGEgaHJlZj0ibWFpbHRvOmhlbGxvQHRoZWd1bGVsLmNvbSIgY2xhc3NOYW1lPSJob3Zlcjp0ZXh0LXdoaXRlIHRyYW5zaXRpb24iPkNvbnRhY3Q8L2E+CiAgICAgICAgPC9uYXY+CgogICAgICAgIHsvKiBTb2NpYWwgaWNvbnMgKi99CiAgICAgICAgPGRpdiBjbGFzc05hbWU9ImZsZXgganVzdGlmeS1jZW50ZXIgZ2FwLTUgbWItOCI+CiAgICAgICAgICB7c29jaWFsTGlua3MubWFwKChzKSA9PiAoCiAgICAgICAgICAgIDxhCiAgICAgICAgICAgICAga2V5PXtzLmxhYmVsfQogICAgICAgICAgICAgIGhyZWY9e3MuaHJlZn0KICAgICAgICAgICAgICB0YXJnZXQ9Il9ibGFuayIKICAgICAgICAgICAgICByZWw9Im5vb3BlbmVyIG5vcmVmZXJyZXIiCiAgICAgICAgICAgICAgYXJpYS1sYWJlbD17cy5sYWJlbH0KICAgICAgICAgICAgICBjbGFzc05hbWU9InRleHQtZ3JheS01MDAgaG92ZXI6dGV4dC13aGl0ZSB0cmFuc2l0aW9uIgogICAgICAgICAgICA+CiAgICAgICAgICAgICAge3MuaWNvbn0KICAgICAgICAgICAgPC9hPgogICAgICAgICAgKSl9CiAgICAgICAgPC9kaXY+CgogICAgICAgIHsvKiBDb3B5cmlnaHQgKi99CiAgICAgICAgPHAgY2xhc3NOYW1lPSJ0ZXh0LWNlbnRlciB0ZXh0LWdyYXktNjAwIHRleHQteHMiPgogICAgICAgICAgwqkgMjAyNiBHdWxlbCBFbnRlcnRhaW5tZW50LiBBbGwgcmlnaHRzIHJlc2VydmVkLgogICAgICAgIDwvcD4KICAgICAgPC9kaXY+CiAgICA8L2Zvb3Rlcj4KICApOwp9Cg=="}
+import Link from 'next/link';
+import { Instagram, Youtube, Twitter, Facebook } from 'lucide-react';
+
+// TikTok doesn't have a lucide icon — use SVG inline
+function TikTokIcon({ className }: { className?: string }) {
+  return (
+    <svg className={className} viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+      <path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.69a8.18 8.18 0 004.78 1.52V6.75a4.85 4.85 0 01-1.01-.06z" />
+    </svg>
+  );
+}
+
+export function Footer() {
+  const socialLinks = [
+    {
+      label: 'Instagram',
+      href: process.env.NEXT_PUBLIC_INSTAGRAM_URL || 'https://instagram.com',
+      icon: <Instagram className="w-5 h-5" />,
+    },
+    {
+      label: 'YouTube',
+      href: process.env.NEXT_PUBLIC_YOUTUBE_URL || 'https://youtube.com',
+      icon: <Youtube className="w-5 h-5" />,
+    },
+    {
+      label: 'X / Twitter',
+      href: process.env.NEXT_PUBLIC_TWITTER_URL || 'https://x.com',
+      icon: <Twitter className="w-5 h-5" />,
+    },
+    {
+      label: 'Facebook',
+      href: process.env.NEXT_PUBLIC_FACEBOOK_URL || 'https://facebook.com',
+      icon: <Facebook className="w-5 h-5" />,
+    },
+    {
+      label: 'TikTok',
+      href: process.env.NEXT_PUBLIC_TIKTOK_URL || 'https://tiktok.com',
+      icon: <TikTokIcon className="w-5 h-5" />,
+    },
+  ];
+
+  return (
+    <footer className="bg-zinc-950 border-t border-zinc-800 text-gray-400 text-sm">
+      <div className="max-w-5xl mx-auto px-6 py-10">
+        {/* Brand + tagline */}
+        <div className="mb-8 text-center">
+          <img src="/logo.png" alt="The Gulel" className="h-10 w-auto mx-auto mb-2" />
+          <p className="text-gray-500 text-xs mt-1">Vertical micro dramas, anywhere you go.</p>
+        </div>
+
+        {/* Links */}
+        <nav className="flex flex-wrap justify-center gap-x-6 gap-y-2 mb-8">
+          <Link href="/about" className="hover:text-white transition">About</Link>
+          <Link href="/terms" className="hover:text-white transition">Terms</Link>
+          <Link href="/privacy" className="hover:text-white transition">Privacy</Link>
+          <a href="mailto:hello@thegulel.com" className="hover:text-white transition">Contact</a>
+        </nav>
+
+        {/* Social icons */}
+        <div className="flex justify-center gap-5 mb-8">
+          {socialLinks.map((s) => (
+            <a
+              key={s.label}
+              href={s.href}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label={s.label}
+              className="text-gray-500 hover:text-white transition"
+            >
+              {s.icon}
+            </a>
+          ))}
+        </div>
+
+        {/* Copyright */}
+        <p className="text-center text-gray-600 text-xs">
+          © 2026 Gulel Entertainment. All rights reserved.
+        </p>
+      </div>
+    </footer>
+  );
+}

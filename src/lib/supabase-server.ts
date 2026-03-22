@@ -1,1 +1,49 @@
-{"data":"aW1wb3J0IHsgY3JlYXRlU2VydmVyQ2xpZW50IH0gZnJvbSAnQHN1cGFiYXNlL3Nzcic7CmltcG9ydCB7IGNvb2tpZXMgfSBmcm9tICduZXh0L2hlYWRlcnMnOwoKLyoqCiAqIFNlcnZlci1zaWRlIFN1cGFiYXNlIGNsaWVudCBmb3IgdXNlIGluIEFQSSByb3V0ZXMgYW5kIFNlcnZlciBDb21wb25lbnRzLgogKiBVc2VzIHNlcnZpY2Ugcm9sZSBrZXkgd2hlbiBlbGV2YXRlZCBwcml2aWxlZ2VzIGFyZSBuZWVkZWQgKGUuZy4gREIgc3luYykuCiAqLwpleHBvcnQgYXN5bmMgZnVuY3Rpb24gY3JlYXRlU2VydmVyU3VwYWJhc2VDbGllbnQoKSB7CiAgY29uc3QgY29va2llU3RvcmUgPSBhd2FpdCBjb29raWVzKCk7CgogIHJldHVybiBjcmVhdGVTZXJ2ZXJDbGllbnQoCiAgICBwcm9jZXNzLmVudi5ORVhUX1BVQkxJQ19TVVBBQkFTRV9VUkwhLAogICAgcHJvY2Vzcy5lbnYuTkVYVF9QVUJMSUNfU1VQQUJBU0VfQU5PTl9LRVkhLAogICAgewogICAgICBjb29raWVzOiB7CiAgICAgICAgZ2V0QWxsKCkgewogICAgICAgICAgcmV0dXJuIGNvb2tpZVN0b3JlLmdldEFsbCgpOwogICAgICAgIH0sCiAgICAgICAgc2V0QWxsKGNvb2tpZXNUb1NldCkgewogICAgICAgICAgdHJ5IHsKICAgICAgICAgICAgY29va2llc1RvU2V0LmZvckVhY2goKHsgbmFtZSwgdmFsdWUsIG9wdGlvbnMgfSkgPT4KICAgICAgICAgICAgICBjb29raWVTdG9yZS5zZXQobmFtZSwgdmFsdWUsIG9wdGlvbnMpCiAgICAgICAgICAgICk7CiAgICAgICAgICB9IGNhdGNoIHsKICAgICAgICAgICAgLy8gc2V0QWxsIGNhbGxlZCBmcm9tIFNlcnZlciBDb21wb25lbnQg4oCUIHNhZmUgdG8gaWdub3JlCiAgICAgICAgICB9CiAgICAgICAgfSwKICAgICAgfSwKICAgIH0KICApOwp9CgovKioKICogQWRtaW4gY2xpZW50IHdpdGggc2VydmljZSByb2xlIGtleSDigJQgYnlwYXNzZXMgUkxTLgogKiBORVZFUiBleHBvc2UgdGhpcyB0byB0aGUgY2xpZW50LgogKi8KZXhwb3J0IGZ1bmN0aW9uIGNyZWF0ZUFkbWluU3VwYWJhc2VDbGllbnQoKSB7CiAgY29uc3QgeyBjcmVhdGVDbGllbnQgfSA9IHJlcXVpcmUoJ0BzdXBhYmFzZS9zdXBhYmFzZS1qcycpOwogIHJldHVybiBjcmVhdGVDbGllbnQoCiAgICBwcm9jZXNzLmVudi5ORVhUX1BVQkxJQ19TVVBBQkFTRV9VUkwhLAogICAgcHJvY2Vzcy5lbnYuU1VQQUJBU0VfU0VSVklDRV9ST0xFX0tFWSEsCiAgICB7CiAgICAgIGF1dGg6IHsKICAgICAgICBhdXRvUmVmcmVzaFRva2VuOiBmYWxzZSwKICAgICAgICBwZXJzaXN0U2Vzc2lvbjogZmFsc2UsCiAgICAgIH0sCiAgICB9CiAgKTsKfQo="}
+import { createServerClient } from '@supabase/ssr';
+import { cookies } from 'next/headers';
+
+/**
+ * Server-side Supabase client for use in API routes and Server Components.
+ * Uses service role key when elevated privileges are needed (e.g. DB sync).
+ */
+export async function createServerSupabaseClient() {
+  const cookieStore = await cookies();
+
+  return createServerClient(
+    process.env.NEXT_PUBLIC_SUPABASE_URL!,
+    process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!,
+    {
+      cookies: {
+        getAll() {
+          return cookieStore.getAll();
+        },
+        setAll(cookiesToSet) {
+          try {
+            cookiesToSet.forEach(({ name, value, options }) =>
+              cookieStore.set(name, value, options)
+            );
+          } catch {
+            // setAll called from Server Component — safe to ignore
+          }
+        },
+      },
+    }
+  );
+}
+
+/**
+ * Admin client with service role key — bypasses RLS.
+ * NEVER expose this to the client.
+ */
+export function createAdminSupabaseClient() {
+  const { createClient } = require('@supabase/supabase-js');
+  return createClient(
+    process.env.NEXT_PUBLIC_SUPABASE_URL!,
+    process.env.SUPABASE_SERVICE_ROLE_KEY!,
+    {
+      auth: {
+        autoRefreshToken: false,
+        persistSession: false,
+      },
+    }
+  );
+}

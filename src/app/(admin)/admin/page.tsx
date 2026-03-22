@@ -1,1 +1,185 @@
-{"data":"J3VzZSBjbGllbnQnOwoKaW1wb3J0IHsgdXNlRWZmZWN0LCB1c2VTdGF0ZSB9IGZyb20gJ3JlYWN0JzsKaW1wb3J0IExpbmsgZnJvbSAnbmV4dC9saW5rJzsKaW1wb3J0IHsgVXNlcnMsIEZpbG0sIFBsYXlDaXJjbGUsIERvbGxhclNpZ24sIFBsdXNDaXJjbGUsIEJhckNoYXJ0MywgQ2xvY2ssIFRyZW5kaW5nVXAgfSBmcm9tICdsdWNpZGUtcmVhY3QnOwppbXBvcnQgU3RhdENhcmQgZnJvbSAnQC9jb21wb25lbnRzL2FkbWluL1N0YXRDYXJkJzsKaW1wb3J0IHsgdXNlVG9hc3QgfSBmcm9tICdAL2NvbXBvbmVudHMvYWRtaW4vVG9hc3QnOwoKaW50ZXJmYWNlIEFkbWluU3RhdHMgewogIHRvdGFsVXNlcnM6IG51bWJlcjsKICB0b3RhbFNlcmllczogbnVtYmVyOwogIHRvdGFsRXBpc29kZXM6IG51bWJlcjsKICByZXZlbnVlOiBudW1iZXI7CiAgbmV3VXNlcnNUb2RheT86IG51bWJlcjsKICB2aWV3c1RvZGF5PzogbnVtYmVyOwp9CgppbnRlcmZhY2UgQWN0aXZpdHlJdGVtIHsKICBpZDogc3RyaW5nOwogIHR5cGU6IHN0cmluZzsKICBtZXNzYWdlOiBzdHJpbmc7CiAgdGltZTogc3RyaW5nOwp9CgpleHBvcnQgZGVmYXVsdCBmdW5jdGlvbiBBZG1pbkRhc2hib2FyZCgpIHsKICBjb25zdCB7IHRvYXN0IH0gPSB1c2VUb2FzdCgpOwogIGNvbnN0IFtzdGF0cywgc2V0U3RhdHNdID0gdXNlU3RhdGU8QWRtaW5TdGF0cyB8IG51bGw+KG51bGwpOwogIGNvbnN0IFtsb2FkaW5nLCBzZXRMb2FkaW5nXSA9IHVzZVN0YXRlKHRydWUpOwoKICB1c2VFZmZlY3QoKCkgPT4gewogICAgZmV0Y2goJy9hcGkvYWRtaW4vc3RhdHMnKQogICAgICAudGhlbigocikgPT4gci5qc29uKCkpCiAgICAgIC50aGVuKChkYXRhKSA9PiB7CiAgICAgICAgc2V0U3RhdHMoZGF0YSk7CiAgICAgICAgc2V0TG9hZGluZyhmYWxzZSk7CiAgICAgIH0pCiAgICAgIC5jYXRjaCgoKSA9PiB7CiAgICAgICAgdG9hc3QoJ0ZhaWxlZCB0byBsb2FkIHN0YXRzJywgJ2Vycm9yJyk7CiAgICAgICAgc2V0TG9hZGluZyhmYWxzZSk7CiAgICAgIH0pOwogIH0sIFt0b2FzdF0pOwoKICBjb25zdCBmb3JtYXRDdXJyZW5jeSA9IChuOiBudW1iZXIpID0+CiAgICBuZXcgSW50bC5OdW1iZXJGb3JtYXQoJ2VuLVVTJywgeyBzdHlsZTogJ2N1cnJlbmN5JywgY3VycmVuY3k6ICdVU0QnLCBtYXhpbXVtRnJhY3Rpb25EaWdpdHM6IDAgfSkuZm9ybWF0KG4pOwoKICByZXR1cm4gKAogICAgPGRpdiBjbGFzc05hbWU9Im1heC13LTd4bCBteC1hdXRvIHNwYWNlLXktNiI+CiAgICAgIHsvKiBQYWdlIHRpdGxlICovfQogICAgICA8ZGl2PgogICAgICAgIDxoMSBjbGFzc05hbWU9InRleHQtMnhsIGZvbnQtYm9sZCB0ZXh0LXdoaXRlIj5EYXNoYm9hcmQ8L2gxPgogICAgICAgIDxwIGNsYXNzTmFtZT0idGV4dC1ncmF5LTUwMCB0ZXh0LXNtIG10LTEiPldlbGNvbWUgYmFjayDigJQgaGVyZSdzIHdoYXQncyBoYXBwZW5pbmcgb24gR3VsZWwuPC9wPgogICAgICA8L2Rpdj4KCiAgICAgIHsvKiBTdGF0cyBncmlkICovfQogICAgICA8ZGl2IGNsYXNzTmFtZT0iZ3JpZCBncmlkLWNvbHMtMSBzbTpncmlkLWNvbHMtMiB4bDpncmlkLWNvbHMtNCBnYXAtNCI+CiAgICAgICAgPFN0YXRDYXJkCiAgICAgICAgICB0aXRsZT0iVG90YWwgVXNlcnMiCiAgICAgICAgICB2YWx1ZT17bG9hZGluZyA/ICfigJQnIDogKHN0YXRzPy50b3RhbFVzZXJzID8/IDApLnRvTG9jYWxlU3RyaW5nKCl9CiAgICAgICAgICBzdWJ0aXRsZT17c3RhdHM/Lm5ld1VzZXJzVG9kYXkgPyBgKyR7c3RhdHMubmV3VXNlcnNUb2RheX0gdG9kYXlgIDogdW5kZWZpbmVkfQogICAgICAgICAgaWNvbj17VXNlcnN9CiAgICAgICAgICBpY29uQ29sb3I9InRleHQtYmx1ZS00MDAiCiAgICAgICAgLz4KICAgICAgICA8U3RhdENhcmQKICAgICAgICAgIHRpdGxlPSJUb3RhbCBTZXJpZXMiCiAgICAgICAgICB2YWx1ZT17bG9hZGluZyA/ICfigJQnIDogKHN0YXRzPy50b3RhbFNlcmllcyA/PyAwKS50b0xvY2FsZVN0cmluZygpfQogICAgICAgICAgaWNvbj17RmlsbX0KICAgICAgICAgIGljb25Db2xvcj0idGV4dC1wdXJwbGUtNDAwIgogICAgICAgIC8+CiAgICAgICAgPFN0YXRDYXJkCiAgICAgICAgICB0aXRsZT0iVG90YWwgRXBpc29kZXMiCiAgICAgICAgICB2YWx1ZT17bG9hZGluZyA/ICfigJQnIDogKHN0YXRzPy50b3RhbEVwaXNvZGVzID8/IDApLnRvTG9jYWxlU3RyaW5nKCl9CiAgICAgICAgICBzdWJ0aXRsZT17c3RhdHM/LnZpZXdzVG9kYXkgPyBgJHtzdGF0cy52aWV3c1RvZGF5fSB2aWV3cyB0b2RheWAgOiB1bmRlZmluZWR9CiAgICAgICAgICBpY29uPXtQbGF5Q2lyY2xlfQogICAgICAgICAgaWNvbkNvbG9yPSJ0ZXh0LWdyZWVuLTQwMCIKICAgICAgICAvPgogICAgICAgIDxTdGF0Q2FyZAogICAgICAgICAgdGl0bGU9IlJldmVudWUiCiAgICAgICAgICB2YWx1ZT17bG9hZGluZyA/ICfigJQnIDogZm9ybWF0Q3VycmVuY3koc3RhdHM/LnJldmVudWUgPz8gMCl9CiAgICAgICAgICBpY29uPXtEb2xsYXJTaWdufQogICAgICAgICAgaWNvbkNvbG9yPSJ0ZXh0LXllbGxvdy00MDAiCiAgICAgICAgLz4KICAgICAgPC9kaXY+CgogICAgICB7LyogUXVpY2sgYWN0aW9ucyAqL30KICAgICAgPGRpdiBjbGFzc05hbWU9ImJnLWdyYXktOTAwIGJvcmRlciBib3JkZXItZ3JheS04MDAgcm91bmRlZC14bCBwLTUiPgogICAgICAgIDxoMiBjbGFzc05hbWU9InRleHQtc20gZm9udC1zZW1pYm9sZCB0ZXh0LWdyYXktNDAwIHVwcGVyY2FzZSB0cmFja2luZy13aWRlciBtYi00Ij5RdWljayBBY3Rpb25zPC9oMj4KICAgICAgICA8ZGl2IGNsYXNzTmFtZT0iZmxleCBmbGV4LXdyYXAgZ2FwLTMiPgogICAgICAgICAgPExpbmsKICAgICAgICAgICAgaHJlZj0iL2FkbWluL3Nlcmllcy9uZXciCiAgICAgICAgICAgIGNsYXNzTmFtZT0iZmxleCBpdGVtcy1jZW50ZXIgZ2FwLTIgcHgtNCBweS0yLjUgYmctcmVkLTYwMCBob3ZlcjpiZy1yZWQtNzAwIHRleHQtd2hpdGUgcm91bmRlZC1sZyB0ZXh0LXNtIGZvbnQtbWVkaXVtIHRyYW5zaXRpb24tY29sb3JzIgogICAgICAgICAgPgogICAgICAgICAgICA8UGx1c0NpcmNsZSBzaXplPXsxNn0gLz4KICAgICAgICAgICAgQWRkIFNlcmllcwogICAgICAgICAgPC9MaW5rPgogICAgICAgICAgPExpbmsKICAgICAgICAgICAgaHJlZj0iL2FkbWluL3VzZXJzIgogICAgICAgICAgICBjbGFzc05hbWU9ImZsZXggaXRlbXMtY2VudGVyIGdhcC0yIHB4LTQgcHktMi41IGJnLWdyYXktODAwIGhvdmVyOmJnLWdyYXktNzAwIHRleHQtZ3JheS0yMDAgcm91bmRlZC1sZyB0ZXh0LXNtIGZvbnQtbWVkaXVtIHRyYW5zaXRpb24tY29sb3JzIgogICAgICAgICAgPgogICAgICAgICAgICA8VXNlcnMgc2l6ZT17MTZ9IC8+CiAgICAgICAgICAgIFZpZXcgVXNlcnMKICAgICAgICAgIDwvTGluaz4KICAgICAgICAgIDxMaW5rCiAgICAgICAgICAgIGhyZWY9Ii9hZG1pbi9hbmFseXRpY3MiCiAgICAgICAgICAgIGNsYXNzTmFtZT0iZmxleCBpdGVtcy1jZW50ZXIgZ2FwLTIgcHgtNCBweS0yLjUgYmctZ3JheS04MDAgaG92ZXI6YmctZ3JheS03MDAgdGV4dC1ncmF5LTIwMCByb3VuZGVkLWxnIHRleHQtc20gZm9udC1tZWRpdW0gdHJhbnNpdGlvbi1jb2xvcnMiCiAgICAgICAgICA+CiAgICAgICAgICAgIDxCYXJDaGFydDMgc2l6ZT17MTZ9IC8+CiAgICAgICAgICAgIEFuYWx5dGljcwogICAgICAgICAgPC9MaW5rPgogICAgICAgIDwvZGl2PgogICAgICA8L2Rpdj4KCiAgICAgIDxkaXYgY2xhc3NOYW1lPSJncmlkIGdyaWQtY29scy0xIGxnOmdyaWQtY29scy0yIGdhcC00Ij4KICAgICAgICB7LyogUmVjZW50IEFjdGl2aXR5ICovfQogICAgICAgIDxkaXYgY2xhc3NOYW1lPSJiZy1ncmF5LTkwMCBib3JkZXIgYm9yZGVyLWdyYXktODAwIHJvdW5kZWQteGwgcC01Ij4KICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPSJmbGV4IGl0ZW1zLWNlbnRlciBnYXAtMiBtYi00Ij4KICAgICAgICAgICAgPENsb2NrIHNpemU9ezE2fSBjbGFzc05hbWU9InRleHQtZ3JheS01MDAiIC8+CiAgICAgICAgICAgIDxoMiBjbGFzc05hbWU9InRleHQtc20gZm9udC1zZW1pYm9sZCB0ZXh0LWdyYXktNDAwIHVwcGVyY2FzZSB0cmFja2luZy13aWRlciI+UmVjZW50IEFjdGl2aXR5PC9oMj4KICAgICAgICAgIDwvZGl2PgogICAgICAgICAgPGRpdiBjbGFzc05hbWU9InNwYWNlLXktMyI+CiAgICAgICAgICAgIHtbCiAgICAgICAgICAgICAgeyBtZXNzYWdlOiAnTmV3IHVzZXIgcmVnaXN0ZXJlZCB2aWEgR29vZ2xlJywgdGltZTogJzIgbWluIGFnbycsIHR5cGU6ICd1c2VyJyB9LAogICAgICAgICAgICAgIHsgbWVzc2FnZTogJ0VwaXNvZGUgdW5sb2NrZWQgYnkgdXNlcicsIHRpbWU6ICc4IG1pbiBhZ28nLCB0eXBlOiAnY29pbicgfSwKICAgICAgICAgICAgICB7IG1lc3NhZ2U6ICdOZXcgc2VyaWVzIHB1Ymxpc2hlZCcsIHRpbWU6ICcxIGhyIGFnbycsIHR5cGU6ICdzZXJpZXMnIH0sCiAgICAgICAgICAgICAgeyBtZXNzYWdlOiAnQ29pbiBwdXJjaGFzZSBjb21wbGV0ZWQnLCB0aW1lOiAnMiBociBhZ28nLCB0eXBlOiAnY29pbicgfSwKICAgICAgICAgICAgICB7IG1lc3NhZ2U6ICdVc2VyIGFjY291bnQgYmFubmVkJywgdGltZTogJzMgaHIgYWdvJywgdHlwZTogJ3VzZXInIH0sCiAgICAgICAgICAgIF0ubWFwKChpdGVtLCBpKSA9PiAoCiAgICAgICAgICAgICAgPGRpdiBrZXk9e2l9IGNsYXNzTmFtZT0iZmxleCBpdGVtcy1zdGFydCBnYXAtMyI+CiAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT0idy0yIGgtMiByb3VuZGVkLWZ1bGwgYmctZ3JheS03MDAgbXQtMS41IHNocmluay0wIiAvPgogICAgICAgICAgICAgICAgPGRpdiBjbGFzc05hbWU9ImZsZXgtMSBtaW4tdy0wIj4KICAgICAgICAgICAgICAgICAgPHAgY2xhc3NOYW1lPSJ0ZXh0LXNtIHRleHQtZ3JheS0zMDAiPntpdGVtLm1lc3NhZ2V9PC9wPgogICAgICAgICAgICAgICAgICA8cCBjbGFzc05hbWU9InRleHQteHMgdGV4dC1ncmF5LTYwMCBtdC0wLjUiPntpdGVtLnRpbWV9PC9wPgogICAgICAgICAgICAgICAgPC9kaXY+CiAgICAgICAgICAgICAgPC9kaXY+CiAgICAgICAgICAgICkpfQogICAgICAgICAgPC9kaXY+CiAgICAgICAgICA8cCBjbGFzc05hbWU9InRleHQteHMgdGV4dC1ncmF5LTYwMCBtdC00IGl0YWxpYyI+TGl2ZSBhY3Rpdml0eSBmZWVkIGNvbWluZyBzb29uPC9wPgogICAgICAgIDwvZGl2PgoKICAgICAgICB7LyogUGxhdGZvcm0gb3ZlcnZpZXcgKi99CiAgICAgICAgPGRpdiBjbGFzc05hbWU9ImJnLWdyYXktOTAwIGJvcmRlciBib3JkZXItZ3JheS04MDAgcm91bmRlZC14bCBwLTUiPgogICAgICAgICAgPGRpdiBjbGFzc05hbWU9ImZsZXggaXRlbXMtY2VudGVyIGdhcC0yIG1iLTQiPgogICAgICAgICAgICA8VHJlbmRpbmdVcCBzaXplPXsxNn0gY2xhc3NOYW1lPSJ0ZXh0LWdyYXktNTAwIiAvPgogICAgICAgICAgICA8aDIgY2xhc3NOYW1lPSJ0ZXh0LXNtIGZvbnQtc2VtaWJvbGQgdGV4dC1ncmF5LTQwMCB1cHBlcmNhc2UgdHJhY2tpbmctd2lkZXIiPlBsYXRmb3JtIE92ZXJ2aWV3PC9oMj4KICAgICAgICAgIDwvZGl2PgoKICAgICAgICAgIHtsb2FkaW5nID8gKAogICAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT0ic3BhY2UteS0zIj4KICAgICAgICAgICAgICB7WzEsIDIsIDMsIDRdLm1hcCgoaSkgPT4gKAogICAgICAgICAgICAgICAgPGRpdiBrZXk9e2l9IGNsYXNzTmFtZT0iaC0xMCBiZy1ncmF5LTgwMCByb3VuZGVkLWxnIGFuaW1hdGUtcHVsc2UiIC8+CiAgICAgICAgICAgICAgKSl9CiAgICAgICAgICAgIDwvZGl2PgogICAgICAgICAgKSA6ICgKICAgICAgICAgICAgPGRpdiBjbGFzc05hbWU9InNwYWNlLXktMyI+CiAgICAgICAgICAgICAge1sKICAgICAgICAgICAgICAgIHsgbGFiZWw6ICdVc2VycycsIHZhbHVlOiBzdGF0cz8udG90YWxVc2VycyA/PyAwLCBjb2xvcjogJ2JnLWJsdWUtNjAwJywgbWF4OiBNYXRoLm1heChzdGF0cz8udG90YWxVc2VycyA/PyAxLCAxKSB9LAogICAgICAgICAgICAgICAgeyBsYWJlbDogJ1NlcmllcycsIHZhbHVlOiBzdGF0cz8udG90YWxTZXJpZXMgPz8gMCwgY29sb3I6ICdiZy1wdXJwbGUtNjAwJywgbWF4OiBNYXRoLm1heChzdGF0cz8udG90YWxTZXJpZXMgPz8gMSwgMSkgfSwKICAgICAgICAgICAgICAgIHsgbGFiZWw6ICdFcGlzb2RlcycsIHZhbHVlOiBzdGF0cz8udG90YWxFcGlzb2RlcyA/PyAwLCBjb2xvcjogJ2JnLWdyZWVuLTYwMCcsIG1heDogTWF0aC5tYXgoc3RhdHM/LnRvdGFsRXBpc29kZXMgPz8gMSwgMSkgfSwKICAgICAgICAgICAgICBdLm1hcCgoeyBsYWJlbCwgdmFsdWUsIGNvbG9yIH0pID0+ICgKICAgICAgICAgICAgICAgIDxkaXYga2V5PXtsYWJlbH0+CiAgICAgICAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPSJmbGV4IGp1c3RpZnktYmV0d2VlbiB0ZXh0LXhzIG1iLTEuNSI+CiAgICAgICAgICAgICAgICAgICAgPHNwYW4gY2xhc3NOYW1lPSJ0ZXh0LWdyYXktNDAwIj57bGFiZWx9PC9zcGFuPgogICAgICAgICAgICAgICAgICAgIDxzcGFuIGNsYXNzTmFtZT0idGV4dC1ncmF5LTMwMCBmb250LW1lZGl1bSI+e3ZhbHVlLnRvTG9jYWxlU3RyaW5nKCl9PC9zcGFuPgogICAgICAgICAgICAgICAgICA8L2Rpdj4KICAgICAgICAgICAgICAgICAgPGRpdiBjbGFzc05hbWU9ImgtMiBiZy1ncmF5LTgwMCByb3VuZGVkLWZ1bGwgb3ZlcmZsb3ctaGlkZGVuIj4KICAgICAgICAgICAgICAgICAgICA8ZGl2CiAgICAgICAgICAgICAgICAgICAgICBjbGFzc05hbWU9e2BoLWZ1bGwgJHtjb2xvcn0gcm91bmRlZC1mdWxsYH0KICAgICAgICAgICAgICAgICAgICAgIHN0eWxlPXt7IHdpZHRoOiB2YWx1ZSA+IDAgPyAnNjAlJyA6ICcwJScgfX0KICAgICAgICAgICAgICAgICAgICAvPgogICAgICAgICAgICAgICAgICA8L2Rpdj4KICAgICAgICAgICAgICAgIDwvZGl2PgogICAgICAgICAgICAgICkpfQogICAgICAgICAgICA8L2Rpdj4KICAgICAgICAgICl9CgogICAgICAgICAgPExpbmsKICAgICAgICAgICAgaHJlZj0iL2FkbWluL2FuYWx5dGljcyIKICAgICAgICAgICAgY2xhc3NOYW1lPSJtdC00IHRleHQteHMgdGV4dC1yZWQtNTAwIGhvdmVyOnRleHQtcmVkLTQwMCB0cmFuc2l0aW9uLWNvbG9ycyBpbmxpbmUtZmxleCBpdGVtcy1jZW50ZXIgZ2FwLTEiCiAgICAgICAgICA+CiAgICAgICAgICAgIFZpZXcgZnVsbCBhbmFseXRpY3Mg4oaSCiAgICAgICAgICA8L0xpbms+CiAgICAgICAgPC9kaXY+CiAgICAgIDwvZGl2PgogICAgPC9kaXY+CiAgKTsKfQo="}
+'use client';
+
+import { useEffect, useState } from 'react';
+import Link from 'next/link';
+import { Users, Film, PlayCircle, DollarSign, PlusCircle, BarChart3, Clock, TrendingUp } from 'lucide-react';
+import StatCard from '@/components/admin/StatCard';
+import { useToast } from '@/components/admin/Toast';
+
+interface AdminStats {
+  totalUsers: number;
+  totalSeries: number;
+  totalEpisodes: number;
+  revenue: number;
+  newUsersToday?: number;
+  viewsToday?: number;
+}
+
+interface ActivityItem {
+  id: string;
+  type: string;
+  message: string;
+  time: string;
+}
+
+export default function AdminDashboard() {
+  const { toast } = useToast();
+  const [stats, setStats] = useState<AdminStats | null>(null);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    fetch('/api/admin/stats')
+      .then((r) => r.json())
+      .then((data) => {
+        setStats(data);
+        setLoading(false);
+      })
+      .catch(() => {
+        toast('Failed to load stats', 'error');
+        setLoading(false);
+      });
+  }, [toast]);
+
+  const formatCurrency = (n: number) =>
+    new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD', maximumFractionDigits: 0 }).format(n);
+
+  return (
+    <div className="max-w-7xl mx-auto space-y-6">
+      {/* Page title */}
+      <div>
+        <h1 className="text-2xl font-bold text-white">Dashboard</h1>
+        <p className="text-gray-500 text-sm mt-1">Welcome back — here's what's happening on Gulel.</p>
+      </div>
+
+      {/* Stats grid */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-4">
+        <StatCard
+          title="Total Users"
+          value={loading ? '—' : (stats?.totalUsers ?? 0).toLocaleString()}
+          subtitle={stats?.newUsersToday ? `+${stats.newUsersToday} today` : undefined}
+          icon={Users}
+          iconColor="text-blue-400"
+        />
+        <StatCard
+          title="Total Series"
+          value={loading ? '—' : (stats?.totalSeries ?? 0).toLocaleString()}
+          icon={Film}
+          iconColor="text-purple-400"
+        />
+        <StatCard
+          title="Total Episodes"
+          value={loading ? '—' : (stats?.totalEpisodes ?? 0).toLocaleString()}
+          subtitle={stats?.viewsToday ? `${stats.viewsToday} views today` : undefined}
+          icon={PlayCircle}
+          iconColor="text-green-400"
+        />
+        <StatCard
+          title="Revenue"
+          value={loading ? '—' : formatCurrency(stats?.revenue ?? 0)}
+          icon={DollarSign}
+          iconColor="text-yellow-400"
+        />
+      </div>
+
+      {/* Quick actions */}
+      <div className="bg-gray-900 border border-gray-800 rounded-xl p-5">
+        <h2 className="text-sm font-semibold text-gray-400 uppercase tracking-wider mb-4">Quick Actions</h2>
+        <div className="flex flex-wrap gap-3">
+          <Link
+            href="/admin/series/new"
+            className="flex items-center gap-2 px-4 py-2.5 bg-red-600 hover:bg-red-700 text-white rounded-lg text-sm font-medium transition-colors"
+          >
+            <PlusCircle size={16} />
+            Add Series
+          </Link>
+          <Link
+            href="/admin/users"
+            className="flex items-center gap-2 px-4 py-2.5 bg-gray-800 hover:bg-gray-700 text-gray-200 rounded-lg text-sm font-medium transition-colors"
+          >
+            <Users size={16} />
+            View Users
+          </Link>
+          <Link
+            href="/admin/analytics"
+            className="flex items-center gap-2 px-4 py-2.5 bg-gray-800 hover:bg-gray-700 text-gray-200 rounded-lg text-sm font-medium transition-colors"
+          >
+            <BarChart3 size={16} />
+            Analytics
+          </Link>
+        </div>
+      </div>
+
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
+        {/* Recent Activity */}
+        <div className="bg-gray-900 border border-gray-800 rounded-xl p-5">
+          <div className="flex items-center gap-2 mb-4">
+            <Clock size={16} className="text-gray-500" />
+            <h2 className="text-sm font-semibold text-gray-400 uppercase tracking-wider">Recent Activity</h2>
+          </div>
+          <div className="space-y-3">
+            {[
+              { message: 'New user registered via Google', time: '2 min ago', type: 'user' },
+              { message: 'Episode unlocked by user', time: '8 min ago', type: 'coin' },
+              { message: 'New series published', time: '1 hr ago', type: 'series' },
+              { message: 'Coin purchase completed', time: '2 hr ago', type: 'coin' },
+              { message: 'User account banned', time: '3 hr ago', type: 'user' },
+            ].map((item, i) => (
+              <div key={i} className="flex items-start gap-3">
+                <div className="w-2 h-2 rounded-full bg-gray-700 mt-1.5 shrink-0" />
+                <div className="flex-1 min-w-0">
+                  <p className="text-sm text-gray-300">{item.message}</p>
+                  <p className="text-xs text-gray-600 mt-0.5">{item.time}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+          <p className="text-xs text-gray-600 mt-4 italic">Live activity feed coming soon</p>
+        </div>
+
+        {/* Platform overview */}
+        <div className="bg-gray-900 border border-gray-800 rounded-xl p-5">
+          <div className="flex items-center gap-2 mb-4">
+            <TrendingUp size={16} className="text-gray-500" />
+            <h2 className="text-sm font-semibold text-gray-400 uppercase tracking-wider">Platform Overview</h2>
+          </div>
+
+          {loading ? (
+            <div className="space-y-3">
+              {[1, 2, 3, 4].map((i) => (
+                <div key={i} className="h-10 bg-gray-800 rounded-lg animate-pulse" />
+              ))}
+            </div>
+          ) : (
+            <div className="space-y-3">
+              {[
+                { label: 'Users', value: stats?.totalUsers ?? 0, color: 'bg-blue-600', max: Math.max(stats?.totalUsers ?? 1, 1) },
+                { label: 'Series', value: stats?.totalSeries ?? 0, color: 'bg-purple-600', max: Math.max(stats?.totalSeries ?? 1, 1) },
+                { label: 'Episodes', value: stats?.totalEpisodes ?? 0, color: 'bg-green-600', max: Math.max(stats?.totalEpisodes ?? 1, 1) },
+              ].map(({ label, value, color }) => (
+                <div key={label}>
+                  <div className="flex justify-between text-xs mb-1.5">
+                    <span className="text-gray-400">{label}</span>
+                    <span className="text-gray-300 font-medium">{value.toLocaleString()}</span>
+                  </div>
+                  <div className="h-2 bg-gray-800 rounded-full overflow-hidden">
+                    <div
+                      className={`h-full ${color} rounded-full`}
+                      style={{ width: value > 0 ? '60%' : '0%' }}
+                    />
+                  </div>
+                </div>
+              ))}
+            </div>
+          )}
+
+          <Link
+            href="/admin/analytics"
+            className="mt-4 text-xs text-red-500 hover:text-red-400 transition-colors inline-flex items-center gap-1"
+          >
+            View full analytics →
+          </Link>
+        </div>
+      </div>
+    </div>
+  );
+}

@@ -1,1 +1,76 @@
-{"data":"aW1wb3J0IHsgTmV4dFJlcXVlc3QsIE5leHRSZXNwb25zZSB9IGZyb20gJ25leHQvc2VydmVyJzsKaW1wb3J0IHByaXNtYSBmcm9tICdAL2xpYi9wcmlzbWEnOwoKY29uc3QgQURfUkVXQVJEX0NPSU5TID0gNTsKY29uc3QgQURfQ09PTERPV05fTVMgPSA2MCAqIDEwMDA7IC8vIDEgbWludXRlIGNvb2xkb3duIGJldHdlZW4gYWRzCgpleHBvcnQgYXN5bmMgZnVuY3Rpb24gUE9TVChyZXF1ZXN0OiBOZXh0UmVxdWVzdCkgewogIHRyeSB7CiAgICBjb25zdCB1c2VySWQgPSByZXF1ZXN0LmNvb2tpZXMuZ2V0KCd1c2VySWQnKT8udmFsdWU7CgogICAgaWYgKCF1c2VySWQpIHsKICAgICAgcmV0dXJuIE5leHRSZXNwb25zZS5qc29uKAogICAgICAgIHsgZXJyb3I6ICdOb3QgYXV0aGVudGljYXRlZCcgfSwKICAgICAgICB7IHN0YXR1czogNDAxIH0KICAgICAgKTsKICAgIH0KCiAgICAvLyBDaGVjayBjb29sZG93biB2aWEgREIgKHBlcnNpc3RlbnQgYWNyb3NzIHJlc3RhcnRzKQogICAgY29uc3QgY29vbGRvd24gPSBhd2FpdCBwcmlzbWEuYWRDb29sZG93bi5maW5kVW5pcXVlKHsKICAgICAgd2hlcmU6IHsgdXNlcklkIH0sCiAgICB9KTsKCiAgICBpZiAoY29vbGRvd24pIHsKICAgICAgY29uc3QgZWxhcHNlZCA9IERhdGUubm93KCkgLSBjb29sZG93bi5sYXN0QWRBdC5nZXRUaW1lKCk7CiAgICAgIGlmIChlbGFwc2VkIDwgQURfQ09PTERPV05fTVMpIHsKICAgICAgICBjb25zdCByZW1haW5pbmdTZWNvbmRzID0gTWF0aC5jZWlsKChBRF9DT09MRE9XTl9NUyAtIGVsYXBzZWQpIC8gMTAwMCk7CiAgICAgICAgcmV0dXJuIE5leHRSZXNwb25zZS5qc29uKAogICAgICAgICAgewogICAgICAgICAgICBlcnJvcjogJ1BsZWFzZSB3YWl0IGJlZm9yZSB3YXRjaGluZyBhbm90aGVyIGFkJywKICAgICAgICAgICAgcmVtYWluaW5nU2Vjb25kcywKICAgICAgICAgIH0sCiAgICAgICAgICB7IHN0YXR1czogNDI5IH0KICAgICAgICApOwogICAgICB9CiAgICB9CgogICAgLy8gVXBkYXRlIHVzZXIgYmFsYW5jZQogICAgY29uc3QgdXNlciA9IGF3YWl0IHByaXNtYS51c2VyLnVwZGF0ZSh7CiAgICAgIHdoZXJlOiB7IGlkOiB1c2VySWQgfSwKICAgICAgZGF0YTogewogICAgICAgIGNvaW5CYWxhbmNlOiB7CiAgICAgICAgICBpbmNyZW1lbnQ6IEFEX1JFV0FSRF9DT0lOUywKICAgICAgICB9LAogICAgICB9LAogICAgfSk7CgogICAgLy8gTG9nIHRyYW5zYWN0aW9uCiAgICBhd2FpdCBwcmlzbWEuY29pblRyYW5zYWN0aW9uLmNyZWF0ZSh7CiAgICAgIGRhdGE6IHsKICAgICAgICB1c2VySWQsCiAgICAgICAgYW1vdW50OiBBRF9SRVdBUkRfQ09JTlMsCiAgICAgICAgdHlwZTogJ0FEX1JFV0FSRCcsCiAgICAgICAgZGVzY3JpcHRpb246ICdXYXRjaGVkIGFkdmVydGlzZW1lbnQnLAogICAgICB9LAogICAgfSk7CgogICAgLy8gVXBzZXJ0IGNvb2xkb3duIHJlY29yZAogICAgYXdhaXQgcHJpc21hLmFkQ29vbGRvd24udXBzZXJ0KHsKICAgICAgd2hlcmU6IHsgdXNlcklkIH0sCiAgICAgIHVwZGF0ZTogeyBsYXN0QWRBdDogbmV3IERhdGUoKSB9LAogICAgICBjcmVhdGU6IHsgdXNlcklkLCBsYXN0QWRBdDogbmV3IERhdGUoKSB9LAogICAgfSk7CgogICAgcmV0dXJuIE5leHRSZXNwb25zZS5qc29uKHsKICAgICAgc3VjY2VzczogdHJ1ZSwKICAgICAgY29pbnNFYXJuZWQ6IEFEX1JFV0FSRF9DT0lOUywKICAgICAgbmV3QmFsYW5jZTogdXNlci5jb2luQmFsYW5jZSwKICAgIH0pOwogIH0gY2F0Y2ggKGVycm9yKSB7CiAgICBjb25zb2xlLmVycm9yKCdBZCByZXdhcmQgZXJyb3I6JywgZXJyb3IpOwogICAgcmV0dXJuIE5leHRSZXNwb25zZS5qc29uKAogICAgICB7IGVycm9yOiAnRmFpbGVkIHRvIGdyYW50IHJld2FyZCcgfSwKICAgICAgeyBzdGF0dXM6IDUwMCB9CiAgICApOwogIH0KfQo="}
+import { NextRequest, NextResponse } from 'next/server';
+import prisma from '@/lib/prisma';
+
+const AD_REWARD_COINS = 5;
+const AD_COOLDOWN_MS = 60 * 1000; // 1 minute cooldown between ads
+
+export async function POST(request: NextRequest) {
+  try {
+    const userId = request.cookies.get('userId')?.value;
+
+    if (!userId) {
+      return NextResponse.json(
+        { error: 'Not authenticated' },
+        { status: 401 }
+      );
+    }
+
+    // Check cooldown via DB (persistent across restarts)
+    const cooldown = await prisma.adCooldown.findUnique({
+      where: { userId },
+    });
+
+    if (cooldown) {
+      const elapsed = Date.now() - cooldown.lastAdAt.getTime();
+      if (elapsed < AD_COOLDOWN_MS) {
+        const remainingSeconds = Math.ceil((AD_COOLDOWN_MS - elapsed) / 1000);
+        return NextResponse.json(
+          {
+            error: 'Please wait before watching another ad',
+            remainingSeconds,
+          },
+          { status: 429 }
+        );
+      }
+    }
+
+    // Update user balance
+    const user = await prisma.user.update({
+      where: { id: userId },
+      data: {
+        coinBalance: {
+          increment: AD_REWARD_COINS,
+        },
+      },
+    });
+
+    // Log transaction
+    await prisma.coinTransaction.create({
+      data: {
+        userId,
+        amount: AD_REWARD_COINS,
+        type: 'AD_REWARD',
+        description: 'Watched advertisement',
+      },
+    });
+
+    // Upsert cooldown record
+    await prisma.adCooldown.upsert({
+      where: { userId },
+      update: { lastAdAt: new Date() },
+      create: { userId, lastAdAt: new Date() },
+    });
+
+    return NextResponse.json({
+      success: true,
+      coinsEarned: AD_REWARD_COINS,
+      newBalance: user.coinBalance,
+    });
+  } catch (error) {
+    console.error('Ad reward error:', error);
+    return NextResponse.json(
+      { error: 'Failed to grant reward' },
+      { status: 500 }
+    );
+  }
+}

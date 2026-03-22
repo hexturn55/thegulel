@@ -1,1 +1,19 @@
-{"data":"aW1wb3J0IEhlYWRlciBmcm9tICdAL2NvbXBvbmVudHMvSGVhZGVyJzsKaW1wb3J0IEJvdHRvbU5hdiBmcm9tICdAL2NvbXBvbmVudHMvQm90dG9tTmF2JzsKaW1wb3J0IHsgRm9vdGVyIH0gZnJvbSAnQC9jb21wb25lbnRzL0Zvb3Rlcic7CgovKioKICogTWFpbiBhcHAgc2hlbGwgbGF5b3V0IOKAlCB3cmFwcyBhbGwgY29udGVudCBwYWdlcyB3aXRoIEhlYWRlciwgRm9vdGVyLCBhbmQgQm90dG9tTmF2LgogKiBBdXRoIHBhZ2VzIGxpdmUgb3V0c2lkZSB0aGlzIGdyb3VwIGFuZCByZW5kZXIgd2l0aG91dCB0aGUgc2hlbGwuCiAqIFdhdGNoIHBhZ2VzIChmdWxsLXNjcmVlbiB2aWRlbykgYXJlIGFsc28gb3V0c2lkZSB0aGlzIGdyb3VwLgogKi8KZXhwb3J0IGRlZmF1bHQgZnVuY3Rpb24gTWFpbkxheW91dCh7IGNoaWxkcmVuIH06IHsgY2hpbGRyZW46IFJlYWN0LlJlYWN0Tm9kZSB9KSB7CiAgcmV0dXJuICgKICAgIDxkaXYgY2xhc3NOYW1lPSJtaW4taC1zY3JlZW4gZmxleCBmbGV4LWNvbCI+CiAgICAgIDxIZWFkZXIgLz4KICAgICAgPG1haW4gY2xhc3NOYW1lPSJmbGV4LTEiPntjaGlsZHJlbn08L21haW4+CiAgICAgIDxGb290ZXIgLz4KICAgICAgPEJvdHRvbU5hdiAvPgogICAgPC9kaXY+CiAgKTsKfQo="}
+import Header from '@/components/Header';
+import BottomNav from '@/components/BottomNav';
+import { Footer } from '@/components/Footer';
+
+/**
+ * Main app shell layout — wraps all content pages with Header, Footer, and BottomNav.
+ * Auth pages live outside this group and render without the shell.
+ * Watch pages (full-screen video) are also outside this group.
+ */
+export default function MainLayout({ children }: { children: React.ReactNode }) {
+  return (
+    <div className="min-h-screen flex flex-col">
+      <Header />
+      <main className="flex-1">{children}</main>
+      <Footer />
+      <BottomNav />
+    </div>
+  );
+}

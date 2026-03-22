@@ -1,1 +1,142 @@
-{"data":"J3VzZSBjbGllbnQnOwoKaW1wb3J0IHsgdXNlU3RhdGUsIHVzZUVmZmVjdCwgdXNlUmVmIH0gZnJvbSAncmVhY3QnOwppbXBvcnQgeyBTZWFyY2ggYXMgU2VhcmNoSWNvbiwgWCB9IGZyb20gJ2x1Y2lkZS1yZWFjdCc7CmltcG9ydCBTZXJpZXNDYXJkIGZyb20gJ0AvY29tcG9uZW50cy9TZXJpZXNDYXJkJzsKCmludGVyZmFjZSBTZXJpZXMgewogIGlkOiBzdHJpbmc7CiAgdGl0bGU6IHN0cmluZzsKICB0aHVtYm5haWw6IHN0cmluZzsKICBnZW5yZTogc3RyaW5nOwogIHRvdGFsRXBpc29kZXM6IG51bWJlcjsKICBmZWF0dXJlZDogYm9vbGVhbjsKfQoKZXhwb3J0IGRlZmF1bHQgZnVuY3Rpb24gU2VhcmNoUGFnZSgpIHsKICBjb25zdCBbcXVlcnksIHNldFF1ZXJ5XSA9IHVzZVN0YXRlKCcnKTsKICBjb25zdCBbcmVzdWx0cywgc2V0UmVzdWx0c10gPSB1c2VTdGF0ZTxTZXJpZXNbXT4oW10pOwogIGNvbnN0IFtpc0xvYWRpbmcsIHNldElzTG9hZGluZ10gPSB1c2VTdGF0ZShmYWxzZSk7CiAgY29uc3QgW2hhc1NlYXJjaGVkLCBzZXRIYXNTZWFyY2hlZF0gPSB1c2VTdGF0ZShmYWxzZSk7CiAgY29uc3QgaW5wdXRSZWYgPSB1c2VSZWY8SFRNTElucHV0RWxlbWVudD4obnVsbCk7CiAgY29uc3QgZGVib3VuY2VSZWYgPSB1c2VSZWY8UmV0dXJuVHlwZTx0eXBlb2Ygc2V0VGltZW91dD4gfCBudWxsPihudWxsKTsKCiAgdXNlRWZmZWN0KCgpID0+IHsKICAgIGlucHV0UmVmLmN1cnJlbnQ/LmZvY3VzKCk7CiAgfSwgW10pOwoKICB1c2VFZmZlY3QoKCkgPT4gewogICAgaWYgKGRlYm91bmNlUmVmLmN1cnJlbnQpIGNsZWFyVGltZW91dChkZWJvdW5jZVJlZi5jdXJyZW50KTsKCiAgICBpZiAoIXF1ZXJ5LnRyaW0oKSkgewogICAgICBzZXRSZXN1bHRzKFtdKTsKICAgICAgc2V0SGFzU2VhcmNoZWQoZmFsc2UpOwogICAgICByZXR1cm47CiAgICB9CgogICAgZGVib3VuY2VSZWYuY3VycmVudCA9IHNldFRpbWVvdXQoKCkgPT4gewogICAgICBkb1NlYXJjaChxdWVyeS50cmltKCkpOwogICAgfSwgNDAwKTsKCiAgICByZXR1cm4gKCkgPT4gewogICAgICBpZiAoZGVib3VuY2VSZWYuY3VycmVudCkgY2xlYXJUaW1lb3V0KGRlYm91bmNlUmVmLmN1cnJlbnQpOwogICAgfTsKICB9LCBbcXVlcnldKTsKCiAgY29uc3QgZG9TZWFyY2ggPSBhc3luYyAocTogc3RyaW5nKSA9PiB7CiAgICBzZXRJc0xvYWRpbmcodHJ1ZSk7CiAgICBzZXRIYXNTZWFyY2hlZCh0cnVlKTsKICAgIHRyeSB7CiAgICAgIGNvbnN0IHBhcmFtcyA9IG5ldyBVUkxTZWFyY2hQYXJhbXMoeyBzZWFyY2g6IHEgfSk7CiAgICAgIGNvbnN0IHJlcyA9IGF3YWl0IGZldGNoKGAvYXBpL3Nlcmllcz8ke3BhcmFtc31gKTsKICAgICAgaWYgKHJlcy5vaykgewogICAgICAgIGNvbnN0IGRhdGEgPSBhd2FpdCByZXMuanNvbigpOwogICAgICAgIHNldFJlc3VsdHMoZGF0YS5zZXJpZXMgPz8gW10pOwogICAgICB9CiAgICB9IGNhdGNoIChlcnIpIHsKICAgICAgY29uc29sZS5lcnJvcignU2VhcmNoIGZhaWxlZDonLCBlcnIpOwogICAgfSBmaW5hbGx5IHsKICAgICAgc2V0SXNMb2FkaW5nKGZhbHNlKTsKICAgIH0KICB9OwoKICBjb25zdCBjbGVhclNlYXJjaCA9ICgpID0+IHsKICAgIHNldFF1ZXJ5KCcnKTsKICAgIHNldFJlc3VsdHMoW10pOwogICAgc2V0SGFzU2VhcmNoZWQoZmFsc2UpOwogICAgaW5wdXRSZWYuY3VycmVudD8uZm9jdXMoKTsKICB9OwoKICByZXR1cm4gKAogICAgPGRpdiBjbGFzc05hbWU9Im1pbi1oLXNjcmVlbiBiZy1ibGFjayBwYi0yNCI+CiAgICAgIHsvKiBTZWFyY2ggYmFyICovfQogICAgICA8ZGl2IGNsYXNzTmFtZT0ic3RpY2t5IHRvcC1bNTdweF0gei0xMCBiZy1ibGFjay85NSBiYWNrZHJvcC1ibHVyLXNtIGJvcmRlci1iIGJvcmRlci1ncmF5LTgwMCBweC00IHB5LTMiPgogICAgICAgIDxkaXYgY2xhc3NOYW1lPSJyZWxhdGl2ZSBmbGV4IGl0ZW1zLWNlbnRlciI+CiAgICAgICAgICA8U2VhcmNoSWNvbiBjbGFzc05hbWU9ImFic29sdXRlIGxlZnQtMyB3LTUgaC01IHRleHQtZ3JheS00MDAgcG9pbnRlci1ldmVudHMtbm9uZSIgLz4KICAgICAgICAgIDxpbnB1dAogICAgICAgICAgICByZWY9e2lucHV0UmVmfQogICAgICAgICAgICB0eXBlPSJzZWFyY2giCiAgICAgICAgICAgIHZhbHVlPXtxdWVyeX0KICAgICAgICAgICAgb25DaGFuZ2U9eyhlKSA9PiBzZXRRdWVyeShlLnRhcmdldC52YWx1ZSl9CiAgICAgICAgICAgIHBsYWNlaG9sZGVyPSJTZWFyY2ggc2VyaWVzLCBnZW5yZXMuLi4iCiAgICAgICAgICAgIGNsYXNzTmFtZT0idy1mdWxsIGJnLWdyYXktODAwIHRleHQtd2hpdGUgcGxhY2Vob2xkZXItZ3JheS01MDAgcGwtMTAgcHItMTAgcHktMyByb3VuZGVkLXhsIGZvY3VzOm91dGxpbmUtbm9uZSBmb2N1czpyaW5nLTIgZm9jdXM6cmluZy1yZWQtNTAwIHRleHQtc20iCiAgICAgICAgICAvPgogICAgICAgICAge3F1ZXJ5ICYmICgKICAgICAgICAgICAgPGJ1dHRvbgogICAgICAgICAgICAgIG9uQ2xpY2s9e2NsZWFyU2VhcmNofQogICAgICAgICAgICAgIGNsYXNzTmFtZT0iYWJzb2x1dGUgcmlnaHQtMyB0ZXh0LWdyYXktNDAwIGhvdmVyOnRleHQtd2hpdGUgdHJhbnNpdGlvbiIKICAgICAgICAgICAgPgogICAgICAgICAgICAgIDxYIGNsYXNzTmFtZT0idy00IGgtNCIgLz4KICAgICAgICAgICAgPC9idXR0b24+CiAgICAgICAgICApfQogICAgICAgIDwvZGl2PgogICAgICA8L2Rpdj4KCiAgICAgIDxkaXYgY2xhc3NOYW1lPSJweC00IHB5LTYiPgogICAgICAgIHsvKiBMb2FkaW5nIHNrZWxldG9uICovfQogICAgICAgIHtpc0xvYWRpbmcgJiYgKAogICAgICAgICAgPGRpdiBjbGFzc05hbWU9ImdyaWQgZ3JpZC1jb2xzLTIgbWQ6Z3JpZC1jb2xzLTMgbGc6Z3JpZC1jb2xzLTQgZ2FwLTQiPgogICAgICAgICAgICB7Wy4uLkFycmF5KDYpXS5tYXAoKF8sIGkpID0+ICgKICAgICAgICAgICAgICA8ZGl2IGtleT17aX0gY2xhc3NOYW1lPSJhc3BlY3QtWzkvMTZdIGJnLWdyYXktODAwIHJvdW5kZWQtMnhsIGFuaW1hdGUtcHVsc2UiIC8+CiAgICAgICAgICAgICkpfQogICAgICAgICAgPC9kaXY+CiAgICAgICAgKX0KCiAgICAgICAgey8qIFJlc3VsdHMgKi99CiAgICAgICAgeyFpc0xvYWRpbmcgJiYgcmVzdWx0cy5sZW5ndGggPiAwICYmICgKICAgICAgICAgIDw+CiAgICAgICAgICAgIDxwIGNsYXNzTmFtZT0idGV4dC1ncmF5LTQwMCB0ZXh0LXNtIG1iLTQiPgogICAgICAgICAgICAgIHtyZXN1bHRzLmxlbmd0aH0gcmVzdWx0e3Jlc3VsdHMubGVuZ3RoICE9PSAxID8gJ3MnIDogJyd9IGZvciAmbGRxdW87e3F1ZXJ5fSZyZHF1bzsKICAgICAgICAgICAgPC9wPgogICAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT0iZ3JpZCBncmlkLWNvbHMtMiBtZDpncmlkLWNvbHMtMyBsZzpncmlkLWNvbHMtNCBnYXAtNCI+CiAgICAgICAgICAgICAge3Jlc3VsdHMubWFwKChzKSA9PiAoCiAgICAgICAgICAgICAgICA8U2VyaWVzQ2FyZCBrZXk9e3MuaWR9IHsuLi5zfSAvPgogICAgICAgICAgICAgICkpfQogICAgICAgICAgICA8L2Rpdj4KICAgICAgICAgIDwvPgogICAgICAgICl9CgogICAgICAgIHsvKiBObyByZXN1bHRzICovfQogICAgICAgIHshaXNMb2FkaW5nICYmIGhhc1NlYXJjaGVkICYmIHJlc3VsdHMubGVuZ3RoID09PSAwICYmICgKICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPSJmbGV4IGZsZXgtY29sIGl0ZW1zLWNlbnRlciBqdXN0aWZ5LWNlbnRlciBweS0yMCB0ZXh0LWNlbnRlciI+CiAgICAgICAgICAgIDxTZWFyY2hJY29uIGNsYXNzTmFtZT0idy0xMiBoLTEyIHRleHQtZ3JheS02MDAgbWItNCIgLz4KICAgICAgICAgICAgPHAgY2xhc3NOYW1lPSJ0ZXh0LXdoaXRlIGZvbnQtc2VtaWJvbGQgdGV4dC1sZyBtYi0yIj5ObyByZXN1bHRzIGZvdW5kPC9wPgogICAgICAgICAgICA8cCBjbGFzc05hbWU9InRleHQtZ3JheS01MDAgdGV4dC1zbSI+CiAgICAgICAgICAgICAgVHJ5IGEgZGlmZmVyZW50IHRpdGxlIG9yIGdlbnJlCiAgICAgICAgICAgIDwvcD4KICAgICAgICAgIDwvZGl2PgogICAgICAgICl9CgogICAgICAgIHsvKiBJZGxlIHN0YXRlICovfQogICAgICAgIHshaXNMb2FkaW5nICYmICFoYXNTZWFyY2hlZCAmJiAoCiAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT0iZmxleCBmbGV4LWNvbCBpdGVtcy1jZW50ZXIganVzdGlmeS1jZW50ZXIgcHktMjAgdGV4dC1jZW50ZXIiPgogICAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT0idy0xNiBoLTE2IGJnLWdyYWRpZW50LXRvLWJyIGZyb20tcmVkLTUwMCB0by1waW5rLTUwMCByb3VuZGVkLWZ1bGwgZmxleCBpdGVtcy1jZW50ZXIganVzdGlmeS1jZW50ZXIgbWItNCI+CiAgICAgICAgICAgICAgPFNlYXJjaEljb24gY2xhc3NOYW1lPSJ3LTggaC04IHRleHQtd2hpdGUiIC8+CiAgICAgICAgICAgIDwvZGl2PgogICAgICAgICAgICA8cCBjbGFzc05hbWU9InRleHQtZ3JheS00MDAgdGV4dC1zbSI+U3RhcnQgdHlwaW5nIHRvIHNlYXJjaCBmb3Igc2VyaWVzPC9wPgogICAgICAgICAgPC9kaXY+CiAgICAgICAgKX0KICAgICAgPC9kaXY+CiAgICA8L2Rpdj4KICApOwp9Cg=="}
+'use client';
+
+import { useState, useEffect, useRef } from 'react';
+import { Search as SearchIcon, X } from 'lucide-react';
+import SeriesCard from '@/components/SeriesCard';
+
+interface Series {
+  id: string;
+  title: string;
+  thumbnail: string;
+  genre: string;
+  totalEpisodes: number;
+  featured: boolean;
+}
+
+export default function SearchPage() {
+  const [query, setQuery] = useState('');
+  const [results, setResults] = useState<Series[]>([]);
+  const [isLoading, setIsLoading] = useState(false);
+  const [hasSearched, setHasSearched] = useState(false);
+  const inputRef = useRef<HTMLInputElement>(null);
+  const debounceRef = useRef<ReturnType<typeof setTimeout> | null>(null);
+
+  useEffect(() => {
+    inputRef.current?.focus();
+  }, []);
+
+  useEffect(() => {
+    if (debounceRef.current) clearTimeout(debounceRef.current);
+
+    if (!query.trim()) {
+      setResults([]);
+      setHasSearched(false);
+      return;
+    }
+
+    debounceRef.current = setTimeout(() => {
+      doSearch(query.trim());
+    }, 400);
+
+    return () => {
+      if (debounceRef.current) clearTimeout(debounceRef.current);
+    };
+  }, [query]);
+
+  const doSearch = async (q: string) => {
+    setIsLoading(true);
+    setHasSearched(true);
+    try {
+      const params = new URLSearchParams({ search: q });
+      const res = await fetch(`/api/series?${params}`);
+      if (res.ok) {
+        const data = await res.json();
+        setResults(data.series ?? []);
+      }
+    } catch (err) {
+      console.error('Search failed:', err);
+    } finally {
+      setIsLoading(false);
+    }
+  };
+
+  const clearSearch = () => {
+    setQuery('');
+    setResults([]);
+    setHasSearched(false);
+    inputRef.current?.focus();
+  };
+
+  return (
+    <div className="min-h-screen bg-black pb-24">
+      {/* Search bar */}
+      <div className="sticky top-[57px] z-10 bg-black/95 backdrop-blur-sm border-b border-gray-800 px-4 py-3">
+        <div className="relative flex items-center">
+          <SearchIcon className="absolute left-3 w-5 h-5 text-gray-400 pointer-events-none" />
+          <input
+            ref={inputRef}
+            type="search"
+            value={query}
+            onChange={(e) => setQuery(e.target.value)}
+            placeholder="Search series, genres..."
+            className="w-full bg-gray-800 text-white placeholder-gray-500 pl-10 pr-10 py-3 rounded-xl focus:outline-none focus:ring-2 focus:ring-red-500 text-sm"
+          />
+          {query && (
+            <button
+              onClick={clearSearch}
+              className="absolute right-3 text-gray-400 hover:text-white transition"
+            >
+              <X className="w-4 h-4" />
+            </button>
+          )}
+        </div>
+      </div>
+
+      <div className="px-4 py-6">
+        {/* Loading skeleton */}
+        {isLoading && (
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+            {[...Array(6)].map((_, i) => (
+              <div key={i} className="aspect-[9/16] bg-gray-800 rounded-2xl animate-pulse" />
+            ))}
+          </div>
+        )}
+
+        {/* Results */}
+        {!isLoading && results.length > 0 && (
+          <>
+            <p className="text-gray-400 text-sm mb-4">
+              {results.length} result{results.length !== 1 ? 's' : ''} for &ldquo;{query}&rdquo;
+            </p>
+            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+              {results.map((s) => (
+                <SeriesCard key={s.id} {...s} />
+              ))}
+            </div>
+          </>
+        )}
+
+        {/* No results */}
+        {!isLoading && hasSearched && results.length === 0 && (
+          <div className="flex flex-col items-center justify-center py-20 text-center">
+            <SearchIcon className="w-12 h-12 text-gray-600 mb-4" />
+            <p className="text-white font-semibold text-lg mb-2">No results found</p>
+            <p className="text-gray-500 text-sm">
+              Try a different title or genre
+            </p>
+          </div>
+        )}
+
+        {/* Idle state */}
+        {!isLoading && !hasSearched && (
+          <div className="flex flex-col items-center justify-center py-20 text-center">
+            <div className="w-16 h-16 bg-gradient-to-br from-red-500 to-pink-500 rounded-full flex items-center justify-center mb-4">
+              <SearchIcon className="w-8 h-8 text-white" />
+            </div>
+            <p className="text-gray-400 text-sm">Start typing to search for series</p>
+          </div>
+        )}
+      </div>
+    </div>
+  );
+}

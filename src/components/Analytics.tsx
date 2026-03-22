@@ -1,1 +1,29 @@
-{"data":"J3VzZSBjbGllbnQnOwppbXBvcnQgU2NyaXB0IGZyb20gJ25leHQvc2NyaXB0JzsKCmNvbnN0IEdBX0lEID0gcHJvY2Vzcy5lbnYuTkVYVF9QVUJMSUNfR0FfSUQ7CmNvbnN0IEdUTV9JRCA9IHByb2Nlc3MuZW52Lk5FWFRfUFVCTElDX0dUTV9JRDsKCmV4cG9ydCBmdW5jdGlvbiBHb29nbGVBbmFseXRpY3MoKSB7CiAgaWYgKCFHQV9JRCkgcmV0dXJuIG51bGw7CiAgcmV0dXJuICgKICAgIDw+CiAgICAgIDxTY3JpcHQKICAgICAgICBzcmM9e2BodHRwczovL3d3dy5nb29nbGV0YWdtYW5hZ2VyLmNvbS9ndGFnL2pzP2lkPSR7R0FfSUR9YH0KICAgICAgICBzdHJhdGVneT0iYWZ0ZXJJbnRlcmFjdGl2ZSIKICAgICAgLz4KICAgICAgPFNjcmlwdCBpZD0iZ3RhZy1pbml0IiBzdHJhdGVneT0iYWZ0ZXJJbnRlcmFjdGl2ZSI+CiAgICAgICAge2B3aW5kb3cuZGF0YUxheWVyPXdpbmRvdy5kYXRhTGF5ZXJ8fFtdO2Z1bmN0aW9uIGd0YWcoKXtkYXRhTGF5ZXIucHVzaChhcmd1bWVudHMpfWd0YWcoJ2pzJyxuZXcgRGF0ZSgpKTtndGFnKCdjb25maWcnLCcke0dBX0lEfScse3BhZ2VfcGF0aDp3aW5kb3cubG9jYXRpb24ucGF0aG5hbWV9KTtgfQogICAgICA8L1NjcmlwdD4KICAgIDwvPgogICk7Cn0KCmV4cG9ydCBmdW5jdGlvbiBHb29nbGVUYWdNYW5hZ2VyKCkgewogIGlmICghR1RNX0lEKSByZXR1cm4gbnVsbDsKICByZXR1cm4gKAogICAgPFNjcmlwdCBpZD0iZ3RtLWluaXQiIHN0cmF0ZWd5PSJhZnRlckludGVyYWN0aXZlIj4KICAgICAge2AoZnVuY3Rpb24odyxkLHMsbCxpKXt3W2xdPXdbbF18fFtdO3dbbF0ucHVzaCh7J2d0bS5zdGFydCc6bmV3IERhdGUoKS5nZXRUaW1lKCksZXZlbnQ6J2d0bS5qcyd9KTt2YXIgZj1kLmdldEVsZW1lbnRzQnlUYWdOYW1lKHMpWzBdLGo9ZC5jcmVhdGVFbGVtZW50KHMpLGRsPWwhPSdkYXRhTGF5ZXInPycmbD0nK2w6Jyc7ai5hc3luYz10cnVlO2ouc3JjPSdodHRwczovL3d3dy5nb29nbGV0YWdtYW5hZ2VyLmNvbS9ndG0uanM/aWQ9JytpK2RsO2YucGFyZW50Tm9kZS5pbnNlcnRCZWZvcmUoaixmKTt9KSh3aW5kb3csZG9jdW1lbnQsJ3NjcmlwdCcsJ2RhdGFMYXllcicsJyR7R1RNX0lEfScpO2B9CiAgICA8L1NjcmlwdD4KICApOwp9Cg=="}
+'use client';
+import Script from 'next/script';
+
+const GA_ID = process.env.NEXT_PUBLIC_GA_ID;
+const GTM_ID = process.env.NEXT_PUBLIC_GTM_ID;
+
+export function GoogleAnalytics() {
+  if (!GA_ID) return null;
+  return (
+    <>
+      <Script
+        src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`}
+        strategy="afterInteractive"
+      />
+      <Script id="gtag-init" strategy="afterInteractive">
+        {`window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','${GA_ID}',{page_path:window.location.pathname});`}
+      </Script>
+    </>
+  );
+}
+
+export function GoogleTagManager() {
+  if (!GTM_ID) return null;
+  return (
+    <Script id="gtm-init" strategy="afterInteractive">
+      {`(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','${GTM_ID}');`}
+    </Script>
+  );
+}

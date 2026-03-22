@@ -1,1 +1,52 @@
-{"data":"aW1wb3J0IHsgTmV4dFJlcXVlc3QsIE5leHRSZXNwb25zZSB9IGZyb20gJ25leHQvc2VydmVyJzsKaW1wb3J0IHByaXNtYSBmcm9tICdAL2xpYi9wcmlzbWEnOwppbXBvcnQgeyByZXF1aXJlQWRtaW4gfSBmcm9tICdAL2xpYi9hZG1pbi1hdXRoJzsKCmV4cG9ydCBhc3luYyBmdW5jdGlvbiBQQVRDSCgKICByZXF1ZXN0OiBOZXh0UmVxdWVzdCwKICB7IHBhcmFtcyB9OiB7IHBhcmFtczogUHJvbWlzZTx7IGlkOiBzdHJpbmc7IGVwaXNvZGVJZDogc3RyaW5nIH0+IH0KKSB7CiAgY29uc3QgYWRtaW4gPSBhd2FpdCByZXF1aXJlQWRtaW4oKTsKICBpZiAoIWFkbWluKSB7CiAgICByZXR1cm4gTmV4dFJlc3BvbnNlLmpzb24oeyBlcnJvcjogJ1VuYXV0aG9yaXplZCcgfSwgeyBzdGF0dXM6IDQwMSB9KTsKICB9CgogIGNvbnN0IHsgZXBpc29kZUlkIH0gPSBhd2FpdCBwYXJhbXM7CiAgdHJ5IHsKICAgIGNvbnN0IGJvZHkgPSBhd2FpdCByZXF1ZXN0Lmpzb24oKTsKICAgIGNvbnN0IGVwaXNvZGUgPSBhd2FpdCBwcmlzbWEuZXBpc29kZS51cGRhdGUoewogICAgICB3aGVyZTogeyBpZDogZXBpc29kZUlkIH0sCiAgICAgIGRhdGE6IGJvZHksCiAgICB9KTsKICAgIHJldHVybiBOZXh0UmVzcG9uc2UuanNvbih7IGVwaXNvZGUgfSk7CiAgfSBjYXRjaCAoZXJyb3IpIHsKICAgIGNvbnNvbGUuZXJyb3IoJ1VwZGF0ZSBlcGlzb2RlIGVycm9yOicsIGVycm9yKTsKICAgIHJldHVybiBOZXh0UmVzcG9uc2UuanNvbih7IGVycm9yOiAnRmFpbGVkIHRvIHVwZGF0ZSBlcGlzb2RlJyB9LCB7IHN0YXR1czogNTAwIH0pOwogIH0KfQoKZXhwb3J0IGFzeW5jIGZ1bmN0aW9uIERFTEVURSgKICBfcmVxdWVzdDogTmV4dFJlcXVlc3QsCiAgeyBwYXJhbXMgfTogeyBwYXJhbXM6IFByb21pc2U8eyBpZDogc3RyaW5nOyBlcGlzb2RlSWQ6IHN0cmluZyB9PiB9CikgewogIGNvbnN0IGFkbWluID0gYXdhaXQgcmVxdWlyZUFkbWluKCk7CiAgaWYgKCFhZG1pbikgewogICAgcmV0dXJuIE5leHRSZXNwb25zZS5qc29uKHsgZXJyb3I6ICdVbmF1dGhvcml6ZWQnIH0sIHsgc3RhdHVzOiA0MDEgfSk7CiAgfQoKICBjb25zdCB7IGlkOiBzZXJpZXNJZCwgZXBpc29kZUlkIH0gPSBhd2FpdCBwYXJhbXM7CiAgdHJ5IHsKICAgIGF3YWl0IHByaXNtYS5lcGlzb2RlLmRlbGV0ZSh7IHdoZXJlOiB7IGlkOiBlcGlzb2RlSWQgfSB9KTsKCiAgICAvLyBEZWNyZW1lbnQgdG90YWxFcGlzb2RlcyBvbiBzZXJpZXMKICAgIGF3YWl0IHByaXNtYS5zZXJpZXMudXBkYXRlKHsKICAgICAgd2hlcmU6IHsgaWQ6IHNlcmllc0lkIH0sCiAgICAgIGRhdGE6IHsgdG90YWxFcGlzb2RlczogeyBkZWNyZW1lbnQ6IDEgfSB9LAogICAgfSk7CgogICAgcmV0dXJuIE5leHRSZXNwb25zZS5qc29uKHsgc3VjY2VzczogdHJ1ZSB9KTsKICB9IGNhdGNoIChlcnJvcikgewogICAgY29uc29sZS5lcnJvcignRGVsZXRlIGVwaXNvZGUgZXJyb3I6JywgZXJyb3IpOwogICAgcmV0dXJuIE5leHRSZXNwb25zZS5qc29uKHsgZXJyb3I6ICdGYWlsZWQgdG8gZGVsZXRlIGVwaXNvZGUnIH0sIHsgc3RhdHVzOiA1MDAgfSk7CiAgfQp9Cg=="}
+import { NextRequest, NextResponse } from 'next/server';
+import prisma from '@/lib/prisma';
+import { requireAdmin } from '@/lib/admin-auth';
+
+export async function PATCH(
+  request: NextRequest,
+  { params }: { params: Promise<{ id: string; episodeId: string }> }
+) {
+  const admin = await requireAdmin();
+  if (!admin) {
+    return NextResponse.json({ error: 'Unauthorized' }, { status: 401 });
+  }
+
+  const { episodeId } = await params;
+  try {
+    const body = await request.json();
+    const episode = await prisma.episode.update({
+      where: { id: episodeId },
+      data: body,
+    });
+    return NextResponse.json({ episode });
+  } catch (error) {
+    console.error('Update episode error:', error);
+    return NextResponse.json({ error: 'Failed to update episode' }, { status: 500 });
+  }
+}
+
+export async function DELETE(
+  _request: NextRequest,
+  { params }: { params: Promise<{ id: string; episodeId: string }> }
+) {
+  const admin = await requireAdmin();
+  if (!admin) {
+    return NextResponse.json({ error: 'Unauthorized' }, { status: 401 });
+  }
+
+  const { id: seriesId, episodeId } = await params;
+  try {
+    await prisma.episode.delete({ where: { id: episodeId } });
+
+    // Decrement totalEpisodes on series
+    await prisma.series.update({
+      where: { id: seriesId },
+      data: { totalEpisodes: { decrement: 1 } },
+    });
+
+    return NextResponse.json({ success: true });
+  } catch (error) {
+    console.error('Delete episode error:', error);
+    return NextResponse.json({ error: 'Failed to delete episode' }, { status: 500 });
+  }
+}

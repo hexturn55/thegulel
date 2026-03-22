@@ -1,1 +1,151 @@
-{"data":"aW1wb3J0IHsgTWV0YWRhdGEgfSBmcm9tICduZXh0JzsKCmV4cG9ydCBjb25zdCBtZXRhZGF0YTogTWV0YWRhdGEgPSB7CiAgdGl0bGU6ICdQcml2YWN5IFBvbGljeScsCiAgZGVzY3JpcHRpb246ICdQcml2YWN5IFBvbGljeSBmb3IgR3VsZWwgT1RULicsCiAgcm9ib3RzOiB7IGluZGV4OiBmYWxzZSB9LAp9OwoKZXhwb3J0IGRlZmF1bHQgZnVuY3Rpb24gUHJpdmFjeVBhZ2UoKSB7CiAgY29uc3QgbGFzdFVwZGF0ZWQgPSAnMSBNYXJjaCAyMDI2JzsKCiAgcmV0dXJuICgKICAgIDxkaXYgY2xhc3NOYW1lPSJtaW4taC1zY3JlZW4gYmctYmxhY2sgdGV4dC13aGl0ZSBwYi0yOCI+CiAgICAgIDxkaXYgY2xhc3NOYW1lPSJtYXgtdy0yeGwgbXgtYXV0byBweC02IHB5LTEyIj4KICAgICAgICA8aDEgY2xhc3NOYW1lPSJ0ZXh0LTN4bCBmb250LWJvbGQgbWItMiI+UHJpdmFjeSBQb2xpY3k8L2gxPgogICAgICAgIDxwIGNsYXNzTmFtZT0idGV4dC1ncmF5LTUwMCB0ZXh0LXNtIG1iLTEwIj5MYXN0IHVwZGF0ZWQ6IHtsYXN0VXBkYXRlZH08L3A+CgogICAgICAgIDxkaXYgY2xhc3NOYW1lPSJzcGFjZS15LTggdGV4dC1ncmF5LTQwMCBsZWFkaW5nLXJlbGF4ZWQiPgogICAgICAgICAgPHNlY3Rpb24+CiAgICAgICAgICAgIDxoMiBjbGFzc05hbWU9InRleHQtbGcgZm9udC1ib2xkIHRleHQtZ3JheS0xMDAgbWItMiI+MS4gSW50cm9kdWN0aW9uPC9oMj4KICAgICAgICAgICAgPHA+CiAgICAgICAgICAgICAgR3VsZWwgRW50ZXJ0YWlubWVudCAoIndlIiwgInVzIiwgIm91ciIpIG9wZXJhdGVzIEd1bGVsIE9UVCBhdCB0aGVndWxlbC5jb20uIFRoaXMKICAgICAgICAgICAgICBQcml2YWN5IFBvbGljeSBleHBsYWlucyBob3cgd2UgY29sbGVjdCwgdXNlLCBhbmQgcHJvdGVjdCB5b3VyIHBlcnNvbmFsIGluZm9ybWF0aW9uCiAgICAgICAgICAgICAgd2hlbiB5b3UgdXNlIG91ciBTZXJ2aWNlLiBXZSBjb21wbHkgd2l0aCBhcHBsaWNhYmxlIGRhdGEgcHJvdGVjdGlvbiBsYXdzIGluY2x1ZGluZwogICAgICAgICAgICAgIHRoZSBFVSBHZW5lcmFsIERhdGEgUHJvdGVjdGlvbiBSZWd1bGF0aW9uIChHRFBSKSBhbmQgSW5kaWEmYXBvcztzIERpZ2l0YWwgUGVyc29uYWwgRGF0YQogICAgICAgICAgICAgIFByb3RlY3Rpb24gQWN0IDIwMjMgKERQRFAgQWN0KS4KICAgICAgICAgICAgPC9wPgogICAgICAgICAgPC9zZWN0aW9uPgoKICAgICAgICAgIDxzZWN0aW9uPgogICAgICAgICAgICA8aDIgY2xhc3NOYW1lPSJ0ZXh0LWxnIGZvbnQtYm9sZCB0ZXh0LWdyYXktMTAwIG1iLTIiPjIuIERhdGEgV2UgQ29sbGVjdDwvaDI+CiAgICAgICAgICAgIDx1bCBjbGFzc05hbWU9Imxpc3QtZGlzYyBsaXN0LWluc2lkZSBzcGFjZS15LTEiPgogICAgICAgICAgICAgIDxsaT48c3Ryb25nIGNsYXNzTmFtZT0idGV4dC1ncmF5LTMwMCI+QWNjb3VudCBkYXRhOjwvc3Ryb25nPiBQaG9uZSBudW1iZXIgb3IgZW1haWwgdXNlZCBkdXJpbmcgc2lnbi11cC48L2xpPgogICAgICAgICAgICAgIDxsaT48c3Ryb25nIGNsYXNzTmFtZT0idGV4dC1ncmF5LTMwMCI+VXNhZ2UgZGF0YTo8L3N0cm9uZz4gRXBpc29kZXMgd2F0Y2hlZCwgd2F0Y2ggcHJvZ3Jlc3MsIHNlYXJjaCBxdWVyaWVzLjwvbGk+CiAgICAgICAgICAgICAgPGxpPjxzdHJvbmcgY2xhc3NOYW1lPSJ0ZXh0LWdyYXktMzAwIj5UcmFuc2FjdGlvbiBkYXRhOjwvc3Ryb25nPiBDb2luIHB1cmNoYXNlcywgcGF5bWVudCBtZXRob2QgdHlwZSAobm90IGNhcmQgZGV0YWlscyDigJQgaGFuZGxlZCBieSBTdHJpcGUvUmF6b3JwYXkpLjwvbGk+CiAgICAgICAgICAgICAgPGxpPjxzdHJvbmcgY2xhc3NOYW1lPSJ0ZXh0LWdyYXktMzAwIj5EZXZpY2UgZGF0YTo8L3N0cm9uZz4gQnJvd3NlciB0eXBlLCBPUywgZGV2aWNlIGlkZW50aWZpZXJzLCBJUCBhZGRyZXNzLjwvbGk+CiAgICAgICAgICAgICAgPGxpPjxzdHJvbmcgY2xhc3NOYW1lPSJ0ZXh0LWdyYXktMzAwIj5BbmFseXRpY3MgZGF0YTo8L3N0cm9uZz4gUGFnZSB2aWV3cyBhbmQgaW50ZXJhY3Rpb25zIHZpYSBHb29nbGUgQW5hbHl0aWNzIDQgYW5kIEZhY2Vib29rIFBpeGVsICh3aGVyZSBjb25zZW50ZWQpLjwvbGk+CiAgICAgICAgICAgIDwvdWw+CiAgICAgICAgICA8L3NlY3Rpb24+CgogICAgICAgICAgPHNlY3Rpb24+CiAgICAgICAgICAgIDxoMiBjbGFzc05hbWU9InRleHQtbGcgZm9udC1ib2xkIHRleHQtZ3JheS0xMDAgbWItMiI+My4gSG93IFdlIFVzZSBZb3VyIERhdGE8L2gyPgogICAgICAgICAgICA8dWwgY2xhc3NOYW1lPSJsaXN0LWRpc2MgbGlzdC1pbnNpZGUgc3BhY2UteS0xIj4KICAgICAgICAgICAgICA8bGk+VG8gcHJvdmlkZSwgcGVyc29uYWxpc2UsIGFuZCBpbXByb3ZlIHRoZSBTZXJ2aWNlLjwvbGk+CiAgICAgICAgICAgICAgPGxpPlRvIHByb2Nlc3MgcGF5bWVudHMgYW5kIG1hbmFnZSB5b3VyIGNvaW4gYmFsYW5jZS48L2xpPgogICAgICAgICAgICAgIDxsaT5UbyBzZW5kIHNlcnZpY2UtcmVsYXRlZCBub3RpZmljYXRpb25zIChPVFAsIHJlY2VpcHRzKS48L2xpPgogICAgICAgICAgICAgIDxsaT5UbyBhbmFseXNlIHVzYWdlIHRyZW5kcyBhbmQgaW1wcm92ZSBjb250ZW50IHJlY29tbWVuZGF0aW9ucy48L2xpPgogICAgICAgICAgICAgIDxsaT5UbyBkZXRlY3QgYW5kIHByZXZlbnQgZnJhdWQgYW5kIGFidXNlLjwvbGk+CiAgICAgICAgICAgICAgPGxpPlRvIGNvbXBseSB3aXRoIGxlZ2FsIG9ibGlnYXRpb25zLjwvbGk+CiAgICAgICAgICAgIDwvdWw+CiAgICAgICAgICA8L3NlY3Rpb24+CgogICAgICAgICAgPHNlY3Rpb24+CiAgICAgICAgICAgIDxoMiBjbGFzc05hbWU9InRleHQtbGcgZm9udC1ib2xkIHRleHQtZ3JheS0xMDAgbWItMiI+NC4gTGVnYWwgQmFzaXMgKEdEUFIpPC9oMj4KICAgICAgICAgICAgPHA+CiAgICAgICAgICAgICAgRm9yIHVzZXJzIGluIHRoZSBFVS9FRUEsIHdlIHByb2Nlc3MgcGVyc29uYWwgZGF0YSB1bmRlciB0aGUgZm9sbG93aW5nIGxlZ2FsIGJhc2VzOgogICAgICAgICAgICAgIDxiciAvPuKAoiA8c3Ryb25nIGNsYXNzTmFtZT0idGV4dC1ncmF5LTMwMCI+Q29udHJhY3QgcGVyZm9ybWFuY2U8L3N0cm9uZz4g4oCUIHRvIHByb3ZpZGUgdGhlIFNlcnZpY2UgeW91IHNpZ25lZCB1cCBmb3IuCiAgICAgICAgICAgICAgPGJyIC8+4oCiIDxzdHJvbmcgY2xhc3NOYW1lPSJ0ZXh0LWdyYXktMzAwIj5MZWdpdGltYXRlIGludGVyZXN0czwvc3Ryb25nPiDigJQgZnJhdWQgcHJldmVudGlvbiwgc2VjdXJpdHksIGFuYWx5dGljcy4KICAgICAgICAgICAgICA8YnIgLz7igKIgPHN0cm9uZyBjbGFzc05hbWU9InRleHQtZ3JheS0zMDAiPkNvbnNlbnQ8L3N0cm9uZz4g4oCUIG1hcmtldGluZyBjb29raWVzIGFuZCBhZHZlcnRpc2luZyBwaXhlbHMgd2hlcmUgcmVxdWlyZWQuCiAgICAgICAgICAgICAgPGJyIC8+4oCiIDxzdHJvbmcgY2xhc3NOYW1lPSJ0ZXh0LWdyYXktMzAwIj5MZWdhbCBvYmxpZ2F0aW9uPC9zdHJvbmc+IOKAlCB3aGVyZSByZXF1aXJlZCBieSBhcHBsaWNhYmxlIGxhdy4KICAgICAgICAgICAgPC9wPgogICAgICAgICAgPC9zZWN0aW9uPgoKICAgICAgICAgIDxzZWN0aW9uPgogICAgICAgICAgICA8aDIgY2xhc3NOYW1lPSJ0ZXh0LWxnIGZvbnQtYm9sZCB0ZXh0LWdyYXktMTAwIG1iLTIiPjUuIERhdGEgU2hhcmluZzwvaDI+CiAgICAgICAgICAgIDxwPgogICAgICAgICAgICAgIFdlIGRvIG5vdCBzZWxsIHlvdXIgcGVyc29uYWwgZGF0YS4gV2Ugc2hhcmUgZGF0YSBvbmx5IHdpdGg6CiAgICAgICAgICAgIDwvcD4KICAgICAgICAgICAgPHVsIGNsYXNzTmFtZT0ibGlzdC1kaXNjIGxpc3QtaW5zaWRlIHNwYWNlLXktMSBtdC0yIj4KICAgICAgICAgICAgICA8bGk+UGF5bWVudCBwcm9jZXNzb3JzIChTdHJpcGUsIFJhem9ycGF5KSDigJQgZm9yIHRyYW5zYWN0aW9uIHByb2Nlc3NpbmcuPC9saT4KICAgICAgICAgICAgICA8bGk+QW5hbHl0aWNzIHByb3ZpZGVycyAoR29vZ2xlIEFuYWx5dGljcywgTWV0YSkg4oCUIHVuZGVyIHRoZWlyIHJlc3BlY3RpdmUgZGF0YSBwcm9jZXNzaW5nIGFncmVlbWVudHMuPC9saT4KICAgICAgICAgICAgICA8bGk+SW5mcmFzdHJ1Y3R1cmUgcHJvdmlkZXJzIChWZXJjZWwsIFN1cGFiYXNlKSDigJQgZm9yIGhvc3RpbmcgYW5kIGRhdGFiYXNlIHNlcnZpY2VzLjwvbGk+CiAgICAgICAgICAgICAgPGxpPkxhdyBlbmZvcmNlbWVudCDigJQgd2hlcmUgcmVxdWlyZWQgYnkgbGF3IG9yIHZhbGlkIGxlZ2FsIHByb2Nlc3MuPC9saT4KICAgICAgICAgICAgPC91bD4KICAgICAgICAgIDwvc2VjdGlvbj4KCiAgICAgICAgICA8c2VjdGlvbj4KICAgICAgICAgICAgPGgyIGNsYXNzTmFtZT0idGV4dC1sZyBmb250LWJvbGQgdGV4dC1ncmF5LTEwMCBtYi0yIj42LiBEYXRhIFJldGVudGlvbjwvaDI+CiAgICAgICAgICAgIDxwPgogICAgICAgICAgICAgIFdlIHJldGFpbiB5b3VyIGFjY291bnQgZGF0YSBmb3IgYXMgbG9uZyBhcyB5b3VyIGFjY291bnQgaXMgYWN0aXZlLiBXYXRjaCBoaXN0b3J5IGFuZAogICAgICAgICAgICAgIHByZWZlcmVuY2VzIGFyZSByZXRhaW5lZCBmb3IgdXAgdG8gMiB5ZWFycyBvZiBpbmFjdGl2aXR5LiBZb3UgY2FuIHJlcXVlc3QgZGVsZXRpb24gb2YKICAgICAgICAgICAgICB5b3VyIGFjY291bnQgYW5kIGFzc29jaWF0ZWQgZGF0YSBhdCBhbnkgdGltZSBmcm9tIHRoZSBTZXR0aW5ncyBwYWdlLgogICAgICAgICAgICA8L3A+CiAgICAgICAgICA8L3NlY3Rpb24+CgogICAgICAgICAgPHNlY3Rpb24+CiAgICAgICAgICAgIDxoMiBjbGFzc05hbWU9InRleHQtbGcgZm9udC1ib2xkIHRleHQtZ3JheS0xMDAgbWItMiI+Ny4gWW91ciBSaWdodHM8L2gyPgogICAgICAgICAgICA8cD5EZXBlbmRpbmcgb24geW91ciBqdXJpc2RpY3Rpb24sIHlvdSBtYXkgaGF2ZSB0aGUgcmlnaHQgdG86PC9wPgogICAgICAgICAgICA8dWwgY2xhc3NOYW1lPSJsaXN0LWRpc2MgbGlzdC1pbnNpZGUgc3BhY2UteS0xIG10LTIiPgogICAgICAgICAgICAgIDxsaT5BY2Nlc3MgdGhlIHBlcnNvbmFsIGRhdGEgd2UgaG9sZCBhYm91dCB5b3UuPC9saT4KICAgICAgICAgICAgICA8bGk+Q29ycmVjdCBpbmFjY3VyYXRlIG9yIGluY29tcGxldGUgZGF0YS48L2xpPgogICAgICAgICAgICAgIDxsaT5SZXF1ZXN0IGVyYXN1cmUgb2YgeW91ciBkYXRhICgicmlnaHQgdG8gYmUgZm9yZ290dGVuIikuPC9saT4KICAgICAgICAgICAgICA8bGk+T2JqZWN0IHRvIG9yIHJlc3RyaWN0IGNlcnRhaW4gcHJvY2Vzc2luZyBhY3Rpdml0aWVzLjwvbGk+CiAgICAgICAgICAgICAgPGxpPkRhdGEgcG9ydGFiaWxpdHkgKHJlY2VpdmUgeW91ciBkYXRhIGluIGEgbWFjaGluZS1yZWFkYWJsZSBmb3JtYXQpLjwvbGk+CiAgICAgICAgICAgICAgPGxpPldpdGhkcmF3IGNvbnNlbnQgd2hlcmUgcHJvY2Vzc2luZyBpcyBiYXNlZCBvbiBjb25zZW50LjwvbGk+CiAgICAgICAgICAgIDwvdWw+CiAgICAgICAgICAgIDxwIGNsYXNzTmFtZT0ibXQtMiI+CiAgICAgICAgICAgICAgVG8gZXhlcmNpc2UgdGhlc2UgcmlnaHRzLCBlbWFpbCB1cyBhdHsnICd9CiAgICAgICAgICAgICAgPGEgaHJlZj0ibWFpbHRvOmhlbGxvQHRoZWd1bGVsLmNvbSIgY2xhc3NOYW1lPSJ0ZXh0LXJlZC00MDAgaG92ZXI6dGV4dC1yZWQtMzAwIHRyYW5zaXRpb24iPgogICAgICAgICAgICAgICAgaGVsbG9AdGhlZ3VsZWwuY29tCiAgICAgICAgICAgICAgPC9hPgogICAgICAgICAgICAgIC4gV2Ugd2lsbCByZXNwb25kIHdpdGhpbiAzMCBkYXlzLgogICAgICAgICAgICA8L3A+CiAgICAgICAgICA8L3NlY3Rpb24+CgogICAgICAgICAgPHNlY3Rpb24+CiAgICAgICAgICAgIDxoMiBjbGFzc05hbWU9InRleHQtbGcgZm9udC1ib2xkIHRleHQtZ3JheS0xMDAgbWItMiI+OC4gQ29va2llczwvaDI+CiAgICAgICAgICAgIDxwPgogICAgICAgICAgICAgIFdlIHVzZSBjb29raWVzIGFuZCBzaW1pbGFyIHRlY2hub2xvZ2llcyBmb3IgYXV0aGVudGljYXRpb24sIGFuYWx5dGljcywgYW5kIGFkdmVydGlzaW5nLgogICAgICAgICAgICAgIFlvdSBjYW4gY29udHJvbCBjb29raWUgc2V0dGluZ3MgdGhyb3VnaCB5b3VyIGJyb3dzZXIuIERpc2FibGluZyBjZXJ0YWluIGNvb2tpZXMgbWF5CiAgICAgICAgICAgICAgYWZmZWN0IFNlcnZpY2UgZnVuY3Rpb25hbGl0eS4KICAgICAgICAgICAgPC9wPgogICAgICAgICAgPC9zZWN0aW9uPgoKICAgICAgICAgIDxzZWN0aW9uPgogICAgICAgICAgICA8aDIgY2xhc3NOYW1lPSJ0ZXh0LWxnIGZvbnQtYm9sZCB0ZXh0LWdyYXktMTAwIG1iLTIiPjkuIENoaWxkcmVuJmFwb3M7cyBQcml2YWN5PC9oMj4KICAgICAgICAgICAgPHA+CiAgICAgICAgICAgICAgR3VsZWwgT1RUIGlzIG5vdCBkaXJlY3RlZCB0byBjaGlsZHJlbiB1bmRlciAxMy4gV2UgZG8gbm90IGtub3dpbmdseSBjb2xsZWN0IHBlcnNvbmFsCiAgICAgICAgICAgICAgZGF0YSBmcm9tIGNoaWxkcmVuLiBJZiB5b3UgYmVsaWV2ZSB3ZSBoYXZlIGNvbGxlY3RlZCBkYXRhIGZyb20gYSBjaGlsZCwgcGxlYXNlIGNvbnRhY3QKICAgICAgICAgICAgICB1cyBpbW1lZGlhdGVseS4KICAgICAgICAgICAgPC9wPgogICAgICAgICAgPC9zZWN0aW9uPgoKICAgICAgICAgIDxzZWN0aW9uPgogICAgICAgICAgICA8aDIgY2xhc3NOYW1lPSJ0ZXh0LWxnIGZvbnQtYm9sZCB0ZXh0LWdyYXktMTAwIG1iLTIiPjEwLiBDaGFuZ2VzIHRvIFRoaXMgUG9saWN5PC9oMj4KICAgICAgICAgICAgPHA+CiAgICAgICAgICAgICAgV2UgbWF5IHVwZGF0ZSB0aGlzIFByaXZhY3kgUG9saWN5IGZyb20gdGltZSB0byB0aW1lLiBNYXRlcmlhbCBjaGFuZ2VzIHdpbGwgYmUKICAgICAgICAgICAgICBjb21tdW5pY2F0ZWQgdmlhIHRoZSBhcHAgb3IgZW1haWwuIENvbnRpbnVlZCB1c2Ugb2YgdGhlIFNlcnZpY2UgYWZ0ZXIgdGhlIGVmZmVjdGl2ZQogICAgICAgICAgICAgIGRhdGUgY29uc3RpdHV0ZXMgYWNjZXB0YW5jZSBvZiB0aGUgdXBkYXRlZCBwb2xpY3kuCiAgICAgICAgICAgIDwvcD4KICAgICAgICAgIDwvc2VjdGlvbj4KCiAgICAgICAgICA8c2VjdGlvbj4KICAgICAgICAgICAgPGgyIGNsYXNzTmFtZT0idGV4dC1sZyBmb250LWJvbGQgdGV4dC1ncmF5LTEwMCBtYi0yIj4xMS4gQ29udGFjdDwvaDI+CiAgICAgICAgICAgIDxwPgogICAgICAgICAgICAgIEZvciBwcml2YWN5IGVucXVpcmllcyBvciB0byBleGVyY2lzZSB5b3VyIHJpZ2h0cywgY29udGFjdCB1cyBhdHsnICd9CiAgICAgICAgICAgICAgPGEgaHJlZj0ibWFpbHRvOmhlbGxvQHRoZWd1bGVsLmNvbSIgY2xhc3NOYW1lPSJ0ZXh0LXJlZC00MDAgaG92ZXI6dGV4dC1yZWQtMzAwIHRyYW5zaXRpb24iPgogICAgICAgICAgICAgICAgaGVsbG9AdGhlZ3VsZWwuY29tCiAgICAgICAgICAgICAgPC9hPgogICAgICAgICAgICAgIC4KICAgICAgICAgICAgPC9wPgogICAgICAgICAgPC9zZWN0aW9uPgogICAgICAgIDwvZGl2PgoKICAgICAgICA8ZGl2IGNsYXNzTmFtZT0iYm9yZGVyLXQgYm9yZGVyLXppbmMtODAwIG10LTEyIHB0LTggdGV4dC1ncmF5LTYwMCB0ZXh0LXNtIj4KICAgICAgICAgIMKpIDIwMjYgR3VsZWwgRW50ZXJ0YWlubWVudC4gQWxsIHJpZ2h0cyByZXNlcnZlZC4KICAgICAgICA8L2Rpdj4KICAgICAgPC9kaXY+CiAgICA8L2Rpdj4KICApOwp9Cg=="}
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Privacy Policy',
+  description: 'Privacy Policy for Gulel OTT.',
+  robots: { index: false },
+};
+
+export default function PrivacyPage() {
+  const lastUpdated = '1 March 2026';
+
+  return (
+    <div className="min-h-screen bg-black text-white pb-28">
+      <div className="max-w-2xl mx-auto px-6 py-12">
+        <h1 className="text-3xl font-bold mb-2">Privacy Policy</h1>
+        <p className="text-gray-500 text-sm mb-10">Last updated: {lastUpdated}</p>
+
+        <div className="space-y-8 text-gray-400 leading-relaxed">
+          <section>
+            <h2 className="text-lg font-bold text-gray-100 mb-2">1. Introduction</h2>
+            <p>
+              Gulel Entertainment ("we", "us", "our") operates Gulel OTT at thegulel.com. This
+              Privacy Policy explains how we collect, use, and protect your personal information
+              when you use our Service. We comply with applicable data protection laws including
+              the EU General Data Protection Regulation (GDPR) and India&apos;s Digital Personal Data
+              Protection Act 2023 (DPDP Act).
+            </p>
+          </section>
+
+          <section>
+            <h2 className="text-lg font-bold text-gray-100 mb-2">2. Data We Collect</h2>
+            <ul className="list-disc list-inside space-y-1">
+              <li><strong className="text-gray-300">Account data:</strong> Phone number or email used during sign-up.</li>
+              <li><strong className="text-gray-300">Usage data:</strong> Episodes watched, watch progress, search queries.</li>
+              <li><strong className="text-gray-300">Transaction data:</strong> Coin purchases, payment method type (not card details — handled by Stripe/Razorpay).</li>
+              <li><strong className="text-gray-300">Device data:</strong> Browser type, OS, device identifiers, IP address.</li>
+              <li><strong className="text-gray-300">Analytics data:</strong> Page views and interactions via Google Analytics 4 and Facebook Pixel (where consented).</li>
+            </ul>
+          </section>
+
+          <section>
+            <h2 className="text-lg font-bold text-gray-100 mb-2">3. How We Use Your Data</h2>
+            <ul className="list-disc list-inside space-y-1">
+              <li>To provide, personalise, and improve the Service.</li>
+              <li>To process payments and manage your coin balance.</li>
+              <li>To send service-related notifications (OTP, receipts).</li>
+              <li>To analyse usage trends and improve content recommendations.</li>
+              <li>To detect and prevent fraud and abuse.</li>
+              <li>To comply with legal obligations.</li>
+            </ul>
+          </section>
+
+          <section>
+            <h2 className="text-lg font-bold text-gray-100 mb-2">4. Legal Basis (GDPR)</h2>
+            <p>
+              For users in the EU/EEA, we process personal data under the following legal bases:
+              <br />• <strong className="text-gray-300">Contract performance</strong> — to provide the Service you signed up for.
+              <br />• <strong className="text-gray-300">Legitimate interests</strong> — fraud prevention, security, analytics.
+              <br />• <strong className="text-gray-300">Consent</strong> — marketing cookies and advertising pixels where required.
+              <br />• <strong className="text-gray-300">Legal obligation</strong> — where required by applicable law.
+            </p>
+          </section>
+
+          <section>
+            <h2 className="text-lg font-bold text-gray-100 mb-2">5. Data Sharing</h2>
+            <p>
+              We do not sell your personal data. We share data only with:
+            </p>
+            <ul className="list-disc list-inside space-y-1 mt-2">
+              <li>Payment processors (Stripe, Razorpay) — for transaction processing.</li>
+              <li>Analytics providers (Google Analytics, Meta) — under their respective data processing agreements.</li>
+              <li>Infrastructure providers (Vercel, Supabase) — for hosting and database services.</li>
+              <li>Law enforcement — where required by law or valid legal process.</li>
+            </ul>
+          </section>
+
+          <section>
+            <h2 className="text-lg font-bold text-gray-100 mb-2">6. Data Retention</h2>
+            <p>
+              We retain your account data for as long as your account is active. Watch history and
+              preferences are retained for up to 2 years of inactivity. You can request deletion of
+              your account and associated data at any time from the Settings page.
+            </p>
+          </section>
+
+          <section>
+            <h2 className="text-lg font-bold text-gray-100 mb-2">7. Your Rights</h2>
+            <p>Depending on your jurisdiction, you may have the right to:</p>
+            <ul className="list-disc list-inside space-y-1 mt-2">
+              <li>Access the personal data we hold about you.</li>
+              <li>Correct inaccurate or incomplete data.</li>
+              <li>Request erasure of your data ("right to be forgotten").</li>
+              <li>Object to or restrict certain processing activities.</li>
+              <li>Data portability (receive your data in a machine-readable format).</li>
+              <li>Withdraw consent where processing is based on consent.</li>
+            </ul>
+            <p className="mt-2">
+              To exercise these rights, email us at{' '}
+              <a href="mailto:hello@thegulel.com" className="text-red-400 hover:text-red-300 transition">
+                hello@thegulel.com
+              </a>
+              . We will respond within 30 days.
+            </p>
+          </section>
+
+          <section>
+            <h2 className="text-lg font-bold text-gray-100 mb-2">8. Cookies</h2>
+            <p>
+              We use cookies and similar technologies for authentication, analytics, and advertising.
+              You can control cookie settings through your browser. Disabling certain cookies may
+              affect Service functionality.
+            </p>
+          </section>
+
+          <section>
+            <h2 className="text-lg font-bold text-gray-100 mb-2">9. Children&apos;s Privacy</h2>
+            <p>
+              Gulel OTT is not directed to children under 13. We do not knowingly collect personal
+              data from children. If you believe we have collected data from a child, please contact
+              us immediately.
+            </p>
+          </section>
+
+          <section>
+            <h2 className="text-lg font-bold text-gray-100 mb-2">10. Changes to This Policy</h2>
+            <p>
+              We may update this Privacy Policy from time to time. Material changes will be
+              communicated via the app or email. Continued use of the Service after the effective
+              date constitutes acceptance of the updated policy.
+            </p>
+          </section>
+
+          <section>
+            <h2 className="text-lg font-bold text-gray-100 mb-2">11. Contact</h2>
+            <p>
+              For privacy enquiries or to exercise your rights, contact us at{' '}
+              <a href="mailto:hello@thegulel.com" className="text-red-400 hover:text-red-300 transition">
+                hello@thegulel.com
+              </a>
+              .
+            </p>
+          </section>
+        </div>
+
+        <div className="border-t border-zinc-800 mt-12 pt-8 text-gray-600 text-sm">
+          © 2026 Gulel Entertainment. All rights reserved.
+        </div>
+      </div>
+    </div>
+  );
+}

@@ -1,1 +1,115 @@
-{"data":"aW1wb3J0IHsgTmV4dFJlcXVlc3QsIE5leHRSZXNwb25zZSB9IGZyb20gJ25leHQvc2VydmVyJzsKaW1wb3J0IHsgY3JlYXRlU2VydmVyQ2xpZW50IH0gZnJvbSAnQHN1cGFiYXNlL3Nzcic7CmltcG9ydCB7IGNvb2tpZXMgfSBmcm9tICduZXh0L2hlYWRlcnMnOwppbXBvcnQgcHJpc21hIGZyb20gJ0AvbGliL3ByaXNtYSc7CgpleHBvcnQgYXN5bmMgZnVuY3Rpb24gR0VUKHJlcXVlc3Q6IE5leHRSZXF1ZXN0KSB7CiAgY29uc3QgeyBzZWFyY2hQYXJhbXMsIG9yaWdpbiB9ID0gbmV3IFVSTChyZXF1ZXN0LnVybCk7CiAgY29uc3QgY29kZSA9IHNlYXJjaFBhcmFtcy5nZXQoJ2NvZGUnKTsKICBjb25zdCByZWRpcmVjdFRvID0gc2VhcmNoUGFyYW1zLmdldCgncmVkaXJlY3RUbycpID8/ICcvJzsKCiAgaWYgKCFjb2RlKSB7CiAgICByZXR1cm4gTmV4dFJlc3BvbnNlLnJlZGlyZWN0KGAke29yaWdpbn0vYXV0aC9sb2dpbj9lcnJvcj1ub19jb2RlYCk7CiAgfQoKICBjb25zdCBjb29raWVTdG9yZSA9IGF3YWl0IGNvb2tpZXMoKTsKICBsZXQgc3VwYWJhc2VSZXNwb25zZSA9IE5leHRSZXNwb25zZS5yZWRpcmVjdChgJHtvcmlnaW59JHtyZWRpcmVjdFRvfWApOwoKICBjb25zdCBzdXBhYmFzZSA9IGNyZWF0ZVNlcnZlckNsaWVudCgKICAgIHByb2Nlc3MuZW52Lk5FWFRfUFVCTElDX1NVUEFCQVNFX1VSTCEsCiAgICBwcm9jZXNzLmVudi5ORVhUX1BVQkxJQ19TVVBBQkFTRV9BTk9OX0tFWSEsCiAgICB7CiAgICAgIGNvb2tpZXM6IHsKICAgICAgICBnZXRBbGwoKSB7CiAgICAgICAgICByZXR1cm4gY29va2llU3RvcmUuZ2V0QWxsKCk7CiAgICAgICAgfSwKICAgICAgICBzZXRBbGwoY29va2llc1RvU2V0KSB7CiAgICAgICAgICBjb29raWVzVG9TZXQuZm9yRWFjaCgoeyBuYW1lLCB2YWx1ZSwgb3B0aW9ucyB9KSA9PgogICAgICAgICAgICBjb29raWVTdG9yZS5zZXQobmFtZSwgdmFsdWUsIG9wdGlvbnMpCiAgICAgICAgICApOwogICAgICAgICAgc3VwYWJhc2VSZXNwb25zZSA9IE5leHRSZXNwb25zZS5yZWRpcmVjdChgJHtvcmlnaW59JHtyZWRpcmVjdFRvfWApOwogICAgICAgICAgY29va2llc1RvU2V0LmZvckVhY2goKHsgbmFtZSwgdmFsdWUsIG9wdGlvbnMgfSkgPT4KICAgICAgICAgICAgc3VwYWJhc2VSZXNwb25zZS5jb29raWVzLnNldChuYW1lLCB2YWx1ZSwgb3B0aW9ucykKICAgICAgICAgICk7CiAgICAgICAgfSwKICAgICAgfSwKICAgIH0KICApOwoKICAvLyBFeGNoYW5nZSBhdXRoIGNvZGUgZm9yIHNlc3Npb24KICBjb25zdCB7IGRhdGE6IHNlc3Npb25EYXRhLCBlcnJvciB9ID0gYXdhaXQgc3VwYWJhc2UuYXV0aC5leGNoYW5nZUNvZGVGb3JTZXNzaW9uKGNvZGUpOwoKICBpZiAoZXJyb3IgfHwgIXNlc3Npb25EYXRhPy51c2VyKSB7CiAgICBjb25zb2xlLmVycm9yKCdPQXV0aCBjYWxsYmFjayBlcnJvcjonLCBlcnJvcik7CiAgICByZXR1cm4gTmV4dFJlc3BvbnNlLnJlZGlyZWN0KGAke29yaWdpbn0vYXV0aC9sb2dpbj9lcnJvcj1hdXRoX2ZhaWxlZGApOwogIH0KCiAgY29uc3Qgc3VwYWJhc2VVc2VyID0gc2Vzc2lvbkRhdGEudXNlcjsKICBjb25zdCBwcm92aWRlciA9IHN1cGFiYXNlVXNlci5hcHBfbWV0YWRhdGE/LnByb3ZpZGVyID8/ICd1bmtub3duJzsKICBjb25zdCBlbWFpbCA9IHN1cGFiYXNlVXNlci5lbWFpbCA/PyBudWxsOwogIGNvbnN0IG5hbWUgPQogICAgc3VwYWJhc2VVc2VyLnVzZXJfbWV0YWRhdGE/LmZ1bGxfbmFtZSA/PwogICAgc3VwYWJhc2VVc2VyLnVzZXJfbWV0YWRhdGE/Lm5hbWUgPz8KICAgIHN1cGFiYXNlVXNlci51c2VyX21ldGFkYXRhPy51c2VyX25hbWUgPz8KICAgIG51bGw7CiAgY29uc3QgYXZhdGFyID0KICAgIHN1cGFiYXNlVXNlci51c2VyX21ldGFkYXRhPy5hdmF0YXJfdXJsID8/CiAgICBzdXBhYmFzZVVzZXIudXNlcl9tZXRhZGF0YT8ucGljdHVyZSA/PwogICAgbnVsbDsKCiAgLy8gU3luYyBTdXBhYmFzZSBhdXRoIHVzZXIg4oaSIFByaXNtYSBVc2VyCiAgdHJ5IHsKICAgIGNvbnN0IGV4aXN0aW5nVXNlciA9IGF3YWl0IHByaXNtYS51c2VyLmZpbmRGaXJzdCh7CiAgICAgIHdoZXJlOiB7CiAgICAgICAgT1I6IFsKICAgICAgICAgIHsgc3VwYWJhc2VJZDogc3VwYWJhc2VVc2VyLmlkIH0sCiAgICAgICAgICAuLi4oZW1haWwgPyBbeyBlbWFpbCB9XSA6IFtdKSwKICAgICAgICBdLAogICAgICB9LAogICAgfSk7CgogICAgaWYgKGV4aXN0aW5nVXNlcikgewogICAgICAvLyBVcGRhdGUgZXhpc3RpbmcgdXNlciB3aXRoIGxhdGVzdCBkYXRhIGZyb20gcHJvdmlkZXIKICAgICAgYXdhaXQgcHJpc21hLnVzZXIudXBkYXRlKHsKICAgICAgICB3aGVyZTogeyBpZDogZXhpc3RpbmdVc2VyLmlkIH0sCiAgICAgICAgZGF0YTogewogICAgICAgICAgc3VwYWJhc2VJZDogc3VwYWJhc2VVc2VyLmlkLAogICAgICAgICAgZW1haWw6IGVtYWlsID8/IGV4aXN0aW5nVXNlci5lbWFpbCwKICAgICAgICAgIG5hbWU6IG5hbWUgPz8gZXhpc3RpbmdVc2VyLm5hbWUsCiAgICAgICAgICBhdmF0YXI6IGF2YXRhciA/PyBleGlzdGluZ1VzZXIuYXZhdGFyLAogICAgICAgICAgcHJvdmlkZXI6IHByb3ZpZGVyLAogICAgICAgIH0sCiAgICAgIH0pOwogICAgfSBlbHNlIHsKICAgICAgLy8gTmV3IHVzZXIg4oCUIGNyZWF0ZSB3aXRoIHdlbGNvbWUgYm9udXMKICAgICAgY29uc3QgbmV3VXNlciA9IGF3YWl0IHByaXNtYS51c2VyLmNyZWF0ZSh7CiAgICAgICAgZGF0YTogewogICAgICAgICAgc3VwYWJhc2VJZDogc3VwYWJhc2VVc2VyLmlkLAogICAgICAgICAgLy8gcGhvbmUgaXMgb3B0aW9uYWwgZm9yIE9BdXRoIHVzZXJzIOKAlCB1c2UgYSBwbGFjZWhvbGRlciBzY29wZWQgdG8gcHJvdmlkZXIKICAgICAgICAgIHBob25lOiBzdXBhYmFzZVVzZXIucGhvbmUgPz8gbnVsbCwKICAgICAgICAgIGVtYWlsLAogICAgICAgICAgbmFtZSwKICAgICAgICAgIGF2YXRhciwKICAgICAgICAgIGxvY2FsZTogc3VwYWJhc2VVc2VyLnVzZXJfbWV0YWRhdGE/LmxvY2FsZSA/PyAnZW4nLAogICAgICAgICAgcHJvdmlkZXI6IHByb3ZpZGVyLAogICAgICAgICAgY29pbkJhbGFuY2U6IDUwLCAvLyBXZWxjb21lIGJvbnVzCiAgICAgICAgfSwKICAgICAgfSk7CgogICAgICAvLyBMb2cgd2VsY29tZSBib251cwogICAgICBhd2FpdCBwcmlzbWEuY29pblRyYW5zYWN0aW9uLmNyZWF0ZSh7CiAgICAgICAgZGF0YTogewogICAgICAgICAgdXNlcklkOiBuZXdVc2VyLmlkLAogICAgICAgICAgYW1vdW50OiA1MCwKICAgICAgICAgIHR5cGU6ICdCT05VUycsCiAgICAgICAgICBkZXNjcmlwdGlvbjogJ1dlbGNvbWUgYm9udXMnLAogICAgICAgIH0sCiAgICAgIH0pOwogICAgfQogIH0gY2F0Y2ggKGRiRXJyb3IpIHsKICAgIC8vIE5vbi1mYXRhbCDigJQgdXNlciBpcyBhdXRoZW50aWNhdGVkIHdpdGggU3VwYWJhc2UsIFByaXNtYSBzeW5jIGNhbiByZXRyeQogICAgY29uc29sZS5lcnJvcignUHJpc21hIHVzZXIgc3luYyBlcnJvcjonLCBkYkVycm9yKTsKICB9CgogIHJldHVybiBzdXBhYmFzZVJlc3BvbnNlOwp9Cg=="}
+import { NextRequest, NextResponse } from 'next/server';
+import { createServerClient } from '@supabase/ssr';
+import { cookies } from 'next/headers';
+import prisma from '@/lib/prisma';
+
+export async function GET(request: NextRequest) {
+  const { searchParams, origin } = new URL(request.url);
+  const code = searchParams.get('code');
+  const redirectTo = searchParams.get('redirectTo') ?? '/';
+
+  if (!code) {
+    return NextResponse.redirect(`${origin}/auth/login?error=no_code`);
+  }
+
+  const cookieStore = await cookies();
+  let supabaseResponse = NextResponse.redirect(`${origin}${redirectTo}`);
+
+  const supabase = createServerClient(
+    process.env.NEXT_PUBLIC_SUPABASE_URL!,
+    process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!,
+    {
+      cookies: {
+        getAll() {
+          return cookieStore.getAll();
+        },
+        setAll(cookiesToSet) {
+          cookiesToSet.forEach(({ name, value, options }) =>
+            cookieStore.set(name, value, options)
+          );
+          supabaseResponse = NextResponse.redirect(`${origin}${redirectTo}`);
+          cookiesToSet.forEach(({ name, value, options }) =>
+            supabaseResponse.cookies.set(name, value, options)
+          );
+        },
+      },
+    }
+  );
+
+  // Exchange auth code for session
+  const { data: sessionData, error } = await supabase.auth.exchangeCodeForSession(code);
+
+  if (error || !sessionData?.user) {
+    console.error('OAuth callback error:', error);
+    return NextResponse.redirect(`${origin}/auth/login?error=auth_failed`);
+  }
+
+  const supabaseUser = sessionData.user;
+  const provider = supabaseUser.app_metadata?.provider ?? 'unknown';
+  const email = supabaseUser.email ?? null;
+  const name =
+    supabaseUser.user_metadata?.full_name ??
+    supabaseUser.user_metadata?.name ??
+    supabaseUser.user_metadata?.user_name ??
+    null;
+  const avatar =
+    supabaseUser.user_metadata?.avatar_url ??
+    supabaseUser.user_metadata?.picture ??
+    null;
+
+  // Sync Supabase auth user → Prisma User
+  try {
+    const existingUser = await prisma.user.findFirst({
+      where: {
+        OR: [
+          { supabaseId: supabaseUser.id },
+          ...(email ? [{ email }] : []),
+        ],
+      },
+    });
+
+    if (existingUser) {
+      // Update existing user with latest data from provider
+      await prisma.user.update({
+        where: { id: existingUser.id },
+        data: {
+          supabaseId: supabaseUser.id,
+          email: email ?? existingUser.email,
+          name: name ?? existingUser.name,
+          avatar: avatar ?? existingUser.avatar,
+          provider: provider,
+        },
+      });
+    } else {
+      // New user — create with welcome bonus
+      const newUser = await prisma.user.create({
+        data: {
+          supabaseId: supabaseUser.id,
+          // phone is optional for OAuth users — use a placeholder scoped to provider
+          phone: supabaseUser.phone ?? null,
+          email,
+          name,
+          avatar,
+          locale: supabaseUser.user_metadata?.locale ?? 'en',
+          provider: provider,
+          coinBalance: 50, // Welcome bonus
+        },
+      });
+
+      // Log welcome bonus
+      await prisma.coinTransaction.create({
+        data: {
+          userId: newUser.id,
+          amount: 50,
+          type: 'BONUS',
+          description: 'Welcome bonus',
+        },
+      });
+    }
+  } catch (dbError) {
+    // Non-fatal — user is authenticated with Supabase, Prisma sync can retry
+    console.error('Prisma user sync error:', dbError);
+  }
+
+  return supabaseResponse;
+}

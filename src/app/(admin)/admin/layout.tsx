@@ -1,1 +1,83 @@
-{"data":"J3VzZSBjbGllbnQnOwoKaW1wb3J0IHsgdXNlRWZmZWN0LCB1c2VTdGF0ZSB9IGZyb20gJ3JlYWN0JzsKaW1wb3J0IHsgdXNlUm91dGVyIH0gZnJvbSAnbmV4dC9uYXZpZ2F0aW9uJzsKaW1wb3J0IHsgdXNlQXV0aFN0b3JlIH0gZnJvbSAnQC9zdG9yZXMvdXNlQXV0aFN0b3JlJzsKaW1wb3J0IEFkbWluU2lkZWJhciBmcm9tICdAL2NvbXBvbmVudHMvYWRtaW4vQWRtaW5TaWRlYmFyJzsKaW1wb3J0IEFkbWluSGVhZGVyIGZyb20gJ0AvY29tcG9uZW50cy9hZG1pbi9BZG1pbkhlYWRlcic7CmltcG9ydCB7IFRvYXN0UHJvdmlkZXIgfSBmcm9tICdAL2NvbXBvbmVudHMvYWRtaW4vVG9hc3QnOwoKZXhwb3J0IGRlZmF1bHQgZnVuY3Rpb24gQWRtaW5MYXlvdXQoeyBjaGlsZHJlbiB9OiB7IGNoaWxkcmVuOiBSZWFjdC5SZWFjdE5vZGUgfSkgewogIGNvbnN0IHJvdXRlciA9IHVzZVJvdXRlcigpOwogIGNvbnN0IHsgdXNlciwgaXNBdXRoZW50aWNhdGVkLCBjaGVja1Nlc3Npb24gfSA9IHVzZUF1dGhTdG9yZSgpOwogIGNvbnN0IFtzaWRlYmFyQ29sbGFwc2VkLCBzZXRTaWRlYmFyQ29sbGFwc2VkXSA9IHVzZVN0YXRlKGZhbHNlKTsKICBjb25zdCBbbW9iaWxlU2lkZWJhck9wZW4sIHNldE1vYmlsZVNpZGViYXJPcGVuXSA9IHVzZVN0YXRlKGZhbHNlKTsKICBjb25zdCBbYXV0aENoZWNrZWQsIHNldEF1dGhDaGVja2VkXSA9IHVzZVN0YXRlKGZhbHNlKTsKCiAgdXNlRWZmZWN0KCgpID0+IHsKICAgIGNoZWNrU2Vzc2lvbigpLnRoZW4oKCkgPT4gc2V0QXV0aENoZWNrZWQodHJ1ZSkpOwogIH0sIFtjaGVja1Nlc3Npb25dKTsKCiAgdXNlRWZmZWN0KCgpID0+IHsKICAgIGlmICghYXV0aENoZWNrZWQpIHJldHVybjsKCiAgICBpZiAoIWlzQXV0aGVudGljYXRlZCkgewogICAgICByb3V0ZXIucmVwbGFjZSgnL2F1dGgvbG9naW4nKTsKICAgICAgcmV0dXJuOwogICAgfQoKICAgIC8vIENoZWNrIGZvciBhZG1pbiByb2xlIOKAlCBzdXBwb3J0cyBib3RoIHRoZSBjdXJyZW50IHNjaGVtYSBhbmQgZnV0dXJlIHJvbGUgZmllbGQKICAgIGNvbnN0IHVzZXJXaXRoUm9sZSA9IHVzZXIgYXMgKHR5cGVvZiB1c2VyICYgeyByb2xlPzogc3RyaW5nIH0pIHwgbnVsbDsKICAgIGlmICh1c2VyV2l0aFJvbGU/LnJvbGUgJiYgIVsnYWRtaW4nLCAnc3VwZXJhZG1pbiddLmluY2x1ZGVzKHVzZXJXaXRoUm9sZS5yb2xlKSkgewogICAgICByb3V0ZXIucmVwbGFjZSgnLycpOwogICAgfQogIH0sIFthdXRoQ2hlY2tlZCwgaXNBdXRoZW50aWNhdGVkLCB1c2VyLCByb3V0ZXJdKTsKCiAgaWYgKCFhdXRoQ2hlY2tlZCkgewogICAgcmV0dXJuICgKICAgICAgPGRpdiBjbGFzc05hbWU9Im1pbi1oLXNjcmVlbiBiZy1ncmF5LTk1MCBmbGV4IGl0ZW1zLWNlbnRlciBqdXN0aWZ5LWNlbnRlciI+CiAgICAgICAgPGRpdiBjbGFzc05hbWU9InctOCBoLTggYm9yZGVyLTIgYm9yZGVyLXJlZC02MDAgYm9yZGVyLXQtdHJhbnNwYXJlbnQgcm91bmRlZC1mdWxsIGFuaW1hdGUtc3BpbiIgLz4KICAgICAgPC9kaXY+CiAgICApOwogIH0KCiAgaWYgKCFpc0F1dGhlbnRpY2F0ZWQpIHJldHVybiBudWxsOwoKICByZXR1cm4gKAogICAgPFRvYXN0UHJvdmlkZXI+CiAgICAgIDxkaXYgY2xhc3NOYW1lPSJtaW4taC1zY3JlZW4gYmctZ3JheS05NTAgZmxleCI+CiAgICAgICAgey8qIERlc2t0b3Agc2lkZWJhciAqL30KICAgICAgICA8ZGl2IGNsYXNzTmFtZT0iaGlkZGVuIGxnOmZsZXgiPgogICAgICAgICAgPEFkbWluU2lkZWJhcgogICAgICAgICAgICBjb2xsYXBzZWQ9e3NpZGViYXJDb2xsYXBzZWR9CiAgICAgICAgICAgIG9uVG9nZ2xlPXsoKSA9PiBzZXRTaWRlYmFyQ29sbGFwc2VkKCh2KSA9PiAhdil9CiAgICAgICAgICAvPgogICAgICAgIDwvZGl2PgoKICAgICAgICB7LyogTW9iaWxlIHNpZGViYXIgb3ZlcmxheSAqL30KICAgICAgICB7bW9iaWxlU2lkZWJhck9wZW4gJiYgKAogICAgICAgICAgPGRpdiBjbGFzc05hbWU9ImxnOmhpZGRlbiBmaXhlZCBpbnNldC0wIHotNDAgZmxleCI+CiAgICAgICAgICAgIDxkaXYKICAgICAgICAgICAgICBjbGFzc05hbWU9ImFic29sdXRlIGluc2V0LTAgYmctYmxhY2svNjAiCiAgICAgICAgICAgICAgb25DbGljaz17KCkgPT4gc2V0TW9iaWxlU2lkZWJhck9wZW4oZmFsc2UpfQogICAgICAgICAgICAvPgogICAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT0icmVsYXRpdmUgei0xMCI+CiAgICAgICAgICAgICAgPEFkbWluU2lkZWJhcgogICAgICAgICAgICAgICAgY29sbGFwc2VkPXtmYWxzZX0KICAgICAgICAgICAgICAgIG9uVG9nZ2xlPXsoKSA9PiBzZXRNb2JpbGVTaWRlYmFyT3BlbihmYWxzZSl9CiAgICAgICAgICAgICAgLz4KICAgICAgICAgICAgPC9kaXY+CiAgICAgICAgICA8L2Rpdj4KICAgICAgICApfQoKICAgICAgICB7LyogTWFpbiBjb250ZW50ICovfQogICAgICAgIDxkaXYgY2xhc3NOYW1lPSJmbGV4LTEgZmxleCBmbGV4LWNvbCBtaW4tdy0wIj4KICAgICAgICAgIDxBZG1pbkhlYWRlciBvbk1vYmlsZU1lbnVUb2dnbGU9eygpID0+IHNldE1vYmlsZVNpZGViYXJPcGVuKCh2KSA9PiAhdil9IC8+CiAgICAgICAgICA8bWFpbiBjbGFzc05hbWU9ImZsZXgtMSBwLTQgbWQ6cC02IG92ZXJmbG93LWF1dG8iPgogICAgICAgICAgICB7Y2hpbGRyZW59CiAgICAgICAgICA8L21haW4+CiAgICAgICAgPC9kaXY+CiAgICAgIDwvZGl2PgogICAgPC9Ub2FzdFByb3ZpZGVyPgogICk7Cn0K"}
+'use client';
+
+import { useEffect, useState } from 'react';
+import { useRouter } from 'next/navigation';
+import { useAuthStore } from '@/stores/useAuthStore';
+import AdminSidebar from '@/components/admin/AdminSidebar';
+import AdminHeader from '@/components/admin/AdminHeader';
+import { ToastProvider } from '@/components/admin/Toast';
+
+export default function AdminLayout({ children }: { children: React.ReactNode }) {
+  const router = useRouter();
+  const { user, isAuthenticated, checkSession } = useAuthStore();
+  const [sidebarCollapsed, setSidebarCollapsed] = useState(false);
+  const [mobileSidebarOpen, setMobileSidebarOpen] = useState(false);
+  const [authChecked, setAuthChecked] = useState(false);
+
+  useEffect(() => {
+    checkSession().then(() => setAuthChecked(true));
+  }, [checkSession]);
+
+  useEffect(() => {
+    if (!authChecked) return;
+
+    if (!isAuthenticated) {
+      router.replace('/auth/login');
+      return;
+    }
+
+    // Check for admin role — supports both the current schema and future role field
+    const userWithRole = user as (typeof user & { role?: string }) | null;
+    if (userWithRole?.role && !['admin', 'superadmin'].includes(userWithRole.role)) {
+      router.replace('/');
+    }
+  }, [authChecked, isAuthenticated, user, router]);
+
+  if (!authChecked) {
+    return (
+      <div className="min-h-screen bg-gray-950 flex items-center justify-center">
+        <div className="w-8 h-8 border-2 border-red-600 border-t-transparent rounded-full animate-spin" />
+      </div>
+    );
+  }
+
+  if (!isAuthenticated) return null;
+
+  return (
+    <ToastProvider>
+      <div className="min-h-screen bg-gray-950 flex">
+        {/* Desktop sidebar */}
+        <div className="hidden lg:flex">
+          <AdminSidebar
+            collapsed={sidebarCollapsed}
+            onToggle={() => setSidebarCollapsed((v) => !v)}
+          />
+        </div>
+
+        {/* Mobile sidebar overlay */}
+        {mobileSidebarOpen && (
+          <div className="lg:hidden fixed inset-0 z-40 flex">
+            <div
+              className="absolute inset-0 bg-black/60"
+              onClick={() => setMobileSidebarOpen(false)}
+            />
+            <div className="relative z-10">
+              <AdminSidebar
+                collapsed={false}
+                onToggle={() => setMobileSidebarOpen(false)}
+              />
+            </div>
+          </div>
+        )}
+
+        {/* Main content */}
+        <div className="flex-1 flex flex-col min-w-0">
+          <AdminHeader onMobileMenuToggle={() => setMobileSidebarOpen((v) => !v)} />
+          <main className="flex-1 p-4 md:p-6 overflow-auto">
+            {children}
+          </main>
+        </div>
+      </div>
+    </ToastProvider>
+  );
+}

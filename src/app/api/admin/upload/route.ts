@@ -1,1 +1,65 @@
-{"data":"aW1wb3J0IHsgTmV4dFJlcXVlc3QsIE5leHRSZXNwb25zZSB9IGZyb20gJ25leHQvc2VydmVyJzsKaW1wb3J0IHsgcmVxdWlyZUFkbWluIH0gZnJvbSAnQC9saWIvYWRtaW4tYXV0aCc7Cgpjb25zdCBDRl9BQ0NPVU5UX0lEID0gcHJvY2Vzcy5lbnYuQ0xPVURGTEFSRV9BQ0NPVU5UX0lEID8/ICcnOwpjb25zdCBDRl9TVFJFQU1fVE9LRU4gPSBwcm9jZXNzLmVudi5DTE9VREZMQVJFX1NUUkVBTV9UT0tFTiA/PyAnJzsKCmV4cG9ydCBhc3luYyBmdW5jdGlvbiBQT1NUKHJlcXVlc3Q6IE5leHRSZXF1ZXN0KSB7CiAgY29uc3QgYWRtaW4gPSBhd2FpdCByZXF1aXJlQWRtaW4oKTsKICBpZiAoIWFkbWluKSB7CiAgICByZXR1cm4gTmV4dFJlc3BvbnNlLmpzb24oeyBlcnJvcjogJ1VuYXV0aG9yaXplZCcgfSwgeyBzdGF0dXM6IDQwMSB9KTsKICB9CgogIGlmICghQ0ZfQUNDT1VOVF9JRCB8fCAhQ0ZfU1RSRUFNX1RPS0VOKSB7CiAgICByZXR1cm4gTmV4dFJlc3BvbnNlLmpzb24oCiAgICAgIHsgZXJyb3I6ICdDbG91ZGZsYXJlIGNyZWRlbnRpYWxzIG5vdCBjb25maWd1cmVkJyB9LAogICAgICB7IHN0YXR1czogNTAwIH0KICAgICk7CiAgfQoKICB0cnkgewogICAgY29uc3QgYm9keSA9IGF3YWl0IHJlcXVlc3QuanNvbigpLmNhdGNoKCgpID0+ICh7fSkpOwogICAgY29uc3QgbWF4RHVyYXRpb25TZWNvbmRzID0gYm9keS5tYXhEdXJhdGlvblNlY29uZHMgPz8gNjAwOwoKICAgIC8vIFJlcXVlc3QgYSBkaXJlY3QgdXBsb2FkIFVSTCBmcm9tIENsb3VkZmxhcmUgU3RyZWFtCiAgICAvLyBUaGUgYnJvd3NlciB1cGxvYWRzIHRoZSB2aWRlbyBmaWxlIGRpcmVjdGx5IHRvIENsb3VkZmxhcmUgKGF2b2lkcyBwcm94eWluZyBsYXJnZSBmaWxlcyB0aHJvdWdoIE5leHQuanMpCiAgICBjb25zdCBjZlJlc3BvbnNlID0gYXdhaXQgZmV0Y2goCiAgICAgIGBodHRwczovL2FwaS5jbG91ZGZsYXJlLmNvbS9jbGllbnQvdjQvYWNjb3VudHMvJHtDRl9BQ0NPVU5UX0lEfS9zdHJlYW0vZGlyZWN0X3VwbG9hZGAsCiAgICAgIHsKICAgICAgICBtZXRob2Q6ICdQT1NUJywKICAgICAgICBoZWFkZXJzOiB7CiAgICAgICAgICBBdXRob3JpemF0aW9uOiBgQmVhcmVyICR7Q0ZfU1RSRUFNX1RPS0VOfWAsCiAgICAgICAgICAnQ29udGVudC1UeXBlJzogJ2FwcGxpY2F0aW9uL2pzb24nLAogICAgICAgIH0sCiAgICAgICAgYm9keTogSlNPTi5zdHJpbmdpZnkoewogICAgICAgICAgbWF4RHVyYXRpb25TZWNvbmRzLAogICAgICAgICAgcmVxdWlyZVNpZ25lZFVSTHM6IGZhbHNlLAogICAgICAgIH0pLAogICAgICB9CiAgICApOwoKICAgIGlmICghY2ZSZXNwb25zZS5vaykgewogICAgICBjb25zdCBlcnIgPSBhd2FpdCBjZlJlc3BvbnNlLnRleHQoKTsKICAgICAgY29uc29sZS5lcnJvcignQ2xvdWRmbGFyZSBkaXJlY3RfdXBsb2FkIGVycm9yOicsIGVycik7CiAgICAgIHJldHVybiBOZXh0UmVzcG9uc2UuanNvbigKICAgICAgICB7IGVycm9yOiAnRmFpbGVkIHRvIGNyZWF0ZSBDbG91ZGZsYXJlIHVwbG9hZCBVUkwnIH0sCiAgICAgICAgeyBzdGF0dXM6IDUwMiB9CiAgICAgICk7CiAgICB9CgogICAgY29uc3QgY2ZEYXRhID0gYXdhaXQgY2ZSZXNwb25zZS5qc29uKCk7CiAgICBjb25zdCB7IHVwbG9hZFVSTCwgdWlkOiB2aWRlb0lkIH0gPSBjZkRhdGEucmVzdWx0OwoKICAgIC8vIFRodW1ibmFpbCBVUkwg4oCUIGF2YWlsYWJsZSBvbmNlIENsb3VkZmxhcmUgcHJvY2Vzc2VzIHRoZSB2aWRlbwogICAgY29uc3QgdGh1bWJuYWlsVXJsID0gYGh0dHBzOi8vdmlkZW9kZWxpdmVyeS5uZXQvJHt2aWRlb0lkfS90aHVtYm5haWxzL3RodW1ibmFpbC5qcGdgOwoKICAgIHJldHVybiBOZXh0UmVzcG9uc2UuanNvbih7CiAgICAgIHVwbG9hZFVSTCwKICAgICAgdmlkZW9JZCwKICAgICAgdGh1bWJuYWlsVXJsLAogICAgfSk7CiAgfSBjYXRjaCAoZXJyb3IpIHsKICAgIGNvbnNvbGUuZXJyb3IoJ1VwbG9hZCByb3V0ZSBlcnJvcjonLCBlcnJvcik7CiAgICByZXR1cm4gTmV4dFJlc3BvbnNlLmpzb24oeyBlcnJvcjogJ0ZhaWxlZCB0byBnZXQgdXBsb2FkIFVSTCcgfSwgeyBzdGF0dXM6IDUwMCB9KTsKICB9Cn0K"}
+import { NextRequest, NextResponse } from 'next/server';
+import { requireAdmin } from '@/lib/admin-auth';
+
+const CF_ACCOUNT_ID = process.env.CLOUDFLARE_ACCOUNT_ID ?? '';
+const CF_STREAM_TOKEN = process.env.CLOUDFLARE_STREAM_TOKEN ?? '';
+
+export async function POST(request: NextRequest) {
+  const admin = await requireAdmin();
+  if (!admin) {
+    return NextResponse.json({ error: 'Unauthorized' }, { status: 401 });
+  }
+
+  if (!CF_ACCOUNT_ID || !CF_STREAM_TOKEN) {
+    return NextResponse.json(
+      { error: 'Cloudflare credentials not configured' },
+      { status: 500 }
+    );
+  }
+
+  try {
+    const body = await request.json().catch(() => ({}));
+    const maxDurationSeconds = body.maxDurationSeconds ?? 600;
+
+    // Request a direct upload URL from Cloudflare Stream
+    // The browser uploads the video file directly to Cloudflare (avoids proxying large files through Next.js)
+    const cfResponse = await fetch(
+      `https://api.cloudflare.com/client/v4/accounts/${CF_ACCOUNT_ID}/stream/direct_upload`,
+      {
+        method: 'POST',
+        headers: {
+          Authorization: `Bearer ${CF_STREAM_TOKEN}`,
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          maxDurationSeconds,
+          requireSignedURLs: false,
+        }),
+      }
+    );
+
+    if (!cfResponse.ok) {
+      const err = await cfResponse.text();
+      console.error('Cloudflare direct_upload error:', err);
+      return NextResponse.json(
+        { error: 'Failed to create Cloudflare upload URL' },
+        { status: 502 }
+      );
+    }
+
+    const cfData = await cfResponse.json();
+    const { uploadURL, uid: videoId } = cfData.result;
+
+    // Thumbnail URL — available once Cloudflare processes the video
+    const thumbnailUrl = `https://videodelivery.net/${videoId}/thumbnails/thumbnail.jpg`;
+
+    return NextResponse.json({
+      uploadURL,
+      videoId,
+      thumbnailUrl,
+    });
+  } catch (error) {
+    console.error('Upload route error:', error);
+    return NextResponse.json({ error: 'Failed to get upload URL' }, { status: 500 });
+  }
+}

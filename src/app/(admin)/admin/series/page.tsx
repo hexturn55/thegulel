@@ -1,1 +1,269 @@
-{"data":"J3VzZSBjbGllbnQnOwoKaW1wb3J0IHsgdXNlRWZmZWN0LCB1c2VTdGF0ZSwgdXNlQ2FsbGJhY2sgfSBmcm9tICdyZWFjdCc7CmltcG9ydCBMaW5rIGZyb20gJ25leHQvbGluayc7CmltcG9ydCB7IHVzZVJvdXRlciB9IGZyb20gJ25leHQvbmF2aWdhdGlvbic7CmltcG9ydCB7CiAgUGx1c0NpcmNsZSwKICBTZWFyY2gsCiAgRWRpdDIsCiAgVHJhc2gyLAogIEV5ZSwKICBFeWVPZmYsCiAgU3RhciwKICBDaGV2cm9uRG93biwKfSBmcm9tICdsdWNpZGUtcmVhY3QnOwppbXBvcnQgRGF0YVRhYmxlIGZyb20gJ0AvY29tcG9uZW50cy9hZG1pbi9EYXRhVGFibGUnOwppbXBvcnQgU3RhdHVzQmFkZ2UgZnJvbSAnQC9jb21wb25lbnRzL2FkbWluL1N0YXR1c0JhZGdlJzsKaW1wb3J0IENvbmZpcm1EaWFsb2cgZnJvbSAnQC9jb21wb25lbnRzL2FkbWluL0NvbmZpcm1EaWFsb2cnOwppbXBvcnQgeyB1c2VUb2FzdCB9IGZyb20gJ0AvY29tcG9uZW50cy9hZG1pbi9Ub2FzdCc7CgppbnRlcmZhY2UgU2VyaWVzIHsKICBpZDogc3RyaW5nOwogIHRpdGxlOiBzdHJpbmc7CiAgZ2VucmU6IHN0cmluZzsKICBzdGF0dXM6IHN0cmluZzsKICBmZWF0dXJlZDogYm9vbGVhbjsKICB0aHVtYm5haWw/OiBzdHJpbmc7CiAgX2NvdW50PzogeyBlcGlzb2RlczogbnVtYmVyIH07CiAgZXBpc29kZUNvdW50PzogbnVtYmVyOwogIGNyZWF0ZWRBdDogc3RyaW5nOwp9CgppbnRlcmZhY2UgQXBpUmVzcG9uc2UgewogIHNlcmllczogU2VyaWVzW107CiAgdG90YWw6IG51bWJlcjsKICBwYWdlOiBudW1iZXI7CiAgcGFnZVNpemU6IG51bWJlcjsKfQoKY29uc3QgU1RBVFVTX09QVElPTlMgPSBbJ0FsbCcsICdEcmFmdCcsICdQdWJsaXNoZWQnLCAnQXJjaGl2ZWQnXTsKCmV4cG9ydCBkZWZhdWx0IGZ1bmN0aW9uIFNlcmllc0xpc3RQYWdlKCkgewogIGNvbnN0IHJvdXRlciA9IHVzZVJvdXRlcigpOwogIGNvbnN0IHsgdG9hc3QgfSA9IHVzZVRvYXN0KCk7CiAgY29uc3QgW2RhdGEsIHNldERhdGFdID0gdXNlU3RhdGU8U2VyaWVzW10+KFtdKTsKICBjb25zdCBbdG90YWwsIHNldFRvdGFsXSA9IHVzZVN0YXRlKDApOwogIGNvbnN0IFtwYWdlLCBzZXRQYWdlXSA9IHVzZVN0YXRlKDEpOwogIGNvbnN0IFtsb2FkaW5nLCBzZXRMb2FkaW5nXSA9IHVzZVN0YXRlKHRydWUpOwogIGNvbnN0IFtzZWFyY2gsIHNldFNlYXJjaF0gPSB1c2VTdGF0ZSgnJyk7CiAgY29uc3QgW3N0YXR1c0ZpbHRlciwgc2V0U3RhdHVzRmlsdGVyXSA9IHVzZVN0YXRlKCdBbGwnKTsKICBjb25zdCBbZGVsZXRlVGFyZ2V0LCBzZXREZWxldGVUYXJnZXRdID0gdXNlU3RhdGU8U2VyaWVzIHwgbnVsbD4obnVsbCk7CiAgY29uc3QgW2RlbGV0ZUxvYWRpbmcsIHNldERlbGV0ZUxvYWRpbmddID0gdXNlU3RhdGUoZmFsc2UpOwoKICBjb25zdCBmZXRjaERhdGEgPSB1c2VDYWxsYmFjayhhc3luYyAoKSA9PiB7CiAgICBzZXRMb2FkaW5nKHRydWUpOwogICAgdHJ5IHsKICAgICAgY29uc3QgcGFyYW1zID0gbmV3IFVSTFNlYXJjaFBhcmFtcyh7CiAgICAgICAgcGFnZTogU3RyaW5nKHBhZ2UpLAogICAgICAgIGxpbWl0OiAnMjAnLAogICAgICAgIC4uLihzZWFyY2ggJiYgeyBzZWFyY2ggfSksCiAgICAgICAgLi4uKHN0YXR1c0ZpbHRlciAhPT0gJ0FsbCcgJiYgeyBzdGF0dXM6IHN0YXR1c0ZpbHRlci50b0xvd2VyQ2FzZSgpIH0pLAogICAgICB9KTsKICAgICAgY29uc3QgcmVzID0gYXdhaXQgZmV0Y2goYC9hcGkvYWRtaW4vc2VyaWVzPyR7cGFyYW1zfWApOwogICAgICBpZiAoIXJlcy5vaykgdGhyb3cgbmV3IEVycm9yKCk7CiAgICAgIGNvbnN0IGpzb246IEFwaVJlc3BvbnNlID0gYXdhaXQgcmVzLmpzb24oKTsKICAgICAgc2V0RGF0YShqc29uLnNlcmllcyA/PyBbXSk7CiAgICAgIHNldFRvdGFsKGpzb24udG90YWwgPz8gMCk7CiAgICB9IGNhdGNoIHsKICAgICAgdG9hc3QoJ0ZhaWxlZCB0byBsb2FkIHNlcmllcycsICdlcnJvcicpOwogICAgfSBmaW5hbGx5IHsKICAgICAgc2V0TG9hZGluZyhmYWxzZSk7CiAgICB9CiAgfSwgW3BhZ2UsIHNlYXJjaCwgc3RhdHVzRmlsdGVyLCB0b2FzdF0pOwoKICB1c2VFZmZlY3QoKCkgPT4gewogICAgY29uc3QgdCA9IHNldFRpbWVvdXQoZmV0Y2hEYXRhLCAzMDApOwogICAgcmV0dXJuICgpID0+IGNsZWFyVGltZW91dCh0KTsKICB9LCBbZmV0Y2hEYXRhXSk7CgogIGNvbnN0IGhhbmRsZVRvZ2dsZVN0YXR1cyA9IGFzeW5jIChzOiBTZXJpZXMpID0+IHsKICAgIGNvbnN0IG5ld1N0YXR1cyA9IHMuc3RhdHVzID09PSAncHVibGlzaGVkJyA/ICdkcmFmdCcgOiAncHVibGlzaGVkJzsKICAgIHRyeSB7CiAgICAgIGNvbnN0IHJlcyA9IGF3YWl0IGZldGNoKGAvYXBpL2FkbWluL3Nlcmllcy8ke3MuaWR9YCwgewogICAgICAgIG1ldGhvZDogJ1BBVENIJywKICAgICAgICBoZWFkZXJzOiB7ICdDb250ZW50LVR5cGUnOiAnYXBwbGljYXRpb24vanNvbicgfSwKICAgICAgICBib2R5OiBKU09OLnN0cmluZ2lmeSh7IHN0YXR1czogbmV3U3RhdHVzIH0pLAogICAgICB9KTsKICAgICAgaWYgKCFyZXMub2spIHRocm93IG5ldyBFcnJvcigpOwogICAgICB0b2FzdChgU2VyaWVzICR7bmV3U3RhdHVzID09PSAncHVibGlzaGVkJyA/ICdwdWJsaXNoZWQnIDogJ3NldCB0byBkcmFmdCd9YCwgJ3N1Y2Nlc3MnKTsKICAgICAgZmV0Y2hEYXRhKCk7CiAgICB9IGNhdGNoIHsKICAgICAgdG9hc3QoJ0ZhaWxlZCB0byB1cGRhdGUgc3RhdHVzJywgJ2Vycm9yJyk7CiAgICB9CiAgfTsKCiAgY29uc3QgaGFuZGxlRGVsZXRlID0gYXN5bmMgKCkgPT4gewogICAgaWYgKCFkZWxldGVUYXJnZXQpIHJldHVybjsKICAgIHNldERlbGV0ZUxvYWRpbmcodHJ1ZSk7CiAgICB0cnkgewogICAgICBjb25zdCByZXMgPSBhd2FpdCBmZXRjaChgL2FwaS9hZG1pbi9zZXJpZXMvJHtkZWxldGVUYXJnZXQuaWR9YCwgeyBtZXRob2Q6ICdERUxFVEUnIH0pOwogICAgICBpZiAoIXJlcy5vaykgdGhyb3cgbmV3IEVycm9yKCk7CiAgICAgIHRvYXN0KCdTZXJpZXMgZGVsZXRlZCcsICdzdWNjZXNzJyk7CiAgICAgIHNldERlbGV0ZVRhcmdldChudWxsKTsKICAgICAgZmV0Y2hEYXRhKCk7CiAgICB9IGNhdGNoIHsKICAgICAgdG9hc3QoJ0ZhaWxlZCB0byBkZWxldGUgc2VyaWVzJywgJ2Vycm9yJyk7CiAgICB9IGZpbmFsbHkgewogICAgICBzZXREZWxldGVMb2FkaW5nKGZhbHNlKTsKICAgIH0KICB9OwoKICBjb25zdCBjb2x1bW5zID0gWwogICAgewogICAgICBrZXk6ICd0aHVtYm5haWwnLAogICAgICBsYWJlbDogJycsCiAgICAgIGNsYXNzTmFtZTogJ3ctMTInLAogICAgICByZW5kZXI6IChyb3c6IFNlcmllcykgPT4KICAgICAgICByb3cudGh1bWJuYWlsID8gKAogICAgICAgICAgPGltZwogICAgICAgICAgICBzcmM9e3Jvdy50aHVtYm5haWx9CiAgICAgICAgICAgIGFsdD17cm93LnRpdGxlfQogICAgICAgICAgICBjbGFzc05hbWU9InctMTAgaC0xMCByb3VuZGVkLWxnIG9iamVjdC1jb3ZlciIKICAgICAgICAgIC8+CiAgICAgICAgKSA6ICgKICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPSJ3LTEwIGgtMTAgcm91bmRlZC1sZyBiZy1ncmF5LTgwMCBmbGV4IGl0ZW1zLWNlbnRlciBqdXN0aWZ5LWNlbnRlciB0ZXh0LWdyYXktNjAwIHRleHQteHMiPgogICAgICAgICAgICBObyBpbWcKICAgICAgICAgIDwvZGl2PgogICAgICAgICksCiAgICB9LAogICAgewogICAgICBrZXk6ICd0aXRsZScsCiAgICAgIGxhYmVsOiAnVGl0bGUnLAogICAgICByZW5kZXI6IChyb3c6IFNlcmllcykgPT4gKAogICAgICAgIDxkaXY+CiAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT0iZm9udC1tZWRpdW0gdGV4dC13aGl0ZSI+e3Jvdy50aXRsZX08L2Rpdj4KICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPSJ0ZXh0LXhzIHRleHQtZ3JheS01MDAgbXQtMC41Ij57cm93LmdlbnJlfTwvZGl2PgogICAgICAgIDwvZGl2PgogICAgICApLAogICAgfSwKICAgIHsKICAgICAga2V5OiAnZXBpc29kZXMnLAogICAgICBsYWJlbDogJ0VwaXNvZGVzJywKICAgICAgcmVuZGVyOiAocm93OiBTZXJpZXMpID0+ICgKICAgICAgICA8c3BhbiBjbGFzc05hbWU9InRleHQtZ3JheS00MDAiPgogICAgICAgICAge3Jvdy5fY291bnQ/LmVwaXNvZGVzID8/IHJvdy5lcGlzb2RlQ291bnQgPz8gMH0KICAgICAgICA8L3NwYW4+CiAgICAgICksCiAgICB9LAogICAgewogICAgICBrZXk6ICdzdGF0dXMnLAogICAgICBsYWJlbDogJ1N0YXR1cycsCiAgICAgIHJlbmRlcjogKHJvdzogU2VyaWVzKSA9PiA8U3RhdHVzQmFkZ2Ugc3RhdHVzPXtyb3cuc3RhdHVzfSAvPiwKICAgIH0sCiAgICB7CiAgICAgIGtleTogJ2ZlYXR1cmVkJywKICAgICAgbGFiZWw6ICdGZWF0dXJlZCcsCiAgICAgIHJlbmRlcjogKHJvdzogU2VyaWVzKSA9PgogICAgICAgIHJvdy5mZWF0dXJlZCA/ICgKICAgICAgICAgIDxzcGFuIGNsYXNzTmFtZT0iZmxleCBpdGVtcy1jZW50ZXIgZ2FwLTEgdGV4dC15ZWxsb3ctNDAwIHRleHQteHMiPgogICAgICAgICAgICA8U3RhciBzaXplPXsxMn0gZmlsbD0iY3VycmVudENvbG9yIiAvPiBGZWF0dXJlZAogICAgICAgICAgPC9zcGFuPgogICAgICAgICkgOiAoCiAgICAgICAgICA8c3BhbiBjbGFzc05hbWU9InRleHQtZ3JheS02MDAgdGV4dC14cyI+4oCUPC9zcGFuPgogICAgICAgICksCiAgICB9LAogICAgewogICAgICBrZXk6ICdhY3Rpb25zJywKICAgICAgbGFiZWw6ICdBY3Rpb25zJywKICAgICAgcmVuZGVyOiAocm93OiBTZXJpZXMpID0+ICgKICAgICAgICA8ZGl2IGNsYXNzTmFtZT0iZmxleCBpdGVtcy1jZW50ZXIgZ2FwLTEiPgogICAgICAgICAgPExpbmsKICAgICAgICAgICAgaHJlZj17YC9hZG1pbi9zZXJpZXMvJHtyb3cuaWR9YH0KICAgICAgICAgICAgY2xhc3NOYW1lPSJwLTEuNSByb3VuZGVkLWxnIHRleHQtZ3JheS00MDAgaG92ZXI6YmctZ3JheS04MDAgaG92ZXI6dGV4dC13aGl0ZSB0cmFuc2l0aW9uLWNvbG9ycyIKICAgICAgICAgICAgdGl0bGU9IkVkaXQiCiAgICAgICAgICA+CiAgICAgICAgICAgIDxFZGl0MiBzaXplPXsxNH0gLz4KICAgICAgICAgIDwvTGluaz4KICAgICAgICAgIDxidXR0b24KICAgICAgICAgICAgb25DbGljaz17KCkgPT4gaGFuZGxlVG9nZ2xlU3RhdHVzKHJvdyl9CiAgICAgICAgICAgIGNsYXNzTmFtZT0icC0xLjUgcm91bmRlZC1sZyB0ZXh0LWdyYXktNDAwIGhvdmVyOmJnLWdyYXktODAwIGhvdmVyOnRleHQtd2hpdGUgdHJhbnNpdGlvbi1jb2xvcnMiCiAgICAgICAgICAgIHRpdGxlPXtyb3cuc3RhdHVzID09PSAncHVibGlzaGVkJyA/ICdTZXQgdG8gRHJhZnQnIDogJ1B1Ymxpc2gnfQogICAgICAgICAgPgogICAgICAgICAgICB7cm93LnN0YXR1cyA9PT0gJ3B1Ymxpc2hlZCcgPyA8RXllT2ZmIHNpemU9ezE0fSAvPiA6IDxFeWUgc2l6ZT17MTR9IC8+fQogICAgICAgICAgPC9idXR0b24+CiAgICAgICAgICA8YnV0dG9uCiAgICAgICAgICAgIG9uQ2xpY2s9eygpID0+IHNldERlbGV0ZVRhcmdldChyb3cpfQogICAgICAgICAgICBjbGFzc05hbWU9InAtMS41IHJvdW5kZWQtbGcgdGV4dC1ncmF5LTQwMCBob3ZlcjpiZy1yZWQtOTAwLzUwIGhvdmVyOnRleHQtcmVkLTQwMCB0cmFuc2l0aW9uLWNvbG9ycyIKICAgICAgICAgICAgdGl0bGU9IkRlbGV0ZSIKICAgICAgICAgID4KICAgICAgICAgICAgPFRyYXNoMiBzaXplPXsxNH0gLz4KICAgICAgICAgIDwvYnV0dG9uPgogICAgICAgIDwvZGl2PgogICAgICApLAogICAgfSwKICBdOwoKICByZXR1cm4gKAogICAgPGRpdiBjbGFzc05hbWU9Im1heC13LTd4bCBteC1hdXRvIHNwYWNlLXktNSI+CiAgICAgIHsvKiBIZWFkZXIgKi99CiAgICAgIDxkaXYgY2xhc3NOYW1lPSJmbGV4IGl0ZW1zLWNlbnRlciBqdXN0aWZ5LWJldHdlZW4gZ2FwLTQgZmxleC13cmFwIj4KICAgICAgICA8ZGl2PgogICAgICAgICAgPGgxIGNsYXNzTmFtZT0idGV4dC0yeGwgZm9udC1ib2xkIHRleHQtd2hpdGUiPlNlcmllczwvaDE+CiAgICAgICAgICA8cCBjbGFzc05hbWU9InRleHQtZ3JheS01MDAgdGV4dC1zbSBtdC0wLjUiPnt0b3RhbH0gdG90YWwgc2VyaWVzPC9wPgogICAgICAgIDwvZGl2PgogICAgICAgIDxMaW5rCiAgICAgICAgICBocmVmPSIvYWRtaW4vc2VyaWVzL25ldyIKICAgICAgICAgIGNsYXNzTmFtZT0iZmxleCBpdGVtcy1jZW50ZXIgZ2FwLTIgcHgtNCBweS0yLjUgYmctcmVkLTYwMCBob3ZlcjpiZy1yZWQtNzAwIHRleHQtd2hpdGUgcm91bmRlZC1sZyB0ZXh0LXNtIGZvbnQtbWVkaXVtIHRyYW5zaXRpb24tY29sb3JzIgogICAgICAgID4KICAgICAgICAgIDxQbHVzQ2lyY2xlIHNpemU9ezE2fSAvPgogICAgICAgICAgQWRkIE5ldyBTZXJpZXMKICAgICAgICA8L0xpbms+CiAgICAgIDwvZGl2PgoKICAgICAgey8qIEZpbHRlcnMgKi99CiAgICAgIDxkaXYgY2xhc3NOYW1lPSJmbGV4IGZsZXgtY29sIHNtOmZsZXgtcm93IGdhcC0zIj4KICAgICAgICA8ZGl2IGNsYXNzTmFtZT0icmVsYXRpdmUgZmxleC0xIG1heC13LXNtIj4KICAgICAgICAgIDxTZWFyY2ggc2l6ZT17MTZ9IGNsYXNzTmFtZT0iYWJzb2x1dGUgbGVmdC0zIHRvcC0xLzIgLXRyYW5zbGF0ZS15LTEvMiB0ZXh0LWdyYXktNTAwIiAvPgogICAgICAgICAgPGlucHV0CiAgICAgICAgICAgIHR5cGU9InRleHQiCiAgICAgICAgICAgIHZhbHVlPXtzZWFyY2h9CiAgICAgICAgICAgIG9uQ2hhbmdlPXsoZSkgPT4geyBzZXRTZWFyY2goZS50YXJnZXQudmFsdWUpOyBzZXRQYWdlKDEpOyB9fQogICAgICAgICAgICBwbGFjZWhvbGRlcj0iU2VhcmNoIHNlcmllcy4uLiIKICAgICAgICAgICAgY2xhc3NOYW1lPSJ3LWZ1bGwgcGwtOSBwci00IHB5LTIuNSBiZy1ncmF5LTkwMCBib3JkZXIgYm9yZGVyLWdyYXktODAwIHJvdW5kZWQtbGcgdGV4dC1zbSB0ZXh0LXdoaXRlIHBsYWNlaG9sZGVyLWdyYXktNjAwIGZvY3VzOm91dGxpbmUtbm9uZSBmb2N1czpib3JkZXItcmVkLTYwMCB0cmFuc2l0aW9uLWNvbG9ycyIKICAgICAgICAgIC8+CiAgICAgICAgPC9kaXY+CgogICAgICAgIDxkaXYgY2xhc3NOYW1lPSJmbGV4IGdhcC0yIj4KICAgICAgICAgIHtTVEFUVVNfT1BUSU9OUy5tYXAoKHMpID0+ICgKICAgICAgICAgICAgPGJ1dHRvbgogICAgICAgICAgICAgIGtleT17c30KICAgICAgICAgICAgICBvbkNsaWNrPXsoKSA9PiB7IHNldFN0YXR1c0ZpbHRlcihzKTsgc2V0UGFnZSgxKTsgfX0KICAgICAgICAgICAgICBjbGFzc05hbWU9e2BweC0zIHB5LTIgcm91bmRlZC1sZyB0ZXh0LXhzIGZvbnQtbWVkaXVtIHRyYW5zaXRpb24tY29sb3JzICR7CiAgICAgICAgICAgICAgICBzdGF0dXNGaWx0ZXIgPT09IHMKICAgICAgICAgICAgICAgICAgPyAnYmctcmVkLTYwMCB0ZXh0LXdoaXRlJwogICAgICAgICAgICAgICAgICA6ICdiZy1ncmF5LTkwMCBib3JkZXIgYm9yZGVyLWdyYXktODAwIHRleHQtZ3JheS00MDAgaG92ZXI6YmctZ3JheS04MDAgaG92ZXI6dGV4dC13aGl0ZScKICAgICAgICAgICAgICB9YH0KICAgICAgICAgICAgPgogICAgICAgICAgICAgIHtzfQogICAgICAgICAgICA8L2J1dHRvbj4KICAgICAgICAgICkpfQogICAgICAgIDwvZGl2PgogICAgICA8L2Rpdj4KCiAgICAgIHsvKiBUYWJsZSAqL30KICAgICAgPERhdGFUYWJsZQogICAgICAgIGNvbHVtbnM9e2NvbHVtbnMgYXMgdW5rbm93biBhcyBQYXJhbWV0ZXJzPHR5cGVvZiBEYXRhVGFibGU+WzBdWydjb2x1bW5zJ119CiAgICAgICAgZGF0YT17ZGF0YSBhcyB1bmtub3duIGFzIFJlY29yZDxzdHJpbmcsIHVua25vd24+W119CiAgICAgICAgbG9hZGluZz17bG9hZGluZ30KICAgICAgICBlbXB0eU1lc3NhZ2U9Ik5vIHNlcmllcyBmb3VuZC4iCiAgICAgICAgcGFnZT17cGFnZX0KICAgICAgICBwYWdlU2l6ZT17MjB9CiAgICAgICAgdG90YWw9e3RvdGFsfQogICAgICAgIG9uUGFnZUNoYW5nZT17c2V0UGFnZX0KICAgICAgLz4KCiAgICAgIHsvKiBEZWxldGUgY29uZmlybSAqL30KICAgICAgPENvbmZpcm1EaWFsb2cKICAgICAgICBvcGVuPXshIWRlbGV0ZVRhcmdldH0KICAgICAgICB0aXRsZT0iRGVsZXRlIFNlcmllcyIKICAgICAgICBtZXNzYWdlPXtgQXJlIHlvdSBzdXJlIHlvdSB3YW50IHRvIGRlbGV0ZSAiJHtkZWxldGVUYXJnZXQ/LnRpdGxlfSI/IFRoaXMgYWN0aW9uIGNhbm5vdCBiZSB1bmRvbmUuYH0KICAgICAgICBjb25maXJtTGFiZWw9IkRlbGV0ZSIKICAgICAgICBkYW5nZXJvdXMKICAgICAgICBsb2FkaW5nPXtkZWxldGVMb2FkaW5nfQogICAgICAgIG9uQ29uZmlybT17aGFuZGxlRGVsZXRlfQogICAgICAgIG9uQ2FuY2VsPXsoKSA9PiBzZXREZWxldGVUYXJnZXQobnVsbCl9CiAgICAgIC8+CiAgICA8L2Rpdj4KICApOwp9Cg=="}
+'use client';
+
+import { useEffect, useState, useCallback } from 'react';
+import Link from 'next/link';
+import { useRouter } from 'next/navigation';
+import {
+  PlusCircle,
+  Search,
+  Edit2,
+  Trash2,
+  Eye,
+  EyeOff,
+  Star,
+  ChevronDown,
+} from 'lucide-react';
+import DataTable from '@/components/admin/DataTable';
+import StatusBadge from '@/components/admin/StatusBadge';
+import ConfirmDialog from '@/components/admin/ConfirmDialog';
+import { useToast } from '@/components/admin/Toast';
+
+interface Series {
+  id: string;
+  title: string;
+  genre: string;
+  status: string;
+  featured: boolean;
+  thumbnail?: string;
+  _count?: { episodes: number };
+  episodeCount?: number;
+  createdAt: string;
+}
+
+interface ApiResponse {
+  series: Series[];
+  total: number;
+  page: number;
+  pageSize: number;
+}
+
+const STATUS_OPTIONS = ['All', 'Draft', 'Published', 'Archived'];
+
+export default function SeriesListPage() {
+  const router = useRouter();
+  const { toast } = useToast();
+  const [data, setData] = useState<Series[]>([]);
+  const [total, setTotal] = useState(0);
+  const [page, setPage] = useState(1);
+  const [loading, setLoading] = useState(true);
+  const [search, setSearch] = useState('');
+  const [statusFilter, setStatusFilter] = useState('All');
+  const [deleteTarget, setDeleteTarget] = useState<Series | null>(null);
+  const [deleteLoading, setDeleteLoading] = useState(false);
+
+  const fetchData = useCallback(async () => {
+    setLoading(true);
+    try {
+      const params = new URLSearchParams({
+        page: String(page),
+        limit: '20',
+        ...(search && { search }),
+        ...(statusFilter !== 'All' && { status: statusFilter.toLowerCase() }),
+      });
+      const res = await fetch(`/api/admin/series?${params}`);
+      if (!res.ok) throw new Error();
+      const json: ApiResponse = await res.json();
+      setData(json.series ?? []);
+      setTotal(json.total ?? 0);
+    } catch {
+      toast('Failed to load series', 'error');
+    } finally {
+      setLoading(false);
+    }
+  }, [page, search, statusFilter, toast]);
+
+  useEffect(() => {
+    const t = setTimeout(fetchData, 300);
+    return () => clearTimeout(t);
+  }, [fetchData]);
+
+  const handleToggleStatus = async (s: Series) => {
+    const newStatus = s.status === 'published' ? 'draft' : 'published';
+    try {
+      const res = await fetch(`/api/admin/series/${s.id}`, {
+        method: 'PATCH',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ status: newStatus }),
+      });
+      if (!res.ok) throw new Error();
+      toast(`Series ${newStatus === 'published' ? 'published' : 'set to draft'}`, 'success');
+      fetchData();
+    } catch {
+      toast('Failed to update status', 'error');
+    }
+  };
+
+  const handleDelete = async () => {
+    if (!deleteTarget) return;
+    setDeleteLoading(true);
+    try {
+      const res = await fetch(`/api/admin/series/${deleteTarget.id}`, { method: 'DELETE' });
+      if (!res.ok) throw new Error();
+      toast('Series deleted', 'success');
+      setDeleteTarget(null);
+      fetchData();
+    } catch {
+      toast('Failed to delete series', 'error');
+    } finally {
+      setDeleteLoading(false);
+    }
+  };
+
+  const columns = [
+    {
+      key: 'thumbnail',
+      label: '',
+      className: 'w-12',
+      render: (row: Series) =>
+        row.thumbnail ? (
+          <img
+            src={row.thumbnail}
+            alt={row.title}
+            className="w-10 h-10 rounded-lg object-cover"
+          />
+        ) : (
+          <div className="w-10 h-10 rounded-lg bg-gray-800 flex items-center justify-center text-gray-600 text-xs">
+            No img
+          </div>
+        ),
+    },
+    {
+      key: 'title',
+      label: 'Title',
+      render: (row: Series) => (
+        <div>
+          <div className="font-medium text-white">{row.title}</div>
+          <div className="text-xs text-gray-500 mt-0.5">{row.genre}</div>
+        </div>
+      ),
+    },
+    {
+      key: 'episodes',
+      label: 'Episodes',
+      render: (row: Series) => (
+        <span className="text-gray-400">
+          {row._count?.episodes ?? row.episodeCount ?? 0}
+        </span>
+      ),
+    },
+    {
+      key: 'status',
+      label: 'Status',
+      render: (row: Series) => <StatusBadge status={row.status} />,
+    },
+    {
+      key: 'featured',
+      label: 'Featured',
+      render: (row: Series) =>
+        row.featured ? (
+          <span className="flex items-center gap-1 text-yellow-400 text-xs">
+            <Star size={12} fill="currentColor" /> Featured
+          </span>
+        ) : (
+          <span className="text-gray-600 text-xs">—</span>
+        ),
+    },
+    {
+      key: 'actions',
+      label: 'Actions',
+      render: (row: Series) => (
+        <div className="flex items-center gap-1">
+          <Link
+            href={`/admin/series/${row.id}`}
+            className="p-1.5 rounded-lg text-gray-400 hover:bg-gray-800 hover:text-white transition-colors"
+            title="Edit"
+          >
+            <Edit2 size={14} />
+          </Link>
+          <button
+            onClick={() => handleToggleStatus(row)}
+            className="p-1.5 rounded-lg text-gray-400 hover:bg-gray-800 hover:text-white transition-colors"
+            title={row.status === 'published' ? 'Set to Draft' : 'Publish'}
+          >
+            {row.status === 'published' ? <EyeOff size={14} /> : <Eye size={14} />}
+          </button>
+          <button
+            onClick={() => setDeleteTarget(row)}
+            className="p-1.5 rounded-lg text-gray-400 hover:bg-red-900/50 hover:text-red-400 transition-colors"
+            title="Delete"
+          >
+            <Trash2 size={14} />
+          </button>
+        </div>
+      ),
+    },
+  ];
+
+  return (
+    <div className="max-w-7xl mx-auto space-y-5">
+      {/* Header */}
+      <div className="flex items-center justify-between gap-4 flex-wrap">
+        <div>
+          <h1 className="text-2xl font-bold text-white">Series</h1>
+          <p className="text-gray-500 text-sm mt-0.5">{total} total series</p>
+        </div>
+        <Link
+          href="/admin/series/new"
+          className="flex items-center gap-2 px-4 py-2.5 bg-red-600 hover:bg-red-700 text-white rounded-lg text-sm font-medium transition-colors"
+        >
+          <PlusCircle size={16} />
+          Add New Series
+        </Link>
+      </div>
+
+      {/* Filters */}
+      <div className="flex flex-col sm:flex-row gap-3">
+        <div className="relative flex-1 max-w-sm">
+          <Search size={16} className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-500" />
+          <input
+            type="text"
+            value={search}
+            onChange={(e) => { setSearch(e.target.value); setPage(1); }}
+            placeholder="Search series..."
+            className="w-full pl-9 pr-4 py-2.5 bg-gray-900 border border-gray-800 rounded-lg text-sm text-white placeholder-gray-600 focus:outline-none focus:border-red-600 transition-colors"
+          />
+        </div>
+
+        <div className="flex gap-2">
+          {STATUS_OPTIONS.map((s) => (
+            <button
+              key={s}
+              onClick={() => { setStatusFilter(s); setPage(1); }}
+              className={`px-3 py-2 rounded-lg text-xs font-medium transition-colors ${
+                statusFilter === s
+                  ? 'bg-red-600 text-white'
+                  : 'bg-gray-900 border border-gray-800 text-gray-400 hover:bg-gray-800 hover:text-white'
+              }`}
+            >
+              {s}
+            </button>
+          ))}
+        </div>
+      </div>
+
+      {/* Table */}
+      <DataTable
+        columns={columns as unknown as Parameters<typeof DataTable>[0]['columns']}
+        data={data as unknown as Record<string, unknown>[]}
+        loading={loading}
+        emptyMessage="No series found."
+        page={page}
+        pageSize={20}
+        total={total}
+        onPageChange={setPage}
+      />
+
+      {/* Delete confirm */}
+      <ConfirmDialog
+        open={!!deleteTarget}
+        title="Delete Series"
+        message={`Are you sure you want to delete "${deleteTarget?.title}"? This action cannot be undone.`}
+        confirmLabel="Delete"
+        dangerous
+        loading={deleteLoading}
+        onConfirm={handleDelete}
+        onCancel={() => setDeleteTarget(null)}
+      />
+    </div>
+  );
+}

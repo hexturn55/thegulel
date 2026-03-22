@@ -1,1 +1,15 @@
-{"data":"J3VzZSBjbGllbnQnOwoKaW1wb3J0IFNlcmllc0Zvcm0gZnJvbSAnQC9jb21wb25lbnRzL2FkbWluL1Nlcmllc0Zvcm0nOwoKZXhwb3J0IGRlZmF1bHQgZnVuY3Rpb24gTmV3U2VyaWVzUGFnZSgpIHsKICByZXR1cm4gKAogICAgPGRpdiBjbGFzc05hbWU9Im1heC13LTR4bCBteC1hdXRvIHNwYWNlLXktNSI+CiAgICAgIDxkaXY+CiAgICAgICAgPGgxIGNsYXNzTmFtZT0idGV4dC0yeGwgZm9udC1ib2xkIHRleHQtd2hpdGUiPkNyZWF0ZSBOZXcgU2VyaWVzPC9oMT4KICAgICAgICA8cCBjbGFzc05hbWU9InRleHQtZ3JheS01MDAgdGV4dC1zbSBtdC0wLjUiPkZpbGwgaW4gdGhlIGRldGFpbHMgdG8gY3JlYXRlIGEgbmV3IHNlcmllcy48L3A+CiAgICAgIDwvZGl2PgogICAgICA8U2VyaWVzRm9ybSAvPgogICAgPC9kaXY+CiAgKTsKfQo="}
+'use client';
+
+import SeriesForm from '@/components/admin/SeriesForm';
+
+export default function NewSeriesPage() {
+  return (
+    <div className="max-w-4xl mx-auto space-y-5">
+      <div>
+        <h1 className="text-2xl font-bold text-white">Create New Series</h1>
+        <p className="text-gray-500 text-sm mt-0.5">Fill in the details to create a new series.</p>
+      </div>
+      <SeriesForm />
+    </div>
+  );
+}

@@ -1,1 +1,120 @@
-{"data":"aW1wb3J0IHsgTmV4dFJlcXVlc3QsIE5leHRSZXNwb25zZSB9IGZyb20gJ25leHQvc2VydmVyJzsKaW1wb3J0IHByaXNtYSBmcm9tICdAL2xpYi9wcmlzbWEnOwppbXBvcnQgeyByZXF1aXJlQWRtaW4gfSBmcm9tICdAL2xpYi9hZG1pbi1hdXRoJzsKCmZ1bmN0aW9uIGdldFBlcmlvZFN0YXJ0KHBlcmlvZDogc3RyaW5nKTogRGF0ZSB7CiAgY29uc3Qgbm93ID0gbmV3IERhdGUoKTsKICBjb25zdCBkYXlzID0gcGVyaW9kID09PSAnOTBkJyA/IDkwIDogcGVyaW9kID09PSAnMzBkJyA/IDMwIDogNzsKICBjb25zdCBzdGFydCA9IG5ldyBEYXRlKG5vdyk7CiAgc3RhcnQuc2V0RGF0ZShzdGFydC5nZXREYXRlKCkgLSBkYXlzKTsKICBzdGFydC5zZXRIb3VycygwLCAwLCAwLCAwKTsKICByZXR1cm4gc3RhcnQ7Cn0KCmV4cG9ydCBhc3luYyBmdW5jdGlvbiBHRVQocmVxdWVzdDogTmV4dFJlcXVlc3QpIHsKICBjb25zdCBhZG1pbiA9IGF3YWl0IHJlcXVpcmVBZG1pbigpOwogIGlmICghYWRtaW4pIHsKICAgIHJldHVybiBOZXh0UmVzcG9uc2UuanNvbih7IGVycm9yOiAnVW5hdXRob3JpemVkJyB9LCB7IHN0YXR1czogNDAxIH0pOwogIH0KCiAgY29uc3QgeyBzZWFyY2hQYXJhbXMgfSA9IG5ldyBVUkwocmVxdWVzdC51cmwpOwogIGNvbnN0IHBlcmlvZCA9IHNlYXJjaFBhcmFtcy5nZXQoJ3BlcmlvZCcpID8/ICc3ZCc7CiAgY29uc3Qgc2luY2UgPSBnZXRQZXJpb2RTdGFydChwZXJpb2QpOwoKICBjb25zdCBbCiAgICByYXdTaWdudXBzLAogICAgcmF3Vmlld3MsCiAgICByYXdSZXZlbnVlLAogICAgdG9wU2VyaWVzUmF3LAogICAgdG9wRXBpc29kZXNSYXcsCiAgXSA9IGF3YWl0IFByb21pc2UuYWxsKFsKICAgIC8vIERhaWx5IHNpZ251cHMKICAgIHByaXNtYS4kcXVlcnlSYXc8QXJyYXk8eyBkYXk6IHN0cmluZzsgY291bnQ6IGJpZ2ludCB9Pj5gCiAgICAgIFNFTEVDVCBEQVRFKCJjcmVhdGVkQXQiKSBBUyBkYXksIENPVU5UKCopIEFTIGNvdW50CiAgICAgIEZST00gIlVzZXIiCiAgICAgIFdIRVJFICJjcmVhdGVkQXQiID49ICR7c2luY2V9CiAgICAgIEdST1VQIEJZIGRheQogICAgICBPUkRFUiBCWSBkYXkgQVNDCiAgICBgLAogICAgLy8gRGFpbHkgd2F0Y2ggZXZlbnRzCiAgICBwcmlzbWEuJHF1ZXJ5UmF3PEFycmF5PHsgZGF5OiBzdHJpbmc7IGNvdW50OiBiaWdpbnQgfT4+YAogICAgICBTRUxFQ1QgREFURSgid2F0Y2hlZEF0IikgQVMgZGF5LCBDT1VOVCgqKSBBUyBjb3VudAogICAgICBGUk9NICJXYXRjaEhpc3RvcnkiCiAgICAgIFdIRVJFICJ3YXRjaGVkQXQiID49ICR7c2luY2V9CiAgICAgIEdST1VQIEJZIGRheQogICAgICBPUkRFUiBCWSBkYXkgQVNDCiAgICBgLAogICAgLy8gUmV2ZW51ZSBieSBkYXkgKFBVUkNIQVNFIHRyYW5zYWN0aW9ucykKICAgIHByaXNtYS4kcXVlcnlSYXc8QXJyYXk8eyBkYXk6IHN0cmluZzsgdG90YWw6IGJpZ2ludCB9Pj5gCiAgICAgIFNFTEVDVCBEQVRFKCJjcmVhdGVkQXQiKSBBUyBkYXksIFNVTShhbW91bnQpIEFTIHRvdGFsCiAgICAgIEZST00gIkNvaW5UcmFuc2FjdGlvbiIKICAgICAgV0hFUkUgImNyZWF0ZWRBdCIgPj0gJHtzaW5jZX0gQU5EIHR5cGUgPSAnUFVSQ0hBU0UnCiAgICAgIEdST1VQIEJZIGRheQogICAgICBPUkRFUiBCWSBkYXkgQVNDCiAgICBgLAogICAgLy8gVG9wIHNlcmllcyBieSB3YXRjaCBjb3VudAogICAgcHJpc21hLndhdGNoSGlzdG9yeS5ncm91cEJ5KHsKICAgICAgYnk6IFsnZXBpc29kZUlkJ10sCiAgICAgIHdoZXJlOiB7IHdhdGNoZWRBdDogeyBndGU6IHNpbmNlIH0gfSwKICAgICAgX2NvdW50OiB7IGVwaXNvZGVJZDogdHJ1ZSB9LAogICAgICBvcmRlckJ5OiB7IF9jb3VudDogeyBlcGlzb2RlSWQ6ICdkZXNjJyB9IH0sCiAgICAgIHRha2U6IDEwLAogICAgfSksCiAgICAvLyBUb3AgZXBpc29kZXMgYnkgd2F0Y2ggY291bnQKICAgIHByaXNtYS53YXRjaEhpc3RvcnkuZ3JvdXBCeSh7CiAgICAgIGJ5OiBbJ2VwaXNvZGVJZCddLAogICAgICB3aGVyZTogeyB3YXRjaGVkQXQ6IHsgZ3RlOiBzaW5jZSB9IH0sCiAgICAgIF9jb3VudDogeyBlcGlzb2RlSWQ6IHRydWUgfSwKICAgICAgb3JkZXJCeTogeyBfY291bnQ6IHsgZXBpc29kZUlkOiAnZGVzYycgfSB9LAogICAgICB0YWtlOiAxMCwKICAgIH0pLAogIF0pOwoKICAvLyBIeWRyYXRlIHRvcCBlcGlzb2RlcyB3aXRoIGVwaXNvZGUgKyBzZXJpZXMgaW5mbwogIGNvbnN0IGVwaXNvZGVJZHMgPSB0b3BFcGlzb2Rlc1Jhdy5tYXAoKHIpID0+IHIuZXBpc29kZUlkKTsKICBjb25zdCBlcGlzb2RlcyA9IGF3YWl0IHByaXNtYS5lcGlzb2RlLmZpbmRNYW55KHsKICAgIHdoZXJlOiB7IGlkOiB7IGluOiBlcGlzb2RlSWRzIH0gfSwKICAgIGluY2x1ZGU6IHsgc2VyaWVzOiB7IHNlbGVjdDogeyBpZDogdHJ1ZSwgdGl0bGU6IHRydWUgfSB9IH0sCiAgfSk7CgogIGNvbnN0IHRvcEVwaXNvZGVzID0gdG9wRXBpc29kZXNSYXcubWFwKChyKSA9PiAoewogICAgZXBpc29kZUlkOiByLmVwaXNvZGVJZCwKICAgIHZpZXdzOiByLl9jb3VudC5lcGlzb2RlSWQsCiAgICBlcGlzb2RlOiBlcGlzb2Rlcy5maW5kKChlKSA9PiBlLmlkID09PSByLmVwaXNvZGVJZCkgPz8gbnVsbCwKICB9KSk7CgogIC8vIEFnZ3JlZ2F0ZSBzZXJpZXMgdmlld3MKICBjb25zdCBzZXJpZXNWaWV3TWFwID0gbmV3IE1hcDxzdHJpbmcsIG51bWJlcj4oKTsKICBmb3IgKGNvbnN0IGVwIG9mIHRvcEVwaXNvZGVzUmF3KSB7CiAgICBjb25zdCBlcGlzb2RlID0gZXBpc29kZXMuZmluZCgoZSkgPT4gZS5pZCA9PT0gZXAuZXBpc29kZUlkKTsKICAgIGlmIChlcGlzb2RlKSB7CiAgICAgIGNvbnN0IHByZXYgPSBzZXJpZXNWaWV3TWFwLmdldChlcGlzb2RlLnNlcmllc0lkKSA/PyAwOwogICAgICBzZXJpZXNWaWV3TWFwLnNldChlcGlzb2RlLnNlcmllc0lkLCBwcmV2ICsgZXAuX2NvdW50LmVwaXNvZGVJZCk7CiAgICB9CiAgfQogIGNvbnN0IHRvcFNlcmllc0lkcyA9IFsuLi5zZXJpZXNWaWV3TWFwLmVudHJpZXMoKV0KICAgIC5zb3J0KChhLCBiKSA9PiBiWzFdIC0gYVsxXSkKICAgIC5zbGljZSgwLCAxMCkKICAgIC5tYXAoKFtpZF0pID0+IGlkKTsKCiAgY29uc3Qgc2VyaWVzTGlzdCA9IGF3YWl0IHByaXNtYS5zZXJpZXMuZmluZE1hbnkoewogICAgd2hlcmU6IHsgaWQ6IHsgaW46IHRvcFNlcmllc0lkcyB9IH0sCiAgICBzZWxlY3Q6IHsgaWQ6IHRydWUsIHRpdGxlOiB0cnVlLCB0aHVtYm5haWw6IHRydWUgfSwKICB9KTsKCiAgY29uc3QgdG9wU2VyaWVzID0gdG9wU2VyaWVzSWRzLm1hcCgoaWQpID0+ICh7CiAgICBzZXJpZXNJZDogaWQsCiAgICB2aWV3czogc2VyaWVzVmlld01hcC5nZXQoaWQpID8/IDAsCiAgICBzZXJpZXM6IHNlcmllc0xpc3QuZmluZCgocykgPT4gcy5pZCA9PT0gaWQpID8/IG51bGwsCiAgfSkpOwoKICByZXR1cm4gTmV4dFJlc3BvbnNlLmpzb24oewogICAgcGVyaW9kLAogICAgc2luY2U6IHNpbmNlLnRvSVNPU3RyaW5nKCksCiAgICBkYWlseVNpZ251cHM6IHJhd1NpZ251cHMubWFwKChyKSA9PiAoeyBkYXk6IHIuZGF5LCBjb3VudDogTnVtYmVyKHIuY291bnQpIH0pKSwKICAgIGRhaWx5Vmlld3M6IHJhd1ZpZXdzLm1hcCgocikgPT4gKHsgZGF5OiByLmRheSwgY291bnQ6IE51bWJlcihyLmNvdW50KSB9KSksCiAgICByZXZlbnVlQnlEYXk6IHJhd1JldmVudWUubWFwKChyKSA9PiAoeyBkYXk6IHIuZGF5LCB0b3RhbDogTnVtYmVyKHIudG90YWwpIH0pKSwKICAgIHRvcFNlcmllcywKICAgIHRvcEVwaXNvZGVzLAogIH0pOwp9Cg=="}
+import { NextRequest, NextResponse } from 'next/server';
+import prisma from '@/lib/prisma';
+import { requireAdmin } from '@/lib/admin-auth';
+
+function getPeriodStart(period: string): Date {
+  const now = new Date();
+  const days = period === '90d' ? 90 : period === '30d' ? 30 : 7;
+  const start = new Date(now);
+  start.setDate(start.getDate() - days);
+  start.setHours(0, 0, 0, 0);
+  return start;
+}
+
+export async function GET(request: NextRequest) {
+  const admin = await requireAdmin();
+  if (!admin) {
+    return NextResponse.json({ error: 'Unauthorized' }, { status: 401 });
+  }
+
+  const { searchParams } = new URL(request.url);
+  const period = searchParams.get('period') ?? '7d';
+  const since = getPeriodStart(period);
+
+  const [
+    rawSignups,
+    rawViews,
+    rawRevenue,
+    topSeriesRaw,
+    topEpisodesRaw,
+  ] = await Promise.all([
+    // Daily signups
+    prisma.$queryRaw<Array<{ day: string; count: bigint }>>`
+      SELECT DATE("createdAt") AS day, COUNT(*) AS count
+      FROM "User"
+      WHERE "createdAt" >= ${since}
+      GROUP BY day
+      ORDER BY day ASC
+    `,
+    // Daily watch events
+    prisma.$queryRaw<Array<{ day: string; count: bigint }>>`
+      SELECT DATE("watchedAt") AS day, COUNT(*) AS count
+      FROM "WatchHistory"
+      WHERE "watchedAt" >= ${since}
+      GROUP BY day
+      ORDER BY day ASC
+    `,
+    // Revenue by day (PURCHASE transactions)
+    prisma.$queryRaw<Array<{ day: string; total: bigint }>>`
+      SELECT DATE("createdAt") AS day, SUM(amount) AS total
+      FROM "CoinTransaction"
+      WHERE "createdAt" >= ${since} AND type = 'PURCHASE'
+      GROUP BY day
+      ORDER BY day ASC
+    `,
+    // Top series by watch count
+    prisma.watchHistory.groupBy({
+      by: ['episodeId'],
+      where: { watchedAt: { gte: since } },
+      _count: { episodeId: true },
+      orderBy: { _count: { episodeId: 'desc' } },
+      take: 10,
+    }),
+    // Top episodes by watch count
+    prisma.watchHistory.groupBy({
+      by: ['episodeId'],
+      where: { watchedAt: { gte: since } },
+      _count: { episodeId: true },
+      orderBy: { _count: { episodeId: 'desc' } },
+      take: 10,
+    }),
+  ]);
+
+  // Hydrate top episodes with episode + series info
+  const episodeIds = topEpisodesRaw.map((r) => r.episodeId);
+  const episodes = await prisma.episode.findMany({
+    where: { id: { in: episodeIds } },
+    include: { series: { select: { id: true, title: true } } },
+  });
+
+  const topEpisodes = topEpisodesRaw.map((r) => ({
+    episodeId: r.episodeId,
+    views: r._count.episodeId,
+    episode: episodes.find((e) => e.id === r.episodeId) ?? null,
+  }));
+
+  // Aggregate series views
+  const seriesViewMap = new Map<string, number>();
+  for (const ep of topEpisodesRaw) {
+    const episode = episodes.find((e) => e.id === ep.episodeId);
+    if (episode) {
+      const prev = seriesViewMap.get(episode.seriesId) ?? 0;
+      seriesViewMap.set(episode.seriesId, prev + ep._count.episodeId);
+    }
+  }
+  const topSeriesIds = [...seriesViewMap.entries()]
+    .sort((a, b) => b[1] - a[1])
+    .slice(0, 10)
+    .map(([id]) => id);
+
+  const seriesList = await prisma.series.findMany({
+    where: { id: { in: topSeriesIds } },
+    select: { id: true, title: true, thumbnail: true },
+  });
+
+  const topSeries = topSeriesIds.map((id) => ({
+    seriesId: id,
+    views: seriesViewMap.get(id) ?? 0,
+    series: seriesList.find((s) => s.id === id) ?? null,
+  }));
+
+  return NextResponse.json({
+    period,
+    since: since.toISOString(),
+    dailySignups: rawSignups.map((r) => ({ day: r.day, count: Number(r.count) })),
+    dailyViews: rawViews.map((r) => ({ day: r.day, count: Number(r.count) })),
+    revenueByDay: rawRevenue.map((r) => ({ day: r.day, total: Number(r.total) })),
+    topSeries,
+    topEpisodes,
+  });
+}

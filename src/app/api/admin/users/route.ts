@@ -1,1 +1,59 @@
-{"data":"aW1wb3J0IHsgTmV4dFJlcXVlc3QsIE5leHRSZXNwb25zZSB9IGZyb20gJ25leHQvc2VydmVyJzsKaW1wb3J0IHByaXNtYSBmcm9tICdAL2xpYi9wcmlzbWEnOwppbXBvcnQgeyByZXF1aXJlQWRtaW4gfSBmcm9tICdAL2xpYi9hZG1pbi1hdXRoJzsKCmV4cG9ydCBhc3luYyBmdW5jdGlvbiBHRVQocmVxdWVzdDogTmV4dFJlcXVlc3QpIHsKICBjb25zdCBhZG1pbiA9IGF3YWl0IHJlcXVpcmVBZG1pbigpOwogIGlmICghYWRtaW4pIHsKICAgIHJldHVybiBOZXh0UmVzcG9uc2UuanNvbih7IGVycm9yOiAnVW5hdXRob3JpemVkJyB9LCB7IHN0YXR1czogNDAxIH0pOwogIH0KCiAgY29uc3QgeyBzZWFyY2hQYXJhbXMgfSA9IG5ldyBVUkwocmVxdWVzdC51cmwpOwogIGNvbnN0IHBhZ2UgPSBwYXJzZUludChzZWFyY2hQYXJhbXMuZ2V0KCdwYWdlJykgPz8gJzEnLCAxMCk7CiAgY29uc3QgbGltaXQgPSBwYXJzZUludChzZWFyY2hQYXJhbXMuZ2V0KCdsaW1pdCcpID8/ICcyMCcsIDEwKTsKICBjb25zdCBzZWFyY2ggPSBzZWFyY2hQYXJhbXMuZ2V0KCdzZWFyY2gnKSA/PyAnJzsKICBjb25zdCBzb3J0QnkgPSBzZWFyY2hQYXJhbXMuZ2V0KCdzb3J0QnknKSA/PyAnY3JlYXRlZEF0JzsgLy8gY3JlYXRlZEF0IHwgY29pbkJhbGFuY2UKICBjb25zdCBzb3J0T3JkZXIgPSBzZWFyY2hQYXJhbXMuZ2V0KCdzb3J0T3JkZXInKSA/PyAnZGVzYyc7CgogIGNvbnN0IHdoZXJlOiBSZWNvcmQ8c3RyaW5nLCB1bmtub3duPiA9IHt9OwogIGlmIChzZWFyY2gpIHsKICAgIHdoZXJlLk9SID0gWwogICAgICB7IG5hbWU6IHsgY29udGFpbnM6IHNlYXJjaCwgbW9kZTogJ2luc2Vuc2l0aXZlJyB9IH0sCiAgICAgIHsgZW1haWw6IHsgY29udGFpbnM6IHNlYXJjaCwgbW9kZTogJ2luc2Vuc2l0aXZlJyB9IH0sCiAgICAgIHsgcGhvbmU6IHsgY29udGFpbnM6IHNlYXJjaCwgbW9kZTogJ2luc2Vuc2l0aXZlJyB9IH0sCiAgICBdOwogIH0KCiAgY29uc3QgdmFsaWRTb3J0RmllbGRzID0gWydjcmVhdGVkQXQnLCAnY29pbkJhbGFuY2UnXTsKICBjb25zdCBvcmRlckJ5RmllbGQgPSB2YWxpZFNvcnRGaWVsZHMuaW5jbHVkZXMoc29ydEJ5KSA/IHNvcnRCeSA6ICdjcmVhdGVkQXQnOwogIGNvbnN0IG9yZGVyQnlEaXIgPSBzb3J0T3JkZXIgPT09ICdhc2MnID8gJ2FzYycgOiAnZGVzYyc7CgogIGNvbnN0IFt1c2VycywgdG90YWxdID0gYXdhaXQgUHJvbWlzZS5hbGwoWwogICAgcHJpc21hLnVzZXIuZmluZE1hbnkoewogICAgICB3aGVyZSwKICAgICAgc2tpcDogKHBhZ2UgLSAxKSAqIGxpbWl0LAogICAgICB0YWtlOiBsaW1pdCwKICAgICAgb3JkZXJCeTogeyBbb3JkZXJCeUZpZWxkXTogb3JkZXJCeURpciB9LAogICAgICBzZWxlY3Q6IHsKICAgICAgICBpZDogdHJ1ZSwKICAgICAgICBuYW1lOiB0cnVlLAogICAgICAgIGVtYWlsOiB0cnVlLAogICAgICAgIHBob25lOiB0cnVlLAogICAgICAgIGF2YXRhcjogdHJ1ZSwKICAgICAgICBjb2luQmFsYW5jZTogdHJ1ZSwKICAgICAgICByb2xlOiB0cnVlLAogICAgICAgIGJhbm5lZDogdHJ1ZSwKICAgICAgICBiYW5SZWFzb246IHRydWUsCiAgICAgICAgcHJvdmlkZXI6IHRydWUsCiAgICAgICAgY3JlYXRlZEF0OiB0cnVlLAogICAgICAgIGxhc3RMb2dpbkF0OiB0cnVlLAogICAgICB9LAogICAgfSksCiAgICBwcmlzbWEudXNlci5jb3VudCh7IHdoZXJlIH0pLAogIF0pOwoKICByZXR1cm4gTmV4dFJlc3BvbnNlLmpzb24oewogICAgdXNlcnMsCiAgICBwYWdpbmF0aW9uOiB7IHBhZ2UsIGxpbWl0LCB0b3RhbCwgcGFnZXM6IE1hdGguY2VpbCh0b3RhbCAvIGxpbWl0KSB9LAogIH0pOwp9Cg=="}
+import { NextRequest, NextResponse } from 'next/server';
+import prisma from '@/lib/prisma';
+import { requireAdmin } from '@/lib/admin-auth';
+
+export async function GET(request: NextRequest) {
+  const admin = await requireAdmin();
+  if (!admin) {
+    return NextResponse.json({ error: 'Unauthorized' }, { status: 401 });
+  }
+
+  const { searchParams } = new URL(request.url);
+  const page = parseInt(searchParams.get('page') ?? '1', 10);
+  const limit = parseInt(searchParams.get('limit') ?? '20', 10);
+  const search = searchParams.get('search') ?? '';
+  const sortBy = searchParams.get('sortBy') ?? 'createdAt'; // createdAt | coinBalance
+  const sortOrder = searchParams.get('sortOrder') ?? 'desc';
+
+  const where: Record<string, unknown> = {};
+  if (search) {
+    where.OR = [
+      { name: { contains: search, mode: 'insensitive' } },
+      { email: { contains: search, mode: 'insensitive' } },
+      { phone: { contains: search, mode: 'insensitive' } },
+    ];
+  }
+
+  const validSortFields = ['createdAt', 'coinBalance'];
+  const orderByField = validSortFields.includes(sortBy) ? sortBy : 'createdAt';
+  const orderByDir = sortOrder === 'asc' ? 'asc' : 'desc';
+
+  const [users, total] = await Promise.all([
+    prisma.user.findMany({
+      where,
+      skip: (page - 1) * limit,
+      take: limit,
+      orderBy: { [orderByField]: orderByDir },
+      select: {
+        id: true,
+        name: true,
+        email: true,
+        phone: true,
+        avatar: true,
+        coinBalance: true,
+        role: true,
+        banned: true,
+        banReason: true,
+        provider: true,
+        createdAt: true,
+        lastLoginAt: true,
+      },
+    }),
+    prisma.user.count({ where }),
+  ]);
+
+  return NextResponse.json({
+    users,
+    pagination: { page, limit, total, pages: Math.ceil(total / limit) },
+  });
+}

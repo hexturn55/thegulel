@@ -1,1 +1,106 @@
-{"data":"aW1wb3J0IHsgTmV4dFJlcXVlc3QsIE5leHRSZXNwb25zZSB9IGZyb20gJ25leHQvc2VydmVyJzsKaW1wb3J0IHsgY3JlYXRlU2VydmVyU3VwYWJhc2VDbGllbnQgfSBmcm9tICdAL2xpYi9zdXBhYmFzZS1zZXJ2ZXInOwppbXBvcnQgcHJpc21hIGZyb20gJ0AvbGliL3ByaXNtYSc7CgovKioKICogR0VUIC9hcGkvdXNlci9wcmVmZXJlbmNlcwogKiBSZXR1cm5zIHRoZSBjdXJyZW50IHVzZXIncyBwcmVmZXJlbmNlcyAobG9jYWxlICsgaGFyZGNvZGVkIG5vdGlmaWNhdGlvbiBkZWZhdWx0cykuCiAqLwpleHBvcnQgYXN5bmMgZnVuY3Rpb24gR0VUKHJlcXVlc3Q6IE5leHRSZXF1ZXN0KSB7CiAgY29uc3Qgc3VwYWJhc2UgPSBhd2FpdCBjcmVhdGVTZXJ2ZXJTdXBhYmFzZUNsaWVudCgpOwogIGNvbnN0IHsKICAgIGRhdGE6IHsgdXNlcjogc3VwYWJhc2VVc2VyIH0sCiAgfSA9IGF3YWl0IHN1cGFiYXNlLmF1dGguZ2V0VXNlcigpOwoKICBpZiAoIXN1cGFiYXNlVXNlcikgewogICAgcmV0dXJuIE5leHRSZXNwb25zZS5qc29uKHsgZXJyb3I6ICdVbmF1dGhvcml6ZWQnIH0sIHsgc3RhdHVzOiA0MDEgfSk7CiAgfQoKICB0cnkgewogICAgY29uc3QgZGJVc2VyID0gYXdhaXQgcHJpc21hLnVzZXIuZmluZEZpcnN0KHsKICAgICAgd2hlcmU6IHsKICAgICAgICBPUjogWwogICAgICAgICAgeyBzdXBhYmFzZUlkOiBzdXBhYmFzZVVzZXIuaWQgfSwKICAgICAgICAgIC4uLihzdXBhYmFzZVVzZXIuZW1haWwgPyBbeyBlbWFpbDogc3VwYWJhc2VVc2VyLmVtYWlsIH1dIDogW10pLAogICAgICAgICAgLi4uKHN1cGFiYXNlVXNlci5waG9uZSA/IFt7IHBob25lOiBzdXBhYmFzZVVzZXIucGhvbmUgfV0gOiBbXSksCiAgICAgICAgXSwKICAgICAgfSwKICAgICAgc2VsZWN0OiB7IGxvY2FsZTogdHJ1ZSB9LAogICAgfSk7CgogICAgaWYgKCFkYlVzZXIpIHsKICAgICAgcmV0dXJuIE5leHRSZXNwb25zZS5qc29uKHsgZXJyb3I6ICdVc2VyIG5vdCBmb3VuZCcgfSwgeyBzdGF0dXM6IDQwNCB9KTsKICAgIH0KCiAgICByZXR1cm4gTmV4dFJlc3BvbnNlLmpzb24oewogICAgICBsb2NhbGU6IGRiVXNlci5sb2NhbGUsCiAgICAgIG5vdGlmaWNhdGlvbnM6IHRydWUsIC8vIGhhcmRjb2RlZCBmb3Igbm93CiAgICB9KTsKICB9IGNhdGNoIChlcnJvcikgewogICAgY29uc29sZS5lcnJvcignR0VUIC9hcGkvdXNlci9wcmVmZXJlbmNlcyBlcnJvcjonLCBlcnJvcik7CiAgICByZXR1cm4gTmV4dFJlc3BvbnNlLmpzb24oeyBlcnJvcjogJ0ludGVybmFsIGVycm9yJyB9LCB7IHN0YXR1czogNTAwIH0pOwogIH0KfQoKLyoqCiAqIFBBVENIIC9hcGkvdXNlci9wcmVmZXJlbmNlcwogKiBVcGRhdGVzIHVzZXIgbG9jYWxlLgogKgogKiBCb2R5OiB7IGxvY2FsZTogImVuIiB8ICJoaSIgfCAiemgiIH0KICovCmV4cG9ydCBhc3luYyBmdW5jdGlvbiBQQVRDSChyZXF1ZXN0OiBOZXh0UmVxdWVzdCkgewogIGNvbnN0IHN1cGFiYXNlID0gYXdhaXQgY3JlYXRlU2VydmVyU3VwYWJhc2VDbGllbnQoKTsKICBjb25zdCB7CiAgICBkYXRhOiB7IHVzZXI6IHN1cGFiYXNlVXNlciB9LAogIH0gPSBhd2FpdCBzdXBhYmFzZS5hdXRoLmdldFVzZXIoKTsKCiAgaWYgKCFzdXBhYmFzZVVzZXIpIHsKICAgIHJldHVybiBOZXh0UmVzcG9uc2UuanNvbih7IGVycm9yOiAnVW5hdXRob3JpemVkJyB9LCB7IHN0YXR1czogNDAxIH0pOwogIH0KCiAgbGV0IGJvZHk6IHsgbG9jYWxlPzogc3RyaW5nIH07CiAgdHJ5IHsKICAgIGJvZHkgPSBhd2FpdCByZXF1ZXN0Lmpzb24oKTsKICB9IGNhdGNoIHsKICAgIHJldHVybiBOZXh0UmVzcG9uc2UuanNvbih7IGVycm9yOiAnSW52YWxpZCBKU09OJyB9LCB7IHN0YXR1czogNDAwIH0pOwogIH0KCiAgY29uc3QgdmFsaWRMb2NhbGVzID0gWydlbicsICdoaScsICd6aCddOwogIGlmICghYm9keS5sb2NhbGUgfHwgIXZhbGlkTG9jYWxlcy5pbmNsdWRlcyhib2R5LmxvY2FsZSkpIHsKICAgIHJldHVybiBOZXh0UmVzcG9uc2UuanNvbigKICAgICAgeyBlcnJvcjogYGxvY2FsZSBtdXN0IGJlIG9uZSBvZjogJHt2YWxpZExvY2FsZXMuam9pbignLCAnKX1gIH0sCiAgICAgIHsgc3RhdHVzOiA0MDAgfQogICAgKTsKICB9CgogIHRyeSB7CiAgICBjb25zdCBkYlVzZXIgPSBhd2FpdCBwcmlzbWEudXNlci5maW5kRmlyc3QoewogICAgICB3aGVyZTogewogICAgICAgIE9SOiBbCiAgICAgICAgICB7IHN1cGFiYXNlSWQ6IHN1cGFiYXNlVXNlci5pZCB9LAogICAgICAgICAgLi4uKHN1cGFiYXNlVXNlci5lbWFpbCA/IFt7IGVtYWlsOiBzdXBhYmFzZVVzZXIuZW1haWwgfV0gOiBbXSksCiAgICAgICAgICAuLi4oc3VwYWJhc2VVc2VyLnBob25lID8gW3sgcGhvbmU6IHN1cGFiYXNlVXNlci5waG9uZSB9XSA6IFtdKSwKICAgICAgICBdLAogICAgICB9LAogICAgICBzZWxlY3Q6IHsgaWQ6IHRydWUgfSwKICAgIH0pOwoKICAgIGlmICghZGJVc2VyKSB7CiAgICAgIHJldHVybiBOZXh0UmVzcG9uc2UuanNvbih7IGVycm9yOiAnVXNlciBub3QgZm91bmQnIH0sIHsgc3RhdHVzOiA0MDQgfSk7CiAgICB9CgogICAgY29uc3QgdXBkYXRlZCA9IGF3YWl0IHByaXNtYS51c2VyLnVwZGF0ZSh7CiAgICAgIHdoZXJlOiB7IGlkOiBkYlVzZXIuaWQgfSwKICAgICAgZGF0YTogeyBsb2NhbGU6IGJvZHkubG9jYWxlIH0sCiAgICAgIHNlbGVjdDogeyBsb2NhbGU6IHRydWUgfSwKICAgIH0pOwoKICAgIHJldHVybiBOZXh0UmVzcG9uc2UuanNvbih7CiAgICAgIGxvY2FsZTogdXBkYXRlZC5sb2NhbGUsCiAgICAgIG5vdGlmaWNhdGlvbnM6IHRydWUsCiAgICB9KTsKICB9IGNhdGNoIChlcnJvcikgewogICAgY29uc29sZS5lcnJvcignUEFUQ0ggL2FwaS91c2VyL3ByZWZlcmVuY2VzIGVycm9yOicsIGVycm9yKTsKICAgIHJldHVybiBOZXh0UmVzcG9uc2UuanNvbih7IGVycm9yOiAnSW50ZXJuYWwgZXJyb3InIH0sIHsgc3RhdHVzOiA1MDAgfSk7CiAgfQp9Cg=="}
+import { NextRequest, NextResponse } from 'next/server';
+import { createServerSupabaseClient } from '@/lib/supabase-server';
+import prisma from '@/lib/prisma';
+
+/**
+ * GET /api/user/preferences
+ * Returns the current user's preferences (locale + hardcoded notification defaults).
+ */
+export async function GET(request: NextRequest) {
+  const supabase = await createServerSupabaseClient();
+  const {
+    data: { user: supabaseUser },
+  } = await supabase.auth.getUser();
+
+  if (!supabaseUser) {
+    return NextResponse.json({ error: 'Unauthorized' }, { status: 401 });
+  }
+
+  try {
+    const dbUser = await prisma.user.findFirst({
+      where: {
+        OR: [
+          { supabaseId: supabaseUser.id },
+          ...(supabaseUser.email ? [{ email: supabaseUser.email }] : []),
+          ...(supabaseUser.phone ? [{ phone: supabaseUser.phone }] : []),
+        ],
+      },
+      select: { locale: true },
+    });
+
+    if (!dbUser) {
+      return NextResponse.json({ error: 'User not found' }, { status: 404 });
+    }
+
+    return NextResponse.json({
+      locale: dbUser.locale,
+      notifications: true, // hardcoded for now
+    });
+  } catch (error) {
+    console.error('GET /api/user/preferences error:', error);
+    return NextResponse.json({ error: 'Internal error' }, { status: 500 });
+  }
+}
+
+/**
+ * PATCH /api/user/preferences
+ * Updates user locale.
+ *
+ * Body: { locale: "en" | "hi" | "zh" }
+ */
+export async function PATCH(request: NextRequest) {
+  const supabase = await createServerSupabaseClient();
+  const {
+    data: { user: supabaseUser },
+  } = await supabase.auth.getUser();
+
+  if (!supabaseUser) {
+    return NextResponse.json({ error: 'Unauthorized' }, { status: 401 });
+  }
+
+  let body: { locale?: string };
+  try {
+    body = await request.json();
+  } catch {
+    return NextResponse.json({ error: 'Invalid JSON' }, { status: 400 });
+  }
+
+  const validLocales = ['en', 'hi', 'zh'];
+  if (!body.locale || !validLocales.includes(body.locale)) {
+    return NextResponse.json(
+      { error: `locale must be one of: ${validLocales.join(', ')}` },
+      { status: 400 }
+    );
+  }
+
+  try {
+    const dbUser = await prisma.user.findFirst({
+      where: {
+        OR: [
+          { supabaseId: supabaseUser.id },
+          ...(supabaseUser.email ? [{ email: supabaseUser.email }] : []),
+          ...(supabaseUser.phone ? [{ phone: supabaseUser.phone }] : []),
+        ],
+      },
+      select: { id: true },
+    });
+
+    if (!dbUser) {
+      return NextResponse.json({ error: 'User not found' }, { status: 404 });
+    }
+
+    const updated = await prisma.user.update({
+      where: { id: dbUser.id },
+      data: { locale: body.locale },
+      select: { locale: true },
+    });
+
+    return NextResponse.json({
+      locale: updated.locale,
+      notifications: true,
+    });
+  } catch (error) {
+    console.error('PATCH /api/user/preferences error:', error);
+    return NextResponse.json({ error: 'Internal error' }, { status: 500 });
+  }
+}

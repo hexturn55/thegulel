@@ -1,1 +1,63 @@
-{"data":"aW1wb3J0IHsgTWV0YWRhdGEgfSBmcm9tICduZXh0JzsKCmV4cG9ydCBjb25zdCBtZXRhZGF0YTogTWV0YWRhdGEgPSB7CiAgdGl0bGU6ICdBYm91dCBHdWxlbCBPVFQnLAogIGRlc2NyaXB0aW9uOiAnTGVhcm4gYWJvdXQgR3VsZWwgT1RUIOKAlCB0aGUgaG9tZSBvZiBhZGRpY3RpdmUgdmVydGljYWwgbWljcm8gZHJhbWFzLicsCn07CgpleHBvcnQgZGVmYXVsdCBmdW5jdGlvbiBBYm91dFBhZ2UoKSB7CiAgcmV0dXJuICgKICAgIDxkaXYgY2xhc3NOYW1lPSJtaW4taC1zY3JlZW4gYmctYmxhY2sgdGV4dC13aGl0ZSBwYi0yOCI+CiAgICAgIDxkaXYgY2xhc3NOYW1lPSJtYXgtdy0yeGwgbXgtYXV0byBweC02IHB5LTEyIj4KICAgICAgICA8aDEgY2xhc3NOYW1lPSJ0ZXh0LTN4bCBmb250LWJvbGQgbWItMiI+QWJvdXQgR3VsZWwgT1RUPC9oMT4KICAgICAgICA8cCBjbGFzc05hbWU9InRleHQtcmVkLTUwMCBmb250LXNlbWlib2xkIG1iLTEwIj5WZXJ0aWNhbCBtaWNybyBkcmFtYXMsIGFueXdoZXJlIHlvdSBnby48L3A+CgogICAgICAgIDxzZWN0aW9uIGNsYXNzTmFtZT0ibWItMTAiPgogICAgICAgICAgPGgyIGNsYXNzTmFtZT0idGV4dC14bCBmb250LWJvbGQgbWItMyB0ZXh0LWdyYXktMTAwIj5XaGF0IGlzIEd1bGVsPzwvaDI+CiAgICAgICAgICA8cCBjbGFzc05hbWU9InRleHQtZ3JheS00MDAgbGVhZGluZy1yZWxheGVkIj4KICAgICAgICAgICAgR3VsZWwgT1RUIGlzIGEgc3RyZWFtaW5nIHBsYXRmb3JtIGJ1aWx0IGZvciB0aGUgc2hvcnQtYXR0ZW50aW9uLCBhbHdheXMtb24gZ2VuZXJhdGlvbi4KICAgICAgICAgICAgV2UgZGVsaXZlciBiaXRlLXNpemVkIHZlcnRpY2FsIGRyYW1hcyDigJQgdGhpbmsgZnVsbCBlbW90aW9uYWwgYXJjcyBwYWNrZWQgaW50byBlcGlzb2RlcwogICAgICAgICAgICB5b3UgY2FuIGZpbmlzaCBpbiB1bmRlciA1IG1pbnV0ZXMuIFJvbWFuY2UsIHRocmlsbGVyLCBmYW1pbHkgZHJhbWEsIGFjdGlvbjogYWxsIHNob3QKICAgICAgICAgICAgdmVydGljYWxseSwgYnVpbHQgZm9yIHlvdXIgcGhvbmUsIGFuZCBkZXNpZ25lZCB0byBrZWVwIHlvdSBob29rZWQuCiAgICAgICAgICA8L3A+CiAgICAgICAgPC9zZWN0aW9uPgoKICAgICAgICA8c2VjdGlvbiBjbGFzc05hbWU9Im1iLTEwIj4KICAgICAgICAgIDxoMiBjbGFzc05hbWU9InRleHQteGwgZm9udC1ib2xkIG1iLTMgdGV4dC1ncmF5LTEwMCI+T3VyIENvbnRlbnQ8L2gyPgogICAgICAgICAgPHAgY2xhc3NOYW1lPSJ0ZXh0LWdyYXktNDAwIGxlYWRpbmctcmVsYXhlZCI+CiAgICAgICAgICAgIFdlIHByb2R1Y2UgYW5kIGxpY2Vuc2Ugb3JpZ2luYWwgSGluZGkgYW5kIENoaW5lc2UgbWljcm8gZHJhbWEgc2VyaWVzLiBPdXIgbGlicmFyeSBzcGFucwogICAgICAgICAgICByb21hbmNlLCBzdXBlcm5hdHVyYWwsIHJldmVuZ2UsIGFuZCBzbGljZS1vZi1saWZlIGdlbnJlcy4gTmV3IHNlcmllcyBkcm9wIHJlZ3VsYXJseS4KICAgICAgICAgICAgVGhlIGZpcnN0IGZldyBlcGlzb2RlcyBvZiBldmVyeSBzZXJpZXMgYXJlIGFsd2F5cyBmcmVlIOKAlCB1bmxvY2sgdGhlIHJlc3Qgd2l0aCBHdWxlbCBDb2lucy4KICAgICAgICAgIDwvcD4KICAgICAgICA8L3NlY3Rpb24+CgogICAgICAgIDxzZWN0aW9uIGNsYXNzTmFtZT0ibWItMTAiPgogICAgICAgICAgPGgyIGNsYXNzTmFtZT0idGV4dC14bCBmb250LWJvbGQgbWItMyB0ZXh0LWdyYXktMTAwIj5Ib3cgSXQgV29ya3M8L2gyPgogICAgICAgICAgPHVsIGNsYXNzTmFtZT0idGV4dC1ncmF5LTQwMCBzcGFjZS15LTIgbGVhZGluZy1yZWxheGVkIGxpc3QtZGlzYyBsaXN0LWluc2lkZSI+CiAgICAgICAgICAgIDxsaT5Ccm93c2UgYW5kIHdhdGNoIGZyZWUgZXBpc29kZXMg4oCUIG5vIGFjY291bnQgbmVlZGVkIHRvIHN0YXJ0LjwvbGk+CiAgICAgICAgICAgIDxsaT5TaWduIGluIHRvIHNhdmUgeW91ciBwcm9ncmVzcyBhbmQgcGljayB1cCB3aGVyZSB5b3UgbGVmdCBvZmYuPC9saT4KICAgICAgICAgICAgPGxpPlB1cmNoYXNlIEd1bGVsIENvaW5zIHRvIHVubG9jayBwcmVtaXVtIGVwaXNvZGVzLjwvbGk+CiAgICAgICAgICAgIDxsaT5PciB3YXRjaCBhIHNob3J0IGFkIHRvIGVhcm4gZnJlZSBjb2lucy48L2xpPgogICAgICAgICAgPC91bD4KICAgICAgICA8L3NlY3Rpb24+CgogICAgICAgIDxzZWN0aW9uIGNsYXNzTmFtZT0ibWItMTAiPgogICAgICAgICAgPGgyIGNsYXNzTmFtZT0idGV4dC14bCBmb250LWJvbGQgbWItMyB0ZXh0LWdyYXktMTAwIj5Db250YWN0IFVzPC9oMj4KICAgICAgICAgIDxwIGNsYXNzTmFtZT0idGV4dC1ncmF5LTQwMCBsZWFkaW5nLXJlbGF4ZWQiPgogICAgICAgICAgICBRdWVzdGlvbnMsIGZlZWRiYWNrLCBvciBwYXJ0bmVyc2hpcCBlbnF1aXJpZXM/IFdlJmFwb3M7ZCBsb3ZlIHRvIGhlYXIgZnJvbSB5b3UuCiAgICAgICAgICA8L3A+CiAgICAgICAgICA8YQogICAgICAgICAgICBocmVmPSJtYWlsdG86aGVsbG9AdGhlZ3VsZWwuY29tIgogICAgICAgICAgICBjbGFzc05hbWU9ImlubGluZS1ibG9jayBtdC0zIHRleHQtcmVkLTQwMCBob3Zlcjp0ZXh0LXJlZC0zMDAgZm9udC1zZW1pYm9sZCB0cmFuc2l0aW9uIgogICAgICAgICAgPgogICAgICAgICAgICBoZWxsb0B0aGVndWxlbC5jb20KICAgICAgICAgIDwvYT4KICAgICAgICA8L3NlY3Rpb24+CgogICAgICAgIDxkaXYgY2xhc3NOYW1lPSJib3JkZXItdCBib3JkZXItemluYy04MDAgcHQtOCB0ZXh0LWdyYXktNjAwIHRleHQtc20iPgogICAgICAgICAgwqkgMjAyNiBHdWxlbCBFbnRlcnRhaW5tZW50LiBBbGwgcmlnaHRzIHJlc2VydmVkLgogICAgICAgIDwvZGl2PgogICAgICA8L2Rpdj4KICAgIDwvZGl2PgogICk7Cn0K"}
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'About Gulel OTT',
+  description: 'Learn about Gulel OTT — the home of addictive vertical micro dramas.',
+};
+
+export default function AboutPage() {
+  return (
+    <div className="min-h-screen bg-black text-white pb-28">
+      <div className="max-w-2xl mx-auto px-6 py-12">
+        <h1 className="text-3xl font-bold mb-2">About Gulel OTT</h1>
+        <p className="text-red-500 font-semibold mb-10">Vertical micro dramas, anywhere you go.</p>
+
+        <section className="mb-10">
+          <h2 className="text-xl font-bold mb-3 text-gray-100">What is Gulel?</h2>
+          <p className="text-gray-400 leading-relaxed">
+            Gulel OTT is a streaming platform built for the short-attention, always-on generation.
+            We deliver bite-sized vertical dramas — think full emotional arcs packed into episodes
+            you can finish in under 5 minutes. Romance, thriller, family drama, action: all shot
+            vertically, built for your phone, and designed to keep you hooked.
+          </p>
+        </section>
+
+        <section className="mb-10">
+          <h2 className="text-xl font-bold mb-3 text-gray-100">Our Content</h2>
+          <p className="text-gray-400 leading-relaxed">
+            We produce and license original Hindi and Chinese micro drama series. Our library spans
+            romance, supernatural, revenge, and slice-of-life genres. New series drop regularly.
+            The first few episodes of every series are always free — unlock the rest with Gulel Coins.
+          </p>
+        </section>
+
+        <section className="mb-10">
+          <h2 className="text-xl font-bold mb-3 text-gray-100">How It Works</h2>
+          <ul className="text-gray-400 space-y-2 leading-relaxed list-disc list-inside">
+            <li>Browse and watch free episodes — no account needed to start.</li>
+            <li>Sign in to save your progress and pick up where you left off.</li>
+            <li>Purchase Gulel Coins to unlock premium episodes.</li>
+            <li>Or watch a short ad to earn free coins.</li>
+          </ul>
+        </section>
+
+        <section className="mb-10">
+          <h2 className="text-xl font-bold mb-3 text-gray-100">Contact Us</h2>
+          <p className="text-gray-400 leading-relaxed">
+            Questions, feedback, or partnership enquiries? We&apos;d love to hear from you.
+          </p>
+          <a
+            href="mailto:hello@thegulel.com"
+            className="inline-block mt-3 text-red-400 hover:text-red-300 font-semibold transition"
+          >
+            hello@thegulel.com
+          </a>
+        </section>
+
+        <div className="border-t border-zinc-800 pt-8 text-gray-600 text-sm">
+          © 2026 Gulel Entertainment. All rights reserved.
+        </div>
+      </div>
+    </div>
+  );
+}

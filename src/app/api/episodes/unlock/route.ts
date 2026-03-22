@@ -1,1 +1,112 @@
-{"data":"aW1wb3J0IHsgTmV4dFJlcXVlc3QsIE5leHRSZXNwb25zZSB9IGZyb20gJ25leHQvc2VydmVyJzsKaW1wb3J0IHByaXNtYSBmcm9tICdAL2xpYi9wcmlzbWEnOwoKZXhwb3J0IGFzeW5jIGZ1bmN0aW9uIFBPU1QocmVxdWVzdDogTmV4dFJlcXVlc3QpIHsKICB0cnkgewogICAgY29uc3QgeyBlcGlzb2RlSWQgfSA9IGF3YWl0IHJlcXVlc3QuanNvbigpOwogICAgY29uc3QgdXNlcklkID0gcmVxdWVzdC5jb29raWVzLmdldCgndXNlcklkJyk/LnZhbHVlOwoKICAgIGlmICghdXNlcklkKSB7CiAgICAgIHJldHVybiBOZXh0UmVzcG9uc2UuanNvbigKICAgICAgICB7IGVycm9yOiAnTm90IGF1dGhlbnRpY2F0ZWQnIH0sCiAgICAgICAgeyBzdGF0dXM6IDQwMSB9CiAgICAgICk7CiAgICB9CgogICAgLy8gR2V0IGVwaXNvZGUgYW5kIHNlcmllcwogICAgY29uc3QgZXBpc29kZSA9IGF3YWl0IHByaXNtYS5lcGlzb2RlLmZpbmRVbmlxdWUoewogICAgICB3aGVyZTogeyBpZDogZXBpc29kZUlkIH0sCiAgICAgIGluY2x1ZGU6IHsKICAgICAgICBzZXJpZXM6IHRydWUsCiAgICAgIH0sCiAgICB9KTsKCiAgICBpZiAoIWVwaXNvZGUpIHsKICAgICAgcmV0dXJuIE5leHRSZXNwb25zZS5qc29uKAogICAgICAgIHsgZXJyb3I6ICdFcGlzb2RlIG5vdCBmb3VuZCcgfSwKICAgICAgICB7IHN0YXR1czogNDA0IH0KICAgICAgKTsKICAgIH0KCiAgICAvLyBDaGVjayBpZiBhbHJlYWR5IHVubG9ja2VkCiAgICBjb25zdCBleGlzdGluZ1B1cmNoYXNlID0gYXdhaXQgcHJpc21hLmVwaXNvZGVQdXJjaGFzZS5maW5kVW5pcXVlKHsKICAgICAgd2hlcmU6IHsKICAgICAgICB1c2VySWRfZXBpc29kZUlkOiB7CiAgICAgICAgICB1c2VySWQsCiAgICAgICAgICBlcGlzb2RlSWQsCiAgICAgICAgfSwKICAgICAgfSwKICAgIH0pOwoKICAgIGlmIChleGlzdGluZ1B1cmNoYXNlKSB7CiAgICAgIHJldHVybiBOZXh0UmVzcG9uc2UuanNvbigKICAgICAgICB7IGVycm9yOiAnRXBpc29kZSBhbHJlYWR5IHVubG9ja2VkJyB9LAogICAgICAgIHsgc3RhdHVzOiA0MDAgfQogICAgICApOwogICAgfQoKICAgIC8vIENoZWNrIHVzZXIgYmFsYW5jZQogICAgY29uc3QgdXNlciA9IGF3YWl0IHByaXNtYS51c2VyLmZpbmRVbmlxdWUoewogICAgICB3aGVyZTogeyBpZDogdXNlcklkIH0sCiAgICB9KTsKCiAgICBpZiAoIXVzZXIpIHsKICAgICAgcmV0dXJuIE5leHRSZXNwb25zZS5qc29uKAogICAgICAgIHsgZXJyb3I6ICdVc2VyIG5vdCBmb3VuZCcgfSwKICAgICAgICB7IHN0YXR1czogNDA0IH0KICAgICAgKTsKICAgIH0KCiAgICBjb25zdCBjb2luUHJpY2UgPSBlcGlzb2RlLnNlcmllcy5jb2luUHJpY2U7CgogICAgaWYgKHVzZXIuY29pbkJhbGFuY2UgPCBjb2luUHJpY2UpIHsKICAgICAgcmV0dXJuIE5leHRSZXNwb25zZS5qc29uKAogICAgICAgIHsKICAgICAgICAgIGVycm9yOiAnSW5zdWZmaWNpZW50IGNvaW5zJywKICAgICAgICAgIHJlcXVpcmVkOiBjb2luUHJpY2UsCiAgICAgICAgICBiYWxhbmNlOiB1c2VyLmNvaW5CYWxhbmNlLAogICAgICAgIH0sCiAgICAgICAgeyBzdGF0dXM6IDQwMCB9CiAgICAgICk7CiAgICB9CgogICAgLy8gUGVyZm9ybSB0cmFuc2FjdGlvbgogICAgY29uc3QgW3VwZGF0ZWRVc2VyLCBwdXJjaGFzZSwgdHJhbnNhY3Rpb25dID0gYXdhaXQgcHJpc21hLiR0cmFuc2FjdGlvbihbCiAgICAgIHByaXNtYS51c2VyLnVwZGF0ZSh7CiAgICAgICAgd2hlcmU6IHsgaWQ6IHVzZXJJZCB9LAogICAgICAgIGRhdGE6IHsKICAgICAgICAgIGNvaW5CYWxhbmNlOiB7CiAgICAgICAgICAgIGRlY3JlbWVudDogY29pblByaWNlLAogICAgICAgICAgfSwKICAgICAgICB9LAogICAgICB9KSwKICAgICAgcHJpc21hLmVwaXNvZGVQdXJjaGFzZS5jcmVhdGUoewogICAgICAgIGRhdGE6IHsKICAgICAgICAgIHVzZXJJZCwKICAgICAgICAgIGVwaXNvZGVJZCwKICAgICAgICAgIGNvaW5zU3BlbnQ6IGNvaW5QcmljZSwKICAgICAgICB9LAogICAgICB9KSwKICAgICAgcHJpc21hLmNvaW5UcmFuc2FjdGlvbi5jcmVhdGUoewogICAgICAgIGRhdGE6IHsKICAgICAgICAgIHVzZXJJZCwKICAgICAgICAgIGFtb3VudDogLWNvaW5QcmljZSwKICAgICAgICAgIHR5cGU6ICdFUElTT0RFX1VOTE9DSycsCiAgICAgICAgICBkZXNjcmlwdGlvbjogYFVubG9ja2VkOiAke2VwaXNvZGUudGl0bGV9YCwKICAgICAgICB9LAogICAgICB9KSwKICAgIF0pOwoKICAgIHJldHVybiBOZXh0UmVzcG9uc2UuanNvbih7CiAgICAgIHN1Y2Nlc3M6IHRydWUsCiAgICAgIG5ld0JhbGFuY2U6IHVwZGF0ZWRVc2VyLmNvaW5CYWxhbmNlLAogICAgICBwdXJjaGFzZSwKICAgIH0pOwogIH0gY2F0Y2ggKGVycm9yKSB7CiAgICBjb25zb2xlLmVycm9yKCdFcGlzb2RlIHVubG9jayBlcnJvcjonLCBlcnJvcik7CiAgICByZXR1cm4gTmV4dFJlc3BvbnNlLmpzb24oCiAgICAgIHsgZXJyb3I6ICdGYWlsZWQgdG8gdW5sb2NrIGVwaXNvZGUnIH0sCiAgICAgIHsgc3RhdHVzOiA1MDAgfQogICAgKTsKICB9Cn0K"}
+import { NextRequest, NextResponse } from 'next/server';
+import prisma from '@/lib/prisma';
+
+export async function POST(request: NextRequest) {
+  try {
+    const { episodeId } = await request.json();
+    const userId = request.cookies.get('userId')?.value;
+
+    if (!userId) {
+      return NextResponse.json(
+        { error: 'Not authenticated' },
+        { status: 401 }
+      );
+    }
+
+    // Get episode and series
+    const episode = await prisma.episode.findUnique({
+      where: { id: episodeId },
+      include: {
+        series: true,
+      },
+    });
+
+    if (!episode) {
+      return NextResponse.json(
+        { error: 'Episode not found' },
+        { status: 404 }
+      );
+    }
+
+    // Check if already unlocked
+    const existingPurchase = await prisma.episodePurchase.findUnique({
+      where: {
+        userId_episodeId: {
+          userId,
+          episodeId,
+        },
+      },
+    });
+
+    if (existingPurchase) {
+      return NextResponse.json(
+        { error: 'Episode already unlocked' },
+        { status: 400 }
+      );
+    }
+
+    // Check user balance
+    const user = await prisma.user.findUnique({
+      where: { id: userId },
+    });
+
+    if (!user) {
+      return NextResponse.json(
+        { error: 'User not found' },
+        { status: 404 }
+      );
+    }
+
+    const coinPrice = episode.series.coinPrice;
+
+    if (user.coinBalance < coinPrice) {
+      return NextResponse.json(
+        {
+          error: 'Insufficient coins',
+          required: coinPrice,
+          balance: user.coinBalance,
+        },
+        { status: 400 }
+      );
+    }
+
+    // Perform transaction
+    const [updatedUser, purchase, transaction] = await prisma.$transaction([
+      prisma.user.update({
+        where: { id: userId },
+        data: {
+          coinBalance: {
+            decrement: coinPrice,
+          },
+        },
+      }),
+      prisma.episodePurchase.create({
+        data: {
+          userId,
+          episodeId,
+          coinsSpent: coinPrice,
+        },
+      }),
+      prisma.coinTransaction.create({
+        data: {
+          userId,
+          amount: -coinPrice,
+          type: 'EPISODE_UNLOCK',
+          description: `Unlocked: ${episode.title}`,
+        },
+      }),
+    ]);
+
+    return NextResponse.json({
+      success: true,
+      newBalance: updatedUser.coinBalance,
+      purchase,
+    });
+  } catch (error) {
+    console.error('Episode unlock error:', error);
+    return NextResponse.json(
+      { error: 'Failed to unlock episode' },
+      { status: 500 }
+    );
+  }
+}

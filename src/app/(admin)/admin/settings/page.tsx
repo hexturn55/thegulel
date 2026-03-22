@@ -1,1 +1,26 @@
-{"data":"J3VzZSBjbGllbnQnOwoKaW1wb3J0IHsgU2V0dGluZ3MgfSBmcm9tICdsdWNpZGUtcmVhY3QnOwoKZXhwb3J0IGRlZmF1bHQgZnVuY3Rpb24gU2V0dGluZ3NQYWdlKCkgewogIHJldHVybiAoCiAgICA8ZGl2IGNsYXNzTmFtZT0ibWF4LXctMnhsIG14LWF1dG8gc3BhY2UteS02Ij4KICAgICAgPGRpdj4KICAgICAgICA8aDEgY2xhc3NOYW1lPSJ0ZXh0LTJ4bCBmb250LWJvbGQgdGV4dC13aGl0ZSI+U2V0dGluZ3M8L2gxPgogICAgICAgIDxwIGNsYXNzTmFtZT0idGV4dC1ncmF5LTUwMCB0ZXh0LXNtIG10LTAuNSI+UGxhdGZvcm0gY29uZmlndXJhdGlvbiBhbmQgYWRtaW4gc2V0dGluZ3MuPC9wPgogICAgICA8L2Rpdj4KCiAgICAgIDxkaXYgY2xhc3NOYW1lPSJiZy1ncmF5LTkwMCBib3JkZXIgYm9yZGVyLWdyYXktODAwIHJvdW5kZWQteGwgcC0xMiBmbGV4IGZsZXgtY29sIGl0ZW1zLWNlbnRlciBnYXAtNCB0ZXh0LWNlbnRlciI+CiAgICAgICAgPGRpdiBjbGFzc05hbWU9InctMTYgaC0xNiByb3VuZGVkLTJ4bCBiZy1ncmF5LTgwMCBmbGV4IGl0ZW1zLWNlbnRlciBqdXN0aWZ5LWNlbnRlciI+CiAgICAgICAgICA8U2V0dGluZ3Mgc2l6ZT17Mjh9IGNsYXNzTmFtZT0idGV4dC1ncmF5LTUwMCIgLz4KICAgICAgICA8L2Rpdj4KICAgICAgICA8ZGl2PgogICAgICAgICAgPHAgY2xhc3NOYW1lPSJ0ZXh0LWdyYXktMzAwIGZvbnQtbWVkaXVtIj5TZXR0aW5ncyBDb21pbmcgU29vbjwvcD4KICAgICAgICAgIDxwIGNsYXNzTmFtZT0idGV4dC1ncmF5LTYwMCB0ZXh0LXNtIG10LTEiPgogICAgICAgICAgICBQbGF0Zm9ybSBzZXR0aW5ncywgbm90aWZpY2F0aW9uIHByZWZlcmVuY2VzLCBhbmQgY29uZmlndXJhdGlvbiBvcHRpb25zIHdpbGwgYXBwZWFyIGhlcmUuCiAgICAgICAgICA8L3A+CiAgICAgICAgPC9kaXY+CiAgICAgIDwvZGl2PgogICAgPC9kaXY+CiAgKTsKfQo="}
+'use client';
+
+import { Settings } from 'lucide-react';
+
+export default function SettingsPage() {
+  return (
+    <div className="max-w-2xl mx-auto space-y-6">
+      <div>
+        <h1 className="text-2xl font-bold text-white">Settings</h1>
+        <p className="text-gray-500 text-sm mt-0.5">Platform configuration and admin settings.</p>
+      </div>
+
+      <div className="bg-gray-900 border border-gray-800 rounded-xl p-12 flex flex-col items-center gap-4 text-center">
+        <div className="w-16 h-16 rounded-2xl bg-gray-800 flex items-center justify-center">
+          <Settings size={28} className="text-gray-500" />
+        </div>
+        <div>
+          <p className="text-gray-300 font-medium">Settings Coming Soon</p>
+          <p className="text-gray-600 text-sm mt-1">
+            Platform settings, notification preferences, and configuration options will appear here.
+          </p>
+        </div>
+      </div>
+    </div>
+  );
+}

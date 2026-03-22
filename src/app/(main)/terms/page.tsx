@@ -1,1 +1,123 @@
-{"data":"aW1wb3J0IHsgTWV0YWRhdGEgfSBmcm9tICduZXh0JzsKCmV4cG9ydCBjb25zdCBtZXRhZGF0YTogTWV0YWRhdGEgPSB7CiAgdGl0bGU6ICdUZXJtcyBvZiBTZXJ2aWNlJywKICBkZXNjcmlwdGlvbjogJ1Rlcm1zIG9mIFNlcnZpY2UgZm9yIEd1bGVsIE9UVC4nLAogIHJvYm90czogeyBpbmRleDogZmFsc2UgfSwKfTsKCmV4cG9ydCBkZWZhdWx0IGZ1bmN0aW9uIFRlcm1zUGFnZSgpIHsKICBjb25zdCBsYXN0VXBkYXRlZCA9ICcxIE1hcmNoIDIwMjYnOwoKICByZXR1cm4gKAogICAgPGRpdiBjbGFzc05hbWU9Im1pbi1oLXNjcmVlbiBiZy1ibGFjayB0ZXh0LXdoaXRlIHBiLTI4Ij4KICAgICAgPGRpdiBjbGFzc05hbWU9Im1heC13LTJ4bCBteC1hdXRvIHB4LTYgcHktMTIiPgogICAgICAgIDxoMSBjbGFzc05hbWU9InRleHQtM3hsIGZvbnQtYm9sZCBtYi0yIj5UZXJtcyBvZiBTZXJ2aWNlPC9oMT4KICAgICAgICA8cCBjbGFzc05hbWU9InRleHQtZ3JheS01MDAgdGV4dC1zbSBtYi0xMCI+TGFzdCB1cGRhdGVkOiB7bGFzdFVwZGF0ZWR9PC9wPgoKICAgICAgICA8ZGl2IGNsYXNzTmFtZT0ic3BhY2UteS04IHRleHQtZ3JheS00MDAgbGVhZGluZy1yZWxheGVkIj4KICAgICAgICAgIDxzZWN0aW9uPgogICAgICAgICAgICA8aDIgY2xhc3NOYW1lPSJ0ZXh0LWxnIGZvbnQtYm9sZCB0ZXh0LWdyYXktMTAwIG1iLTIiPjEuIEFjY2VwdGFuY2Ugb2YgVGVybXM8L2gyPgogICAgICAgICAgICA8cD4KICAgICAgICAgICAgICBCeSBhY2Nlc3Npbmcgb3IgdXNpbmcgR3VsZWwgT1RUICgidGhlIFNlcnZpY2UiKSwgeW91IGFncmVlIHRvIGJlIGJvdW5kIGJ5IHRoZXNlCiAgICAgICAgICAgICAgVGVybXMgb2YgU2VydmljZS4gSWYgeW91IGRvIG5vdCBhZ3JlZSwgcGxlYXNlIGRvIG5vdCB1c2UgdGhlIFNlcnZpY2UuIFRoZXNlIHRlcm1zCiAgICAgICAgICAgICAgYXBwbHkgdG8gYWxsIHZpc2l0b3JzLCB1c2VycywgYW5kIG90aGVycyB3aG8gYWNjZXNzIG9yIHVzZSB0aGUgU2VydmljZS4KICAgICAgICAgICAgPC9wPgogICAgICAgICAgPC9zZWN0aW9uPgoKICAgICAgICAgIDxzZWN0aW9uPgogICAgICAgICAgICA8aDIgY2xhc3NOYW1lPSJ0ZXh0LWxnIGZvbnQtYm9sZCB0ZXh0LWdyYXktMTAwIG1iLTIiPjIuIFVzZSBvZiB0aGUgU2VydmljZTwvaDI+CiAgICAgICAgICAgIDxwPgogICAgICAgICAgICAgIFlvdSBtdXN0IGJlIGF0IGxlYXN0IDEzIHllYXJzIG9mIGFnZSB0byB1c2UgR3VsZWwgT1RULiBCeSBjcmVhdGluZyBhbiBhY2NvdW50LCB5b3UKICAgICAgICAgICAgICByZXByZXNlbnQgdGhhdCB5b3UgbWVldCB0aGlzIHJlcXVpcmVtZW50LiBZb3UgYXJlIHJlc3BvbnNpYmxlIGZvciBtYWludGFpbmluZyB0aGUKICAgICAgICAgICAgICBzZWN1cml0eSBvZiB5b3VyIGFjY291bnQgY3JlZGVudGlhbHMgYW5kIGZvciBhbGwgYWN0aXZpdGllcyB0aGF0IG9jY3VyIHVuZGVyIHlvdXIKICAgICAgICAgICAgICBhY2NvdW50LgogICAgICAgICAgICA8L3A+CiAgICAgICAgICA8L3NlY3Rpb24+CgogICAgICAgICAgPHNlY3Rpb24+CiAgICAgICAgICAgIDxoMiBjbGFzc05hbWU9InRleHQtbGcgZm9udC1ib2xkIHRleHQtZ3JheS0xMDAgbWItMiI+My4gQ29pbnMgYW5kIFBheW1lbnRzPC9oMj4KICAgICAgICAgICAgPHA+CiAgICAgICAgICAgICAgR3VsZWwgQ29pbnMgYXJlIGEgdmlydHVhbCBjdXJyZW5jeSB1c2VkIHRvIHVubG9jayBwcmVtaXVtIGVwaXNvZGVzLiBDb2lucyBhcmUKICAgICAgICAgICAgICBub24tcmVmdW5kYWJsZSB1bmxlc3MgcmVxdWlyZWQgYnkgYXBwbGljYWJsZSBsYXcuIENvaW5zIGhhdmUgbm8gY2FzaCB2YWx1ZSBhbmQgY2Fubm90CiAgICAgICAgICAgICAgYmUgdHJhbnNmZXJyZWQgYmV0d2VlbiBhY2NvdW50cy4gV2UgcmVzZXJ2ZSB0aGUgcmlnaHQgdG8gbW9kaWZ5IGNvaW4gcHJpY2luZyBhbmQKICAgICAgICAgICAgICBhdmFpbGFiaWxpdHkgYXQgYW55IHRpbWUuCiAgICAgICAgICAgIDwvcD4KICAgICAgICAgIDwvc2VjdGlvbj4KCiAgICAgICAgICA8c2VjdGlvbj4KICAgICAgICAgICAgPGgyIGNsYXNzTmFtZT0idGV4dC1sZyBmb250LWJvbGQgdGV4dC1ncmF5LTEwMCBtYi0yIj40LiBDb250ZW50IExpY2Vuc2luZzwvaDI+CiAgICAgICAgICAgIDxwPgogICAgICAgICAgICAgIEFsbCBjb250ZW50IG9uIEd1bGVsIE9UVCDigJQgaW5jbHVkaW5nIHZpZGVvcywgaW1hZ2VzLCBhbmQgdGV4dCDigJQgaXMgb3duZWQgYnkgR3VsZWwKICAgICAgICAgICAgICBFbnRlcnRhaW5tZW50IG9yIGl0cyBsaWNlbnNvcnMuIFlvdSBhcmUgZ3JhbnRlZCBhIGxpbWl0ZWQsIHBlcnNvbmFsLCBub24tdHJhbnNmZXJhYmxlCiAgICAgICAgICAgICAgbGljZW5jZSB0byBzdHJlYW0gY29udGVudCBmb3IgcGVyc29uYWwsIG5vbi1jb21tZXJjaWFsIHVzZS4gRG93bmxvYWRpbmcsIGNvcHlpbmcsCiAgICAgICAgICAgICAgcmUtZGlzdHJpYnV0aW5nLCBvciBzaGFyaW5nIGNvbnRlbnQgb3V0c2lkZSB0aGUgcGxhdGZvcm0gaXMgc3RyaWN0bHkgcHJvaGliaXRlZC4KICAgICAgICAgICAgPC9wPgogICAgICAgICAgPC9zZWN0aW9uPgoKICAgICAgICAgIDxzZWN0aW9uPgogICAgICAgICAgICA8aDIgY2xhc3NOYW1lPSJ0ZXh0LWxnIGZvbnQtYm9sZCB0ZXh0LWdyYXktMTAwIG1iLTIiPjUuIFByb2hpYml0ZWQgQ29uZHVjdDwvaDI+CiAgICAgICAgICAgIDx1bCBjbGFzc05hbWU9Imxpc3QtZGlzYyBsaXN0LWluc2lkZSBzcGFjZS15LTEiPgogICAgICAgICAgICAgIDxsaT5DaXJjdW12ZW50aW5nIG9yIGF0dGVtcHRpbmcgdG8gY2lyY3VtdmVudCBvdXIgcGF5d2FsbCBvciBhY2Nlc3MgY29udHJvbHMuPC9saT4KICAgICAgICAgICAgICA8bGk+VXNpbmcgYXV0b21hdGVkIHRvb2xzIChib3RzLCBzY3JhcGVycykgdG8gYWNjZXNzIHRoZSBTZXJ2aWNlLjwvbGk+CiAgICAgICAgICAgICAgPGxpPlNoYXJpbmcgYWNjb3VudCBjcmVkZW50aWFscyB3aXRoIG90aGVycy48L2xpPgogICAgICAgICAgICAgIDxsaT5VcGxvYWRpbmcgb3IgZGlzdHJpYnV0aW5nIG1hbHdhcmUsIHNwYW0sIG9yIGhhcm1mdWwgY29udGVudC48L2xpPgogICAgICAgICAgICAgIDxsaT5JbXBlcnNvbmF0aW5nIG90aGVyIHVzZXJzIG9yIEd1bGVsIHN0YWZmLjwvbGk+CiAgICAgICAgICAgIDwvdWw+CiAgICAgICAgICA8L3NlY3Rpb24+CgogICAgICAgICAgPHNlY3Rpb24+CiAgICAgICAgICAgIDxoMiBjbGFzc05hbWU9InRleHQtbGcgZm9udC1ib2xkIHRleHQtZ3JheS0xMDAgbWItMiI+Ni4gRGlzY2xhaW1lciBvZiBXYXJyYW50aWVzPC9oMj4KICAgICAgICAgICAgPHA+CiAgICAgICAgICAgICAgVGhlIFNlcnZpY2UgaXMgcHJvdmlkZWQgImFzIGlzIiBhbmQgImFzIGF2YWlsYWJsZSIgd2l0aG91dCB3YXJyYW50aWVzIG9mIGFueSBraW5kLAogICAgICAgICAgICAgIGVpdGhlciBleHByZXNzIG9yIGltcGxpZWQuIFdlIGRvIG5vdCB3YXJyYW50IHRoYXQgdGhlIFNlcnZpY2Ugd2lsbCBiZSB1bmludGVycnVwdGVkLAogICAgICAgICAgICAgIGVycm9yLWZyZWUsIG9yIGZyZWUgb2YgdmlydXNlcy4gWW91ciB1c2Ugb2YgdGhlIFNlcnZpY2UgaXMgYXQgeW91ciBzb2xlIHJpc2suCiAgICAgICAgICAgIDwvcD4KICAgICAgICAgIDwvc2VjdGlvbj4KCiAgICAgICAgICA8c2VjdGlvbj4KICAgICAgICAgICAgPGgyIGNsYXNzTmFtZT0idGV4dC1sZyBmb250LWJvbGQgdGV4dC1ncmF5LTEwMCBtYi0yIj43LiBMaW1pdGF0aW9uIG9mIExpYWJpbGl0eTwvaDI+CiAgICAgICAgICAgIDxwPgogICAgICAgICAgICAgIFRvIHRoZSBmdWxsZXN0IGV4dGVudCBwZXJtaXR0ZWQgYnkgbGF3LCBHdWxlbCBFbnRlcnRhaW5tZW50IHNoYWxsIG5vdCBiZSBsaWFibGUgZm9yCiAgICAgICAgICAgICAgYW55IGluZGlyZWN0LCBpbmNpZGVudGFsLCBzcGVjaWFsLCBjb25zZXF1ZW50aWFsLCBvciBwdW5pdGl2ZSBkYW1hZ2VzIGFyaXNpbmcgZnJvbQogICAgICAgICAgICAgIHlvdXIgdXNlIG9mIHRoZSBTZXJ2aWNlLgogICAgICAgICAgICA8L3A+CiAgICAgICAgICA8L3NlY3Rpb24+CgogICAgICAgICAgPHNlY3Rpb24+CiAgICAgICAgICAgIDxoMiBjbGFzc05hbWU9InRleHQtbGcgZm9udC1ib2xkIHRleHQtZ3JheS0xMDAgbWItMiI+OC4gVGVybWluYXRpb248L2gyPgogICAgICAgICAgICA8cD4KICAgICAgICAgICAgICBXZSByZXNlcnZlIHRoZSByaWdodCB0byBzdXNwZW5kIG9yIHRlcm1pbmF0ZSB5b3VyIGFjY291bnQgYXQgYW55IHRpbWUgZm9yIHZpb2xhdGlvbgogICAgICAgICAgICAgIG9mIHRoZXNlIFRlcm1zLCB3aXRob3V0IHByaW9yIG5vdGljZS4gVXBvbiB0ZXJtaW5hdGlvbiwgeW91ciByaWdodCB0byB1c2UgdGhlIFNlcnZpY2UKICAgICAgICAgICAgICBjZWFzZXMgaW1tZWRpYXRlbHkuIFVudXNlZCBjb2lucyBhcmUgZm9yZmVpdGVkIHVwb24gdGVybWluYXRpb24gZm9yIGNhdXNlLgogICAgICAgICAgICA8L3A+CiAgICAgICAgICA8L3NlY3Rpb24+CgogICAgICAgICAgPHNlY3Rpb24+CiAgICAgICAgICAgIDxoMiBjbGFzc05hbWU9InRleHQtbGcgZm9udC1ib2xkIHRleHQtZ3JheS0xMDAgbWItMiI+OS4gQ2hhbmdlcyB0byBUZXJtczwvaDI+CiAgICAgICAgICAgIDxwPgogICAgICAgICAgICAgIFdlIG1heSB1cGRhdGUgdGhlc2UgVGVybXMgZnJvbSB0aW1lIHRvIHRpbWUuIFdlIHdpbGwgbm90aWZ5IHVzZXJzIG9mIG1hdGVyaWFsIGNoYW5nZXMKICAgICAgICAgICAgICB2aWEgdGhlIGFwcCBvciBlbWFpbC4gQ29udGludWVkIHVzZSBvZiB0aGUgU2VydmljZSBhZnRlciBjaGFuZ2VzIGNvbnN0aXR1dGVzIGFjY2VwdGFuY2UKICAgICAgICAgICAgICBvZiB0aGUgdXBkYXRlZCBUZXJtcy4KICAgICAgICAgICAgPC9wPgogICAgICAgICAgPC9zZWN0aW9uPgoKICAgICAgICAgIDxzZWN0aW9uPgogICAgICAgICAgICA8aDIgY2xhc3NOYW1lPSJ0ZXh0LWxnIGZvbnQtYm9sZCB0ZXh0LWdyYXktMTAwIG1iLTIiPjEwLiBDb250YWN0PC9oMj4KICAgICAgICAgICAgPHA+CiAgICAgICAgICAgICAgRm9yIHF1ZXN0aW9ucyBhYm91dCB0aGVzZSBUZXJtcywgcGxlYXNlIGNvbnRhY3QgdXMgYXR7JyAnfQogICAgICAgICAgICAgIDxhIGhyZWY9Im1haWx0bzpoZWxsb0B0aGVndWxlbC5jb20iIGNsYXNzTmFtZT0idGV4dC1yZWQtNDAwIGhvdmVyOnRleHQtcmVkLTMwMCB0cmFuc2l0aW9uIj4KICAgICAgICAgICAgICAgIGhlbGxvQHRoZWd1bGVsLmNvbQogICAgICAgICAgICAgIDwvYT4KICAgICAgICAgICAgICAuCiAgICAgICAgICAgIDwvcD4KICAgICAgICAgIDwvc2VjdGlvbj4KICAgICAgICA8L2Rpdj4KCiAgICAgICAgPGRpdiBjbGFzc05hbWU9ImJvcmRlci10IGJvcmRlci16aW5jLTgwMCBtdC0xMiBwdC04IHRleHQtZ3JheS02MDAgdGV4dC1zbSI+CiAgICAgICAgICDCqSAyMDI2IEd1bGVsIEVudGVydGFpbm1lbnQuIEFsbCByaWdodHMgcmVzZXJ2ZWQuCiAgICAgICAgPC9kaXY+CiAgICAgIDwvZGl2PgogICAgPC9kaXY+CiAgKTsKfQo="}
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Terms of Service',
+  description: 'Terms of Service for Gulel OTT.',
+  robots: { index: false },
+};
+
+export default function TermsPage() {
+  const lastUpdated = '1 March 2026';
+
+  return (
+    <div className="min-h-screen bg-black text-white pb-28">
+      <div className="max-w-2xl mx-auto px-6 py-12">
+        <h1 className="text-3xl font-bold mb-2">Terms of Service</h1>
+        <p className="text-gray-500 text-sm mb-10">Last updated: {lastUpdated}</p>
+
+        <div className="space-y-8 text-gray-400 leading-relaxed">
+          <section>
+            <h2 className="text-lg font-bold text-gray-100 mb-2">1. Acceptance of Terms</h2>
+            <p>
+              By accessing or using Gulel OTT ("the Service"), you agree to be bound by these
+              Terms of Service. If you do not agree, please do not use the Service. These terms
+              apply to all visitors, users, and others who access or use the Service.
+            </p>
+          </section>
+
+          <section>
+            <h2 className="text-lg font-bold text-gray-100 mb-2">2. Use of the Service</h2>
+            <p>
+              You must be at least 13 years of age to use Gulel OTT. By creating an account, you
+              represent that you meet this requirement. You are responsible for maintaining the
+              security of your account credentials and for all activities that occur under your
+              account.
+            </p>
+          </section>
+
+          <section>
+            <h2 className="text-lg font-bold text-gray-100 mb-2">3. Coins and Payments</h2>
+            <p>
+              Gulel Coins are a virtual currency used to unlock premium episodes. Coins are
+              non-refundable unless required by applicable law. Coins have no cash value and cannot
+              be transferred between accounts. We reserve the right to modify coin pricing and
+              availability at any time.
+            </p>
+          </section>
+
+          <section>
+            <h2 className="text-lg font-bold text-gray-100 mb-2">4. Content Licensing</h2>
+            <p>
+              All content on Gulel OTT — including videos, images, and text — is owned by Gulel
+              Entertainment or its licensors. You are granted a limited, personal, non-transferable
+              licence to stream content for personal, non-commercial use. Downloading, copying,
+              re-distributing, or sharing content outside the platform is strictly prohibited.
+            </p>
+          </section>
+
+          <section>
+            <h2 className="text-lg font-bold text-gray-100 mb-2">5. Prohibited Conduct</h2>
+            <ul className="list-disc list-inside space-y-1">
+              <li>Circumventing or attempting to circumvent our paywall or access controls.</li>
+              <li>Using automated tools (bots, scrapers) to access the Service.</li>
+              <li>Sharing account credentials with others.</li>
+              <li>Uploading or distributing malware, spam, or harmful content.</li>
+              <li>Impersonating other users or Gulel staff.</li>
+            </ul>
+          </section>
+
+          <section>
+            <h2 className="text-lg font-bold text-gray-100 mb-2">6. Disclaimer of Warranties</h2>
+            <p>
+              The Service is provided "as is" and "as available" without warranties of any kind,
+              either express or implied. We do not warrant that the Service will be uninterrupted,
+              error-free, or free of viruses. Your use of the Service is at your sole risk.
+            </p>
+          </section>
+
+          <section>
+            <h2 className="text-lg font-bold text-gray-100 mb-2">7. Limitation of Liability</h2>
+            <p>
+              To the fullest extent permitted by law, Gulel Entertainment shall not be liable for
+              any indirect, incidental, special, consequential, or punitive damages arising from
+              your use of the Service.
+            </p>
+          </section>
+
+          <section>
+            <h2 className="text-lg font-bold text-gray-100 mb-2">8. Termination</h2>
+            <p>
+              We reserve the right to suspend or terminate your account at any time for violation
+              of these Terms, without prior notice. Upon termination, your right to use the Service
+              ceases immediately. Unused coins are forfeited upon termination for cause.
+            </p>
+          </section>
+
+          <section>
+            <h2 className="text-lg font-bold text-gray-100 mb-2">9. Changes to Terms</h2>
+            <p>
+              We may update these Terms from time to time. We will notify users of material changes
+              via the app or email. Continued use of the Service after changes constitutes acceptance
+              of the updated Terms.
+            </p>
+          </section>
+
+          <section>
+            <h2 className="text-lg font-bold text-gray-100 mb-2">10. Contact</h2>
+            <p>
+              For questions about these Terms, please contact us at{' '}
+              <a href="mailto:hello@thegulel.com" className="text-red-400 hover:text-red-300 transition">
+                hello@thegulel.com
+              </a>
+              .
+            </p>
+          </section>
+        </div>
+
+        <div className="border-t border-zinc-800 mt-12 pt-8 text-gray-600 text-sm">
+          © 2026 Gulel Entertainment. All rights reserved.
+        </div>
+      </div>
+    </div>
+  );
+}

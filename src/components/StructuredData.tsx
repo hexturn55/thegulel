@@ -1,1 +1,69 @@
-{"data":"aW50ZXJmYWNlIFRWU2VyaWVzU2NoZW1hUHJvcHMgewogIHR5cGU6ICdUVlNlcmllcyc7CiAgbmFtZTogc3RyaW5nOwogIGRlc2NyaXB0aW9uOiBzdHJpbmc7CiAgaW1hZ2U6IHN0cmluZzsKICBnZW5yZTogc3RyaW5nOwogIG51bWJlck9mRXBpc29kZXM6IG51bWJlcjsKfQoKaW50ZXJmYWNlIFdlYlNpdGVTY2hlbWFQcm9wcyB7CiAgdHlwZTogJ1dlYlNpdGUnOwp9Cgp0eXBlIFN0cnVjdHVyZWREYXRhUHJvcHMgPSBUVlNlcmllc1NjaGVtYVByb3BzIHwgV2ViU2l0ZVNjaGVtYVByb3BzOwoKZXhwb3J0IGZ1bmN0aW9uIFN0cnVjdHVyZWREYXRhKHByb3BzOiBTdHJ1Y3R1cmVkRGF0YVByb3BzKSB7CiAgbGV0IHNjaGVtYTogb2JqZWN0OwoKICBpZiAocHJvcHMudHlwZSA9PT0gJ1RWU2VyaWVzJykgewogICAgc2NoZW1hID0gewogICAgICAnQGNvbnRleHQnOiAnaHR0cHM6Ly9zY2hlbWEub3JnJywKICAgICAgJ0B0eXBlJzogJ1RWU2VyaWVzJywKICAgICAgbmFtZTogcHJvcHMubmFtZSwKICAgICAgZGVzY3JpcHRpb246IHByb3BzLmRlc2NyaXB0aW9uLAogICAgICBpbWFnZTogcHJvcHMuaW1hZ2UsCiAgICAgIGdlbnJlOiBwcm9wcy5nZW5yZSwKICAgICAgbnVtYmVyT2ZFcGlzb2RlczogcHJvcHMubnVtYmVyT2ZFcGlzb2RlcywKICAgICAgcHJvdmlkZXI6IHsKICAgICAgICAnQHR5cGUnOiAnT3JnYW5pemF0aW9uJywKICAgICAgICBuYW1lOiAnR3VsZWwgT1RUJywKICAgICAgICB1cmw6ICdodHRwczovL3RoZWd1bGVsLmNvbScsCiAgICAgIH0sCiAgICB9OwogIH0gZWxzZSB7CiAgICBzY2hlbWEgPSB7CiAgICAgICdAY29udGV4dCc6ICdodHRwczovL3NjaGVtYS5vcmcnLAogICAgICAnQGdyYXBoJzogWwogICAgICAgIHsKICAgICAgICAgICdAdHlwZSc6ICdXZWJTaXRlJywKICAgICAgICAgIG5hbWU6ICdHdWxlbCBPVFQnLAogICAgICAgICAgdXJsOiAnaHR0cHM6Ly90aGVndWxlbC5jb20nLAogICAgICAgICAgcG90ZW50aWFsQWN0aW9uOiB7CiAgICAgICAgICAgICdAdHlwZSc6ICdTZWFyY2hBY3Rpb24nLAogICAgICAgICAgICB0YXJnZXQ6ICdodHRwczovL3RoZWd1bGVsLmNvbS9zZWFyY2g/cT17c2VhcmNoX3Rlcm19JywKICAgICAgICAgICAgJ3F1ZXJ5LWlucHV0JzogJ3JlcXVpcmVkIG5hbWU9c2VhcmNoX3Rlcm0nLAogICAgICAgICAgfSwKICAgICAgICB9LAogICAgICAgIHsKICAgICAgICAgICdAdHlwZSc6ICdPcmdhbml6YXRpb24nLAogICAgICAgICAgbmFtZTogJ0d1bGVsIEVudGVydGFpbm1lbnQnLAogICAgICAgICAgdXJsOiAnaHR0cHM6Ly90aGVndWxlbC5jb20nLAogICAgICAgICAgc2FtZUFzOiBbCiAgICAgICAgICAgIHByb2Nlc3MuZW52Lk5FWFRfUFVCTElDX0lOU1RBR1JBTV9VUkwsCiAgICAgICAgICAgIHByb2Nlc3MuZW52Lk5FWFRfUFVCTElDX1lPVVRVQkVfVVJMLAogICAgICAgICAgICBwcm9jZXNzLmVudi5ORVhUX1BVQkxJQ19UV0lUVEVSX1VSTCwKICAgICAgICAgICAgcHJvY2Vzcy5lbnYuTkVYVF9QVUJMSUNfRkFDRUJPT0tfVVJMLAogICAgICAgICAgXS5maWx0ZXIoQm9vbGVhbiksCiAgICAgICAgfSwKICAgICAgXSwKICAgIH07CiAgfQoKICByZXR1cm4gKAogICAgPHNjcmlwdAogICAgICB0eXBlPSJhcHBsaWNhdGlvbi9sZCtqc29uIgogICAgICBkYW5nZXJvdXNseVNldElubmVySFRNTD17eyBfX2h0bWw6IEpTT04uc3RyaW5naWZ5KHNjaGVtYSkgfX0KICAgIC8+CiAgKTsKfQo="}
+interface TVSeriesSchemaProps {
+  type: 'TVSeries';
+  name: string;
+  description: string;
+  image: string;
+  genre: string;
+  numberOfEpisodes: number;
+}
+
+interface WebSiteSchemaProps {
+  type: 'WebSite';
+}
+
+type StructuredDataProps = TVSeriesSchemaProps | WebSiteSchemaProps;
+
+export function StructuredData(props: StructuredDataProps) {
+  let schema: object;
+
+  if (props.type === 'TVSeries') {
+    schema = {
+      '@context': 'https://schema.org',
+      '@type': 'TVSeries',
+      name: props.name,
+      description: props.description,
+      image: props.image,
+      genre: props.genre,
+      numberOfEpisodes: props.numberOfEpisodes,
+      provider: {
+        '@type': 'Organization',
+        name: 'Gulel OTT',
+        url: 'https://thegulel.com',
+      },
+    };
+  } else {
+    schema = {
+      '@context': 'https://schema.org',
+      '@graph': [
+        {
+          '@type': 'WebSite',
+          name: 'Gulel OTT',
+          url: 'https://thegulel.com',
+          potentialAction: {
+            '@type': 'SearchAction',
+            target: 'https://thegulel.com/search?q={search_term}',
+            'query-input': 'required name=search_term',
+          },
+        },
+        {
+          '@type': 'Organization',
+          name: 'Gulel Entertainment',
+          url: 'https://thegulel.com',
+          sameAs: [
+            process.env.NEXT_PUBLIC_INSTAGRAM_URL,
+            process.env.NEXT_PUBLIC_YOUTUBE_URL,
+            process.env.NEXT_PUBLIC_TWITTER_URL,
+            process.env.NEXT_PUBLIC_FACEBOOK_URL,
+          ].filter(Boolean),
+        },
+      ],
+    };
+  }
+
+  return (
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+    />
+  );
+}

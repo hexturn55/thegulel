@@ -1,1 +1,267 @@
-{"data":"J3VzZSBjbGllbnQnOwoKaW1wb3J0IHsgdXNlRWZmZWN0LCB1c2VTdGF0ZSwgdXNlQ2FsbGJhY2sgfSBmcm9tICdyZWFjdCc7CmltcG9ydCB7IEJhckNoYXJ0MywgVHJlbmRpbmdVcCwgVXNlcnMsIFBsYXlDaXJjbGUsIERvbGxhclNpZ24sIEV5ZSB9IGZyb20gJ2x1Y2lkZS1yZWFjdCc7CmltcG9ydCBTdGF0Q2FyZCBmcm9tICdAL2NvbXBvbmVudHMvYWRtaW4vU3RhdENhcmQnOwppbXBvcnQgeyB1c2VUb2FzdCB9IGZyb20gJ0AvY29tcG9uZW50cy9hZG1pbi9Ub2FzdCc7Cgp0eXBlIFBlcmlvZCA9IDcgfCAzMCB8IDkwOwoKaW50ZXJmYWNlIEFuYWx5dGljc0RhdGEgewogIHBlcmlvZDogbnVtYmVyOwogIHNpZ251cHM6IHsgZGF0ZTogc3RyaW5nOyBjb3VudDogbnVtYmVyIH1bXTsKICB2aWV3czogeyBkYXRlOiBzdHJpbmc7IGNvdW50OiBudW1iZXIgfVtdOwogIHRvcFNlcmllczogeyBpZDogc3RyaW5nOyB0aXRsZTogc3RyaW5nOyB2aWV3czogbnVtYmVyOyByZXZlbnVlOiBudW1iZXIgfVtdOwogIHJldmVudWU6IHsgZGF0ZTogc3RyaW5nOyBhbW91bnQ6IG51bWJlciB9W107CiAgdG90YWxzOiB7CiAgICBzaWdudXBzOiBudW1iZXI7CiAgICB2aWV3czogbnVtYmVyOwogICAgcmV2ZW51ZTogbnVtYmVyOwogICAgYXZnRGFpbHlTaWdudXBzOiBudW1iZXI7CiAgICBhdmdEYWlseVZpZXdzOiBudW1iZXI7CiAgfTsKfQoKY29uc3QgUEVSSU9EX09QVElPTlM6IHsgbGFiZWw6IHN0cmluZzsgdmFsdWU6IFBlcmlvZCB9W10gPSBbCiAgeyBsYWJlbDogJzcgRGF5cycsIHZhbHVlOiA3IH0sCiAgeyBsYWJlbDogJzMwIERheXMnLCB2YWx1ZTogMzAgfSwKICB7IGxhYmVsOiAnOTAgRGF5cycsIHZhbHVlOiA5MCB9LApdOwoKZXhwb3J0IGRlZmF1bHQgZnVuY3Rpb24gQW5hbHl0aWNzUGFnZSgpIHsKICBjb25zdCB7IHRvYXN0IH0gPSB1c2VUb2FzdCgpOwogIGNvbnN0IFtwZXJpb2QsIHNldFBlcmlvZF0gPSB1c2VTdGF0ZTxQZXJpb2Q+KDMwKTsKICBjb25zdCBbZGF0YSwgc2V0RGF0YV0gPSB1c2VTdGF0ZTxBbmFseXRpY3NEYXRhIHwgbnVsbD4obnVsbCk7CiAgY29uc3QgW2xvYWRpbmcsIHNldExvYWRpbmddID0gdXNlU3RhdGUodHJ1ZSk7CgogIGNvbnN0IGZldGNoRGF0YSA9IHVzZUNhbGxiYWNrKGFzeW5jICgpID0+IHsKICAgIHNldExvYWRpbmcodHJ1ZSk7CiAgICB0cnkgewogICAgICBjb25zdCByZXMgPSBhd2FpdCBmZXRjaChgL2FwaS9hZG1pbi9hbmFseXRpY3M/cGVyaW9kPSR7cGVyaW9kfWApOwogICAgICBpZiAoIXJlcy5vaykgdGhyb3cgbmV3IEVycm9yKCk7CiAgICAgIHNldERhdGEoYXdhaXQgcmVzLmpzb24oKSk7CiAgICB9IGNhdGNoIHsKICAgICAgdG9hc3QoJ0ZhaWxlZCB0byBsb2FkIGFuYWx5dGljcycsICdlcnJvcicpOwogICAgfSBmaW5hbGx5IHsKICAgICAgc2V0TG9hZGluZyhmYWxzZSk7CiAgICB9CiAgfSwgW3BlcmlvZCwgdG9hc3RdKTsKCiAgdXNlRWZmZWN0KCgpID0+IHsgZmV0Y2hEYXRhKCk7IH0sIFtmZXRjaERhdGFdKTsKCiAgY29uc3QgZm9ybWF0Q3VycmVuY3kgPSAobjogbnVtYmVyKSA9PgogICAgbmV3IEludGwuTnVtYmVyRm9ybWF0KCdlbi1VUycsIHsgc3R5bGU6ICdjdXJyZW5jeScsIGN1cnJlbmN5OiAnVVNEJywgbWF4aW11bUZyYWN0aW9uRGlnaXRzOiAwIH0pLmZvcm1hdChuKTsKCiAgY29uc3QgZm9ybWF0RGF0ZSA9IChkOiBzdHJpbmcpID0+CiAgICBuZXcgRGF0ZShkKS50b0xvY2FsZURhdGVTdHJpbmcoJ2VuLVVTJywgeyBtb250aDogJ3Nob3J0JywgZGF5OiAnbnVtZXJpYycgfSk7CgogIHJldHVybiAoCiAgICA8ZGl2IGNsYXNzTmFtZT0ibWF4LXctN3hsIG14LWF1dG8gc3BhY2UteS02Ij4KICAgICAgey8qIEhlYWRlciAqL30KICAgICAgPGRpdiBjbGFzc05hbWU9ImZsZXggaXRlbXMtY2VudGVyIGp1c3RpZnktYmV0d2VlbiBnYXAtNCBmbGV4LXdyYXAiPgogICAgICAgIDxkaXY+CiAgICAgICAgICA8aDEgY2xhc3NOYW1lPSJ0ZXh0LTJ4bCBmb250LWJvbGQgdGV4dC13aGl0ZSI+QW5hbHl0aWNzPC9oMT4KICAgICAgICAgIDxwIGNsYXNzTmFtZT0idGV4dC1ncmF5LTUwMCB0ZXh0LXNtIG10LTAuNSI+UGxhdGZvcm0gcGVyZm9ybWFuY2Ugb3ZlcnZpZXc8L3A+CiAgICAgICAgPC9kaXY+CgogICAgICAgIHsvKiBQZXJpb2Qgc2VsZWN0b3IgKi99CiAgICAgICAgPGRpdiBjbGFzc05hbWU9ImZsZXggZ2FwLTIiPgogICAgICAgICAge1BFUklPRF9PUFRJT05TLm1hcCgoeyBsYWJlbCwgdmFsdWUgfSkgPT4gKAogICAgICAgICAgICA8YnV0dG9uCiAgICAgICAgICAgICAga2V5PXt2YWx1ZX0KICAgICAgICAgICAgICBvbkNsaWNrPXsoKSA9PiBzZXRQZXJpb2QodmFsdWUpfQogICAgICAgICAgICAgIGNsYXNzTmFtZT17YHB4LTMgcHktMiByb3VuZGVkLWxnIHRleHQteHMgZm9udC1tZWRpdW0gdHJhbnNpdGlvbi1jb2xvcnMgJHsKICAgICAgICAgICAgICAgIHBlcmlvZCA9PT0gdmFsdWUKICAgICAgICAgICAgICAgICAgPyAnYmctcmVkLTYwMCB0ZXh0LXdoaXRlJwogICAgICAgICAgICAgICAgICA6ICdiZy1ncmF5LTkwMCBib3JkZXIgYm9yZGVyLWdyYXktODAwIHRleHQtZ3JheS00MDAgaG92ZXI6YmctZ3JheS04MDAgaG92ZXI6dGV4dC13aGl0ZScKICAgICAgICAgICAgICB9YH0KICAgICAgICAgICAgPgogICAgICAgICAgICAgIHtsYWJlbH0KICAgICAgICAgICAgPC9idXR0b24+CiAgICAgICAgICApKX0KICAgICAgICA8L2Rpdj4KICAgICAgPC9kaXY+CgogICAgICB7LyogU3VtbWFyeSBzdGF0cyAqL30KICAgICAgPGRpdiBjbGFzc05hbWU9ImdyaWQgZ3JpZC1jb2xzLTEgc206Z3JpZC1jb2xzLTIgeGw6Z3JpZC1jb2xzLTMgZ2FwLTQiPgogICAgICAgIDxTdGF0Q2FyZAogICAgICAgICAgdGl0bGU9e2BTaWdudXBzICgke3BlcmlvZH1kKWB9CiAgICAgICAgICB2YWx1ZT17bG9hZGluZyA/ICfigJQnIDogKGRhdGE/LnRvdGFscy5zaWdudXBzID8/IDApLnRvTG9jYWxlU3RyaW5nKCl9CiAgICAgICAgICBzdWJ0aXRsZT17ZGF0YSA/IGB+JHtkYXRhLnRvdGFscy5hdmdEYWlseVNpZ251cHMudG9GaXhlZCgxKX0vZGF5IGF2Z2AgOiB1bmRlZmluZWR9CiAgICAgICAgICBpY29uPXtVc2Vyc30KICAgICAgICAgIGljb25Db2xvcj0idGV4dC1ibHVlLTQwMCIKICAgICAgICAvPgogICAgICAgIDxTdGF0Q2FyZAogICAgICAgICAgdGl0bGU9e2BWaWV3cyAoJHtwZXJpb2R9ZClgfQogICAgICAgICAgdmFsdWU9e2xvYWRpbmcgPyAn4oCUJyA6IChkYXRhPy50b3RhbHMudmlld3MgPz8gMCkudG9Mb2NhbGVTdHJpbmcoKX0KICAgICAgICAgIHN1YnRpdGxlPXtkYXRhID8gYH4ke2RhdGEudG90YWxzLmF2Z0RhaWx5Vmlld3MudG9GaXhlZCgxKX0vZGF5IGF2Z2AgOiB1bmRlZmluZWR9CiAgICAgICAgICBpY29uPXtQbGF5Q2lyY2xlfQogICAgICAgICAgaWNvbkNvbG9yPSJ0ZXh0LWdyZWVuLTQwMCIKICAgICAgICAvPgogICAgICAgIDxTdGF0Q2FyZAogICAgICAgICAgdGl0bGU9e2BSZXZlbnVlICgke3BlcmlvZH1kKWB9CiAgICAgICAgICB2YWx1ZT17bG9hZGluZyA/ICfigJQnIDogZm9ybWF0Q3VycmVuY3koZGF0YT8udG90YWxzLnJldmVudWUgPz8gMCl9CiAgICAgICAgICBpY29uPXtEb2xsYXJTaWdufQogICAgICAgICAgaWNvbkNvbG9yPSJ0ZXh0LXllbGxvdy00MDAiCiAgICAgICAgLz4KICAgICAgPC9kaXY+CgogICAgICA8ZGl2IGNsYXNzTmFtZT0iZ3JpZCBncmlkLWNvbHMtMSBsZzpncmlkLWNvbHMtMiBnYXAtNiI+CiAgICAgICAgey8qIFNpZ251cHMgb3ZlciB0aW1lICovfQogICAgICAgIDxkaXYgY2xhc3NOYW1lPSJiZy1ncmF5LTkwMCBib3JkZXIgYm9yZGVyLWdyYXktODAwIHJvdW5kZWQteGwgcC01Ij4KICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPSJmbGV4IGl0ZW1zLWNlbnRlciBnYXAtMiBtYi01Ij4KICAgICAgICAgICAgPFVzZXJzIHNpemU9ezE1fSBjbGFzc05hbWU9InRleHQtYmx1ZS00MDAiIC8+CiAgICAgICAgICAgIDxoMiBjbGFzc05hbWU9InRleHQtc20gZm9udC1zZW1pYm9sZCB0ZXh0LWdyYXktMzAwIj5TaWdudXBzIE92ZXIgVGltZTwvaDI+CiAgICAgICAgICA8L2Rpdj4KCiAgICAgICAgICB7bG9hZGluZyA/ICgKICAgICAgICAgICAgPGRpdiBjbGFzc05hbWU9InNwYWNlLXktMiI+CiAgICAgICAgICAgICAge0FycmF5LmZyb20oeyBsZW5ndGg6IDcgfSkubWFwKChfLCBpKSA9PiAoCiAgICAgICAgICAgICAgICA8ZGl2IGtleT17aX0gY2xhc3NOYW1lPSJoLTYgYmctZ3JheS04MDAgcm91bmRlZCBhbmltYXRlLXB1bHNlIiAvPgogICAgICAgICAgICAgICkpfQogICAgICAgICAgICA8L2Rpdj4KICAgICAgICAgICkgOiAhZGF0YT8uc2lnbnVwcz8ubGVuZ3RoID8gKAogICAgICAgICAgICA8cCBjbGFzc05hbWU9InRleHQtZ3JheS02MDAgdGV4dC1zbSB0ZXh0LWNlbnRlciBweS04Ij5ObyBzaWdudXAgZGF0YSBmb3IgdGhpcyBwZXJpb2QuPC9wPgogICAgICAgICAgKSA6ICgKICAgICAgICAgICAgPEJhckxpc3QKICAgICAgICAgICAgICBkYXRhPXtkYXRhLnNpZ251cHMuc2xpY2UoLTE0KS5tYXAoKHMpID0+ICh7CiAgICAgICAgICAgICAgICBsYWJlbDogZm9ybWF0RGF0ZShzLmRhdGUpLAogICAgICAgICAgICAgICAgdmFsdWU6IHMuY291bnQsCiAgICAgICAgICAgICAgfSkpfQogICAgICAgICAgICAgIGNvbG9yPSJiZy1ibHVlLTYwMCIKICAgICAgICAgICAgLz4KICAgICAgICAgICl9CiAgICAgICAgPC9kaXY+CgogICAgICAgIHsvKiBWaWV3cyBvdmVyIHRpbWUgKi99CiAgICAgICAgPGRpdiBjbGFzc05hbWU9ImJnLWdyYXktOTAwIGJvcmRlciBib3JkZXItZ3JheS04MDAgcm91bmRlZC14bCBwLTUiPgogICAgICAgICAgPGRpdiBjbGFzc05hbWU9ImZsZXggaXRlbXMtY2VudGVyIGdhcC0yIG1iLTUiPgogICAgICAgICAgICA8RXllIHNpemU9ezE1fSBjbGFzc05hbWU9InRleHQtZ3JlZW4tNDAwIiAvPgogICAgICAgICAgICA8aDIgY2xhc3NOYW1lPSJ0ZXh0LXNtIGZvbnQtc2VtaWJvbGQgdGV4dC1ncmF5LTMwMCI+Vmlld3MgT3ZlciBUaW1lPC9oMj4KICAgICAgICAgIDwvZGl2PgoKICAgICAgICAgIHtsb2FkaW5nID8gKAogICAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT0ic3BhY2UteS0yIj4KICAgICAgICAgICAgICB7QXJyYXkuZnJvbSh7IGxlbmd0aDogNyB9KS5tYXAoKF8sIGkpID0+ICgKICAgICAgICAgICAgICAgIDxkaXYga2V5PXtpfSBjbGFzc05hbWU9ImgtNiBiZy1ncmF5LTgwMCByb3VuZGVkIGFuaW1hdGUtcHVsc2UiIC8+CiAgICAgICAgICAgICAgKSl9CiAgICAgICAgICAgIDwvZGl2PgogICAgICAgICAgKSA6ICFkYXRhPy52aWV3cz8ubGVuZ3RoID8gKAogICAgICAgICAgICA8cCBjbGFzc05hbWU9InRleHQtZ3JheS02MDAgdGV4dC1zbSB0ZXh0LWNlbnRlciBweS04Ij5ObyB2aWV3IGRhdGEgZm9yIHRoaXMgcGVyaW9kLjwvcD4KICAgICAgICAgICkgOiAoCiAgICAgICAgICAgIDxCYXJMaXN0CiAgICAgICAgICAgICAgZGF0YT17ZGF0YS52aWV3cy5zbGljZSgtMTQpLm1hcCgocykgPT4gKHsKICAgICAgICAgICAgICAgIGxhYmVsOiBmb3JtYXREYXRlKHMuZGF0ZSksCiAgICAgICAgICAgICAgICB2YWx1ZTogcy5jb3VudCwKICAgICAgICAgICAgICB9KSl9CiAgICAgICAgICAgICAgY29sb3I9ImJnLWdyZWVuLTYwMCIKICAgICAgICAgICAgLz4KICAgICAgICAgICl9CiAgICAgICAgPC9kaXY+CiAgICAgIDwvZGl2PgoKICAgICAgey8qIFRvcCBTZXJpZXMgKi99CiAgICAgIDxkaXYgY2xhc3NOYW1lPSJiZy1ncmF5LTkwMCBib3JkZXIgYm9yZGVyLWdyYXktODAwIHJvdW5kZWQteGwgcC01Ij4KICAgICAgICA8ZGl2IGNsYXNzTmFtZT0iZmxleCBpdGVtcy1jZW50ZXIgZ2FwLTIgbWItNSI+CiAgICAgICAgICA8VHJlbmRpbmdVcCBzaXplPXsxNX0gY2xhc3NOYW1lPSJ0ZXh0LXJlZC00MDAiIC8+CiAgICAgICAgICA8aDIgY2xhc3NOYW1lPSJ0ZXh0LXNtIGZvbnQtc2VtaWJvbGQgdGV4dC1ncmF5LTMwMCI+VG9wIFNlcmllcyBieSBWaWV3czwvaDI+CiAgICAgICAgPC9kaXY+CgogICAgICAgIHtsb2FkaW5nID8gKAogICAgICAgICAgPGRpdiBjbGFzc05hbWU9InNwYWNlLXktMyI+CiAgICAgICAgICAgIHtBcnJheS5mcm9tKHsgbGVuZ3RoOiA1IH0pLm1hcCgoXywgaSkgPT4gKAogICAgICAgICAgICAgIDxkaXYga2V5PXtpfSBjbGFzc05hbWU9ImgtMTAgYmctZ3JheS04MDAgcm91bmRlZC1sZyBhbmltYXRlLXB1bHNlIiAvPgogICAgICAgICAgICApKX0KICAgICAgICAgIDwvZGl2PgogICAgICAgICkgOiAhZGF0YT8udG9wU2VyaWVzPy5sZW5ndGggPyAoCiAgICAgICAgICA8cCBjbGFzc05hbWU9InRleHQtZ3JheS02MDAgdGV4dC1zbSB0ZXh0LWNlbnRlciBweS04Ij5ObyBzZXJpZXMgZGF0YSBhdmFpbGFibGUuPC9wPgogICAgICAgICkgOiAoCiAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT0ic3BhY2UteS0zIj4KICAgICAgICAgICAge2RhdGEudG9wU2VyaWVzLm1hcCgoc2VyaWVzLCBpKSA9PiB7CiAgICAgICAgICAgICAgY29uc3QgbWF4Vmlld3MgPSBkYXRhLnRvcFNlcmllc1swXT8udmlld3MgPz8gMTsKICAgICAgICAgICAgICBjb25zdCBwY3QgPSBtYXhWaWV3cyA+IDAgPyAoc2VyaWVzLnZpZXdzIC8gbWF4Vmlld3MpICogMTAwIDogMDsKICAgICAgICAgICAgICByZXR1cm4gKAogICAgICAgICAgICAgICAgPGRpdiBrZXk9e3Nlcmllcy5pZH0gY2xhc3NOYW1lPSJmbGV4IGl0ZW1zLWNlbnRlciBnYXAtNCI+CiAgICAgICAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPSJ3LTYgdGV4dC1jZW50ZXIgdGV4dC1zbSBmb250LWJvbGQgdGV4dC1ncmF5LTYwMCI+e2kgKyAxfTwvZGl2PgogICAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT0iZmxleC0xIG1pbi13LTAiPgogICAgICAgICAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPSJmbGV4IGp1c3RpZnktYmV0d2VlbiBpdGVtcy1jZW50ZXIgbWItMSI+CiAgICAgICAgICAgICAgICAgICAgICA8c3BhbiBjbGFzc05hbWU9InRleHQtc20gdGV4dC13aGl0ZSB0cnVuY2F0ZSI+e3Nlcmllcy50aXRsZX08L3NwYW4+CiAgICAgICAgICAgICAgICAgICAgICA8c3BhbiBjbGFzc05hbWU9InRleHQteHMgdGV4dC1ncmF5LTQwMCBzaHJpbmstMCBtbC0yIj4KICAgICAgICAgICAgICAgICAgICAgICAge3Nlcmllcy52aWV3cy50b0xvY2FsZVN0cmluZygpfSB2aWV3cwogICAgICAgICAgICAgICAgICAgICAgPC9zcGFuPgogICAgICAgICAgICAgICAgICAgIDwvZGl2PgogICAgICAgICAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPSJoLTEuNSBiZy1ncmF5LTgwMCByb3VuZGVkLWZ1bGwgb3ZlcmZsb3ctaGlkZGVuIj4KICAgICAgICAgICAgICAgICAgICAgIDxkaXYKICAgICAgICAgICAgICAgICAgICAgICAgY2xhc3NOYW1lPSJoLWZ1bGwgYmctcmVkLTYwMCByb3VuZGVkLWZ1bGwgdHJhbnNpdGlvbi1hbGwiCiAgICAgICAgICAgICAgICAgICAgICAgIHN0eWxlPXt7IHdpZHRoOiBgJHtwY3R9JWAgfX0KICAgICAgICAgICAgICAgICAgICAgIC8+CiAgICAgICAgICAgICAgICAgICAgPC9kaXY+CiAgICAgICAgICAgICAgICAgIDwvZGl2PgogICAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT0idGV4dC14cyB0ZXh0LXllbGxvdy00MDAgZm9udC1tZWRpdW0gc2hyaW5rLTAgdy0xNiB0ZXh0LXJpZ2h0Ij4KICAgICAgICAgICAgICAgICAgICB7Zm9ybWF0Q3VycmVuY3koc2VyaWVzLnJldmVudWUpfQogICAgICAgICAgICAgICAgICA8L2Rpdj4KICAgICAgICAgICAgICAgIDwvZGl2PgogICAgICAgICAgICAgICk7CiAgICAgICAgICAgIH0pfQogICAgICAgICAgPC9kaXY+CiAgICAgICAgKX0KICAgICAgPC9kaXY+CgogICAgICB7LyogUmV2ZW51ZSBvdmVyIHRpbWUgKi99CiAgICAgIDxkaXYgY2xhc3NOYW1lPSJiZy1ncmF5LTkwMCBib3JkZXIgYm9yZGVyLWdyYXktODAwIHJvdW5kZWQteGwgcC01Ij4KICAgICAgICA8ZGl2IGNsYXNzTmFtZT0iZmxleCBpdGVtcy1jZW50ZXIgZ2FwLTIgbWItNSI+CiAgICAgICAgICA8RG9sbGFyU2lnbiBzaXplPXsxNX0gY2xhc3NOYW1lPSJ0ZXh0LXllbGxvdy00MDAiIC8+CiAgICAgICAgICA8aDIgY2xhc3NOYW1lPSJ0ZXh0LXNtIGZvbnQtc2VtaWJvbGQgdGV4dC1ncmF5LTMwMCI+UmV2ZW51ZSBPdmVyIFRpbWU8L2gyPgogICAgICAgIDwvZGl2PgoKICAgICAgICB7bG9hZGluZyA/ICgKICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPSJzcGFjZS15LTIiPgogICAgICAgICAgICB7QXJyYXkuZnJvbSh7IGxlbmd0aDogNyB9KS5tYXAoKF8sIGkpID0+ICgKICAgICAgICAgICAgICA8ZGl2IGtleT17aX0gY2xhc3NOYW1lPSJoLTYgYmctZ3JheS04MDAgcm91bmRlZCBhbmltYXRlLXB1bHNlIiAvPgogICAgICAgICAgICApKX0KICAgICAgICAgIDwvZGl2PgogICAgICAgICkgOiAhZGF0YT8ucmV2ZW51ZT8ubGVuZ3RoID8gKAogICAgICAgICAgPHAgY2xhc3NOYW1lPSJ0ZXh0LWdyYXktNjAwIHRleHQtc20gdGV4dC1jZW50ZXIgcHktOCI+Tm8gcmV2ZW51ZSBkYXRhIGZvciB0aGlzIHBlcmlvZC48L3A+CiAgICAgICAgKSA6ICgKICAgICAgICAgIDxCYXJMaXN0CiAgICAgICAgICAgIGRhdGE9e2RhdGEucmV2ZW51ZS5zbGljZSgtMTQpLm1hcCgocykgPT4gKHsKICAgICAgICAgICAgICBsYWJlbDogZm9ybWF0RGF0ZShzLmRhdGUpLAogICAgICAgICAgICAgIHZhbHVlOiBzLmFtb3VudCwKICAgICAgICAgICAgICBmb3JtYXR0ZWQ6IGZvcm1hdEN1cnJlbmN5KHMuYW1vdW50KSwKICAgICAgICAgICAgfSkpfQogICAgICAgICAgICBjb2xvcj0iYmcteWVsbG93LTYwMCIKICAgICAgICAgIC8+CiAgICAgICAgKX0KICAgICAgPC9kaXY+CiAgICA8L2Rpdj4KICApOwp9CgppbnRlcmZhY2UgQmFyTGlzdEl0ZW0gewogIGxhYmVsOiBzdHJpbmc7CiAgdmFsdWU6IG51bWJlcjsKICBmb3JtYXR0ZWQ/OiBzdHJpbmc7Cn0KCmZ1bmN0aW9uIEJhckxpc3QoeyBkYXRhLCBjb2xvciB9OiB7IGRhdGE6IEJhckxpc3RJdGVtW107IGNvbG9yOiBzdHJpbmcgfSkgewogIGNvbnN0IG1heCA9IE1hdGgubWF4KC4uLmRhdGEubWFwKChkKSA9PiBkLnZhbHVlKSwgMSk7CgogIHJldHVybiAoCiAgICA8ZGl2IGNsYXNzTmFtZT0ic3BhY2UteS0yIj4KICAgICAge2RhdGEubWFwKChpdGVtLCBpKSA9PiAoCiAgICAgICAgPGRpdiBrZXk9e2l9IGNsYXNzTmFtZT0iZmxleCBpdGVtcy1jZW50ZXIgZ2FwLTMiPgogICAgICAgICAgPGRpdiBjbGFzc05hbWU9InctMTYgdGV4dC14cyB0ZXh0LWdyYXktNTAwIHRleHQtcmlnaHQgc2hyaW5rLTAiPntpdGVtLmxhYmVsfTwvZGl2PgogICAgICAgICAgPGRpdiBjbGFzc05hbWU9ImZsZXgtMSBoLTUgYmctZ3JheS04MDAgcm91bmRlZC1tZCBvdmVyZmxvdy1oaWRkZW4iPgogICAgICAgICAgICA8ZGl2CiAgICAgICAgICAgICAgY2xhc3NOYW1lPXtgaC1mdWxsICR7Y29sb3J9IHJvdW5kZWQtbWQgdHJhbnNpdGlvbi1hbGxgfQogICAgICAgICAgICAgIHN0eWxlPXt7IHdpZHRoOiBgJHsoaXRlbS52YWx1ZSAvIG1heCkgKiAxMDB9JWAsIG1pbldpZHRoOiBpdGVtLnZhbHVlID4gMCA/ICc0cHgnIDogJzAnIH19CiAgICAgICAgICAgIC8+CiAgICAgICAgICA8L2Rpdj4KICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPSJ3LTE0IHRleHQteHMgdGV4dC1ncmF5LTQwMCB0ZXh0LXJpZ2h0IHNocmluay0wIj4KICAgICAgICAgICAge2l0ZW0uZm9ybWF0dGVkID8/IGl0ZW0udmFsdWUudG9Mb2NhbGVTdHJpbmcoKX0KICAgICAgICAgIDwvZGl2PgogICAgICAgIDwvZGl2PgogICAgICApKX0KICAgIDwvZGl2PgogICk7Cn0K"}
+'use client';
+
+import { useEffect, useState, useCallback } from 'react';
+import { BarChart3, TrendingUp, Users, PlayCircle, DollarSign, Eye } from 'lucide-react';
+import StatCard from '@/components/admin/StatCard';
+import { useToast } from '@/components/admin/Toast';
+
+type Period = 7 | 30 | 90;
+
+interface AnalyticsData {
+  period: number;
+  signups: { date: string; count: number }[];
+  views: { date: string; count: number }[];
+  topSeries: { id: string; title: string; views: number; revenue: number }[];
+  revenue: { date: string; amount: number }[];
+  totals: {
+    signups: number;
+    views: number;
+    revenue: number;
+    avgDailySignups: number;
+    avgDailyViews: number;
+  };
+}
+
+const PERIOD_OPTIONS: { label: string; value: Period }[] = [
+  { label: '7 Days', value: 7 },
+  { label: '30 Days', value: 30 },
+  { label: '90 Days', value: 90 },
+];
+
+export default function AnalyticsPage() {
+  const { toast } = useToast();
+  const [period, setPeriod] = useState<Period>(30);
+  const [data, setData] = useState<AnalyticsData | null>(null);
+  const [loading, setLoading] = useState(true);
+
+  const fetchData = useCallback(async () => {
+    setLoading(true);
+    try {
+      const res = await fetch(`/api/admin/analytics?period=${period}`);
+      if (!res.ok) throw new Error();
+      setData(await res.json());
+    } catch {
+      toast('Failed to load analytics', 'error');
+    } finally {
+      setLoading(false);
+    }
+  }, [period, toast]);
+
+  useEffect(() => { fetchData(); }, [fetchData]);
+
+  const formatCurrency = (n: number) =>
+    new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD', maximumFractionDigits: 0 }).format(n);
+
+  const formatDate = (d: string) =>
+    new Date(d).toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
+
+  return (
+    <div className="max-w-7xl mx-auto space-y-6">
+      {/* Header */}
+      <div className="flex items-center justify-between gap-4 flex-wrap">
+        <div>
+          <h1 className="text-2xl font-bold text-white">Analytics</h1>
+          <p className="text-gray-500 text-sm mt-0.5">Platform performance overview</p>
+        </div>
+
+        {/* Period selector */}
+        <div className="flex gap-2">
+          {PERIOD_OPTIONS.map(({ label, value }) => (
+            <button
+              key={value}
+              onClick={() => setPeriod(value)}
+              className={`px-3 py-2 rounded-lg text-xs font-medium transition-colors ${
+                period === value
+                  ? 'bg-red-600 text-white'
+                  : 'bg-gray-900 border border-gray-800 text-gray-400 hover:bg-gray-800 hover:text-white'
+              }`}
+            >
+              {label}
+            </button>
+          ))}
+        </div>
+      </div>
+
+      {/* Summary stats */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-4">
+        <StatCard
+          title={`Signups (${period}d)`}
+          value={loading ? '—' : (data?.totals.signups ?? 0).toLocaleString()}
+          subtitle={data ? `~${data.totals.avgDailySignups.toFixed(1)}/day avg` : undefined}
+          icon={Users}
+          iconColor="text-blue-400"
+        />
+        <StatCard
+          title={`Views (${period}d)`}
+          value={loading ? '—' : (data?.totals.views ?? 0).toLocaleString()}
+          subtitle={data ? `~${data.totals.avgDailyViews.toFixed(1)}/day avg` : undefined}
+          icon={PlayCircle}
+          iconColor="text-green-400"
+        />
+        <StatCard
+          title={`Revenue (${period}d)`}
+          value={loading ? '—' : formatCurrency(data?.totals.revenue ?? 0)}
+          icon={DollarSign}
+          iconColor="text-yellow-400"
+        />
+      </div>
+
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+        {/* Signups over time */}
+        <div className="bg-gray-900 border border-gray-800 rounded-xl p-5">
+          <div className="flex items-center gap-2 mb-5">
+            <Users size={15} className="text-blue-400" />
+            <h2 className="text-sm font-semibold text-gray-300">Signups Over Time</h2>
+          </div>
+
+          {loading ? (
+            <div className="space-y-2">
+              {Array.from({ length: 7 }).map((_, i) => (
+                <div key={i} className="h-6 bg-gray-800 rounded animate-pulse" />
+              ))}
+            </div>
+          ) : !data?.signups?.length ? (
+            <p className="text-gray-600 text-sm text-center py-8">No signup data for this period.</p>
+          ) : (
+            <BarList
+              data={data.signups.slice(-14).map((s) => ({
+                label: formatDate(s.date),
+                value: s.count,
+              }))}
+              color="bg-blue-600"
+            />
+          )}
+        </div>
+
+        {/* Views over time */}
+        <div className="bg-gray-900 border border-gray-800 rounded-xl p-5">
+          <div className="flex items-center gap-2 mb-5">
+            <Eye size={15} className="text-green-400" />
+            <h2 className="text-sm font-semibold text-gray-300">Views Over Time</h2>
+          </div>
+
+          {loading ? (
+            <div className="space-y-2">
+              {Array.from({ length: 7 }).map((_, i) => (
+                <div key={i} className="h-6 bg-gray-800 rounded animate-pulse" />
+              ))}
+            </div>
+          ) : !data?.views?.length ? (
+            <p className="text-gray-600 text-sm text-center py-8">No view data for this period.</p>
+          ) : (
+            <BarList
+              data={data.views.slice(-14).map((s) => ({
+                label: formatDate(s.date),
+                value: s.count,
+              }))}
+              color="bg-green-600"
+            />
+          )}
+        </div>
+      </div>
+
+      {/* Top Series */}
+      <div className="bg-gray-900 border border-gray-800 rounded-xl p-5">
+        <div className="flex items-center gap-2 mb-5">
+          <TrendingUp size={15} className="text-red-400" />
+          <h2 className="text-sm font-semibold text-gray-300">Top Series by Views</h2>
+        </div>
+
+        {loading ? (
+          <div className="space-y-3">
+            {Array.from({ length: 5 }).map((_, i) => (
+              <div key={i} className="h-10 bg-gray-800 rounded-lg animate-pulse" />
+            ))}
+          </div>
+        ) : !data?.topSeries?.length ? (
+          <p className="text-gray-600 text-sm text-center py-8">No series data available.</p>
+        ) : (
+          <div className="space-y-3">
+            {data.topSeries.map((series, i) => {
+              const maxViews = data.topSeries[0]?.views ?? 1;
+              const pct = maxViews > 0 ? (series.views / maxViews) * 100 : 0;
+              return (
+                <div key={series.id} className="flex items-center gap-4">
+                  <div className="w-6 text-center text-sm font-bold text-gray-600">{i + 1}</div>
+                  <div className="flex-1 min-w-0">
+                    <div className="flex justify-between items-center mb-1">
+                      <span className="text-sm text-white truncate">{series.title}</span>
+                      <span className="text-xs text-gray-400 shrink-0 ml-2">
+                        {series.views.toLocaleString()} views
+                      </span>
+                    </div>
+                    <div className="h-1.5 bg-gray-800 rounded-full overflow-hidden">
+                      <div
+                        className="h-full bg-red-600 rounded-full transition-all"
+                        style={{ width: `${pct}%` }}
+                      />
+                    </div>
+                  </div>
+                  <div className="text-xs text-yellow-400 font-medium shrink-0 w-16 text-right">
+                    {formatCurrency(series.revenue)}
+                  </div>
+                </div>
+              );
+            })}
+          </div>
+        )}
+      </div>
+
+      {/* Revenue over time */}
+      <div className="bg-gray-900 border border-gray-800 rounded-xl p-5">
+        <div className="flex items-center gap-2 mb-5">
+          <DollarSign size={15} className="text-yellow-400" />
+          <h2 className="text-sm font-semibold text-gray-300">Revenue Over Time</h2>
+        </div>
+
+        {loading ? (
+          <div className="space-y-2">
+            {Array.from({ length: 7 }).map((_, i) => (
+              <div key={i} className="h-6 bg-gray-800 rounded animate-pulse" />
+            ))}
+          </div>
+        ) : !data?.revenue?.length ? (
+          <p className="text-gray-600 text-sm text-center py-8">No revenue data for this period.</p>
+        ) : (
+          <BarList
+            data={data.revenue.slice(-14).map((s) => ({
+              label: formatDate(s.date),
+              value: s.amount,
+              formatted: formatCurrency(s.amount),
+            }))}
+            color="bg-yellow-600"
+          />
+        )}
+      </div>
+    </div>
+  );
+}
+
+interface BarListItem {
+  label: string;
+  value: number;
+  formatted?: string;
+}
+
+function BarList({ data, color }: { data: BarListItem[]; color: string }) {
+  const max = Math.max(...data.map((d) => d.value), 1);
+
+  return (
+    <div className="space-y-2">
+      {data.map((item, i) => (
+        <div key={i} className="flex items-center gap-3">
+          <div className="w-16 text-xs text-gray-500 text-right shrink-0">{item.label}</div>
+          <div className="flex-1 h-5 bg-gray-800 rounded-md overflow-hidden">
+            <div
+              className={`h-full ${color} rounded-md transition-all`}
+              style={{ width: `${(item.value / max) * 100}%`, minWidth: item.value > 0 ? '4px' : '0' }}
+            />
+          </div>
+          <div className="w-14 text-xs text-gray-400 text-right shrink-0">
+            {item.formatted ?? item.value.toLocaleString()}
+          </div>
+        </div>
+      ))}
+    </div>
+  );
+}

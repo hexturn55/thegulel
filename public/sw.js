@@ -1,1 +1,111 @@
-{"data":"Y29uc3QgQ0FDSEVfTkFNRSA9ICdndWxlbC1vdHQtdjEnOwpjb25zdCBPRkZMSU5FX1VSTCA9ICcvb2ZmbGluZSc7CgovLyBBcHAgc2hlbGwgZmlsZXMgdG8gY2FjaGUgaW1tZWRpYXRlbHkKY29uc3QgQVBQX1NIRUxMID0gWwogICcvJywKICAnL29mZmxpbmUnLAogICcvbWFuaWZlc3QuanNvbicsCiAgJy9pY29ucy9pY29uLnN2ZycsCiAgJy9pY29ucy9pY29uLTE5Mi5wbmcnLAogICcvaWNvbnMvaWNvbi01MTIucG5nJywKXTsKCi8vIOKUgOKUgCBJbnN0YWxsIOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgApzZWxmLmFkZEV2ZW50TGlzdGVuZXIoJ2luc3RhbGwnLCAoZXZlbnQpID0+IHsKICBldmVudC53YWl0VW50aWwoCiAgICBjYWNoZXMub3BlbihDQUNIRV9OQU1FKS50aGVuKChjYWNoZSkgPT4gY2FjaGUuYWRkQWxsKEFQUF9TSEVMTCkpCiAgKTsKICBzZWxmLnNraXBXYWl0aW5nKCk7Cn0pOwoKLy8g4pSA4pSAIEFjdGl2YXRlIOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgApzZWxmLmFkZEV2ZW50TGlzdGVuZXIoJ2FjdGl2YXRlJywgKGV2ZW50KSA9PiB7CiAgZXZlbnQud2FpdFVudGlsKAogICAgY2FjaGVzLmtleXMoKS50aGVuKChrZXlzKSA9PgogICAgICBQcm9taXNlLmFsbChrZXlzLmZpbHRlcigoaykgPT4gayAhPT0gQ0FDSEVfTkFNRSkubWFwKChrKSA9PiBjYWNoZXMuZGVsZXRlKGspKSkKICAgICkKICApOwogIHNlbGYuY2xpZW50cy5jbGFpbSgpOwp9KTsKCi8vIOKUgOKUgCBGZXRjaCDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIAKc2VsZi5hZGRFdmVudExpc3RlbmVyKCdmZXRjaCcsIChldmVudCkgPT4gewogIGNvbnN0IHsgcmVxdWVzdCB9ID0gZXZlbnQ7CiAgY29uc3QgdXJsID0gbmV3IFVSTChyZXF1ZXN0LnVybCk7CgogIC8vIERvbid0IGludGVyY2VwdCBub24tR0VUIHJlcXVlc3RzCiAgaWYgKHJlcXVlc3QubWV0aG9kICE9PSAnR0VUJykgcmV0dXJuOwoKICAvLyBEb24ndCBjYWNoZSB2aWRlbyBzdHJlYW1zIChtM3U4LCB0cyBzZWdtZW50cywgbXA0LCB3ZWJtKQogIGlmICgvXC4obTN1OHx0c3xtcDR8d2VibXxtb3Z8YXZpKShcPy4qKT8kLy50ZXN0KHVybC5wYXRobmFtZSkpIHJldHVybjsKCiAgLy8gRG9uJ3QgY2FjaGUgY2hyb21lLWV4dGVuc2lvbiBvciBub24taHR0cChzKQogIGlmICghdXJsLnByb3RvY29sLnN0YXJ0c1dpdGgoJ2h0dHAnKSkgcmV0dXJuOwoKICAvLyBBUEkgY2FsbHMg4oaSIE5ldHdvcmstZmlyc3QsIGZhbGwgYmFjayB0byBjYWNoZQogIGlmICh1cmwucGF0aG5hbWUuc3RhcnRzV2l0aCgnL2FwaS8nKSkgewogICAgZXZlbnQucmVzcG9uZFdpdGgobmV0d29ya0ZpcnN0KHJlcXVlc3QpKTsKICAgIHJldHVybjsKICB9CgogIC8vIFN0YXRpYyBhc3NldHMgKEpTLCBDU1MsIGZvbnRzLCBpbWFnZXMpIOKGkiBDYWNoZS1maXJzdAogIGlmICgKICAgIHVybC5wYXRobmFtZS5zdGFydHNXaXRoKCcvX25leHQvc3RhdGljLycpIHx8CiAgICB1cmwucGF0aG5hbWUuc3RhcnRzV2l0aCgnL2ljb25zLycpIHx8CiAgICAvXC4ocG5nfGpwZ3xqcGVnfGdpZnxzdmd8d2VicHx3b2ZmMj98aWNvKSQvLnRlc3QodXJsLnBhdGhuYW1lKQogICkgewogICAgZXZlbnQucmVzcG9uZFdpdGgoY2FjaGVGaXJzdChyZXF1ZXN0KSk7CiAgICByZXR1cm47CiAgfQoKICAvLyBIVE1MIHBhZ2VzIOKGkiBOZXR3b3JrLWZpcnN0IHdpdGggb2ZmbGluZSBmYWxsYmFjawogIGV2ZW50LnJlc3BvbmRXaXRoKG5ldHdvcmtGaXJzdFdpdGhPZmZsaW5lRmFsbGJhY2socmVxdWVzdCkpOwp9KTsKCi8vIOKUgOKUgCBTdHJhdGVnaWVzIOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgAoKYXN5bmMgZnVuY3Rpb24gbmV0d29ya0ZpcnN0KHJlcXVlc3QpIHsKICB0cnkgewogICAgY29uc3QgcmVzcG9uc2UgPSBhd2FpdCBmZXRjaChyZXF1ZXN0KTsKICAgIGNvbnN0IGNhY2hlID0gYXdhaXQgY2FjaGVzLm9wZW4oQ0FDSEVfTkFNRSk7CiAgICBjYWNoZS5wdXQocmVxdWVzdCwgcmVzcG9uc2UuY2xvbmUoKSk7CiAgICByZXR1cm4gcmVzcG9uc2U7CiAgfSBjYXRjaCB7CiAgICBjb25zdCBjYWNoZWQgPSBhd2FpdCBjYWNoZXMubWF0Y2gocmVxdWVzdCk7CiAgICByZXR1cm4gY2FjaGVkID8/IG5ldyBSZXNwb25zZShKU09OLnN0cmluZ2lmeSh7IGVycm9yOiAnT2ZmbGluZScgfSksIHsKICAgICAgc3RhdHVzOiA1MDMsCiAgICAgIGhlYWRlcnM6IHsgJ0NvbnRlbnQtVHlwZSc6ICdhcHBsaWNhdGlvbi9qc29uJyB9LAogICAgfSk7CiAgfQp9Cgphc3luYyBmdW5jdGlvbiBjYWNoZUZpcnN0KHJlcXVlc3QpIHsKICBjb25zdCBjYWNoZWQgPSBhd2FpdCBjYWNoZXMubWF0Y2gocmVxdWVzdCk7CiAgaWYgKGNhY2hlZCkgcmV0dXJuIGNhY2hlZDsKICB0cnkgewogICAgY29uc3QgcmVzcG9uc2UgPSBhd2FpdCBmZXRjaChyZXF1ZXN0KTsKICAgIGNvbnN0IGNhY2hlID0gYXdhaXQgY2FjaGVzLm9wZW4oQ0FDSEVfTkFNRSk7CiAgICBjYWNoZS5wdXQocmVxdWVzdCwgcmVzcG9uc2UuY2xvbmUoKSk7CiAgICByZXR1cm4gcmVzcG9uc2U7CiAgfSBjYXRjaCB7CiAgICByZXR1cm4gbmV3IFJlc3BvbnNlKCdBc3NldCB1bmF2YWlsYWJsZSBvZmZsaW5lJywgeyBzdGF0dXM6IDUwMyB9KTsKICB9Cn0KCmFzeW5jIGZ1bmN0aW9uIG5ldHdvcmtGaXJzdFdpdGhPZmZsaW5lRmFsbGJhY2socmVxdWVzdCkgewogIHRyeSB7CiAgICBjb25zdCByZXNwb25zZSA9IGF3YWl0IGZldGNoKHJlcXVlc3QpOwogICAgY29uc3QgY2FjaGUgPSBhd2FpdCBjYWNoZXMub3BlbihDQUNIRV9OQU1FKTsKICAgIGNhY2hlLnB1dChyZXF1ZXN0LCByZXNwb25zZS5jbG9uZSgpKTsKICAgIHJldHVybiByZXNwb25zZTsKICB9IGNhdGNoIHsKICAgIGNvbnN0IGNhY2hlZCA9IGF3YWl0IGNhY2hlcy5tYXRjaChyZXF1ZXN0KTsKICAgIGlmIChjYWNoZWQpIHJldHVybiBjYWNoZWQ7CiAgICAvLyBSZXR1cm4gb2ZmbGluZSBwYWdlIGZvciBuYXZpZ2F0aW9uIHJlcXVlc3RzCiAgICBpZiAocmVxdWVzdC5tb2RlID09PSAnbmF2aWdhdGUnKSB7CiAgICAgIHJldHVybiBjYWNoZXMubWF0Y2goT0ZGTElORV9VUkwpOwogICAgfQogICAgcmV0dXJuIG5ldyBSZXNwb25zZSgnT2ZmbGluZScsIHsgc3RhdHVzOiA1MDMgfSk7CiAgfQp9Cg=="}
+const CACHE_NAME = 'gulel-ott-v1';
+const OFFLINE_URL = '/offline';
+
+// App shell files to cache immediately
+const APP_SHELL = [
+  '/',
+  '/offline',
+  '/manifest.json',
+  '/icons/icon.svg',
+  '/icons/icon-192.png',
+  '/icons/icon-512.png',
+];
+
+// ── Install ───────────────────────────────────────────────────────────────────
+self.addEventListener('install', (event) => {
+  event.waitUntil(
+    caches.open(CACHE_NAME).then((cache) => cache.addAll(APP_SHELL))
+  );
+  self.skipWaiting();
+});
+
+// ── Activate ──────────────────────────────────────────────────────────────────
+self.addEventListener('activate', (event) => {
+  event.waitUntil(
+    caches.keys().then((keys) =>
+      Promise.all(keys.filter((k) => k !== CACHE_NAME).map((k) => caches.delete(k)))
+    )
+  );
+  self.clients.claim();
+});
+
+// ── Fetch ─────────────────────────────────────────────────────────────────────
+self.addEventListener('fetch', (event) => {
+  const { request } = event;
+  const url = new URL(request.url);
+
+  // Don't intercept non-GET requests
+  if (request.method !== 'GET') return;
+
+  // Don't cache video streams (m3u8, ts segments, mp4, webm)
+  if (/\.(m3u8|ts|mp4|webm|mov|avi)(\?.*)?$/.test(url.pathname)) return;
+
+  // Don't cache chrome-extension or non-http(s)
+  if (!url.protocol.startsWith('http')) return;
+
+  // API calls → Network-first, fall back to cache
+  if (url.pathname.startsWith('/api/')) {
+    event.respondWith(networkFirst(request));
+    return;
+  }
+
+  // Static assets (JS, CSS, fonts, images) → Cache-first
+  if (
+    url.pathname.startsWith('/_next/static/') ||
+    url.pathname.startsWith('/icons/') ||
+    /\.(png|jpg|jpeg|gif|svg|webp|woff2?|ico)$/.test(url.pathname)
+  ) {
+    event.respondWith(cacheFirst(request));
+    return;
+  }
+
+  // HTML pages → Network-first with offline fallback
+  event.respondWith(networkFirstWithOfflineFallback(request));
+});
+
+// ── Strategies ────────────────────────────────────────────────────────────────
+
+async function networkFirst(request) {
+  try {
+    const response = await fetch(request);
+    const cache = await caches.open(CACHE_NAME);
+    cache.put(request, response.clone());
+    return response;
+  } catch {
+    const cached = await caches.match(request);
+    return cached ?? new Response(JSON.stringify({ error: 'Offline' }), {
+      status: 503,
+      headers: { 'Content-Type': 'application/json' },
+    });
+  }
+}
+
+async function cacheFirst(request) {
+  const cached = await caches.match(request);
+  if (cached) return cached;
+  try {
+    const response = await fetch(request);
+    const cache = await caches.open(CACHE_NAME);
+    cache.put(request, response.clone());
+    return response;
+  } catch {
+    return new Response('Asset unavailable offline', { status: 503 });
+  }
+}
+
+async function networkFirstWithOfflineFallback(request) {
+  try {
+    const response = await fetch(request);
+    const cache = await caches.open(CACHE_NAME);
+    cache.put(request, response.clone());
+    return response;
+  } catch {
+    const cached = await caches.match(request);
+    if (cached) return cached;
+    // Return offline page for navigation requests
+    if (request.mode === 'navigate') {
+      return caches.match(OFFLINE_URL);
+    }
+    return new Response('Offline', { status: 503 });
+  }
+}

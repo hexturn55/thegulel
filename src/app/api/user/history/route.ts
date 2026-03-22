@@ -1,1 +1,102 @@
-{"data":"aW1wb3J0IHsgTmV4dFJlcXVlc3QsIE5leHRSZXNwb25zZSB9IGZyb20gJ25leHQvc2VydmVyJzsKaW1wb3J0IHsgY3JlYXRlU2VydmVyU3VwYWJhc2VDbGllbnQgfSBmcm9tICdAL2xpYi9zdXBhYmFzZS1zZXJ2ZXInOwppbXBvcnQgcHJpc21hIGZyb20gJ0AvbGliL3ByaXNtYSc7CgovKioKICogR0VUIC9hcGkvdXNlci9oaXN0b3J5CiAqIFJldHVybnMgcGFnaW5hdGVkIHdhdGNoIGhpc3RvcnkgZm9yIHRoZSBjdXJyZW50IHVzZXIsCiAqIGluY2x1ZGluZyBlcGlzb2RlIGFuZCBzZXJpZXMgaW5mby4KICoKICogUXVlcnkgcGFyYW1zOgogKiAgIHBhZ2UgIOKAlCBwYWdlIG51bWJlciAoZGVmYXVsdDogMSkKICogICBsaW1pdCDigJQgaXRlbXMgcGVyIHBhZ2UgKGRlZmF1bHQ6IDIwKQogKi8KZXhwb3J0IGFzeW5jIGZ1bmN0aW9uIEdFVChyZXF1ZXN0OiBOZXh0UmVxdWVzdCkgewogIGNvbnN0IHN1cGFiYXNlID0gYXdhaXQgY3JlYXRlU2VydmVyU3VwYWJhc2VDbGllbnQoKTsKICBjb25zdCB7CiAgICBkYXRhOiB7IHVzZXI6IHN1cGFiYXNlVXNlciB9LAogIH0gPSBhd2FpdCBzdXBhYmFzZS5hdXRoLmdldFVzZXIoKTsKCiAgaWYgKCFzdXBhYmFzZVVzZXIpIHsKICAgIHJldHVybiBOZXh0UmVzcG9uc2UuanNvbih7IGVycm9yOiAnVW5hdXRob3JpemVkJyB9LCB7IHN0YXR1czogNDAxIH0pOwogIH0KCiAgY29uc3QgeyBzZWFyY2hQYXJhbXMgfSA9IG5ldyBVUkwocmVxdWVzdC51cmwpOwogIGNvbnN0IHBhZ2UgPSBNYXRoLm1heCgxLCBwYXJzZUludChzZWFyY2hQYXJhbXMuZ2V0KCdwYWdlJykgPz8gJzEnLCAxMCkpOwogIGNvbnN0IGxpbWl0ID0gTWF0aC5taW4oMTAwLCBNYXRoLm1heCgxLCBwYXJzZUludChzZWFyY2hQYXJhbXMuZ2V0KCdsaW1pdCcpID8/ICcyMCcsIDEwKSkpOwogIGNvbnN0IHNraXAgPSAocGFnZSAtIDEpICogbGltaXQ7CgogIHRyeSB7CiAgICBjb25zdCBkYlVzZXIgPSBhd2FpdCBwcmlzbWEudXNlci5maW5kRmlyc3QoewogICAgICB3aGVyZTogewogICAgICAgIE9SOiBbCiAgICAgICAgICB7IHN1cGFiYXNlSWQ6IHN1cGFiYXNlVXNlci5pZCB9LAogICAgICAgICAgLi4uKHN1cGFiYXNlVXNlci5lbWFpbCA/IFt7IGVtYWlsOiBzdXBhYmFzZVVzZXIuZW1haWwgfV0gOiBbXSksCiAgICAgICAgICAuLi4oc3VwYWJhc2VVc2VyLnBob25lID8gW3sgcGhvbmU6IHN1cGFiYXNlVXNlci5waG9uZSB9XSA6IFtdKSwKICAgICAgICBdLAogICAgICB9LAogICAgICBzZWxlY3Q6IHsgaWQ6IHRydWUgfSwKICAgIH0pOwoKICAgIGlmICghZGJVc2VyKSB7CiAgICAgIHJldHVybiBOZXh0UmVzcG9uc2UuanNvbih7IGVycm9yOiAnVXNlciBub3QgZm91bmQnIH0sIHsgc3RhdHVzOiA0MDQgfSk7CiAgICB9CgogICAgY29uc3QgW2hpc3RvcnksIHRvdGFsXSA9IGF3YWl0IFByb21pc2UuYWxsKFsKICAgICAgcHJpc21hLndhdGNoSGlzdG9yeS5maW5kTWFueSh7CiAgICAgICAgd2hlcmU6IHsgdXNlcklkOiBkYlVzZXIuaWQgfSwKICAgICAgICBvcmRlckJ5OiB7IHdhdGNoZWRBdDogJ2Rlc2MnIH0sCiAgICAgICAgc2tpcCwKICAgICAgICB0YWtlOiBsaW1pdCwKICAgICAgICBzZWxlY3Q6IHsKICAgICAgICAgIGlkOiB0cnVlLAogICAgICAgICAgcHJvZ3Jlc3M6IHRydWUsCiAgICAgICAgICBjb21wbGV0ZWQ6IHRydWUsCiAgICAgICAgICB3YXRjaGVkQXQ6IHRydWUsCiAgICAgICAgICBlcGlzb2RlOiB7CiAgICAgICAgICAgIHNlbGVjdDogewogICAgICAgICAgICAgIGlkOiB0cnVlLAogICAgICAgICAgICAgIHRpdGxlOiB0cnVlLAogICAgICAgICAgICAgIHRodW1ibmFpbDogdHJ1ZSwKICAgICAgICAgICAgICBkdXJhdGlvbjogdHJ1ZSwKICAgICAgICAgICAgICBlcGlzb2RlTnVtYmVyOiB0cnVlLAogICAgICAgICAgICAgIHNlcmllczogewogICAgICAgICAgICAgICAgc2VsZWN0OiB7CiAgICAgICAgICAgICAgICAgIGlkOiB0cnVlLAogICAgICAgICAgICAgICAgICB0aXRsZTogdHJ1ZSwKICAgICAgICAgICAgICAgIH0sCiAgICAgICAgICAgICAgfSwKICAgICAgICAgICAgfSwKICAgICAgICAgIH0sCiAgICAgICAgfSwKICAgICAgfSksCiAgICAgIHByaXNtYS53YXRjaEhpc3RvcnkuY291bnQoeyB3aGVyZTogeyB1c2VySWQ6IGRiVXNlci5pZCB9IH0pLAogICAgXSk7CgogICAgLy8gRmxhdHRlbiB0byBhIGNsZWFuIHJlc3BvbnNlIHNoYXBlCiAgICBjb25zdCBpdGVtcyA9IGhpc3RvcnkubWFwKChoKSA9PiAoewogICAgICBpZDogaC5pZCwKICAgICAgcHJvZ3Jlc3M6IGgucHJvZ3Jlc3MsCiAgICAgIGNvbXBsZXRlZDogaC5jb21wbGV0ZWQsCiAgICAgIHdhdGNoZWRBdDogaC53YXRjaGVkQXQsCiAgICAgIGVwaXNvZGVJZDogaC5lcGlzb2RlLmlkLAogICAgICBlcGlzb2RlVGl0bGU6IGguZXBpc29kZS50aXRsZSwKICAgICAgZXBpc29kZU51bWJlcjogaC5lcGlzb2RlLmVwaXNvZGVOdW1iZXIsCiAgICAgIHRodW1ibmFpbDogaC5lcGlzb2RlLnRodW1ibmFpbCwKICAgICAgZHVyYXRpb246IGguZXBpc29kZS5kdXJhdGlvbiwKICAgICAgc2VyaWVzSWQ6IGguZXBpc29kZS5zZXJpZXMuaWQsCiAgICAgIHNlcmllc1RpdGxlOiBoLmVwaXNvZGUuc2VyaWVzLnRpdGxlLAogICAgfSkpOwoKICAgIHJldHVybiBOZXh0UmVzcG9uc2UuanNvbih7CiAgICAgIGhpc3Rvcnk6IGl0ZW1zLAogICAgICB0b3RhbCwKICAgICAgcGFnZSwKICAgICAgbGltaXQsCiAgICAgIGhhc01vcmU6IHNraXAgKyBoaXN0b3J5Lmxlbmd0aCA8IHRvdGFsLAogICAgfSk7CiAgfSBjYXRjaCAoZXJyb3IpIHsKICAgIGNvbnNvbGUuZXJyb3IoJ0dFVCAvYXBpL3VzZXIvaGlzdG9yeSBlcnJvcjonLCBlcnJvcik7CiAgICByZXR1cm4gTmV4dFJlc3BvbnNlLmpzb24oeyBlcnJvcjogJ0ludGVybmFsIGVycm9yJyB9LCB7IHN0YXR1czogNTAwIH0pOwogIH0KfQo="}
+import { NextRequest, NextResponse } from 'next/server';
+import { createServerSupabaseClient } from '@/lib/supabase-server';
+import prisma from '@/lib/prisma';
+
+/**
+ * GET /api/user/history
+ * Returns paginated watch history for the current user,
+ * including episode and series info.
+ *
+ * Query params:
+ *   page  — page number (default: 1)
+ *   limit — items per page (default: 20)
+ */
+export async function GET(request: NextRequest) {
+  const supabase = await createServerSupabaseClient();
+  const {
+    data: { user: supabaseUser },
+  } = await supabase.auth.getUser();
+
+  if (!supabaseUser) {
+    return NextResponse.json({ error: 'Unauthorized' }, { status: 401 });
+  }
+
+  const { searchParams } = new URL(request.url);
+  const page = Math.max(1, parseInt(searchParams.get('page') ?? '1', 10));
+  const limit = Math.min(100, Math.max(1, parseInt(searchParams.get('limit') ?? '20', 10)));
+  const skip = (page - 1) * limit;
+
+  try {
+    const dbUser = await prisma.user.findFirst({
+      where: {
+        OR: [
+          { supabaseId: supabaseUser.id },
+          ...(supabaseUser.email ? [{ email: supabaseUser.email }] : []),
+          ...(supabaseUser.phone ? [{ phone: supabaseUser.phone }] : []),
+        ],
+      },
+      select: { id: true },
+    });
+
+    if (!dbUser) {
+      return NextResponse.json({ error: 'User not found' }, { status: 404 });
+    }
+
+    const [history, total] = await Promise.all([
+      prisma.watchHistory.findMany({
+        where: { userId: dbUser.id },
+        orderBy: { watchedAt: 'desc' },
+        skip,
+        take: limit,
+        select: {
+          id: true,
+          progress: true,
+          completed: true,
+          watchedAt: true,
+          episode: {
+            select: {
+              id: true,
+              title: true,
+              thumbnail: true,
+              duration: true,
+              episodeNumber: true,
+              series: {
+                select: {
+                  id: true,
+                  title: true,
+                },
+              },
+            },
+          },
+        },
+      }),
+      prisma.watchHistory.count({ where: { userId: dbUser.id } }),
+    ]);
+
+    // Flatten to a clean response shape
+    const items = history.map((h) => ({
+      id: h.id,
+      progress: h.progress,
+      completed: h.completed,
+      watchedAt: h.watchedAt,
+      episodeId: h.episode.id,
+      episodeTitle: h.episode.title,
+      episodeNumber: h.episode.episodeNumber,
+      thumbnail: h.episode.thumbnail,
+      duration: h.episode.duration,
+      seriesId: h.episode.series.id,
+      seriesTitle: h.episode.series.title,
+    }));
+
+    return NextResponse.json({
+      history: items,
+      total,
+      page,
+      limit,
+      hasMore: skip + history.length < total,
+    });
+  } catch (error) {
+    console.error('GET /api/user/history error:', error);
+    return NextResponse.json({ error: 'Internal error' }, { status: 500 });
+  }
+}

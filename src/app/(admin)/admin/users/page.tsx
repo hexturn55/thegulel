@@ -1,1 +1,348 @@
-{"data":"J3VzZSBjbGllbnQnOwoKaW1wb3J0IHsgdXNlRWZmZWN0LCB1c2VTdGF0ZSwgdXNlQ2FsbGJhY2sgfSBmcm9tICdyZWFjdCc7CmltcG9ydCBMaW5rIGZyb20gJ25leHQvbGluayc7CmltcG9ydCB7IFNlYXJjaCwgVXNlciwgQmFuLCBDb2lucywgQ2hldnJvbkRvd24sIFNoaWVsZENoZWNrIH0gZnJvbSAnbHVjaWRlLXJlYWN0JzsKaW1wb3J0IERhdGFUYWJsZSBmcm9tICdAL2NvbXBvbmVudHMvYWRtaW4vRGF0YVRhYmxlJzsKaW1wb3J0IENvbmZpcm1EaWFsb2cgZnJvbSAnQC9jb21wb25lbnRzL2FkbWluL0NvbmZpcm1EaWFsb2cnOwppbXBvcnQgeyB1c2VUb2FzdCB9IGZyb20gJ0AvY29tcG9uZW50cy9hZG1pbi9Ub2FzdCc7CgppbnRlcmZhY2UgQWRtaW5Vc2VyIHsKICBpZDogc3RyaW5nOwogIG5hbWU/OiBzdHJpbmc7CiAgZW1haWw/OiBzdHJpbmc7CiAgcGhvbmU/OiBzdHJpbmc7CiAgYXZhdGFyPzogc3RyaW5nOwogIHByb3ZpZGVyPzogc3RyaW5nOwogIGNvaW5CYWxhbmNlOiBudW1iZXI7CiAgcm9sZTogc3RyaW5nOwogIGJhbm5lZDogYm9vbGVhbjsKICBjcmVhdGVkQXQ6IHN0cmluZzsKfQoKaW50ZXJmYWNlIENvaW5BZGp1c3RTdGF0ZSB7CiAgdXNlcjogQWRtaW5Vc2VyOwogIGFtb3VudDogc3RyaW5nOwogIHJlYXNvbjogc3RyaW5nOwogIGxvYWRpbmc6IGJvb2xlYW47Cn0KCmV4cG9ydCBkZWZhdWx0IGZ1bmN0aW9uIFVzZXJzUGFnZSgpIHsKICBjb25zdCB7IHRvYXN0IH0gPSB1c2VUb2FzdCgpOwogIGNvbnN0IFtkYXRhLCBzZXREYXRhXSA9IHVzZVN0YXRlPEFkbWluVXNlcltdPihbXSk7CiAgY29uc3QgW3RvdGFsLCBzZXRUb3RhbF0gPSB1c2VTdGF0ZSgwKTsKICBjb25zdCBbcGFnZSwgc2V0UGFnZV0gPSB1c2VTdGF0ZSgxKTsKICBjb25zdCBbbG9hZGluZywgc2V0TG9hZGluZ10gPSB1c2VTdGF0ZSh0cnVlKTsKICBjb25zdCBbc2VhcmNoLCBzZXRTZWFyY2hdID0gdXNlU3RhdGUoJycpOwogIGNvbnN0IFtiYW5UYXJnZXQsIHNldEJhblRhcmdldF0gPSB1c2VTdGF0ZTxBZG1pblVzZXIgfCBudWxsPihudWxsKTsKICBjb25zdCBbYmFuTG9hZGluZywgc2V0QmFuTG9hZGluZ10gPSB1c2VTdGF0ZShmYWxzZSk7CiAgY29uc3QgW2NvaW5BZGp1c3QsIHNldENvaW5BZGp1c3RdID0gdXNlU3RhdGU8Q29pbkFkanVzdFN0YXRlIHwgbnVsbD4obnVsbCk7CgogIGNvbnN0IGZldGNoRGF0YSA9IHVzZUNhbGxiYWNrKGFzeW5jICgpID0+IHsKICAgIHNldExvYWRpbmcodHJ1ZSk7CiAgICB0cnkgewogICAgICBjb25zdCBwYXJhbXMgPSBuZXcgVVJMU2VhcmNoUGFyYW1zKHsKICAgICAgICBwYWdlOiBTdHJpbmcocGFnZSksCiAgICAgICAgbGltaXQ6ICcyMCcsCiAgICAgICAgLi4uKHNlYXJjaCAmJiB7IHNlYXJjaCB9KSwKICAgICAgfSk7CiAgICAgIGNvbnN0IHJlcyA9IGF3YWl0IGZldGNoKGAvYXBpL2FkbWluL3VzZXJzPyR7cGFyYW1zfWApOwogICAgICBpZiAoIXJlcy5vaykgdGhyb3cgbmV3IEVycm9yKCk7CiAgICAgIGNvbnN0IGpzb24gPSBhd2FpdCByZXMuanNvbigpOwogICAgICBzZXREYXRhKGpzb24udXNlcnMgPz8gW10pOwogICAgICBzZXRUb3RhbChqc29uLnRvdGFsID8/IDApOwogICAgfSBjYXRjaCB7CiAgICAgIHRvYXN0KCdGYWlsZWQgdG8gbG9hZCB1c2VycycsICdlcnJvcicpOwogICAgfSBmaW5hbGx5IHsKICAgICAgc2V0TG9hZGluZyhmYWxzZSk7CiAgICB9CiAgfSwgW3BhZ2UsIHNlYXJjaCwgdG9hc3RdKTsKCiAgdXNlRWZmZWN0KCgpID0+IHsKICAgIGNvbnN0IHQgPSBzZXRUaW1lb3V0KGZldGNoRGF0YSwgMzAwKTsKICAgIHJldHVybiAoKSA9PiBjbGVhclRpbWVvdXQodCk7CiAgfSwgW2ZldGNoRGF0YV0pOwoKICBjb25zdCBoYW5kbGVCYW5Ub2dnbGUgPSBhc3luYyAoKSA9PiB7CiAgICBpZiAoIWJhblRhcmdldCkgcmV0dXJuOwogICAgc2V0QmFuTG9hZGluZyh0cnVlKTsKICAgIHRyeSB7CiAgICAgIGNvbnN0IHJlcyA9IGF3YWl0IGZldGNoKGAvYXBpL2FkbWluL3VzZXJzLyR7YmFuVGFyZ2V0LmlkfWAsIHsKICAgICAgICBtZXRob2Q6ICdQQVRDSCcsCiAgICAgICAgaGVhZGVyczogeyAnQ29udGVudC1UeXBlJzogJ2FwcGxpY2F0aW9uL2pzb24nIH0sCiAgICAgICAgYm9keTogSlNPTi5zdHJpbmdpZnkoeyBiYW5uZWQ6ICFiYW5UYXJnZXQuYmFubmVkIH0pLAogICAgICB9KTsKICAgICAgaWYgKCFyZXMub2spIHRocm93IG5ldyBFcnJvcigpOwogICAgICB0b2FzdChgVXNlciAke2JhblRhcmdldC5iYW5uZWQgPyAndW5iYW5uZWQnIDogJ2Jhbm5lZCd9YCwgJ3N1Y2Nlc3MnKTsKICAgICAgc2V0QmFuVGFyZ2V0KG51bGwpOwogICAgICBmZXRjaERhdGEoKTsKICAgIH0gY2F0Y2ggewogICAgICB0b2FzdCgnRmFpbGVkIHRvIHVwZGF0ZSB1c2VyJywgJ2Vycm9yJyk7CiAgICB9IGZpbmFsbHkgewogICAgICBzZXRCYW5Mb2FkaW5nKGZhbHNlKTsKICAgIH0KICB9OwoKICBjb25zdCBoYW5kbGVSb2xlQ2hhbmdlID0gYXN5bmMgKHVzZXJJZDogc3RyaW5nLCByb2xlOiBzdHJpbmcpID0+IHsKICAgIHRyeSB7CiAgICAgIGNvbnN0IHJlcyA9IGF3YWl0IGZldGNoKGAvYXBpL2FkbWluL3VzZXJzLyR7dXNlcklkfWAsIHsKICAgICAgICBtZXRob2Q6ICdQQVRDSCcsCiAgICAgICAgaGVhZGVyczogeyAnQ29udGVudC1UeXBlJzogJ2FwcGxpY2F0aW9uL2pzb24nIH0sCiAgICAgICAgYm9keTogSlNPTi5zdHJpbmdpZnkoeyByb2xlIH0pLAogICAgICB9KTsKICAgICAgaWYgKCFyZXMub2spIHRocm93IG5ldyBFcnJvcigpOwogICAgICB0b2FzdCgnUm9sZSB1cGRhdGVkJywgJ3N1Y2Nlc3MnKTsKICAgICAgZmV0Y2hEYXRhKCk7CiAgICB9IGNhdGNoIHsKICAgICAgdG9hc3QoJ0ZhaWxlZCB0byB1cGRhdGUgcm9sZScsICdlcnJvcicpOwogICAgfQogIH07CgogIGNvbnN0IGhhbmRsZUNvaW5BZGp1c3QgPSBhc3luYyAoKSA9PiB7CiAgICBpZiAoIWNvaW5BZGp1c3QpIHJldHVybjsKICAgIHNldENvaW5BZGp1c3QoKHByZXYpID0+IHByZXYgPyB7IC4uLnByZXYsIGxvYWRpbmc6IHRydWUgfSA6IG51bGwpOwogICAgdHJ5IHsKICAgICAgY29uc3QgcmVzID0gYXdhaXQgZmV0Y2goYC9hcGkvYWRtaW4vdXNlcnMvJHtjb2luQWRqdXN0LnVzZXIuaWR9L2NvaW5zYCwgewogICAgICAgIG1ldGhvZDogJ1BPU1QnLAogICAgICAgIGhlYWRlcnM6IHsgJ0NvbnRlbnQtVHlwZSc6ICdhcHBsaWNhdGlvbi9qc29uJyB9LAogICAgICAgIGJvZHk6IEpTT04uc3RyaW5naWZ5KHsKICAgICAgICAgIGFtb3VudDogTnVtYmVyKGNvaW5BZGp1c3QuYW1vdW50KSwKICAgICAgICAgIHJlYXNvbjogY29pbkFkanVzdC5yZWFzb24sCiAgICAgICAgfSksCiAgICAgIH0pOwogICAgICBpZiAoIXJlcy5vaykgdGhyb3cgbmV3IEVycm9yKCk7CiAgICAgIHRvYXN0KCdDb2luIGJhbGFuY2UgYWRqdXN0ZWQnLCAnc3VjY2VzcycpOwogICAgICBzZXRDb2luQWRqdXN0KG51bGwpOwogICAgICBmZXRjaERhdGEoKTsKICAgIH0gY2F0Y2ggewogICAgICB0b2FzdCgnRmFpbGVkIHRvIGFkanVzdCBjb2lucycsICdlcnJvcicpOwogICAgICBzZXRDb2luQWRqdXN0KChwcmV2KSA9PiBwcmV2ID8geyAuLi5wcmV2LCBsb2FkaW5nOiBmYWxzZSB9IDogbnVsbCk7CiAgICB9CiAgfTsKCiAgY29uc3QgZm9ybWF0RGF0ZSA9IChzOiBzdHJpbmcpID0+CiAgICBuZXcgRGF0ZShzKS50b0xvY2FsZURhdGVTdHJpbmcoJ2VuLVVTJywgeyBtb250aDogJ3Nob3J0JywgZGF5OiAnbnVtZXJpYycsIHllYXI6ICdudW1lcmljJyB9KTsKCiAgY29uc3QgUk9MRV9CQURHRTogUmVjb3JkPHN0cmluZywgc3RyaW5nPiA9IHsKICAgIGFkbWluOiAnYmctcmVkLTkwMC81MCB0ZXh0LXJlZC00MDAgYm9yZGVyLXJlZC03MDAnLAogICAgc3VwZXJhZG1pbjogJ2JnLXB1cnBsZS05MDAvNTAgdGV4dC1wdXJwbGUtNDAwIGJvcmRlci1wdXJwbGUtNzAwJywKICAgIHVzZXI6ICdiZy1ncmF5LTgwMCB0ZXh0LWdyYXktNDAwIGJvcmRlci1ncmF5LTcwMCcsCiAgfTsKCiAgY29uc3QgY29sdW1ucyA9IFsKICAgIHsKICAgICAga2V5OiAndXNlcicsCiAgICAgIGxhYmVsOiAnVXNlcicsCiAgICAgIHJlbmRlcjogKHJvdzogQWRtaW5Vc2VyKSA9PiAoCiAgICAgICAgPGRpdiBjbGFzc05hbWU9ImZsZXggaXRlbXMtY2VudGVyIGdhcC0zIj4KICAgICAgICAgIHtyb3cuYXZhdGFyID8gKAogICAgICAgICAgICA8aW1nIHNyYz17cm93LmF2YXRhcn0gYWx0PXtyb3cubmFtZSA/PyAnJ30gY2xhc3NOYW1lPSJ3LTggaC04IHJvdW5kZWQtZnVsbCBvYmplY3QtY292ZXIiIC8+CiAgICAgICAgICApIDogKAogICAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT0idy04IGgtOCByb3VuZGVkLWZ1bGwgYmctZ3JheS04MDAgZmxleCBpdGVtcy1jZW50ZXIganVzdGlmeS1jZW50ZXIiPgogICAgICAgICAgICAgIDxVc2VyIHNpemU9ezE0fSBjbGFzc05hbWU9InRleHQtZ3JheS01MDAiIC8+CiAgICAgICAgICAgIDwvZGl2PgogICAgICAgICAgKX0KICAgICAgICAgIDxkaXY+CiAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPSJmb250LW1lZGl1bSB0ZXh0LXdoaXRlIHRleHQtc20iPntyb3cubmFtZSA/PyAn4oCUJ308L2Rpdj4KICAgICAgICAgICAgPGRpdiBjbGFzc05hbWU9InRleHQteHMgdGV4dC1ncmF5LTUwMCI+e3Jvdy5lbWFpbCA/PyByb3cucGhvbmUgPz8gJ+KAlCd9PC9kaXY+CiAgICAgICAgICA8L2Rpdj4KICAgICAgICA8L2Rpdj4KICAgICAgKSwKICAgIH0sCiAgICB7CiAgICAgIGtleTogJ3Byb3ZpZGVyJywKICAgICAgbGFiZWw6ICdQcm92aWRlcicsCiAgICAgIHJlbmRlcjogKHJvdzogQWRtaW5Vc2VyKSA9PiAoCiAgICAgICAgPHNwYW4gY2xhc3NOYW1lPSJ0ZXh0LXhzIHRleHQtZ3JheS00MDAgY2FwaXRhbGl6ZSI+e3Jvdy5wcm92aWRlciA/PyAncGhvbmUnfTwvc3Bhbj4KICAgICAgKSwKICAgIH0sCiAgICB7CiAgICAgIGtleTogJ2NvaW5CYWxhbmNlJywKICAgICAgbGFiZWw6ICdDb2lucycsCiAgICAgIHJlbmRlcjogKHJvdzogQWRtaW5Vc2VyKSA9PiAoCiAgICAgICAgPHNwYW4gY2xhc3NOYW1lPSJ0ZXh0LXllbGxvdy00MDAgZm9udC1tZWRpdW0gdGV4dC1zbSI+e3Jvdy5jb2luQmFsYW5jZX08L3NwYW4+CiAgICAgICksCiAgICB9LAogICAgewogICAgICBrZXk6ICdyb2xlJywKICAgICAgbGFiZWw6ICdSb2xlJywKICAgICAgcmVuZGVyOiAocm93OiBBZG1pblVzZXIpID0+ICgKICAgICAgICA8c2VsZWN0CiAgICAgICAgICB2YWx1ZT17cm93LnJvbGUgPz8gJ3VzZXInfQogICAgICAgICAgb25DaGFuZ2U9eyhlKSA9PiBoYW5kbGVSb2xlQ2hhbmdlKHJvdy5pZCwgZS50YXJnZXQudmFsdWUpfQogICAgICAgICAgY2xhc3NOYW1lPXtgdGV4dC14cyBweC0yIHB5LTEgcm91bmRlZCBib3JkZXIgYmctdHJhbnNwYXJlbnQgY3Vyc29yLXBvaW50ZXIgZm9jdXM6b3V0bGluZS1ub25lICR7CiAgICAgICAgICAgIFJPTEVfQkFER0Vbcm93LnJvbGVdID8/IFJPTEVfQkFER0UudXNlcgogICAgICAgICAgfWB9CiAgICAgICAgPgogICAgICAgICAgPG9wdGlvbiB2YWx1ZT0idXNlciI+VXNlcjwvb3B0aW9uPgogICAgICAgICAgPG9wdGlvbiB2YWx1ZT0iYWRtaW4iPkFkbWluPC9vcHRpb24+CiAgICAgICAgICA8b3B0aW9uIHZhbHVlPSJzdXBlcmFkbWluIj5TdXBlcmFkbWluPC9vcHRpb24+CiAgICAgICAgPC9zZWxlY3Q+CiAgICAgICksCiAgICB9LAogICAgewogICAgICBrZXk6ICdiYW5uZWQnLAogICAgICBsYWJlbDogJ1N0YXR1cycsCiAgICAgIHJlbmRlcjogKHJvdzogQWRtaW5Vc2VyKSA9PiAoCiAgICAgICAgPHNwYW4KICAgICAgICAgIGNsYXNzTmFtZT17YGlubGluZS1mbGV4IGl0ZW1zLWNlbnRlciBweC0yIHB5LTAuNSByb3VuZGVkIHRleHQteHMgZm9udC1tZWRpdW0gYm9yZGVyICR7CiAgICAgICAgICAgIHJvdy5iYW5uZWQKICAgICAgICAgICAgICA/ICdiZy1yZWQtOTAwLzUwIHRleHQtcmVkLTQwMCBib3JkZXItcmVkLTcwMCcKICAgICAgICAgICAgICA6ICdiZy1ncmVlbi05MDAvNTAgdGV4dC1ncmVlbi00MDAgYm9yZGVyLWdyZWVuLTcwMCcKICAgICAgICAgIH1gfQogICAgICAgID4KICAgICAgICAgIHtyb3cuYmFubmVkID8gJ0Jhbm5lZCcgOiAnQWN0aXZlJ30KICAgICAgICA8L3NwYW4+CiAgICAgICksCiAgICB9LAogICAgewogICAgICBrZXk6ICdjcmVhdGVkQXQnLAogICAgICBsYWJlbDogJ0pvaW5lZCcsCiAgICAgIHJlbmRlcjogKHJvdzogQWRtaW5Vc2VyKSA9PiAoCiAgICAgICAgPHNwYW4gY2xhc3NOYW1lPSJ0ZXh0LXhzIHRleHQtZ3JheS01MDAiPntmb3JtYXREYXRlKHJvdy5jcmVhdGVkQXQpfTwvc3Bhbj4KICAgICAgKSwKICAgIH0sCiAgICB7CiAgICAgIGtleTogJ2FjdGlvbnMnLAogICAgICBsYWJlbDogJ0FjdGlvbnMnLAogICAgICByZW5kZXI6IChyb3c6IEFkbWluVXNlcikgPT4gKAogICAgICAgIDxkaXYgY2xhc3NOYW1lPSJmbGV4IGl0ZW1zLWNlbnRlciBnYXAtMSI+CiAgICAgICAgICA8TGluawogICAgICAgICAgICBocmVmPXtgL2FkbWluL3VzZXJzLyR7cm93LmlkfWB9CiAgICAgICAgICAgIGNsYXNzTmFtZT0icC0xLjUgcm91bmRlZC1sZyB0ZXh0LWdyYXktNDAwIGhvdmVyOmJnLWdyYXktODAwIGhvdmVyOnRleHQtd2hpdGUgdHJhbnNpdGlvbi1jb2xvcnMiCiAgICAgICAgICAgIHRpdGxlPSJWaWV3IGRldGFpbCIKICAgICAgICAgID4KICAgICAgICAgICAgPFNoaWVsZENoZWNrIHNpemU9ezE0fSAvPgogICAgICAgICAgPC9MaW5rPgogICAgICAgICAgPGJ1dHRvbgogICAgICAgICAgICBvbkNsaWNrPXsoKSA9PgogICAgICAgICAgICAgIHNldENvaW5BZGp1c3QoeyB1c2VyOiByb3csIGFtb3VudDogJycsIHJlYXNvbjogJycsIGxvYWRpbmc6IGZhbHNlIH0pCiAgICAgICAgICAgIH0KICAgICAgICAgICAgY2xhc3NOYW1lPSJwLTEuNSByb3VuZGVkLWxnIHRleHQtZ3JheS00MDAgaG92ZXI6YmctZ3JheS04MDAgaG92ZXI6dGV4dC15ZWxsb3ctNDAwIHRyYW5zaXRpb24tY29sb3JzIgogICAgICAgICAgICB0aXRsZT0iQWRqdXN0IGNvaW5zIgogICAgICAgICAgPgogICAgICAgICAgICA8Q29pbnMgc2l6ZT17MTR9IC8+CiAgICAgICAgICA8L2J1dHRvbj4KICAgICAgICAgIDxidXR0b24KICAgICAgICAgICAgb25DbGljaz17KCkgPT4gc2V0QmFuVGFyZ2V0KHJvdyl9CiAgICAgICAgICAgIGNsYXNzTmFtZT17YHAtMS41IHJvdW5kZWQtbGcgdHJhbnNpdGlvbi1jb2xvcnMgJHsKICAgICAgICAgICAgICByb3cuYmFubmVkCiAgICAgICAgICAgICAgICA/ICd0ZXh0LWdyZWVuLTUwMCBob3ZlcjpiZy1ncmVlbi05MDAvMzAnCiAgICAgICAgICAgICAgICA6ICd0ZXh0LWdyYXktNDAwIGhvdmVyOmJnLXJlZC05MDAvMzAgaG92ZXI6dGV4dC1yZWQtNDAwJwogICAgICAgICAgICB9YH0KICAgICAgICAgICAgdGl0bGU9e3Jvdy5iYW5uZWQgPyAnVW5iYW4nIDogJ0Jhbid9CiAgICAgICAgICA+CiAgICAgICAgICAgIDxCYW4gc2l6ZT17MTR9IC8+CiAgICAgICAgICA8L2J1dHRvbj4KICAgICAgICA8L2Rpdj4KICAgICAgKSwKICAgIH0sCiAgXTsKCiAgcmV0dXJuICgKICAgIDxkaXYgY2xhc3NOYW1lPSJtYXgtdy03eGwgbXgtYXV0byBzcGFjZS15LTUiPgogICAgICB7LyogSGVhZGVyICovfQogICAgICA8ZGl2IGNsYXNzTmFtZT0iZmxleCBpdGVtcy1jZW50ZXIganVzdGlmeS1iZXR3ZWVuIGdhcC00IGZsZXgtd3JhcCI+CiAgICAgICAgPGRpdj4KICAgICAgICAgIDxoMSBjbGFzc05hbWU9InRleHQtMnhsIGZvbnQtYm9sZCB0ZXh0LXdoaXRlIj5Vc2VyczwvaDE+CiAgICAgICAgICA8cCBjbGFzc05hbWU9InRleHQtZ3JheS01MDAgdGV4dC1zbSBtdC0wLjUiPnt0b3RhbH0gdG90YWwgdXNlcnM8L3A+CiAgICAgICAgPC9kaXY+CiAgICAgIDwvZGl2PgoKICAgICAgey8qIFNlYXJjaCAqL30KICAgICAgPGRpdiBjbGFzc05hbWU9InJlbGF0aXZlIG1heC13LXNtIj4KICAgICAgICA8U2VhcmNoIHNpemU9ezE2fSBjbGFzc05hbWU9ImFic29sdXRlIGxlZnQtMyB0b3AtMS8yIC10cmFuc2xhdGUteS0xLzIgdGV4dC1ncmF5LTUwMCIgLz4KICAgICAgICA8aW5wdXQKICAgICAgICAgIHR5cGU9InRleHQiCiAgICAgICAgICB2YWx1ZT17c2VhcmNofQogICAgICAgICAgb25DaGFuZ2U9eyhlKSA9PiB7IHNldFNlYXJjaChlLnRhcmdldC52YWx1ZSk7IHNldFBhZ2UoMSk7IH19CiAgICAgICAgICBwbGFjZWhvbGRlcj0iU2VhcmNoIGJ5IG5hbWUsIGVtYWlsLCBvciBwaG9uZS4uLiIKICAgICAgICAgIGNsYXNzTmFtZT0idy1mdWxsIHBsLTkgcHItNCBweS0yLjUgYmctZ3JheS05MDAgYm9yZGVyIGJvcmRlci1ncmF5LTgwMCByb3VuZGVkLWxnIHRleHQtc20gdGV4dC13aGl0ZSBwbGFjZWhvbGRlci1ncmF5LTYwMCBmb2N1czpvdXRsaW5lLW5vbmUgZm9jdXM6Ym9yZGVyLXJlZC02MDAgdHJhbnNpdGlvbi1jb2xvcnMiCiAgICAgICAgLz4KICAgICAgPC9kaXY+CgogICAgICB7LyogVGFibGUgKi99CiAgICAgIDxEYXRhVGFibGUKICAgICAgICBjb2x1bW5zPXtjb2x1bW5zIGFzIHVua25vd24gYXMgUGFyYW1ldGVyczx0eXBlb2YgRGF0YVRhYmxlPlswXVsnY29sdW1ucyddfQogICAgICAgIGRhdGE9e2RhdGEgYXMgdW5rbm93biBhcyBSZWNvcmQ8c3RyaW5nLCB1bmtub3duPltdfQogICAgICAgIGxvYWRpbmc9e2xvYWRpbmd9CiAgICAgICAgZW1wdHlNZXNzYWdlPSJObyB1c2VycyBmb3VuZC4iCiAgICAgICAgcGFnZT17cGFnZX0KICAgICAgICBwYWdlU2l6ZT17MjB9CiAgICAgICAgdG90YWw9e3RvdGFsfQogICAgICAgIG9uUGFnZUNoYW5nZT17c2V0UGFnZX0KICAgICAgLz4KCiAgICAgIHsvKiBCYW4gY29uZmlybSAqL30KICAgICAgPENvbmZpcm1EaWFsb2cKICAgICAgICBvcGVuPXshIWJhblRhcmdldH0KICAgICAgICB0aXRsZT17YmFuVGFyZ2V0Py5iYW5uZWQgPyAnVW5iYW4gVXNlcicgOiAnQmFuIFVzZXInfQogICAgICAgIG1lc3NhZ2U9ewogICAgICAgICAgYmFuVGFyZ2V0Py5iYW5uZWQKICAgICAgICAgICAgPyBgVW5iYW4gIiR7YmFuVGFyZ2V0Py5uYW1lID8/IGJhblRhcmdldD8uZW1haWx9Ij8gVGhleSB3aWxsIHJlZ2FpbiBhY2Nlc3MuYAogICAgICAgICAgICA6IGBCYW4gIiR7YmFuVGFyZ2V0Py5uYW1lID8/IGJhblRhcmdldD8uZW1haWx9Ij8gVGhleSB3aWxsIGxvc2UgYWNjZXNzIHRvIHRoZSBwbGF0Zm9ybS5gCiAgICAgICAgfQogICAgICAgIGNvbmZpcm1MYWJlbD17YmFuVGFyZ2V0Py5iYW5uZWQgPyAnVW5iYW4nIDogJ0Jhbid9CiAgICAgICAgZGFuZ2Vyb3VzPXshYmFuVGFyZ2V0Py5iYW5uZWR9CiAgICAgICAgbG9hZGluZz17YmFuTG9hZGluZ30KICAgICAgICBvbkNvbmZpcm09e2hhbmRsZUJhblRvZ2dsZX0KICAgICAgICBvbkNhbmNlbD17KCkgPT4gc2V0QmFuVGFyZ2V0KG51bGwpfQogICAgICAvPgoKICAgICAgey8qIENvaW4gYWRqdXN0IG1vZGFsICovfQogICAgICB7Y29pbkFkanVzdCAmJiAoCiAgICAgICAgPGRpdiBjbGFzc05hbWU9ImZpeGVkIGluc2V0LTAgei01MCBmbGV4IGl0ZW1zLWNlbnRlciBqdXN0aWZ5LWNlbnRlciBwLTQiPgogICAgICAgICAgPGRpdiBjbGFzc05hbWU9ImFic29sdXRlIGluc2V0LTAgYmctYmxhY2svNzAiIG9uQ2xpY2s9eygpID0+IHNldENvaW5BZGp1c3QobnVsbCl9IC8+CiAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT0icmVsYXRpdmUgYmctZ3JheS05MDAgYm9yZGVyIGJvcmRlci1ncmF5LTcwMCByb3VuZGVkLXhsIHNoYWRvdy0yeGwgdy1mdWxsIG1heC13LW1kIHAtNiBzcGFjZS15LTUiPgogICAgICAgICAgICA8aDMgY2xhc3NOYW1lPSJ0ZXh0LXdoaXRlIGZvbnQtc2VtaWJvbGQgdGV4dC1sZyI+QWRqdXN0IENvaW5zPC9oMz4KICAgICAgICAgICAgPHAgY2xhc3NOYW1lPSJ0ZXh0LWdyYXktNDAwIHRleHQtc20iPgogICAgICAgICAgICAgIEN1cnJlbnQgYmFsYW5jZTp7JyAnfQogICAgICAgICAgICAgIDxzcGFuIGNsYXNzTmFtZT0idGV4dC15ZWxsb3ctNDAwIGZvbnQtbWVkaXVtIj57Y29pbkFkanVzdC51c2VyLmNvaW5CYWxhbmNlfSBjb2luczwvc3Bhbj4KICAgICAgICAgICAgPC9wPgoKICAgICAgICAgICAgPGRpdiBjbGFzc05hbWU9InNwYWNlLXktNCI+CiAgICAgICAgICAgICAgPGRpdj4KICAgICAgICAgICAgICAgIDxsYWJlbCBjbGFzc05hbWU9InRleHQteHMgZm9udC1tZWRpdW0gdGV4dC1ncmF5LTQwMCBibG9jayBtYi0xLjUiPgogICAgICAgICAgICAgICAgICBBbW91bnQgKHVzZSBuZWdhdGl2ZSB0byBzdWJ0cmFjdCkKICAgICAgICAgICAgICAgIDwvbGFiZWw+CiAgICAgICAgICAgICAgICA8aW5wdXQKICAgICAgICAgICAgICAgICAgdHlwZT0ibnVtYmVyIgogICAgICAgICAgICAgICAgICB2YWx1ZT17Y29pbkFkanVzdC5hbW91bnR9CiAgICAgICAgICAgICAgICAgIG9uQ2hhbmdlPXsoZSkgPT4gc2V0Q29pbkFkanVzdCgocHJldikgPT4gcHJldiA/IHsgLi4ucHJldiwgYW1vdW50OiBlLnRhcmdldC52YWx1ZSB9IDogbnVsbCl9CiAgICAgICAgICAgICAgICAgIHBsYWNlaG9sZGVyPSJlLmcuIDEwMCBvciAtNTAiCiAgICAgICAgICAgICAgICAgIGNsYXNzTmFtZT0idy1mdWxsIHB4LTMgcHktMi41IGJnLWdyYXktOTUwIGJvcmRlciBib3JkZXItZ3JheS03MDAgcm91bmRlZC1sZyB0ZXh0LXNtIHRleHQtd2hpdGUgcGxhY2Vob2xkZXItZ3JheS02MDAgZm9jdXM6b3V0bGluZS1ub25lIGZvY3VzOmJvcmRlci1yZWQtNjAwIgogICAgICAgICAgICAgICAgLz4KICAgICAgICAgICAgICA8L2Rpdj4KICAgICAgICAgICAgICA8ZGl2PgogICAgICAgICAgICAgICAgPGxhYmVsIGNsYXNzTmFtZT0idGV4dC14cyBmb250LW1lZGl1bSB0ZXh0LWdyYXktNDAwIGJsb2NrIG1iLTEuNSI+UmVhc29uPC9sYWJlbD4KICAgICAgICAgICAgICAgIDxpbnB1dAogICAgICAgICAgICAgICAgICB0eXBlPSJ0ZXh0IgogICAgICAgICAgICAgICAgICB2YWx1ZT17Y29pbkFkanVzdC5yZWFzb259CiAgICAgICAgICAgICAgICAgIG9uQ2hhbmdlPXsoZSkgPT4gc2V0Q29pbkFkanVzdCgocHJldikgPT4gcHJldiA/IHsgLi4ucHJldiwgcmVhc29uOiBlLnRhcmdldC52YWx1ZSB9IDogbnVsbCl9CiAgICAgICAgICAgICAgICAgIHBsYWNlaG9sZGVyPSJBZG1pbiBhZGp1c3RtZW50LCByZWZ1bmQsIGV0Yy4iCiAgICAgICAgICAgICAgICAgIGNsYXNzTmFtZT0idy1mdWxsIHB4LTMgcHktMi41IGJnLWdyYXktOTUwIGJvcmRlciBib3JkZXItZ3JheS03MDAgcm91bmRlZC1sZyB0ZXh0LXNtIHRleHQtd2hpdGUgcGxhY2Vob2xkZXItZ3JheS02MDAgZm9jdXM6b3V0bGluZS1ub25lIGZvY3VzOmJvcmRlci1yZWQtNjAwIgogICAgICAgICAgICAgICAgLz4KICAgICAgICAgICAgICA8L2Rpdj4KICAgICAgICAgICAgPC9kaXY+CgogICAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT0iZmxleCBnYXAtMyBqdXN0aWZ5LWVuZCI+CiAgICAgICAgICAgICAgPGJ1dHRvbgogICAgICAgICAgICAgICAgb25DbGljaz17KCkgPT4gc2V0Q29pbkFkanVzdChudWxsKX0KICAgICAgICAgICAgICAgIGNsYXNzTmFtZT0icHgtNCBweS0yIHJvdW5kZWQtbGcgYmctZ3JheS04MDAgdGV4dC1ncmF5LTMwMCBob3ZlcjpiZy1ncmF5LTcwMCB0ZXh0LXNtIGZvbnQtbWVkaXVtIgogICAgICAgICAgICAgID4KICAgICAgICAgICAgICAgIENhbmNlbAogICAgICAgICAgICAgIDwvYnV0dG9uPgogICAgICAgICAgICAgIDxidXR0b24KICAgICAgICAgICAgICAgIG9uQ2xpY2s9e2hhbmRsZUNvaW5BZGp1c3R9CiAgICAgICAgICAgICAgICBkaXNhYmxlZD17IWNvaW5BZGp1c3QuYW1vdW50IHx8IGNvaW5BZGp1c3QubG9hZGluZ30KICAgICAgICAgICAgICAgIGNsYXNzTmFtZT0icHgtNCBweS0yIHJvdW5kZWQtbGcgYmctcmVkLTYwMCBob3ZlcjpiZy1yZWQtNzAwIHRleHQtd2hpdGUgdGV4dC1zbSBmb250LW1lZGl1bSBkaXNhYmxlZDpvcGFjaXR5LTUwIgogICAgICAgICAgICAgID4KICAgICAgICAgICAgICAgIHtjb2luQWRqdXN0LmxvYWRpbmcgPyAnU2F2aW5nLi4uJyA6ICdBcHBseSd9CiAgICAgICAgICAgICAgPC9idXR0b24+CiAgICAgICAgICAgIDwvZGl2PgogICAgICAgICAgPC9kaXY+CiAgICAgICAgPC9kaXY+CiAgICAgICl9CiAgICA8L2Rpdj4KICApOwp9Cg=="}
+'use client';
+
+import { useEffect, useState, useCallback } from 'react';
+import Link from 'next/link';
+import { Search, User, Ban, Coins, ChevronDown, ShieldCheck } from 'lucide-react';
+import DataTable from '@/components/admin/DataTable';
+import ConfirmDialog from '@/components/admin/ConfirmDialog';
+import { useToast } from '@/components/admin/Toast';
+
+interface AdminUser {
+  id: string;
+  name?: string;
+  email?: string;
+  phone?: string;
+  avatar?: string;
+  provider?: string;
+  coinBalance: number;
+  role: string;
+  banned: boolean;
+  createdAt: string;
+}
+
+interface CoinAdjustState {
+  user: AdminUser;
+  amount: string;
+  reason: string;
+  loading: boolean;
+}
+
+export default function UsersPage() {
+  const { toast } = useToast();
+  const [data, setData] = useState<AdminUser[]>([]);
+  const [total, setTotal] = useState(0);
+  const [page, setPage] = useState(1);
+  const [loading, setLoading] = useState(true);
+  const [search, setSearch] = useState('');
+  const [banTarget, setBanTarget] = useState<AdminUser | null>(null);
+  const [banLoading, setBanLoading] = useState(false);
+  const [coinAdjust, setCoinAdjust] = useState<CoinAdjustState | null>(null);
+
+  const fetchData = useCallback(async () => {
+    setLoading(true);
+    try {
+      const params = new URLSearchParams({
+        page: String(page),
+        limit: '20',
+        ...(search && { search }),
+      });
+      const res = await fetch(`/api/admin/users?${params}`);
+      if (!res.ok) throw new Error();
+      const json = await res.json();
+      setData(json.users ?? []);
+      setTotal(json.total ?? 0);
+    } catch {
+      toast('Failed to load users', 'error');
+    } finally {
+      setLoading(false);
+    }
+  }, [page, search, toast]);
+
+  useEffect(() => {
+    const t = setTimeout(fetchData, 300);
+    return () => clearTimeout(t);
+  }, [fetchData]);
+
+  const handleBanToggle = async () => {
+    if (!banTarget) return;
+    setBanLoading(true);
+    try {
+      const res = await fetch(`/api/admin/users/${banTarget.id}`, {
+        method: 'PATCH',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ banned: !banTarget.banned }),
+      });
+      if (!res.ok) throw new Error();
+      toast(`User ${banTarget.banned ? 'unbanned' : 'banned'}`, 'success');
+      setBanTarget(null);
+      fetchData();
+    } catch {
+      toast('Failed to update user', 'error');
+    } finally {
+      setBanLoading(false);
+    }
+  };
+
+  const handleRoleChange = async (userId: string, role: string) => {
+    try {
+      const res = await fetch(`/api/admin/users/${userId}`, {
+        method: 'PATCH',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ role }),
+      });
+      if (!res.ok) throw new Error();
+      toast('Role updated', 'success');
+      fetchData();
+    } catch {
+      toast('Failed to update role', 'error');
+    }
+  };
+
+  const handleCoinAdjust = async () => {
+    if (!coinAdjust) return;
+    setCoinAdjust((prev) => prev ? { ...prev, loading: true } : null);
+    try {
+      const res = await fetch(`/api/admin/users/${coinAdjust.user.id}/coins`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          amount: Number(coinAdjust.amount),
+          reason: coinAdjust.reason,
+        }),
+      });
+      if (!res.ok) throw new Error();
+      toast('Coin balance adjusted', 'success');
+      setCoinAdjust(null);
+      fetchData();
+    } catch {
+      toast('Failed to adjust coins', 'error');
+      setCoinAdjust((prev) => prev ? { ...prev, loading: false } : null);
+    }
+  };
+
+  const formatDate = (s: string) =>
+    new Date(s).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' });
+
+  const ROLE_BADGE: Record<string, string> = {
+    admin: 'bg-red-900/50 text-red-400 border-red-700',
+    superadmin: 'bg-purple-900/50 text-purple-400 border-purple-700',
+    user: 'bg-gray-800 text-gray-400 border-gray-700',
+  };
+
+  const columns = [
+    {
+      key: 'user',
+      label: 'User',
+      render: (row: AdminUser) => (
+        <div className="flex items-center gap-3">
+          {row.avatar ? (
+            <img src={row.avatar} alt={row.name ?? ''} className="w-8 h-8 rounded-full object-cover" />
+          ) : (
+            <div className="w-8 h-8 rounded-full bg-gray-800 flex items-center justify-center">
+              <User size={14} className="text-gray-500" />
+            </div>
+          )}
+          <div>
+            <div className="font-medium text-white text-sm">{row.name ?? '—'}</div>
+            <div className="text-xs text-gray-500">{row.email ?? row.phone ?? '—'}</div>
+          </div>
+        </div>
+      ),
+    },
+    {
+      key: 'provider',
+      label: 'Provider',
+      render: (row: AdminUser) => (
+        <span className="text-xs text-gray-400 capitalize">{row.provider ?? 'phone'}</span>
+      ),
+    },
+    {
+      key: 'coinBalance',
+      label: 'Coins',
+      render: (row: AdminUser) => (
+        <span className="text-yellow-400 font-medium text-sm">{row.coinBalance}</span>
+      ),
+    },
+    {
+      key: 'role',
+      label: 'Role',
+      render: (row: AdminUser) => (
+        <select
+          value={row.role ?? 'user'}
+          onChange={(e) => handleRoleChange(row.id, e.target.value)}
+          className={`text-xs px-2 py-1 rounded border bg-transparent cursor-pointer focus:outline-none ${
+            ROLE_BADGE[row.role] ?? ROLE_BADGE.user
+          }`}
+        >
+          <option value="user">User</option>
+          <option value="admin">Admin</option>
+          <option value="superadmin">Superadmin</option>
+        </select>
+      ),
+    },
+    {
+      key: 'banned',
+      label: 'Status',
+      render: (row: AdminUser) => (
+        <span
+          className={`inline-flex items-center px-2 py-0.5 rounded text-xs font-medium border ${
+            row.banned
+              ? 'bg-red-900/50 text-red-400 border-red-700'
+              : 'bg-green-900/50 text-green-400 border-green-700'
+          }`}
+        >
+          {row.banned ? 'Banned' : 'Active'}
+        </span>
+      ),
+    },
+    {
+      key: 'createdAt',
+      label: 'Joined',
+      render: (row: AdminUser) => (
+        <span className="text-xs text-gray-500">{formatDate(row.createdAt)}</span>
+      ),
+    },
+    {
+      key: 'actions',
+      label: 'Actions',
+      render: (row: AdminUser) => (
+        <div className="flex items-center gap-1">
+          <Link
+            href={`/admin/users/${row.id}`}
+            className="p-1.5 rounded-lg text-gray-400 hover:bg-gray-800 hover:text-white transition-colors"
+            title="View detail"
+          >
+            <ShieldCheck size={14} />
+          </Link>
+          <button
+            onClick={() =>
+              setCoinAdjust({ user: row, amount: '', reason: '', loading: false })
+            }
+            className="p-1.5 rounded-lg text-gray-400 hover:bg-gray-800 hover:text-yellow-400 transition-colors"
+            title="Adjust coins"
+          >
+            <Coins size={14} />
+          </button>
+          <button
+            onClick={() => setBanTarget(row)}
+            className={`p-1.5 rounded-lg transition-colors ${
+              row.banned
+                ? 'text-green-500 hover:bg-green-900/30'
+                : 'text-gray-400 hover:bg-red-900/30 hover:text-red-400'
+            }`}
+            title={row.banned ? 'Unban' : 'Ban'}
+          >
+            <Ban size={14} />
+          </button>
+        </div>
+      ),
+    },
+  ];
+
+  return (
+    <div className="max-w-7xl mx-auto space-y-5">
+      {/* Header */}
+      <div className="flex items-center justify-between gap-4 flex-wrap">
+        <div>
+          <h1 className="text-2xl font-bold text-white">Users</h1>
+          <p className="text-gray-500 text-sm mt-0.5">{total} total users</p>
+        </div>
+      </div>
+
+      {/* Search */}
+      <div className="relative max-w-sm">
+        <Search size={16} className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-500" />
+        <input
+          type="text"
+          value={search}
+          onChange={(e) => { setSearch(e.target.value); setPage(1); }}
+          placeholder="Search by name, email, or phone..."
+          className="w-full pl-9 pr-4 py-2.5 bg-gray-900 border border-gray-800 rounded-lg text-sm text-white placeholder-gray-600 focus:outline-none focus:border-red-600 transition-colors"
+        />
+      </div>
+
+      {/* Table */}
+      <DataTable
+        columns={columns as unknown as Parameters<typeof DataTable>[0]['columns']}
+        data={data as unknown as Record<string, unknown>[]}
+        loading={loading}
+        emptyMessage="No users found."
+        page={page}
+        pageSize={20}
+        total={total}
+        onPageChange={setPage}
+      />
+
+      {/* Ban confirm */}
+      <ConfirmDialog
+        open={!!banTarget}
+        title={banTarget?.banned ? 'Unban User' : 'Ban User'}
+        message={
+          banTarget?.banned
+            ? `Unban "${banTarget?.name ?? banTarget?.email}"? They will regain access.`
+            : `Ban "${banTarget?.name ?? banTarget?.email}"? They will lose access to the platform.`
+        }
+        confirmLabel={banTarget?.banned ? 'Unban' : 'Ban'}
+        dangerous={!banTarget?.banned}
+        loading={banLoading}
+        onConfirm={handleBanToggle}
+        onCancel={() => setBanTarget(null)}
+      />
+
+      {/* Coin adjust modal */}
+      {coinAdjust && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center p-4">
+          <div className="absolute inset-0 bg-black/70" onClick={() => setCoinAdjust(null)} />
+          <div className="relative bg-gray-900 border border-gray-700 rounded-xl shadow-2xl w-full max-w-md p-6 space-y-5">
+            <h3 className="text-white font-semibold text-lg">Adjust Coins</h3>
+            <p className="text-gray-400 text-sm">
+              Current balance:{' '}
+              <span className="text-yellow-400 font-medium">{coinAdjust.user.coinBalance} coins</span>
+            </p>
+
+            <div className="space-y-4">
+              <div>
+                <label className="text-xs font-medium text-gray-400 block mb-1.5">
+                  Amount (use negative to subtract)
+                </label>
+                <input
+                  type="number"
+                  value={coinAdjust.amount}
+                  onChange={(e) => setCoinAdjust((prev) => prev ? { ...prev, amount: e.target.value } : null)}
+                  placeholder="e.g. 100 or -50"
+                  className="w-full px-3 py-2.5 bg-gray-950 border border-gray-700 rounded-lg text-sm text-white placeholder-gray-600 focus:outline-none focus:border-red-600"
+                />
+              </div>
+              <div>
+                <label className="text-xs font-medium text-gray-400 block mb-1.5">Reason</label>
+                <input
+                  type="text"
+                  value={coinAdjust.reason}
+                  onChange={(e) => setCoinAdjust((prev) => prev ? { ...prev, reason: e.target.value } : null)}
+                  placeholder="Admin adjustment, refund, etc."
+                  className="w-full px-3 py-2.5 bg-gray-950 border border-gray-700 rounded-lg text-sm text-white placeholder-gray-600 focus:outline-none focus:border-red-600"
+                />
+              </div>
+            </div>
+
+            <div className="flex gap-3 justify-end">
+              <button
+                onClick={() => setCoinAdjust(null)}
+                className="px-4 py-2 rounded-lg bg-gray-800 text-gray-300 hover:bg-gray-700 text-sm font-medium"
+              >
+                Cancel
+              </button>
+              <button
+                onClick={handleCoinAdjust}
+                disabled={!coinAdjust.amount || coinAdjust.loading}
+                className="px-4 py-2 rounded-lg bg-red-600 hover:bg-red-700 text-white text-sm font-medium disabled:opacity-50"
+              >
+                {coinAdjust.loading ? 'Saving...' : 'Apply'}
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
+    </div>
+  );
+}

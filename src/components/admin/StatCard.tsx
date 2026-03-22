@@ -1,1 +1,41 @@
-{"data":"J3VzZSBjbGllbnQnOwoKaW1wb3J0IHsgTHVjaWRlSWNvbiB9IGZyb20gJ2x1Y2lkZS1yZWFjdCc7CgppbnRlcmZhY2UgU3RhdENhcmRQcm9wcyB7CiAgdGl0bGU6IHN0cmluZzsKICB2YWx1ZTogc3RyaW5nIHwgbnVtYmVyOwogIHN1YnRpdGxlPzogc3RyaW5nOwogIGljb246IEx1Y2lkZUljb247CiAgaWNvbkNvbG9yPzogc3RyaW5nOwogIHRyZW5kPzogeyB2YWx1ZTogbnVtYmVyOyBsYWJlbDogc3RyaW5nIH07Cn0KCmV4cG9ydCBkZWZhdWx0IGZ1bmN0aW9uIFN0YXRDYXJkKHsKICB0aXRsZSwKICB2YWx1ZSwKICBzdWJ0aXRsZSwKICBpY29uOiBJY29uLAogIGljb25Db2xvciA9ICd0ZXh0LXJlZC01MDAnLAogIHRyZW5kLAp9OiBTdGF0Q2FyZFByb3BzKSB7CiAgcmV0dXJuICgKICAgIDxkaXYgY2xhc3NOYW1lPSJiZy1ncmF5LTkwMCBib3JkZXIgYm9yZGVyLWdyYXktODAwIHJvdW5kZWQteGwgcC01IGZsZXggZmxleC1jb2wgZ2FwLTMiPgogICAgICA8ZGl2IGNsYXNzTmFtZT0iZmxleCBpdGVtcy1jZW50ZXIganVzdGlmeS1iZXR3ZWVuIj4KICAgICAgICA8c3BhbiBjbGFzc05hbWU9InRleHQtc20gdGV4dC1ncmF5LTQwMCBmb250LW1lZGl1bSI+e3RpdGxlfTwvc3Bhbj4KICAgICAgICA8ZGl2IGNsYXNzTmFtZT17YHAtMiByb3VuZGVkLWxnIGJnLWdyYXktODAwICR7aWNvbkNvbG9yfWB9PgogICAgICAgICAgPEljb24gc2l6ZT17MTh9IC8+CiAgICAgICAgPC9kaXY+CiAgICAgIDwvZGl2PgogICAgICA8ZGl2PgogICAgICAgIDxkaXYgY2xhc3NOYW1lPSJ0ZXh0LTJ4bCBmb250LWJvbGQgdGV4dC13aGl0ZSI+e3ZhbHVlfTwvZGl2PgogICAgICAgIHtzdWJ0aXRsZSAmJiA8ZGl2IGNsYXNzTmFtZT0idGV4dC14cyB0ZXh0LWdyYXktNTAwIG10LTAuNSI+e3N1YnRpdGxlfTwvZGl2Pn0KICAgICAgPC9kaXY+CiAgICAgIHt0cmVuZCAmJiAoCiAgICAgICAgPGRpdiBjbGFzc05hbWU9e2B0ZXh0LXhzIGZvbnQtbWVkaXVtICR7dHJlbmQudmFsdWUgPj0gMCA/ICd0ZXh0LWdyZWVuLTQwMCcgOiAndGV4dC1yZWQtNDAwJ31gfT4KICAgICAgICAgIHt0cmVuZC52YWx1ZSA+PSAwID8gJ+KGkScgOiAn4oaTJ30ge01hdGguYWJzKHRyZW5kLnZhbHVlKX0lIHt0cmVuZC5sYWJlbH0KICAgICAgICA8L2Rpdj4KICAgICAgKX0KICAgIDwvZGl2PgogICk7Cn0K"}
+'use client';
+
+import { LucideIcon } from 'lucide-react';
+
+interface StatCardProps {
+  title: string;
+  value: string | number;
+  subtitle?: string;
+  icon: LucideIcon;
+  iconColor?: string;
+  trend?: { value: number; label: string };
+}
+
+export default function StatCard({
+  title,
+  value,
+  subtitle,
+  icon: Icon,
+  iconColor = 'text-red-500',
+  trend,
+}: StatCardProps) {
+  return (
+    <div className="bg-gray-900 border border-gray-800 rounded-xl p-5 flex flex-col gap-3">
+      <div className="flex items-center justify-between">
+        <span className="text-sm text-gray-400 font-medium">{title}</span>
+        <div className={`p-2 rounded-lg bg-gray-800 ${iconColor}`}>
+          <Icon size={18} />
+        </div>
+      </div>
+      <div>
+        <div className="text-2xl font-bold text-white">{value}</div>
+        {subtitle && <div className="text-xs text-gray-500 mt-0.5">{subtitle}</div>}
+      </div>
+      {trend && (
+        <div className={`text-xs font-medium ${trend.value >= 0 ? 'text-green-400' : 'text-red-400'}`}>
+          {trend.value >= 0 ? '↑' : '↓'} {Math.abs(trend.value)}% {trend.label}
+        </div>
+      )}
+    </div>
+  );
+}

@@ -1,1 +1,13 @@
-{"data":"J3VzZSBjbGllbnQnOwppbXBvcnQgU2NyaXB0IGZyb20gJ25leHQvc2NyaXB0JzsKCmNvbnN0IEZCX1BJWEVMX0lEID0gcHJvY2Vzcy5lbnYuTkVYVF9QVUJMSUNfRkJfUElYRUxfSUQ7CgpleHBvcnQgZnVuY3Rpb24gRmFjZWJvb2tQaXhlbCgpIHsKICBpZiAoIUZCX1BJWEVMX0lEKSByZXR1cm4gbnVsbDsKICByZXR1cm4gKAogICAgPFNjcmlwdCBpZD0iZmItcGl4ZWwiIHN0cmF0ZWd5PSJhZnRlckludGVyYWN0aXZlIj4KICAgICAge2AhZnVuY3Rpb24oZixiLGUsdixuLHQscyl7aWYoZi5mYnEpcmV0dXJuO249Zi5mYnE9ZnVuY3Rpb24oKXtuLmNhbGxNZXRob2Q/bi5jYWxsTWV0aG9kLmFwcGx5KG4sYXJndW1lbnRzKTpuLnF1ZXVlLnB1c2goYXJndW1lbnRzKX07aWYoIWYuX2ZicSlmLl9mYnE9bjtuLnB1c2g9bjtuLmxvYWRlZD0hMDtuLnZlcnNpb249JzIuMCc7bi5xdWV1ZT1bXTt0PWIuY3JlYXRlRWxlbWVudChlKTt0LmFzeW5jPSEwO3Quc3JjPXY7cz1iLmdldEVsZW1lbnRzQnlUYWdOYW1lKGUpWzBdO3MucGFyZW50Tm9kZS5pbnNlcnRCZWZvcmUodCxzKX0od2luZG93LGRvY3VtZW50LCdzY3JpcHQnLCdodHRwczovL2Nvbm5lY3QuZmFjZWJvb2submV0L2VuX1VTL2ZiZXZlbnRzLmpzJyk7ZmJxKCdpbml0JywnJHtGQl9QSVhFTF9JRH0nKTtmYnEoJ3RyYWNrJywnUGFnZVZpZXcnKTtgfQogICAgPC9TY3JpcHQ+CiAgKTsKfQo="}
+'use client';
+import Script from 'next/script';
+
+const FB_PIXEL_ID = process.env.NEXT_PUBLIC_FB_PIXEL_ID;
+
+export function FacebookPixel() {
+  if (!FB_PIXEL_ID) return null;
+  return (
+    <Script id="fb-pixel" strategy="afterInteractive">
+      {`!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');fbq('init','${FB_PIXEL_ID}');fbq('track','PageView');`}
+    </Script>
+  );
+}

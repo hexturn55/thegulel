@@ -1,1 +1,122 @@
-{"data":"aW1wb3J0IHsgTmV4dFJlcXVlc3QsIE5leHRSZXNwb25zZSB9IGZyb20gJ25leHQvc2VydmVyJzsKaW1wb3J0IHsgY3JlYXRlU2VydmVyU3VwYWJhc2VDbGllbnQgfSBmcm9tICdAL2xpYi9zdXBhYmFzZS1zZXJ2ZXInOwppbXBvcnQgcHJpc21hIGZyb20gJ0AvbGliL3ByaXNtYSc7CgovKioKICogR0VUIC9hcGkvdXNlci9wcm9maWxlCiAqIFJldHVybnMgdGhlIGN1cnJlbnQgYXV0aGVudGljYXRlZCB1c2VyJ3MgZnVsbCBwcm9maWxlLgogKi8KZXhwb3J0IGFzeW5jIGZ1bmN0aW9uIEdFVChyZXF1ZXN0OiBOZXh0UmVxdWVzdCkgewogIGNvbnN0IHN1cGFiYXNlID0gYXdhaXQgY3JlYXRlU2VydmVyU3VwYWJhc2VDbGllbnQoKTsKICBjb25zdCB7CiAgICBkYXRhOiB7IHVzZXI6IHN1cGFiYXNlVXNlciB9LAogIH0gPSBhd2FpdCBzdXBhYmFzZS5hdXRoLmdldFVzZXIoKTsKCiAgaWYgKCFzdXBhYmFzZVVzZXIpIHsKICAgIHJldHVybiBOZXh0UmVzcG9uc2UuanNvbih7IGVycm9yOiAnVW5hdXRob3JpemVkJyB9LCB7IHN0YXR1czogNDAxIH0pOwogIH0KCiAgdHJ5IHsKICAgIGNvbnN0IHVzZXIgPSBhd2FpdCBwcmlzbWEudXNlci5maW5kRmlyc3QoewogICAgICB3aGVyZTogewogICAgICAgIE9SOiBbCiAgICAgICAgICB7IHN1cGFiYXNlSWQ6IHN1cGFiYXNlVXNlci5pZCB9LAogICAgICAgICAgLi4uKHN1cGFiYXNlVXNlci5lbWFpbCA/IFt7IGVtYWlsOiBzdXBhYmFzZVVzZXIuZW1haWwgfV0gOiBbXSksCiAgICAgICAgICAuLi4oc3VwYWJhc2VVc2VyLnBob25lID8gW3sgcGhvbmU6IHN1cGFiYXNlVXNlci5waG9uZSB9XSA6IFtdKSwKICAgICAgICBdLAogICAgICB9LAogICAgICBzZWxlY3Q6IHsKICAgICAgICBpZDogdHJ1ZSwKICAgICAgICBuYW1lOiB0cnVlLAogICAgICAgIGVtYWlsOiB0cnVlLAogICAgICAgIHBob25lOiB0cnVlLAogICAgICAgIGF2YXRhcjogdHJ1ZSwKICAgICAgICBsb2NhbGU6IHRydWUsCiAgICAgICAgcHJvdmlkZXI6IHRydWUsCiAgICAgICAgY29pbkJhbGFuY2U6IHRydWUsCiAgICAgICAgY3JlYXRlZEF0OiB0cnVlLAogICAgICB9LAogICAgfSk7CgogICAgaWYgKCF1c2VyKSB7CiAgICAgIHJldHVybiBOZXh0UmVzcG9uc2UuanNvbih7IGVycm9yOiAnVXNlciBub3QgZm91bmQnIH0sIHsgc3RhdHVzOiA0MDQgfSk7CiAgICB9CgogICAgcmV0dXJuIE5leHRSZXNwb25zZS5qc29uKHVzZXIpOwogIH0gY2F0Y2ggKGVycm9yKSB7CiAgICBjb25zb2xlLmVycm9yKCdHRVQgL2FwaS91c2VyL3Byb2ZpbGUgZXJyb3I6JywgZXJyb3IpOwogICAgcmV0dXJuIE5leHRSZXNwb25zZS5qc29uKHsgZXJyb3I6ICdJbnRlcm5hbCBlcnJvcicgfSwgeyBzdGF0dXM6IDUwMCB9KTsKICB9Cn0KCi8qKgogKiBQQVRDSCAvYXBpL3VzZXIvcHJvZmlsZQogKiBVcGRhdGUgbmFtZSwgbG9jYWxlLCBvciBhdmF0YXIgZm9yIHRoZSBjdXJyZW50IHVzZXIuCiAqLwpleHBvcnQgYXN5bmMgZnVuY3Rpb24gUEFUQ0gocmVxdWVzdDogTmV4dFJlcXVlc3QpIHsKICBjb25zdCBzdXBhYmFzZSA9IGF3YWl0IGNyZWF0ZVNlcnZlclN1cGFiYXNlQ2xpZW50KCk7CiAgY29uc3QgewogICAgZGF0YTogeyB1c2VyOiBzdXBhYmFzZVVzZXIgfSwKICB9ID0gYXdhaXQgc3VwYWJhc2UuYXV0aC5nZXRVc2VyKCk7CgogIGlmICghc3VwYWJhc2VVc2VyKSB7CiAgICByZXR1cm4gTmV4dFJlc3BvbnNlLmpzb24oeyBlcnJvcjogJ1VuYXV0aG9yaXplZCcgfSwgeyBzdGF0dXM6IDQwMSB9KTsKICB9CgogIGxldCBib2R5OiB7IG5hbWU/OiBzdHJpbmc7IGxvY2FsZT86IHN0cmluZzsgYXZhdGFyPzogc3RyaW5nIH07CiAgdHJ5IHsKICAgIGJvZHkgPSBhd2FpdCByZXF1ZXN0Lmpzb24oKTsKICB9IGNhdGNoIHsKICAgIHJldHVybiBOZXh0UmVzcG9uc2UuanNvbih7IGVycm9yOiAnSW52YWxpZCBKU09OJyB9LCB7IHN0YXR1czogNDAwIH0pOwogIH0KCiAgY29uc3QgeyBuYW1lLCBsb2NhbGUsIGF2YXRhciB9ID0gYm9keTsKCiAgLy8gQnVpbGQgdXBkYXRlIHBheWxvYWQg4oCUIG9ubHkgaW5jbHVkZSBmaWVsZHMgdGhhdCB3ZXJlIHByb3ZpZGVkCiAgY29uc3QgdXBkYXRlRGF0YTogUmVjb3JkPHN0cmluZywgc3RyaW5nPiA9IHt9OwogIGlmIChuYW1lICE9PSB1bmRlZmluZWQpIHVwZGF0ZURhdGEubmFtZSA9IG5hbWU7CiAgaWYgKGxvY2FsZSAhPT0gdW5kZWZpbmVkKSB1cGRhdGVEYXRhLmxvY2FsZSA9IGxvY2FsZTsKICBpZiAoYXZhdGFyICE9PSB1bmRlZmluZWQpIHVwZGF0ZURhdGEuYXZhdGFyID0gYXZhdGFyOwoKICBpZiAoT2JqZWN0LmtleXModXBkYXRlRGF0YSkubGVuZ3RoID09PSAwKSB7CiAgICByZXR1cm4gTmV4dFJlc3BvbnNlLmpzb24oeyBlcnJvcjogJ05vIGZpZWxkcyB0byB1cGRhdGUnIH0sIHsgc3RhdHVzOiA0MDAgfSk7CiAgfQoKICB0cnkgewogICAgY29uc3QgZXhpc3RpbmdVc2VyID0gYXdhaXQgcHJpc21hLnVzZXIuZmluZEZpcnN0KHsKICAgICAgd2hlcmU6IHsKICAgICAgICBPUjogWwogICAgICAgICAgeyBzdXBhYmFzZUlkOiBzdXBhYmFzZVVzZXIuaWQgfSwKICAgICAgICAgIC4uLihzdXBhYmFzZVVzZXIuZW1haWwgPyBbeyBlbWFpbDogc3VwYWJhc2VVc2VyLmVtYWlsIH1dIDogW10pLAogICAgICAgICAgLi4uKHN1cGFiYXNlVXNlci5waG9uZSA/IFt7IHBob25lOiBzdXBhYmFzZVVzZXIucGhvbmUgfV0gOiBbXSksCiAgICAgICAgXSwKICAgICAgfSwKICAgICAgc2VsZWN0OiB7IGlkOiB0cnVlIH0sCiAgICB9KTsKCiAgICBpZiAoIWV4aXN0aW5nVXNlcikgewogICAgICByZXR1cm4gTmV4dFJlc3BvbnNlLmpzb24oeyBlcnJvcjogJ1VzZXIgbm90IGZvdW5kJyB9LCB7IHN0YXR1czogNDA0IH0pOwogICAgfQoKICAgIGNvbnN0IHVwZGF0ZWQgPSBhd2FpdCBwcmlzbWEudXNlci51cGRhdGUoewogICAgICB3aGVyZTogeyBpZDogZXhpc3RpbmdVc2VyLmlkIH0sCiAgICAgIGRhdGE6IHVwZGF0ZURhdGEsCiAgICAgIHNlbGVjdDogewogICAgICAgIGlkOiB0cnVlLAogICAgICAgIG5hbWU6IHRydWUsCiAgICAgICAgZW1haWw6IHRydWUsCiAgICAgICAgcGhvbmU6IHRydWUsCiAgICAgICAgYXZhdGFyOiB0cnVlLAogICAgICAgIGxvY2FsZTogdHJ1ZSwKICAgICAgICBwcm92aWRlcjogdHJ1ZSwKICAgICAgICBjb2luQmFsYW5jZTogdHJ1ZSwKICAgICAgICBjcmVhdGVkQXQ6IHRydWUsCiAgICAgIH0sCiAgICB9KTsKCiAgICByZXR1cm4gTmV4dFJlc3BvbnNlLmpzb24odXBkYXRlZCk7CiAgfSBjYXRjaCAoZXJyb3IpIHsKICAgIGNvbnNvbGUuZXJyb3IoJ1BBVENIIC9hcGkvdXNlci9wcm9maWxlIGVycm9yOicsIGVycm9yKTsKICAgIHJldHVybiBOZXh0UmVzcG9uc2UuanNvbih7IGVycm9yOiAnSW50ZXJuYWwgZXJyb3InIH0sIHsgc3RhdHVzOiA1MDAgfSk7CiAgfQp9Cg=="}
+import { NextRequest, NextResponse } from 'next/server';
+import { createServerSupabaseClient } from '@/lib/supabase-server';
+import prisma from '@/lib/prisma';
+
+/**
+ * GET /api/user/profile
+ * Returns the current authenticated user's full profile.
+ */
+export async function GET(request: NextRequest) {
+  const supabase = await createServerSupabaseClient();
+  const {
+    data: { user: supabaseUser },
+  } = await supabase.auth.getUser();
+
+  if (!supabaseUser) {
+    return NextResponse.json({ error: 'Unauthorized' }, { status: 401 });
+  }
+
+  try {
+    const user = await prisma.user.findFirst({
+      where: {
+        OR: [
+          { supabaseId: supabaseUser.id },
+          ...(supabaseUser.email ? [{ email: supabaseUser.email }] : []),
+          ...(supabaseUser.phone ? [{ phone: supabaseUser.phone }] : []),
+        ],
+      },
+      select: {
+        id: true,
+        name: true,
+        email: true,
+        phone: true,
+        avatar: true,
+        locale: true,
+        provider: true,
+        coinBalance: true,
+        createdAt: true,
+      },
+    });
+
+    if (!user) {
+      return NextResponse.json({ error: 'User not found' }, { status: 404 });
+    }
+
+    return NextResponse.json(user);
+  } catch (error) {
+    console.error('GET /api/user/profile error:', error);
+    return NextResponse.json({ error: 'Internal error' }, { status: 500 });
+  }
+}
+
+/**
+ * PATCH /api/user/profile
+ * Update name, locale, or avatar for the current user.
+ */
+export async function PATCH(request: NextRequest) {
+  const supabase = await createServerSupabaseClient();
+  const {
+    data: { user: supabaseUser },
+  } = await supabase.auth.getUser();
+
+  if (!supabaseUser) {
+    return NextResponse.json({ error: 'Unauthorized' }, { status: 401 });
+  }
+
+  let body: { name?: string; locale?: string; avatar?: string };
+  try {
+    body = await request.json();
+  } catch {
+    return NextResponse.json({ error: 'Invalid JSON' }, { status: 400 });
+  }
+
+  const { name, locale, avatar } = body;
+
+  // Build update payload — only include fields that were provided
+  const updateData: Record<string, string> = {};
+  if (name !== undefined) updateData.name = name;
+  if (locale !== undefined) updateData.locale = locale;
+  if (avatar !== undefined) updateData.avatar = avatar;
+
+  if (Object.keys(updateData).length === 0) {
+    return NextResponse.json({ error: 'No fields to update' }, { status: 400 });
+  }
+
+  try {
+    const existingUser = await prisma.user.findFirst({
+      where: {
+        OR: [
+          { supabaseId: supabaseUser.id },
+          ...(supabaseUser.email ? [{ email: supabaseUser.email }] : []),
+          ...(supabaseUser.phone ? [{ phone: supabaseUser.phone }] : []),
+        ],
+      },
+      select: { id: true },
+    });
+
+    if (!existingUser) {
+      return NextResponse.json({ error: 'User not found' }, { status: 404 });
+    }
+
+    const updated = await prisma.user.update({
+      where: { id: existingUser.id },
+      data: updateData,
+      select: {
+        id: true,
+        name: true,
+        email: true,
+        phone: true,
+        avatar: true,
+        locale: true,
+        provider: true,
+        coinBalance: true,
+        createdAt: true,
+      },
+    });
+
+    return NextResponse.json(updated);
+  } catch (error) {
+    console.error('PATCH /api/user/profile error:', error);
+    return NextResponse.json({ error: 'Internal error' }, { status: 500 });
+  }
+}

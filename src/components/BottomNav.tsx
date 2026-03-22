@@ -1,1 +1,44 @@
-{"data":"J3VzZSBjbGllbnQnOwoKaW1wb3J0IExpbmsgZnJvbSAnbmV4dC9saW5rJzsKaW1wb3J0IHsgdXNlUGF0aG5hbWUgfSBmcm9tICduZXh0L25hdmlnYXRpb24nOwppbXBvcnQgeyBIb21lLCBTZWFyY2gsIFdhbGxldCwgVXNlciB9IGZyb20gJ2x1Y2lkZS1yZWFjdCc7Cgpjb25zdCBOQVZfSVRFTVMgPSBbCiAgeyBpY29uOiBIb21lLCBsYWJlbDogJ0hvbWUnLCBocmVmOiAnLycgfSwKICB7IGljb246IFNlYXJjaCwgbGFiZWw6ICdTZWFyY2gnLCBocmVmOiAnL3NlYXJjaCcgfSwKICB7IGljb246IFdhbGxldCwgbGFiZWw6ICdXYWxsZXQnLCBocmVmOiAnL3dhbGxldCcgfSwKICB7IGljb246IFVzZXIsIGxhYmVsOiAnUHJvZmlsZScsIGhyZWY6ICcvcHJvZmlsZScgfSwKXTsKCmV4cG9ydCBkZWZhdWx0IGZ1bmN0aW9uIEJvdHRvbU5hdigpIHsKICBjb25zdCBwYXRobmFtZSA9IHVzZVBhdGhuYW1lKCk7CgogIHJldHVybiAoCiAgICA8bmF2IGNsYXNzTmFtZT0iZml4ZWQgYm90dG9tLTAgbGVmdC0wIHJpZ2h0LTAgei0yMCBiZy1ibGFjay85NSBiYWNrZHJvcC1ibHVyLXNtIGJvcmRlci10IGJvcmRlci1ncmF5LTgwMCI+CiAgICAgIDxkaXYKICAgICAgICBjbGFzc05hbWU9ImZsZXggaXRlbXMtY2VudGVyIGp1c3RpZnktYXJvdW5kIHB4LTIgcHQtMiIKICAgICAgICBzdHlsZT17eyBwYWRkaW5nQm90dG9tOiAnY2FsYygwLjVyZW0gKyBlbnYoc2FmZS1hcmVhLWluc2V0LWJvdHRvbSkpJyB9fQogICAgICA+CiAgICAgICAge05BVl9JVEVNUy5tYXAoKHsgaWNvbjogSWNvbiwgbGFiZWwsIGhyZWYgfSkgPT4gewogICAgICAgICAgY29uc3QgaXNBY3RpdmUgPSBwYXRobmFtZSA9PT0gaHJlZjsKICAgICAgICAgIAogICAgICAgICAgcmV0dXJuICgKICAgICAgICAgICAgPExpbmsKICAgICAgICAgICAgICBrZXk9e2hyZWZ9CiAgICAgICAgICAgICAgaHJlZj17aHJlZn0KICAgICAgICAgICAgICBjbGFzc05hbWU9e2BmbGV4IGZsZXgtY29sIGl0ZW1zLWNlbnRlciBnYXAtMSBweC00IHB5LTIgcm91bmRlZC1sZyB0cmFuc2l0aW9uICR7CiAgICAgICAgICAgICAgICBpc0FjdGl2ZQogICAgICAgICAgICAgICAgICA/ICd0ZXh0LXJlZC01MDAnCiAgICAgICAgICAgICAgICAgIDogJ3RleHQtZ3JheS00MDAgaG92ZXI6dGV4dC13aGl0ZScKICAgICAgICAgICAgICB9YH0KICAgICAgICAgICAgPgogICAgICAgICAgICAgIDxJY29uIGNsYXNzTmFtZT17YHctNiBoLTYgJHtpc0FjdGl2ZSA/ICdmaWxsLXJlZC01MDAvMjAnIDogJyd9YH0gLz4KICAgICAgICAgICAgICA8c3BhbiBjbGFzc05hbWU9InRleHQteHMgZm9udC1tZWRpdW0iPntsYWJlbH08L3NwYW4+CiAgICAgICAgICAgIDwvTGluaz4KICAgICAgICAgICk7CiAgICAgICAgfSl9CiAgICAgIDwvZGl2PgogICAgPC9uYXY+CiAgKTsKfQo="}
+'use client';
+
+import Link from 'next/link';
+import { usePathname } from 'next/navigation';
+import { Home, Search, Wallet, User } from 'lucide-react';
+
+const NAV_ITEMS = [
+  { icon: Home, label: 'Home', href: '/' },
+  { icon: Search, label: 'Search', href: '/search' },
+  { icon: Wallet, label: 'Wallet', href: '/wallet' },
+  { icon: User, label: 'Profile', href: '/profile' },
+];
+
+export default function BottomNav() {
+  const pathname = usePathname();
+
+  return (
+    <nav className="fixed bottom-0 left-0 right-0 z-20 bg-black/95 backdrop-blur-sm border-t border-gray-800">
+      <div
+        className="flex items-center justify-around px-2 pt-2"
+        style={{ paddingBottom: 'calc(0.5rem + env(safe-area-inset-bottom))' }}
+      >
+        {NAV_ITEMS.map(({ icon: Icon, label, href }) => {
+          const isActive = pathname === href;
+          
+          return (
+            <Link
+              key={href}
+              href={href}
+              className={`flex flex-col items-center gap-1 px-4 py-2 rounded-lg transition ${
+                isActive
+                  ? 'text-red-500'
+                  : 'text-gray-400 hover:text-white'
+              }`}
+            >
+              <Icon className={`w-6 h-6 ${isActive ? 'fill-red-500/20' : ''}`} />
+              <span className="text-xs font-medium">{label}</span>
+            </Link>
+          );
+        })}
+      </div>
+    </nav>
+  );
+}

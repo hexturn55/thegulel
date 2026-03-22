@@ -1,1 +1,106 @@
-{"data":"J3VzZSBjbGllbnQnOwoKaW1wb3J0IExpbmsgZnJvbSAnbmV4dC9saW5rJzsKaW1wb3J0IHsgdXNlUGF0aG5hbWUgfSBmcm9tICduZXh0L25hdmlnYXRpb24nOwppbXBvcnQgewogIExheW91dERhc2hib2FyZCwKICBGaWxtLAogIFVzZXJzLAogIEJhckNoYXJ0MywKICBTZXR0aW5ncywKICBDaGV2cm9uTGVmdCwKICBDaGV2cm9uUmlnaHQsCiAgVHYyLAogIExvZ091dCwKfSBmcm9tICdsdWNpZGUtcmVhY3QnOwppbXBvcnQgeyB1c2VBdXRoU3RvcmUgfSBmcm9tICdAL3N0b3Jlcy91c2VBdXRoU3RvcmUnOwppbXBvcnQgeyB1c2VTdGF0ZSB9IGZyb20gJ3JlYWN0JzsKCmNvbnN0IE5BVl9JVEVNUyA9IFsKICB7IGhyZWY6ICcvYWRtaW4nLCBsYWJlbDogJ0Rhc2hib2FyZCcsIGljb246IExheW91dERhc2hib2FyZCwgZXhhY3Q6IHRydWUgfSwKICB7IGhyZWY6ICcvYWRtaW4vc2VyaWVzJywgbGFiZWw6ICdTZXJpZXMnLCBpY29uOiBGaWxtIH0sCiAgeyBocmVmOiAnL2FkbWluL3VzZXJzJywgbGFiZWw6ICdVc2VycycsIGljb246IFVzZXJzIH0sCiAgeyBocmVmOiAnL2FkbWluL2FuYWx5dGljcycsIGxhYmVsOiAnQW5hbHl0aWNzJywgaWNvbjogQmFyQ2hhcnQzIH0sCiAgeyBocmVmOiAnL2FkbWluL3NldHRpbmdzJywgbGFiZWw6ICdTZXR0aW5ncycsIGljb246IFNldHRpbmdzIH0sCl07CgppbnRlcmZhY2UgQWRtaW5TaWRlYmFyUHJvcHMgewogIGNvbGxhcHNlZDogYm9vbGVhbjsKICBvblRvZ2dsZTogKCkgPT4gdm9pZDsKfQoKZXhwb3J0IGRlZmF1bHQgZnVuY3Rpb24gQWRtaW5TaWRlYmFyKHsgY29sbGFwc2VkLCBvblRvZ2dsZSB9OiBBZG1pblNpZGViYXJQcm9wcykgewogIGNvbnN0IHBhdGhuYW1lID0gdXNlUGF0aG5hbWUoKTsKICBjb25zdCBsb2dvdXQgPSB1c2VBdXRoU3RvcmUoKHMpID0+IHMubG9nb3V0KTsKCiAgY29uc3QgaXNBY3RpdmUgPSAoaHJlZjogc3RyaW5nLCBleGFjdD86IGJvb2xlYW4pID0+IHsKICAgIGlmIChleGFjdCkgcmV0dXJuIHBhdGhuYW1lID09PSBocmVmOwogICAgcmV0dXJuIHBhdGhuYW1lLnN0YXJ0c1dpdGgoaHJlZik7CiAgfTsKCiAgcmV0dXJuICgKICAgIDxhc2lkZQogICAgICBjbGFzc05hbWU9e2BmbGV4IGZsZXgtY29sIGJnLWdyYXktOTUwIGJvcmRlci1yIGJvcmRlci1ncmF5LTgwMCB0cmFuc2l0aW9uLWFsbCBkdXJhdGlvbi0zMDAgc2hyaW5rLTAgJHsKICAgICAgICBjb2xsYXBzZWQgPyAndy0xNicgOiAndy01NicKICAgICAgfWB9CiAgICA+CiAgICAgIHsvKiBMb2dvICovfQogICAgICA8ZGl2IGNsYXNzTmFtZT17YGZsZXggaXRlbXMtY2VudGVyIGdhcC0zIHB4LTQgcHktNSBib3JkZXItYiBib3JkZXItZ3JheS04MDAgJHtjb2xsYXBzZWQgPyAnanVzdGlmeS1jZW50ZXIgcHgtMicgOiAnJ31gfT4KICAgICAgICB7Y29sbGFwc2VkID8gKAogICAgICAgICAgPGRpdiBjbGFzc05hbWU9InctOCBoLTggcm91bmRlZC1sZyBiZy1yZWQtNjAwIGZsZXggaXRlbXMtY2VudGVyIGp1c3RpZnktY2VudGVyIHNocmluay0wIj4KICAgICAgICAgICAgPFR2MiBzaXplPXsxNn0gY2xhc3NOYW1lPSJ0ZXh0LXdoaXRlIiAvPgogICAgICAgICAgPC9kaXY+CiAgICAgICAgKSA6ICgKICAgICAgICAgIDxpbWcgc3JjPSIvbG9nby5wbmciIGFsdD0iVGhlIEd1bGVsIiBjbGFzc05hbWU9ImgtOCB3LWF1dG8iIC8+CiAgICAgICAgKX0KICAgICAgPC9kaXY+CgogICAgICB7LyogTmF2ICovfQogICAgICA8bmF2IGNsYXNzTmFtZT0iZmxleC0xIHB5LTQgc3BhY2UteS0xIHB4LTIiPgogICAgICAgIHtOQVZfSVRFTVMubWFwKCh7IGhyZWYsIGxhYmVsLCBpY29uOiBJY29uLCBleGFjdCB9KSA9PiB7CiAgICAgICAgICBjb25zdCBhY3RpdmUgPSBpc0FjdGl2ZShocmVmLCBleGFjdCk7CiAgICAgICAgICByZXR1cm4gKAogICAgICAgICAgICA8TGluawogICAgICAgICAgICAgIGtleT17aHJlZn0KICAgICAgICAgICAgICBocmVmPXtocmVmfQogICAgICAgICAgICAgIHRpdGxlPXtjb2xsYXBzZWQgPyBsYWJlbCA6IHVuZGVmaW5lZH0KICAgICAgICAgICAgICBjbGFzc05hbWU9e2BmbGV4IGl0ZW1zLWNlbnRlciBnYXAtMyBweC0zIHB5LTIuNSByb3VuZGVkLWxnIHRyYW5zaXRpb24tYWxsIGdyb3VwICR7CiAgICAgICAgICAgICAgICBhY3RpdmUKICAgICAgICAgICAgICAgICAgPyAnYmctcmVkLTYwMCB0ZXh0LXdoaXRlJwogICAgICAgICAgICAgICAgICA6ICd0ZXh0LWdyYXktNDAwIGhvdmVyOmJnLWdyYXktOTAwIGhvdmVyOnRleHQtd2hpdGUnCiAgICAgICAgICAgICAgfSAke2NvbGxhcHNlZCA/ICdqdXN0aWZ5LWNlbnRlcicgOiAnJ31gfQogICAgICAgICAgICA+CiAgICAgICAgICAgICAgPEljb24gc2l6ZT17MTh9IGNsYXNzTmFtZT0ic2hyaW5rLTAiIC8+CiAgICAgICAgICAgICAgeyFjb2xsYXBzZWQgJiYgPHNwYW4gY2xhc3NOYW1lPSJ0ZXh0LXNtIGZvbnQtbWVkaXVtIj57bGFiZWx9PC9zcGFuPn0KICAgICAgICAgICAgPC9MaW5rPgogICAgICAgICAgKTsKICAgICAgICB9KX0KICAgICAgPC9uYXY+CgogICAgICB7LyogQm90dG9tICovfQogICAgICA8ZGl2IGNsYXNzTmFtZT0icHgtMiBwYi00IHNwYWNlLXktMSBib3JkZXItdCBib3JkZXItZ3JheS04MDAgcHQtNCI+CiAgICAgICAgPGJ1dHRvbgogICAgICAgICAgb25DbGljaz17KCkgPT4gbG9nb3V0KCl9CiAgICAgICAgICB0aXRsZT17Y29sbGFwc2VkID8gJ0xvZ291dCcgOiB1bmRlZmluZWR9CiAgICAgICAgICBjbGFzc05hbWU9e2B3LWZ1bGwgZmxleCBpdGVtcy1jZW50ZXIgZ2FwLTMgcHgtMyBweS0yLjUgcm91bmRlZC1sZyB0ZXh0LWdyYXktNDAwIGhvdmVyOmJnLWdyYXktOTAwIGhvdmVyOnRleHQtd2hpdGUgdHJhbnNpdGlvbi1hbGwgJHsKICAgICAgICAgICAgY29sbGFwc2VkID8gJ2p1c3RpZnktY2VudGVyJyA6ICcnCiAgICAgICAgICB9YH0KICAgICAgICA+CiAgICAgICAgICA8TG9nT3V0IHNpemU9ezE4fSBjbGFzc05hbWU9InNocmluay0wIiAvPgogICAgICAgICAgeyFjb2xsYXBzZWQgJiYgPHNwYW4gY2xhc3NOYW1lPSJ0ZXh0LXNtIGZvbnQtbWVkaXVtIj5Mb2dvdXQ8L3NwYW4+fQogICAgICAgIDwvYnV0dG9uPgoKICAgICAgICB7LyogQ29sbGFwc2UgdG9nZ2xlICovfQogICAgICAgIDxidXR0b24KICAgICAgICAgIG9uQ2xpY2s9e29uVG9nZ2xlfQogICAgICAgICAgY2xhc3NOYW1lPXtgdy1mdWxsIGZsZXggaXRlbXMtY2VudGVyIGdhcC0zIHB4LTMgcHktMi41IHJvdW5kZWQtbGcgdGV4dC1ncmF5LTYwMCBob3ZlcjpiZy1ncmF5LTkwMCBob3Zlcjp0ZXh0LWdyYXktNDAwIHRyYW5zaXRpb24tYWxsICR7CiAgICAgICAgICAgIGNvbGxhcHNlZCA/ICdqdXN0aWZ5LWNlbnRlcicgOiAnJwogICAgICAgICAgfWB9CiAgICAgICAgPgogICAgICAgICAge2NvbGxhcHNlZCA/IDxDaGV2cm9uUmlnaHQgc2l6ZT17MTZ9IC8+IDogPENoZXZyb25MZWZ0IHNpemU9ezE2fSAvPn0KICAgICAgICAgIHshY29sbGFwc2VkICYmIDxzcGFuIGNsYXNzTmFtZT0idGV4dC14cyI+Q29sbGFwc2U8L3NwYW4+fQogICAgICAgIDwvYnV0dG9uPgogICAgICA8L2Rpdj4KICAgIDwvYXNpZGU+CiAgKTsKfQo="}
+'use client';
+
+import Link from 'next/link';
+import { usePathname } from 'next/navigation';
+import {
+  LayoutDashboard,
+  Film,
+  Users,
+  BarChart3,
+  Settings,
+  ChevronLeft,
+  ChevronRight,
+  Tv2,
+  LogOut,
+} from 'lucide-react';
+import { useAuthStore } from '@/stores/useAuthStore';
+import { useState } from 'react';
+
+const NAV_ITEMS = [
+  { href: '/admin', label: 'Dashboard', icon: LayoutDashboard, exact: true },
+  { href: '/admin/series', label: 'Series', icon: Film },
+  { href: '/admin/users', label: 'Users', icon: Users },
+  { href: '/admin/analytics', label: 'Analytics', icon: BarChart3 },
+  { href: '/admin/settings', label: 'Settings', icon: Settings },
+];
+
+interface AdminSidebarProps {
+  collapsed: boolean;
+  onToggle: () => void;
+}
+
+export default function AdminSidebar({ collapsed, onToggle }: AdminSidebarProps) {
+  const pathname = usePathname();
+  const logout = useAuthStore((s) => s.logout);
+
+  const isActive = (href: string, exact?: boolean) => {
+    if (exact) return pathname === href;
+    return pathname.startsWith(href);
+  };
+
+  return (
+    <aside
+      className={`flex flex-col bg-gray-950 border-r border-gray-800 transition-all duration-300 shrink-0 ${
+        collapsed ? 'w-16' : 'w-56'
+      }`}
+    >
+      {/* Logo */}
+      <div className={`flex items-center gap-3 px-4 py-5 border-b border-gray-800 ${collapsed ? 'justify-center px-2' : ''}`}>
+        {collapsed ? (
+          <div className="w-8 h-8 rounded-lg bg-red-600 flex items-center justify-center shrink-0">
+            <Tv2 size={16} className="text-white" />
+          </div>
+        ) : (
+          <img src="/logo.png" alt="The Gulel" className="h-8 w-auto" />
+        )}
+      </div>
+
+      {/* Nav */}
+      <nav className="flex-1 py-4 space-y-1 px-2">
+        {NAV_ITEMS.map(({ href, label, icon: Icon, exact }) => {
+          const active = isActive(href, exact);
+          return (
+            <Link
+              key={href}
+              href={href}
+              title={collapsed ? label : undefined}
+              className={`flex items-center gap-3 px-3 py-2.5 rounded-lg transition-all group ${
+                active
+                  ? 'bg-red-600 text-white'
+                  : 'text-gray-400 hover:bg-gray-900 hover:text-white'
+              } ${collapsed ? 'justify-center' : ''}`}
+            >
+              <Icon size={18} className="shrink-0" />
+              {!collapsed && <span className="text-sm font-medium">{label}</span>}
+            </Link>
+          );
+        })}
+      </nav>
+
+      {/* Bottom */}
+      <div className="px-2 pb-4 space-y-1 border-t border-gray-800 pt-4">
+        <button
+          onClick={() => logout()}
+          title={collapsed ? 'Logout' : undefined}
+          className={`w-full flex items-center gap-3 px-3 py-2.5 rounded-lg text-gray-400 hover:bg-gray-900 hover:text-white transition-all ${
+            collapsed ? 'justify-center' : ''
+          }`}
+        >
+          <LogOut size={18} className="shrink-0" />
+          {!collapsed && <span className="text-sm font-medium">Logout</span>}
+        </button>
+
+        {/* Collapse toggle */}
+        <button
+          onClick={onToggle}
+          className={`w-full flex items-center gap-3 px-3 py-2.5 rounded-lg text-gray-600 hover:bg-gray-900 hover:text-gray-400 transition-all ${
+            collapsed ? 'justify-center' : ''
+          }`}
+        >
+          {collapsed ? <ChevronRight size={16} /> : <ChevronLeft size={16} />}
+          {!collapsed && <span className="text-xs">Collapse</span>}
+        </button>
+      </div>
+    </aside>
+  );
+}

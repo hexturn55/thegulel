@@ -1,1 +1,31 @@
-{"data":"aW1wb3J0IExpbmsgZnJvbSAnbmV4dC9saW5rJzsKaW1wb3J0IHsgSG9tZSB9IGZyb20gJ2x1Y2lkZS1yZWFjdCc7CgpleHBvcnQgZGVmYXVsdCBmdW5jdGlvbiBOb3RGb3VuZCgpIHsKICByZXR1cm4gKAogICAgPGRpdiBjbGFzc05hbWU9Im1pbi1oLXNjcmVlbiBiZy1ibGFjayBmbGV4IGZsZXgtY29sIGl0ZW1zLWNlbnRlciBqdXN0aWZ5LWNlbnRlciBweC02IHRleHQtY2VudGVyIj4KICAgICAgey8qIEJpZyA0MDQgKi99CiAgICAgIDxkaXYgY2xhc3NOYW1lPSJyZWxhdGl2ZSBtYi02Ij4KICAgICAgICA8c3BhbiBjbGFzc05hbWU9InRleHQtWzEyMHB4XSBmb250LWJsYWNrIHRleHQtZ3JheS04MDAgbGVhZGluZy1ub25lIHNlbGVjdC1ub25lIj40MDQ8L3NwYW4+CiAgICAgICAgPGRpdiBjbGFzc05hbWU9ImFic29sdXRlIGluc2V0LTAgZmxleCBpdGVtcy1jZW50ZXIganVzdGlmeS1jZW50ZXIiPgogICAgICAgICAgPGRpdiBjbGFzc05hbWU9InctMTQgaC0xNCBiZy1ncmFkaWVudC10by1iciBmcm9tLXJlZC01MDAgdG8tcGluay01MDAgcm91bmRlZC14bCBmbGV4IGl0ZW1zLWNlbnRlciBqdXN0aWZ5LWNlbnRlciBzaGFkb3ctbGciPgogICAgICAgICAgICA8c3BhbiBjbGFzc05hbWU9InRleHQtd2hpdGUgZm9udC1ib2xkIHRleHQtMnhsIj5HPC9zcGFuPgogICAgICAgICAgPC9kaXY+CiAgICAgICAgPC9kaXY+CiAgICAgIDwvZGl2PgoKICAgICAgPGgxIGNsYXNzTmFtZT0idGV4dC13aGl0ZSB0ZXh0LTJ4bCBmb250LWJvbGQgbWItMyI+UGFnZSBub3QgZm91bmQ8L2gxPgogICAgICA8cCBjbGFzc05hbWU9InRleHQtZ3JheS00MDAgdGV4dC1zbSBtYi04IG1heC13LXhzIj4KICAgICAgICBUaGlzIHBhZ2UgZG9lc24ndCBleGlzdCBvciBoYXMgYmVlbiBtb3ZlZC4KICAgICAgPC9wPgoKICAgICAgPExpbmsKICAgICAgICBocmVmPSIvIgogICAgICAgIGNsYXNzTmFtZT0iZmxleCBpdGVtcy1jZW50ZXIgZ2FwLTIgYmctZ3JhZGllbnQtdG8tciBmcm9tLXJlZC01MDAgdG8tcGluay01MDAgaG92ZXI6ZnJvbS1yZWQtNjAwIGhvdmVyOnRvLXBpbmstNjAwIHRleHQtd2hpdGUgZm9udC1zZW1pYm9sZCBweC02IHB5LTMgcm91bmRlZC1mdWxsIHRyYW5zaXRpb24iCiAgICAgID4KICAgICAgICA8SG9tZSBjbGFzc05hbWU9InctNCBoLTQiIC8+CiAgICAgICAgQmFjayB0byBIb21lCiAgICAgIDwvTGluaz4KICAgIDwvZGl2PgogICk7Cn0K"}
+import Link from 'next/link';
+import { Home } from 'lucide-react';
+
+export default function NotFound() {
+  return (
+    <div className="min-h-screen bg-black flex flex-col items-center justify-center px-6 text-center">
+      {/* Big 404 */}
+      <div className="relative mb-6">
+        <span className="text-[120px] font-black text-gray-800 leading-none select-none">404</span>
+        <div className="absolute inset-0 flex items-center justify-center">
+          <div className="w-14 h-14 bg-gradient-to-br from-red-500 to-pink-500 rounded-xl flex items-center justify-center shadow-lg">
+            <span className="text-white font-bold text-2xl">G</span>
+          </div>
+        </div>
+      </div>
+
+      <h1 className="text-white text-2xl font-bold mb-3">Page not found</h1>
+      <p className="text-gray-400 text-sm mb-8 max-w-xs">
+        This page doesn't exist or has been moved.
+      </p>
+
+      <Link
+        href="/"
+        className="flex items-center gap-2 bg-gradient-to-r from-red-500 to-pink-500 hover:from-red-600 hover:to-pink-600 text-white font-semibold px-6 py-3 rounded-full transition"
+      >
+        <Home className="w-4 h-4" />
+        Back to Home
+      </Link>
+    </div>
+  );
+}

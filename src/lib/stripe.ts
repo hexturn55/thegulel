@@ -1,1 +1,19 @@
-{"data":"aW1wb3J0IFN0cmlwZSBmcm9tICdzdHJpcGUnOwoKZnVuY3Rpb24gZ2V0U3RyaXBlKCkgewogIGlmICghcHJvY2Vzcy5lbnYuU1RSSVBFX1NFQ1JFVF9LRVkpIHsKICAgIHRocm93IG5ldyBFcnJvcignU1RSSVBFX1NFQ1JFVF9LRVkgaXMgbm90IGRlZmluZWQnKTsKICB9CiAgcmV0dXJuIG5ldyBTdHJpcGUocHJvY2Vzcy5lbnYuU1RSSVBFX1NFQ1JFVF9LRVksIHsKICAgIHR5cGVzY3JpcHQ6IHRydWUsCiAgfSk7Cn0KCi8vIExhenkgaW5pdGlhbGl6YXRpb24g4oCUIG9ubHkgdGhyb3dzIHdoZW4gYWN0dWFsbHkgdXNlZCwgbm90IGF0IGltcG9ydCB0aW1lCmxldCBfc3RyaXBlOiBTdHJpcGUgfCBudWxsID0gbnVsbDsKZXhwb3J0IGNvbnN0IHN0cmlwZSA9IG5ldyBQcm94eSh7fSBhcyBTdHJpcGUsIHsKICBnZXQoXywgcHJvcCkgewogICAgaWYgKCFfc3RyaXBlKSBfc3RyaXBlID0gZ2V0U3RyaXBlKCk7CiAgICByZXR1cm4gKF9zdHJpcGUgYXMgdW5rbm93biBhcyBSZWNvcmQ8c3RyaW5nIHwgc3ltYm9sLCB1bmtub3duPilbcHJvcF07CiAgfSwKfSk7Cg=="}
+import Stripe from 'stripe';
+
+function getStripe() {
+  if (!process.env.STRIPE_SECRET_KEY) {
+    throw new Error('STRIPE_SECRET_KEY is not defined');
+  }
+  return new Stripe(process.env.STRIPE_SECRET_KEY, {
+    typescript: true,
+  });
+}
+
+// Lazy initialization — only throws when actually used, not at import time
+let _stripe: Stripe | null = null;
+export const stripe = new Proxy({} as Stripe, {
+  get(_, prop) {
+    if (!_stripe) _stripe = getStripe();
+    return (_stripe as unknown as Record<string | symbol, unknown>)[prop];
+  },
+});

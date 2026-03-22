@@ -1,1 +1,94 @@
-{"data":"aW1wb3J0IHR5cGUgeyBNZXRhZGF0YSB9IGZyb20gJ25leHQnOwppbXBvcnQgeyBJbnRlciB9IGZyb20gJ25leHQvZm9udC9nb29nbGUnOwppbXBvcnQgJy4vZ2xvYmFscy5jc3MnOwppbXBvcnQgeyBHb29nbGVBbmFseXRpY3MsIEdvb2dsZVRhZ01hbmFnZXIgfSBmcm9tICdAL2NvbXBvbmVudHMvQW5hbHl0aWNzJzsKaW1wb3J0IHsgRmFjZWJvb2tQaXhlbCB9IGZyb20gJ0AvY29tcG9uZW50cy9GYWNlYm9va1BpeGVsJzsKCmNvbnN0IGludGVyID0gSW50ZXIoeyBzdWJzZXRzOiBbJ2xhdGluJ10gfSk7CgpleHBvcnQgY29uc3QgbWV0YWRhdGE6IE1ldGFkYXRhID0gewogIHRpdGxlOiB7CiAgICBkZWZhdWx0OiAnR3VsZWwgT1RUIOKAlCBWZXJ0aWNhbCBNaWNybyBEcmFtYXMnLAogICAgdGVtcGxhdGU6ICclcyB8IEd1bGVsIE9UVCcsCiAgfSwKICBkZXNjcmlwdGlvbjoKICAgICdXYXRjaCBhZGRpY3RpdmUgdmVydGljYWwgbWljcm8gZHJhbWFzIGFueXRpbWUsIGFueXdoZXJlLiBGcmVlIGVwaXNvZGVzLCBjb2luLWJhc2VkIHVubG9ja3MsIEhpbmRpICYgQ2hpbmVzZSBjb250ZW50LicsCiAgbWV0YWRhdGFCYXNlOiBuZXcgVVJMKCdodHRwczovL3RoZWd1bGVsLmNvbScpLAogIG1hbmlmZXN0OiAnL21hbmlmZXN0Lmpzb24nLAogIG9wZW5HcmFwaDogewogICAgdHlwZTogJ3dlYnNpdGUnLAogICAgbG9jYWxlOiAnZW5fVVMnLAogICAgc2l0ZU5hbWU6ICdHdWxlbCBPVFQnLAogICAgdGl0bGU6ICdHdWxlbCBPVFQg4oCUIFZlcnRpY2FsIE1pY3JvIERyYW1hcycsCiAgICBkZXNjcmlwdGlvbjogJ1dhdGNoIGFkZGljdGl2ZSB2ZXJ0aWNhbCBtaWNybyBkcmFtYXMgYW55dGltZSwgYW55d2hlcmUuJywKICAgIGltYWdlczogW3sgdXJsOiAnL29nLWltYWdlLnBuZycsIHdpZHRoOiAxMjAwLCBoZWlnaHQ6IDYzMCB9XSwKICB9LAogIHR3aXR0ZXI6IHsKICAgIGNhcmQ6ICdzdW1tYXJ5X2xhcmdlX2ltYWdlJywKICAgIHRpdGxlOiAnR3VsZWwgT1RUIOKAlCBWZXJ0aWNhbCBNaWNybyBEcmFtYXMnLAogICAgZGVzY3JpcHRpb246ICdXYXRjaCBhZGRpY3RpdmUgdmVydGljYWwgbWljcm8gZHJhbWFzIGFueXRpbWUsIGFueXdoZXJlLicsCiAgfSwKICByb2JvdHM6IHsgaW5kZXg6IHRydWUsIGZvbGxvdzogdHJ1ZSB9LAogIGFwcGxlV2ViQXBwOiB7CiAgICBjYXBhYmxlOiB0cnVlLAogICAgc3RhdHVzQmFyU3R5bGU6ICdibGFjay10cmFuc2x1Y2VudCcsCiAgICB0aXRsZTogJ0d1bGVsIE9UVCcsCiAgfSwKfTsKCmV4cG9ydCBjb25zdCB2aWV3cG9ydCA9IHsKICB3aWR0aDogJ2RldmljZS13aWR0aCcsCiAgaW5pdGlhbFNjYWxlOiAxLAogIG1heGltdW1TY2FsZTogMSwKICB1c2VyU2NhbGFibGU6IGZhbHNlLAogIHRoZW1lQ29sb3I6ICcjMDAwMDAwJywKICB2aWV3cG9ydEZpdDogJ2NvdmVyJywKfTsKCmV4cG9ydCBkZWZhdWx0IGZ1bmN0aW9uIFJvb3RMYXlvdXQoewogIGNoaWxkcmVuLAp9OiBSZWFkb25seTx7CiAgY2hpbGRyZW46IFJlYWN0LlJlYWN0Tm9kZTsKfT4pIHsKICByZXR1cm4gKAogICAgPGh0bWwgbGFuZz0iZW4iIGNsYXNzTmFtZT0iZGFyayI+CiAgICAgIDxoZWFkPgogICAgICAgIHsvKiBGYXZpY29uICovfQogICAgICAgIDxsaW5rIHJlbD0iaWNvbiIgaHJlZj0iL2Zhdmljb24uaWNvIiBzaXplcz0iYW55IiAvPgogICAgICAgIDxsaW5rIHJlbD0iaWNvbiIgaHJlZj0iL2ljb25zL2ljb24uc3ZnIiB0eXBlPSJpbWFnZS9zdmcreG1sIiAvPgogICAgICAgIHsvKiBBcHBsZSB0b3VjaCBpY29uICovfQogICAgICAgIDxsaW5rIHJlbD0iYXBwbGUtdG91Y2gtaWNvbiIgaHJlZj0iL2ljb25zL2ljb24tMTkyLnBuZyIgLz4KICAgICAgICB7LyogQXBwbGUgUFdBICovfQogICAgICAgIDxtZXRhIG5hbWU9ImFwcGxlLW1vYmlsZS13ZWItYXBwLWNhcGFibGUiIGNvbnRlbnQ9InllcyIgLz4KICAgICAgICA8bWV0YSBuYW1lPSJhcHBsZS1tb2JpbGUtd2ViLWFwcC1zdGF0dXMtYmFyLXN0eWxlIiBjb250ZW50PSJibGFjay10cmFuc2x1Y2VudCIgLz4KICAgICAgICA8bWV0YSBuYW1lPSJhcHBsZS1tb2JpbGUtd2ViLWFwcC10aXRsZSIgY29udGVudD0iR3VsZWwgT1RUIiAvPgogICAgICAgIHsvKiBNUyBUaWxlICovfQogICAgICAgIDxtZXRhIG5hbWU9Im1zYXBwbGljYXRpb24tVGlsZUNvbG9yIiBjb250ZW50PSIjMDAwMDAwIiAvPgogICAgICAgIDxtZXRhIG5hbWU9Im1zYXBwbGljYXRpb24tVGlsZUltYWdlIiBjb250ZW50PSIvaWNvbnMvaWNvbi0xOTIucG5nIiAvPgogICAgICA8L2hlYWQ+CiAgICAgIDxib2R5IGNsYXNzTmFtZT17YCR7aW50ZXIuY2xhc3NOYW1lfSBiZy1ibGFjayBhbnRpYWxpYXNlZGB9PgogICAgICAgIHtjaGlsZHJlbn0KCiAgICAgICAgey8qIEFuYWx5dGljcyAqL30KICAgICAgICA8R29vZ2xlQW5hbHl0aWNzIC8+CiAgICAgICAgPEdvb2dsZVRhZ01hbmFnZXIgLz4KICAgICAgICA8RmFjZWJvb2tQaXhlbCAvPgoKICAgICAgICB7LyogU2VydmljZSBXb3JrZXIgcmVnaXN0cmF0aW9uICovfQogICAgICAgIDxzY3JpcHQKICAgICAgICAgIGRhbmdlcm91c2x5U2V0SW5uZXJIVE1MPXt7CiAgICAgICAgICAgIF9faHRtbDogYAogICAgICAgICAgICAgIGlmICgnc2VydmljZVdvcmtlcicgaW4gbmF2aWdhdG9yKSB7CiAgICAgICAgICAgICAgICB3aW5kb3cuYWRkRXZlbnRMaXN0ZW5lcignbG9hZCcsIGZ1bmN0aW9uKCkgewogICAgICAgICAgICAgICAgICBuYXZpZ2F0b3Iuc2VydmljZVdvcmtlci5yZWdpc3RlcignL3N3LmpzJykuY2F0Y2goZnVuY3Rpb24oZXJyKSB7CiAgICAgICAgICAgICAgICAgICAgY29uc29sZS53YXJuKCdTVyByZWdpc3RyYXRpb24gZmFpbGVkOicsIGVycik7CiAgICAgICAgICAgICAgICAgIH0pOwogICAgICAgICAgICAgICAgfSk7CiAgICAgICAgICAgICAgfQogICAgICAgICAgICBgLAogICAgICAgICAgfX0KICAgICAgICAvPgogICAgICA8L2JvZHk+CiAgICA8L2h0bWw+CiAgKTsKfQo="}
+import type { Metadata } from 'next';
+import { Inter } from 'next/font/google';
+import './globals.css';
+import { GoogleAnalytics, GoogleTagManager } from '@/components/Analytics';
+import { FacebookPixel } from '@/components/FacebookPixel';
+
+const inter = Inter({ subsets: ['latin'] });
+
+export const metadata: Metadata = {
+  title: {
+    default: 'Gulel OTT — Vertical Micro Dramas',
+    template: '%s | Gulel OTT',
+  },
+  description:
+    'Watch addictive vertical micro dramas anytime, anywhere. Free episodes, coin-based unlocks, Hindi & Chinese content.',
+  metadataBase: new URL('https://thegulel.com'),
+  manifest: '/manifest.json',
+  openGraph: {
+    type: 'website',
+    locale: 'en_US',
+    siteName: 'Gulel OTT',
+    title: 'Gulel OTT — Vertical Micro Dramas',
+    description: 'Watch addictive vertical micro dramas anytime, anywhere.',
+    images: [{ url: '/og-image.png', width: 1200, height: 630 }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Gulel OTT — Vertical Micro Dramas',
+    description: 'Watch addictive vertical micro dramas anytime, anywhere.',
+  },
+  robots: { index: true, follow: true },
+  appleWebApp: {
+    capable: true,
+    statusBarStyle: 'black-translucent',
+    title: 'Gulel OTT',
+  },
+};
+
+export const viewport = {
+  width: 'device-width',
+  initialScale: 1,
+  maximumScale: 1,
+  userScalable: false,
+  themeColor: '#000000',
+  viewportFit: 'cover',
+};
+
+export default function RootLayout({
+  children,
+}: Readonly<{
+  children: React.ReactNode;
+}>) {
+  return (
+    <html lang="en" className="dark">
+      <head>
+        {/* Favicon */}
+        <link rel="icon" href="/favicon.ico" sizes="any" />
+        <link rel="icon" href="/icons/icon.svg" type="image/svg+xml" />
+        {/* Apple touch icon */}
+        <link rel="apple-touch-icon" href="/icons/icon-192.png" />
+        {/* Apple PWA */}
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+        <meta name="apple-mobile-web-app-title" content="Gulel OTT" />
+        {/* MS Tile */}
+        <meta name="msapplication-TileColor" content="#000000" />
+        <meta name="msapplication-TileImage" content="/icons/icon-192.png" />
+      </head>
+      <body className={`${inter.className} bg-black antialiased`}>
+        {children}
+
+        {/* Analytics */}
+        <GoogleAnalytics />
+        <GoogleTagManager />
+        <FacebookPixel />
+
+        {/* Service Worker registration */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              if ('serviceWorker' in navigator) {
+                window.addEventListener('load', function() {
+                  navigator.serviceWorker.register('/sw.js').catch(function(err) {
+                    console.warn('SW registration failed:', err);
+                  });
+                });
+              }
+            `,
+          }}
+        />
+      </body>
+    </html>
+  );
+}

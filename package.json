@@ -1,1 +1,54 @@
-{"data":"ewogICJuYW1lIjogImd1bGVsLW90dCIsCiAgInZlcnNpb24iOiAiMC4xLjAiLAogICJwcml2YXRlIjogdHJ1ZSwKICAic2NyaXB0cyI6IHsKICAgICJkZXYiOiAibmV4dCBkZXYiLAogICAgImJ1aWxkIjogInByaXNtYSBnZW5lcmF0ZSAmJiBuZXh0IGJ1aWxkIiwKICAgICJwb3N0aW5zdGFsbCI6ICJwcmlzbWEgZ2VuZXJhdGUiLAogICAgInN0YXJ0IjogIm5leHQgc3RhcnQiLAogICAgImxpbnQiOiAiZXNsaW50IiwKICAgICJkYjpnZW5lcmF0ZSI6ICJwcmlzbWEgZ2VuZXJhdGUiLAogICAgImRiOnB1c2giOiAicHJpc21hIGRiIHB1c2giLAogICAgImRiOnNlZWQiOiAidHMtbm9kZSAtLXRyYW5zcGlsZS1vbmx5IC0tcHJvamVjdCBwcmlzbWEvdHNjb25maWcuc2VlZC5qc29uIHByaXNtYS9zZWVkLnRzIiwKICAgICJkYjpzdHVkaW8iOiAicHJpc21hIHN0dWRpbyIKICB9LAogICJwcmlzbWEiOiB7CiAgICAic2VlZCI6ICJ0cy1ub2RlIC0tdHJhbnNwaWxlLW9ubHkgLS1wcm9qZWN0IHByaXNtYS90c2NvbmZpZy5zZWVkLmpzb24gcHJpc21hL3NlZWQudHMiCiAgfSwKICAiZGVwZW5kZW5jaWVzIjogewogICAgIkBwcmlzbWEvYWRhcHRlci1wZyI6ICJeNy41LjAiLAogICAgIkBwcmlzbWEvY2xpZW50IjogIl43LjUuMCIsCiAgICAiQHN0cmlwZS9zdHJpcGUtanMiOiAiXjguMTEuMCIsCiAgICAiQHN1cGFiYXNlL3NzciI6ICJeMC45LjAiLAogICAgIkBzdXBhYmFzZS9zdXBhYmFzZS1qcyI6ICJeMi45OS4zIiwKICAgICJAdHlwZXMvanNvbndlYnRva2VuIjogIl45LjAuMTAiLAogICAgImNsc3giOiAiXjIuMS4xIiwKICAgICJkb3RlbnYiOiAiXjE3LjMuMSIsCiAgICAiaGxzLmpzIjogIl4xLjYuMTUiLAogICAgImpzb253ZWJ0b2tlbiI6ICJeOS4wLjMiLAogICAgImx1Y2lkZS1yZWFjdCI6ICJeMC41NzcuMCIsCiAgICAibmV4dCI6ICIxNi4yLjEiLAogICAgIm5leHQtaW50bCI6ICJeNC44LjMiLAogICAgInBnIjogIl44LjIwLjAiLAogICAgInJlYWN0IjogIjE5LjIuNCIsCiAgICAicmVhY3QtZG9tIjogIjE5LjIuNCIsCiAgICAic3RyaXBlIjogIl4yMC40LjEiLAogICAgInRhaWx3aW5kLW1lcmdlIjogIl4zLjUuMCIsCiAgICAienVzdGFuZCI6ICJeNS4wLjEyIgogIH0sCiAgImRldkRlcGVuZGVuY2llcyI6IHsKICAgICJAdGFpbHdpbmRjc3MvcG9zdGNzcyI6ICJeNCIsCiAgICAiQHR5cGVzL2hscy5qcyI6ICJeMC4xMy4zIiwKICAgICJAdHlwZXMvbm9kZSI6ICJeMjAiLAogICAgIkB0eXBlcy9wZyI6ICJeOC4yMC4wIiwKICAgICJAdHlwZXMvcmVhY3QiOiAiXjE5IiwKICAgICJAdHlwZXMvcmVhY3QtZG9tIjogIl4xOSIsCiAgICAiZXNsaW50IjogIl45IiwKICAgICJlc2xpbnQtY29uZmlnLW5leHQiOiAiMTYuMi4xIiwKICAgICJwcmlzbWEiOiAiXjcuNS4wIiwKICAgICJ0YWlsd2luZGNzcyI6ICJeNCIsCiAgICAidHMtbm9kZSI6ICJeMTAuOS4yIiwKICAgICJ0eXBlc2NyaXB0IjogIl41IgogIH0KfQo="}
+{
+  "name": "gulel-ott",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "prisma generate && next build",
+    "postinstall": "prisma generate",
+    "start": "next start",
+    "lint": "eslint",
+    "db:generate": "prisma generate",
+    "db:push": "prisma db push",
+    "db:seed": "ts-node --transpile-only --project prisma/tsconfig.seed.json prisma/seed.ts",
+    "db:studio": "prisma studio"
+  },
+  "prisma": {
+    "seed": "ts-node --transpile-only --project prisma/tsconfig.seed.json prisma/seed.ts"
+  },
+  "dependencies": {
+    "@prisma/adapter-pg": "^7.5.0",
+    "@prisma/client": "^7.5.0",
+    "@stripe/stripe-js": "^8.11.0",
+    "@supabase/ssr": "^0.9.0",
+    "@supabase/supabase-js": "^2.99.3",
+    "@types/jsonwebtoken": "^9.0.10",
+    "clsx": "^2.1.1",
+    "dotenv": "^17.3.1",
+    "hls.js": "^1.6.15",
+    "jsonwebtoken": "^9.0.3",
+    "lucide-react": "^0.577.0",
+    "next": "16.2.1",
+    "next-intl": "^4.8.3",
+    "pg": "^8.20.0",
+    "react": "19.2.4",
+    "react-dom": "19.2.4",
+    "stripe": "^20.4.1",
+    "tailwind-merge": "^3.5.0",
+    "zustand": "^5.0.12"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4",
+    "@types/hls.js": "^0.13.3",
+    "@types/node": "^20",
+    "@types/pg": "^8.20.0",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "16.2.1",
+    "prisma": "^7.5.0",
+    "tailwindcss": "^4",
+    "ts-node": "^10.9.2",
+    "typescript": "^5"
+  }
+}

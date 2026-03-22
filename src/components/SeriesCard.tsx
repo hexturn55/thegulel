@@ -1,1 +1,67 @@
-{"data":"J3VzZSBjbGllbnQnOwoKaW1wb3J0IEltYWdlIGZyb20gJ25leHQvaW1hZ2UnOwppbXBvcnQgTGluayBmcm9tICduZXh0L2xpbmsnOwppbXBvcnQgeyBQbGF5LCBTdGFyIH0gZnJvbSAnbHVjaWRlLXJlYWN0JzsKCmludGVyZmFjZSBTZXJpZXNDYXJkUHJvcHMgewogIGlkOiBzdHJpbmc7CiAgdGl0bGU6IHN0cmluZzsKICB0aHVtYm5haWw6IHN0cmluZzsKICBnZW5yZTogc3RyaW5nOwogIHRvdGFsRXBpc29kZXM6IG51bWJlcjsKICBmZWF0dXJlZD86IGJvb2xlYW47Cn0KCmV4cG9ydCBkZWZhdWx0IGZ1bmN0aW9uIFNlcmllc0NhcmQoewogIGlkLAogIHRpdGxlLAogIHRodW1ibmFpbCwKICBnZW5yZSwKICB0b3RhbEVwaXNvZGVzLAogIGZlYXR1cmVkID0gZmFsc2UsCn06IFNlcmllc0NhcmRQcm9wcykgewogIHJldHVybiAoCiAgICA8TGluayBocmVmPXtgL3Nlcmllcy8ke2lkfWB9PgogICAgICA8ZGl2IGNsYXNzTmFtZT0iZ3JvdXAgcmVsYXRpdmUgYXNwZWN0LVs5LzE2XSByb3VuZGVkLTJ4bCBvdmVyZmxvdy1oaWRkZW4gYmctZ3JheS04MDAgY3Vyc29yLXBvaW50ZXIiPgogICAgICAgIDxJbWFnZQogICAgICAgICAgc3JjPXt0aHVtYm5haWx9CiAgICAgICAgICBhbHQ9e3RpdGxlfQogICAgICAgICAgZmlsbAogICAgICAgICAgY2xhc3NOYW1lPSJvYmplY3QtY292ZXIgdHJhbnNpdGlvbi10cmFuc2Zvcm0gZHVyYXRpb24tMzAwIGdyb3VwLWhvdmVyOnNjYWxlLTExMCIKICAgICAgICAgIHNpemVzPSIobWF4LXdpZHRoOiA3NjhweCkgNTB2dywgMzN2dyIKICAgICAgICAvPgogICAgICAgIAogICAgICAgIDxkaXYgY2xhc3NOYW1lPSJhYnNvbHV0ZSBpbnNldC0wIGJnLWdyYWRpZW50LXRvLXQgZnJvbS1ibGFjayB2aWEtYmxhY2svNDAgdG8tdHJhbnNwYXJlbnQgb3BhY2l0eS0wIGdyb3VwLWhvdmVyOm9wYWNpdHktMTAwIHRyYW5zaXRpb24tb3BhY2l0eSI+CiAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT0iYWJzb2x1dGUgYm90dG9tLTAgbGVmdC0wIHJpZ2h0LTAgcC00Ij4KICAgICAgICAgICAgPGRpdiBjbGFzc05hbWU9ImZsZXggaXRlbXMtY2VudGVyIGp1c3RpZnktY2VudGVyIG1iLTQiPgogICAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPSJ3LTE2IGgtMTYgYmctcmVkLTUwMCByb3VuZGVkLWZ1bGwgZmxleCBpdGVtcy1jZW50ZXIganVzdGlmeS1jZW50ZXIgdHJhbnNmb3JtIHNjYWxlLTAgZ3JvdXAtaG92ZXI6c2NhbGUtMTAwIHRyYW5zaXRpb24tdHJhbnNmb3JtIj4KICAgICAgICAgICAgICAgIDxQbGF5IGNsYXNzTmFtZT0idy04IGgtOCB0ZXh0LXdoaXRlIGZpbGwtd2hpdGUiIC8+CiAgICAgICAgICAgICAgPC9kaXY+CiAgICAgICAgICAgIDwvZGl2PgogICAgICAgICAgPC9kaXY+CiAgICAgICAgPC9kaXY+CgogICAgICAgIHtmZWF0dXJlZCAmJiAoCiAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT0iYWJzb2x1dGUgdG9wLTMgbGVmdC0zIGJnLXllbGxvdy01MDAgdGV4dC1ibGFjayBweC0zIHB5LTEgcm91bmRlZC1mdWxsIHRleHQteHMgZm9udC1ib2xkIGZsZXggaXRlbXMtY2VudGVyIGdhcC0xIj4KICAgICAgICAgICAgPFN0YXIgY2xhc3NOYW1lPSJ3LTMgaC0zIGZpbGwtY3VycmVudCIgLz4KICAgICAgICAgICAgRmVhdHVyZWQKICAgICAgICAgIDwvZGl2PgogICAgICAgICl9CgogICAgICAgIDxkaXYgY2xhc3NOYW1lPSJhYnNvbHV0ZSBib3R0b20tMCBsZWZ0LTAgcmlnaHQtMCBwLTQgYmctZ3JhZGllbnQtdG8tdCBmcm9tLWJsYWNrIHRvLXRyYW5zcGFyZW50Ij4KICAgICAgICAgIDxoMyBjbGFzc05hbWU9InRleHQtd2hpdGUgZm9udC1zZW1pYm9sZCB0ZXh0LWJhc2UgbWItMSBsaW5lLWNsYW1wLTIiPgogICAgICAgICAgICB7dGl0bGV9CiAgICAgICAgICA8L2gzPgogICAgICAgICAgPGRpdiBjbGFzc05hbWU9ImZsZXggaXRlbXMtY2VudGVyIGdhcC0yIHRleHQteHMgdGV4dC1ncmF5LTMwMCI+CiAgICAgICAgICAgIDxzcGFuIGNsYXNzTmFtZT0iYmctcmVkLTUwMC8yMCB0ZXh0LXJlZC00MDAgcHgtMiBweS0wLjUgcm91bmRlZCI+CiAgICAgICAgICAgICAge2dlbnJlfQogICAgICAgICAgICA8L3NwYW4+CiAgICAgICAgICAgIDxzcGFuPuKAojwvc3Bhbj4KICAgICAgICAgICAgPHNwYW4+e3RvdGFsRXBpc29kZXN9IEVwaXNvZGVzPC9zcGFuPgogICAgICAgICAgPC9kaXY+CiAgICAgICAgPC9kaXY+CiAgICAgIDwvZGl2PgogICAgPC9MaW5rPgogICk7Cn0K"}
+'use client';
+
+import Image from 'next/image';
+import Link from 'next/link';
+import { Play, Star } from 'lucide-react';
+
+interface SeriesCardProps {
+  id: string;
+  title: string;
+  thumbnail: string;
+  genre: string;
+  totalEpisodes: number;
+  featured?: boolean;
+}
+
+export default function SeriesCard({
+  id,
+  title,
+  thumbnail,
+  genre,
+  totalEpisodes,
+  featured = false,
+}: SeriesCardProps) {
+  return (
+    <Link href={`/series/${id}`}>
+      <div className="group relative aspect-[9/16] rounded-2xl overflow-hidden bg-gray-800 cursor-pointer">
+        <Image
+          src={thumbnail}
+          alt={title}
+          fill
+          className="object-cover transition-transform duration-300 group-hover:scale-110"
+          sizes="(max-width: 768px) 50vw, 33vw"
+        />
+        
+        <div className="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity">
+          <div className="absolute bottom-0 left-0 right-0 p-4">
+            <div className="flex items-center justify-center mb-4">
+              <div className="w-16 h-16 bg-red-500 rounded-full flex items-center justify-center transform scale-0 group-hover:scale-100 transition-transform">
+                <Play className="w-8 h-8 text-white fill-white" />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {featured && (
+          <div className="absolute top-3 left-3 bg-yellow-500 text-black px-3 py-1 rounded-full text-xs font-bold flex items-center gap-1">
+            <Star className="w-3 h-3 fill-current" />
+            Featured
+          </div>
+        )}
+
+        <div className="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black to-transparent">
+          <h3 className="text-white font-semibold text-base mb-1 line-clamp-2">
+            {title}
+          </h3>
+          <div className="flex items-center gap-2 text-xs text-gray-300">
+            <span className="bg-red-500/20 text-red-400 px-2 py-0.5 rounded">
+              {genre}
+            </span>
+            <span>•</span>
+            <span>{totalEpisodes} Episodes</span>
+          </div>
+        </div>
+      </div>
+    </Link>
+  );
+}

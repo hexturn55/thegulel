@@ -1,1 +1,34 @@
-{"data":"ZXhwb3J0IGRlZmF1bHQgZnVuY3Rpb24gR2xvYmFsTG9hZGluZygpIHsKICByZXR1cm4gKAogICAgPGRpdiBjbGFzc05hbWU9Im1pbi1oLXNjcmVlbiBiZy1ibGFjayBmbGV4IGZsZXgtY29sIGl0ZW1zLWNlbnRlciBqdXN0aWZ5LWNlbnRlciBnYXAtNCI+CiAgICAgIHsvKiBHdWxlbCBicmFuZCBtYXJrICovfQogICAgICA8ZGl2IGNsYXNzTmFtZT0idy0xNCBoLTE0IGJnLWdyYWRpZW50LXRvLWJyIGZyb20tcmVkLTUwMCB0by1waW5rLTUwMCByb3VuZGVkLXhsIGZsZXggaXRlbXMtY2VudGVyIGp1c3RpZnktY2VudGVyIG1iLTIiPgogICAgICAgIDxzcGFuIGNsYXNzTmFtZT0idGV4dC13aGl0ZSBmb250LWJvbGQgdGV4dC0yeGwiPkc8L3NwYW4+CiAgICAgIDwvZGl2PgoKICAgICAgey8qIFNwaW5uZXIgKi99CiAgICAgIDxzdmcKICAgICAgICBjbGFzc05hbWU9ImFuaW1hdGUtc3BpbiB3LTggaC04IHRleHQtcmVkLTUwMCIKICAgICAgICB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciCiAgICAgICAgZmlsbD0ibm9uZSIKICAgICAgICB2aWV3Qm94PSIwIDAgMjQgMjQiCiAgICAgID4KICAgICAgICA8Y2lyY2xlCiAgICAgICAgICBjbGFzc05hbWU9Im9wYWNpdHktMjUiCiAgICAgICAgICBjeD0iMTIiCiAgICAgICAgICBjeT0iMTIiCiAgICAgICAgICByPSIxMCIKICAgICAgICAgIHN0cm9rZT0iY3VycmVudENvbG9yIgogICAgICAgICAgc3Ryb2tlV2lkdGg9IjQiCiAgICAgICAgLz4KICAgICAgICA8cGF0aAogICAgICAgICAgY2xhc3NOYW1lPSJvcGFjaXR5LTc1IgogICAgICAgICAgZmlsbD0iY3VycmVudENvbG9yIgogICAgICAgICAgZD0iTTQgMTJhOCA4IDAgMDE4LThWMEM1LjM3MyAwIDAgNS4zNzMgMCAxMmg0eiIKICAgICAgICAvPgogICAgICA8L3N2Zz4KCiAgICAgIDxwIGNsYXNzTmFtZT0idGV4dC1ncmF5LTUwMCB0ZXh0LXNtIj5Mb2FkaW5nLi4uPC9wPgogICAgPC9kaXY+CiAgKTsKfQo="}
+export default function GlobalLoading() {
+  return (
+    <div className="min-h-screen bg-black flex flex-col items-center justify-center gap-4">
+      {/* Gulel brand mark */}
+      <div className="w-14 h-14 bg-gradient-to-br from-red-500 to-pink-500 rounded-xl flex items-center justify-center mb-2">
+        <span className="text-white font-bold text-2xl">G</span>
+      </div>
+
+      {/* Spinner */}
+      <svg
+        className="animate-spin w-8 h-8 text-red-500"
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+      >
+        <circle
+          className="opacity-25"
+          cx="12"
+          cy="12"
+          r="10"
+          stroke="currentColor"
+          strokeWidth="4"
+        />
+        <path
+          className="opacity-75"
+          fill="currentColor"
+          d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4z"
+        />
+      </svg>
+
+      <p className="text-gray-500 text-sm">Loading...</p>
+    </div>
+  );
+}

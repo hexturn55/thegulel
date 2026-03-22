@@ -1,1 +1,15 @@
-{"data":"aW1wb3J0IHsgTmV4dFJlc3BvbnNlIH0gZnJvbSAnbmV4dC9zZXJ2ZXInOwppbXBvcnQgcHJpc21hIGZyb20gJ0AvbGliL3ByaXNtYSc7CgpleHBvcnQgYXN5bmMgZnVuY3Rpb24gR0VUKCkgewogIHRyeSB7CiAgICBjb25zdCBwYWNrYWdlcyA9IGF3YWl0IHByaXNtYS5jb2luUGFja2FnZS5maW5kTWFueSh7CiAgICAgIHdoZXJlOiB7IGFjdGl2ZTogdHJ1ZSB9LAogICAgICBvcmRlckJ5OiB7IGNvaW5zOiAnYXNjJyB9LAogICAgfSk7CiAgICByZXR1cm4gTmV4dFJlc3BvbnNlLmpzb24oeyBwYWNrYWdlcyB9KTsKICB9IGNhdGNoIChlcnJvcikgewogICAgY29uc29sZS5lcnJvcignRmV0Y2ggcGFja2FnZXMgZXJyb3I6JywgZXJyb3IpOwogICAgcmV0dXJuIE5leHRSZXNwb25zZS5qc29uKHsgZXJyb3I6ICdGYWlsZWQgdG8gZmV0Y2ggcGFja2FnZXMnIH0sIHsgc3RhdHVzOiA1MDAgfSk7CiAgfQp9Cg=="}
+import { NextResponse } from 'next/server';
+import prisma from '@/lib/prisma';
+
+export async function GET() {
+  try {
+    const packages = await prisma.coinPackage.findMany({
+      where: { active: true },
+      orderBy: { coins: 'asc' },
+    });
+    return NextResponse.json({ packages });
+  } catch (error) {
+    console.error('Fetch packages error:', error);
+    return NextResponse.json({ error: 'Failed to fetch packages' }, { status: 500 });
+  }
+}

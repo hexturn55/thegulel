@@ -1,1 +1,136 @@
-{"data":"J3VzZSBjbGllbnQnOwoKaW1wb3J0IHsgdXNlU3RhdGUgfSBmcm9tICdyZWFjdCc7CmltcG9ydCB7IFNoYXJlMiwgTWVzc2FnZUNpcmNsZSwgRmFjZWJvb2ssIFR3aXR0ZXIsIExpbmssIENoZWNrLCBYIH0gZnJvbSAnbHVjaWRlLXJlYWN0JzsKaW1wb3J0IHsgYW5hbHl0aWNzIH0gZnJvbSAnQC9saWIvYW5hbHl0aWNzJzsKCmludGVyZmFjZSBTaGFyZUJ1dHRvblByb3BzIHsKICB1cmw6IHN0cmluZzsKICB0aXRsZTogc3RyaW5nOwogIGRlc2NyaXB0aW9uPzogc3RyaW5nOwogIHNlcmllc0lkPzogc3RyaW5nOwp9CgpleHBvcnQgZnVuY3Rpb24gU2hhcmVCdXR0b24oeyB1cmwsIHRpdGxlLCBkZXNjcmlwdGlvbiwgc2VyaWVzSWQgfTogU2hhcmVCdXR0b25Qcm9wcykgewogIGNvbnN0IFtvcGVuLCBzZXRPcGVuXSA9IHVzZVN0YXRlKGZhbHNlKTsKICBjb25zdCBbY29waWVkLCBzZXRDb3BpZWRdID0gdXNlU3RhdGUoZmFsc2UpOwoKICBjb25zdCBzaGFyZVRleHQgPSBkZXNjcmlwdGlvbiA/IGAke3RpdGxlfSDigJQgJHtkZXNjcmlwdGlvbn1gIDogdGl0bGU7CiAgY29uc3QgZnVsbFVybCA9IHVybC5zdGFydHNXaXRoKCdodHRwJykgPyB1cmwgOiBgaHR0cHM6Ly90aGVndWxlbC5jb20ke3VybH1gOwoKICBjb25zdCB0cmFjayA9IChwbGF0Zm9ybTogc3RyaW5nKSA9PiB7CiAgICBpZiAoc2VyaWVzSWQpIGFuYWx5dGljcy5zaGFyZShwbGF0Zm9ybSwgc2VyaWVzSWQpOwogIH07CgogIGNvbnN0IGhhbmRsZU5hdGl2ZVNoYXJlID0gYXN5bmMgKCkgPT4gewogICAgaWYgKG5hdmlnYXRvci5zaGFyZSkgewogICAgICB0cnkgewogICAgICAgIGF3YWl0IG5hdmlnYXRvci5zaGFyZSh7IHRpdGxlLCB0ZXh0OiBzaGFyZVRleHQsIHVybDogZnVsbFVybCB9KTsKICAgICAgICB0cmFjaygnbmF0aXZlJyk7CiAgICAgIH0gY2F0Y2ggewogICAgICAgIC8vIHVzZXIgY2FuY2VsbGVkIG9yIHNoYXJlIGZhaWxlZCDigJQgc2lsZW50bHkgaWdub3JlCiAgICAgIH0KICAgICAgcmV0dXJuOwogICAgfQogICAgc2V0T3Blbih0cnVlKTsKICB9OwoKICBjb25zdCBoYW5kbGVDb3B5TGluayA9IGFzeW5jICgpID0+IHsKICAgIHRyeSB7CiAgICAgIGF3YWl0IG5hdmlnYXRvci5jbGlwYm9hcmQud3JpdGVUZXh0KGZ1bGxVcmwpOwogICAgICBzZXRDb3BpZWQodHJ1ZSk7CiAgICAgIHRyYWNrKCdjb3B5X2xpbmsnKTsKICAgICAgc2V0VGltZW91dCgoKSA9PiBzZXRDb3BpZWQoZmFsc2UpLCAyMDAwKTsKICAgIH0gY2F0Y2ggewogICAgICAvLyBGYWxsYmFjayBmb3Igb2xkZXIgYnJvd3NlcnMKICAgICAgY29uc3QgdGEgPSBkb2N1bWVudC5jcmVhdGVFbGVtZW50KCd0ZXh0YXJlYScpOwogICAgICB0YS52YWx1ZSA9IGZ1bGxVcmw7CiAgICAgIGRvY3VtZW50LmJvZHkuYXBwZW5kQ2hpbGQodGEpOwogICAgICB0YS5zZWxlY3QoKTsKICAgICAgZG9jdW1lbnQuZXhlY0NvbW1hbmQoJ2NvcHknKTsKICAgICAgZG9jdW1lbnQuYm9keS5yZW1vdmVDaGlsZCh0YSk7CiAgICAgIHNldENvcGllZCh0cnVlKTsKICAgICAgc2V0VGltZW91dCgoKSA9PiBzZXRDb3BpZWQoZmFsc2UpLCAyMDAwKTsKICAgIH0KICB9OwoKICBjb25zdCBwbGF0Zm9ybXMgPSBbCiAgICB7CiAgICAgIGlkOiAnd2hhdHNhcHAnLAogICAgICBsYWJlbDogJ1doYXRzQXBwJywKICAgICAgaWNvbjogPE1lc3NhZ2VDaXJjbGUgY2xhc3NOYW1lPSJ3LTUgaC01IiAvPiwKICAgICAgY29sb3I6ICdiZy1ncmVlbi02MDAgaG92ZXI6YmctZ3JlZW4tNzAwJywKICAgICAgaHJlZjogYGh0dHBzOi8vd2EubWUvP3RleHQ9JHtlbmNvZGVVUklDb21wb25lbnQoYCR7c2hhcmVUZXh0fSAke2Z1bGxVcmx9YCl9YCwKICAgIH0sCiAgICB7CiAgICAgIGlkOiAnZmFjZWJvb2snLAogICAgICBsYWJlbDogJ0ZhY2Vib29rJywKICAgICAgaWNvbjogPEZhY2Vib29rIGNsYXNzTmFtZT0idy01IGgtNSIgLz4sCiAgICAgIGNvbG9yOiAnYmctYmx1ZS03MDAgaG92ZXI6YmctYmx1ZS04MDAnLAogICAgICBocmVmOiBgaHR0cHM6Ly93d3cuZmFjZWJvb2suY29tL3NoYXJlci9zaGFyZXIucGhwP3U9JHtlbmNvZGVVUklDb21wb25lbnQoZnVsbFVybCl9YCwKICAgIH0sCiAgICB7CiAgICAgIGlkOiAndHdpdHRlcicsCiAgICAgIGxhYmVsOiAnWCAvIFR3aXR0ZXInLAogICAgICBpY29uOiA8VHdpdHRlciBjbGFzc05hbWU9InctNSBoLTUiIC8+LAogICAgICBjb2xvcjogJ2JnLXppbmMtODAwIGhvdmVyOmJnLXppbmMtNzAwJywKICAgICAgaHJlZjogYGh0dHBzOi8vdHdpdHRlci5jb20vaW50ZW50L3R3ZWV0P3RleHQ9JHtlbmNvZGVVUklDb21wb25lbnQoc2hhcmVUZXh0KX0mdXJsPSR7ZW5jb2RlVVJJQ29tcG9uZW50KGZ1bGxVcmwpfWAsCiAgICB9LAogIF07CgogIHJldHVybiAoCiAgICA8ZGl2IGNsYXNzTmFtZT0icmVsYXRpdmUiPgogICAgICA8YnV0dG9uCiAgICAgICAgb25DbGljaz17aGFuZGxlTmF0aXZlU2hhcmV9CiAgICAgICAgY2xhc3NOYW1lPSJpbmxpbmUtZmxleCBpdGVtcy1jZW50ZXIgZ2FwLTIgYm9yZGVyIGJvcmRlci13aGl0ZS8yMCB0ZXh0LXdoaXRlIGZvbnQtc2VtaWJvbGQgcHgtNiBweS0zIHJvdW5kZWQtZnVsbCBob3ZlcjpiZy13aGl0ZS8xMCB0cmFuc2l0aW9uIgogICAgICAgIGFyaWEtbGFiZWw9IlNoYXJlIgogICAgICA+CiAgICAgICAgPFNoYXJlMiBjbGFzc05hbWU9InctNCBoLTQiIC8+CiAgICAgICAgU2hhcmUKICAgICAgPC9idXR0b24+CgogICAgICB7LyogRmFsbGJhY2sgbW9kYWwgZm9yIG5vbi1uYXRpdmUtc2hhcmUgYnJvd3NlcnMgKi99CiAgICAgIHtvcGVuICYmICgKICAgICAgICA8ZGl2IGNsYXNzTmFtZT0iZml4ZWQgaW5zZXQtMCB6LTUwIGZsZXggaXRlbXMtZW5kIGp1c3RpZnktY2VudGVyIGJnLWJsYWNrLzcwIiBvbkNsaWNrPXsoKSA9PiBzZXRPcGVuKGZhbHNlKX0+CiAgICAgICAgICA8ZGl2CiAgICAgICAgICAgIGNsYXNzTmFtZT0idy1mdWxsIG1heC13LW1kIGJnLXppbmMtOTAwIHJvdW5kZWQtdC0yeGwgcC02IHBiLTEwIHNwYWNlLXktNCIKICAgICAgICAgICAgb25DbGljaz17KGUpID0+IGUuc3RvcFByb3BhZ2F0aW9uKCl9CiAgICAgICAgICA+CiAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPSJmbGV4IGl0ZW1zLWNlbnRlciBqdXN0aWZ5LWJldHdlZW4gbWItMiI+CiAgICAgICAgICAgICAgPGgzIGNsYXNzTmFtZT0idGV4dC13aGl0ZSBmb250LWJvbGQgdGV4dC1sZyI+U2hhcmU8L2gzPgogICAgICAgICAgICAgIDxidXR0b24gb25DbGljaz17KCkgPT4gc2V0T3BlbihmYWxzZSl9IGNsYXNzTmFtZT0idGV4dC1ncmF5LTQwMCBob3Zlcjp0ZXh0LXdoaXRlIj4KICAgICAgICAgICAgICAgIDxYIGNsYXNzTmFtZT0idy01IGgtNSIgLz4KICAgICAgICAgICAgICA8L2J1dHRvbj4KICAgICAgICAgICAgPC9kaXY+CgogICAgICAgICAgICA8cCBjbGFzc05hbWU9InRleHQtZ3JheS00MDAgdGV4dC1zbSBsaW5lLWNsYW1wLTIiPnt0aXRsZX08L3A+CgogICAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT0iZ3JpZCBncmlkLWNvbHMtMyBnYXAtMyI+CiAgICAgICAgICAgICAge3BsYXRmb3Jtcy5tYXAoKHApID0+ICgKICAgICAgICAgICAgICAgIDxhCiAgICAgICAgICAgICAgICAgIGtleT17cC5pZH0KICAgICAgICAgICAgICAgICAgaHJlZj17cC5ocmVmfQogICAgICAgICAgICAgICAgICB0YXJnZXQ9Il9ibGFuayIKICAgICAgICAgICAgICAgICAgcmVsPSJub29wZW5lciBub3JlZmVycmVyIgogICAgICAgICAgICAgICAgICBvbkNsaWNrPXsoKSA9PiB7IHRyYWNrKHAuaWQpOyBzZXRPcGVuKGZhbHNlKTsgfX0KICAgICAgICAgICAgICAgICAgY2xhc3NOYW1lPXtgZmxleCBmbGV4LWNvbCBpdGVtcy1jZW50ZXIgZ2FwLTIgJHtwLmNvbG9yfSB0ZXh0LXdoaXRlIHJvdW5kZWQteGwgcHktNCBweC0yIHRyYW5zaXRpb24gdGV4dC1zbSBmb250LW1lZGl1bWB9CiAgICAgICAgICAgICAgICA+CiAgICAgICAgICAgICAgICAgIHtwLmljb259CiAgICAgICAgICAgICAgICAgIHtwLmxhYmVsfQogICAgICAgICAgICAgICAgPC9hPgogICAgICAgICAgICAgICkpfQogICAgICAgICAgICA8L2Rpdj4KCiAgICAgICAgICAgIDxidXR0b24KICAgICAgICAgICAgICBvbkNsaWNrPXtoYW5kbGVDb3B5TGlua30KICAgICAgICAgICAgICBjbGFzc05hbWU9InctZnVsbCBmbGV4IGl0ZW1zLWNlbnRlciBqdXN0aWZ5LWNlbnRlciBnYXAtMiBib3JkZXIgYm9yZGVyLXdoaXRlLzIwIHRleHQtd2hpdGUgcm91bmRlZC14bCBweS0zIGhvdmVyOmJnLXdoaXRlLzEwIHRyYW5zaXRpb24gZm9udC1tZWRpdW0iCiAgICAgICAgICAgID4KICAgICAgICAgICAgICB7Y29waWVkID8gPENoZWNrIGNsYXNzTmFtZT0idy01IGgtNSB0ZXh0LWdyZWVuLTQwMCIgLz4gOiA8TGluayBjbGFzc05hbWU9InctNSBoLTUiIC8+fQogICAgICAgICAgICAgIHtjb3BpZWQgPyAnQ29waWVkIScgOiAnQ29weSBMaW5rJ30KICAgICAgICAgICAgPC9idXR0b24+CiAgICAgICAgICA8L2Rpdj4KICAgICAgICA8L2Rpdj4KICAgICAgKX0KICAgIDwvZGl2PgogICk7Cn0K"}
+'use client';
+
+import { useState } from 'react';
+import { Share2, MessageCircle, Facebook, Twitter, Link, Check, X } from 'lucide-react';
+import { analytics } from '@/lib/analytics';
+
+interface ShareButtonProps {
+  url: string;
+  title: string;
+  description?: string;
+  seriesId?: string;
+}
+
+export function ShareButton({ url, title, description, seriesId }: ShareButtonProps) {
+  const [open, setOpen] = useState(false);
+  const [copied, setCopied] = useState(false);
+
+  const shareText = description ? `${title} — ${description}` : title;
+  const fullUrl = url.startsWith('http') ? url : `https://thegulel.com${url}`;
+
+  const track = (platform: string) => {
+    if (seriesId) analytics.share(platform, seriesId);
+  };
+
+  const handleNativeShare = async () => {
+    if (navigator.share) {
+      try {
+        await navigator.share({ title, text: shareText, url: fullUrl });
+        track('native');
+      } catch {
+        // user cancelled or share failed — silently ignore
+      }
+      return;
+    }
+    setOpen(true);
+  };
+
+  const handleCopyLink = async () => {
+    try {
+      await navigator.clipboard.writeText(fullUrl);
+      setCopied(true);
+      track('copy_link');
+      setTimeout(() => setCopied(false), 2000);
+    } catch {
+      // Fallback for older browsers
+      const ta = document.createElement('textarea');
+      ta.value = fullUrl;
+      document.body.appendChild(ta);
+      ta.select();
+      document.execCommand('copy');
+      document.body.removeChild(ta);
+      setCopied(true);
+      setTimeout(() => setCopied(false), 2000);
+    }
+  };
+
+  const platforms = [
+    {
+      id: 'whatsapp',
+      label: 'WhatsApp',
+      icon: <MessageCircle className="w-5 h-5" />,
+      color: 'bg-green-600 hover:bg-green-700',
+      href: `https://wa.me/?text=${encodeURIComponent(`${shareText} ${fullUrl}`)}`,
+    },
+    {
+      id: 'facebook',
+      label: 'Facebook',
+      icon: <Facebook className="w-5 h-5" />,
+      color: 'bg-blue-700 hover:bg-blue-800',
+      href: `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(fullUrl)}`,
+    },
+    {
+      id: 'twitter',
+      label: 'X / Twitter',
+      icon: <Twitter className="w-5 h-5" />,
+      color: 'bg-zinc-800 hover:bg-zinc-700',
+      href: `https://twitter.com/intent/tweet?text=${encodeURIComponent(shareText)}&url=${encodeURIComponent(fullUrl)}`,
+    },
+  ];
+
+  return (
+    <div className="relative">
+      <button
+        onClick={handleNativeShare}
+        className="inline-flex items-center gap-2 border border-white/20 text-white font-semibold px-6 py-3 rounded-full hover:bg-white/10 transition"
+        aria-label="Share"
+      >
+        <Share2 className="w-4 h-4" />
+        Share
+      </button>
+
+      {/* Fallback modal for non-native-share browsers */}
+      {open && (
+        <div className="fixed inset-0 z-50 flex items-end justify-center bg-black/70" onClick={() => setOpen(false)}>
+          <div
+            className="w-full max-w-md bg-zinc-900 rounded-t-2xl p-6 pb-10 space-y-4"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <div className="flex items-center justify-between mb-2">
+              <h3 className="text-white font-bold text-lg">Share</h3>
+              <button onClick={() => setOpen(false)} className="text-gray-400 hover:text-white">
+                <X className="w-5 h-5" />
+              </button>
+            </div>
+
+            <p className="text-gray-400 text-sm line-clamp-2">{title}</p>
+
+            <div className="grid grid-cols-3 gap-3">
+              {platforms.map((p) => (
+                <a
+                  key={p.id}
+                  href={p.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  onClick={() => { track(p.id); setOpen(false); }}
+                  className={`flex flex-col items-center gap-2 ${p.color} text-white rounded-xl py-4 px-2 transition text-sm font-medium`}
+                >
+                  {p.icon}
+                  {p.label}
+                </a>
+              ))}
+            </div>
+
+            <button
+              onClick={handleCopyLink}
+              className="w-full flex items-center justify-center gap-2 border border-white/20 text-white rounded-xl py-3 hover:bg-white/10 transition font-medium"
+            >
+              {copied ? <Check className="w-5 h-5 text-green-400" /> : <Link className="w-5 h-5" />}
+              {copied ? 'Copied!' : 'Copy Link'}
+            </button>
+          </div>
+        </div>
+      )}
+    </div>
+  );
+}

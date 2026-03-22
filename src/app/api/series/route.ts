@@ -1,1 +1,89 @@
-{"data":"aW1wb3J0IHsgTmV4dFJlcXVlc3QsIE5leHRSZXNwb25zZSB9IGZyb20gJ25leHQvc2VydmVyJzsKaW1wb3J0IHByaXNtYSBmcm9tICdAL2xpYi9wcmlzbWEnOwoKZXhwb3J0IGFzeW5jIGZ1bmN0aW9uIEdFVChyZXF1ZXN0OiBOZXh0UmVxdWVzdCkgewogIHRyeSB7CiAgICBjb25zdCBzZWFyY2hQYXJhbXMgPSByZXF1ZXN0Lm5leHRVcmwuc2VhcmNoUGFyYW1zOwogICAgY29uc3QgZ2VucmUgPSBzZWFyY2hQYXJhbXMuZ2V0KCdnZW5yZScpOwogICAgY29uc3QgZmVhdHVyZWQgPSBzZWFyY2hQYXJhbXMuZ2V0KCdmZWF0dXJlZCcpOwoKICAgIGNvbnN0IHdoZXJlOiBhbnkgPSB7CiAgICAgIHN0YXR1czogJ1BVQkxJU0hFRCcsCiAgICB9OwoKICAgIGlmIChnZW5yZSAmJiBnZW5yZSAhPT0gJ0FsbCcpIHsKICAgICAgd2hlcmUuZ2VucmUgPSBnZW5yZTsKICAgIH0KCiAgICBpZiAoZmVhdHVyZWQgPT09ICd0cnVlJykgewogICAgICB3aGVyZS5mZWF0dXJlZCA9IHRydWU7CiAgICB9CgogICAgY29uc3Qgc2VyaWVzID0gYXdhaXQgcHJpc21hLnNlcmllcy5maW5kTWFueSh7CiAgICAgIHdoZXJlLAogICAgICBvcmRlckJ5OiBbCiAgICAgICAgeyBmZWF0dXJlZDogJ2Rlc2MnIH0sCiAgICAgICAgeyBjcmVhdGVkQXQ6ICdkZXNjJyB9LAogICAgICBdLAogICAgICBzZWxlY3Q6IHsKICAgICAgICBpZDogdHJ1ZSwKICAgICAgICB0aXRsZTogdHJ1ZSwKICAgICAgICB0aHVtYm5haWw6IHRydWUsCiAgICAgICAgZ2VucmU6IHRydWUsCiAgICAgICAgdG90YWxFcGlzb2RlczogdHJ1ZSwKICAgICAgICBmZWF0dXJlZDogdHJ1ZSwKICAgICAgfSwKICAgIH0pOwoKICAgIHJldHVybiBOZXh0UmVzcG9uc2UuanNvbih7IHNlcmllcyB9KTsKICB9IGNhdGNoIChlcnJvcikgewogICAgY29uc29sZS5lcnJvcignRmV0Y2ggc2VyaWVzIGVycm9yOicsIGVycm9yKTsKICAgIHJldHVybiBOZXh0UmVzcG9uc2UuanNvbigKICAgICAgeyBlcnJvcjogJ0ZhaWxlZCB0byBmZXRjaCBzZXJpZXMnIH0sCiAgICAgIHsgc3RhdHVzOiA1MDAgfQogICAgKTsKICB9Cn0KCmV4cG9ydCBhc3luYyBmdW5jdGlvbiBQT1NUKHJlcXVlc3Q6IE5leHRSZXF1ZXN0KSB7CiAgdHJ5IHsKICAgIGNvbnN0IGRhdGEgPSBhd2FpdCByZXF1ZXN0Lmpzb24oKTsKICAgIGNvbnN0IHVzZXJJZCA9IHJlcXVlc3QuY29va2llcy5nZXQoJ3VzZXJJZCcpPy52YWx1ZTsKCiAgICBpZiAoIXVzZXJJZCkgewogICAgICByZXR1cm4gTmV4dFJlc3BvbnNlLmpzb24oCiAgICAgICAgeyBlcnJvcjogJ05vdCBhdXRoZW50aWNhdGVkJyB9LAogICAgICAgIHsgc3RhdHVzOiA0MDEgfQogICAgICApOwogICAgfQoKICAgIC8vIEluIHByb2R1Y3Rpb24sIGNoZWNrIGlmIHVzZXIgaXMgYWRtaW4KICAgIC8vIEZvciBub3csIGFsbG93IGFueSBhdXRoZW50aWNhdGVkIHVzZXIKCiAgICBjb25zdCBzZXJpZXMgPSBhd2FpdCBwcmlzbWEuc2VyaWVzLmNyZWF0ZSh7CiAgICAgIGRhdGE6IHsKICAgICAgICB0aXRsZTogZGF0YS50aXRsZSwKICAgICAgICB0aXRsZUhpOiBkYXRhLnRpdGxlSGksCiAgICAgICAgdGl0bGVaaDogZGF0YS50aXRsZVpoLAogICAgICAgIGRlc2NyaXB0aW9uOiBkYXRhLmRlc2NyaXB0aW9uLAogICAgICAgIGRlc2NyaXB0aW9uSGk6IGRhdGEuZGVzY3JpcHRpb25IaSwKICAgICAgICBkZXNjcmlwdGlvblpoOiBkYXRhLmRlc2NyaXB0aW9uWmgsCiAgICAgICAgdGh1bWJuYWlsOiBkYXRhLnRodW1ibmFpbCwKICAgICAgICBnZW5yZTogZGF0YS5nZW5yZSwKICAgICAgICB0YWdzOiBkYXRhLnRhZ3MgfHwgW10sCiAgICAgICAgZnJlZUVwaXNvZGVzOiBkYXRhLmZyZWVFcGlzb2RlcyB8fCA1LAogICAgICAgIGNvaW5QcmljZTogZGF0YS5jb2luUHJpY2UgfHwgMTAsCiAgICAgICAgc3RhdHVzOiBkYXRhLnN0YXR1cyB8fCAnRFJBRlQnLAogICAgICAgIGZlYXR1cmVkOiBkYXRhLmZlYXR1cmVkIHx8IGZhbHNlLAogICAgICB9LAogICAgfSk7CgogICAgcmV0dXJuIE5leHRSZXNwb25zZS5qc29uKHsgc2VyaWVzIH0sIHsgc3RhdHVzOiAyMDEgfSk7CiAgfSBjYXRjaCAoZXJyb3IpIHsKICAgIGNvbnNvbGUuZXJyb3IoJ0NyZWF0ZSBzZXJpZXMgZXJyb3I6JywgZXJyb3IpOwogICAgcmV0dXJuIE5leHRSZXNwb25zZS5qc29uKAogICAgICB7IGVycm9yOiAnRmFpbGVkIHRvIGNyZWF0ZSBzZXJpZXMnIH0sCiAgICAgIHsgc3RhdHVzOiA1MDAgfQogICAgKTsKICB9Cn0K"}
+import { NextRequest, NextResponse } from 'next/server';
+import prisma from '@/lib/prisma';
+
+export async function GET(request: NextRequest) {
+  try {
+    const searchParams = request.nextUrl.searchParams;
+    const genre = searchParams.get('genre');
+    const featured = searchParams.get('featured');
+
+    const where: any = {
+      status: 'PUBLISHED',
+    };
+
+    if (genre && genre !== 'All') {
+      where.genre = genre;
+    }
+
+    if (featured === 'true') {
+      where.featured = true;
+    }
+
+    const series = await prisma.series.findMany({
+      where,
+      orderBy: [
+        { featured: 'desc' },
+        { createdAt: 'desc' },
+      ],
+      select: {
+        id: true,
+        title: true,
+        thumbnail: true,
+        genre: true,
+        totalEpisodes: true,
+        featured: true,
+      },
+    });
+
+    return NextResponse.json({ series });
+  } catch (error) {
+    console.error('Fetch series error:', error);
+    return NextResponse.json(
+      { error: 'Failed to fetch series' },
+      { status: 500 }
+    );
+  }
+}
+
+export async function POST(request: NextRequest) {
+  try {
+    const data = await request.json();
+    const userId = request.cookies.get('userId')?.value;
+
+    if (!userId) {
+      return NextResponse.json(
+        { error: 'Not authenticated' },
+        { status: 401 }
+      );
+    }
+
+    // In production, check if user is admin
+    // For now, allow any authenticated user
+
+    const series = await prisma.series.create({
+      data: {
+        title: data.title,
+        titleHi: data.titleHi,
+        titleZh: data.titleZh,
+        description: data.description,
+        descriptionHi: data.descriptionHi,
+        descriptionZh: data.descriptionZh,
+        thumbnail: data.thumbnail,
+        genre: data.genre,
+        tags: data.tags || [],
+        freeEpisodes: data.freeEpisodes || 5,
+        coinPrice: data.coinPrice || 10,
+        status: data.status || 'DRAFT',
+        featured: data.featured || false,
+      },
+    });
+
+    return NextResponse.json({ series }, { status: 201 });
+  } catch (error) {
+    console.error('Create series error:', error);
+    return NextResponse.json(
+      { error: 'Failed to create series' },
+      { status: 500 }
+    );
+  }
+}

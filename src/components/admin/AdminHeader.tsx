@@ -1,1 +1,101 @@
-{"data":"J3VzZSBjbGllbnQnOwoKaW1wb3J0IHsgdXNlUGF0aG5hbWUgfSBmcm9tICduZXh0L25hdmlnYXRpb24nOwppbXBvcnQgTGluayBmcm9tICduZXh0L2xpbmsnOwppbXBvcnQgeyBDaGV2cm9uUmlnaHQsIE1lbnUsIEJlbGwsIFVzZXIgfSBmcm9tICdsdWNpZGUtcmVhY3QnOwppbXBvcnQgeyB1c2VBdXRoU3RvcmUgfSBmcm9tICdAL3N0b3Jlcy91c2VBdXRoU3RvcmUnOwoKaW50ZXJmYWNlIEFkbWluSGVhZGVyUHJvcHMgewogIG9uTW9iaWxlTWVudVRvZ2dsZTogKCkgPT4gdm9pZDsKfQoKY29uc3QgQlJFQURDUlVNQl9NQVA6IFJlY29yZDxzdHJpbmcsIHN0cmluZz4gPSB7CiAgYWRtaW46ICdEYXNoYm9hcmQnLAogIHNlcmllczogJ1NlcmllcycsCiAgbmV3OiAnTmV3JywKICBlcGlzb2RlczogJ0VwaXNvZGVzJywKICB1c2VyczogJ1VzZXJzJywKICBhbmFseXRpY3M6ICdBbmFseXRpY3MnLAogIHNldHRpbmdzOiAnU2V0dGluZ3MnLAp9OwoKZnVuY3Rpb24gZ2V0QnJlYWRjcnVtYnMocGF0aG5hbWU6IHN0cmluZykgewogIGNvbnN0IHNlZ21lbnRzID0gcGF0aG5hbWUuc3BsaXQoJy8nKS5maWx0ZXIoQm9vbGVhbik7CiAgY29uc3QgY3J1bWJzOiB7IGxhYmVsOiBzdHJpbmc7IGhyZWY6IHN0cmluZyB9W10gPSBbXTsKICBsZXQgcGF0aCA9ICcnOwoKICBmb3IgKGNvbnN0IHNlZ21lbnQgb2Ygc2VnbWVudHMpIHsKICAgIHBhdGggKz0gYC8ke3NlZ21lbnR9YDsKICAgIC8vIFNraXAgVVVJRHMgLyBsb25nIElEcyBmcm9tIGxhYmVsIGJ1dCBpbmNsdWRlIGluIHBhdGgKICAgIGNvbnN0IGxhYmVsID0gc2VnbWVudC5tYXRjaCgvXlswLTlhLWYtXXsyMCx9JC9pKQogICAgICA/ICdEZXRhaWwnCiAgICAgIDogQlJFQURDUlVNQl9NQVBbc2VnbWVudF0gPz8gc2VnbWVudDsKICAgIGNydW1icy5wdXNoKHsgbGFiZWwsIGhyZWY6IHBhdGggfSk7CiAgfQoKICByZXR1cm4gY3J1bWJzOwp9CgpleHBvcnQgZGVmYXVsdCBmdW5jdGlvbiBBZG1pbkhlYWRlcih7IG9uTW9iaWxlTWVudVRvZ2dsZSB9OiBBZG1pbkhlYWRlclByb3BzKSB7CiAgY29uc3QgcGF0aG5hbWUgPSB1c2VQYXRobmFtZSgpOwogIGNvbnN0IHVzZXIgPSB1c2VBdXRoU3RvcmUoKHMpID0+IHMudXNlcik7CiAgY29uc3QgYnJlYWRjcnVtYnMgPSBnZXRCcmVhZGNydW1icyhwYXRobmFtZSk7CgogIHJldHVybiAoCiAgICA8aGVhZGVyIGNsYXNzTmFtZT0iaC0xNCBiZy1ncmF5LTk1MCBib3JkZXItYiBib3JkZXItZ3JheS04MDAgZmxleCBpdGVtcy1jZW50ZXIgcHgtNCBnYXAtNCBzaHJpbmstMCI+CiAgICAgIHsvKiBNb2JpbGUgbWVudSBidXR0b24gKi99CiAgICAgIDxidXR0b24KICAgICAgICBvbkNsaWNrPXtvbk1vYmlsZU1lbnVUb2dnbGV9CiAgICAgICAgY2xhc3NOYW1lPSJsZzpoaWRkZW4gcC0yIHJvdW5kZWQtbGcgdGV4dC1ncmF5LTQwMCBob3ZlcjpiZy1ncmF5LTkwMCBob3Zlcjp0ZXh0LXdoaXRlIHRyYW5zaXRpb24tY29sb3JzIgogICAgICA+CiAgICAgICAgPE1lbnUgc2l6ZT17MjB9IC8+CiAgICAgIDwvYnV0dG9uPgoKICAgICAgey8qIEJyZWFkY3J1bWJzICovfQogICAgICA8bmF2IGNsYXNzTmFtZT0iZmxleCBpdGVtcy1jZW50ZXIgZ2FwLTEuNSBmbGV4LTEgb3ZlcmZsb3cteC1hdXRvIj4KICAgICAgICB7YnJlYWRjcnVtYnMubWFwKChjcnVtYiwgaSkgPT4gKAogICAgICAgICAgPGRpdiBrZXk9e2NydW1iLmhyZWZ9IGNsYXNzTmFtZT0iZmxleCBpdGVtcy1jZW50ZXIgZ2FwLTEuNSBzaHJpbmstMCI+CiAgICAgICAgICAgIHtpID4gMCAmJiA8Q2hldnJvblJpZ2h0IHNpemU9ezE0fSBjbGFzc05hbWU9InRleHQtZ3JheS02MDAiIC8+fQogICAgICAgICAgICB7aSA9PT0gYnJlYWRjcnVtYnMubGVuZ3RoIC0gMSA/ICgKICAgICAgICAgICAgICA8c3BhbiBjbGFzc05hbWU9InRleHQtc20gdGV4dC13aGl0ZSBmb250LW1lZGl1bSI+e2NydW1iLmxhYmVsfTwvc3Bhbj4KICAgICAgICAgICAgKSA6ICgKICAgICAgICAgICAgICA8TGluawogICAgICAgICAgICAgICAgaHJlZj17Y3J1bWIuaHJlZn0KICAgICAgICAgICAgICAgIGNsYXNzTmFtZT0idGV4dC1zbSB0ZXh0LWdyYXktNTAwIGhvdmVyOnRleHQtZ3JheS0zMDAgdHJhbnNpdGlvbi1jb2xvcnMiCiAgICAgICAgICAgICAgPgogICAgICAgICAgICAgICAge2NydW1iLmxhYmVsfQogICAgICAgICAgICAgIDwvTGluaz4KICAgICAgICAgICAgKX0KICAgICAgICAgIDwvZGl2PgogICAgICAgICkpfQogICAgICA8L25hdj4KCiAgICAgIHsvKiBSaWdodCBhY3Rpb25zICovfQogICAgICA8ZGl2IGNsYXNzTmFtZT0iZmxleCBpdGVtcy1jZW50ZXIgZ2FwLTIgc2hyaW5rLTAiPgogICAgICAgIDxidXR0b24gY2xhc3NOYW1lPSJwLTIgcm91bmRlZC1sZyB0ZXh0LWdyYXktNDAwIGhvdmVyOmJnLWdyYXktOTAwIGhvdmVyOnRleHQtd2hpdGUgdHJhbnNpdGlvbi1jb2xvcnMgcmVsYXRpdmUiPgogICAgICAgICAgPEJlbGwgc2l6ZT17MTh9IC8+CiAgICAgICAgPC9idXR0b24+CgogICAgICAgIDxkaXYgY2xhc3NOYW1lPSJmbGV4IGl0ZW1zLWNlbnRlciBnYXAtMiBwbC0yIGJvcmRlci1sIGJvcmRlci1ncmF5LTgwMCI+CiAgICAgICAgICB7dXNlcj8uYXZhdGFyID8gKAogICAgICAgICAgICA8aW1nCiAgICAgICAgICAgICAgc3JjPXt1c2VyLmF2YXRhcn0KICAgICAgICAgICAgICBhbHQ9e3VzZXIubmFtZSA/PyAnQWRtaW4nfQogICAgICAgICAgICAgIGNsYXNzTmFtZT0idy04IGgtOCByb3VuZGVkLWZ1bGwgb2JqZWN0LWNvdmVyIgogICAgICAgICAgICAvPgogICAgICAgICAgKSA6ICgKICAgICAgICAgICAgPGRpdiBjbGFzc05hbWU9InctOCBoLTggcm91bmRlZC1mdWxsIGJnLWdyYXktODAwIGZsZXggaXRlbXMtY2VudGVyIGp1c3RpZnktY2VudGVyIj4KICAgICAgICAgICAgICA8VXNlciBzaXplPXsxNn0gY2xhc3NOYW1lPSJ0ZXh0LWdyYXktNDAwIiAvPgogICAgICAgICAgICA8L2Rpdj4KICAgICAgICAgICl9CiAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT0iaGlkZGVuIHNtOmJsb2NrIj4KICAgICAgICAgICAgPGRpdiBjbGFzc05hbWU9InRleHQteHMgZm9udC1tZWRpdW0gdGV4dC13aGl0ZSBsZWFkaW5nLW5vbmUiPgogICAgICAgICAgICAgIHt1c2VyPy5uYW1lID8/ICdBZG1pbid9CiAgICAgICAgICAgIDwvZGl2PgogICAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT0idGV4dC14cyB0ZXh0LWdyYXktNTAwIG10LTAuNSBsZWFkaW5nLW5vbmUiPkFkbWluaXN0cmF0b3I8L2Rpdj4KICAgICAgICAgIDwvZGl2PgogICAgICAgIDwvZGl2PgogICAgICA8L2Rpdj4KICAgIDwvaGVhZGVyPgogICk7Cn0K"}
+'use client';
+
+import { usePathname } from 'next/navigation';
+import Link from 'next/link';
+import { ChevronRight, Menu, Bell, User } from 'lucide-react';
+import { useAuthStore } from '@/stores/useAuthStore';
+
+interface AdminHeaderProps {
+  onMobileMenuToggle: () => void;
+}
+
+const BREADCRUMB_MAP: Record<string, string> = {
+  admin: 'Dashboard',
+  series: 'Series',
+  new: 'New',
+  episodes: 'Episodes',
+  users: 'Users',
+  analytics: 'Analytics',
+  settings: 'Settings',
+};
+
+function getBreadcrumbs(pathname: string) {
+  const segments = pathname.split('/').filter(Boolean);
+  const crumbs: { label: string; href: string }[] = [];
+  let path = '';
+
+  for (const segment of segments) {
+    path += `/${segment}`;
+    // Skip UUIDs / long IDs from label but include in path
+    const label = segment.match(/^[0-9a-f-]{20,}$/i)
+      ? 'Detail'
+      : BREADCRUMB_MAP[segment] ?? segment;
+    crumbs.push({ label, href: path });
+  }
+
+  return crumbs;
+}
+
+export default function AdminHeader({ onMobileMenuToggle }: AdminHeaderProps) {
+  const pathname = usePathname();
+  const user = useAuthStore((s) => s.user);
+  const breadcrumbs = getBreadcrumbs(pathname);
+
+  return (
+    <header className="h-14 bg-gray-950 border-b border-gray-800 flex items-center px-4 gap-4 shrink-0">
+      {/* Mobile menu button */}
+      <button
+        onClick={onMobileMenuToggle}
+        className="lg:hidden p-2 rounded-lg text-gray-400 hover:bg-gray-900 hover:text-white transition-colors"
+      >
+        <Menu size={20} />
+      </button>
+
+      {/* Breadcrumbs */}
+      <nav className="flex items-center gap-1.5 flex-1 overflow-x-auto">
+        {breadcrumbs.map((crumb, i) => (
+          <div key={crumb.href} className="flex items-center gap-1.5 shrink-0">
+            {i > 0 && <ChevronRight size={14} className="text-gray-600" />}
+            {i === breadcrumbs.length - 1 ? (
+              <span className="text-sm text-white font-medium">{crumb.label}</span>
+            ) : (
+              <Link
+                href={crumb.href}
+                className="text-sm text-gray-500 hover:text-gray-300 transition-colors"
+              >
+                {crumb.label}
+              </Link>
+            )}
+          </div>
+        ))}
+      </nav>
+
+      {/* Right actions */}
+      <div className="flex items-center gap-2 shrink-0">
+        <button className="p-2 rounded-lg text-gray-400 hover:bg-gray-900 hover:text-white transition-colors relative">
+          <Bell size={18} />
+        </button>
+
+        <div className="flex items-center gap-2 pl-2 border-l border-gray-800">
+          {user?.avatar ? (
+            <img
+              src={user.avatar}
+              alt={user.name ?? 'Admin'}
+              className="w-8 h-8 rounded-full object-cover"
+            />
+          ) : (
+            <div className="w-8 h-8 rounded-full bg-gray-800 flex items-center justify-center">
+              <User size={16} className="text-gray-400" />
+            </div>
+          )}
+          <div className="hidden sm:block">
+            <div className="text-xs font-medium text-white leading-none">
+              {user?.name ?? 'Admin'}
+            </div>
+            <div className="text-xs text-gray-500 mt-0.5 leading-none">Administrator</div>
+          </div>
+        </div>
+      </div>
+    </header>
+  );
+}

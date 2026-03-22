@@ -1,1 +1,86 @@
-{"data":"aW1wb3J0IHsgTmV4dFJlcXVlc3QsIE5leHRSZXNwb25zZSB9IGZyb20gJ25leHQvc2VydmVyJzsKaW1wb3J0IHByaXNtYSBmcm9tICdAL2xpYi9wcmlzbWEnOwoKZXhwb3J0IGFzeW5jIGZ1bmN0aW9uIFBPU1QocmVxdWVzdDogTmV4dFJlcXVlc3QpIHsKICB0cnkgewogICAgY29uc3QgeyBlcGlzb2RlSWQsIHByb2dyZXNzLCBjb21wbGV0ZWQgfSA9IGF3YWl0IHJlcXVlc3QuanNvbigpOwogICAgY29uc3QgdXNlcklkID0gcmVxdWVzdC5jb29raWVzLmdldCgndXNlcklkJyk/LnZhbHVlOwoKICAgIGlmICghdXNlcklkKSB7CiAgICAgIHJldHVybiBOZXh0UmVzcG9uc2UuanNvbigKICAgICAgICB7IGVycm9yOiAnTm90IGF1dGhlbnRpY2F0ZWQnIH0sCiAgICAgICAgeyBzdGF0dXM6IDQwMSB9CiAgICAgICk7CiAgICB9CgogICAgY29uc3Qgd2F0Y2hIaXN0b3J5ID0gYXdhaXQgcHJpc21hLndhdGNoSGlzdG9yeS51cHNlcnQoewogICAgICB3aGVyZTogewogICAgICAgIHVzZXJJZF9lcGlzb2RlSWQ6IHsKICAgICAgICAgIHVzZXJJZCwKICAgICAgICAgIGVwaXNvZGVJZCwKICAgICAgICB9LAogICAgICB9LAogICAgICB1cGRhdGU6IHsKICAgICAgICBwcm9ncmVzcywKICAgICAgICBjb21wbGV0ZWQsCiAgICAgICAgd2F0Y2hlZEF0OiBuZXcgRGF0ZSgpLAogICAgICB9LAogICAgICBjcmVhdGU6IHsKICAgICAgICB1c2VySWQsCiAgICAgICAgZXBpc29kZUlkLAogICAgICAgIHByb2dyZXNzLAogICAgICAgIGNvbXBsZXRlZCwKICAgICAgfSwKICAgIH0pOwoKICAgIHJldHVybiBOZXh0UmVzcG9uc2UuanNvbih7CiAgICAgIHN1Y2Nlc3M6IHRydWUsCiAgICAgIHdhdGNoSGlzdG9yeSwKICAgIH0pOwogIH0gY2F0Y2ggKGVycm9yKSB7CiAgICBjb25zb2xlLmVycm9yKCdTYXZlIHByb2dyZXNzIGVycm9yOicsIGVycm9yKTsKICAgIHJldHVybiBOZXh0UmVzcG9uc2UuanNvbigKICAgICAgeyBlcnJvcjogJ0ZhaWxlZCB0byBzYXZlIHByb2dyZXNzJyB9LAogICAgICB7IHN0YXR1czogNTAwIH0KICAgICk7CiAgfQp9CgpleHBvcnQgYXN5bmMgZnVuY3Rpb24gR0VUKHJlcXVlc3Q6IE5leHRSZXF1ZXN0KSB7CiAgdHJ5IHsKICAgIGNvbnN0IHVzZXJJZCA9IHJlcXVlc3QuY29va2llcy5nZXQoJ3VzZXJJZCcpPy52YWx1ZTsKCiAgICBpZiAoIXVzZXJJZCkgewogICAgICByZXR1cm4gTmV4dFJlc3BvbnNlLmpzb24oCiAgICAgICAgeyBlcnJvcjogJ05vdCBhdXRoZW50aWNhdGVkJyB9LAogICAgICAgIHsgc3RhdHVzOiA0MDEgfQogICAgICApOwogICAgfQoKICAgIGNvbnN0IGhpc3RvcnkgPSBhd2FpdCBwcmlzbWEud2F0Y2hIaXN0b3J5LmZpbmRNYW55KHsKICAgICAgd2hlcmU6IHsgdXNlcklkIH0sCiAgICAgIG9yZGVyQnk6IHsgd2F0Y2hlZEF0OiAnZGVzYycgfSwKICAgICAgdGFrZTogMjAsCiAgICAgIGluY2x1ZGU6IHsKICAgICAgICBlcGlzb2RlOiB7CiAgICAgICAgICBpbmNsdWRlOiB7CiAgICAgICAgICAgIHNlcmllczogewogICAgICAgICAgICAgIHNlbGVjdDogewogICAgICAgICAgICAgICAgaWQ6IHRydWUsCiAgICAgICAgICAgICAgICB0aXRsZTogdHJ1ZSwKICAgICAgICAgICAgICB9LAogICAgICAgICAgICB9LAogICAgICAgICAgfSwKICAgICAgICB9LAogICAgICB9LAogICAgfSk7CgogICAgcmV0dXJuIE5leHRSZXNwb25zZS5qc29uKHsgaGlzdG9yeSB9KTsKICB9IGNhdGNoIChlcnJvcikgewogICAgY29uc29sZS5lcnJvcignRmV0Y2ggaGlzdG9yeSBlcnJvcjonLCBlcnJvcik7CiAgICByZXR1cm4gTmV4dFJlc3BvbnNlLmpzb24oCiAgICAgIHsgZXJyb3I6ICdGYWlsZWQgdG8gZmV0Y2ggaGlzdG9yeScgfSwKICAgICAgeyBzdGF0dXM6IDUwMCB9CiAgICApOwogIH0KfQo="}
+import { NextRequest, NextResponse } from 'next/server';
+import prisma from '@/lib/prisma';
+
+export async function POST(request: NextRequest) {
+  try {
+    const { episodeId, progress, completed } = await request.json();
+    const userId = request.cookies.get('userId')?.value;
+
+    if (!userId) {
+      return NextResponse.json(
+        { error: 'Not authenticated' },
+        { status: 401 }
+      );
+    }
+
+    const watchHistory = await prisma.watchHistory.upsert({
+      where: {
+        userId_episodeId: {
+          userId,
+          episodeId,
+        },
+      },
+      update: {
+        progress,
+        completed,
+        watchedAt: new Date(),
+      },
+      create: {
+        userId,
+        episodeId,
+        progress,
+        completed,
+      },
+    });
+
+    return NextResponse.json({
+      success: true,
+      watchHistory,
+    });
+  } catch (error) {
+    console.error('Save progress error:', error);
+    return NextResponse.json(
+      { error: 'Failed to save progress' },
+      { status: 500 }
+    );
+  }
+}
+
+export async function GET(request: NextRequest) {
+  try {
+    const userId = request.cookies.get('userId')?.value;
+
+    if (!userId) {
+      return NextResponse.json(
+        { error: 'Not authenticated' },
+        { status: 401 }
+      );
+    }
+
+    const history = await prisma.watchHistory.findMany({
+      where: { userId },
+      orderBy: { watchedAt: 'desc' },
+      take: 20,
+      include: {
+        episode: {
+          include: {
+            series: {
+              select: {
+                id: true,
+                title: true,
+              },
+            },
+          },
+        },
+      },
+    });
+
+    return NextResponse.json({ history });
+  } catch (error) {
+    console.error('Fetch history error:', error);
+    return NextResponse.json(
+      { error: 'Failed to fetch history' },
+      { status: 500 }
+    );
+  }
+}

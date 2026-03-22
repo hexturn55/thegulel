@@ -1,1 +1,17 @@
-{"data":"aW1wb3J0IHsgY3JlYXRlU2VydmVyU3VwYWJhc2VDbGllbnQgfSBmcm9tICcuL3N1cGFiYXNlLXNlcnZlcic7CmltcG9ydCBwcmlzbWEgZnJvbSAnLi9wcmlzbWEnOwoKZXhwb3J0IGFzeW5jIGZ1bmN0aW9uIHJlcXVpcmVBZG1pbigpIHsKICBjb25zdCBzdXBhYmFzZSA9IGF3YWl0IGNyZWF0ZVNlcnZlclN1cGFiYXNlQ2xpZW50KCk7CiAgY29uc3QgeyBkYXRhOiB7IHVzZXI6IHN1cGFiYXNlVXNlciB9IH0gPSBhd2FpdCBzdXBhYmFzZS5hdXRoLmdldFVzZXIoKTsKCiAgaWYgKCFzdXBhYmFzZVVzZXIpIHJldHVybiBudWxsOwoKICBjb25zdCB1c2VyID0gYXdhaXQgcHJpc21hLnVzZXIuZmluZEZpcnN0KHsKICAgIHdoZXJlOiB7IHN1cGFiYXNlSWQ6IHN1cGFiYXNlVXNlci5pZCB9CiAgfSk7CgogIGlmICghdXNlciB8fCAodXNlci5yb2xlICE9PSAnYWRtaW4nICYmIHVzZXIucm9sZSAhPT0gJ3N1cGVyYWRtaW4nKSkgcmV0dXJuIG51bGw7CgogIHJldHVybiB1c2VyOwp9Cg=="}
+import { createServerSupabaseClient } from './supabase-server';
+import prisma from './prisma';
+
+export async function requireAdmin() {
+  const supabase = await createServerSupabaseClient();
+  const { data: { user: supabaseUser } } = await supabase.auth.getUser();
+
+  if (!supabaseUser) return null;
+
+  const user = await prisma.user.findFirst({
+    where: { supabaseId: supabaseUser.id }
+  });
+
+  if (!user || (user.role !== 'admin' && user.role !== 'superadmin')) return null;
+
+  return user;
+}
