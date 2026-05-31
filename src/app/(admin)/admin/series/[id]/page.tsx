@@ -6,6 +6,7 @@ import Link from 'next/link';
 import { PlusCircle, Edit2, Trash2, Clock, Lock, Unlock } from 'lucide-react';
 import SeriesForm from '@/components/admin/SeriesForm';
 import ConfirmDialog from '@/components/admin/ConfirmDialog';
+import PikaStudioPanel from '@/components/admin/PikaStudioPanel';
 import { useToast } from '@/components/admin/Toast';
 
 interface Episode {
@@ -223,6 +224,9 @@ export default function EditSeriesPage() {
           </div>
         )}
       </section>
+
+      {/* Pika generative-media studio */}
+      <PikaStudioPanel seriesId={id} />
 
       <ConfirmDialog
         open={!!deleteEp}

@@ -63,9 +63,52 @@ model Series {
   updatedAt       DateTime      @updatedAt
 
   episodes        Episode[]
+  pikaJobs        PikaJob[]
 
   @@index([status, featured])
   @@index([genre])
+}
+
+// Pika (fal.ai-hosted) generative-media jobs: promo/trailer, poster/thumbnail,
+// vertical 9:16 reframe, and virality scoring. Jobs are async — enqueued on
+// fal, polled to completion, then the media is persisted to Supabase Storage.
+enum PikaJobKind {
+  PROMO
+  POSTER
+  REFRAME
+  VIRALITY
+}
+
+enum PikaJobStatus {
+  PENDING
+  PROCESSING
+  COMPLETED
+  FAILED
+}
+
+model PikaJob {
+  id          String        @id @default(cuid())
+  seriesId    String
+  kind        PikaJobKind
+  status      PikaJobStatus @default(PENDING)
+  model       String        // fal model id, e.g. fal-ai/pika/v2.2/text-to-video
+  prompt      String?       @db.Text
+  requestId   String?       @unique // fal queue request id
+  statusUrl   String?       // fal status poll URL
+  responseUrl String?       // fal result URL
+  sourceUrl   String?       // raw fal CDN media URL
+  mediaUrl    String?       // durable Supabase Storage URL
+  score       Float?        // virality score in [0,1] for VIRALITY jobs
+  error       String?       @db.Text
+  metadata    Json?
+  createdAt   DateTime      @default(now())
+  updatedAt   DateTime      @updatedAt
+
+  series      Series        @relation(fields: [seriesId], references: [id], onDelete: Cascade)
+
+  @@index([seriesId])
+  @@index([status])
+  @@index([kind])
 }
 
 model Episode {

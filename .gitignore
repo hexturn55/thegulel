@@ -39,3 +39,6 @@ src/generated/
 
 # misc
 *.pem
+
+# typescript build info
+*.tsbuildinfo
