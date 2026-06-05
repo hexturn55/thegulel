@@ -1,19 +1,20 @@
-import { NextRequest, NextResponse } from 'next/server';
+import { NextResponse } from 'next/server';
 import prisma from '@/lib/prisma';
+import { getAuthUser } from '@/lib/auth';
 
 const AD_REWARD_COINS = 5;
 const AD_COOLDOWN_MS = 60 * 1000; // 1 minute cooldown between ads
 
-export async function POST(request: NextRequest) {
+export async function POST() {
   try {
-    const userId = request.cookies.get('userId')?.value;
-
-    if (!userId) {
+    const authUser = await getAuthUser();
+    if (!authUser) {
       return NextResponse.json(
         { error: 'Not authenticated' },
         { status: 401 }
       );
     }
+    const userId = authUser.id;
 
     // Check cooldown via DB (persistent across restarts)
     const cooldown = await prisma.adCooldown.findUnique({

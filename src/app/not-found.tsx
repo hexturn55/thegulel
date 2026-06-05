@@ -1,7 +1,9 @@
 import Link from 'next/link';
 import { Home } from 'lucide-react';
+import { getTranslations } from 'next-intl/server';
 
-export default function NotFound() {
+export default async function NotFound() {
+  const t = await getTranslations('errors');
   return (
     <div className="min-h-screen bg-black flex flex-col items-center justify-center px-6 text-center">
       {/* Big 404 */}
@@ -14,9 +16,9 @@ export default function NotFound() {
         </div>
       </div>
 
-      <h1 className="text-white text-2xl font-bold mb-3">Page not found</h1>
+      <h1 className="text-white text-2xl font-bold mb-3">{t('notFoundTitle')}</h1>
       <p className="text-gray-400 text-sm mb-8 max-w-xs">
-        This page doesn't exist or has been moved.
+        {t('notFoundBody')}
       </p>
 
       <Link
@@ -24,7 +26,7 @@ export default function NotFound() {
         className="flex items-center gap-2 bg-gradient-to-r from-red-500 to-pink-500 hover:from-red-600 hover:to-pink-600 text-white font-semibold px-6 py-3 rounded-full transition"
       >
         <Home className="w-4 h-4" />
-        Back to Home
+        {t('backHome')}
       </Link>
     </div>
   );

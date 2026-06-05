@@ -3,6 +3,7 @@
 import { useEffect, useRef, useState } from 'react';
 import Hls from 'hls.js';
 import { Play, Pause, Volume2, VolumeX, Subtitles, ChevronUp, ChevronDown } from 'lucide-react';
+import { useTranslations } from 'next-intl';
 import { usePlayerStore } from '@/stores/usePlayerStore';
 import { useAuthStore } from '@/stores/useAuthStore';
 import PaywallOverlay from './PaywallOverlay';
@@ -42,6 +43,7 @@ export default function VideoPlayer({
 
   const { isPlaying, setIsPlaying, currentTime, setCurrentTime, subtitlesEnabled, toggleSubtitles } = usePlayerStore();
   const { user } = useAuthStore();
+  const t = useTranslations('player');
 
   const canPlay = isFree || isUnlocked;
 
@@ -231,7 +233,7 @@ export default function VideoPlayer({
             {hasPrev && (
               <div className="flex items-center justify-center text-white/60 text-sm">
                 <ChevronUp className="w-4 h-4" />
-                <span className="ml-1">Swipe up for previous</span>
+                <span className="ml-1">{t('swipePrev')}</span>
               </div>
             )}
           </div>
@@ -292,7 +294,7 @@ export default function VideoPlayer({
             {hasNext && (
               <div className="mt-4 flex items-center justify-center text-white/60 text-sm">
                 <ChevronDown className="w-4 h-4" />
-                <span className="ml-1">Swipe down for next episode</span>
+                <span className="ml-1">{t('swipeNext')}</span>
               </div>
             )}
           </div>

@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import { Share2, MessageCircle, Facebook, Twitter, Link, Check, X } from 'lucide-react';
+import { useTranslations } from 'next-intl';
 import { analytics } from '@/lib/analytics';
 
 interface ShareButtonProps {
@@ -14,6 +15,7 @@ interface ShareButtonProps {
 export function ShareButton({ url, title, description, seriesId }: ShareButtonProps) {
   const [open, setOpen] = useState(false);
   const [copied, setCopied] = useState(false);
+  const t = useTranslations('share');
 
   const shareText = description ? `${title} — ${description}` : title;
   const fullUrl = url.startsWith('http') ? url : `https://thegulel.com${url}`;
@@ -83,10 +85,10 @@ export function ShareButton({ url, title, description, seriesId }: ShareButtonPr
       <button
         onClick={handleNativeShare}
         className="inline-flex items-center gap-2 border border-white/20 text-white font-semibold px-6 py-3 rounded-full hover:bg-white/10 transition"
-        aria-label="Share"
+        aria-label={t('share')}
       >
         <Share2 className="w-4 h-4" />
-        Share
+        {t('share')}
       </button>
 
       {/* Fallback modal for non-native-share browsers */}
@@ -97,7 +99,7 @@ export function ShareButton({ url, title, description, seriesId }: ShareButtonPr
             onClick={(e) => e.stopPropagation()}
           >
             <div className="flex items-center justify-between mb-2">
-              <h3 className="text-white font-bold text-lg">Share</h3>
+              <h3 className="text-white font-bold text-lg">{t('share')}</h3>
               <button onClick={() => setOpen(false)} className="text-gray-400 hover:text-white">
                 <X className="w-5 h-5" />
               </button>
@@ -126,7 +128,7 @@ export function ShareButton({ url, title, description, seriesId }: ShareButtonPr
               className="w-full flex items-center justify-center gap-2 border border-white/20 text-white rounded-xl py-3 hover:bg-white/10 transition font-medium"
             >
               {copied ? <Check className="w-5 h-5 text-green-400" /> : <Link className="w-5 h-5" />}
-              {copied ? 'Copied!' : 'Copy Link'}
+              {copied ? t('copied') : t('copyLink')}
             </button>
           </div>
         </div>

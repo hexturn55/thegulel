@@ -33,28 +33,34 @@ export async function POST(request: NextRequest) {
       case 'payment.captured': {
         const payment = event.payload.payment.entity;
         const { userId, coins } = payment.notes;
+        const amount = parseInt(coins);
 
-        // Add coins to user balance
-        await prisma.user.update({
-          where: { id: userId },
-          data: {
-            coinBalance: {
-              increment: parseInt(coins),
-            },
-          },
-        });
-
-        // Log transaction
-        await prisma.coinTransaction.create({
-          data: {
-            userId,
-            amount: parseInt(coins),
-            type: 'PURCHASE',
-            description: `Purchased ${coins} coins via Razorpay`,
-          },
-        });
-
-        console.log(`Coins added to user ${userId}: ${coins}`);
+        // Idempotent credit keyed on the Razorpay payment id — a replayed
+        // webhook hits the unique `providerRef` constraint and is skipped.
+        try {
+          await prisma.$transaction([
+            prisma.coinTransaction.create({
+              data: {
+                userId,
+                amount,
+                type: 'PURCHASE',
+                description: `Purchased ${coins} coins via Razorpay`,
+                providerRef: `razorpay:${payment.id}`,
+              },
+            }),
+            prisma.user.update({
+              where: { id: userId },
+              data: { coinBalance: { increment: amount } },
+            }),
+          ]);
+          console.log(`Coins added to user ${userId}: ${coins}`);
+        } catch (err) {
+          if ((err as { code?: string }).code === 'P2002') {
+            console.log(`Duplicate Razorpay event ignored: ${payment.id}`);
+          } else {
+            throw err;
+          }
+        }
         break;
       }
 

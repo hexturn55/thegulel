@@ -1,13 +1,14 @@
-import { NextRequest, NextResponse } from 'next/server';
+import { NextResponse } from 'next/server';
 import { createServerSupabaseClient } from '@/lib/supabase-server';
 import prisma from '@/lib/prisma';
+import { hasActiveVip } from '@/lib/subscription';
 
 /**
  * GET /api/auth/me
  * Returns the current user's Prisma record (coin balance, etc.)
  * Requires a valid Supabase session.
  */
-export async function GET(request: NextRequest) {
+export async function GET() {
   const supabase = await createServerSupabaseClient();
   const {
     data: { user: supabaseUser },
@@ -42,7 +43,9 @@ export async function GET(request: NextRequest) {
       return NextResponse.json({ error: 'User not found' }, { status: 404 });
     }
 
-    return NextResponse.json(user);
+    const isVip = await hasActiveVip(user.id);
+
+    return NextResponse.json({ ...user, isVip });
   } catch (error) {
     console.error('GET /api/auth/me error:', error);
     return NextResponse.json({ error: 'Internal error' }, { status: 500 });

@@ -1,7 +1,8 @@
 import { notFound } from 'next/navigation';
-import { cookies } from 'next/headers';
 import prisma from '@/lib/prisma';
 import { getStreamUrl } from '@/lib/cloudflare';
+import { getAuthUser } from '@/lib/auth';
+import { hasActiveVip } from '@/lib/subscription';
 import WatchClient from './WatchClient';
 
 interface PageProps {
@@ -28,26 +29,19 @@ async function getEpisodeData(episodeId: string, userId?: string) {
   let isUnlocked = episode.isFree;
 
   if (!isUnlocked && userId) {
-    const purchase = await prisma.episodePurchase.findUnique({
-      where: {
-        userId_episodeId: {
-          userId,
-          episodeId,
-        },
-      },
-    });
-    isUnlocked = !!purchase;
-
-    // Also check for active subscription
-    const subscription = await prisma.subscription.findFirst({
-      where: {
-        userId,
-        status: 'ACTIVE',
-        endDate: { gte: new Date() },
-      },
-    });
-    if (subscription) {
+    // VIP subscribers bypass the coin system entirely.
+    if (await hasActiveVip(userId)) {
       isUnlocked = true;
+    } else {
+      const purchase = await prisma.episodePurchase.findUnique({
+        where: {
+          userId_episodeId: {
+            userId,
+            episodeId,
+          },
+        },
+      });
+      isUnlocked = !!purchase;
     }
   }
 
@@ -65,10 +59,9 @@ async function getEpisodeData(episodeId: string, userId?: string) {
 
 export default async function WatchPage({ params }: PageProps) {
   const { episodeId } = await params;
-  const cookieStore = await cookies();
-  const userId = cookieStore.get('userId')?.value;
+  const user = await getAuthUser();
 
-  const data = await getEpisodeData(episodeId, userId);
+  const data = await getEpisodeData(episodeId, user?.id);
 
   if (!data) {
     notFound();

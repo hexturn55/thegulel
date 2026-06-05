@@ -1,16 +1,28 @@
 import { NextRequest, NextResponse } from 'next/server';
 import prisma from '@/lib/prisma';
+import { getAuthUser } from '@/lib/auth';
+import { hasActiveVip } from '@/lib/subscription';
 
 export async function POST(request: NextRequest) {
   try {
     const { episodeId } = await request.json();
-    const userId = request.cookies.get('userId')?.value;
 
-    if (!userId) {
+    const user = await getAuthUser();
+    if (!user) {
       return NextResponse.json(
         { error: 'Not authenticated' },
         { status: 401 }
       );
+    }
+    const userId = user.id;
+
+    // VIP subscribers already have access — never charge coins.
+    if (await hasActiveVip(userId)) {
+      return NextResponse.json({
+        success: true,
+        vip: true,
+        newBalance: user.coinBalance,
+      });
     }
 
     // Get episode and series
@@ -46,17 +58,6 @@ export async function POST(request: NextRequest) {
     }
 
     // Check user balance
-    const user = await prisma.user.findUnique({
-      where: { id: userId },
-    });
-
-    if (!user) {
-      return NextResponse.json(
-        { error: 'User not found' },
-        { status: 404 }
-      );
-    }
-
     const coinPrice = episode.series.coinPrice;
 
     if (user.coinBalance < coinPrice) {

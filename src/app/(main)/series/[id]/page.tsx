@@ -6,7 +6,9 @@ import prisma from '@/lib/prisma';
 import EpisodeList from '@/components/EpisodeList';
 import { ShareButton } from '@/components/ShareButton';
 import { StructuredData } from '@/components/StructuredData';
-import { cookies } from 'next/headers';
+import { getTranslations } from 'next-intl/server';
+import { getAuthUser } from '@/lib/auth';
+import { hasActiveVip } from '@/lib/subscription';
 
 interface PageProps {
   params: Promise<{ id: string }>;
@@ -55,13 +57,18 @@ async function getSeriesWithEpisodes(id: string, userId?: string) {
   // Get user's purchases and watch history if logged in
   let purchases: string[] = [];
   let watchHistory: Record<string, { progress: number }> = {};
+  let isVip = false;
 
   if (userId) {
-    const userPurchases = await prisma.episodePurchase.findMany({
-      where: { userId },
-      select: { episodeId: true },
-    });
-    purchases = userPurchases.map((p) => p.episodeId);
+    // VIP subscribers have every episode unlocked.
+    isVip = await hasActiveVip(userId);
+    if (!isVip) {
+      const userPurchases = await prisma.episodePurchase.findMany({
+        where: { userId },
+        select: { episodeId: true },
+      });
+      purchases = userPurchases.map((p) => p.episodeId);
+    }
 
     const history = await prisma.watchHistory.findMany({
       where: { userId, episodeId: { in: series.episodes.map((e) => e.id) } },
@@ -76,21 +83,23 @@ async function getSeriesWithEpisodes(id: string, userId?: string) {
     series,
     purchases,
     watchHistory,
+    isVip,
   };
 }
 
 export default async function SeriesPage({ params }: PageProps) {
   const { id } = await params;
-  const cookieStore = await cookies();
-  const userId = cookieStore.get('userId')?.value;
+  const user = await getAuthUser();
 
-  const data = await getSeriesWithEpisodes(id, userId);
+  const data = await getSeriesWithEpisodes(id, user?.id);
 
   if (!data) {
     notFound();
   }
 
-  const { series, purchases, watchHistory } = data;
+  const { series, purchases, watchHistory, isVip } = data;
+  const t = await getTranslations('series');
+  const tg = await getTranslations('genres');
 
   const episodes = series.episodes.map((ep) => ({
     id: ep.id,
@@ -99,7 +108,7 @@ export default async function SeriesPage({ params }: PageProps) {
     thumbnail: ep.thumbnail,
     duration: ep.duration,
     isFree: ep.isFree,
-    isUnlocked: purchases.includes(ep.id),
+    isUnlocked: isVip || purchases.includes(ep.id),
     watchProgress: watchHistory[ep.id]?.progress,
   }));
 
@@ -136,11 +145,11 @@ export default async function SeriesPage({ params }: PageProps) {
 
             <div className="flex items-center gap-3 mb-4 text-sm text-gray-300">
               <span className="bg-red-500 text-white px-3 py-1 rounded font-semibold">
-                {series.genre}
+                {tg.has(series.genre) ? tg(series.genre) : series.genre}
               </span>
-              <span>{series.totalEpisodes} Episodes</span>
+              <span>{t('episodesCount', { count: series.totalEpisodes })}</span>
               <span>•</span>
-              <span>First {series.freeEpisodes} Free</span>
+              <span>{t('firstFree', { count: series.freeEpisodes })}</span>
             </div>
 
             <p className="text-gray-300 text-sm md:text-base mb-6 line-clamp-3">
@@ -153,7 +162,7 @@ export default async function SeriesPage({ params }: PageProps) {
                 className="inline-flex items-center gap-2 bg-red-500 hover:bg-red-600 text-white font-bold px-8 py-3 rounded-full transition transform hover:scale-105"
               >
                 <Play className="w-5 h-5 fill-white" />
-                Watch Now
+                {t('watchNow')}
               </a>
 
               <ShareButton
@@ -169,7 +178,7 @@ export default async function SeriesPage({ params }: PageProps) {
 
       {/* Episodes */}
       <div className="px-4 py-6">
-        <h2 className="text-white text-2xl font-bold mb-4">Episodes</h2>
+        <h2 className="text-white text-2xl font-bold mb-4">{t('episodes')}</h2>
         <EpisodeList episodes={episodes} seriesId={series.id} />
       </div>
     </div>

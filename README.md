@@ -202,9 +202,23 @@ Visit http://localhost:3000
 4. Deploy
 
 ### Database Migration
+
+Schema changes are tracked as versioned migrations in `prisma/migrations`.
+
+**Fresh database** (no tables yet):
 ```bash
+npx prisma migrate deploy   # applies the baseline + all later migrations
+```
+
+**Existing database created with `prisma db push`** (one-time baseline so
+Prisma knows the initial tables already exist, then apply newer migrations):
+```bash
+npx prisma migrate resolve --applied 20260101000000_init
 npx prisma migrate deploy
 ```
+
+After the baseline, future changes follow the normal flow: `npm run db:migrate`
+in development (creates a new migration) and `npm run db:deploy` in CI/production.
 
 ### Webhook Setup
 
@@ -212,7 +226,8 @@ Configure webhooks in payment provider dashboards:
 
 **Stripe:**
 - URL: `https://your-domain.com/api/webhooks/stripe`
-- Events: `checkout.session.completed`, `payment_intent.payment_failed`
+- Events: `checkout.session.completed`, `payment_intent.payment_failed`,
+  `customer.subscription.updated`, `customer.subscription.deleted` (VIP)
 
 **Razorpay:**
 - URL: `https://your-domain.com/api/webhooks/razorpay`

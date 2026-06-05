@@ -1,5 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server';
 import prisma from '@/lib/prisma';
+import { requireAdmin } from '@/lib/admin-auth';
 
 interface RouteContext {
   params: Promise<{ id: string }>;
@@ -34,12 +35,12 @@ export async function POST(
   try {
     const { id } = await context.params;
     const data = await request.json();
-    const userId = request.cookies.get('userId')?.value;
 
-    if (!userId) {
+    const admin = await requireAdmin();
+    if (!admin) {
       return NextResponse.json(
-        { error: 'Not authenticated' },
-        { status: 401 }
+        { error: 'Admin access required' },
+        { status: 403 }
       );
     }
 

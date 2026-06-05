@@ -1,25 +1,21 @@
 'use client';
 
 import { useState } from 'react';
-import { ChevronRight, Globe, Bell, Moon, Info, Trash2 } from 'lucide-react';
-
-const LANGUAGES = [
-  { code: 'en', label: 'English' },
-  { code: 'hi', label: 'Hindi' },
-  { code: 'zh', label: 'Chinese' },
-];
+import { ChevronRight, Bell, Moon, Info, Trash2 } from 'lucide-react';
+import { useTranslations } from 'next-intl';
+import LanguageSwitcher from '@/components/LanguageSwitcher';
 
 const APP_VERSION = '1.0.0';
 
 export default function SettingsPage() {
-  const [language, setLanguage] = useState('en');
+  const t = useTranslations('settings');
   const [notifications, setNotifications] = useState(true);
 
   return (
     <div className="min-h-screen bg-black pb-24">
       {/* Header */}
       <div className="px-4 py-6 border-b border-gray-800">
-        <h1 className="text-white text-2xl font-bold">Settings</h1>
+        <h1 className="text-white text-2xl font-bold">{t('title')}</h1>
       </div>
 
       <div className="px-4 py-4 space-y-6">
@@ -27,47 +23,23 @@ export default function SettingsPage() {
         {/* Language */}
         <section>
           <h2 className="text-gray-400 text-xs font-semibold uppercase tracking-wider mb-3 px-1">
-            Language
+            {t('language')}
           </h2>
-          <div className="bg-gray-900 rounded-2xl overflow-hidden divide-y divide-gray-800">
-            {LANGUAGES.map(({ code, label }) => (
-              <button
-                key={code}
-                onClick={() => setLanguage(code)}
-                className="w-full flex items-center justify-between px-4 py-4 hover:bg-gray-800 transition"
-              >
-                <div className="flex items-center gap-3">
-                  <Globe className="w-5 h-5 text-gray-400" />
-                  <span className="text-white text-sm">{label}</span>
-                </div>
-                <div
-                  className={`w-5 h-5 rounded-full border-2 flex items-center justify-center transition ${
-                    language === code
-                      ? 'border-red-500 bg-red-500'
-                      : 'border-gray-600'
-                  }`}
-                >
-                  {language === code && (
-                    <div className="w-2 h-2 rounded-full bg-white" />
-                  )}
-                </div>
-              </button>
-            ))}
-          </div>
+          <LanguageSwitcher />
         </section>
 
         {/* Notifications */}
         <section>
           <h2 className="text-gray-400 text-xs font-semibold uppercase tracking-wider mb-3 px-1">
-            Notifications
+            {t('notifications')}
           </h2>
           <div className="bg-gray-900 rounded-2xl overflow-hidden">
             <div className="flex items-center justify-between px-4 py-4">
               <div className="flex items-center gap-3">
                 <Bell className="w-5 h-5 text-gray-400" />
                 <div>
-                  <p className="text-white text-sm">Push Notifications</p>
-                  <p className="text-gray-500 text-xs mt-0.5">New episodes and updates</p>
+                  <p className="text-white text-sm">{t('pushNotifications')}</p>
+                  <p className="text-gray-500 text-xs mt-0.5">{t('pushDesc')}</p>
                 </div>
               </div>
               {/* Toggle */}
@@ -90,18 +62,18 @@ export default function SettingsPage() {
         {/* Appearance */}
         <section>
           <h2 className="text-gray-400 text-xs font-semibold uppercase tracking-wider mb-3 px-1">
-            Appearance
+            {t('appearance')}
           </h2>
           <div className="bg-gray-900 rounded-2xl overflow-hidden">
             <div className="flex items-center justify-between px-4 py-4">
               <div className="flex items-center gap-3">
                 <Moon className="w-5 h-5 text-gray-400" />
                 <div>
-                  <p className="text-white text-sm">Dark Mode</p>
-                  <p className="text-gray-500 text-xs mt-0.5">Always on for the best experience</p>
+                  <p className="text-white text-sm">{t('darkMode')}</p>
+                  <p className="text-gray-500 text-xs mt-0.5">{t('darkDesc')}</p>
                 </div>
               </div>
-              <span className="text-gray-500 text-sm">On</span>
+              <span className="text-gray-500 text-sm">{t('on')}</span>
             </div>
           </div>
         </section>
@@ -109,39 +81,39 @@ export default function SettingsPage() {
         {/* About */}
         <section>
           <h2 className="text-gray-400 text-xs font-semibold uppercase tracking-wider mb-3 px-1">
-            About
+            {t('about')}
           </h2>
           <div className="bg-gray-900 rounded-2xl overflow-hidden divide-y divide-gray-800">
             <div className="flex items-center justify-between px-4 py-4">
               <div className="flex items-center gap-3">
                 <Info className="w-5 h-5 text-gray-400" />
-                <span className="text-white text-sm">Version</span>
+                <span className="text-white text-sm">{t('version')}</span>
               </div>
               <span className="text-gray-500 text-sm">{APP_VERSION}</span>
             </div>
 
-            <button className="w-full flex items-center justify-between px-4 py-4 hover:bg-gray-800 transition">
-              <span className="text-white text-sm">Privacy Policy</span>
+            <a href="/privacy" className="w-full flex items-center justify-between px-4 py-4 hover:bg-gray-800 transition">
+              <span className="text-white text-sm">{t('privacy')}</span>
               <ChevronRight className="w-4 h-4 text-gray-600" />
-            </button>
+            </a>
 
-            <button className="w-full flex items-center justify-between px-4 py-4 hover:bg-gray-800 transition">
-              <span className="text-white text-sm">Terms of Service</span>
+            <a href="/terms" className="w-full flex items-center justify-between px-4 py-4 hover:bg-gray-800 transition">
+              <span className="text-white text-sm">{t('terms')}</span>
               <ChevronRight className="w-4 h-4 text-gray-600" />
-            </button>
+            </a>
           </div>
         </section>
 
         {/* Danger zone */}
         <section>
           <h2 className="text-gray-400 text-xs font-semibold uppercase tracking-wider mb-3 px-1">
-            Danger Zone
+            {t('dangerZone')}
           </h2>
           <div className="bg-gray-900 rounded-2xl overflow-hidden">
-            <button className="w-full flex items-center gap-3 px-4 py-4 hover:bg-gray-800 transition">
+            <a href="/profile" className="w-full flex items-center gap-3 px-4 py-4 hover:bg-gray-800 transition">
               <Trash2 className="w-5 h-5 text-red-400" />
-              <span className="text-red-400 text-sm">Delete Account</span>
-            </button>
+              <span className="text-red-400 text-sm">{t('deleteAccount')}</span>
+            </a>
           </div>
         </section>
 

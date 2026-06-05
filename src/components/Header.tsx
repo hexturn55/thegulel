@@ -4,10 +4,13 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { useEffect, useRef, useState } from 'react';
 import { Coins, LogOut, User as UserIcon, Wallet } from 'lucide-react';
+import { useTranslations } from 'next-intl';
 import { useAuthStore } from '@/stores/useAuthStore';
+import LanguageMenu from '@/components/LanguageMenu';
 
 export default function Header() {
   const { user, isAuthenticated, logout, checkSession } = useAuthStore();
+  const t = useTranslations('header');
   const [menuOpen, setMenuOpen] = useState(false);
   const menuRef = useRef<HTMLDivElement>(null);
 
@@ -51,6 +54,9 @@ export default function Header() {
         </Link>
 
         <div className="flex items-center gap-2">
+          {/* Language switcher — always available, even when logged out */}
+          <LanguageMenu />
+
           {isAuthenticated && user ? (
             <>
               {/* Coin balance badge */}
@@ -108,7 +114,7 @@ export default function Header() {
                       className="flex items-center gap-3 px-4 py-3 text-gray-300 hover:text-white hover:bg-gray-800 transition text-sm"
                     >
                       <UserIcon className="w-4 h-4" />
-                      My Profile
+                      {t('myProfile')}
                     </Link>
                     <Link
                       href="/wallet"
@@ -116,7 +122,7 @@ export default function Header() {
                       className="flex items-center gap-3 px-4 py-3 text-gray-300 hover:text-white hover:bg-gray-800 transition text-sm"
                     >
                       <Wallet className="w-4 h-4" />
-                      Wallet — {user.coinBalance.toLocaleString()} coins
+                      {t('wallet', { count: user.coinBalance.toLocaleString() })}
                     </Link>
 
                     <div className="border-t border-gray-800" />
@@ -126,7 +132,7 @@ export default function Header() {
                       className="w-full flex items-center gap-3 px-4 py-3 text-red-400 hover:text-red-300 hover:bg-gray-800 transition text-sm"
                     >
                       <LogOut className="w-4 h-4" />
-                      Sign Out
+                      {t('signOut')}
                     </button>
                   </div>
                 )}
@@ -137,7 +143,7 @@ export default function Header() {
               href="/auth/login"
               className="bg-gradient-to-r from-red-500 to-pink-500 hover:from-red-600 hover:to-pink-600 text-white text-sm font-semibold px-4 py-2 rounded-full transition"
             >
-              Sign In
+              {t('signIn')}
             </Link>
           )}
         </div>

@@ -1,6 +1,7 @@
 'use client';
 
 import { useState, useEffect } from 'react';
+import { useTranslations } from 'next-intl';
 import SeriesCard from './SeriesCard';
 
 interface Series {
@@ -18,6 +19,8 @@ export default function HomeFeed() {
   const [series, setSeries] = useState<Series[]>([]);
   const [selectedGenre, setSelectedGenre] = useState('All');
   const [isLoading, setIsLoading] = useState(true);
+  const tg = useTranslations('genres');
+  const t = useTranslations('home');
 
   useEffect(() => {
     fetchSeries();
@@ -58,7 +61,7 @@ export default function HomeFeed() {
                   : 'bg-gray-800 text-gray-300 hover:bg-gray-700'
               }`}
             >
-              {genre}
+              {tg(genre)}
             </button>
           ))}
         </div>
@@ -77,7 +80,7 @@ export default function HomeFeed() {
           </div>
         ) : series.length === 0 ? (
           <div className="text-center py-20">
-            <p className="text-gray-400">No series found</p>
+            <p className="text-gray-400">{t('noSeries')}</p>
           </div>
         ) : (
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">

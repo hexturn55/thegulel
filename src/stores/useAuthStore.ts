@@ -14,6 +14,7 @@ interface User {
   locale: string;
   provider?: AuthProvider;
   coinBalance: number;
+  isVip?: boolean;
 }
 
 interface AuthState {
@@ -98,6 +99,7 @@ export const useAuthStore = create<AuthState>()(
                 locale: data.locale ?? 'en',
                 provider,
                 coinBalance: data.coinBalance ?? 0,
+                isVip: data.isVip ?? false,
               },
               token: session.access_token,
               isAuthenticated: true,

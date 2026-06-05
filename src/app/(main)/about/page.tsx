@@ -1,50 +1,48 @@
 import { Metadata } from 'next';
+import { getTranslations } from 'next-intl/server';
 
 export const metadata: Metadata = {
   title: 'About Gulel OTT',
   description: 'Learn about Gulel OTT — the home of addictive vertical micro dramas.',
 };
 
-export default function AboutPage() {
+export default async function AboutPage() {
+  const t = await getTranslations('about');
+  const tc = await getTranslations('common');
   return (
     <div className="min-h-screen bg-black text-white pb-28">
       <div className="max-w-2xl mx-auto px-6 py-12">
-        <h1 className="text-3xl font-bold mb-2">About Gulel OTT</h1>
-        <p className="text-red-500 font-semibold mb-10">Vertical micro dramas, anywhere you go.</p>
+        <h1 className="text-3xl font-bold mb-2">{t('title')}</h1>
+        <p className="text-red-500 font-semibold mb-10">{t('tagline')}</p>
 
         <section className="mb-10">
-          <h2 className="text-xl font-bold mb-3 text-gray-100">What is Gulel?</h2>
+          <h2 className="text-xl font-bold mb-3 text-gray-100">{t('whatTitle')}</h2>
           <p className="text-gray-400 leading-relaxed">
-            Gulel OTT is a streaming platform built for the short-attention, always-on generation.
-            We deliver bite-sized vertical dramas — think full emotional arcs packed into episodes
-            you can finish in under 5 minutes. Romance, thriller, family drama, action: all shot
-            vertically, built for your phone, and designed to keep you hooked.
+            {t('whatBody')}
           </p>
         </section>
 
         <section className="mb-10">
-          <h2 className="text-xl font-bold mb-3 text-gray-100">Our Content</h2>
+          <h2 className="text-xl font-bold mb-3 text-gray-100">{t('contentTitle')}</h2>
           <p className="text-gray-400 leading-relaxed">
-            We produce and license original Hindi and Chinese micro drama series. Our library spans
-            romance, supernatural, revenge, and slice-of-life genres. New series drop regularly.
-            The first few episodes of every series are always free — unlock the rest with Gulel Coins.
+            {t('contentBody')}
           </p>
         </section>
 
         <section className="mb-10">
-          <h2 className="text-xl font-bold mb-3 text-gray-100">How It Works</h2>
+          <h2 className="text-xl font-bold mb-3 text-gray-100">{t('howTitle')}</h2>
           <ul className="text-gray-400 space-y-2 leading-relaxed list-disc list-inside">
-            <li>Browse and watch free episodes — no account needed to start.</li>
-            <li>Sign in to save your progress and pick up where you left off.</li>
-            <li>Purchase Gulel Coins to unlock premium episodes.</li>
-            <li>Or watch a short ad to earn free coins.</li>
+            <li>{t('how1')}</li>
+            <li>{t('how2')}</li>
+            <li>{t('how3')}</li>
+            <li>{t('how4')}</li>
           </ul>
         </section>
 
         <section className="mb-10">
-          <h2 className="text-xl font-bold mb-3 text-gray-100">Contact Us</h2>
+          <h2 className="text-xl font-bold mb-3 text-gray-100">{t('contactTitle')}</h2>
           <p className="text-gray-400 leading-relaxed">
-            Questions, feedback, or partnership enquiries? We&apos;d love to hear from you.
+            {t('contactBody')}
           </p>
           <a
             href="mailto:hello@thegulel.com"
@@ -55,7 +53,7 @@ export default function AboutPage() {
         </section>
 
         <div className="border-t border-zinc-800 pt-8 text-gray-600 text-sm">
-          © 2026 Gulel Entertainment. All rights reserved.
+          {tc('copyright')}
         </div>
       </div>
     </div>
