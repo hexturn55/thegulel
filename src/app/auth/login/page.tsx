@@ -6,6 +6,7 @@ import { useTranslations } from 'next-intl';
 import { createClient } from '@/lib/supabase';
 import { Phone, ArrowRight, Loader2, CheckCircle } from 'lucide-react';
 import Image from 'next/image';
+import LanguageMenu from '@/components/LanguageMenu';
 
 // Google logo SVG component
 function GoogleIcon() {
@@ -154,6 +155,11 @@ export default function LoginPage() {
     <div className="min-h-screen bg-black flex flex-col">
       {/* Background gradient */}
       <div className="absolute inset-0 bg-gradient-to-b from-red-950/20 via-black to-black pointer-events-none" />
+
+      {/* Language switcher */}
+      <div className="absolute top-4 right-4 z-10">
+        <LanguageMenu />
+      </div>
 
       <div className="relative flex-1 flex flex-col items-center justify-center px-6 py-12">
         {/* Logo */}

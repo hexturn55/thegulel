@@ -6,6 +6,7 @@ import { useEffect, useRef, useState } from 'react';
 import { Coins, LogOut, User as UserIcon, Wallet } from 'lucide-react';
 import { useTranslations } from 'next-intl';
 import { useAuthStore } from '@/stores/useAuthStore';
+import LanguageMenu from '@/components/LanguageMenu';
 
 export default function Header() {
   const { user, isAuthenticated, logout, checkSession } = useAuthStore();
@@ -53,6 +54,9 @@ export default function Header() {
         </Link>
 
         <div className="flex items-center gap-2">
+          {/* Language switcher — always available, even when logged out */}
+          <LanguageMenu />
+
           {isAuthenticated && user ? (
             <>
               {/* Coin balance badge */}
