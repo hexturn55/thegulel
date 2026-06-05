@@ -1,17 +1,19 @@
 import { NextRequest, NextResponse } from 'next/server';
 import prisma from '@/lib/prisma';
+import { getAuthUser } from '@/lib/auth';
 
 export async function POST(request: NextRequest) {
   try {
     const { episodeId, progress, completed } = await request.json();
-    const userId = request.cookies.get('userId')?.value;
 
-    if (!userId) {
+    const user = await getAuthUser();
+    if (!user) {
       return NextResponse.json(
         { error: 'Not authenticated' },
         { status: 401 }
       );
     }
+    const userId = user.id;
 
     const watchHistory = await prisma.watchHistory.upsert({
       where: {
@@ -46,16 +48,16 @@ export async function POST(request: NextRequest) {
   }
 }
 
-export async function GET(request: NextRequest) {
+export async function GET() {
   try {
-    const userId = request.cookies.get('userId')?.value;
-
-    if (!userId) {
+    const user = await getAuthUser();
+    if (!user) {
       return NextResponse.json(
         { error: 'Not authenticated' },
         { status: 401 }
       );
     }
+    const userId = user.id;
 
     const history = await prisma.watchHistory.findMany({
       where: { userId },

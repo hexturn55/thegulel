@@ -1,13 +1,14 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { stripe } from '@/lib/stripe';
 import prisma from '@/lib/prisma';
+import { getAuthUser } from '@/lib/auth';
 
 export async function POST(request: NextRequest) {
   try {
     const { packageId, currency = 'USD' } = await request.json();
-    const userId = request.cookies.get('userId')?.value;
 
-    if (!userId) {
+    const user = await getAuthUser();
+    if (!user) {
       return NextResponse.json(
         { error: 'Not authenticated' },
         { status: 401 }
@@ -22,17 +23,6 @@ export async function POST(request: NextRequest) {
     if (!pkg) {
       return NextResponse.json(
         { error: 'Package not found' },
-        { status: 404 }
-      );
-    }
-
-    const user = await prisma.user.findUnique({
-      where: { id: userId },
-    });
-
-    if (!user) {
-      return NextResponse.json(
-        { error: 'User not found' },
         { status: 404 }
       );
     }

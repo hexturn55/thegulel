@@ -35,28 +35,35 @@ export async function POST(request: NextRequest) {
       case 'checkout.session.completed': {
         const session = event.data.object as Stripe.Checkout.Session;
         const { userId, coins } = session.metadata!;
+        const amount = parseInt(coins);
 
-        // Add coins to user balance
-        const user = await prisma.user.update({
-          where: { id: userId },
-          data: {
-            coinBalance: {
-              increment: parseInt(coins),
-            },
-          },
-        });
-
-        // Log transaction
-        await prisma.coinTransaction.create({
-          data: {
-            userId,
-            amount: parseInt(coins),
-            type: 'PURCHASE',
-            description: `Purchased ${coins} coins via Stripe`,
-          },
-        });
-
-        console.log(`Coins added to user ${userId}: ${coins}`);
+        // Idempotent credit: the transaction's `providerRef` is unique, so a
+        // replayed/duplicate webhook delivery fails the create with P2002 and
+        // the balance increment is rolled back — coins are credited exactly once.
+        try {
+          await prisma.$transaction([
+            prisma.coinTransaction.create({
+              data: {
+                userId,
+                amount,
+                type: 'PURCHASE',
+                description: `Purchased ${coins} coins via Stripe`,
+                providerRef: `stripe:${session.id}`,
+              },
+            }),
+            prisma.user.update({
+              where: { id: userId },
+              data: { coinBalance: { increment: amount } },
+            }),
+          ]);
+          console.log(`Coins added to user ${userId}: ${coins}`);
+        } catch (err) {
+          if ((err as { code?: string }).code === 'P2002') {
+            console.log(`Duplicate Stripe event ignored: ${session.id}`);
+          } else {
+            throw err;
+          }
+        }
         break;
       }
 

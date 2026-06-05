@@ -15,6 +15,40 @@ interface CoinPackage {
   popular: boolean;
 }
 
+interface RazorpayInstance {
+  open: () => void;
+}
+
+declare global {
+  interface Window {
+    Razorpay?: new (options: Record<string, unknown>) => RazorpayInstance;
+  }
+}
+
+const RAZORPAY_SCRIPT = 'https://checkout.razorpay.com/v1/checkout.js';
+
+/** Lazily injects the Razorpay Checkout script; resolves once it's ready. */
+function loadRazorpayScript(): Promise<boolean> {
+  if (typeof window === 'undefined') return Promise.resolve(false);
+  if (window.Razorpay) return Promise.resolve(true);
+
+  return new Promise((resolve) => {
+    const existing = document.querySelector<HTMLScriptElement>(
+      `script[src="${RAZORPAY_SCRIPT}"]`
+    );
+    if (existing) {
+      existing.addEventListener('load', () => resolve(true));
+      existing.addEventListener('error', () => resolve(false));
+      return;
+    }
+    const script = document.createElement('script');
+    script.src = RAZORPAY_SCRIPT;
+    script.onload = () => resolve(true);
+    script.onerror = () => resolve(false);
+    document.body.appendChild(script);
+  });
+}
+
 export default function CoinWallet() {
   const { user } = useAuthStore();
   const { packages, setPackages } = useCoinStore();
@@ -39,10 +73,21 @@ export default function CoinWallet() {
 
   const handlePurchase = async (pkg: CoinPackage) => {
     if (!user) return;
-    
+
     setIsPurchasing(pkg.id);
 
     try {
+      // India payments go through Razorpay when it's configured; everything
+      // else (and the fallback) goes through Stripe Checkout.
+      const useRazorpay =
+        currency === 'INR' && !!process.env.NEXT_PUBLIC_RAZORPAY_KEY_ID;
+
+      if (useRazorpay) {
+        const handled = await payWithRazorpay(pkg);
+        if (handled) return;
+        // Razorpay unavailable (e.g. not configured server-side) — fall back.
+      }
+
       const response = await fetch('/api/coins/purchase', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
@@ -57,7 +102,7 @@ export default function CoinWallet() {
       }
 
       const { url } = await response.json();
-      
+
       // Redirect to Stripe Checkout
       window.location.href = url;
     } catch (error) {
@@ -66,6 +111,51 @@ export default function CoinWallet() {
     } finally {
       setIsPurchasing(null);
     }
+  };
+
+  /**
+   * Opens Razorpay Checkout for an INR purchase.
+   * Returns `true` if the flow was launched, `false` to fall back to Stripe.
+   */
+  const payWithRazorpay = async (pkg: CoinPackage): Promise<boolean> => {
+    const orderRes = await fetch('/api/coins/razorpay/order', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ packageId: pkg.id }),
+    });
+
+    if (orderRes.status === 503) return false; // not configured → fall back
+    if (!orderRes.ok) throw new Error('Failed to create Razorpay order');
+
+    const order = await orderRes.json();
+    const loaded = await loadRazorpayScript();
+    if (!loaded || !window.Razorpay) return false;
+
+    return new Promise<boolean>((resolve) => {
+      const rzp = new window.Razorpay!({
+        key: order.keyId,
+        amount: order.amount,
+        currency: order.currency,
+        name: 'Gulel',
+        description: `${order.coins} Coins — ${order.name}`,
+        order_id: order.orderId,
+        prefill: {
+          name: user?.name ?? undefined,
+          email: user?.email ?? undefined,
+          contact: user?.phone ?? undefined,
+        },
+        theme: { color: '#ef4444' },
+        handler: () => {
+          // Coins are credited by the server webhook (payment.captured).
+          window.location.href = '/wallet?success=true';
+          resolve(true);
+        },
+        modal: {
+          ondismiss: () => resolve(true), // user closed — handled, no fallback
+        },
+      });
+      rzp.open();
+    });
   };
 
   return (

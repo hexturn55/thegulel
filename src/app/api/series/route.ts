@@ -1,5 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server';
 import prisma from '@/lib/prisma';
+import { requireAdmin } from '@/lib/admin-auth';
 
 export async function GET(request: NextRequest) {
   try {
@@ -48,17 +49,14 @@ export async function GET(request: NextRequest) {
 export async function POST(request: NextRequest) {
   try {
     const data = await request.json();
-    const userId = request.cookies.get('userId')?.value;
 
-    if (!userId) {
+    const admin = await requireAdmin();
+    if (!admin) {
       return NextResponse.json(
-        { error: 'Not authenticated' },
-        { status: 401 }
+        { error: 'Admin access required' },
+        { status: 403 }
       );
     }
-
-    // In production, check if user is admin
-    // For now, allow any authenticated user
 
     const series = await prisma.series.create({
       data: {

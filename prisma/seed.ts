@@ -4,12 +4,10 @@ dotenv.config({ path: path.resolve(__dirname, '../.env') });
 
 import { PrismaClient } from '../src/generated/prisma';
 import { PrismaPg } from '@prisma/adapter-pg';
-import { Pool } from 'pg';
 
 // Use DIRECT_URL for seeding (bypasses pgbouncer)
 const connectionString = process.env.DIRECT_URL ?? process.env.DATABASE_URL;
-const pool = new Pool({ connectionString });
-const adapter = new PrismaPg(pool);
+const adapter = new PrismaPg({ connectionString });
 const prisma = new PrismaClient({ adapter });
 
 async function main() {

@@ -4,6 +4,7 @@ import { useState } from 'react';
 import { Lock, Coins, Play } from 'lucide-react';
 import { useAuthStore } from '@/stores/useAuthStore';
 import { useRouter } from 'next/navigation';
+import { playRewardedAd } from '@/lib/ima';
 
 interface PaywallOverlayProps {
   episodeId: string;
@@ -54,29 +55,57 @@ export default function PaywallOverlay({ episodeId, coinPrice = 10 }: PaywallOve
     }
   };
 
-  const handleWatchAd = async () => {
-    setIsWatchingAd(true);
-    
-    // In production, integrate with ad network (Google AdMob, Unity Ads, etc.)
-    // For now, simulate ad watching
-    setTimeout(async () => {
-      try {
-        const response = await fetch('/api/coins/ad-reward', {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-        });
+  const grantAdReward = async () => {
+    const response = await fetch('/api/coins/ad-reward', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+    });
 
-        if (response.ok) {
-          const data = await response.json();
-          updateCoinBalance(data.newBalance);
-          alert(`You earned ${data.coinsEarned} coins!`);
-        }
-      } catch (error) {
-        console.error('Ad reward failed:', error);
-      } finally {
-        setIsWatchingAd(false);
+    if (response.ok) {
+      const data = await response.json();
+      updateCoinBalance(data.newBalance);
+      alert(`You earned ${data.coinsEarned} coins!`);
+    } else if (response.status === 401) {
+      const returnUrl = encodeURIComponent(window.location.pathname);
+      router.push(`/auth/login?redirectTo=${returnUrl}`);
+    } else if (response.status === 429) {
+      const data = await response.json().catch(() => ({}));
+      alert(
+        `Please wait ${data.remainingSeconds ?? 'a moment'}s before watching another ad.`
+      );
+    }
+  };
+
+  const handleWatchAd = async () => {
+    if (!user) {
+      const returnUrl = encodeURIComponent(window.location.pathname);
+      router.push(`/auth/login?redirectTo=${returnUrl}`);
+      return;
+    }
+
+    setIsWatchingAd(true);
+
+    try {
+      // Play a real Google IMA rewarded ad. When no ad tag is configured
+      // (dev/preview), this resolves with played:false and we fall back to a
+      // short simulated wait so the reward flow still works end-to-end.
+      const { played, rewarded } = await playRewardedAd();
+
+      if (played && !rewarded) {
+        alert('Watch the full ad to earn coins.');
+        return;
       }
-    }, 3000);
+
+      if (!played) {
+        await new Promise((r) => setTimeout(r, 3000)); // simulated fallback
+      }
+
+      await grantAdReward();
+    } catch (error) {
+      console.error('Ad reward failed:', error);
+    } finally {
+      setIsWatchingAd(false);
+    }
   };
 
   return (

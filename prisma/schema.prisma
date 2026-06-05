@@ -109,6 +109,9 @@ model CoinTransaction {
   amount      Int
   type        TransactionType
   description String?
+  // Idempotency key for externally-triggered credits (e.g. "stripe:cs_123",
+  // "razorpay:pay_123"). Unique so a replayed webhook can't credit twice.
+  providerRef String?         @unique
   createdAt   DateTime        @default(now())
 
   user        User            @relation(fields: [userId], references: [id], onDelete: Cascade)
