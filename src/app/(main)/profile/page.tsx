@@ -1,6 +1,7 @@
 'use client';
 
 import { useEffect, useState } from 'react';
+import { useTranslations } from 'next-intl';
 import { useAuthStore } from '@/stores/useAuthStore';
 import {
   User,
@@ -83,6 +84,7 @@ function Avatar({ src, name }: { src?: string | null; name?: string | null }) {
 }
 
 function ProviderBadge({ provider }: { provider: string | null }) {
+  const t = useTranslations('profile');
   if (!provider) return null;
   const labels: Record<string, string> = {
     google: 'Google',
@@ -92,7 +94,7 @@ function ProviderBadge({ provider }: { provider: string | null }) {
   };
   return (
     <span className="text-xs bg-white/10 text-white/70 rounded-full px-2 py-0.5">
-      via {labels[provider] ?? provider}
+      {t('via', { provider: labels[provider] ?? provider })}
     </span>
   );
 }
@@ -108,16 +110,17 @@ function DeleteModal({
   onCancel: () => void;
   isDeleting: boolean;
 }) {
+  const t = useTranslations('profile');
+  const tc = useTranslations('common');
   return (
     <div className="fixed inset-0 z-50 bg-black/80 flex items-center justify-center p-4">
       <div className="bg-gray-900 rounded-2xl p-6 max-w-sm w-full border border-red-500/30">
         <div className="flex items-center gap-3 mb-4">
           <AlertTriangle className="w-6 h-6 text-red-500 flex-shrink-0" />
-          <h2 className="text-white font-bold text-lg">Delete Account</h2>
+          <h2 className="text-white font-bold text-lg">{t('deleteTitle')}</h2>
         </div>
         <p className="text-gray-400 text-sm mb-6">
-          This will permanently delete your account, coin balance, and all watch history.{' '}
-          <strong className="text-white">This cannot be undone.</strong>
+          {t('deleteWarning')}
         </p>
         <div className="flex gap-3">
           <button
@@ -125,14 +128,14 @@ function DeleteModal({
             disabled={isDeleting}
             className="flex-1 py-3 rounded-xl bg-gray-800 text-white font-medium hover:bg-gray-700 transition disabled:opacity-50"
           >
-            Cancel
+            {tc('cancel')}
           </button>
           <button
             onClick={onConfirm}
             disabled={isDeleting}
             className="flex-1 py-3 rounded-xl bg-red-600 hover:bg-red-700 text-white font-bold transition disabled:opacity-50"
           >
-            {isDeleting ? 'Deleting…' : 'Delete'}
+            {isDeleting ? t('deleting') : t('delete')}
           </button>
         </div>
       </div>
@@ -144,6 +147,7 @@ function DeleteModal({
 
 export default function ProfilePage() {
   const { user, logout } = useAuthStore();
+  const t = useTranslations('profile');
 
   const [profile, setProfile] = useState<UserProfile | null>(null);
   const [transactions, setTransactions] = useState<Transaction[]>([]);
@@ -264,12 +268,12 @@ export default function ProfilePage() {
     return (
       <div className="min-h-screen bg-black flex items-center justify-center p-4">
         <div className="text-center">
-          <h2 className="text-white text-2xl font-bold mb-4">Not Logged In</h2>
+          <h2 className="text-white text-2xl font-bold mb-4">{t('notLoggedIn')}</h2>
           <Link
             href="/auth/login"
             className="inline-block bg-red-500 hover:bg-red-600 text-white font-semibold px-8 py-3 rounded-full transition"
           >
-            Login
+            {t('login')}
           </Link>
         </div>
       </div>
@@ -307,7 +311,7 @@ export default function ProfilePage() {
             <Avatar src={displayProfile.avatar} name={displayProfile.name} />
             <div>
               <h1 className="text-white text-2xl font-bold leading-tight">
-                {displayProfile.name || 'User'}
+                {displayProfile.name || t('user')}
               </h1>
               {displayProfile.email && (
                 <p className="text-white/70 text-sm">{displayProfile.email}</p>
@@ -327,7 +331,7 @@ export default function ProfilePage() {
               <Coins className="w-5 h-5 text-yellow-400" />
             </div>
             <div>
-              <p className="text-white/70 text-xs">Coin Balance</p>
+              <p className="text-white/70 text-xs">{t('coinBalance')}</p>
               <p className="text-white text-2xl font-bold">
                 {displayProfile.coinBalance.toLocaleString()}
               </p>
@@ -336,7 +340,7 @@ export default function ProfilePage() {
               href="/wallet"
               className="ml-auto text-white/60 hover:text-white transition flex items-center gap-1 text-sm"
             >
-              Top Up <ChevronRight className="w-4 h-4" />
+              {t('topUp')} <ChevronRight className="w-4 h-4" />
             </Link>
           </div>
         </div>
@@ -344,14 +348,14 @@ export default function ProfilePage() {
         {/* ── Edit Name ── */}
         <section className="px-4 py-5 border-b border-gray-800">
           <h2 className="text-gray-400 text-xs font-semibold uppercase tracking-widest mb-3">
-            Display Name
+            {t('displayName')}
           </h2>
           <div className="flex gap-2">
             <input
               type="text"
               value={editName}
               onChange={(e) => setEditName(e.target.value)}
-              placeholder="Your name"
+              placeholder={t('yourName')}
               className="flex-1 bg-gray-900 text-white rounded-xl px-4 py-3 text-sm border border-gray-700 focus:outline-none focus:border-purple-500"
             />
             <button
@@ -360,7 +364,7 @@ export default function ProfilePage() {
               className="flex items-center gap-1.5 bg-purple-600 hover:bg-purple-700 disabled:opacity-40 text-white font-medium px-4 py-3 rounded-xl transition text-sm"
             >
               <Save className="w-4 h-4" />
-              {isSavingName ? 'Saving…' : 'Save'}
+              {isSavingName ? t('saving') : t('save')}
             </button>
           </div>
         </section>
@@ -368,7 +372,7 @@ export default function ProfilePage() {
         {/* ── Language ── */}
         <section className="px-4 py-5 border-b border-gray-800">
           <h2 className="text-gray-400 text-xs font-semibold uppercase tracking-widest mb-3">
-            Language {isSavingLocale && <span className="text-purple-400 normal-case font-normal">Saving…</span>}
+            {t('language')} {isSavingLocale && <span className="text-purple-400 normal-case font-normal">{t('saving')}</span>}
           </h2>
           <div className="flex gap-2">
             {(['en', 'hi', 'zh'] as const).map((loc) => (
@@ -390,9 +394,9 @@ export default function ProfilePage() {
         {/* ── Transaction History ── */}
         <section className="px-4 py-5 border-b border-gray-800">
           <div className="flex items-center justify-between mb-3">
-            <h2 className="text-white text-lg font-bold">Transaction History</h2>
+            <h2 className="text-white text-lg font-bold">{t('transactionHistory')}</h2>
             <Link href="/wallet" className="text-purple-400 hover:text-purple-300 text-sm transition">
-              View All
+              {t('viewAll')}
             </Link>
           </div>
 
@@ -403,7 +407,7 @@ export default function ProfilePage() {
               ))}
             </div>
           ) : transactions.length === 0 ? (
-            <p className="text-gray-500 text-sm text-center py-6">No transactions yet</p>
+            <p className="text-gray-500 text-sm text-center py-6">{t('noTransactions')}</p>
           ) : (
             <div className="space-y-2">
               {transactions.map((tx) => {
@@ -415,10 +419,10 @@ export default function ProfilePage() {
                     className="flex items-center gap-3 bg-gray-900 rounded-xl px-4 py-3"
                   >
                     <span className={`text-xs rounded-full px-2 py-0.5 font-medium ${badge.className}`}>
-                      {badge.label}
+                      {t(`tx.${tx.type}`)}
                     </span>
                     <p className="flex-1 text-gray-400 text-xs truncate">
-                      {tx.description ?? badge.label}
+                      {tx.description ?? t(`tx.${tx.type}`)}
                     </p>
                     <span className={`font-bold text-sm ${isCredit ? 'text-green-400' : 'text-red-400'}`}>
                       {isCredit ? '+' : ''}{tx.amount}
@@ -435,7 +439,7 @@ export default function ProfilePage() {
           <div className="flex items-center justify-between mb-3">
             <h2 className="text-white text-lg font-bold flex items-center gap-2">
               <Clock className="w-5 h-5 text-blue-400" />
-              Continue Watching
+              {t('continueWatching')}
             </h2>
           </div>
 
@@ -446,7 +450,7 @@ export default function ProfilePage() {
               ))}
             </div>
           ) : history.length === 0 ? (
-            <p className="text-gray-500 text-sm text-center py-6">No watch history yet</p>
+            <p className="text-gray-500 text-sm text-center py-6">{t('noHistory')}</p>
           ) : (
             <div className="space-y-3">
               {history.map((item) => {
@@ -469,7 +473,7 @@ export default function ProfilePage() {
                       )}
                       {item.completed && (
                         <div className="absolute inset-0 bg-black/50 flex items-center justify-center">
-                          <span className="text-white text-xs font-medium">Done</span>
+                          <span className="text-white text-xs font-medium">{t('done')}</span>
                         </div>
                       )}
                       {/* Progress bar */}
@@ -483,7 +487,7 @@ export default function ProfilePage() {
                     <div className="flex-1 min-w-0">
                       <p className="text-white text-sm font-medium truncate">{item.seriesTitle}</p>
                       <p className="text-gray-400 text-xs truncate">
-                        Ep {item.episodeNumber}: {item.episodeTitle}
+                        {t('epShort', { number: item.episodeNumber, title: item.episodeTitle })}
                       </p>
                       <p className="text-gray-600 text-xs mt-1">{formatDate(item.watchedAt)}</p>
                     </div>
@@ -501,7 +505,7 @@ export default function ProfilePage() {
             className="w-full flex items-center gap-3 bg-gray-900 hover:bg-red-900/20 p-4 rounded-xl transition"
           >
             <LogOut className="w-5 h-5 text-red-400" />
-            <span className="text-red-400 font-medium">Sign Out</span>
+            <span className="text-red-400 font-medium">{t('signOut')}</span>
           </button>
 
           <button
@@ -509,7 +513,7 @@ export default function ProfilePage() {
             className="w-full flex items-center gap-3 bg-gray-900 hover:bg-red-900/20 p-4 rounded-xl transition"
           >
             <Trash2 className="w-5 h-5 text-red-600" />
-            <span className="text-red-600 font-medium text-sm">Delete Account</span>
+            <span className="text-red-600 font-medium text-sm">{t('deleteAccount')}</span>
           </button>
         </section>
       </div>

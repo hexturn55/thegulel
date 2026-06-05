@@ -1,4 +1,7 @@
-export default function GlobalLoading() {
+import { getTranslations } from 'next-intl/server';
+
+export default async function GlobalLoading() {
+  const t = await getTranslations('common');
   return (
     <div className="min-h-screen bg-black flex flex-col items-center justify-center gap-4">
       {/* Gulel brand mark */}
@@ -28,7 +31,7 @@ export default function GlobalLoading() {
         />
       </svg>
 
-      <p className="text-gray-500 text-sm">Loading...</p>
+      <p className="text-gray-500 text-sm">{t('loading')}</p>
     </div>
   );
 }

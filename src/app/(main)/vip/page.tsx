@@ -176,7 +176,7 @@ export default function VipPage() {
 
                 <button
                   onClick={() => handleSubscribe(plan.id)}
-                  disabled={subscribing !== null || isVip}
+                  disabled={subscribing !== null || isVip || loadingSub}
                   className={`w-full py-3 rounded-xl font-semibold flex items-center justify-center gap-2 transition disabled:opacity-50 disabled:cursor-not-allowed ${
                     plan.popular
                       ? 'bg-yellow-500 hover:bg-yellow-600 text-black'

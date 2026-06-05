@@ -73,6 +73,9 @@ export default function PaywallOverlay({ episodeId, coinPrice = 10 }: PaywallOve
     } else if (response.status === 429) {
       const data = await response.json().catch(() => ({}));
       alert(t('pleaseWait', { seconds: data.remainingSeconds ?? '…' }));
+    } else {
+      // Any other error (400/500/…) — surface it instead of failing silently.
+      alert(t('adFailed'));
     }
   };
 

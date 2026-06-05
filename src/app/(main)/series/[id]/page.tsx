@@ -6,6 +6,7 @@ import prisma from '@/lib/prisma';
 import EpisodeList from '@/components/EpisodeList';
 import { ShareButton } from '@/components/ShareButton';
 import { StructuredData } from '@/components/StructuredData';
+import { getTranslations } from 'next-intl/server';
 import { getAuthUser } from '@/lib/auth';
 import { hasActiveVip } from '@/lib/subscription';
 
@@ -97,6 +98,8 @@ export default async function SeriesPage({ params }: PageProps) {
   }
 
   const { series, purchases, watchHistory, isVip } = data;
+  const t = await getTranslations('series');
+  const tg = await getTranslations('genres');
 
   const episodes = series.episodes.map((ep) => ({
     id: ep.id,
@@ -142,11 +145,11 @@ export default async function SeriesPage({ params }: PageProps) {
 
             <div className="flex items-center gap-3 mb-4 text-sm text-gray-300">
               <span className="bg-red-500 text-white px-3 py-1 rounded font-semibold">
-                {series.genre}
+                {tg.has(series.genre) ? tg(series.genre) : series.genre}
               </span>
-              <span>{series.totalEpisodes} Episodes</span>
+              <span>{t('episodesCount', { count: series.totalEpisodes })}</span>
               <span>•</span>
-              <span>First {series.freeEpisodes} Free</span>
+              <span>{t('firstFree', { count: series.freeEpisodes })}</span>
             </div>
 
             <p className="text-gray-300 text-sm md:text-base mb-6 line-clamp-3">
@@ -159,7 +162,7 @@ export default async function SeriesPage({ params }: PageProps) {
                 className="inline-flex items-center gap-2 bg-red-500 hover:bg-red-600 text-white font-bold px-8 py-3 rounded-full transition transform hover:scale-105"
               >
                 <Play className="w-5 h-5 fill-white" />
-                Watch Now
+                {t('watchNow')}
               </a>
 
               <ShareButton
@@ -175,7 +178,7 @@ export default async function SeriesPage({ params }: PageProps) {
 
       {/* Episodes */}
       <div className="px-4 py-6">
-        <h2 className="text-white text-2xl font-bold mb-4">Episodes</h2>
+        <h2 className="text-white text-2xl font-bold mb-4">{t('episodes')}</h2>
         <EpisodeList episodes={episodes} seriesId={series.id} />
       </div>
     </div>

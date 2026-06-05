@@ -3,6 +3,7 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import { Lock, Check, Play } from 'lucide-react';
+import { useTranslations } from 'next-intl';
 import { formatDuration } from '@/lib/utils';
 
 interface Episode {
@@ -22,6 +23,7 @@ interface EpisodeListProps {
 }
 
 export default function EpisodeList({ episodes, seriesId }: EpisodeListProps) {
+  const t = useTranslations('episode');
   return (
     <div className="space-y-3">
       {episodes.map((episode) => (
@@ -65,12 +67,12 @@ export default function EpisodeList({ episodes, seriesId }: EpisodeListProps) {
               <div>
                 <div className="flex items-center gap-2 mb-1">
                   <span className="text-gray-400 text-sm font-medium">
-                    Episode {episode.episodeNumber}
+                    {t('label', { number: episode.episodeNumber })}
                   </span>
-                  
+
                   {episode.isFree ? (
                     <span className="bg-green-500/20 text-green-400 px-2 py-0.5 rounded text-xs font-medium">
-                      Free
+                      {t('free')}
                     </span>
                   ) : episode.isUnlocked ? (
                     <Check className="w-4 h-4 text-green-500" />

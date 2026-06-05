@@ -2,6 +2,7 @@
 
 import { useState, useEffect, useRef } from 'react';
 import { Search as SearchIcon, X } from 'lucide-react';
+import { useTranslations } from 'next-intl';
 import SeriesCard from '@/components/SeriesCard';
 
 interface Series {
@@ -20,6 +21,7 @@ export default function SearchPage() {
   const [hasSearched, setHasSearched] = useState(false);
   const inputRef = useRef<HTMLInputElement>(null);
   const debounceRef = useRef<ReturnType<typeof setTimeout> | null>(null);
+  const t = useTranslations('search');
 
   useEffect(() => {
     inputRef.current?.focus();
@@ -78,7 +80,7 @@ export default function SearchPage() {
             type="search"
             value={query}
             onChange={(e) => setQuery(e.target.value)}
-            placeholder="Search series, genres..."
+            placeholder={t('placeholder')}
             className="w-full bg-gray-800 text-white placeholder-gray-500 pl-10 pr-10 py-3 rounded-xl focus:outline-none focus:ring-2 focus:ring-red-500 text-sm"
           />
           {query && (
@@ -106,7 +108,7 @@ export default function SearchPage() {
         {!isLoading && results.length > 0 && (
           <>
             <p className="text-gray-400 text-sm mb-4">
-              {results.length} result{results.length !== 1 ? 's' : ''} for &ldquo;{query}&rdquo;
+              {t('results', { count: results.length, query })}
             </p>
             <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
               {results.map((s) => (
@@ -120,9 +122,9 @@ export default function SearchPage() {
         {!isLoading && hasSearched && results.length === 0 && (
           <div className="flex flex-col items-center justify-center py-20 text-center">
             <SearchIcon className="w-12 h-12 text-gray-600 mb-4" />
-            <p className="text-white font-semibold text-lg mb-2">No results found</p>
+            <p className="text-white font-semibold text-lg mb-2">{t('noResultsTitle')}</p>
             <p className="text-gray-500 text-sm">
-              Try a different title or genre
+              {t('noResultsHint')}
             </p>
           </div>
         )}
@@ -133,7 +135,7 @@ export default function SearchPage() {
             <div className="w-16 h-16 bg-gradient-to-br from-red-500 to-pink-500 rounded-full flex items-center justify-center mb-4">
               <SearchIcon className="w-8 h-8 text-white" />
             </div>
-            <p className="text-gray-400 text-sm">Start typing to search for series</p>
+            <p className="text-gray-400 text-sm">{t('idle')}</p>
           </div>
         )}
       </div>

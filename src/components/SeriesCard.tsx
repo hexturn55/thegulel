@@ -3,6 +3,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { Play, Star } from 'lucide-react';
+import { useTranslations } from 'next-intl';
 
 interface SeriesCardProps {
   id: string;
@@ -21,6 +22,8 @@ export default function SeriesCard({
   totalEpisodes,
   featured = false,
 }: SeriesCardProps) {
+  const t = useTranslations('seriesCard');
+  const tg = useTranslations('genres');
   return (
     <Link href={`/series/${id}`}>
       <div className="group relative aspect-[9/16] rounded-2xl overflow-hidden bg-gray-800 cursor-pointer">
@@ -45,7 +48,7 @@ export default function SeriesCard({
         {featured && (
           <div className="absolute top-3 left-3 bg-yellow-500 text-black px-3 py-1 rounded-full text-xs font-bold flex items-center gap-1">
             <Star className="w-3 h-3 fill-current" />
-            Featured
+            {t('featured')}
           </div>
         )}
 
@@ -55,10 +58,10 @@ export default function SeriesCard({
           </h3>
           <div className="flex items-center gap-2 text-xs text-gray-300">
             <span className="bg-red-500/20 text-red-400 px-2 py-0.5 rounded">
-              {genre}
+              {tg.has(genre) ? tg(genre) : genre}
             </span>
             <span>•</span>
-            <span>{totalEpisodes} Episodes</span>
+            <span>{t('episodes', { count: totalEpisodes })}</span>
           </div>
         </div>
       </div>

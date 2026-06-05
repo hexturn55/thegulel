@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import { Instagram, Youtube, Twitter, Facebook } from 'lucide-react';
+import { getTranslations } from 'next-intl/server';
 
 // TikTok doesn't have a lucide icon — use SVG inline
 function TikTokIcon({ className }: { className?: string }) {
@@ -10,7 +11,9 @@ function TikTokIcon({ className }: { className?: string }) {
   );
 }
 
-export function Footer() {
+export async function Footer() {
+  const t = await getTranslations('footer');
+  const tc = await getTranslations('common');
   const socialLinks = [
     {
       label: 'Instagram',
@@ -45,15 +48,15 @@ export function Footer() {
         {/* Brand + tagline */}
         <div className="mb-8 text-center">
           <img src="/logo.png" alt="The Gulel" className="h-10 w-auto mx-auto mb-2" />
-          <p className="text-gray-500 text-xs mt-1">Vertical micro dramas, anywhere you go.</p>
+          <p className="text-gray-500 text-xs mt-1">{t('tagline')}</p>
         </div>
 
         {/* Links */}
         <nav className="flex flex-wrap justify-center gap-x-6 gap-y-2 mb-8">
-          <Link href="/about" className="hover:text-white transition">About</Link>
-          <Link href="/terms" className="hover:text-white transition">Terms</Link>
-          <Link href="/privacy" className="hover:text-white transition">Privacy</Link>
-          <a href="mailto:hello@thegulel.com" className="hover:text-white transition">Contact</a>
+          <Link href="/about" className="hover:text-white transition">{t('about')}</Link>
+          <Link href="/terms" className="hover:text-white transition">{t('terms')}</Link>
+          <Link href="/privacy" className="hover:text-white transition">{t('privacy')}</Link>
+          <a href="mailto:hello@thegulel.com" className="hover:text-white transition">{t('contact')}</a>
         </nav>
 
         {/* Social icons */}
@@ -74,7 +77,7 @@ export function Footer() {
 
         {/* Copyright */}
         <p className="text-center text-gray-600 text-xs">
-          © 2026 Gulel Entertainment. All rights reserved.
+          {tc('copyright')}
         </p>
       </div>
     </footer>

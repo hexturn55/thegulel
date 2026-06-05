@@ -12,6 +12,104 @@
     "wallet": "Wallet — {count} coins",
     "signOut": "Sign Out"
   },
+  "common": {
+    "copyright": "© 2026 Gulel Entertainment. All rights reserved.",
+    "cancel": "Cancel",
+    "loading": "Loading..."
+  },
+  "genres": {
+    "All": "All",
+    "Romance": "Romance",
+    "Drama": "Drama",
+    "Thriller": "Thriller",
+    "Comedy": "Comedy",
+    "Fantasy": "Fantasy",
+    "Action": "Action"
+  },
+  "home": {
+    "noSeries": "No series found"
+  },
+  "seriesCard": {
+    "featured": "Featured",
+    "episodes": "{count} Episodes"
+  },
+  "series": {
+    "episodesCount": "{count} Episodes",
+    "firstFree": "First {count} Free",
+    "watchNow": "Watch Now",
+    "episodes": "Episodes"
+  },
+  "episode": {
+    "label": "Episode {number}",
+    "free": "Free"
+  },
+  "player": {
+    "swipePrev": "Swipe up for previous",
+    "swipeNext": "Swipe down for next episode"
+  },
+  "search": {
+    "placeholder": "Search series, genres...",
+    "results": "{count, plural, one {# result} other {# results}} for “{query}”",
+    "noResultsTitle": "No results found",
+    "noResultsHint": "Try a different title or genre",
+    "idle": "Start typing to search for series"
+  },
+  "profile": {
+    "notLoggedIn": "Not Logged In",
+    "login": "Login",
+    "user": "User",
+    "via": "via {provider}",
+    "coinBalance": "Coin Balance",
+    "topUp": "Top Up",
+    "displayName": "Display Name",
+    "yourName": "Your name",
+    "save": "Save",
+    "saving": "Saving…",
+    "language": "Language",
+    "transactionHistory": "Transaction History",
+    "viewAll": "View All",
+    "noTransactions": "No transactions yet",
+    "continueWatching": "Continue Watching",
+    "noHistory": "No watch history yet",
+    "done": "Done",
+    "epShort": "Ep {number}: {title}",
+    "signOut": "Sign Out",
+    "deleteAccount": "Delete Account",
+    "deleteTitle": "Delete Account",
+    "deleteWarning": "This will permanently delete your account, coin balance, and all watch history. This cannot be undone.",
+    "delete": "Delete",
+    "deleting": "Deleting…",
+    "tx": {
+      "PURCHASE": "Purchase",
+      "AD_REWARD": "Ad Reward",
+      "EPISODE_UNLOCK": "Unlock",
+      "SUBSCRIPTION": "Sub",
+      "BONUS": "Bonus"
+    }
+  },
+  "footer": {
+    "tagline": "Vertical micro dramas, anywhere you go.",
+    "about": "About",
+    "terms": "Terms",
+    "privacy": "Privacy",
+    "contact": "Contact"
+  },
+  "share": {
+    "share": "Share",
+    "copied": "Copied!",
+    "copyLink": "Copy Link"
+  },
+  "errors": {
+    "notFoundTitle": "Page not found",
+    "notFoundBody": "This page doesn't exist or has been moved.",
+    "backHome": "Back to Home",
+    "errorTitle": "Something went wrong",
+    "errorBody": "An unexpected error occurred. Please try again or go back to the home page.",
+    "tryAgain": "Try again",
+    "goHome": "Go Home",
+    "offlineTitle": "You're offline",
+    "offlineBody": "Check your connection and try again."
+  },
   "paywall": {
     "locked": "Episode Locked",
     "prompt": "Unlock this episode to continue watching",
@@ -25,7 +123,8 @@
     "buyMore": "Buy More Coins →",
     "earned": "You earned {coins} coins!",
     "watchFull": "Watch the full ad to earn coins.",
-    "pleaseWait": "Please wait {seconds}s before watching another ad."
+    "pleaseWait": "Please wait {seconds}s before watching another ad.",
+    "adFailed": "Couldn't grant your reward. Please try again."
   },
   "vip": {
     "title": "Gulel VIP",
@@ -90,5 +189,26 @@
     "terms": "Terms of Service",
     "dangerZone": "Danger Zone",
     "deleteAccount": "Delete Account"
+  },
+  "about": {
+    "title": "About Gulel OTT",
+    "tagline": "Vertical micro dramas, anywhere you go.",
+    "whatTitle": "What is Gulel?",
+    "whatBody": "Gulel OTT is a streaming platform built for the short-attention, always-on generation. We deliver bite-sized vertical dramas — think full emotional arcs packed into episodes you can finish in under 5 minutes. Romance, thriller, family drama, action: all shot vertically, built for your phone, and designed to keep you hooked.",
+    "contentTitle": "Our Content",
+    "contentBody": "We produce and license original Hindi and Chinese micro drama series. Our library spans romance, supernatural, revenge, and slice-of-life genres. New series drop regularly. The first few episodes of every series are always free — unlock the rest with Gulel Coins.",
+    "howTitle": "How It Works",
+    "how1": "Browse and watch free episodes — no account needed to start.",
+    "how2": "Sign in to save your progress and pick up where you left off.",
+    "how3": "Purchase Gulel Coins to unlock premium episodes.",
+    "how4": "Or watch a short ad to earn free coins.",
+    "contactTitle": "Contact Us",
+    "contactBody": "Questions, feedback, or partnership enquiries? We'd love to hear from you."
+  },
+  "legal": {
+    "lastUpdated": "Last updated: {date}",
+    "termsTitle": "Terms of Service",
+    "privacyTitle": "Privacy Policy",
+    "authoritativeNotice": "This translation is provided for your convenience. The English version is legally authoritative."
   }
 }

@@ -12,6 +12,104 @@
     "wallet": "Cartera — {count} monedas",
     "signOut": "Cerrar sesión"
   },
+  "common": {
+    "copyright": "© 2026 Gulel Entertainment. Todos los derechos reservados.",
+    "cancel": "Cancelar",
+    "loading": "Cargando..."
+  },
+  "genres": {
+    "All": "Todos",
+    "Romance": "Romance",
+    "Drama": "Drama",
+    "Thriller": "Suspenso",
+    "Comedy": "Comedia",
+    "Fantasy": "Fantasía",
+    "Action": "Acción"
+  },
+  "home": {
+    "noSeries": "No se encontraron series"
+  },
+  "seriesCard": {
+    "featured": "Destacado",
+    "episodes": "{count} episodios"
+  },
+  "series": {
+    "episodesCount": "{count} episodios",
+    "firstFree": "Primeros {count} gratis",
+    "watchNow": "Ver ahora",
+    "episodes": "Episodios"
+  },
+  "episode": {
+    "label": "Episodio {number}",
+    "free": "Gratis"
+  },
+  "player": {
+    "swipePrev": "Desliza hacia arriba para el anterior",
+    "swipeNext": "Desliza hacia abajo para el siguiente episodio"
+  },
+  "search": {
+    "placeholder": "Buscar series, géneros...",
+    "results": "{count, plural, one {# resultado} other {# resultados}} para «{query}»",
+    "noResultsTitle": "No se encontraron resultados",
+    "noResultsHint": "Prueba con otro título o género",
+    "idle": "Empieza a escribir para buscar series"
+  },
+  "profile": {
+    "notLoggedIn": "No has iniciado sesión",
+    "login": "Iniciar sesión",
+    "user": "Usuario",
+    "via": "vía {provider}",
+    "coinBalance": "Saldo de monedas",
+    "topUp": "Recargar",
+    "displayName": "Nombre visible",
+    "yourName": "Tu nombre",
+    "save": "Guardar",
+    "saving": "Guardando…",
+    "language": "Idioma",
+    "transactionHistory": "Historial de transacciones",
+    "viewAll": "Ver todo",
+    "noTransactions": "Aún no hay transacciones",
+    "continueWatching": "Continuar viendo",
+    "noHistory": "Aún no hay historial de reproducción",
+    "done": "Visto",
+    "epShort": "Ep {number}: {title}",
+    "signOut": "Cerrar sesión",
+    "deleteAccount": "Eliminar cuenta",
+    "deleteTitle": "Eliminar cuenta",
+    "deleteWarning": "Esto eliminará permanentemente tu cuenta, tu saldo de monedas y todo tu historial de reproducción. Esto no se puede deshacer.",
+    "delete": "Eliminar",
+    "deleting": "Eliminando…",
+    "tx": {
+      "PURCHASE": "Compra",
+      "AD_REWARD": "Recompensa",
+      "EPISODE_UNLOCK": "Desbloqueo",
+      "SUBSCRIPTION": "Susc.",
+      "BONUS": "Bono"
+    }
+  },
+  "footer": {
+    "tagline": "Microdramas verticales, dondequiera que vayas.",
+    "about": "Acerca de",
+    "terms": "Términos",
+    "privacy": "Privacidad",
+    "contact": "Contacto"
+  },
+  "share": {
+    "share": "Compartir",
+    "copied": "¡Copiado!",
+    "copyLink": "Copiar enlace"
+  },
+  "errors": {
+    "notFoundTitle": "Página no encontrada",
+    "notFoundBody": "Esta página no existe o ha sido movida.",
+    "backHome": "Volver al inicio",
+    "errorTitle": "Algo salió mal",
+    "errorBody": "Ocurrió un error inesperado. Inténtalo de nuevo o vuelve a la página de inicio.",
+    "tryAgain": "Reintentar",
+    "goHome": "Ir al inicio",
+    "offlineTitle": "Estás sin conexión",
+    "offlineBody": "Comprueba tu conexión e inténtalo de nuevo."
+  },
   "paywall": {
     "locked": "Episodio bloqueado",
     "prompt": "Desbloquea este episodio para seguir viendo",
@@ -25,7 +123,8 @@
     "buyMore": "Comprar más monedas →",
     "earned": "¡Ganaste {coins} monedas!",
     "watchFull": "Mira el anuncio completo para ganar monedas.",
-    "pleaseWait": "Espera {seconds} s antes de ver otro anuncio."
+    "pleaseWait": "Espera {seconds} s antes de ver otro anuncio.",
+    "adFailed": "No se pudo otorgar tu recompensa. Inténtalo de nuevo."
   },
   "vip": {
     "title": "Gulel VIP",
@@ -90,5 +189,26 @@
     "terms": "Condiciones del servicio",
     "dangerZone": "Zona de peligro",
     "deleteAccount": "Eliminar cuenta"
+  },
+  "about": {
+    "title": "Acerca de Gulel OTT",
+    "tagline": "Microdramas verticales, dondequiera que vayas.",
+    "whatTitle": "¿Qué es Gulel?",
+    "whatBody": "Gulel OTT es una plataforma de streaming creada para la generación de atención breve y siempre conectada. Ofrecemos dramas verticales en formato breve — arcos emocionales completos en episodios que puedes terminar en menos de 5 minutos. Romance, suspenso, drama familiar, acción: todo grabado en vertical, pensado para tu teléfono y diseñado para mantenerte enganchado.",
+    "contentTitle": "Nuestro contenido",
+    "contentBody": "Producimos y licenciamos series originales de microdramas en hindi y chino. Nuestra biblioteca abarca romance, sobrenatural, venganza y géneros costumbristas. Estrenamos series nuevas con regularidad. Los primeros episodios de cada serie siempre son gratis — desbloquea el resto con monedas Gulel.",
+    "howTitle": "Cómo funciona",
+    "how1": "Explora y mira episodios gratis — no necesitas cuenta para empezar.",
+    "how2": "Inicia sesión para guardar tu progreso y continuar donde lo dejaste.",
+    "how3": "Compra monedas Gulel para desbloquear episodios premium.",
+    "how4": "O mira un breve anuncio para ganar monedas gratis.",
+    "contactTitle": "Contáctanos",
+    "contactBody": "¿Preguntas, comentarios o consultas de colaboración? Nos encantaría saber de ti."
+  },
+  "legal": {
+    "lastUpdated": "Última actualización: {date}",
+    "termsTitle": "Condiciones del servicio",
+    "privacyTitle": "Política de privacidad",
+    "authoritativeNotice": "Esta traducción se ofrece por comodidad. La versión en inglés es la legalmente vinculante."
   }
 }

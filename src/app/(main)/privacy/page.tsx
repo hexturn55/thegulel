@@ -1,4 +1,5 @@
 import { Metadata } from 'next';
+import { getTranslations } from 'next-intl/server';
 
 export const metadata: Metadata = {
   title: 'Privacy Policy',
@@ -6,14 +7,19 @@ export const metadata: Metadata = {
   robots: { index: false },
 };
 
-export default function PrivacyPage() {
+export default async function PrivacyPage() {
   const lastUpdated = '1 March 2026';
+  const t = await getTranslations('legal');
+  const tc = await getTranslations('common');
 
   return (
     <div className="min-h-screen bg-black text-white pb-28">
       <div className="max-w-2xl mx-auto px-6 py-12">
-        <h1 className="text-3xl font-bold mb-2">Privacy Policy</h1>
-        <p className="text-gray-500 text-sm mb-10">Last updated: {lastUpdated}</p>
+        <h1 className="text-3xl font-bold mb-2">{t('privacyTitle')}</h1>
+        <p className="text-gray-500 text-sm mb-4">{t('lastUpdated', { date: lastUpdated })}</p>
+        <p className="text-gray-500 text-xs italic mb-10 border-l-2 border-gray-700 pl-3">
+          {t('authoritativeNotice')}
+        </p>
 
         <div className="space-y-8 text-gray-400 leading-relaxed">
           <section>
@@ -143,7 +149,7 @@ export default function PrivacyPage() {
         </div>
 
         <div className="border-t border-zinc-800 mt-12 pt-8 text-gray-600 text-sm">
-          © 2026 Gulel Entertainment. All rights reserved.
+          {tc('copyright')}
         </div>
       </div>
     </div>
