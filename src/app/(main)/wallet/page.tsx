@@ -1,6 +1,7 @@
 'use client';
 
 import { useEffect, useState } from 'react';
+import { useTranslations } from 'next-intl';
 import CoinWallet from '@/components/CoinWallet';
 
 // ─── Types ────────────────────────────────────────────────────────────────────
@@ -33,6 +34,7 @@ function formatDate(iso: string) {
 // ─── Transaction History Component ────────────────────────────────────────────
 
 function TransactionHistory() {
+  const t = useTranslations('wallet');
   const [transactions, setTransactions] = useState<Transaction[]>([]);
   const [isLoading, setIsLoading] = useState(true);
   const [page, setPage] = useState(1);
@@ -72,7 +74,7 @@ function TransactionHistory() {
 
   if (transactions.length === 0) {
     return (
-      <p className="text-center text-gray-500 py-8 text-sm">No transactions yet.</p>
+      <p className="text-center text-gray-500 py-8 text-sm">{t('noTransactions')}</p>
     );
   }
 
@@ -116,7 +118,7 @@ function TransactionHistory() {
           disabled={isLoading}
           className="w-full py-3 rounded-xl bg-gray-800 hover:bg-gray-700 text-gray-300 text-sm font-medium transition disabled:opacity-50 mt-2"
         >
-          {isLoading ? 'Loading…' : 'Load More'}
+          {isLoading ? t('loading') : t('loadMore')}
         </button>
       )}
     </div>
@@ -125,6 +127,16 @@ function TransactionHistory() {
 
 // ─── Page ─────────────────────────────────────────────────────────────────────
 
+function WalletHistorySection() {
+  const t = useTranslations('wallet');
+  return (
+    <div className="px-4 pt-2 pb-6">
+      <h2 className="text-white text-xl font-bold mb-4">{t('history')}</h2>
+      <TransactionHistory />
+    </div>
+  );
+}
+
 export default function WalletPage() {
   return (
     <div className="min-h-screen bg-black pb-24">
@@ -132,10 +144,7 @@ export default function WalletPage() {
       <CoinWallet />
 
       {/* Transaction history section */}
-      <div className="px-4 pt-2 pb-6">
-        <h2 className="text-white text-xl font-bold mb-4">Transaction History</h2>
-        <TransactionHistory />
-      </div>
+      <WalletHistorySection />
     </div>
   );
 }

@@ -1,7 +1,8 @@
 'use client';
 
 import { useState } from 'react';
-import { Lock, Coins, Play } from 'lucide-react';
+import { Lock, Coins, Play, Crown } from 'lucide-react';
+import { useTranslations } from 'next-intl';
 import { useAuthStore } from '@/stores/useAuthStore';
 import { useRouter } from 'next/navigation';
 import { playRewardedAd } from '@/lib/ima';
@@ -16,6 +17,7 @@ export default function PaywallOverlay({ episodeId, coinPrice = 10 }: PaywallOve
   const [isWatchingAd, setIsWatchingAd] = useState(false);
   const { user, updateCoinBalance } = useAuthStore();
   const router = useRouter();
+  const t = useTranslations('paywall');
 
   const handleUnlockWithCoins = async () => {
     if (!user) {
@@ -64,15 +66,13 @@ export default function PaywallOverlay({ episodeId, coinPrice = 10 }: PaywallOve
     if (response.ok) {
       const data = await response.json();
       updateCoinBalance(data.newBalance);
-      alert(`You earned ${data.coinsEarned} coins!`);
+      alert(t('earned', { coins: data.coinsEarned }));
     } else if (response.status === 401) {
       const returnUrl = encodeURIComponent(window.location.pathname);
       router.push(`/auth/login?redirectTo=${returnUrl}`);
     } else if (response.status === 429) {
       const data = await response.json().catch(() => ({}));
-      alert(
-        `Please wait ${data.remainingSeconds ?? 'a moment'}s before watching another ad.`
-      );
+      alert(t('pleaseWait', { seconds: data.remainingSeconds ?? '…' }));
     }
   };
 
@@ -92,7 +92,7 @@ export default function PaywallOverlay({ episodeId, coinPrice = 10 }: PaywallOve
       const { played, rewarded } = await playRewardedAd();
 
       if (played && !rewarded) {
-        alert('Watch the full ad to earn coins.');
+        alert(t('watchFull'));
         return;
       }
 
@@ -117,10 +117,10 @@ export default function PaywallOverlay({ episodeId, coinPrice = 10 }: PaywallOve
           </div>
           
           <h2 className="text-2xl font-bold text-white mb-2">
-            Episode Locked
+            {t('locked')}
           </h2>
           <p className="text-gray-400 text-sm">
-            Unlock this episode to continue watching
+            {t('prompt')}
           </p>
         </div>
 
@@ -132,7 +132,7 @@ export default function PaywallOverlay({ episodeId, coinPrice = 10 }: PaywallOve
           >
             <Coins className="w-5 h-5" />
             <span>
-              {isUnlocking ? 'Unlocking...' : `Unlock with ${coinPrice} Coins`}
+              {isUnlocking ? t('unlocking') : t('unlockWith', { price: coinPrice })}
             </span>
           </button>
 
@@ -141,7 +141,7 @@ export default function PaywallOverlay({ episodeId, coinPrice = 10 }: PaywallOve
               <div className="w-full border-t border-gray-700"></div>
             </div>
             <div className="relative flex justify-center text-xs">
-              <span className="px-2 bg-black text-gray-500">OR</span>
+              <span className="px-2 bg-black text-gray-500">{t('or')}</span>
             </div>
           </div>
 
@@ -152,25 +152,33 @@ export default function PaywallOverlay({ episodeId, coinPrice = 10 }: PaywallOve
           >
             <Play className="w-5 h-5" />
             <span>
-              {isWatchingAd ? 'Loading Ad...' : 'Watch Ad to Earn Coins'}
+              {isWatchingAd ? t('loadingAd') : t('watchAd')}
             </span>
+          </button>
+
+          <button
+            onClick={() => router.push('/vip')}
+            className="w-full bg-gradient-to-r from-yellow-500/15 to-orange-500/15 hover:from-yellow-500/25 hover:to-orange-500/25 text-yellow-300 font-semibold py-4 px-6 rounded-xl flex items-center justify-center gap-3 transition-all border border-yellow-500/30"
+          >
+            <Crown className="w-5 h-5" />
+            <span>{t('goVip')}</span>
           </button>
         </div>
 
         <div className="text-center">
-          <p className="text-gray-500 text-xs mb-2">Your Balance</p>
+          <p className="text-gray-500 text-xs mb-2">{t('yourBalance')}</p>
           <div className="flex items-center justify-center gap-2">
             <Coins className="w-5 h-5 text-yellow-500" />
             <span className="text-2xl font-bold text-white">
               {user?.coinBalance || 0}
             </span>
           </div>
-          
+
           <button
             onClick={() => router.push('/wallet')}
             className="mt-4 text-red-500 hover:text-red-400 text-sm font-medium"
           >
-            Buy More Coins →
+            {t('buyMore')}
           </button>
         </div>
       </div>

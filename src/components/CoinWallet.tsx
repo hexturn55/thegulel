@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import { Coins, Sparkles, CreditCard } from 'lucide-react';
+import { useTranslations } from 'next-intl';
 import { useAuthStore } from '@/stores/useAuthStore';
 import { useCoinStore } from '@/stores/useCoinStore';
 import { formatPrice } from '@/lib/utils';
@@ -54,6 +55,7 @@ export default function CoinWallet() {
   const { packages, setPackages } = useCoinStore();
   const [isPurchasing, setIsPurchasing] = useState<string | null>(null);
   const [currency, setCurrency] = useState<'USD' | 'INR'>('USD');
+  const t = useTranslations('wallet');
 
   useEffect(() => {
     fetchPackages();
@@ -168,7 +170,7 @@ export default function CoinWallet() {
             {user?.coinBalance || 0}
           </span>
         </div>
-        <p className="text-white/90 text-sm">Your Coin Balance</p>
+        <p className="text-white/90 text-sm">{t('balance')}</p>
       </div>
 
       {/* Currency toggle */}
@@ -199,7 +201,7 @@ export default function CoinWallet() {
 
       {/* Packages */}
       <div className="px-4 py-6">
-        <h2 className="text-white text-xl font-bold mb-4">Coin Packages</h2>
+        <h2 className="text-white text-xl font-bold mb-4">{t('packages')}</h2>
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
           {packages.map((pkg) => (
@@ -236,11 +238,12 @@ export default function CoinWallet() {
                   )}
                 </div>
                 <p className="text-gray-500 text-xs mt-1">
-                  {(
-                    (currency === 'USD' ? pkg.priceUSD : pkg.priceINR) /
-                    pkg.coins
-                  ).toFixed(3)}{' '}
-                  {currency === 'USD' ? '$' : '₹'} per coin
+                  {t('perCoin', {
+                    price: `${(
+                      (currency === 'USD' ? pkg.priceUSD : pkg.priceINR) /
+                      pkg.coins
+                    ).toFixed(3)} ${currency === 'USD' ? '$' : '₹'}`,
+                  })}
                 </p>
               </div>
 
@@ -254,7 +257,7 @@ export default function CoinWallet() {
                 } disabled:opacity-50 disabled:cursor-not-allowed`}
               >
                 <CreditCard className="w-4 h-4" />
-                {isPurchasing === pkg.id ? 'Processing...' : 'Buy Now'}
+                {isPurchasing === pkg.id ? t('processing') : t('buyNow')}
               </button>
             </div>
           ))}

@@ -1,6 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server';
 import prisma from '@/lib/prisma';
 import { getAuthUser } from '@/lib/auth';
+import { hasActiveVip } from '@/lib/subscription';
 
 export async function POST(request: NextRequest) {
   try {
@@ -14,6 +15,15 @@ export async function POST(request: NextRequest) {
       );
     }
     const userId = user.id;
+
+    // VIP subscribers already have access — never charge coins.
+    if (await hasActiveVip(userId)) {
+      return NextResponse.json({
+        success: true,
+        vip: true,
+        newBalance: user.coinBalance,
+      });
+    }
 
     // Get episode and series
     const episode = await prisma.episode.findUnique({

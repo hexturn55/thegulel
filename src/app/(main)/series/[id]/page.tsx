@@ -6,7 +6,8 @@ import prisma from '@/lib/prisma';
 import EpisodeList from '@/components/EpisodeList';
 import { ShareButton } from '@/components/ShareButton';
 import { StructuredData } from '@/components/StructuredData';
-import { cookies } from 'next/headers';
+import { getAuthUser } from '@/lib/auth';
+import { hasActiveVip } from '@/lib/subscription';
 
 interface PageProps {
   params: Promise<{ id: string }>;
@@ -55,13 +56,18 @@ async function getSeriesWithEpisodes(id: string, userId?: string) {
   // Get user's purchases and watch history if logged in
   let purchases: string[] = [];
   let watchHistory: Record<string, { progress: number }> = {};
+  let isVip = false;
 
   if (userId) {
-    const userPurchases = await prisma.episodePurchase.findMany({
-      where: { userId },
-      select: { episodeId: true },
-    });
-    purchases = userPurchases.map((p) => p.episodeId);
+    // VIP subscribers have every episode unlocked.
+    isVip = await hasActiveVip(userId);
+    if (!isVip) {
+      const userPurchases = await prisma.episodePurchase.findMany({
+        where: { userId },
+        select: { episodeId: true },
+      });
+      purchases = userPurchases.map((p) => p.episodeId);
+    }
 
     const history = await prisma.watchHistory.findMany({
       where: { userId, episodeId: { in: series.episodes.map((e) => e.id) } },
@@ -76,21 +82,21 @@ async function getSeriesWithEpisodes(id: string, userId?: string) {
     series,
     purchases,
     watchHistory,
+    isVip,
   };
 }
 
 export default async function SeriesPage({ params }: PageProps) {
   const { id } = await params;
-  const cookieStore = await cookies();
-  const userId = cookieStore.get('userId')?.value;
+  const user = await getAuthUser();
 
-  const data = await getSeriesWithEpisodes(id, userId);
+  const data = await getSeriesWithEpisodes(id, user?.id);
 
   if (!data) {
     notFound();
   }
 
-  const { series, purchases, watchHistory } = data;
+  const { series, purchases, watchHistory, isVip } = data;
 
   const episodes = series.episodes.map((ep) => ({
     id: ep.id,
@@ -99,7 +105,7 @@ export default async function SeriesPage({ params }: PageProps) {
     thumbnail: ep.thumbnail,
     duration: ep.duration,
     isFree: ep.isFree,
-    isUnlocked: purchases.includes(ep.id),
+    isUnlocked: isVip || purchases.includes(ep.id),
     watchProgress: watchHistory[ep.id]?.progress,
   }));
 

@@ -1,5 +1,7 @@
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
+import { NextIntlClientProvider } from 'next-intl';
+import { getLocale, getMessages } from 'next-intl/server';
 import './globals.css';
 import { GoogleAnalytics, GoogleTagManager } from '@/components/Analytics';
 import { FacebookPixel } from '@/components/FacebookPixel';
@@ -45,13 +47,16 @@ export const viewport = {
   viewportFit: 'cover',
 };
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const locale = await getLocale();
+  const messages = await getMessages();
+
   return (
-    <html lang="en" className="dark">
+    <html lang={locale} className="dark">
       <head>
         {/* Favicon */}
         <link rel="icon" href="/favicon.ico" sizes="any" />
@@ -67,7 +72,9 @@ export default function RootLayout({
         <meta name="msapplication-TileImage" content="/icons/icon-192.png" />
       </head>
       <body className={`${inter.className} bg-black antialiased`}>
-        {children}
+        <NextIntlClientProvider locale={locale} messages={messages}>
+          {children}
+        </NextIntlClientProvider>
 
         {/* Analytics */}
         <GoogleAnalytics />

@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import { useSearchParams, useRouter } from 'next/navigation';
+import { useTranslations } from 'next-intl';
 import { createClient } from '@/lib/supabase';
 import { Phone, ArrowRight, Loader2, CheckCircle } from 'lucide-react';
 import Image from 'next/image';
@@ -53,6 +54,7 @@ type Step = 'providers' | 'phone' | 'otp';
 export default function LoginPage() {
   const searchParams = useSearchParams();
   const router = useRouter();
+  const t = useTranslations('auth');
   const redirectTo = searchParams.get('redirectTo') ?? '/';
 
   const [step, setStep] = useState<Step>('providers');
@@ -164,7 +166,7 @@ export default function LoginPage() {
             className="h-14 w-auto mx-auto mb-4"
             priority
           />
-          <p className="text-gray-400 text-sm mt-1">Continue watching in seconds</p>
+          <p className="text-gray-400 text-sm mt-1">{t('tagline')}</p>
         </div>
 
         <div className="w-full max-w-sm">
@@ -179,7 +181,7 @@ export default function LoginPage() {
           {step === 'providers' && (
             <div className="space-y-3">
               <h2 className="text-white font-semibold text-lg text-center mb-6">
-                Sign in to continue
+                {t('signInToContinue')}
               </h2>
 
               {/* Google */}
@@ -193,7 +195,7 @@ export default function LoginPage() {
                 ) : (
                   <GoogleIcon />
                 )}
-                <span>Continue with Google</span>
+                <span>{t('continueGoogle')}</span>
               </button>
 
               {/* Facebook */}
@@ -207,7 +209,7 @@ export default function LoginPage() {
                 ) : (
                   <FacebookIcon />
                 )}
-                <span>Continue with Facebook</span>
+                <span>{t('continueFacebook')}</span>
               </button>
 
               {/* LINE (Asian market) */}
@@ -221,7 +223,7 @@ export default function LoginPage() {
                 ) : (
                   <LineIcon />
                 )}
-                <span>Continue with LINE</span>
+                <span>{t('continueLine')}</span>
               </button>
 
               {/* Divider */}
@@ -243,18 +245,22 @@ export default function LoginPage() {
                 className="w-full flex items-center justify-center gap-3 bg-gray-900 hover:bg-gray-800 border border-gray-700 disabled:opacity-60 disabled:cursor-not-allowed text-white font-semibold py-3.5 px-5 rounded-xl transition-all duration-150"
               >
                 <Phone className="w-5 h-5 text-gray-400" />
-                <span>Continue with Phone</span>
+                <span>{t('continuePhone')}</span>
               </button>
 
               <p className="text-gray-600 text-xs text-center mt-6 leading-relaxed">
-                By continuing, you agree to Gulel's{' '}
-                <a href="/terms" className="text-gray-400 hover:text-white underline">
-                  Terms of Service
-                </a>{' '}
-                and{' '}
-                <a href="/privacy" className="text-gray-400 hover:text-white underline">
-                  Privacy Policy
-                </a>
+                {t.rich('terms', {
+                  terms: (chunks) => (
+                    <a href="/terms" className="text-gray-400 hover:text-white underline">
+                      {chunks}
+                    </a>
+                  ),
+                  privacy: (chunks) => (
+                    <a href="/privacy" className="text-gray-400 hover:text-white underline">
+                      {chunks}
+                    </a>
+                  ),
+                })}
               </p>
             </div>
           )}
@@ -266,13 +272,13 @@ export default function LoginPage() {
                 onClick={() => { setStep('providers'); setError(''); }}
                 className="text-gray-400 hover:text-white text-sm flex items-center gap-1 mb-2"
               >
-                ← Back
+                ← {t('back')}
               </button>
               <h2 className="text-white font-semibold text-lg">
-                Enter your phone number
+                {t('enterPhone')}
               </h2>
               <p className="text-gray-400 text-sm">
-                We'll send a verification code via SMS
+                {t('smsHint')}
               </p>
 
               <div className="relative">
@@ -297,7 +303,7 @@ export default function LoginPage() {
                   <Loader2 className="w-5 h-5 animate-spin" />
                 ) : (
                   <>
-                    <span>Send Code</span>
+                    <span>{t('sendCode')}</span>
                     <ArrowRight className="w-4 h-4" />
                   </>
                 )}
@@ -312,15 +318,14 @@ export default function LoginPage() {
                 onClick={() => { setStep('phone'); setOtp(''); setError(''); }}
                 className="text-gray-400 hover:text-white text-sm flex items-center gap-1 mb-2"
               >
-                ← Back
+                ← {t('back')}
               </button>
               <div className="flex items-center gap-2 mb-1">
                 <CheckCircle className="w-5 h-5 text-green-500" />
-                <h2 className="text-white font-semibold text-lg">Code sent!</h2>
+                <h2 className="text-white font-semibold text-lg">{t('codeSentTitle')}</h2>
               </div>
               <p className="text-gray-400 text-sm">
-                Enter the 6-digit code sent to{' '}
-                <span className="text-white font-medium">{phone}</span>
+                {t('codeSentTo', { phone })}
               </p>
 
               <input
@@ -342,7 +347,7 @@ export default function LoginPage() {
                   <Loader2 className="w-5 h-5 animate-spin" />
                 ) : (
                   <>
-                    <span>Verify & Continue</span>
+                    <span>{t('verifyContinue')}</span>
                     <ArrowRight className="w-4 h-4" />
                   </>
                 )}
@@ -353,7 +358,7 @@ export default function LoginPage() {
                 disabled={!!loading}
                 className="w-full text-gray-400 hover:text-white text-sm py-2 transition-colors"
               >
-                Resend code
+                {t('resend')}
               </button>
             </div>
           )}
