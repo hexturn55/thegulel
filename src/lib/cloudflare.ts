@@ -68,18 +68,30 @@ export async function uploadStreamVideo(file: File): Promise<CloudflareStreamVid
   return data.result;
 }
 
-export function getStreamUrl(videoId: string): string {
+export function getStreamUrl(videoId: string): string | null {
   const subdomain = process.env.NEXT_PUBLIC_CLOUDFLARE_CUSTOMER_SUBDOMAIN;
-  if (!subdomain) {
-    throw new Error('NEXT_PUBLIC_CLOUDFLARE_CUSTOMER_SUBDOMAIN not configured');
-  }
+  if (!subdomain || !videoId) return null;
   return `https://${subdomain}/${videoId}/manifest/video.m3u8`;
 }
 
-export function getStreamThumbnail(videoId: string): string {
-  const subdomain = process.env.NEXT_PUBLIC_CLOUDFLARE_CUSTOMER_SUBDOMAIN;
-  if (!subdomain) {
-    throw new Error('NEXT_PUBLIC_CLOUDFLARE_CUSTOMER_SUBDOMAIN not configured');
+/**
+ * Resolve a playable HLS URL for an episode. Prefers an explicit absolute
+ * `videoUrl` (e.g. a sample stream or external CDN); otherwise builds the
+ * Cloudflare Stream URL from the `videoId`. Returns null if neither is usable
+ * so callers can render a friendly fallback instead of crashing.
+ */
+export function resolveVideoUrl(episode: {
+  videoUrl?: string | null;
+  videoId?: string | null;
+}): string | null {
+  if (episode.videoUrl && /^https?:\/\//.test(episode.videoUrl)) {
+    return episode.videoUrl;
   }
+  return episode.videoId ? getStreamUrl(episode.videoId) : null;
+}
+
+export function getStreamThumbnail(videoId: string): string | null {
+  const subdomain = process.env.NEXT_PUBLIC_CLOUDFLARE_CUSTOMER_SUBDOMAIN;
+  if (!subdomain || !videoId) return null;
   return `https://${subdomain}/${videoId}/thumbnails/thumbnail.jpg`;
 }
