@@ -7,6 +7,11 @@ const nextConfig: NextConfig = {
   images: {
     remotePatterns: [
       {
+        // Demo/seed poster thumbnails are served from placehold.co.
+        protocol: 'https',
+        hostname: 'placehold.co',
+      },
+      {
         protocol: 'https',
         hostname: '*.cloudflarestream.com',
       },
