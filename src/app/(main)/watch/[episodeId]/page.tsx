@@ -1,6 +1,7 @@
 import { notFound } from 'next/navigation';
+import Link from 'next/link';
 import prisma from '@/lib/prisma';
-import { getStreamUrl } from '@/lib/cloudflare';
+import { resolveVideoUrl } from '@/lib/cloudflare';
 import { getAuthUser } from '@/lib/auth';
 import { hasActiveVip } from '@/lib/subscription';
 import WatchClient from './WatchClient';
@@ -68,7 +69,25 @@ export default async function WatchPage({ params }: PageProps) {
   }
 
   const { episode, isUnlocked, nextEpisode, prevEpisode } = data;
-  const videoUrl = getStreamUrl(episode.videoId);
+  const videoUrl = resolveVideoUrl(episode);
+
+  // No playable source configured — show a graceful message instead of a crash.
+  if (!videoUrl) {
+    return (
+      <div className="fixed inset-0 bg-black flex flex-col items-center justify-center px-6 text-center">
+        <h1 className="text-white text-xl font-bold mb-2">Video coming soon</h1>
+        <p className="text-gray-400 text-sm mb-6 max-w-xs">
+          This episode doesn&apos;t have a playable video yet.
+        </p>
+        <Link
+          href={`/series/${episode.seriesId}`}
+          className="bg-red-500 hover:bg-red-600 text-white font-semibold px-6 py-3 rounded-full transition"
+        >
+          Back to series
+        </Link>
+      </div>
+    );
+  }
 
   return (
     <div className="fixed inset-0 bg-black">

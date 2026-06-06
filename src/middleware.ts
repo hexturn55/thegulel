@@ -28,22 +28,27 @@ export async function middleware(request: NextRequest) {
     }
   );
 
-  // Refresh session — required for SSR token refresh to work
-  const {
-    data: { user },
-  } = await supabase.auth.getUser();
-
   const pathname = request.nextUrl.pathname;
-
-  // Protect routes
   const isProtected = PROTECTED_ROUTES.some((route) =>
     pathname.startsWith(route)
   );
 
-  if (isProtected && !user) {
-    const loginUrl = new URL('/auth/login', request.url);
-    loginUrl.searchParams.set('redirectTo', pathname);
-    return NextResponse.redirect(loginUrl);
+  if (isProtected) {
+    // Only here do we pay for a full auth-server validation, and gate access.
+    const {
+      data: { user },
+    } = await supabase.auth.getUser();
+
+    if (!user) {
+      const loginUrl = new URL('/auth/login', request.url);
+      loginUrl.searchParams.set('redirectTo', pathname);
+      return NextResponse.redirect(loginUrl);
+    }
+  } else {
+    // Public pages: refresh the session cookie from the token without a
+    // round-trip to the auth server on every request (getSession only calls
+    // the network when the token actually needs refreshing).
+    await supabase.auth.getSession();
   }
 
   return supabaseResponse;
@@ -53,12 +58,12 @@ export const config = {
   matcher: [
     /*
      * Match all request paths except:
+     * - api (route handlers authenticate themselves — keep middleware off the hot path)
      * - _next/static (static files)
      * - _next/image (image optimization)
      * - favicon.ico
      * - public folder
-     * - API routes (auth handled per-route)
      */
-    '/((?!_next/static|_next/image|favicon.ico|.*\\.(?:svg|png|jpg|jpeg|gif|webp)$).*)',
+    '/((?!api|_next/static|_next/image|favicon.ico|.*\\.(?:svg|png|jpg|jpeg|gif|webp)$).*)',
   ],
 };

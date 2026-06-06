@@ -31,9 +31,17 @@ async function main() {
   console.log('✅ Coin packages seeded');
 
   // Create a demo series
+  const FREE_EPISODES = 5;
+  const TOTAL_EPISODES = 8;
+
   await prisma.series.upsert({
     where: { id: 'demo-series' },
-    update: {},
+    update: {
+      status: 'PUBLISHED',
+      featured: true,
+      freeEpisodes: FREE_EPISODES,
+      totalEpisodes: TOTAL_EPISODES,
+    },
     create: {
       id: 'demo-series',
       title: 'The Secret Alliance',
@@ -43,14 +51,37 @@ async function main() {
       thumbnail: 'https://placehold.co/720x1280/1e293b/ffffff/png?text=The+Secret+Alliance',
       genre: 'Thriller',
       tags: ['Suspense', 'Corporate', 'Mystery'],
-      freeEpisodes: 5,
+      freeEpisodes: FREE_EPISODES,
+      totalEpisodes: TOTAL_EPISODES,
       coinPrice: 10,
       status: 'PUBLISHED',
       featured: true,
     },
   });
 
-  console.log('✅ Demo series created');
+  // Playable sample HLS stream (CORS-enabled) so the demo works without a
+  // Cloudflare Stream account. Replace videoUrl/videoId with real Cloudflare
+  // uploads in production.
+  const SAMPLE_HLS = 'https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8';
+
+  for (let n = 1; n <= TOTAL_EPISODES; n++) {
+    await prisma.episode.upsert({
+      where: { seriesId_episodeNumber: { seriesId: 'demo-series', episodeNumber: n } },
+      update: { videoUrl: SAMPLE_HLS, isFree: n <= FREE_EPISODES },
+      create: {
+        seriesId: 'demo-series',
+        episodeNumber: n,
+        title: `Episode ${n}`,
+        duration: 596,
+        videoUrl: SAMPLE_HLS,
+        videoId: '',
+        thumbnail: `https://placehold.co/720x1280/1e293b/ffffff/png?text=Episode+${n}`,
+        isFree: n <= FREE_EPISODES,
+      },
+    });
+  }
+
+  console.log(`✅ Demo series + ${TOTAL_EPISODES} episodes created`);
   console.log('🎉 Seeding complete!');
 }
 
