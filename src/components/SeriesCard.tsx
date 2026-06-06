@@ -4,6 +4,9 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { Play, Star } from 'lucide-react';
 import { useTranslations } from 'next-intl';
+import { useState } from 'react';
+
+const FALLBACK_THUMBNAIL = '/thumbnails/_fallback.png';
 
 interface SeriesCardProps {
   id: string;
@@ -24,15 +27,19 @@ export default function SeriesCard({
 }: SeriesCardProps) {
   const t = useTranslations('seriesCard');
   const tg = useTranslations('genres');
+  const [imgSrc, setImgSrc] = useState(thumbnail || FALLBACK_THUMBNAIL);
   return (
     <Link href={`/series/${id}`}>
       <div className="group relative aspect-[9/16] rounded-2xl overflow-hidden bg-gray-800 cursor-pointer">
         <Image
-          src={thumbnail}
+          src={imgSrc}
           alt={title}
           fill
           className="object-cover transition-transform duration-300 group-hover:scale-110"
           sizes="(max-width: 768px) 50vw, 33vw"
+          onError={() => {
+            if (imgSrc !== FALLBACK_THUMBNAIL) setImgSrc(FALLBACK_THUMBNAIL);
+          }}
         />
         
         <div className="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity">
