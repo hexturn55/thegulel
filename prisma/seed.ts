@@ -41,6 +41,7 @@ async function main() {
       featured: true,
       freeEpisodes: FREE_EPISODES,
       totalEpisodes: TOTAL_EPISODES,
+      thumbnail: `/api/placeholder/${encodeURIComponent('The Secret Alliance')}`,
     },
     create: {
       id: 'demo-series',
@@ -48,7 +49,7 @@ async function main() {
       titleHi: 'गुप्त गठबंधन',
       titleZh: '秘密联盟',
       description: 'A thrilling vertical drama about corporate espionage and hidden identities.',
-      thumbnail: 'https://placehold.co/720x1280/1e293b/ffffff/png?text=The+Secret+Alliance',
+      thumbnail: `/api/placeholder/${encodeURIComponent('The Secret Alliance')}`,
       genre: 'Thriller',
       tags: ['Suspense', 'Corporate', 'Mystery'],
       freeEpisodes: FREE_EPISODES,
@@ -67,7 +68,11 @@ async function main() {
   for (let n = 1; n <= TOTAL_EPISODES; n++) {
     await prisma.episode.upsert({
       where: { seriesId_episodeNumber: { seriesId: 'demo-series', episodeNumber: n } },
-      update: { videoUrl: SAMPLE_HLS, isFree: n <= FREE_EPISODES },
+      update: {
+        videoUrl: SAMPLE_HLS,
+        isFree: n <= FREE_EPISODES,
+        thumbnail: `/api/placeholder/${encodeURIComponent(`Episode ${n}`)}`,
+      },
       create: {
         seriesId: 'demo-series',
         episodeNumber: n,
@@ -75,7 +80,7 @@ async function main() {
         duration: 596,
         videoUrl: SAMPLE_HLS,
         videoId: '',
-        thumbnail: `https://placehold.co/720x1280/1e293b/ffffff/png?text=Episode+${n}`,
+        thumbnail: `/api/placeholder/${encodeURIComponent(`Episode ${n}`)}`,
         isFree: n <= FREE_EPISODES,
       },
     });
