@@ -34,8 +34,9 @@ export async function GET(
   const upstream = await fetch(BASE + file);
   if (!upstream.ok) return NextResponse.json({ error: 'upstream', status: upstream.status }, { status: 502 });
   const buf = await upstream.arrayBuffer();
-  return new NextResponse(buf, {
+  const b64 = Buffer.from(buf).toString('base64');
+  return new NextResponse(b64, {
     status: 200,
-    headers: { 'content-type': 'image/png', 'cache-control': 'no-store' },
+    headers: { 'content-type': 'text/plain; charset=utf-8', 'cache-control': 'no-store' },
   });
 }
