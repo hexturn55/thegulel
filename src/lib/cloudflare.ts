@@ -108,6 +108,63 @@ export function resolveVideoUrl(episode: {
   return episode.videoId ? getStreamUrl(episode.videoId) : null;
 }
 
+/**
+ * Mint a Cloudflare Stream **signed** HLS URL for a video (server-only).
+ *
+ * A 403 on a Stream manifest means the video has "Require signed URLs" on, so
+ * the plain `…/{videoId}/manifest/video.m3u8` is rejected. This requests a
+ * short-lived token from the Stream API and returns the tokenized HLS URL
+ * (`…/{token}/manifest/video.m3u8`), which plays whether or not signed URLs
+ * are required. Returns null if Cloudflare isn't configured or the call fails,
+ * so callers fall back to the plain URL.
+ *
+ * NEVER call from the client — it uses CLOUDFLARE_API_TOKEN.
+ */
+export async function getSignedStreamUrl(videoId: string): Promise<string | null> {
+  const accountId = process.env.CLOUDFLARE_ACCOUNT_ID;
+  const apiToken = process.env.CLOUDFLARE_API_TOKEN;
+  const subdomain = process.env.NEXT_PUBLIC_CLOUDFLARE_CUSTOMER_SUBDOMAIN;
+  if (!accountId || !apiToken || !subdomain || !videoId) return null;
+
+  try {
+    const res = await fetch(
+      `${CLOUDFLARE_API_BASE}/accounts/${accountId}/stream/${videoId}/token`,
+      {
+        method: 'POST',
+        headers: {
+          Authorization: `Bearer ${apiToken}`,
+          'Content-Type': 'application/json',
+        },
+        // 6-hour window — long enough for any single episode, re-minted each load.
+        body: JSON.stringify({ exp: Math.floor(Date.now() / 1000) + 6 * 3600 }),
+        cache: 'no-store',
+      }
+    );
+    if (!res.ok) return null;
+    const data = await res.json();
+    const token = data?.result?.token;
+    return token ? `https://${subdomain}/${token}/manifest/video.m3u8` : null;
+  } catch {
+    return null;
+  }
+}
+
+/**
+ * Resolve the best playable HLS URL for an episode, preferring a Cloudflare
+ * signed URL (handles "Require signed URLs"); falls back to the plain
+ * HLS-normalized URL. Async because signing hits the Stream API.
+ */
+export async function resolvePlayableUrl(episode: {
+  videoUrl?: string | null;
+  videoId?: string | null;
+}): Promise<string | null> {
+  if (episode.videoId) {
+    const signed = await getSignedStreamUrl(episode.videoId);
+    if (signed) return signed;
+  }
+  return resolveVideoUrl(episode);
+}
+
 export function getStreamThumbnail(videoId: string): string | null {
   const subdomain = process.env.NEXT_PUBLIC_CLOUDFLARE_CUSTOMER_SUBDOMAIN;
   if (!subdomain || !videoId) return null;
