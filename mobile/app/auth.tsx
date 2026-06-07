@@ -14,7 +14,7 @@ import { useAuth } from '@/lib/auth';
 
 export default function AuthScreen() {
   const router = useRouter();
-  const { signInWithOtp, verifyOtp } = useAuth();
+  const { signInWithOtp, verifyOtp, signInWithGoogle } = useAuth();
   const [step, setStep] = useState<'phone' | 'code'>('phone');
   const [phone, setPhone] = useState('');
   const [code, setCode] = useState('');
@@ -33,6 +33,19 @@ export default function AuthScreen() {
       setStep('code');
     } catch (e) {
       setError(e instanceof Error ? e.message : 'Could not send the code.');
+    } finally {
+      setBusy(false);
+    }
+  }
+
+  async function google() {
+    setError(null);
+    setBusy(true);
+    try {
+      await signInWithGoogle();
+      router.back();
+    } catch (e) {
+      setError(e instanceof Error ? e.message : 'Google sign-in failed.');
     } finally {
       setBusy(false);
     }
@@ -108,6 +121,23 @@ export default function AuthScreen() {
           <Text style={styles.linkText}>Use a different number</Text>
         </Pressable>
       )}
+
+      {step === 'phone' && (
+        <>
+          <View style={styles.dividerRow}>
+            <View style={styles.divider} />
+            <Text style={styles.dividerText}>or</Text>
+            <View style={styles.divider} />
+          </View>
+          <Pressable
+            style={[styles.googleButton, busy && styles.buttonDisabled]}
+            disabled={busy}
+            onPress={google}
+          >
+            <Text style={styles.googleText}>Continue with Google</Text>
+          </Pressable>
+        </>
+      )}
     </KeyboardAvoidingView>
   );
 }
@@ -135,4 +165,14 @@ const styles = StyleSheet.create({
   buttonText: { color: '#fff', fontSize: 16, fontWeight: '700' },
   link: { marginTop: 16, alignItems: 'center' },
   linkText: { color: '#9CA3AF' },
+  dividerRow: { flexDirection: 'row', alignItems: 'center', marginVertical: 20, gap: 12 },
+  divider: { flex: 1, height: 1, backgroundColor: '#2A2A33' },
+  dividerText: { color: '#6B7280' },
+  googleButton: {
+    backgroundColor: '#fff',
+    borderRadius: 12,
+    padding: 16,
+    alignItems: 'center',
+  },
+  googleText: { color: '#1F2937', fontSize: 16, fontWeight: '700' },
 });
