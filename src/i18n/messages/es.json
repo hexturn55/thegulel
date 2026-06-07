@@ -45,7 +45,10 @@
   },
   "player": {
     "swipePrev": "Desliza hacia arriba para el anterior",
-    "swipeNext": "Desliza hacia abajo para el siguiente episodio"
+    "swipeNext": "Desliza hacia abajo para el siguiente episodio",
+    "stayTuned": "Sigue atento para más",
+    "moreSoon": "Pronto habrá nuevos episodios.",
+    "replay": "Volver a ver"
   },
   "search": {
     "placeholder": "Buscar series, géneros...",
