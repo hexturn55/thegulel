@@ -1,7 +1,7 @@
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
 import prisma from '@/lib/prisma';
-import { resolveVideoUrl } from '@/lib/cloudflare';
+import { resolvePlayableUrl } from '@/lib/cloudflare';
 import { getAuthUser } from '@/lib/auth';
 import { hasActiveVip } from '@/lib/subscription';
 import WatchClient from './WatchClient';
@@ -69,7 +69,7 @@ export default async function WatchPage({ params }: PageProps) {
   }
 
   const { episode, isUnlocked, nextEpisode, prevEpisode } = data;
-  const videoUrl = resolveVideoUrl(episode);
+  const videoUrl = await resolvePlayableUrl(episode);
 
   // No playable source configured — show a graceful message instead of a crash.
   if (!videoUrl) {
