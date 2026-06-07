@@ -2,7 +2,7 @@
 
 import { useCallback, useEffect, useRef, useState } from 'react';
 import Hls from 'hls.js';
-import { Play, Pause, Volume2, VolumeX, Subtitles, ChevronUp, ChevronDown } from 'lucide-react';
+import { Play, Pause, Volume2, VolumeX, Subtitles, ChevronUp, SkipBack, SkipForward } from 'lucide-react';
 import { useTranslations } from 'next-intl';
 import { usePlayerStore } from '@/stores/usePlayerStore';
 import { useAuthStore } from '@/stores/useAuthStore';
@@ -336,17 +336,17 @@ export default function VideoPlayer({
 
           {/* Bottom controls */}
           <div
-            className="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/80 to-transparent"
+            className="absolute bottom-0 left-0 right-0 px-4 pt-10 pb-5 bg-gradient-to-t from-black via-black/70 to-transparent"
             onClick={(e) => e.stopPropagation()}
           >
             {/* Progress bar */}
             <div className="mb-4">
-              <div className="flex items-center justify-between text-white text-xs mb-1">
+              <div className="flex items-center justify-between text-white text-xs mb-1.5 [text-shadow:_0_1px_2px_rgb(0_0_0_/_80%)]">
                 <span>{formatDuration(Math.floor(currentTime))}</span>
                 <span>{formatDuration(Math.floor(duration))}</span>
               </div>
               <div
-                className="w-full h-2 bg-white/30 rounded-full overflow-hidden cursor-pointer"
+                className="w-full h-2 bg-white/40 rounded-full overflow-hidden cursor-pointer"
                 onClick={(e) => {
                   const rect = e.currentTarget.getBoundingClientRect();
                   const frac = (e.clientX - rect.left) / rect.width;
@@ -362,23 +362,36 @@ export default function VideoPlayer({
             </div>
 
             {/* Control buttons */}
-            <div className="flex items-center justify-between">
-              <button
-                onClick={togglePlay}
-                className="p-3 rounded-full bg-white/20 backdrop-blur-sm hover:bg-white/30 transition"
-              >
-                {isPlaying ? (
-                  <Pause className="w-6 h-6 text-white" />
-                ) : (
-                  <Play className="w-6 h-6 text-white" />
+            <div className="flex items-center justify-between gap-2">
+              <div className="flex items-center gap-2">
+                {hasPrev && (
+                  <button
+                    onClick={() => onPrevEpisode?.()}
+                    aria-label="Previous episode"
+                    className="p-3 rounded-full bg-black/50 ring-1 ring-white/25 backdrop-blur-sm hover:bg-black/70 transition shadow-lg"
+                  >
+                    <SkipBack className="w-5 h-5 text-white fill-white" />
+                  </button>
                 )}
-              </button>
+                <button
+                  onClick={togglePlay}
+                  aria-label={isPlaying ? 'Pause' : 'Play'}
+                  className="p-3.5 rounded-full bg-white text-black ring-1 ring-black/10 hover:bg-white/90 transition shadow-lg"
+                >
+                  {isPlaying ? (
+                    <Pause className="w-6 h-6 fill-black" />
+                  ) : (
+                    <Play className="w-6 h-6 fill-black" />
+                  )}
+                </button>
+              </div>
 
-              <div className="flex gap-2">
+              <div className="flex items-center gap-2">
                 <button
                   onClick={toggleSubtitles}
-                  className={`p-3 rounded-full backdrop-blur-sm transition ${
-                    subtitlesEnabled ? 'bg-red-500' : 'bg-white/20 hover:bg-white/30'
+                  aria-label="Subtitles"
+                  className={`p-3 rounded-full ring-1 ring-white/25 backdrop-blur-sm transition shadow-lg ${
+                    subtitlesEnabled ? 'bg-red-500 hover:bg-red-600' : 'bg-black/50 hover:bg-black/70'
                   }`}
                 >
                   <Subtitles className="w-5 h-5 text-white" />
@@ -386,7 +399,8 @@ export default function VideoPlayer({
 
                 <button
                   onClick={toggleMute}
-                  className="p-3 rounded-full bg-white/20 backdrop-blur-sm hover:bg-white/30 transition"
+                  aria-label={isMuted ? 'Unmute' : 'Mute'}
+                  className="p-3 rounded-full bg-black/50 ring-1 ring-white/25 backdrop-blur-sm hover:bg-black/70 transition shadow-lg"
                 >
                   {isMuted ? (
                     <VolumeX className="w-5 h-5 text-white" />
@@ -394,16 +408,19 @@ export default function VideoPlayer({
                     <Volume2 className="w-5 h-5 text-white" />
                   )}
                 </button>
+
+                {hasNext && (
+                  <button
+                    onClick={() => onNextEpisode?.()}
+                    aria-label="Next episode"
+                    className="flex items-center gap-1.5 pl-4 pr-3 py-3 rounded-full bg-red-500 ring-1 ring-white/25 hover:bg-red-600 transition shadow-lg text-white font-semibold text-sm"
+                  >
+                    <span>{t('next')}</span>
+                    <SkipForward className="w-5 h-5 fill-white" />
+                  </button>
+                )}
               </div>
             </div>
-
-            {/* Next episode hint */}
-            {hasNext && (
-              <div className="mt-4 flex items-center justify-center text-white/60 text-sm">
-                <ChevronDown className="w-4 h-4" />
-                <span className="ml-1">{t('swipeNext')}</span>
-              </div>
-            )}
           </div>
         </>
       )}

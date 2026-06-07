@@ -48,7 +48,8 @@
     "swipeNext": "Swipe down for next episode",
     "stayTuned": "Stay tuned for more",
     "moreSoon": "New episodes are coming soon.",
-    "replay": "Replay"
+    "replay": "Replay",
+    "next": "Next"
   },
   "search": {
     "placeholder": "Search series, genres...",
