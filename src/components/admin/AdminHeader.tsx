@@ -19,9 +19,26 @@ const BREADCRUMB_MAP: Record<string, string> = {
   settings: 'Settings',
 };
 
+// Paths that have a real admin page — only these get linkified in the
+// breadcrumb. Intermediate segments like ".../episodes" have no page and
+// would 404 if clicked, so they render as plain text.
+const NAVIGABLE_ADMIN_PATHS: RegExp[] = [
+  /^\/admin$/,
+  /^\/admin\/series$/,
+  /^\/admin\/series\/[^/]+$/,
+  /^\/admin\/users$/,
+  /^\/admin\/users\/[^/]+$/,
+  /^\/admin\/analytics$/,
+  /^\/admin\/settings$/,
+];
+
+function isNavigable(path: string) {
+  return NAVIGABLE_ADMIN_PATHS.some((re) => re.test(path));
+}
+
 function getBreadcrumbs(pathname: string) {
   const segments = pathname.split('/').filter(Boolean);
-  const crumbs: { label: string; href: string }[] = [];
+  const crumbs: { label: string; href: string; navigable: boolean }[] = [];
   let path = '';
 
   for (const segment of segments) {
@@ -30,7 +47,7 @@ function getBreadcrumbs(pathname: string) {
     const label = segment.match(/^[0-9a-f-]{20,}$/i)
       ? 'Detail'
       : BREADCRUMB_MAP[segment] ?? segment;
-    crumbs.push({ label, href: path });
+    crumbs.push({ label, href: path, navigable: isNavigable(path) });
   }
 
   return crumbs;
@@ -56,8 +73,16 @@ export default function AdminHeader({ onMobileMenuToggle }: AdminHeaderProps) {
         {breadcrumbs.map((crumb, i) => (
           <div key={crumb.href} className="flex items-center gap-1.5 shrink-0">
             {i > 0 && <ChevronRight size={14} className="text-gray-600" />}
-            {i === breadcrumbs.length - 1 ? (
-              <span className="text-sm text-white font-medium">{crumb.label}</span>
+            {i === breadcrumbs.length - 1 || !crumb.navigable ? (
+              <span
+                className={
+                  i === breadcrumbs.length - 1
+                    ? 'text-sm text-white font-medium'
+                    : 'text-sm text-gray-500'
+                }
+              >
+                {crumb.label}
+              </span>
             ) : (
               <Link
                 href={crumb.href}
