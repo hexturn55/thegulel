@@ -12,6 +12,7 @@ export default function Header() {
   const { user, isAuthenticated, logout, checkSession } = useAuthStore();
   const t = useTranslations('header');
   const [menuOpen, setMenuOpen] = useState(false);
+  const [avatarError, setAvatarError] = useState(false);
   const menuRef = useRef<HTMLDivElement>(null);
 
   // Sync auth state on mount
@@ -77,12 +78,18 @@ export default function Header() {
                   className="flex items-center gap-2 p-1 rounded-full hover:bg-gray-800 transition focus:outline-none"
                   aria-label="User menu"
                 >
-                  {user.avatar ? (
-                    <Image
+                  {user.avatar && !avatarError ? (
+                    // Plain <img> (not next/image): avatar hosts vary by OAuth
+                    // provider and aren't all allowlisted; no-referrer avoids
+                    // Google/Facebook hotlink blocking; onError falls back to
+                    // initials so an expired/blocked URL never shows broken.
+                    <img
                       src={user.avatar}
                       alt={user.name ?? 'User'}
                       width={32}
                       height={32}
+                      referrerPolicy="no-referrer"
+                      onError={() => setAvatarError(true)}
                       className="w-8 h-8 rounded-full object-cover ring-2 ring-gray-700"
                     />
                   ) : (
