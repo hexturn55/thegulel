@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import {
   ActivityIndicator,
+  Alert,
   FlatList,
   Pressable,
   StyleSheet,
@@ -8,15 +9,58 @@ import {
   View,
 } from 'react-native';
 import { Stack, useLocalSearchParams, useRouter } from 'expo-router';
-import type { Episode } from '@gulel/shared';
+import { ApiRequestError, type Episode } from '@gulel/shared';
 import { api } from '@/lib/api';
+import { useAuth } from '@/lib/auth';
 
 export default function SeriesScreen() {
   const { id } = useLocalSearchParams<{ id: string }>();
   const router = useRouter();
+  const { user, refresh } = useAuth();
   const [episodes, setEpisodes] = useState<Episode[]>([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
+  const [unlockingId, setUnlockingId] = useState<string | null>(null);
+
+  function play(ep: Episode) {
+    router.push({
+      pathname: '/watch/[episodeId]',
+      params: { episodeId: ep.id, url: ep.videoUrl },
+    });
+  }
+
+  async function open(ep: Episode) {
+    // Free episodes and active VIPs play immediately.
+    if (ep.isFree || user?.isVip) return play(ep);
+    if (!user) return router.push('/auth');
+
+    Alert.alert('Unlock episode', `Spend coins to unlock “${ep.title}”?`, [
+      { text: 'Cancel', style: 'cancel' },
+      {
+        text: 'Unlock',
+        onPress: async () => {
+          setUnlockingId(ep.id);
+          try {
+            await api.unlockEpisode(ep.id);
+            await refresh();
+            play(ep);
+          } catch (e) {
+            if (e instanceof ApiRequestError) {
+              // Already purchased previously — just play it.
+              if (/already unlocked/i.test(e.message)) return play(ep);
+              // Not enough coins — send them to the paywall.
+              if (e.status === 400 || /insufficient/i.test(e.message)) {
+                return router.push('/coins');
+              }
+            }
+            Alert.alert('Could not unlock', e instanceof Error ? e.message : 'Try again.');
+          } finally {
+            setUnlockingId(null);
+          }
+        },
+      },
+    ]);
+  }
 
   useEffect(() => {
     if (!id) return;
@@ -51,22 +95,25 @@ export default function SeriesScreen() {
         renderItem={({ item }) => (
           <Pressable
             style={styles.row}
-            onPress={() =>
-              router.push({
-                pathname: '/watch/[episodeId]',
-                params: { episodeId: item.id, url: item.videoUrl },
-              })
-            }
+            disabled={unlockingId !== null}
+            onPress={() => void open(item)}
           >
             <View style={styles.iconWrap}>
-              <Text style={styles.icon}>{item.isFree ? '▶' : '🔒'}</Text>
+              {unlockingId === item.id ? (
+                <ActivityIndicator color="#fff" size="small" />
+              ) : (
+                <Text style={styles.icon}>
+                  {item.isFree || user?.isVip ? '▶' : '🔒'}
+                </Text>
+              )}
             </View>
             <View style={styles.meta}>
               <Text style={styles.title}>
                 E{item.episodeNumber} · {item.title}
               </Text>
               <Text style={styles.sub}>
-                {Math.round(item.duration / 60)} min{item.isFree ? '' : ' · locked'}
+                {Math.round(item.duration / 60)} min
+                {item.isFree || user?.isVip ? '' : ' · locked'}
               </Text>
             </View>
           </Pressable>

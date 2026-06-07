@@ -90,24 +90,30 @@ We wrap this with **RevenueCat** (`react-native-purchases`, already installed):
 - `mobile/lib/purchases.ts` — native implementation (StoreKit/Billing).
 - `mobile/lib/purchases.web.ts` — no-op stub so the web preview still builds.
 
-**Backend work to do (server side):**
-1. Configure products in App Store Connect + Play Console (coin packs, VIP plans).
+**The webhook is already implemented** at `src/app/api/webhooks/revenuecat/route.ts`
+(idempotent coin credit + VIP grant/expire, mirroring the Stripe pattern), with
+the product→grant mapping in `src/lib/revenuecat.ts`. Remaining setup is store/
+dashboard configuration:
+1. Configure products in App Store Connect + Play Console (coin packs, VIP plans)
+   using the identifiers in `src/lib/revenuecat.ts` (e.g. `com.gulel.coins.500`).
 2. Map them in RevenueCat; set the public SDK keys as
-   `EXPO_PUBLIC_RC_IOS_KEY` / `EXPO_PUBLIC_RC_ANDROID_KEY`.
-3. Add a **RevenueCat webhook** endpoint to the Next.js API (e.g.
-   `src/app/api/webhooks/revenuecat/route.ts`) that credits coins / grants VIP
-   using the same **idempotent `CoinTransaction.providerRef`** pattern the
-   existing Stripe/Razorpay webhooks use (`revenuecat:<event_id>`).
+   `EXPO_PUBLIC_RC_IOS_KEY` / `EXPO_PUBLIC_RC_ANDROID_KEY` (mobile) and point the
+   RevenueCat webhook at `/api/webhooks/revenuecat` with `REVENUECAT_WEBHOOK_SECRET`.
 
 ---
 
-## Auth — one server change needed
+## Auth — unified (done)
 
-The web API authenticates via Supabase **cookies** (`createServerSupabaseClient`
-reads cookies). Mobile sends the Supabase **access token as a Bearer header**
-(the shared API client already does this via `getToken`). Update the server's
-auth helper to also accept `Authorization: Bearer <token>` and validate it with
-`supabase.auth.getUser(token)`, so the same routes serve both web and mobile.
+The server now authenticates from **either** the Supabase session cookie (web)
+**or** an `Authorization: Bearer <token>` header (mobile), via
+`getSupabaseUser()` in `src/lib/supabase-server.ts`. Every authenticated route
+(`auth/me`, `user/*`, `episodes/unlock`, `watch/progress`, `coins/*`,
+`subscriptions`, `search`) goes through it, so the same API serves both
+platforms with no per-route changes.
+
+The mobile app drives this in `mobile/lib/auth.tsx` (`AuthProvider`/`useAuth`):
+phone-OTP sign-in via Supabase, then the access token is sent as a bearer token
+by the shared API client.
 
 ---
 
@@ -122,11 +128,21 @@ auth helper to also accept `Authorization: Bearer <token>` and validate it with
 
 ---
 
+## What's implemented in the app
+
+- **Screens** (`mobile/app/`): catalog (`index`), series episodes (`series/[id]`),
+  fullscreen player (`watch/[episodeId]`), phone-OTP sign-in (`auth`),
+  coins paywall (`coins`), account (`account`).
+- **Unlock loop**: tapping a locked episode confirms, spends coins via
+  `episodes/unlock` (VIP/balance enforced server-side), and falls through to the
+  paywall when the balance is short.
+- **`eas.json`** with development / preview (iOS simulator) / production profiles.
+
 ## Suggested next steps
 
-1. `eas build:configure` and run a first **internal/TestFlight** build.
-2. Implement the **RevenueCat webhook** + **Bearer auth** server changes above.
-3. Add **auth screens** (Supabase phone/OAuth) and a **coins/paywall** screen
-   wired to RevenueCat offerings.
-4. Add **push notifications** (`expo-notifications`) for new episodes.
-5. Optional polish: vertical swipe feed, offline downloads, Chromecast/AirPlay.
+1. Configure RevenueCat + store products, then `eas build --profile development`
+   for a first device/TestFlight build.
+2. Add **OAuth sign-in** (Google/Apple) alongside phone OTP.
+3. Add **push notifications** (`expo-notifications`) for new episodes.
+4. Polish: vertical swipe feed, resume-from-history, offline downloads,
+   Chromecast/AirPlay.
