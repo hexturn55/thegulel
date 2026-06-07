@@ -34,12 +34,15 @@ export default function VideoPlayer({
 }: VideoPlayerProps) {
   const videoRef = useRef<HTMLVideoElement>(null);
   const hlsRef = useRef<Hls | null>(null);
+  const recoverRef = useRef(0);
   const [showControls, setShowControls] = useState(true);
-  const [isMuted, setIsMuted] = useState(false);
+  const [isMuted, setIsMuted] = useState(true);
   const [progress, setProgress] = useState(0);
   const [duration, setDuration] = useState(0);
   const [isBuffering, setIsBuffering] = useState(true);
   const [showEndCard, setShowEndCard] = useState(false);
+  const [error, setError] = useState<string | null>(null);
+  const [reloadKey, setReloadKey] = useState(0);
   const touchStartY = useRef(0);
 
   const { isPlaying, setIsPlaying, currentTime, setCurrentTime, subtitlesEnabled, toggleSubtitles } = usePlayerStore();
@@ -52,24 +55,45 @@ export default function VideoPlayer({
     const video = videoRef.current;
     if (!video || !canPlay) return;
     setShowEndCard(false);
+    setError(null);
+    setIsBuffering(true);
+    recoverRef.current = 0;
+
+    // Vertical-drama UX: start muted so the browser permits autoplay.
+    video.muted = true;
+    setIsMuted(true);
+
+    const tryAutoplay = () => {
+      video
+        .play()
+        .then(() => setIsPlaying(true))
+        .catch(() => setIsPlaying(false)); // blocked even muted — user can tap
+    };
 
     if (Hls.isSupported()) {
-      const hls = new Hls({
-        enableWorker: true,
-        lowLatencyMode: false,
-      });
-      
+      const hls = new Hls({ enableWorker: true, lowLatencyMode: false });
       hls.loadSource(videoUrl);
       hls.attachMedia(video);
-      
+
       hls.on(Hls.Events.MANIFEST_PARSED, () => {
-        console.log('HLS manifest loaded');
         setIsBuffering(false);
+        tryAutoplay();
       });
 
-      hls.on(Hls.Events.ERROR, (event, data) => {
-        if (data.fatal) {
+      hls.on(Hls.Events.ERROR, (_event, data) => {
+        if (!data.fatal) return;
+        // Recover from transient network/media errors instead of dying silently.
+        if (data.type === Hls.ErrorTypes.NETWORK_ERROR && recoverRef.current < 3) {
+          recoverRef.current += 1;
+          hls.startLoad();
+        } else if (data.type === Hls.ErrorTypes.MEDIA_ERROR && recoverRef.current < 3) {
+          recoverRef.current += 1;
+          hls.recoverMediaError();
+        } else {
           console.error('HLS fatal error:', data);
+          setIsBuffering(false);
+          setError('This video could not be loaded.');
+          hls.destroy();
         }
       });
 
@@ -77,11 +101,30 @@ export default function VideoPlayer({
 
       return () => {
         hls.destroy();
+        hlsRef.current = null;
       };
     } else if (video.canPlayType('application/vnd.apple.mpegurl')) {
+      // Native HLS (Safari/iOS)
       video.src = videoUrl;
+      const onReady = () => {
+        setIsBuffering(false);
+        tryAutoplay();
+      };
+      const onErr = () => {
+        setIsBuffering(false);
+        setError('This video could not be loaded.');
+      };
+      video.addEventListener('loadedmetadata', onReady, { once: true });
+      video.addEventListener('error', onErr, { once: true });
+      return () => {
+        video.removeEventListener('loadedmetadata', onReady);
+        video.removeEventListener('error', onErr);
+      };
+    } else {
+      setIsBuffering(false);
+      setError('Your browser cannot play this video.');
     }
-  }, [videoUrl, canPlay]);
+  }, [videoUrl, canPlay, reloadKey]);
 
   useEffect(() => {
     const video = videoRef.current;
@@ -202,8 +245,30 @@ export default function VideoPlayer({
         ref={videoRef}
         className="w-full h-full object-contain"
         playsInline
+        autoPlay
+        muted
         onClick={(e) => e.stopPropagation()}
       />
+
+      {/* Playback error — visible message + retry instead of a silent spinner */}
+      {error && (
+        <div
+          className="absolute inset-0 z-30 flex flex-col items-center justify-center bg-black/85 text-center px-6"
+          onClick={(e) => e.stopPropagation()}
+        >
+          <p className="text-white text-lg font-semibold mb-2">{error}</p>
+          <button
+            onClick={() => {
+              setError(null);
+              setReloadKey((k) => k + 1);
+            }}
+            className="mt-3 flex items-center gap-2 bg-gradient-to-r from-red-500 to-pink-500 hover:from-red-600 hover:to-pink-600 text-white font-semibold px-6 py-3 rounded-full transition"
+          >
+            <Play className="w-4 h-4 fill-white" />
+            {t('replay')}
+          </button>
+        </div>
+      )}
 
       {/* End card — shown after the last/only episode finishes */}
       {showEndCard && (
