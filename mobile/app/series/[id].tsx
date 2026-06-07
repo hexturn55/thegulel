@@ -12,6 +12,7 @@ import { Stack, useLocalSearchParams, useRouter } from 'expo-router';
 import { ApiRequestError, type Episode } from '@gulel/shared';
 import { api } from '@/lib/api';
 import { useAuth } from '@/lib/auth';
+import { mediaUrl } from '@/lib/media';
 import { sampleEpisodes } from '@/lib/sampleData';
 
 export default function SeriesScreen() {
@@ -25,7 +26,7 @@ export default function SeriesScreen() {
   function play(ep: Episode) {
     router.push({
       pathname: '/watch/[episodeId]',
-      params: { episodeId: ep.id, url: ep.videoUrl },
+      params: { episodeId: ep.id, url: mediaUrl(ep.videoUrl) },
     });
   }
 

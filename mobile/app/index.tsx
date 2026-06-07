@@ -13,6 +13,7 @@ import { Stack, useRouter } from 'expo-router';
 import { GENRES, type Genre, type SeriesCard } from '@gulel/shared';
 import { api } from '@/lib/api';
 import { useAuth } from '@/lib/auth';
+import { mediaUrl } from '@/lib/media';
 import { SAMPLE_SERIES } from '@/lib/sampleData';
 
 function HeaderButton() {
@@ -102,7 +103,7 @@ export default function CatalogScreen() {
               style={styles.card}
               onPress={() => router.push(`/series/${item.id}`)}
             >
-              <Image source={{ uri: item.thumbnail }} style={styles.thumb} />
+              <Image source={{ uri: mediaUrl(item.thumbnail) }} style={styles.thumb} />
               <Text numberOfLines={1} style={styles.cardTitle}>
                 {item.title}
               </Text>
