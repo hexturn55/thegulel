@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server';
-import { createServerSupabaseClient } from '@/lib/supabase-server';
+import { createServerSupabaseClient, getSupabaseUser } from '@/lib/supabase-server';
 import prisma from '@/lib/prisma';
 
 /**
@@ -13,10 +13,7 @@ import prisma from '@/lib/prisma';
  * Does NOT delete the Supabase Auth user (requires admin API).
  */
 export async function POST(request: NextRequest) {
-  const supabase = await createServerSupabaseClient();
-  const {
-    data: { user: supabaseUser },
-  } = await supabase.auth.getUser();
+  const supabaseUser = await getSupabaseUser();
 
   if (!supabaseUser) {
     return NextResponse.json({ error: 'Unauthorized' }, { status: 401 });
@@ -63,8 +60,14 @@ export async function POST(request: NextRequest) {
       prisma.user.delete({ where: { id: userId } }),
     ]);
 
-    // Sign out from Supabase (best effort — user is already deleted from DB)
-    await supabase.auth.signOut();
+    // Sign out from Supabase (best effort — clears the web cookie session if
+    // present; mobile clients clear their own session locally).
+    try {
+      const supabase = await createServerSupabaseClient();
+      await supabase.auth.signOut();
+    } catch {
+      // no cookie session (e.g. bearer-token caller) — nothing to sign out
+    }
 
     return NextResponse.json({ success: true, message: 'Account deleted.' });
   } catch (error) {

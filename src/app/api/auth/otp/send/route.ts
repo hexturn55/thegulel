@@ -1,12 +1,12 @@
 import { NextRequest, NextResponse } from 'next/server';
-import { createAdminSupabaseClient } from '@/lib/supabase-server';
 
 /**
  * POST /api/auth/otp/send
- * Sends a phone OTP via Supabase Auth (replaces custom in-memory store).
  *
- * Supabase handles the SMS via Twilio/MessageBird configured in the
- * Supabase dashboard under Authentication → Phone providers.
+ * Compatibility shim. Phone OTP is sent by the Supabase client directly from
+ * the browser/app via `supabase.auth.signInWithOtp({ phone })` (Supabase sends
+ * the SMS through the provider configured under Authentication → Phone).
+ * This route only validates the number and points callers at the client SDK.
  */
 export async function POST(request: NextRequest) {
   try {
@@ -19,20 +19,9 @@ export async function POST(request: NextRequest) {
       );
     }
 
-    // Use admin client to trigger OTP — avoids CORS issues in server-side context
-    const supabase = createAdminSupabaseClient();
-    const { error } = await supabase.auth.admin.generateLink({
-      type: 'phone_change', // Note: for sign-in use signInWithOtp on the client
-      // The actual OTP send must come from the browser client (signInWithOtp)
-      // This route remains for backwards-compat — the login page calls signInWithOtp directly
-      email: '', // not used
-    });
-
-    // For phone OTP, the client calls supabase.auth.signInWithOtp({ phone }) directly.
-    // This server route is kept as a compatibility shim.
     return NextResponse.json({
       success: true,
-      message: 'Use Supabase client signInWithOtp({ phone }) directly from the browser.',
+      message: 'Use the Supabase client signInWithOtp({ phone }) from the browser/app.',
     });
   } catch (error) {
     console.error('Send OTP error:', error);

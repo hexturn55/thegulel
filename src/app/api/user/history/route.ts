@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server';
-import { createServerSupabaseClient } from '@/lib/supabase-server';
+import { getSupabaseUser } from '@/lib/supabase-server';
 import prisma from '@/lib/prisma';
 
 /**
@@ -12,10 +12,7 @@ import prisma from '@/lib/prisma';
  *   limit — items per page (default: 20)
  */
 export async function GET(request: NextRequest) {
-  const supabase = await createServerSupabaseClient();
-  const {
-    data: { user: supabaseUser },
-  } = await supabase.auth.getUser();
+  const supabaseUser = await getSupabaseUser();
 
   if (!supabaseUser) {
     return NextResponse.json({ error: 'Unauthorized' }, { status: 401 });

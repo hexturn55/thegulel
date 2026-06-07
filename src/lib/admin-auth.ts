@@ -1,9 +1,8 @@
-import { createServerSupabaseClient } from './supabase-server';
+import { getSupabaseUser } from './supabase-server';
 import prisma from './prisma';
 
 export async function requireAdmin() {
-  const supabase = await createServerSupabaseClient();
-  const { data: { user: supabaseUser } } = await supabase.auth.getUser();
+  const supabaseUser = await getSupabaseUser();
 
   if (!supabaseUser) return null;
 

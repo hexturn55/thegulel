@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server';
-import { createServerSupabaseClient } from '@/lib/supabase-server';
+import { getSupabaseUser } from '@/lib/supabase-server';
 import prisma from '@/lib/prisma';
 
 /**
@@ -7,10 +7,7 @@ import prisma from '@/lib/prisma';
  * Returns the current user's preferences (locale + hardcoded notification defaults).
  */
 export async function GET(request: NextRequest) {
-  const supabase = await createServerSupabaseClient();
-  const {
-    data: { user: supabaseUser },
-  } = await supabase.auth.getUser();
+  const supabaseUser = await getSupabaseUser();
 
   if (!supabaseUser) {
     return NextResponse.json({ error: 'Unauthorized' }, { status: 401 });
@@ -49,10 +46,7 @@ export async function GET(request: NextRequest) {
  * Body: { locale: "en" | "hi" | "zh" }
  */
 export async function PATCH(request: NextRequest) {
-  const supabase = await createServerSupabaseClient();
-  const {
-    data: { user: supabaseUser },
-  } = await supabase.auth.getUser();
+  const supabaseUser = await getSupabaseUser();
 
   if (!supabaseUser) {
     return NextResponse.json({ error: 'Unauthorized' }, { status: 401 });
