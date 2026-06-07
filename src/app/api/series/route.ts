@@ -10,6 +10,9 @@ export async function GET(request: NextRequest) {
 
     const where: any = {
       status: 'PUBLISHED',
+      // Guard: hide the leftover seed/demo placeholder ("The Secret Alliance"
+      // duplicate) from the catalog. Safe no-op once the row is deleted.
+      id: { not: 'demo-series' },
     };
 
     if (genre && genre !== 'All') {
