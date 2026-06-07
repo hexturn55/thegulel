@@ -90,11 +90,12 @@ export default async function WatchPage({ params }: PageProps) {
   }
 
   return (
-    <div className="fixed inset-0 bg-black">
+    <div className="fixed inset-0 z-50 bg-black">
       <WatchClient
         episodeId={episode.id}
         videoUrl={videoUrl}
         videoId={episode.videoId}
+        seriesId={episode.seriesId}
         isFree={episode.isFree}
         isUnlocked={isUnlocked}
         nextEpisodeId={nextEpisode?.id}

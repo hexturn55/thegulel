@@ -2,7 +2,7 @@
 
 import { useCallback, useEffect, useRef, useState } from 'react';
 import Hls from 'hls.js';
-import { Play, Pause, Volume2, VolumeX, Subtitles, ChevronUp, SkipBack, SkipForward } from 'lucide-react';
+import { Play, Pause, Volume2, VolumeX, Subtitles, ChevronUp, SkipBack, SkipForward, X } from 'lucide-react';
 import { useTranslations } from 'next-intl';
 import { usePlayerStore } from '@/stores/usePlayerStore';
 import { useAuthStore } from '@/stores/useAuthStore';
@@ -15,6 +15,7 @@ interface VideoPlayerProps {
   videoId: string;
   isFree: boolean;
   isUnlocked: boolean;
+  onClose?: () => void;
   onNextEpisode?: () => void;
   onPrevEpisode?: () => void;
   hasNext: boolean;
@@ -27,6 +28,7 @@ export default function VideoPlayer({
   videoId,
   isFree,
   isUnlocked,
+  onClose,
   onNextEpisode,
   onPrevEpisode,
   hasNext,
@@ -251,6 +253,21 @@ export default function VideoPlayer({
         muted
       />
 
+      {/* Close — always visible (the full-screen player covers the app nav) */}
+      {onClose && (
+        <button
+          onClick={(e) => {
+            e.stopPropagation();
+            onClose();
+          }}
+          aria-label="Close"
+          style={{ top: 'calc(0.75rem + env(safe-area-inset-top))' }}
+          className="absolute left-3 z-40 p-2.5 rounded-full bg-black/50 ring-1 ring-white/25 backdrop-blur-sm hover:bg-black/70 transition text-white shadow-lg"
+        >
+          <X className="w-5 h-5" />
+        </button>
+      )}
+
       {/* Playback error — visible message + retry instead of a silent spinner */}
       {error && (
         <div
@@ -336,7 +353,8 @@ export default function VideoPlayer({
 
           {/* Bottom controls */}
           <div
-            className="absolute bottom-0 left-0 right-0 px-4 pt-10 pb-5 bg-gradient-to-t from-black via-black/70 to-transparent"
+            className="absolute bottom-0 left-0 right-0 px-4 pt-10 bg-gradient-to-t from-black via-black/70 to-transparent"
+            style={{ paddingBottom: 'calc(1.25rem + env(safe-area-inset-bottom))' }}
             onClick={(e) => e.stopPropagation()}
           >
             {/* Progress bar */}
