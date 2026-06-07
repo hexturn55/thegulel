@@ -2,6 +2,9 @@
   "name": "gulel-ott",
   "version": "0.1.0",
   "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
   "scripts": {
     "dev": "next dev",
     "build": "prisma generate && next build",
@@ -22,6 +25,7 @@
     "seed": "ts-node --transpile-only --project prisma/tsconfig.seed.json prisma/seed.ts"
   },
   "dependencies": {
+    "@gulel/shared": "*",
     "@prisma/adapter-pg": "^7.5.0",
     "@prisma/client": "^7.5.0",
     "@stripe/stripe-js": "^8.11.0",
