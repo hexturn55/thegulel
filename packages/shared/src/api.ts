@@ -86,22 +86,26 @@ export function createApiClient(options: ApiClientOptions = {}) {
       return data.series;
     },
 
-    /** Episodes for a series (ordered). */
-    getEpisodes(seriesId: string): Promise<Episode[]> {
-      return request<Episode[]>(API_ROUTES.seriesEpisodes(seriesId));
+    /** Episodes for a series (ordered by episode number). */
+    async getEpisodes(seriesId: string): Promise<Episode[]> {
+      const data = await request<{ episodes: Episode[] }>(
+        API_ROUTES.seriesEpisodes(seriesId),
+      );
+      return data.episodes;
     },
 
-    /** Spend coins to unlock a locked episode. */
-    unlockEpisode(episodeId: string): Promise<{ coinBalance: number }> {
-      return request<{ coinBalance: number }>(API_ROUTES.episodesUnlock, {
+    /** Spend coins to unlock a locked episode; returns the new coin balance. */
+    unlockEpisode(episodeId: string): Promise<{ success: boolean; newBalance: number }> {
+      return request<{ success: boolean; newBalance: number }>(API_ROUTES.episodesUnlock, {
         method: 'POST',
         body: JSON.stringify({ episodeId }),
       });
     },
 
     /** Coin top-up packages. */
-    getCoinPackages(): Promise<CoinPackage[]> {
-      return request<CoinPackage[]>(API_ROUTES.coinPackages);
+    async getCoinPackages(): Promise<CoinPackage[]> {
+      const data = await request<{ packages: CoinPackage[] }>(API_ROUTES.coinPackages);
+      return data.packages;
     },
 
     /** Persist playback position for resume. */

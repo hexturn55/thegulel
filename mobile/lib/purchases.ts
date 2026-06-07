@@ -1,19 +1,30 @@
 import { Platform } from 'react-native';
-import Purchases, { type PurchasesOffering } from 'react-native-purchases';
+import Purchases, { type PurchasesPackage } from 'react-native-purchases';
 import { config } from './config';
 
 /**
  * In-app purchases via RevenueCat (native iOS/Android).
  *
  * Apple App Store and Google Play REQUIRE their native IAP for digital goods
- * (coins, VIP). Stripe/Razorpay (used on web) are not permitted for in-app
- * digital purchases on iOS. RevenueCat wraps StoreKit/Billing and reconciles
- * entitlements; back it with server-to-server webhooks that credit coins via
- * the same idempotent CoinTransaction.providerRef path the web webhooks use.
+ * (coins, VIP). Stripe/Razorpay (web) are not permitted in-app on iOS.
+ * After a successful purchase, the RevenueCat server-to-server webhook
+ * (/api/webhooks/revenuecat) credits coins / grants VIP; the app then refetches
+ * /api/auth/me to reflect the new balance.
  *
- * NOTE: A `.web.ts` sibling provides no-op stubs so the web bundle never
- * imports the native module.
+ * A `.web.ts` sibling provides no-op stubs so the web bundle never imports the
+ * native module.
  */
+
+export interface CoinOffering {
+  id: string;
+  title: string;
+  description: string;
+  priceString: string;
+  pkg: PurchasesPackage;
+}
+
+let configured = false;
+
 export async function initPurchases(appUserId?: string): Promise<void> {
   const apiKey =
     Platform.OS === 'ios' ? config.revenueCatIosKey : config.revenueCatAndroidKey;
@@ -21,19 +32,53 @@ export async function initPurchases(appUserId?: string): Promise<void> {
     console.warn('[purchases] RevenueCat key not configured; skipping init.');
     return;
   }
-  Purchases.configure({ apiKey, appUserID: appUserId ?? null });
+  if (!configured) {
+    Purchases.configure({ apiKey, appUserID: appUserId ?? null });
+    configured = true;
+  } else if (appUserId) {
+    await Purchases.logIn(appUserId);
+  }
 }
 
-/** Fetch the current coin/VIP offerings to render a paywall. */
-export async function getOfferings(): Promise<PurchasesOffering | null> {
-  const offerings = await Purchases.getOfferings();
-  return offerings.current ?? null;
+/** Available coin/VIP packages from the current RevenueCat offering. */
+export async function getCoinOfferings(): Promise<CoinOffering[]> {
+  try {
+    const offerings = await Purchases.getOfferings();
+    const pkgs = offerings.current?.availablePackages ?? [];
+    return pkgs.map((p) => ({
+      id: p.identifier,
+      title: p.product.title,
+      description: p.product.description,
+      priceString: p.product.priceString,
+      pkg: p,
+    }));
+  } catch (e) {
+    console.warn('[purchases] getOfferings failed', e);
+    return [];
+  }
 }
 
-/** Purchase a package; returns true if an entitlement is now active. */
-export async function purchasePackage(
-  pkg: Parameters<typeof Purchases.purchasePackage>[0],
-): Promise<boolean> {
-  const { customerInfo } = await Purchases.purchasePackage(pkg);
-  return Object.keys(customerInfo.entitlements.active).length > 0;
+/**
+ * Run the native purchase flow. Returns true if the purchase completed, false
+ * if the user cancelled. (Coins are consumables and grant no entitlement, so we
+ * key success on completion, not on active entitlements.)
+ */
+export async function purchaseOffering(offering: CoinOffering): Promise<boolean> {
+  try {
+    await Purchases.purchasePackage(offering.pkg);
+    return true;
+  } catch (e) {
+    if ((e as { userCancelled?: boolean }).userCancelled) return false;
+    throw e;
+  }
+}
+
+export async function logOutPurchases(): Promise<void> {
+  if (configured) {
+    try {
+      await Purchases.logOut();
+    } catch {
+      // ignore
+    }
+  }
 }

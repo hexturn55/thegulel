@@ -9,9 +9,25 @@ import {
   Text,
   View,
 } from 'react-native';
-import { useRouter } from 'expo-router';
+import { Stack, useRouter } from 'expo-router';
 import { GENRES, type Genre, type SeriesCard } from '@gulel/shared';
 import { api } from '@/lib/api';
+import { useAuth } from '@/lib/auth';
+
+function HeaderButton() {
+  const router = useRouter();
+  const { user } = useAuth();
+  return (
+    <Pressable
+      onPress={() => router.push(user ? '/account' : '/auth')}
+      style={headerStyles.btn}
+    >
+      <Text style={headerStyles.text}>
+        {user ? `${user.coinBalance} 🪙` : 'Sign in'}
+      </Text>
+    </Pressable>
+  );
+}
 
 export default function CatalogScreen() {
   const router = useRouter();
@@ -40,6 +56,7 @@ export default function CatalogScreen() {
 
   return (
     <View style={styles.container}>
+      <Stack.Screen options={{ headerRight: () => <HeaderButton /> }} />
       <ScrollView
         horizontal
         showsHorizontalScrollIndicator={false}
@@ -110,4 +127,15 @@ const styles = StyleSheet.create({
   cardTitle: { color: '#fff', fontWeight: '600', marginTop: 6 },
   cardMeta: { color: '#9CA3AF', fontSize: 12, marginTop: 2 },
   empty: { color: '#9CA3AF', textAlign: 'center', marginTop: 48, paddingHorizontal: 24 },
+});
+
+const headerStyles = StyleSheet.create({
+  btn: {
+    backgroundColor: '#1A1A22',
+    paddingHorizontal: 12,
+    paddingVertical: 6,
+    borderRadius: 999,
+    marginRight: 8,
+  },
+  text: { color: '#fff', fontWeight: '600' },
 });
