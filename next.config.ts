@@ -20,6 +20,15 @@ const nextConfig: NextConfig = {
         hostname: 'customer-*.cloudflarestream.com',
       },
       {
+        // Cloudflare Stream legacy thumbnail host (e.g. episode poster frames).
+        protocol: 'https',
+        hostname: 'videodelivery.net',
+      },
+      {
+        protocol: 'https',
+        hostname: '*.videodelivery.net',
+      },
+      {
         protocol: 'https',
         hostname: 'imagedelivery.net',
       },
