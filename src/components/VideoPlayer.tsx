@@ -249,7 +249,6 @@ export default function VideoPlayer({
         playsInline
         autoPlay
         muted
-        onClick={(e) => e.stopPropagation()}
       />
 
       {/* Playback error — visible message + retry instead of a silent spinner */}
@@ -336,16 +335,27 @@ export default function VideoPlayer({
           </div>
 
           {/* Bottom controls */}
-          <div className="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/80 to-transparent">
+          <div
+            className="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/80 to-transparent"
+            onClick={(e) => e.stopPropagation()}
+          >
             {/* Progress bar */}
             <div className="mb-4">
               <div className="flex items-center justify-between text-white text-xs mb-1">
                 <span>{formatDuration(Math.floor(currentTime))}</span>
                 <span>{formatDuration(Math.floor(duration))}</span>
               </div>
-              <div className="w-full h-1 bg-white/30 rounded-full overflow-hidden">
-                <div 
-                  className="h-full bg-red-500 transition-all duration-200"
+              <div
+                className="w-full h-2 bg-white/30 rounded-full overflow-hidden cursor-pointer"
+                onClick={(e) => {
+                  const rect = e.currentTarget.getBoundingClientRect();
+                  const frac = (e.clientX - rect.left) / rect.width;
+                  const v = videoRef.current;
+                  if (v && duration) v.currentTime = Math.max(0, Math.min(1, frac)) * duration;
+                }}
+              >
+                <div
+                  className="h-full bg-red-500 transition-all duration-200 pointer-events-none"
                   style={{ width: `${progress}%` }}
                 />
               </div>
