@@ -8,20 +8,26 @@
       "developmentClient": true,
       "distribution": "internal",
       "env": {
-        "EXPO_PUBLIC_API_URL": "https://thegulel.com"
+        "EXPO_PUBLIC_API_URL": "https://thegulel.com",
+        "EXPO_PUBLIC_SUPABASE_URL": "https://tcjmjpbuoljrzhiltbzn.supabase.co",
+        "EXPO_PUBLIC_SUPABASE_ANON_KEY": "sb_publishable_Q97GKtCApLHAfQgo3gzFTg_cj6Yq1_u"
       }
     },
     "preview": {
       "distribution": "internal",
       "ios": { "simulator": true },
       "env": {
-        "EXPO_PUBLIC_API_URL": "https://thegulel.com"
+        "EXPO_PUBLIC_API_URL": "https://thegulel.com",
+        "EXPO_PUBLIC_SUPABASE_URL": "https://tcjmjpbuoljrzhiltbzn.supabase.co",
+        "EXPO_PUBLIC_SUPABASE_ANON_KEY": "sb_publishable_Q97GKtCApLHAfQgo3gzFTg_cj6Yq1_u"
       }
     },
     "production": {
       "autoIncrement": true,
       "env": {
-        "EXPO_PUBLIC_API_URL": "https://thegulel.com"
+        "EXPO_PUBLIC_API_URL": "https://thegulel.com",
+        "EXPO_PUBLIC_SUPABASE_URL": "https://tcjmjpbuoljrzhiltbzn.supabase.co",
+        "EXPO_PUBLIC_SUPABASE_ANON_KEY": "sb_publishable_Q97GKtCApLHAfQgo3gzFTg_cj6Yq1_u"
       }
     }
   },
