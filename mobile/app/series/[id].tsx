@@ -12,6 +12,7 @@ import { Stack, useLocalSearchParams, useRouter } from 'expo-router';
 import { ApiRequestError, type Episode } from '@gulel/shared';
 import { api } from '@/lib/api';
 import { useAuth } from '@/lib/auth';
+import { sampleEpisodes } from '@/lib/sampleData';
 
 export default function SeriesScreen() {
   const { id } = useLocalSearchParams<{ id: string }>();
@@ -19,7 +20,6 @@ export default function SeriesScreen() {
   const { user, refresh } = useAuth();
   const [episodes, setEpisodes] = useState<Episode[]>([]);
   const [loading, setLoading] = useState(true);
-  const [error, setError] = useState<string | null>(null);
   const [unlockingId, setUnlockingId] = useState<string | null>(null);
 
   function play(ep: Episode) {
@@ -69,8 +69,9 @@ export default function SeriesScreen() {
       try {
         const data = await api.getEpisodes(id);
         if (active) setEpisodes(data);
-      } catch (e) {
-        if (active) setError(e instanceof Error ? e.message : 'Failed to load episodes');
+      } catch {
+        // Fall back to demo episodes when the live API isn't reachable.
+        if (active) setEpisodes(sampleEpisodes(id));
       } finally {
         if (active) setLoading(false);
       }
@@ -90,7 +91,7 @@ export default function SeriesScreen() {
         keyExtractor={(e) => e.id}
         contentContainerStyle={styles.list}
         ListEmptyComponent={
-          <Text style={styles.empty}>{error ?? 'No episodes available.'}</Text>
+          <Text style={styles.empty}>No episodes available.</Text>
         }
         renderItem={({ item }) => (
           <Pressable

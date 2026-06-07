@@ -13,6 +13,7 @@ import { Stack, useRouter } from 'expo-router';
 import { GENRES, type Genre, type SeriesCard } from '@gulel/shared';
 import { api } from '@/lib/api';
 import { useAuth } from '@/lib/auth';
+import { SAMPLE_SERIES } from '@/lib/sampleData';
 
 function HeaderButton() {
   const router = useRouter();
@@ -34,17 +35,23 @@ export default function CatalogScreen() {
   const [genre, setGenre] = useState<Genre>('All');
   const [series, setSeries] = useState<SeriesCard[]>([]);
   const [loading, setLoading] = useState(true);
-  const [error, setError] = useState<string | null>(null);
+  const [demo, setDemo] = useState(false);
 
   const load = useCallback(async (selected: Genre) => {
     setLoading(true);
-    setError(null);
     try {
       const data = await api.getSeries(selected === 'All' ? undefined : { genre: selected });
       setSeries(data);
-    } catch (e) {
-      setError(e instanceof Error ? e.message : 'Failed to load catalog');
-      setSeries([]);
+      setDemo(false);
+    } catch {
+      // No live API reachable — show the bundled demo catalog so the app is
+      // never empty. Real API data always wins when it's available.
+      const sample =
+        selected === 'All'
+          ? SAMPLE_SERIES
+          : SAMPLE_SERIES.filter((s) => s.genre === selected);
+      setSeries(sample);
+      setDemo(true);
     } finally {
       setLoading(false);
     }
@@ -82,11 +89,14 @@ export default function CatalogScreen() {
           numColumns={2}
           columnWrapperStyle={styles.row}
           contentContainerStyle={styles.list}
-          ListEmptyComponent={
-            <Text style={styles.empty}>
-              {error ? `Couldn't load series.\n${error}` : 'No series yet.'}
-            </Text>
+          ListHeaderComponent={
+            demo ? (
+              <Text style={styles.demoBanner}>
+                Demo content — connect your API (EXPO_PUBLIC_API_URL) to see real series.
+              </Text>
+            ) : null
           }
+          ListEmptyComponent={<Text style={styles.empty}>No series in this genre.</Text>}
           renderItem={({ item }) => (
             <Pressable
               style={styles.card}
@@ -127,6 +137,15 @@ const styles = StyleSheet.create({
   cardTitle: { color: '#fff', fontWeight: '600', marginTop: 6 },
   cardMeta: { color: '#9CA3AF', fontSize: 12, marginTop: 2 },
   empty: { color: '#9CA3AF', textAlign: 'center', marginTop: 48, paddingHorizontal: 24 },
+  demoBanner: {
+    color: '#FCD34D',
+    backgroundColor: '#1A1A22',
+    borderRadius: 8,
+    padding: 10,
+    fontSize: 12,
+    textAlign: 'center',
+    marginBottom: 12,
+  },
 });
 
 const headerStyles = StyleSheet.create({
