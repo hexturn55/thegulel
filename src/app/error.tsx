@@ -34,6 +34,9 @@ export default function GlobalError({ error, reset }: ErrorProps) {
           <RefreshCw className="w-4 h-4" />
           {t('tryAgain')}
         </button>
+        {/* Plain anchor + full reload: the error boundary can render outside a
+            healthy router tree, so a hard navigation is the reliable recovery. */}
+        {/* eslint-disable-next-line @next/next/no-html-link-for-pages */}
         <a
           href="/"
           className="flex items-center justify-center gap-2 bg-gray-800 hover:bg-gray-700 text-white font-semibold px-6 py-3 rounded-full transition"

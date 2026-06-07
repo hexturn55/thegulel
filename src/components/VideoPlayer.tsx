@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect, useRef, useState } from 'react';
+import { useCallback, useEffect, useRef, useState } from 'react';
 import Hls from 'hls.js';
 import { Play, Pause, Volume2, VolumeX, Subtitles, ChevronUp, ChevronDown } from 'lucide-react';
 import { useTranslations } from 'next-intl';
@@ -50,6 +50,26 @@ export default function VideoPlayer({
   const t = useTranslations('player');
 
   const canPlay = isFree || isUnlocked;
+
+  const saveProgress = useCallback(
+    async (time: number) => {
+      if (!user) return;
+      try {
+        await fetch('/api/watch/progress', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            episodeId,
+            progress: Math.floor(time),
+            completed: time / duration > 0.9,
+          }),
+        });
+      } catch (err) {
+        console.error('Failed to save progress:', err);
+      }
+    },
+    [user, episodeId, duration],
+  );
 
   useEffect(() => {
     const video = videoRef.current;
@@ -173,25 +193,7 @@ export default function VideoPlayer({
       video.removeEventListener('canplay', handleCanPlay);
       video.removeEventListener('playing', handlePlaying);
     };
-  }, [hasNext, onNextEpisode, user]);
-
-  const saveProgress = async (time: number) => {
-    if (!user) return;
-    
-    try {
-      await fetch('/api/watch/progress', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          episodeId,
-          progress: Math.floor(time),
-          completed: time / duration > 0.9,
-        }),
-      });
-    } catch (error) {
-      console.error('Failed to save progress:', error);
-    }
-  };
+  }, [hasNext, onNextEpisode, user, saveProgress]);
 
   const togglePlay = () => {
     const video = videoRef.current;
