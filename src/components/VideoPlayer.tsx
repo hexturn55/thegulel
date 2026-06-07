@@ -39,6 +39,7 @@ export default function VideoPlayer({
   const [progress, setProgress] = useState(0);
   const [duration, setDuration] = useState(0);
   const [isBuffering, setIsBuffering] = useState(true);
+  const [showEndCard, setShowEndCard] = useState(false);
   const touchStartY = useRef(0);
 
   const { isPlaying, setIsPlaying, currentTime, setCurrentTime, subtitlesEnabled, toggleSubtitles } = usePlayerStore();
@@ -50,6 +51,7 @@ export default function VideoPlayer({
   useEffect(() => {
     const video = videoRef.current;
     if (!video || !canPlay) return;
+    setShowEndCard(false);
 
     if (Hls.isSupported()) {
       const hls = new Hls({
@@ -103,6 +105,9 @@ export default function VideoPlayer({
       setIsPlaying(false);
       if (hasNext && onNextEpisode) {
         onNextEpisode();
+      } else {
+        // Last (or only) episode — close out with a "stay tuned" card.
+        setShowEndCard(true);
       }
     };
 
@@ -199,6 +204,31 @@ export default function VideoPlayer({
         playsInline
         onClick={(e) => e.stopPropagation()}
       />
+
+      {/* End card — shown after the last/only episode finishes */}
+      {showEndCard && (
+        <div
+          className="absolute inset-0 z-20 flex flex-col items-center justify-center bg-black/85 backdrop-blur-sm text-center px-6"
+          onClick={(e) => e.stopPropagation()}
+        >
+          <h2 className="text-white text-2xl font-bold mb-2">{t('stayTuned')}</h2>
+          <p className="text-gray-400 text-sm mb-8">{t('moreSoon')}</p>
+          <button
+            onClick={() => {
+              const v = videoRef.current;
+              if (!v) return;
+              v.currentTime = 0;
+              v.play();
+              setIsPlaying(true);
+              setShowEndCard(false);
+            }}
+            className="flex items-center gap-2 bg-gradient-to-r from-red-500 to-pink-500 hover:from-red-600 hover:to-pink-600 text-white font-semibold px-6 py-3 rounded-full transition"
+          >
+            <Play className="w-4 h-4 fill-white" />
+            {t('replay')}
+          </button>
+        </div>
+      )}
 
       {/* Buffering spinner */}
       {isBuffering && (
