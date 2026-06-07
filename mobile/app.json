@@ -35,9 +35,6 @@
       "expo-router",
       "expo-video",
       "expo-secure-store"
-    ],
-    "experiments": {
-      "typedRoutes": true
-    }
+    ]
   }
 }
