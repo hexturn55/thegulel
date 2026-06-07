@@ -35,6 +35,11 @@
       "expo-router",
       "expo-video",
       "expo-secure-store"
-    ]
+    ],
+    "extra": {
+      "apiUrl": "https://thegulel.com",
+      "supabaseUrl": "https://tcjmjpbuoljrzhiltbzn.supabase.co",
+      "supabaseAnonKey": "sb_publishable_Q97GKtCApLHAfQgo3gzFTg_cj6Yq1_u"
+    }
   }
 }
