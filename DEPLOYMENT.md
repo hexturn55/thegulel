@@ -17,6 +17,19 @@ Status legend: ✅ done in code · 🔑 needs your account/secret · ☁️ depl
 
 ---
 
+## ⚠️ 0.5 Pending production migration (apply first)
+The live database predates the `vip_subscription_and_payment_idempotency`
+migration, so `Subscription.providerCustomerId` and `CoinTransaction.providerRef`
+are **missing in production** — this crashes Subscription/CoinTransaction queries
+for logged-in users and breaks webhook idempotency. Apply it before anything else:
+
+- **Proper** (if the DB uses Prisma migrations):
+  ```bash
+  DATABASE_URL="<prod-connection-string>" npx prisma migrate deploy
+  ```
+- **Or** paste `prisma/hotfix-apply-pending-migration.sql` into the Supabase
+  SQL Editor (idempotent, safe to re-run).
+
 ## 1. Database (Supabase)
 1. Create a Supabase project. From **Project Settings → Database**, copy the
    connection string into `DATABASE_URL` (use the pooled URL; if you have a
