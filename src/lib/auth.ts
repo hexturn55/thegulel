@@ -1,21 +1,16 @@
-import { createServerSupabaseClient } from './supabase-server';
+import { getSupabaseUser } from './supabase-server';
 import prisma from './prisma';
 
 /**
- * Resolve the current request's authenticated user from the Supabase session
- * and return the matching Prisma `User` record (or `null` if unauthenticated).
+ * Resolve the current request's authenticated user and return the matching
+ * Prisma `User` record (or `null` if unauthenticated).
  *
  * This is the single source of truth for "who is calling" in API routes.
- * Auth is carried by Supabase session cookies (`sb-*`), set by the OAuth
- * callback and client-side OTP verification — there is NO separate `userId`
- * cookie.
+ * Auth is resolved from EITHER the Supabase session cookie (web) or an
+ * `Authorization: Bearer <token>` header (mobile) — see `getSupabaseUser`.
  */
 export async function getAuthUser() {
-  const supabase = await createServerSupabaseClient();
-  const {
-    data: { user: supabaseUser },
-  } = await supabase.auth.getUser();
-
+  const supabaseUser = await getSupabaseUser();
   if (!supabaseUser) return null;
 
   return prisma.user.findFirst({

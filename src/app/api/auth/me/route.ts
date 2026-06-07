@@ -1,18 +1,15 @@
 import { NextResponse } from 'next/server';
-import { createServerSupabaseClient } from '@/lib/supabase-server';
+import { getSupabaseUser } from '@/lib/supabase-server';
 import prisma from '@/lib/prisma';
 import { hasActiveVip } from '@/lib/subscription';
 
 /**
  * GET /api/auth/me
  * Returns the current user's Prisma record (coin balance, etc.)
- * Requires a valid Supabase session.
+ * Requires a valid Supabase session (cookie) or bearer token (mobile).
  */
 export async function GET() {
-  const supabase = await createServerSupabaseClient();
-  const {
-    data: { user: supabaseUser },
-  } = await supabase.auth.getUser();
+  const supabaseUser = await getSupabaseUser();
 
   if (!supabaseUser) {
     return NextResponse.json({ error: 'Unauthorized' }, { status: 401 });

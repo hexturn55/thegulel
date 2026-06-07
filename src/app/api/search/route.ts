@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server';
 import prisma from '@/lib/prisma';
-import { createServerSupabaseClient } from '@/lib/supabase-server';
+import { getSupabaseUser } from '@/lib/supabase-server';
 
 export async function GET(request: NextRequest) {
   const { searchParams } = new URL(request.url);
@@ -45,8 +45,7 @@ export async function GET(request: NextRequest) {
   // Optionally log search for analytics (fire-and-forget, don't await)
   let userId: string | undefined;
   try {
-    const supabase = await createServerSupabaseClient();
-    const { data: { user: supabaseUser } } = await supabase.auth.getUser();
+    const supabaseUser = await getSupabaseUser();
     if (supabaseUser) {
       const dbUser = await prisma.user.findFirst({
         where: { supabaseId: supabaseUser.id },
