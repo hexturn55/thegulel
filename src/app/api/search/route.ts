@@ -13,6 +13,8 @@ export async function GET(request: NextRequest) {
   const series = await prisma.series.findMany({
     where: {
       status: 'PUBLISHED',
+      // Hide the leftover seed/demo placeholder duplicate from results.
+      id: { not: 'demo-series' },
       OR: [
         { title: { contains: q, mode: 'insensitive' } },
         { titleHi: { contains: q, mode: 'insensitive' } },
