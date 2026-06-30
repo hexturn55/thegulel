@@ -128,7 +128,9 @@
     "earned": "You earned {coins} coins!",
     "watchFull": "Watch the full ad to earn coins.",
     "pleaseWait": "Please wait {seconds}s before watching another ad.",
-    "adFailed": "Couldn't grant your reward. Please try again."
+    "adFailed": "Couldn't grant your reward. Please try again.",
+    "adUnavailable": "No ad is available right now. Please try again later.",
+    "rewardOnWay": "Thanks for watching! Your coins will appear shortly."
   },
   "vip": {
     "title": "Gulel VIP",
