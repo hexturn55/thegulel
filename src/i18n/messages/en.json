@@ -37,7 +37,9 @@
     "episodesCount": "{count} Episodes",
     "firstFree": "First {count} Free",
     "watchNow": "Watch Now",
-    "episodes": "Episodes"
+    "episodes": "Episodes",
+    "comingSoon": "Coming Soon",
+    "comingSoonBody": "New episodes are on the way. Stay tuned!"
   },
   "episode": {
     "label": "Episode {number}",
