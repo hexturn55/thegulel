@@ -114,6 +114,74 @@ export async function GET(request: NextRequest) {
     }
   }
 
+  // ── Deep link check (?deep=1) ───────────────────────────────────────────────
+  // Actually fetch every episode's HLS manifest and every series thumbnail, so
+  // a deleted Cloudflare video or a missing poster file is caught as a broken
+  // link, not just a data-shape problem. Off by default to keep the scheduled
+  // run cheap.
+  if (new URL(request.url).searchParams.get('deep') === '1') {
+    const base =
+      process.env.NEXT_PUBLIC_APP_URL ?? 'https://thegulel.com';
+    const checkUrl = async (
+      url: string,
+      type: string,
+      entity: string
+    ): Promise<Issue | null> => {
+      try {
+        const res = await fetch(url, {
+          method: 'GET',
+          signal: AbortSignal.timeout(7000),
+          cache: 'no-store',
+        });
+        if (!res.ok) {
+          return {
+            severity: 'error',
+            type,
+            entity,
+            detail: `HTTP ${res.status} for ${url}`,
+          };
+        }
+        return null;
+      } catch {
+        return { severity: 'error', type, entity, detail: `Unreachable: ${url}` };
+      }
+    };
+
+    const targets: Array<() => Promise<Issue | null>> = [];
+    for (const e of episodes) {
+      const url = resolveVideoUrl(e);
+      if (url && isHls(url)) {
+        targets.push(() => checkUrl(url, 'video_link_broken', `${e.title} (${e.id})`));
+      }
+    }
+    const seriesThumbs = await prisma.series.findMany({
+      where: { status: 'PUBLISHED' },
+      select: { id: true, title: true, thumbnail: true },
+    });
+    for (const s of seriesThumbs) {
+      if (!s.thumbnail) continue;
+      const url = s.thumbnail.startsWith('http')
+        ? s.thumbnail
+        : `${base}${s.thumbnail}`;
+      targets.push(() =>
+        checkUrl(url, 'thumbnail_link_broken', `${s.title} (${s.id})`)
+      );
+    }
+
+    // Bounded concurrency so ~200 checks stay inside the function timeout.
+    const CONCURRENCY = 15;
+    let cursor = 0;
+    await Promise.all(
+      Array.from({ length: CONCURRENCY }, async () => {
+        while (cursor < targets.length) {
+          const job = targets[cursor++];
+          const issue = await job();
+          if (issue) issues.push(issue);
+        }
+      })
+    );
+  }
+
   const errors = issues.filter((i) => i.severity === 'error').length;
   const warnings = issues.filter((i) => i.severity === 'warn').length;
   const summary = {

@@ -128,7 +128,9 @@
     "earned": "¡Ganaste {coins} monedas!",
     "watchFull": "Mira el anuncio completo para ganar monedas.",
     "pleaseWait": "Espera {seconds} s antes de ver otro anuncio.",
-    "adFailed": "No se pudo otorgar tu recompensa. Inténtalo de nuevo."
+    "adFailed": "No se pudo otorgar tu recompensa. Inténtalo de nuevo.",
+    "adUnavailable": "No hay ningún anuncio disponible ahora. Inténtalo más tarde.",
+    "rewardOnWay": "¡Gracias por ver! Tus monedas aparecerán en breve."
   },
   "vip": {
     "title": "Gulel VIP",

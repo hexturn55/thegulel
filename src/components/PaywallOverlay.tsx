@@ -5,7 +5,7 @@ import { Lock, Coins, Play, Crown } from 'lucide-react';
 import { useTranslations } from 'next-intl';
 import { useAuthStore } from '@/stores/useAuthStore';
 import { useRouter } from 'next/navigation';
-import { playRewardedAd } from '@/lib/ima';
+import { playRewardedAd, isRewardedAdConfigured } from '@/lib/ima';
 
 interface PaywallOverlayProps {
   episodeId: string;
@@ -18,6 +18,10 @@ export default function PaywallOverlay({ episodeId, coinPrice = 10 }: PaywallOve
   const { user, updateCoinBalance } = useAuthStore();
   const router = useRouter();
   const t = useTranslations('paywall');
+
+  // Only offer the rewarded-ad option when a real ad tag is configured. With no
+  // ad unit there's nothing to verify, so we never show a path to free coins.
+  const adsAvailable = isRewardedAdConfigured();
 
   const handleUnlockWithCoins = async () => {
     if (!user) {
@@ -57,26 +61,25 @@ export default function PaywallOverlay({ episodeId, coinPrice = 10 }: PaywallOve
     }
   };
 
-  const grantAdReward = async () => {
-    const response = await fetch('/api/coins/ad-reward', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-    });
-
-    if (response.ok) {
-      const data = await response.json();
-      updateCoinBalance(data.newBalance);
-      alert(t('earned', { coins: data.coinsEarned }));
-    } else if (response.status === 401) {
-      const returnUrl = encodeURIComponent(window.location.pathname);
-      router.push(`/auth/login?redirectTo=${returnUrl}`);
-    } else if (response.status === 429) {
-      const data = await response.json().catch(() => ({}));
-      alert(t('pleaseWait', { seconds: data.remainingSeconds ?? '…' }));
-    } else {
-      // Any other error (400/500/…) — surface it instead of failing silently.
-      alert(t('adFailed'));
+  // After a verified ad, coins are granted server-side by Google's SSV
+  // callback (/api/ads/ssv) — asynchronously. Poll our balance until it goes
+  // up, then reflect it. The client never grants coins itself.
+  const waitForReward = async (before: number): Promise<number | null> => {
+    for (let i = 0; i < 8; i++) {
+      await new Promise((r) => setTimeout(r, 1500));
+      try {
+        const res = await fetch('/api/auth/me');
+        if (res.ok) {
+          const d = await res.json();
+          if (typeof d.coinBalance === 'number' && d.coinBalance > before) {
+            return d.coinBalance;
+          }
+        }
+      } catch {
+        /* keep polling */
+      }
     }
+    return null;
   };
 
   const handleWatchAd = async () => {
@@ -87,25 +90,31 @@ export default function PaywallOverlay({ episodeId, coinPrice = 10 }: PaywallOve
     }
 
     setIsWatchingAd(true);
+    const before = user.coinBalance;
 
     try {
-      // Play a real Google IMA rewarded ad. When no ad tag is configured
-      // (dev/preview), this resolves with played:false and we fall back to a
-      // short simulated wait so the reward flow still works end-to-end.
-      const { played, rewarded } = await playRewardedAd();
+      const { played, rewarded } = await playRewardedAd(user.id);
 
-      if (played && !rewarded) {
+      if (!played) {
+        alert(t('adUnavailable'));
+        return;
+      }
+      if (!rewarded) {
         alert(t('watchFull'));
         return;
       }
 
-      if (!played) {
-        await new Promise((r) => setTimeout(r, 3000)); // simulated fallback
+      // Reward is granted by Google's verified SSV callback — wait for it.
+      const newBalance = await waitForReward(before);
+      if (newBalance != null) {
+        updateCoinBalance(newBalance);
+        alert(t('earned', { coins: newBalance - before }));
+      } else {
+        alert(t('rewardOnWay'));
       }
-
-      await grantAdReward();
     } catch (error) {
       console.error('Ad reward failed:', error);
+      alert(t('adFailed'));
     } finally {
       setIsWatchingAd(false);
     }
@@ -139,25 +148,29 @@ export default function PaywallOverlay({ episodeId, coinPrice = 10 }: PaywallOve
             </span>
           </button>
 
-          <div className="relative">
-            <div className="absolute inset-0 flex items-center">
-              <div className="w-full border-t border-gray-700"></div>
-            </div>
-            <div className="relative flex justify-center text-xs">
-              <span className="px-2 bg-black text-gray-500">{t('or')}</span>
-            </div>
-          </div>
+          {adsAvailable && (
+            <>
+              <div className="relative">
+                <div className="absolute inset-0 flex items-center">
+                  <div className="w-full border-t border-gray-700"></div>
+                </div>
+                <div className="relative flex justify-center text-xs">
+                  <span className="px-2 bg-black text-gray-500">{t('or')}</span>
+                </div>
+              </div>
 
-          <button
-            onClick={handleWatchAd}
-            disabled={isWatchingAd}
-            className="w-full bg-gray-800 hover:bg-gray-700 disabled:opacity-50 disabled:cursor-not-allowed text-white font-semibold py-4 px-6 rounded-xl flex items-center justify-center gap-3 transition-all border border-gray-700"
-          >
-            <Play className="w-5 h-5" />
-            <span>
-              {isWatchingAd ? t('loadingAd') : t('watchAd')}
-            </span>
-          </button>
+              <button
+                onClick={handleWatchAd}
+                disabled={isWatchingAd}
+                className="w-full bg-gray-800 hover:bg-gray-700 disabled:opacity-50 disabled:cursor-not-allowed text-white font-semibold py-4 px-6 rounded-xl flex items-center justify-center gap-3 transition-all border border-gray-700"
+              >
+                <Play className="w-5 h-5" />
+                <span>
+                  {isWatchingAd ? t('loadingAd') : t('watchAd')}
+                </span>
+              </button>
+            </>
+          )}
 
           <button
             onClick={() => router.push('/vip')}

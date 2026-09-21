@@ -53,10 +53,17 @@ function loadImaSdk(): Promise<boolean> {
   });
 }
 
-export async function playRewardedAd(): Promise<RewardedAdResult> {
+export async function playRewardedAd(userId?: string): Promise<RewardedAdResult> {
   const tagUrl = process.env.NEXT_PUBLIC_IMA_REWARDED_AD_TAG_URL;
   if (!tagUrl) return { played: false, rewarded: false };
   if (typeof window === 'undefined') return { played: false, rewarded: false };
+
+  // Attribute the reward to our user via SSV `custom_data`. The coins are
+  // granted only when Google calls /api/ads/ssv after a verified completion —
+  // never by this client.
+  const requestUrl = userId
+    ? `${tagUrl}${tagUrl.includes('?') ? '&' : '?'}custom_data=${encodeURIComponent(userId)}`
+    : tagUrl;
 
   const sdkReady = await loadImaSdk();
   const ima = (window as ImaGlobal).google?.ima;
@@ -163,7 +170,7 @@ export async function playRewardedAd(): Promise<RewardedAdResult> {
       );
 
       const adsRequest = new ima.AdsRequest();
-      adsRequest.adTagUrl = tagUrl;
+      adsRequest.adTagUrl = requestUrl;
       adsRequest.linearAdSlotWidth = overlay.clientWidth || window.innerWidth;
       adsRequest.linearAdSlotHeight =
         overlay.clientHeight || window.innerHeight;
