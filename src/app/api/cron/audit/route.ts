@@ -52,9 +52,12 @@ export async function GET(request: NextRequest) {
   for (const s of series) {
     const actual = s._count.episodes;
     if (actual === 0) {
+      // A poster-only series that advertises 0 episodes is an intentional
+      // "coming soon" placeholder — worth listing, but not a failure. One
+      // that advertises episodes it doesn't have is lying to users.
       issues.push({
-        severity: 'error',
-        type: 'series_no_episodes',
+        severity: s.totalEpisodes > 0 ? 'error' : 'warn',
+        type: s.totalEpisodes > 0 ? 'series_no_episodes' : 'series_coming_soon',
         entity: `${s.title} (${s.id})`,
         detail: `Published series has 0 episodes but advertises ${s.totalEpisodes}.`,
       });
