@@ -31,7 +31,8 @@
   },
   "seriesCard": {
     "featured": "फ़ीचर्ड",
-    "episodes": "{count} एपिसोड"
+    "episodes": "{count} एपिसोड",
+    "comingSoon": "जल्द आ रहा है"
   },
   "series": {
     "episodesCount": "{count} एपिसोड",

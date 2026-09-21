@@ -31,7 +31,8 @@
   },
   "seriesCard": {
     "featured": "Featured",
-    "episodes": "{count} Episodes"
+    "episodes": "{count} Episodes",
+    "comingSoon": "Coming Soon"
   },
   "series": {
     "episodesCount": "{count} Episodes",

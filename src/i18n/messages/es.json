@@ -31,7 +31,8 @@
   },
   "seriesCard": {
     "featured": "Destacado",
-    "episodes": "{count} episodios"
+    "episodes": "{count} episodios",
+    "comingSoon": "Próximamente"
   },
   "series": {
     "episodesCount": "{count} episodios",
