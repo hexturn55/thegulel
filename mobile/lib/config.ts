@@ -23,4 +23,13 @@ export const config = {
   revenueCatIosKey: process.env.EXPO_PUBLIC_RC_IOS_KEY ?? extra.revenueCatIosKey ?? '',
   revenueCatAndroidKey:
     process.env.EXPO_PUBLIC_RC_ANDROID_KEY ?? extra.revenueCatAndroidKey ?? '',
+  /**
+   * AdMob rewarded ad unit id (the "watch a video for coins" placement).
+   * Real production id; development builds use Google's test ad unit instead
+   * (see lib/ads.ts) so we never risk self-clicking live ads.
+   */
+  admobRewardedAdUnitId:
+    process.env.EXPO_PUBLIC_ADMOB_REWARDED_ID ??
+    extra.admobRewardedAdUnitId ??
+    'ca-app-pub-7686596859294513/6574059853',
 };

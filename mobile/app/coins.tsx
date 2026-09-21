@@ -13,6 +13,7 @@ import type { CoinPackage } from '@gulel/shared';
 import { useAuth } from '@/lib/auth';
 import { api } from '@/lib/api';
 import { getCoinOfferings, purchaseOffering, type CoinOffering } from '@/lib/purchases';
+import { showRewardedAd } from '@/lib/ads';
 
 export default function CoinsScreen() {
   const router = useRouter();
@@ -21,6 +22,7 @@ export default function CoinsScreen() {
   const [packages, setPackages] = useState<CoinPackage[]>([]);
   const [loading, setLoading] = useState(true);
   const [buyingId, setBuyingId] = useState<string | null>(null);
+  const [watchingAd, setWatchingAd] = useState(false);
 
   useEffect(() => {
     (async () => {
@@ -33,6 +35,27 @@ export default function CoinsScreen() {
       setLoading(false);
     })();
   }, []);
+
+  async function watchAd() {
+    if (!user || watchingAd) return;
+    setWatchingAd(true);
+    try {
+      const result = await showRewardedAd(user.id);
+      if (result === 'earned') {
+        // Coins are credited by Google's server-side callback (/api/ads/ssv),
+        // which lands a beat after the ad closes — refresh the balance shortly.
+        setTimeout(() => void refresh(), 2500);
+        Alert.alert('Thanks for watching!', 'Your coins will appear in a moment.');
+      } else if (result === 'unavailable') {
+        Alert.alert('No ad available', 'No video is ready right now. Please try again shortly.');
+      }
+      // 'dismissed' (closed early) earns nothing — no alert needed.
+    } catch {
+      Alert.alert('Something went wrong', 'Please try again.');
+    } finally {
+      setWatchingAd(false);
+    }
+  }
 
   async function buy(offering: CoinOffering) {
     setBuyingId(offering.id);
@@ -71,6 +94,24 @@ export default function CoinsScreen() {
   return (
     <View style={styles.container}>
       <Text style={styles.balance}>Balance: {user.coinBalance} 🪙</Text>
+
+      <Pressable
+        style={[styles.watchAd, watchingAd && styles.watchAdBusy]}
+        onPress={watchAd}
+        disabled={watchingAd}
+      >
+        {watchingAd ? (
+          <ActivityIndicator color="#fff" />
+        ) : (
+          <>
+            <View style={styles.watchAdMeta}>
+              <Text style={styles.watchAdTitle}>▶  Watch a video</Text>
+              <Text style={styles.watchAdSub}>Free coins, no purchase</Text>
+            </View>
+            <Text style={styles.watchAdReward}>+5 🪙</Text>
+          </>
+        )}
+      </Pressable>
 
       {hasStore ? (
         <FlatList
@@ -127,6 +168,24 @@ const styles = StyleSheet.create({
   container: { flex: 1, backgroundColor: '#0B0B0F' },
   center: { flex: 1, backgroundColor: '#0B0B0F', alignItems: 'center', justifyContent: 'center', gap: 16 },
   balance: { color: '#fff', fontSize: 18, fontWeight: '700', padding: 16 },
+  watchAd: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'space-between',
+    backgroundColor: '#12241C',
+    borderColor: '#1F5C3E',
+    borderWidth: 1,
+    borderRadius: 12,
+    padding: 16,
+    marginHorizontal: 16,
+    marginBottom: 12,
+    minHeight: 64,
+  },
+  watchAdBusy: { opacity: 0.7 },
+  watchAdMeta: { flex: 1, paddingRight: 12 },
+  watchAdTitle: { color: '#fff', fontSize: 16, fontWeight: '600' },
+  watchAdSub: { color: '#7FD1A8', fontSize: 12, marginTop: 2 },
+  watchAdReward: { color: '#34D399', fontSize: 16, fontWeight: '700' },
   list: { paddingHorizontal: 16, gap: 12 },
   pack: {
     flexDirection: 'row',
