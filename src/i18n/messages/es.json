@@ -37,7 +37,9 @@
     "episodesCount": "{count} episodios",
     "firstFree": "Primeros {count} gratis",
     "watchNow": "Ver ahora",
-    "episodes": "Episodios"
+    "episodes": "Episodios",
+    "comingSoon": "Próximamente",
+    "comingSoonBody": "Nuevos episodios están en camino. ¡Mantente atento!"
   },
   "episode": {
     "label": "Episodio {number}",

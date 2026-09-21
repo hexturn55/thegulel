@@ -147,9 +147,15 @@ export default async function SeriesPage({ params }: PageProps) {
               <span className="bg-red-500 text-white px-3 py-1 rounded font-semibold">
                 {tg.has(series.genre) ? tg(series.genre) : series.genre}
               </span>
-              <span>{t('episodesCount', { count: series.totalEpisodes })}</span>
-              <span>•</span>
-              <span>{t('firstFree', { count: series.freeEpisodes })}</span>
+              {episodes.length > 0 ? (
+                <>
+                  <span>{t('episodesCount', { count: episodes.length })}</span>
+                  <span>•</span>
+                  <span>{t('firstFree', { count: series.freeEpisodes })}</span>
+                </>
+              ) : (
+                <span>{t('comingSoon')}</span>
+              )}
             </div>
 
             <p className="text-gray-300 text-sm md:text-base mb-6 line-clamp-3">
@@ -157,13 +163,20 @@ export default async function SeriesPage({ params }: PageProps) {
             </p>
 
             <div className="flex items-center gap-3 flex-wrap">
-              <a
-                href={`/watch/${episodes[0]?.id}`}
-                className="inline-flex items-center gap-2 bg-red-500 hover:bg-red-600 text-white font-bold px-8 py-3 rounded-full transition transform hover:scale-105"
-              >
-                <Play className="w-5 h-5 fill-white" />
-                {t('watchNow')}
-              </a>
+              {episodes.length > 0 ? (
+                <a
+                  href={`/watch/${episodes[0].id}`}
+                  className="inline-flex items-center gap-2 bg-red-500 hover:bg-red-600 text-white font-bold px-8 py-3 rounded-full transition transform hover:scale-105"
+                >
+                  <Play className="w-5 h-5 fill-white" />
+                  {t('watchNow')}
+                </a>
+              ) : (
+                <span className="inline-flex items-center gap-2 bg-gray-700 text-gray-300 font-bold px-8 py-3 rounded-full cursor-default">
+                  <Play className="w-5 h-5" />
+                  {t('comingSoon')}
+                </span>
+              )}
 
               <ShareButton
                 url={seriesUrl}
@@ -179,7 +192,14 @@ export default async function SeriesPage({ params }: PageProps) {
       {/* Episodes */}
       <div className="px-4 py-6">
         <h2 className="text-white text-2xl font-bold mb-4">{t('episodes')}</h2>
-        <EpisodeList episodes={episodes} seriesId={series.id} />
+        {episodes.length > 0 ? (
+          <EpisodeList episodes={episodes} seriesId={series.id} />
+        ) : (
+          <div className="rounded-xl border border-gray-800 bg-gray-900/60 px-6 py-10 text-center">
+            <p className="text-white font-semibold mb-1">{t('comingSoon')}</p>
+            <p className="text-gray-400 text-sm">{t('comingSoonBody')}</p>
+          </div>
+        )}
       </div>
     </div>
   );

@@ -37,7 +37,9 @@
     "episodesCount": "{count} एपिसोड",
     "firstFree": "पहले {count} मुफ़्त",
     "watchNow": "अभी देखें",
-    "episodes": "एपिसोड"
+    "episodes": "एपिसोड",
+    "comingSoon": "जल्द आ रहा है",
+    "comingSoonBody": "नए एपिसोड जल्द आ रहे हैं। जुड़े रहें!"
   },
   "episode": {
     "label": "एपिसोड {number}",
