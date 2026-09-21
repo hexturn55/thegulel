@@ -93,6 +93,28 @@ export async function GET(request: NextRequest) {
         return NextResponse.json({ ok: true, applied: 4 });
       }
 
+      case 'ssv-keys': {
+        // Read-only self-test for the rewarded-ads SSV pipeline: confirm this
+        // deployment can reach Google's public reward verifier keys, which
+        // signature verification in /api/ads/ssv depends on.
+        const res = await fetch(
+          'https://www.gstatic.com/admob/reward/verifier-keys.json',
+          { cache: 'no-store' }
+        );
+        if (!res.ok) {
+          return NextResponse.json(
+            { ok: false, status: res.status },
+            { status: 502 }
+          );
+        }
+        const data = (await res.json()) as { keys?: Array<{ keyId: number }> };
+        return NextResponse.json({
+          ok: (data.keys?.length ?? 0) > 0,
+          keyCount: data.keys?.length ?? 0,
+          keyIds: (data.keys ?? []).map((k) => k.keyId),
+        });
+      }
+
       case 'cleanup-demo': {
         const deleted = await prisma.series.deleteMany({
           where: { id: 'demo-series' },
