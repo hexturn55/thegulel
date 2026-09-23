@@ -1,5 +1,6 @@
 import { useCallback, useEffect, useRef, useState } from 'react';
 import {
+  ActivityIndicator,
   Pressable,
   StyleSheet,
   Text,
@@ -9,6 +10,7 @@ import {
 } from 'react-native';
 import { useLocalSearchParams, useRouter } from 'expo-router';
 import { useVideoPlayer, VideoView } from 'expo-video';
+import { ApiRequestError } from '@gulel/shared';
 import { api } from '@/lib/api';
 
 /**
@@ -23,8 +25,48 @@ function fmt(s: number): string {
   return `${m}:${sec.toString().padStart(2, '0')}`;
 }
 
+/**
+ * Resolves a playable URL before mounting the player: offline demo episodes
+ * pass their sample URL; real episodes get a short-lived signed URL from the
+ * API, which also enforces entitlement (free pilot, VIP, or unlocked).
+ */
 export default function WatchScreen() {
-  const { episodeId, url } = useLocalSearchParams<{ episodeId: string; url?: string }>();
+  const { episodeId, url: sampleUrl } = useLocalSearchParams<{ episodeId: string; url?: string }>();
+  const router = useRouter();
+  const [url, setUrl] = useState<string | null>(sampleUrl ?? null);
+  const [problem, setProblem] = useState<string | null>(null);
+
+  useEffect(() => {
+    if (sampleUrl || !episodeId) return;
+    let active = true;
+    api
+      .getPlaybackUrl(episodeId)
+      .then((u) => active && setUrl(u))
+      .catch((e) => {
+        if (!active) return;
+        if (e instanceof ApiRequestError && e.status === 401) return router.replace('/auth');
+        if (e instanceof ApiRequestError && e.status === 402) return router.replace('/coins');
+        setProblem('This episode could not be loaded.');
+      });
+    return () => {
+      active = false;
+    };
+  }, [episodeId, sampleUrl, router]);
+
+  if (!url) {
+    return (
+      <View style={styles.container}>
+        {problem ? <Text style={styles.note}>{problem}</Text> : <ActivityIndicator color="#fff" />}
+        <Pressable style={styles.close} onPress={() => router.back()}>
+          <Text style={styles.closeText}>✕</Text>
+        </Pressable>
+      </View>
+    );
+  }
+  return <WatchPlayer episodeId={episodeId} url={url} />;
+}
+
+function WatchPlayer({ episodeId, url }: { episodeId: string; url: string }) {
   const router = useRouter();
   const lastSaved = useRef(0);
   const barWidth = useRef(0);
@@ -34,10 +76,10 @@ export default function WatchScreen() {
   const [duration, setDuration] = useState(0);
   const [showControls, setShowControls] = useState(true);
 
-  const player = useVideoPlayer(url ?? '', (p) => {
+  const player = useVideoPlayer(url, (p) => {
     p.loop = false;
     p.timeUpdateEventInterval = 0.5;
-    if (url) p.play();
+    p.play();
   });
 
   useEffect(() => {
@@ -94,17 +136,6 @@ export default function WatchScreen() {
     },
     [player, duration],
   );
-
-  if (!url) {
-    return (
-      <View style={styles.container}>
-        <Text style={styles.note}>No playback URL for this episode.</Text>
-        <Pressable style={styles.close} onPress={() => router.back()}>
-          <Text style={styles.closeText}>✕</Text>
-        </Pressable>
-      </View>
-    );
-  }
 
   const pct = duration > 0 ? Math.min(100, (current / duration) * 100) : 0;
 

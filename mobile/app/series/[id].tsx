@@ -9,27 +9,29 @@ import {
   View,
 } from 'react-native';
 import { Stack, useLocalSearchParams, useRouter } from 'expo-router';
-import { ApiRequestError, type Episode } from '@gulel/shared';
+import { ApiRequestError } from '@gulel/shared';
 import { api } from '@/lib/api';
 import { useAuth } from '@/lib/auth';
-import { sampleEpisodes } from '@/lib/sampleData';
+import { sampleEpisodes, type SampleEpisode } from '@/lib/sampleData';
 
 export default function SeriesScreen() {
   const { id } = useLocalSearchParams<{ id: string }>();
   const router = useRouter();
   const { user, refresh } = useAuth();
-  const [episodes, setEpisodes] = useState<Episode[]>([]);
+  const [episodes, setEpisodes] = useState<SampleEpisode[]>([]);
   const [loading, setLoading] = useState(true);
   const [unlockingId, setUnlockingId] = useState<string | null>(null);
 
-  function play(ep: Episode) {
+  function play(ep: SampleEpisode) {
+    // Real episodes get a signed stream URL from the API on the watch screen;
+    // only offline demo episodes carry their own sample URL.
     router.push({
       pathname: '/watch/[episodeId]',
-      params: { episodeId: ep.id, url: ep.videoUrl },
+      params: ep.sampleUrl ? { episodeId: ep.id, url: ep.sampleUrl } : { episodeId: ep.id },
     });
   }
 
-  async function open(ep: Episode) {
+  async function open(ep: SampleEpisode) {
     // Free episodes and active VIPs play immediately.
     if (ep.isFree || user?.isVip) return play(ep);
     if (!user) return router.push('/auth');

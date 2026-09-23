@@ -1,6 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server';
 import prisma from '@/lib/prisma';
 import { requireAdmin } from '@/lib/admin-auth';
+import { episodeThumbnailPath } from '@/lib/cloudflare';
 
 interface RouteContext {
   params: Promise<{ id: string }>;
@@ -13,10 +14,24 @@ export async function GET(
   try {
     const { id } = await context.params;
 
-    const episodes = await prisma.episode.findMany({
+    // Public listing: never expose Cloudflare video IDs or stream URLs —
+    // playable URLs come only from /api/episodes/:id/play after an
+    // entitlement check, and thumbnails go through our signed proxy.
+    const rows = await prisma.episode.findMany({
       where: { seriesId: id },
       orderBy: { episodeNumber: 'asc' },
+      select: {
+        id: true,
+        seriesId: true,
+        episodeNumber: true,
+        title: true,
+        titleHi: true,
+        titleZh: true,
+        duration: true,
+        isFree: true,
+      },
     });
+    const episodes = rows.map((e) => ({ ...e, thumbnail: episodeThumbnailPath(e.id) }));
 
     return NextResponse.json({ episodes });
   } catch (error) {

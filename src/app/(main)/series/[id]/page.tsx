@@ -9,6 +9,7 @@ import { StructuredData } from '@/components/StructuredData';
 import { getTranslations } from 'next-intl/server';
 import { getAuthUser } from '@/lib/auth';
 import { hasActiveVip } from '@/lib/subscription';
+import { episodeThumbnailPath } from '@/lib/cloudflare';
 
 interface PageProps {
   params: Promise<{ id: string }>;
@@ -105,7 +106,7 @@ export default async function SeriesPage({ params }: PageProps) {
     id: ep.id,
     episodeNumber: ep.episodeNumber,
     title: ep.title,
-    thumbnail: ep.thumbnail,
+    thumbnail: episodeThumbnailPath(ep.id),
     duration: ep.duration,
     isFree: ep.isFree,
     isUnlocked: isVip || purchases.includes(ep.id),

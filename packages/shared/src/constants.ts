@@ -23,6 +23,7 @@ export const API_ROUTES = {
   series: '/api/series',
   seriesEpisodes: (id: string) => `/api/series/${id}/episodes`,
   episodesUnlock: '/api/episodes/unlock',
+  episodePlay: (episodeId: string) => `/api/episodes/${encodeURIComponent(episodeId)}/play`,
   coinPackages: '/api/coins/packages',
   coinsPurchase: '/api/coins/purchase',
   adReward: '/api/coins/ad-reward',
