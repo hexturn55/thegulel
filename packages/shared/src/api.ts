@@ -94,6 +94,15 @@ export function createApiClient(options: ApiClientOptions = {}) {
       return data.episodes;
     },
 
+    /**
+     * Short-lived signed HLS URL for an episode the viewer may watch (free
+     * pilot, VIP, or unlocked). Rejects with 401/402 when the episode is locked.
+     */
+    async getPlaybackUrl(episodeId: string): Promise<string> {
+      const data = await request<{ url: string }>(API_ROUTES.episodePlay(episodeId));
+      return data.url;
+    },
+
     /** Spend coins to unlock a locked episode; returns the new coin balance. */
     unlockEpisode(episodeId: string): Promise<{ success: boolean; newBalance: number }> {
       return request<{ success: boolean; newBalance: number }>(API_ROUTES.episodesUnlock, {

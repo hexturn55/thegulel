@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server';
 import prisma from '@/lib/prisma';
-import { resolveVideoUrl } from '@/lib/cloudflare';
+import { resolvePlayableUrl, resolveVideoUrl } from '@/lib/cloudflare';
 
 export const dynamic = 'force-dynamic';
 export const maxDuration = 60;
@@ -154,7 +154,10 @@ export async function GET(request: NextRequest) {
     for (const e of episodes) {
       const url = resolveVideoUrl(e);
       if (url && isHls(url)) {
-        targets.push(() => checkUrl(url, 'video_link_broken', `${e.title} (${e.id})`));
+        // Videos require signed URLs, so check what viewers actually get.
+        targets.push(async () =>
+          checkUrl((await resolvePlayableUrl(e)) ?? url, 'video_link_broken', `${e.title} (${e.id})`)
+        );
       }
     }
     const seriesThumbs = await prisma.series.findMany({

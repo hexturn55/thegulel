@@ -1,4 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server';
+import { episodeThumbnailPath } from '@/lib/cloudflare';
 import { getSupabaseUser } from '@/lib/supabase-server';
 import prisma from '@/lib/prisma';
 
@@ -54,7 +55,6 @@ export async function GET(request: NextRequest) {
             select: {
               id: true,
               title: true,
-              thumbnail: true,
               duration: true,
               episodeNumber: true,
               series: {
@@ -79,7 +79,7 @@ export async function GET(request: NextRequest) {
       episodeId: h.episode.id,
       episodeTitle: h.episode.title,
       episodeNumber: h.episode.episodeNumber,
-      thumbnail: h.episode.thumbnail,
+      thumbnail: episodeThumbnailPath(h.episode.id),
       duration: h.episode.duration,
       seriesId: h.episode.series.id,
       seriesTitle: h.episode.series.title,

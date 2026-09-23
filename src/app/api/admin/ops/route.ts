@@ -1,6 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { timingSafeEqual } from 'crypto';
 import prisma from '@/lib/prisma';
+import { getSignedStreamUrl, setRequireSignedUrls } from '@/lib/cloudflare';
 
 export const dynamic = 'force-dynamic';
 export const maxDuration = 60;
@@ -130,7 +131,8 @@ export async function GET(request: NextRequest) {
         const results = await Promise.all(
           eps.map(async (e) => {
             try {
-              const res = await fetch(`https://${subdomain}/${e.videoId}/manifest/video.m3u8`, {
+              const signed = await getSignedStreamUrl(e.videoId);
+              const res = await fetch(signed ?? `https://${subdomain}/${e.videoId}/manifest/video.m3u8`, {
                 cache: 'no-store',
                 signal: AbortSignal.timeout(8000),
               });
@@ -152,6 +154,40 @@ export async function GET(request: NextRequest) {
           withAudio: results.filter((r) => r.hasAudio).length,
           silent: results.filter((r) => r.status === 200 && !r.hasAudio),
           results,
+        });
+      }
+
+      case 'require-signed': {
+        // Make every episode video playable only through a signed token, so a
+        // leaked video ID is useless. &off=1 reverts (emergency rollback).
+        const required = url.searchParams.get('off') !== '1';
+        const eps = await prisma.episode.findMany({ select: { videoId: true } });
+        const results = await Promise.all(eps.map((e) => setRequireSignedUrls(e.videoId, required)));
+        return NextResponse.json({
+          ok: results.every(Boolean),
+          requireSignedURLs: required,
+          updated: results.filter(Boolean).length,
+          failed: results.filter((r) => !r).length,
+        });
+      }
+
+      case 'signed-check': {
+        // Read-only proof of enforcement for one paid episode: the bare
+        // (unsigned) manifest should be refused, the signed one served.
+        const subdomain = process.env.NEXT_PUBLIC_CLOUDFLARE_CUSTOMER_SUBDOMAIN;
+        const ep = await prisma.episode.findFirst({
+          where: { isFree: false },
+          select: { videoId: true, episodeNumber: true, series: { select: { title: true } } },
+        });
+        if (!ep || !subdomain) return NextResponse.json({ error: 'nothing to check' }, { status: 404 });
+        const unsigned = await fetch(`https://${subdomain}/${ep.videoId}/manifest/video.m3u8`, { cache: 'no-store' });
+        const signedUrl = await getSignedStreamUrl(ep.videoId);
+        const signed = signedUrl ? await fetch(signedUrl, { cache: 'no-store' }) : null;
+        return NextResponse.json({
+          episode: `${ep.series.title} ep ${ep.episodeNumber}`,
+          unsignedStatus: unsigned.status,
+          signedStatus: signed?.status ?? null,
+          enforced: unsigned.status >= 400 && signed?.status === 200,
         });
       }
 
@@ -237,7 +273,7 @@ export async function GET(request: NextRequest) {
           body: JSON.stringify({
             url: sourceUrl,
             meta: { name: `${series.title} — ${title}` },
-            requireSignedURLs: false,
+            requireSignedURLs: true,
           }),
         });
         if (!cfRes.ok) {

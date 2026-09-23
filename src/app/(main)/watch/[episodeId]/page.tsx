@@ -1,7 +1,7 @@
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
 import prisma from '@/lib/prisma';
-import { resolvePlayableUrl } from '@/lib/cloudflare';
+import { episodeThumbnailPath, resolvePlayableUrl } from '@/lib/cloudflare';
 import { getAuthUser } from '@/lib/auth';
 import { hasActiveVip } from '@/lib/subscription';
 import WatchClient from './WatchClient';
@@ -100,7 +100,7 @@ export default async function WatchPage({ params }: PageProps) {
           id: episode.id,
           episodeNumber: episode.episodeNumber,
           title: episode.title,
-          thumbnail: episode.thumbnail,
+          thumbnail: episodeThumbnailPath(episode.id),
         }}
         videoUrl={videoUrl}
         episodes={episodes}

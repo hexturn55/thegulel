@@ -33,7 +33,7 @@ export async function POST(request: NextRequest) {
         },
         body: JSON.stringify({
           maxDurationSeconds,
-          requireSignedURLs: false,
+          requireSignedURLs: true,
         }),
       }
     );
