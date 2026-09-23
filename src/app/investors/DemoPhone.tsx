@@ -84,7 +84,16 @@ export default function DemoPhone({
       return;
     }
     video.muted = muted;
-    video.play().catch(() => setPlaying(false));
+    video.play().catch(() => {
+      if (!video.muted) {
+        // Sound autoplay blocked — continue muted; the pill restores audio.
+        video.muted = true;
+        setMuted(true);
+        video.play().catch(() => setPlaying(false));
+      } else {
+        setPlaying(false);
+      }
+    });
 
     return () => {
       hlsRef.current?.destroy();
@@ -98,6 +107,19 @@ export default function DemoPhone({
   useEffect(() => {
     if (videoRef.current) videoRef.current.muted = muted;
   }, [muted]);
+
+  const toggleSound = () => {
+    const v = videoRef.current;
+    const next = !muted;
+    if (v) {
+      v.muted = next;
+      if (!next) {
+        v.volume = 1;
+        if (v.paused) v.play().catch(() => undefined);
+      }
+    }
+    setMuted(next);
+  };
 
   const go = (delta: number) => {
     setLiked(false);
@@ -147,6 +169,15 @@ export default function DemoPhone({
               />
               <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/85 via-transparent to-black/40" />
 
+              {muted && playing && !failed && (
+                <button
+                  onClick={toggleSound}
+                  className="absolute left-1/2 top-[45%] z-20 flex -translate-x-1/2 items-center gap-2 rounded-full bg-black/60 px-4 py-2 text-xs font-semibold text-white ring-1 ring-white/30 backdrop-blur animate-pulse"
+                >
+                  <VolumeX className="h-4 w-4" /> Tap for sound
+                </button>
+              )}
+
               {(!playing || failed) && (
                 <button
                   onClick={togglePlay}
@@ -165,7 +196,7 @@ export default function DemoPhone({
                   EP {current.episodeNumber} · FREE
                 </span>
                 <button
-                  onClick={() => setMuted((m) => !m)}
+                  onClick={toggleSound}
                   className="rounded-full bg-black/40 p-1.5 backdrop-blur"
                   aria-label={muted ? 'Unmute' : 'Mute'}
                 >

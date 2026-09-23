@@ -9,6 +9,27 @@ import { useAuthStore } from '@/stores/useAuthStore';
 import PaywallOverlay from './PaywallOverlay';
 import { formatDuration } from '@/lib/utils';
 
+// Browsers only allow autoplay while muted, so every episode starts muted until
+// the viewer turns sound on once; after that, keep sound on for the rest of
+// the session (episode swipes remount the player on a new route).
+let soundOnForSession = false;
+function wantsSound(): boolean {
+  if (soundOnForSession) return true;
+  try {
+    return sessionStorage.getItem('gulel:sound') === 'on';
+  } catch {
+    return false;
+  }
+}
+function rememberSound(on: boolean) {
+  soundOnForSession = on;
+  try {
+    sessionStorage.setItem('gulel:sound', on ? 'on' : 'off');
+  } catch {
+    /* storage unavailable (private mode) — the in-memory flag still works */
+  }
+}
+
 interface VideoPlayerProps {
   episodeId: string;
   videoUrl: string;
@@ -81,15 +102,28 @@ export default function VideoPlayer({
     setIsBuffering(true);
     recoverRef.current = 0;
 
-    // Vertical-drama UX: start muted so the browser permits autoplay.
-    video.muted = true;
-    setIsMuted(true);
+    const withSound = wantsSound();
+    video.muted = !withSound;
+    setIsMuted(!withSound);
 
     const tryAutoplay = () => {
       video
         .play()
         .then(() => setIsPlaying(true))
-        .catch(() => setIsPlaying(false)); // blocked even muted — user can tap
+        .catch(() => {
+          if (!video.muted) {
+            // Sound autoplay blocked for this page load — play muted and let
+            // the "tap for sound" pill bring the audio back.
+            video.muted = true;
+            setIsMuted(true);
+            video
+              .play()
+              .then(() => setIsPlaying(true))
+              .catch(() => setIsPlaying(false));
+          } else {
+            setIsPlaying(false); // blocked even muted — user can tap
+          }
+        });
     };
 
     if (Hls.isSupported()) {
@@ -214,7 +248,12 @@ export default function VideoPlayer({
     const video = videoRef.current;
     if (!video) return;
     video.muted = !video.muted;
+    if (!video.muted) {
+      video.volume = 1;
+      if (video.paused) video.play().then(() => setIsPlaying(true)).catch(() => undefined);
+    }
     setIsMuted(video.muted);
+    rememberSound(!video.muted);
   };
 
   const handleTouchStart = (e: React.TouchEvent) => {
@@ -311,6 +350,22 @@ export default function VideoPlayer({
             {t('replay')}
           </button>
         </div>
+      )}
+
+      {/* Tap for sound — muted autoplay is the only reliable default, so make
+          turning audio on obvious and one tap away. */}
+      {isMuted && !error && !showEndCard && (
+        <button
+          onClick={(e) => {
+            e.stopPropagation();
+            toggleMute();
+          }}
+          style={{ top: 'calc(0.75rem + env(safe-area-inset-top))' }}
+          className="absolute left-1/2 z-40 -translate-x-1/2 flex items-center gap-2 rounded-full bg-black/60 px-4 py-2 text-sm font-semibold text-white ring-1 ring-white/30 backdrop-blur-sm shadow-lg animate-pulse"
+        >
+          <VolumeX className="w-4 h-4" />
+          {t('tapForSound')}
+        </button>
       )}
 
       {/* Buffering spinner */}
