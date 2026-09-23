@@ -155,6 +155,14 @@ export async function GET(request: NextRequest) {
         });
       }
 
+      case 'pilot-only-free': {
+        // Business rule: only each series' pilot (episode 1) is free; every
+        // later episode goes through the coin flow.
+        const episodes = await prisma.$executeRaw`UPDATE "Episode" SET "isFree" = ("episodeNumber" = 1)`;
+        const series = await prisma.$executeRaw`UPDATE "Series" SET "freeEpisodes" = 1`;
+        return NextResponse.json({ ok: true, episodesUpdated: episodes, seriesUpdated: series });
+      }
+
       case 'cleanup-demo': {
         const deleted = await prisma.series.deleteMany({
           where: { id: 'demo-series' },
@@ -250,7 +258,7 @@ export async function GET(request: NextRequest) {
             videoUrl: `https://${subdomain}/${uid}/manifest/video.m3u8`,
             thumbnail: `https://videodelivery.net/${uid}/thumbnails/thumbnail.jpg`,
             duration,
-            isFree: true,
+            isFree: num === 1,
           },
           create: {
             seriesId,
@@ -260,7 +268,7 @@ export async function GET(request: NextRequest) {
             videoUrl: `https://${subdomain}/${uid}/manifest/video.m3u8`,
             thumbnail: `https://videodelivery.net/${uid}/thumbnails/thumbnail.jpg`,
             duration,
-            isFree: true,
+            isFree: num === 1,
           },
         });
         return NextResponse.json({ ok: true, uid, episodeId: episode.id });

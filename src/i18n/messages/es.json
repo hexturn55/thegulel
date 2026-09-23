@@ -53,7 +53,17 @@
     "moreSoon": "Pronto habrá nuevos episodios.",
     "replay": "Volver a ver",
     "next": "Siguiente",
-    "tapForSound": "Toca para activar el sonido"
+    "tapForSound": "Toca para activar el sonido",
+    "episodes": "Episodios",
+    "episodesCount": "{count} episodios",
+    "share": "Compartir",
+    "copied": "¡Copiado!",
+    "soundOn": "Sonido",
+    "soundOff": "Silencio",
+    "free": "Gratis",
+    "loadError": "No se pudo cargar este video.",
+    "retry": "Reintentar",
+    "moreSeries": "Más series"
   },
   "search": {
     "placeholder": "Buscar series, géneros...",
@@ -135,7 +145,20 @@
     "pleaseWait": "Espera {seconds} s antes de ver otro anuncio.",
     "adFailed": "No se pudo otorgar tu recompensa. Inténtalo de nuevo.",
     "adUnavailable": "No hay ningún anuncio disponible ahora. Inténtalo más tarde.",
-    "rewardOnWay": "¡Gracias por ver! Tus monedas aparecerán en breve."
+    "rewardOnWay": "¡Gracias por ver! Tus monedas aparecerán en breve.",
+    "lockedTitle": "El episodio {number} está bloqueado",
+    "teaser": "la historia continúa",
+    "balanceLabel": "{balance} / {price} monedas",
+    "adsNeeded": "{count, plural, one {# anuncio para desbloquear} other {# anuncios para desbloquear}}",
+    "unlockNow": "Desbloquear ahora · {price} monedas",
+    "watchAdCta": "Ver un anuncio · +{coins} monedas",
+    "signInToEarn": "Inicia sesión para ganar monedas gratis",
+    "buyCoins": "Comprar monedas",
+    "vipShort": "Hazte VIP",
+    "earnedToast": "¡+{coins} monedas!",
+    "cooldown": "Próximo anuncio en {seconds} s",
+    "dailyLimit": "Límite diario de anuncios alcanzado: vuelve mañana o compra monedas.",
+    "unlockFailed": "No se pudo desbloquear. Inténtalo de nuevo."
   },
   "vip": {
     "title": "Gulel VIP",

@@ -1,43 +1,19 @@
 'use client';
 
 import { useRouter } from 'next/navigation';
-import VideoPlayer from '@/components/VideoPlayer';
+import Player, { type PlayerProps } from '@/components/player/Player';
 
-interface WatchClientProps {
-  episodeId: string;
-  videoUrl: string;
-  videoId: string;
-  seriesId: string;
-  isFree: boolean;
-  isUnlocked: boolean;
-  nextEpisodeId?: string;
-  prevEpisodeId?: string;
-}
+type WatchClientProps = Omit<PlayerProps, 'onNavigate' | 'onClose' | 'onUnlocked'>;
 
-export default function WatchClient({
-  episodeId,
-  videoUrl,
-  videoId,
-  seriesId,
-  isFree,
-  isUnlocked,
-  nextEpisodeId,
-  prevEpisodeId,
-}: WatchClientProps) {
+export default function WatchClient(props: WatchClientProps) {
   const router = useRouter();
-
   return (
-    <VideoPlayer
-      episodeId={episodeId}
-      videoUrl={videoUrl}
-      videoId={videoId}
-      isFree={isFree}
-      isUnlocked={isUnlocked}
-      onClose={() => router.push(`/series/${seriesId}`)}
-      onNextEpisode={nextEpisodeId ? () => router.push(`/watch/${nextEpisodeId}`) : undefined}
-      onPrevEpisode={prevEpisodeId ? () => router.push(`/watch/${prevEpisodeId}`) : undefined}
-      hasNext={!!nextEpisodeId}
-      hasPrev={!!prevEpisodeId}
+    <Player
+      {...props}
+      onNavigate={(id) => router.push(`/watch/${id}`)}
+      onClose={() => router.push(`/series/${props.series.id}`)}
+      // Re-render on the server so the now-unlocked episode gets its stream URL.
+      onUnlocked={() => router.refresh()}
     />
   );
 }
