@@ -115,6 +115,46 @@ export async function GET(request: NextRequest) {
         });
       }
 
+      case 'stream-audio': {
+        // Read-only: for every episode, fetch its HLS master manifest and
+        // report whether it carries an audio rendition. A silent source can't
+        // be fixed in the player.
+        const subdomain = process.env.NEXT_PUBLIC_CLOUDFLARE_CUSTOMER_SUBDOMAIN;
+        if (!subdomain) {
+          return NextResponse.json({ error: 'Cloudflare not configured' }, { status: 500 });
+        }
+        const eps = await prisma.episode.findMany({
+          select: { id: true, title: true, episodeNumber: true, videoId: true, series: { select: { title: true } } },
+          orderBy: [{ seriesId: 'asc' }, { episodeNumber: 'asc' }],
+        });
+        const results = await Promise.all(
+          eps.map(async (e) => {
+            try {
+              const res = await fetch(`https://${subdomain}/${e.videoId}/manifest/video.m3u8`, {
+                cache: 'no-store',
+                signal: AbortSignal.timeout(8000),
+              });
+              const text = res.ok ? await res.text() : '';
+              const hasAudio = /TYPE=AUDIO/.test(text) || /mp4a\./.test(text);
+              return {
+                series: e.series.title,
+                ep: e.episodeNumber,
+                status: res.status,
+                hasAudio,
+              };
+            } catch {
+              return { series: e.series.title, ep: e.episodeNumber, status: 0, hasAudio: false };
+            }
+          })
+        );
+        return NextResponse.json({
+          checked: results.length,
+          withAudio: results.filter((r) => r.hasAudio).length,
+          silent: results.filter((r) => r.status === 200 && !r.hasAudio),
+          results,
+        });
+      }
+
       case 'cleanup-demo': {
         const deleted = await prisma.series.deleteMany({
           where: { id: 'demo-series' },

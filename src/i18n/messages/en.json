@@ -52,7 +52,8 @@
     "stayTuned": "Stay tuned for more",
     "moreSoon": "New episodes are coming soon.",
     "replay": "Replay",
-    "next": "Next"
+    "next": "Next",
+    "tapForSound": "Tap for sound"
   },
   "search": {
     "placeholder": "Search series, genres...",

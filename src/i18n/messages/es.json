@@ -52,7 +52,8 @@
     "stayTuned": "Sigue atento para más",
     "moreSoon": "Pronto habrá nuevos episodios.",
     "replay": "Volver a ver",
-    "next": "Siguiente"
+    "next": "Siguiente",
+    "tapForSound": "Toca para activar el sonido"
   },
   "search": {
     "placeholder": "Buscar series, géneros...",
