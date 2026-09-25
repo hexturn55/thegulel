@@ -20,8 +20,9 @@ export async function POST(request: NextRequest) {
       return NextResponse.json({ success: true, vip: true, newBalance: user.coinBalance });
     }
 
-    const episode = await prisma.episode.findUnique({
-      where: { id: episodeId },
+    // Only catalog (published) episodes can be bought.
+    const episode = await prisma.episode.findFirst({
+      where: { id: episodeId, series: { status: 'PUBLISHED' } },
       include: { series: { select: { coinPrice: true } } },
     });
     if (!episode) {

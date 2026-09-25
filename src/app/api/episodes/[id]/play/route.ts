@@ -18,8 +18,9 @@ export async function GET(
   context: { params: Promise<{ id: string }> }
 ) {
   const { id } = await context.params;
-  const episode = await prisma.episode.findUnique({
-    where: { id },
+  // Draft series (e.g. pitch-only showcases) are never playable here.
+  const episode = await prisma.episode.findFirst({
+    where: { id, series: { status: 'PUBLISHED' } },
     select: { id: true, isFree: true, videoId: true },
   });
   if (!episode) {

@@ -260,6 +260,12 @@ export default async function InvestorsPage() {
             <a href="#model" className="hidden rounded-full px-3 py-1.5 text-zinc-300 hover:text-white md:inline">
               Model
             </a>
+            <Link
+              href="/investors/dashboard"
+              className="rounded-full border border-emerald-500/50 px-3 py-1.5 font-semibold text-emerald-300 hover:border-emerald-300 hover:text-white"
+            >
+              Live metrics
+            </Link>
             <a href="#ask" className="rounded-full bg-rose-500 px-4 py-1.5 font-semibold text-white hover:bg-rose-600">
               The Ask
             </a>
@@ -309,6 +315,12 @@ export default async function InvestorsPage() {
             >
               Raising ₹40 Cr · Series A <ArrowRight className="h-4 w-4" />
             </a>
+            <Link
+              href="/investors/dashboard"
+              className="inline-flex items-center gap-2 rounded-full border border-emerald-500/60 px-6 py-3 font-semibold text-emerald-300 hover:border-emerald-300 hover:text-white"
+            >
+              <TrendingUp className="h-5 w-5" /> Live metrics dashboard
+            </Link>
           </div>
         </div>
       </section>
