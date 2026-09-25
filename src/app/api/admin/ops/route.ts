@@ -1,6 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { timingSafeEqual } from 'crypto';
 import prisma from '@/lib/prisma';
+import { BRAND_SHOWCASE_SERIES_ID } from '@/lib/investor-metrics';
 import { getSignedStreamUrl, setRequireSignedUrls } from '@/lib/cloudflare';
 
 export const dynamic = 'force-dynamic';
@@ -46,7 +47,10 @@ function tokenOk(request: NextRequest, url: URL): boolean {
  *  - cleanup-demo   delete the hidden duplicate "demo-series" catalog entry
  *  - ingest         have Cloudflare Stream copy a video from an allowlisted
  *                   host and upsert it as an episode: &seriesId=&url=&title=&num=&duration=
+ *                   (or &uid= to register an already-uploaded video; &free=0|1)
  *  - ingest-status  report Cloudflare processing state for &uid=
+ *  - direct-upload  one-time Cloudflare upload URL (signed-only) for &name=
+ *  - showcase-series  ensure the DRAFT pitch-only brand showcase series exists
  */
 export async function GET(request: NextRequest) {
   const url = new URL(request.url);
@@ -224,14 +228,51 @@ export async function GET(request: NextRequest) {
       case 'ingest': {
         const seriesId = url.searchParams.get('seriesId');
         const sourceUrl = url.searchParams.get('url');
+        const existingUid = url.searchParams.get('uid');
         const title = url.searchParams.get('title') ?? 'Episode 1';
         const num = Number(url.searchParams.get('num') ?? '1');
         const duration = Number(url.searchParams.get('duration') ?? '15');
-        if (!seriesId || !sourceUrl) {
+        const freeParam = url.searchParams.get('free');
+        const isFree = freeParam == null ? num === 1 : freeParam === '1';
+        if (!seriesId || (!sourceUrl && !existingUid)) {
           return NextResponse.json(
-            { error: 'seriesId and url are required' },
+            { error: 'seriesId and url (or uid) are required' },
             { status: 400 }
           );
+        }
+        if (existingUid) {
+          // Register a video that is already in Cloudflare (e.g. via direct-upload).
+          if (!/^[a-f0-9]{32}$/.test(existingUid)) {
+            return NextResponse.json({ error: 'valid uid required' }, { status: 400 });
+          }
+          const subdomain = process.env.NEXT_PUBLIC_CLOUDFLARE_CUSTOMER_SUBDOMAIN;
+          if (!subdomain) {
+            return NextResponse.json({ error: 'Cloudflare not configured' }, { status: 500 });
+          }
+          if (!(await prisma.series.findUnique({ where: { id: seriesId }, select: { id: true } }))) {
+            return NextResponse.json({ error: 'unknown series' }, { status: 404 });
+          }
+          const data = {
+            title,
+            videoId: existingUid,
+            videoUrl: `https://${subdomain}/${existingUid}/manifest/video.m3u8`,
+            thumbnail: `https://videodelivery.net/${existingUid}/thumbnails/thumbnail.jpg`,
+            duration,
+            isFree,
+          };
+          const episode = await prisma.episode.upsert({
+            where: { seriesId_episodeNumber: { seriesId, episodeNumber: num } },
+            update: data,
+            create: { seriesId, episodeNumber: num, ...data },
+          });
+          await prisma.series.update({
+            where: { id: seriesId },
+            data: { totalEpisodes: await prisma.episode.count({ where: { seriesId } }) },
+          });
+          return NextResponse.json({ ok: true, uid: existingUid, episodeId: episode.id });
+        }
+        if (!sourceUrl) {
+          return NextResponse.json({ error: 'url required' }, { status: 400 });
         }
         let sourceHost: string;
         try {
@@ -294,7 +335,7 @@ export async function GET(request: NextRequest) {
             videoUrl: `https://${subdomain}/${uid}/manifest/video.m3u8`,
             thumbnail: `https://videodelivery.net/${uid}/thumbnails/thumbnail.jpg`,
             duration,
-            isFree: num === 1,
+            isFree,
           },
           create: {
             seriesId,
@@ -304,10 +345,56 @@ export async function GET(request: NextRequest) {
             videoUrl: `https://${subdomain}/${uid}/manifest/video.m3u8`,
             thumbnail: `https://videodelivery.net/${uid}/thumbnails/thumbnail.jpg`,
             duration,
-            isFree: num === 1,
+            isFree,
           },
         });
         return NextResponse.json({ ok: true, uid, episodeId: episode.id });
+      }
+
+      case 'direct-upload': {
+        // One-time upload URL: the uploader POSTs the file straight to
+        // Cloudflare, so no API credential leaves this function.
+        const name = (url.searchParams.get('name') ?? 'upload').slice(0, 120);
+        const accountId = process.env.CLOUDFLARE_ACCOUNT_ID;
+        const cfToken = process.env.CLOUDFLARE_API_TOKEN;
+        if (!accountId || !cfToken) {
+          return NextResponse.json({ error: 'Cloudflare not configured' }, { status: 500 });
+        }
+        const res = await fetch(`${CF_API}/accounts/${accountId}/stream/direct_upload`, {
+          method: 'POST',
+          headers: { Authorization: `Bearer ${cfToken}`, 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            maxDurationSeconds: 300,
+            requireSignedURLs: true,
+            meta: { name },
+          }),
+        });
+        const data = await res.json();
+        if (!res.ok || !data.result?.uploadURL) {
+          return NextResponse.json({ error: 'direct upload failed', detail: data.errors }, { status: 502 });
+        }
+        return NextResponse.json({ ok: true, uid: data.result.uid, uploadURL: data.result.uploadURL });
+      }
+
+      case 'showcase-series': {
+        // Pitch-only brand integration samples: DRAFT keeps them out of the
+        // catalog, search, sitemap and playback APIs. Only the gated investor
+        // dashboard shows them.
+        const series = await prisma.series.upsert({
+          where: { id: BRAND_SHOWCASE_SERIES_ID },
+          update: { status: 'DRAFT' },
+          create: {
+            id: BRAND_SHOWCASE_SERIES_ID,
+            title: 'Brand Integration Showcase (Spec)',
+            description:
+              'Spec product-placement samples produced by Gulel for pitch purposes only. Not affiliated with the brands shown. Not published.',
+            thumbnail: '/investors/drama.jpg',
+            genre: 'Drama',
+            freeEpisodes: 0,
+            status: 'DRAFT',
+          },
+        });
+        return NextResponse.json({ ok: true, id: series.id, status: series.status });
       }
 
       case 'ingest-status': {

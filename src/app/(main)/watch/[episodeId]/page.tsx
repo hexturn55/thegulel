@@ -13,8 +13,9 @@ interface PageProps {
 }
 
 async function getEpisodeData(episodeId: string, userId?: string) {
-  const episode = await prisma.episode.findUnique({
-    where: { id: episodeId },
+  // Draft series (e.g. pitch-only showcases) are not part of the catalog.
+  const episode = await prisma.episode.findFirst({
+    where: { id: episodeId, series: { status: 'PUBLISHED' } },
     include: {
       series: {
         select: {

@@ -18,7 +18,7 @@ export async function GET(
     // playable URLs come only from /api/episodes/:id/play after an
     // entitlement check, and thumbnails go through our signed proxy.
     const rows = await prisma.episode.findMany({
-      where: { seriesId: id },
+      where: { seriesId: id, series: { status: 'PUBLISHED' } },
       orderBy: { episodeNumber: 'asc' },
       select: {
         id: true,
