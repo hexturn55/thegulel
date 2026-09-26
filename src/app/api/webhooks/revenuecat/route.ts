@@ -1,6 +1,7 @@
-import { NextRequest, NextResponse } from 'next/server';
+import { NextRequest, NextResponse, after } from 'next/server';
 import prisma from '@/lib/prisma';
 import { getProductMapping, type ProductMapping } from '@/lib/revenuecat';
+import { metaCapiEnabled, sendMetaEvent } from '@/lib/meta-capi';
 
 /**
  * POST /api/webhooks/revenuecat
@@ -43,6 +44,12 @@ interface RevenueCatEvent {
   /** TRANSFER only: app user ids the purchases moved from / to. */
   transferred_from?: string[];
   transferred_to?: string[];
+  // Used for the Meta Conversions API event.
+  store?: string;
+  price?: number | null;
+  price_in_purchased_currency?: number | null;
+  currency?: string | null;
+  subscriber_attributes?: Record<string, { value?: string } | undefined>;
 }
 
 export async function POST(request: NextRequest) {
@@ -98,10 +105,14 @@ export async function POST(request: NextRequest) {
         if (mapping.kind === 'coins') {
           // Only purchase events grant coins (renewals don't apply to consumables).
           if (event.type === 'INITIAL_PURCHASE' || event.type === 'NON_RENEWING_PURCHASE') {
-            await creditCoins(userId, mapping.coins, event.id, event.product_id, tag);
+            const credited = await creditCoins(userId, mapping.coins, event.id, event.product_id, tag);
+            if (credited) after(() => sendAppEvent('Purchase', event));
           }
         } else {
-          await grantVip(userId, mapping, event, tag);
+          const activated = await grantVip(userId, mapping, event, tag);
+          if (activated && event.type === 'INITIAL_PURCHASE') {
+            after(() => sendAppEvent('Subscribe', event));
+          }
         }
         break;
       }
@@ -148,13 +159,14 @@ export async function POST(request: NextRequest) {
   }
 }
 
+/** Returns true only for the first (non-duplicate) credit of this event. */
 async function creditCoins(
   userId: string,
   coins: number,
   eventId: string,
   productId: string | undefined,
   tag: string,
-) {
+): Promise<boolean> {
   try {
     await prisma.$transaction([
       prisma.coinTransaction.create({
@@ -172,12 +184,13 @@ async function creditCoins(
       }),
     ]);
     console.log(`[revenuecat] ${tag}Credited ${coins} coins to ${userId}`);
+    return true;
   } catch (err) {
     if ((err as { code?: string }).code === 'P2002') {
       console.log(`[revenuecat] Duplicate event ignored: ${eventId}`);
-    } else {
-      throw err;
+      return false;
     }
+    throw err;
   }
 }
 
@@ -185,13 +198,18 @@ function subscriptionProviderId(event: RevenueCatEvent): string {
   return event.original_transaction_id ?? `${event.app_user_id}:${event.product_id}`;
 }
 
+/** Returns true when this event moved the subscription into ACTIVE. */
 async function grantVip(
   userId: string,
   mapping: Extract<ProductMapping, { kind: 'vip' }>,
   event: RevenueCatEvent,
   tag: string,
-) {
+): Promise<boolean> {
   const providerId = subscriptionProviderId(event);
+  const before = await prisma.subscription.findUnique({
+    where: { providerId },
+    select: { status: true },
+  });
   const startDate = event.purchased_at_ms ? new Date(event.purchased_at_ms) : new Date();
   const endDate = event.expiration_at_ms
     ? new Date(event.expiration_at_ms)
@@ -211,6 +229,64 @@ async function grantVip(
     update: { status: 'ACTIVE', startDate, endDate },
   });
   console.log(`[revenuecat] ${tag}VIP ${mapping.plan} active for ${userId} until ${endDate.toISOString()}`);
+  return before?.status !== 'ACTIVE';
+}
+
+/**
+ * Server-side Purchase / Subscribe for an in-app purchase (action_source
+ * 'app'), keyed on the same `revenuecat:<event id>` reference the credit uses.
+ * Don't also enable RevenueCat's own Meta integration for these events, or
+ * they'd be counted twice.
+ */
+async function sendAppEvent(eventName: 'Purchase' | 'Subscribe', event: RevenueCatEvent) {
+  const test = event.environment === 'SANDBOX';
+  if (!metaCapiEnabled(test)) return;
+  const platform =
+    event.store === 'APP_STORE' || event.store === 'MAC_APP_STORE'
+      ? 'ios'
+      : event.store === 'PLAY_STORE' || event.store === 'AMAZON'
+        ? 'android'
+        : null;
+  if (!platform) return; // promotional grants, web billing, etc. aren't app purchases
+
+  const attr = (key: string) => event.subscriber_attributes?.[key]?.value || undefined;
+  let account: { email: string | null; phone: string | null } | null = null;
+  try {
+    account = await prisma.user.findUnique({
+      where: { id: event.app_user_id },
+      select: { email: true, phone: true },
+    });
+  } catch (err) {
+    console.error('[revenuecat] user lookup for Meta failed:', err);
+  }
+
+  const localPrice = event.price_in_purchased_currency;
+  const hasLocalPrice = typeof localPrice === 'number' && !!event.currency;
+  await sendMetaEvent({
+    eventName,
+    eventId: `revenuecat:${event.id}`,
+    eventTime: event.purchased_at_ms ? Math.floor(event.purchased_at_ms / 1000) : undefined,
+    value: hasLocalPrice ? localPrice : (event.price ?? undefined),
+    currency: hasLocalPrice ? event.currency! : 'USD',
+    contentIds: event.product_id ? [event.product_id] : undefined,
+    user: {
+      email: [attr('$email'), account?.email],
+      phone: [attr('$phoneNumber'), account?.phone],
+      externalId: event.app_user_id,
+      clientIp: attr('$ip'),
+      anonId: attr('$fbAnonymousId'),
+      madid: platform === 'ios' ? attr('$idfa') : attr('$gpsAdId'),
+    },
+    actionSource: 'app',
+    app: {
+      platform,
+      // iOS: only with App Tracking Transparency consent. Android: when an
+      // advertising id was collected (i.e. the user hasn't opted out).
+      trackingEnabled:
+        platform === 'ios' ? attr('$attConsentStatus') === 'authorized' : !!attr('$gpsAdId'),
+    },
+    test,
+  });
 }
 
 async function expireVip(userId: string, event: RevenueCatEvent) {

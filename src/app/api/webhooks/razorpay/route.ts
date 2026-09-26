@@ -1,6 +1,7 @@
-import { NextRequest, NextResponse } from 'next/server';
+import { NextRequest, NextResponse, after } from 'next/server';
 import prisma from '@/lib/prisma';
 import crypto from 'crypto';
+import { sendCheckoutEvent } from '@/lib/meta-capi';
 
 export async function POST(request: NextRequest) {
   try {
@@ -32,11 +33,12 @@ export async function POST(request: NextRequest) {
     switch (event.event) {
       case 'payment.captured': {
         const payment = event.payload.payment.entity;
-        const { userId, coins } = payment.notes;
+        const { userId, coins, packageId } = payment.notes;
         const amount = parseInt(coins);
 
         // Idempotent credit keyed on the Razorpay payment id — a replayed
         // webhook hits the unique `providerRef` constraint and is skipped.
+        let credited = false;
         try {
           await prisma.$transaction([
             prisma.coinTransaction.create({
@@ -53,6 +55,7 @@ export async function POST(request: NextRequest) {
               data: { coinBalance: { increment: amount } },
             }),
           ]);
+          credited = true;
           console.log(`Coins added to user ${userId}: ${coins}`);
         } catch (err) {
           if ((err as { code?: string }).code === 'P2002') {
@@ -60,6 +63,27 @@ export async function POST(request: NextRequest) {
           } else {
             throw err;
           }
+        }
+
+        // First (non-duplicate) credit only: server-side Purchase, sent after
+        // the response and deduped against the wallet's browser event by the
+        // shared providerRef.
+        if (credited) {
+          after(() =>
+            sendCheckoutEvent({
+              eventName: 'Purchase',
+              eventId: `razorpay:${payment.id}`,
+              eventTime: payment.created_at,
+              userId,
+              metadata: payment.notes,
+              contact: { email: payment.email, phone: payment.contact },
+              value: payment.amount / 100,
+              currency: payment.currency ?? 'INR',
+              contentIds: [packageId],
+              path: '/wallet',
+              test: process.env.RAZORPAY_KEY_ID?.startsWith('rzp_test_'),
+            })
+          );
         }
         break;
       }

@@ -1,6 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server';
 import prisma from '@/lib/prisma';
 import { getAuthUser } from '@/lib/auth';
+import { captureCheckoutSignals } from '@/lib/meta-capi';
 
 /**
  * POST /api/coins/razorpay/order
@@ -56,6 +57,9 @@ export async function POST(request: NextRequest) {
           userId: user.id,
           packageId: pkg.id,
           coins: pkg.coins.toString(),
+          // Browser signals + last-touch UTMs for the Conversions API event
+          // (notes allow 15 keys of ≤256 chars; this adds at most 8).
+          ...captureCheckoutSignals(request, 256),
         },
       }),
     });

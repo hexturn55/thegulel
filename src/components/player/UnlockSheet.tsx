@@ -1,17 +1,19 @@
 'use client';
 
-import { useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { useRouter } from 'next/navigation';
 import { useTranslations } from 'next-intl';
 import { Coins, Crown, Loader2, Lock, PlayCircle, Sparkles } from 'lucide-react';
 import { useAuthStore } from '@/stores/useAuthStore';
 import { playRewardedAd, rewardedAdMode } from '@/lib/ima';
+import { analytics } from '@/lib/analytics';
 
 const AD_COINS = 5;
 
 interface UnlockSheetProps {
   episodeId: string;
   episodeNumber: number;
+  seriesId: string;
   seriesTitle: string;
   coinPrice: number;
   onUnlocked: () => void;
@@ -26,6 +28,7 @@ interface UnlockSheetProps {
 export default function UnlockSheet({
   episodeId,
   episodeNumber,
+  seriesId,
   seriesTitle,
   coinPrice,
   onUnlocked,
@@ -37,6 +40,21 @@ export default function UnlockSheet({
   const [busy, setBusy] = useState<'ad' | 'unlock' | null>(null);
   const [notice, setNotice] = useState<string | null>(null);
   const [toast, setToast] = useState<number | null>(null);
+  const paywallLogged = useRef(false);
+
+  // Paywall impression — once per sheet (guards StrictMode's double effect).
+  useEffect(() => {
+    if (paywallLogged.current) return;
+    paywallLogged.current = true;
+    analytics.paywallView({
+      seriesId,
+      seriesTitle,
+      episodeId,
+      episodeNumber,
+      coinPrice,
+      signedIn: !!user,
+    });
+  }, [seriesId, seriesTitle, episodeId, episodeNumber, coinPrice, user]);
 
   // The persisted store can be stale; refresh the balance from the server.
   useEffect(() => {
@@ -66,7 +84,10 @@ export default function UnlockSheet({
     const gained = newBalance - balance;
     setBalance(newBalance);
     updateCoinBalance(newBalance);
-    if (gained > 0) setToast(gained);
+    if (gained > 0) {
+      setToast(gained);
+      analytics.adReward(gained, seriesId);
+    }
   };
 
   const waitForSsvReward = async (before: number): Promise<number | null> => {
@@ -141,6 +162,10 @@ export default function UnlockSheet({
       const data = await res.json().catch(() => ({}));
       if (res.ok) {
         if (typeof data.newBalance === 'number') updateCoinBalance(data.newBalance);
+        // VIP / free / already-owned unlocks spend nothing.
+        if (!data.vip && !data.free && !data.alreadyUnlocked) {
+          analytics.unlockEpisode({ seriesId, seriesTitle, episodeId, episodeNumber, coins: coinPrice });
+        }
         onUnlocked();
         return;
       }

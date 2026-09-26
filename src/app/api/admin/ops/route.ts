@@ -43,8 +43,8 @@ function tokenOk(request: NextRequest, url: URL): boolean {
  * Gated by OPS_TOKEN (unset = endpoint disabled, all requests 401).
  *
  * Actions:
- *  - dbcheck        read-only: have the billing/ads and mobile_hardening
- *                   migrations been applied?
+ *  - dbcheck        read-only: have the billing/ads, mobile_hardening and
+ *                   series_alerts migrations been applied?
  *  - migrate        apply those additive migrations (IF NOT EXISTS)
  *  - cleanup-demo   delete the hidden duplicate "demo-series" catalog entry
  *  - ingest         have Cloudflare Stream copy a video from an allowlisted
@@ -98,6 +98,12 @@ export async function GET(request: NextRequest) {
         } catch {
           checks.appleCredential_table = false;
         }
+        try {
+          await prisma.$queryRaw`SELECT "seriesId" FROM "SeriesAlert" LIMIT 1`;
+          checks.seriesAlert_table = true;
+        } catch {
+          checks.seriesAlert_table = false;
+        }
         // Server configuration the store builds depend on (reported, but not
         // part of `ok`, which is about the schema).
         const config = {
@@ -122,7 +128,21 @@ export async function GET(request: NextRequest) {
         // mobile_hardening (same statements as prisma/hotfix-mobile-hardening.sql).
         await prisma.$executeRaw`CREATE TABLE IF NOT EXISTS "DeletedIdentity" ("hash" TEXT NOT NULL, "createdAt" TIMESTAMP(3) NOT NULL DEFAULT CURRENT_TIMESTAMP, CONSTRAINT "DeletedIdentity_pkey" PRIMARY KEY ("hash"))`;
         await prisma.$executeRaw`CREATE TABLE IF NOT EXISTS "AppleCredential" ("userId" TEXT NOT NULL, "refreshToken" TEXT NOT NULL, "updatedAt" TIMESTAMP(3) NOT NULL, CONSTRAINT "AppleCredential_pkey" PRIMARY KEY ("userId"))`;
-        return NextResponse.json({ ok: true, applied: 6 });
+        // 20260926130000_series_alerts ("notify me" opt-ins), same shape as the Prisma migration.
+        await prisma.$executeRaw`CREATE TABLE IF NOT EXISTS "SeriesAlert" (
+          "id" TEXT NOT NULL,
+          "userId" TEXT NOT NULL,
+          "seriesId" TEXT NOT NULL,
+          "afterEpisode" INTEGER NOT NULL,
+          "source" TEXT,
+          "createdAt" TIMESTAMP(3) NOT NULL DEFAULT CURRENT_TIMESTAMP,
+          CONSTRAINT "SeriesAlert_pkey" PRIMARY KEY ("id"),
+          CONSTRAINT "SeriesAlert_userId_fkey" FOREIGN KEY ("userId") REFERENCES "User"("id") ON DELETE CASCADE ON UPDATE CASCADE,
+          CONSTRAINT "SeriesAlert_seriesId_fkey" FOREIGN KEY ("seriesId") REFERENCES "Series"("id") ON DELETE CASCADE ON UPDATE CASCADE
+        )`;
+        await prisma.$executeRaw`CREATE UNIQUE INDEX IF NOT EXISTS "SeriesAlert_userId_seriesId_key" ON "SeriesAlert"("userId", "seriesId")`;
+        await prisma.$executeRaw`CREATE INDEX IF NOT EXISTS "SeriesAlert_seriesId_createdAt_idx" ON "SeriesAlert"("seriesId", "createdAt")`;
+        return NextResponse.json({ ok: true, applied: 9 });
       }
 
       case 'ssv-keys': {

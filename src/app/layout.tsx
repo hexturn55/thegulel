@@ -5,6 +5,7 @@ import { getLocale, getMessages } from 'next-intl/server';
 import './globals.css';
 import { GoogleAnalytics, GoogleTagManager } from '@/components/Analytics';
 import { FacebookPixel } from '@/components/FacebookPixel';
+import { FunnelTracker } from '@/components/FunnelTracker';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -80,6 +81,8 @@ export default async function RootLayout({
         <GoogleAnalytics />
         <GoogleTagManager />
         <FacebookPixel />
+        {/* After the tags, so gtag/fbq exist when it reports on first load */}
+        <FunnelTracker />
 
         {/* Service Worker registration */}
         <script

@@ -63,7 +63,11 @@
     "free": "मुफ़्त",
     "loadError": "यह वीडियो लोड नहीं हो सका।",
     "retry": "फिर कोशिश करें",
-    "moreSeries": "और सीरीज़"
+    "moreSeries": "और सीरीज़",
+    "notifyCta": "Episode {number} आते ही मुझे बताएं",
+    "notifyOn": "Episode {number} आते ही हम आपको बताएंगे",
+    "notifyUndo": "बंद करें",
+    "notifyError": "सेव नहीं हुआ। फिर कोशिश करें।"
   },
   "search": {
     "placeholder": "सीरीज़, शैलियाँ खोजें...",
@@ -205,7 +209,8 @@
     "codeSentTo": "{phone} पर भेजा गया 6-अंकीय कोड दर्ज करें",
     "verifyContinue": "सत्यापित करें और जारी रखें",
     "resend": "कोड फिर भेजें",
-    "back": "वापस"
+    "back": "वापस",
+    "inAppGoogleHint": "Instagram/Facebook के अंदर Google लॉगिन काम नहीं करता। फ़ोन नंबर से लॉगिन करें, या ⋯ → Open in browser दबाएँ।"
   },
   "settings": {
     "title": "सेटिंग्स",

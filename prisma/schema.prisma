@@ -31,6 +31,7 @@ model User {
   episodePurchases  EpisodePurchase[]
   subscriptions     Subscription[]
   watchHistory      WatchHistory[]
+  seriesAlerts      SeriesAlert[]
 
   @@index([phone])
   @@index([email])
@@ -63,6 +64,7 @@ model Series {
   updatedAt       DateTime      @updatedAt
 
   episodes        Episode[]
+  alerts          SeriesAlert[]
 
   @@index([status, featured])
   @@index([genre])
@@ -179,6 +181,23 @@ model WatchHistory {
 
   @@unique([userId, episodeId])
   @@index([userId, watchedAt])
+}
+
+// "Notify me when the next episode drops" opt-ins. One row per viewer per
+// series; the pilot tournament reads these as its season-demand signal.
+model SeriesAlert {
+  id           String   @id @default(cuid())
+  userId       String
+  seriesId     String
+  afterEpisode Int      // last episode the viewer had reached when opting in
+  source       String?  // last-touch utm_campaign at opt-in, for per-campaign demand
+  createdAt    DateTime @default(now())
+
+  user        User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  series      Series   @relation(fields: [seriesId], references: [id], onDelete: Cascade)
+
+  @@unique([userId, seriesId])
+  @@index([seriesId, createdAt])
 }
 
 model CoinPackage {

@@ -1,7 +1,13 @@
-import { NextRequest, NextResponse } from 'next/server';
+import { NextRequest, NextResponse, after } from 'next/server';
 import { stripe } from '@/lib/stripe';
 import prisma from '@/lib/prisma';
 import Stripe from 'stripe';
+import { metaCapiEnabled, sendCheckoutEvent } from '@/lib/meta-capi';
+import { getVipPlan, vipPredictedLtv } from '@/lib/vip-plans';
+
+// Marks a subscription whose Meta Subscribe event has been sent, so a
+// redelivered checkout.session.completed doesn't report it twice.
+const CAPI_MARKER = 'meta_capi_subscribe';
 
 export async function POST(request: NextRequest) {
   const body = await request.text();
@@ -42,15 +48,45 @@ export async function POST(request: NextRequest) {
           );
           await upsertSubscription(sub);
           console.log(`VIP activated for session ${session.id}`);
+
+          // Server-side Subscribe, after the response so the webhook stays
+          // fast. event_id = the checkout session, as on the VIP success page.
+          if (metaCapiEnabled(!event.livemode) && !sub.metadata?.[CAPI_MARKER]) {
+            after(async () => {
+              try {
+                await stripe.subscriptions.update(sub.id, { metadata: { [CAPI_MARKER]: '1' } });
+              } catch (err) {
+                console.error(`[meta-capi] could not mark ${sub.id}; skipping Subscribe:`, err);
+                return;
+              }
+              const plan = getVipPlan(sub.metadata?.plan ?? '');
+              const value = (session.amount_total ?? 0) / 100;
+              await sendCheckoutEvent({
+                eventName: 'Subscribe',
+                eventId: `stripe:${session.id}`,
+                eventTime: event.created,
+                userId: sub.metadata?.userId ?? session.metadata?.userId ?? '',
+                metadata: session.metadata,
+                contact: session.customer_details ?? undefined,
+                value,
+                currency: (session.currency ?? 'usd').toUpperCase(),
+                contentIds: [`VIP_${plan?.id ?? 'MONTHLY'}`],
+                predictedLtv: plan ? vipPredictedLtv(plan, value) : undefined,
+                path: '/vip',
+                test: !event.livemode,
+              });
+            });
+          }
           break;
         }
 
-        const { userId, coins } = session.metadata!;
+        const { userId, coins, packageId } = session.metadata!;
         const amount = parseInt(coins);
 
         // Idempotent credit: the transaction's `providerRef` is unique, so a
         // replayed/duplicate webhook delivery fails the create with P2002 and
         // the balance increment is rolled back — coins are credited exactly once.
+        let credited = false;
         try {
           await prisma.$transaction([
             prisma.coinTransaction.create({
@@ -67,6 +103,7 @@ export async function POST(request: NextRequest) {
               data: { coinBalance: { increment: amount } },
             }),
           ]);
+          credited = true;
           console.log(`Coins added to user ${userId}: ${coins}`);
         } catch (err) {
           if ((err as { code?: string }).code === 'P2002') {
@@ -74,6 +111,27 @@ export async function POST(request: NextRequest) {
           } else {
             throw err;
           }
+        }
+
+        // First (non-duplicate) credit only: server-side Purchase, sent after
+        // the response and deduped against the wallet's browser event by the
+        // shared providerRef.
+        if (credited) {
+          after(() =>
+            sendCheckoutEvent({
+              eventName: 'Purchase',
+              eventId: `stripe:${session.id}`,
+              eventTime: event.created,
+              userId,
+              metadata: session.metadata,
+              contact: session.customer_details ?? undefined,
+              value: (session.amount_total ?? 0) / 100,
+              currency: (session.currency ?? 'usd').toUpperCase(),
+              contentIds: [packageId],
+              path: '/wallet',
+              test: !event.livemode,
+            })
+          );
         }
         break;
       }

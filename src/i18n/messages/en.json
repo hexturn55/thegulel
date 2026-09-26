@@ -63,7 +63,11 @@
     "free": "Free",
     "loadError": "This video could not be loaded.",
     "retry": "Try again",
-    "moreSeries": "More series"
+    "moreSeries": "More series",
+    "notifyCta": "Notify me when Episode {number} drops",
+    "notifyOn": "We'll tell you when Episode {number} drops",
+    "notifyUndo": "Turn off",
+    "notifyError": "Couldn't save that. Try again."
   },
   "search": {
     "placeholder": "Search series, genres...",
@@ -205,7 +209,8 @@
     "codeSentTo": "Enter the 6-digit code sent to {phone}",
     "verifyContinue": "Verify & Continue",
     "resend": "Resend code",
-    "back": "Back"
+    "back": "Back",
+    "inAppGoogleHint": "Google login doesn't work inside Instagram/Facebook. Use your phone number, or tap ⋯ → Open in browser."
   },
   "settings": {
     "title": "Settings",

@@ -30,6 +30,15 @@ for logged-in users and breaks webhook idempotency. Apply it before anything els
 - **Or** paste `prisma/hotfix-apply-pending-migration.sql` into the Supabase
   SQL Editor (idempotent, safe to re-run).
 
+## 0.6 "Notify me" table (series alerts)
+The end-card "Notify me when Episode N drops" button stores opt-ins in a new
+`SeriesAlert` table (migration `20260926130000_series_alerts`). Until it exists the
+button hides itself and the dashboard shows 0, so nothing breaks, but apply it
+before the pilot tournament starts. Use any one of these:
+- `DATABASE_URL="<prod>" npx prisma migrate deploy`
+- `GET /api/admin/ops?action=migrate` with your `OPS_TOKEN` (then `?action=dbcheck` should report `seriesAlert_table: true`)
+- paste `prisma/hotfix-apply-pending-migration.sql` into the Supabase SQL Editor (idempotent)
+
 ## 1. Database (Supabase)
 1. Create a Supabase project. From **Project Settings → Database**, copy the
    connection string into `DATABASE_URL` (use the pooled URL; if you have a

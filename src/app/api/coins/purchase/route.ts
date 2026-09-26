@@ -2,6 +2,7 @@ import { NextRequest, NextResponse } from 'next/server';
 import { stripe } from '@/lib/stripe';
 import prisma from '@/lib/prisma';
 import { getAuthUser } from '@/lib/auth';
+import { captureCheckoutSignals } from '@/lib/meta-capi';
 
 export async function POST(request: NextRequest) {
   try {
@@ -47,12 +48,16 @@ export async function POST(request: NextRequest) {
         },
       ],
       mode: 'payment',
-      success_url: `${process.env.NEXT_PUBLIC_APP_URL}/wallet?success=true`,
+      // session_id/pkg/cur let the wallet report the purchase with the same
+      // reference the webhook uses (Stripe fills in {CHECKOUT_SESSION_ID}).
+      success_url: `${process.env.NEXT_PUBLIC_APP_URL}/wallet?success=true&session_id={CHECKOUT_SESSION_ID}&pkg=${encodeURIComponent(pkg.id)}&cur=${encodeURIComponent(currency)}`,
       cancel_url: `${process.env.NEXT_PUBLIC_APP_URL}/wallet?canceled=true`,
       metadata: {
         userId: user.id,
         packageId: pkg.id,
         coins: pkg.coins.toString(),
+        // Browser signals + last-touch UTMs for the Conversions API event.
+        ...captureCheckoutSignals(request, 500),
       },
     });
 

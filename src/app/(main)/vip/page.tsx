@@ -5,8 +5,9 @@ import { useRouter, useSearchParams } from 'next/navigation';
 import { Crown, Check, Sparkles, Loader2 } from 'lucide-react';
 import { useTranslations } from 'next-intl';
 import { useAuthStore } from '@/stores/useAuthStore';
-import { VIP_PLANS, type VipPlanId } from '@/lib/vip-plans';
+import { VIP_PLANS, getVipPlan, vipPredictedLtv, type VipPlanId } from '@/lib/vip-plans';
 import { formatPrice, formatDate } from '@/lib/utils';
+import { analytics } from '@/lib/analytics';
 
 const INTERVAL_KEY: Record<string, 'perWeek' | 'perMonth' | 'perYear'> = {
   week: 'perWeek',
@@ -35,6 +36,29 @@ export default function VipPage() {
   const success = searchParams.get('success');
   const canceled = searchParams.get('canceled');
 
+  // Back from Stripe (`?success=true&session_id=…&plan=…&cur=…`): report the
+  // subscription with the checkout session as event id — the webhook's
+  // server-side Subscribe uses the same one, so Meta counts it once.
+  useEffect(() => {
+    if (success !== 'true') return;
+    const sessionId = searchParams.get('session_id');
+    const plan = getVipPlan(searchParams.get('plan') ?? '');
+    if (!sessionId || !plan) return;
+    const cur = searchParams.get('cur') === 'INR' ? 'INR' : 'USD';
+    const price = cur === 'INR' ? plan.priceINR : plan.priceUSD;
+    analytics.vipSubscribe({
+      transactionId: `stripe:${sessionId}`,
+      plan: plan.id,
+      itemId: `VIP_${plan.id}`,
+      itemName: plan.name,
+      value: price,
+      currency: cur,
+      predictedLtv: vipPredictedLtv(plan, price),
+    });
+    // Keep the success banner, drop the one-time checkout params.
+    window.history.replaceState(null, '', '/vip?success=true');
+  }, [success, searchParams]);
+
   useEffect(() => {
     fetch('/api/subscriptions')
       .then((r) => (r.ok ? r.json() : null))
@@ -50,6 +74,15 @@ export default function VipPage() {
     }
 
     setSubscribing(planId);
+    const plan = getVipPlan(planId);
+    if (plan) {
+      analytics.beginCheckout({
+        itemId: `VIP_${plan.id}`,
+        itemName: plan.name,
+        value: currency === 'INR' ? plan.priceINR : plan.priceUSD,
+        currency,
+      });
+    }
     try {
       const res = await fetch('/api/subscriptions/checkout', {
         method: 'POST',

@@ -48,3 +48,6 @@ src/generated/
 
 # TypeScript incremental build info
 *.tsbuildinfo
+
+# marketing graphics renderer scratch file
+marketing/templates/.render.html

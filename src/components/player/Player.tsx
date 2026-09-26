@@ -18,7 +18,9 @@ import {
 import { useTranslations } from 'next-intl';
 import { useAuthStore } from '@/stores/useAuthStore';
 import { formatDuration } from '@/lib/utils';
+import { analytics, type EpisodeContext } from '@/lib/analytics';
 import UnlockSheet from './UnlockSheet';
+import NotifyButton from './NotifyButton';
 
 // Browsers only allow autoplay while muted, so playback starts muted until the
 // viewer turns sound on once; after that it stays on for the session (each
@@ -53,7 +55,7 @@ export interface PlayerEpisode {
 }
 
 export interface PlayerProps {
-  series: { id: string; title: string; thumbnail: string; coinPrice: number };
+  series: { id: string; title: string; thumbnail: string; coinPrice: number; genre?: string };
   episode: { id: string; episodeNumber: number; title: string; thumbnail: string };
   /** Signed stream URL, or null when the episode is locked for this viewer. */
   videoUrl: string | null;
@@ -63,6 +65,8 @@ export interface PlayerProps {
   onNavigate: (episodeId: string) => void;
   onClose: () => void;
   onUnlocked: () => void;
+  /** Back from signing in to "notify me": open the end card straight away. */
+  notifyReturn?: boolean;
 }
 
 export default function Player({
@@ -75,6 +79,7 @@ export default function Player({
   onNavigate,
   onClose,
   onUnlocked,
+  notifyReturn = false,
 }: PlayerProps) {
   const t = useTranslations('player');
   const { user } = useAuthStore();
@@ -84,6 +89,9 @@ export default function Player({
   const lastSavedRef = useRef(0);
   const touchRef = useRef<{ y: number; t: number } | null>(null);
   const hideTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
+  // Funnel events fire once per episode mount (the player remounts per episode).
+  const startedRef = useRef(false);
+  const completedRef = useRef(false);
 
   const [playing, setPlaying] = useState(false);
   const [muted, setMuted] = useState(true);
@@ -98,9 +106,23 @@ export default function Player({
   const [drawer, setDrawer] = useState(false);
   const [flash, setFlash] = useState<'play' | 'pause' | null>(null);
   const [ended, setEnded] = useState(false);
+  // A viewer returning from login to finish "notify me" lands on the end card
+  // of the last available episode, with autoplay held until they pick replay.
+  const returningToNotify = notifyReturn && !nextEpisodeId && !!videoUrl;
+  const [notifyCard, setNotifyCard] = useState(returningToNotify);
+  const holdAutoplay = useRef(returningToNotify);
   const [copied, setCopied] = useState(false);
 
   const locked = !videoUrl;
+
+  const trackingContext = (): EpisodeContext => ({
+    seriesId: series.id,
+    seriesTitle: series.title,
+    genre: series.genre,
+    episodeId: episode.id,
+    episodeNumber: episode.episodeNumber,
+    isFree: episodes.find((e) => e.id === episode.id)?.isFree ?? false,
+  });
 
   /* ── Stream setup ─────────────────────────────────────────────────────── */
   useEffect(() => {
@@ -117,6 +139,7 @@ export default function Player({
     video.playbackRate = speedForSession;
 
     const autoplay = () => {
+      if (holdAutoplay.current) return;
       video.play().catch(() => {
         if (!video.muted) {
           // Sound autoplay blocked on this page load — continue muted; the
@@ -358,18 +381,28 @@ export default function Player({
             ref={videoRef}
             className="absolute inset-0 h-full w-full object-contain"
             playsInline
-            autoPlay
+            autoPlay={!notifyCard}
             muted
             poster={episode.thumbnail || undefined}
             onPlay={() => setPlaying(true)}
             onPause={() => setPlaying(false)}
             onWaiting={() => setBuffering(true)}
-            onPlaying={() => setBuffering(false)}
+            onPlaying={() => {
+              setBuffering(false);
+              if (!startedRef.current) {
+                startedRef.current = true;
+                analytics.videoStart(trackingContext());
+              }
+            }}
             onCanPlay={() => setBuffering(false)}
             onLoadedMetadata={(e) => setDuration(e.currentTarget.duration)}
             onTimeUpdate={(e) => {
               const v = e.currentTarget;
               setTime(v.currentTime);
+              if (!completedRef.current && v.duration && v.currentTime / v.duration >= 0.9) {
+                completedRef.current = true;
+                analytics.videoComplete(trackingContext());
+              }
               if (Math.abs(v.currentTime - lastSavedRef.current) >= 10) {
                 lastSavedRef.current = v.currentTime;
                 saveProgress(v.currentTime, v.duration);
@@ -544,18 +577,27 @@ export default function Player({
         )}
 
         {/* End of the available story */}
-        {ended && (
+        {(ended || notifyCard) && (
           <div className="absolute inset-0 z-40 flex flex-col items-center justify-center bg-black/85 px-6 text-center backdrop-blur-sm" onClick={(e) => e.stopPropagation()}>
             <h2 className="mb-2 text-2xl font-bold text-white">{t('stayTuned')}</h2>
-            <p className="mb-8 text-sm text-gray-400">{t('moreSoon')}</p>
+            <p className="mb-6 text-sm text-gray-400">{t('moreSoon')}</p>
+            <NotifyButton
+              seriesId={series.id}
+              seriesTitle={series.title}
+              episodeId={episode.id}
+              episodeNumber={episode.episodeNumber}
+              autoSubscribe={notifyReturn}
+            />
             <div className="flex gap-3">
               <button
                 onClick={() => {
                   const v = videoRef.current;
                   if (!v) return;
+                  holdAutoplay.current = false;
                   v.currentTime = 0;
                   v.play().catch(() => undefined);
                   setEnded(false);
+                  setNotifyCard(false);
                 }}
                 className="flex items-center gap-2 rounded-full bg-rose-500 px-6 py-3 font-semibold text-white hover:bg-rose-600"
               >
@@ -573,6 +615,7 @@ export default function Player({
           <UnlockSheet
             episodeId={episode.id}
             episodeNumber={episode.episodeNumber}
+            seriesId={series.id}
             seriesTitle={series.title}
             coinPrice={series.coinPrice}
             onUnlocked={onUnlocked}
