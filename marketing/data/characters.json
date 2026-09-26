@@ -1,0 +1,142 @@
+[
+ {
+  "id": "pishachini",
+  "handle": "pishachini.gulel",
+  "alias": "pishachini",
+  "series": "Pishachini: The Healer",
+  "poster": "pishachini-the-healer.png",
+  "face": {
+   "x": 0.5,
+   "y": 0.338,
+   "side": 0.3
+  },
+  "accent": "#34d399",
+  "accent2": "#065f46",
+  "bg": "radial-gradient(circle at 70% 30%,#0f3a2a 0%,#050807 70%)",
+  "font": "rozha",
+  "nameHi": "पिशाचिनी",
+  "taglineHi": "हर बीमारी का इलाज… हर इलाज की कीमत।",
+  "roleHi": "एक बेबस गाँव में आई रहस्यमयी वैद्य — जो हर बीमारी ठीक कर देती है।",
+  "facts": [
+   "मैं हर बीमारी ठीक कर सकती हूँ।",
+   "मैं पैसे नहीं लेती।",
+   "अमावस्या की रात मुझे मत ढूँढना।"
+  ],
+  "aboutLabel": "मेरे बारे में · ABOUT ME",
+  "ctaHi": "मेरी कहानी<br>यहाँ से शुरू होती है…",
+  "askHi": "अपनी परेशानी बताओ…<br>इलाज मैं बताऊँगी।",
+  "reelCoverHi": "आज का नुस्ख़ा",
+  "signature": {
+   "slug": "nuskha",
+   "kicker": "आज का नुस्ख़ा · TODAY'S CURE",
+   "title": "नींद न आए तो…",
+   "body": "सिरहाने एक दीया जलाओ।<br>उसे बुझने मत देना।<br><span style='color:#34d399'>अगर बुझ जाए… तो आँखें मत खोलना।</span>"
+  }
+ },
+ {
+  "id": "waaris",
+  "handle": "waaris.gulel",
+  "alias": "heir",
+  "series": "Revenge of the Heir",
+  "poster": "assets/heir-keyart.svg",
+  "face": {
+   "x": 0.5,
+   "y": 0.56,
+   "side": 0.52
+  },
+  "accent": "#f5c451",
+  "accent2": "#92400e",
+  "bg": "radial-gradient(circle at 70% 30%,#3a2508 0%,#070503 70%)",
+  "font": "rozha",
+  "nameHi": "वारिस",
+  "taglineHi": "नौकर का बेटा था। अब मालिक हूँ।",
+  "roleHi": "जिसे 10 साल पहले हवेली से निकाला गया… वो लौट आया है।",
+  "facts": [
+   "10 साल पहले मुझे इस हवेली से निकाला गया।",
+   "मैं कुछ भूला नहीं हूँ।",
+   "आज मैं लौटा हूँ — इसे ख़रीदने।"
+  ],
+  "aboutLabel": "मेरा हिसाब · MY STORY",
+  "ctaHi": "जिस हवेली से निकाला…<br>आज उसी का मालिक।",
+  "askHi": "किसने तुम्हें<br>कम समझा था?",
+  "reelCoverHi": "वारिस का उसूल",
+  "signature": {
+   "slug": "usool",
+   "kicker": "वारिस का उसूल · RULE #1",
+   "title": "जो तुम्हें गिराए…",
+   "body": "उससे लड़ो मत।<br>उससे ऊपर उठो।<br><span style='color:#f5c451'>फिर उसकी हवेली ख़रीद लो।</span>"
+  }
+ },
+ {
+  "id": "undercover-ceo",
+  "handle": "undercover.ceo.gulel",
+  "alias": "ceo",
+  "series": "CEO's Hidden Identity",
+  "poster": "ceo-hidden-identity-poster.png",
+  "face": {
+   "x": 0.33,
+   "y": 0.3,
+   "side": 0.3
+  },
+  "accent": "#fbbf24",
+  "accent2": "#0e7490",
+  "bg": "radial-gradient(circle at 70% 30%,#0b2536 0%,#04070b 70%)",
+  "font": "hi",
+  "nameHi": "अंडरकवर CEO",
+  "taglineHi": "करोड़ों की कंपनी। पर उसके लिए — एक आम आदमी।",
+  "roleHi": "जिसने अपनी पहचान छुपाई… ये जानने के लिए कि उसका प्यार असली है।",
+  "facts": [
+   "ऑफ़िस में सब मुझे ‘नया लड़का’ बुलाते हैं।",
+   "असल में ये बिल्डिंग मेरी है।",
+   "उसे अब तक कुछ नहीं पता।"
+  ],
+  "aboutLabel": "मेरा राज़ · MY SECRET",
+  "ctaHi": "मेरा राज़<br>Episode 1 में…",
+  "askHi": "पैसा या प्यार —<br>आप क्या चुनेंगे?",
+  "reelCoverHi": "अंडरकवर डायरी",
+  "signature": {
+   "slug": "undercover-diary",
+   "kicker": "अंडरकवर डायरी · DAY 12",
+   "title": "आज बॉस ने मुझे डाँटा।",
+   "body": "मैं मुस्कुराया।<br>कल सुबह उसकी प्रमोशन फ़ाइल<br><span style='color:#fbbf24'>मेरी टेबल पर आएगी।</span>"
+  }
+ },
+ {
+  "id": "substitute-bride",
+  "handle": "badli.dulhan.gulel",
+  "alias": "bride",
+  "series": "The Substitute Bride",
+  "poster": "substitute-bride-poster.png",
+  "face": {
+   "x": 0.4,
+   "y": 0.33,
+   "side": 0.42
+  },
+  "accent": "#fb7185",
+  "accent2": "#b45309",
+  "bg": "radial-gradient(circle at 70% 30%,#3b0d1a 0%,#0a0507 70%)",
+  "font": "hand",
+  "nameHi": "बदली हुई दुल्हन",
+  "taglineHi": "बहन की जगह मैं बैठी… और सब कुछ बदल गया।",
+  "roleHi": "शादी की रात बहन की जगह भेजी गई लड़की — एक बिना प्यार के रिश्ते में।",
+  "facts": [
+   "ये शादी मेरी नहीं थी।",
+   "वो मुझसे बात तक नहीं करते।",
+   "पर आज उन्होंने मेरा नाम लिया…"
+  ],
+  "aboutLabel": "मेरी कहानी · MY STORY",
+  "ctaHi": "मेरी शादी की रात<br>Episode 1 में देखिए।",
+  "askHi": "अगर आप<br>मेरी जगह होतीं तो?",
+  "reelCoverHi": "दुल्हन की डायरी",
+  "signature": {
+   "slug": "diary",
+   "paper": true,
+   "font": "hand",
+   "kicker": "दुल्हन की डायरी · रात 2",
+   "title": "प्रिय डायरी,",
+   "titleSize": 84,
+   "bodySize": 56,
+   "body": "आज उन्होंने पहली बार मेरी तरफ़ देखा।<br>शायद ग़लती से।<br>शायद नहीं।<br><br>कल फिर लिखूँगी…"
+  }
+ }
+]

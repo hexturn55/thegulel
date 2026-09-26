@@ -1,0 +1,1053 @@
+[
+  {
+    "id": "cmnsrbgyz000004i3tbol5dc2",
+    "title": "The Secret Alliance",
+    "titleHi": null,
+    "genre": "Thriller",
+    "description": "Four strangers bound by a deadly conspiracy must trust each other to survive — but loyalty is the most dangerous currency of all.",
+    "tags": [
+      "thriller",
+      "conspiracy",
+      "alliance"
+    ],
+    "featured": true,
+    "totalEpisodes": 2,
+    "freeEpisodes": 1,
+    "coinPrice": 12,
+    "thumbnail": "/thumbnails/the-secret-alliance-poster.png",
+    "seriesUrl": "https://thegulel.com/series/cmnsrbgyz000004i3tbol5dc2",
+    "firstFreeWatchUrl": "https://thegulel.com/watch/cmq2fko6q0000glj25iu8z6ga",
+    "episodes": [
+      {
+        "id": "cmq2fko6q0000glj25iu8z6ga",
+        "number": 1,
+        "title": "Dead Man's Switch",
+        "titleHi": "मृत व्यक्ति का स्विच",
+        "duration": 114,
+        "isFree": true,
+        "watchUrl": "https://thegulel.com/watch/cmq2fko6q0000glj25iu8z6ga"
+      },
+      {
+        "id": "cmuh3adqm000dv2kdxu9tf148",
+        "number": 2,
+        "title": "Episode 2",
+        "titleHi": null,
+        "duration": 97,
+        "isFree": false,
+        "watchUrl": "https://thegulel.com/watch/cmuh3adqm000dv2kdxu9tf148"
+      }
+    ]
+  },
+  {
+    "id": "cmnsrbgip000004jo9um6h52o",
+    "title": "The Substitute Bride",
+    "titleHi": null,
+    "genre": "Romance",
+    "description": "Sent in place of her sister on the wedding night, a young woman must navigate a loveless arrangement — until desire changes everything.",
+    "tags": [
+      "romance",
+      "period",
+      "bride"
+    ],
+    "featured": true,
+    "totalEpisodes": 2,
+    "freeEpisodes": 1,
+    "coinPrice": 10,
+    "thumbnail": "/thumbnails/substitute-bride-poster.png",
+    "seriesUrl": "https://thegulel.com/series/cmnsrbgip000004jo9um6h52o",
+    "firstFreeWatchUrl": "https://thegulel.com/watch/cmugxhjjt000lpgkdci9w3e78",
+    "episodes": [
+      {
+        "id": "cmugxhjjt000lpgkdci9w3e78",
+        "number": 1,
+        "title": "Episode 1",
+        "titleHi": null,
+        "duration": 36,
+        "isFree": true,
+        "watchUrl": "https://thegulel.com/watch/cmugxhjjt000lpgkdci9w3e78"
+      },
+      {
+        "id": "cmuh39pq40007v2kdi8j6cls8",
+        "number": 2,
+        "title": "Episode 2",
+        "titleHi": null,
+        "duration": 36,
+        "isFree": false,
+        "watchUrl": "https://thegulel.com/watch/cmuh39pq40007v2kdi8j6cls8"
+      }
+    ]
+  },
+  {
+    "id": "cmn2fgykv000204l2xhoqfozy",
+    "title": "Pishachini: The Healer",
+    "titleHi": "पिशाचिनी: द हीलर",
+    "genre": "Horror",
+    "description": "A mysterious healer arrives in a desperate village, performing impossible miracles. But every life saved demands a death in return. When a young devotee of Shiva uncovers the dark truth — a deal with a demon — he must choose between saving the innocent and becoming the next vessel of an ancient curse. Love, power, and survival collide in this supernatural horror-thriller.",
+    "tags": [
+      "Horror",
+      "Supernatural",
+      "Thriller",
+      "Indian",
+      "Hindi",
+      "Village",
+      "Curse",
+      "Shiva"
+    ],
+    "featured": true,
+    "totalEpisodes": 20,
+    "freeEpisodes": 1,
+    "coinPrice": 10,
+    "thumbnail": "/thumbnails/pishachini-the-healer.png",
+    "seriesUrl": "https://thegulel.com/series/cmn2fgykv000204l2xhoqfozy",
+    "firstFreeWatchUrl": "https://thegulel.com/watch/cmn2fhng3000304l26wvruij4",
+    "episodes": [
+      {
+        "id": "cmn2fhng3000304l26wvruij4",
+        "number": 1,
+        "title": "The Arrival",
+        "titleHi": "आगमन",
+        "duration": 96,
+        "isFree": true,
+        "watchUrl": "https://thegulel.com/watch/cmn2fhng3000304l26wvruij4"
+      },
+      {
+        "id": "cmn2fhoug000404l2niyerazo",
+        "number": 2,
+        "title": "The Miracles",
+        "titleHi": "चमत्कार",
+        "duration": 96,
+        "isFree": false,
+        "watchUrl": "https://thegulel.com/watch/cmn2fhoug000404l2niyerazo"
+      },
+      {
+        "id": "cmn2fhpoz000504l283s8gz31",
+        "number": 3,
+        "title": "The First Doubt",
+        "titleHi": "पहला संदेह",
+        "duration": 42,
+        "isFree": false,
+        "watchUrl": "https://thegulel.com/watch/cmn2fhpoz000504l283s8gz31"
+      },
+      {
+        "id": "cmn2fhqic000604l2oin548is",
+        "number": 4,
+        "title": "The Confrontation",
+        "titleHi": "टकराव",
+        "duration": 44,
+        "isFree": false,
+        "watchUrl": "https://thegulel.com/watch/cmn2fhqic000604l2oin548is"
+      },
+      {
+        "id": "cmn2fhrca000704l2aer00gmc",
+        "number": 5,
+        "title": "The Forest Trail",
+        "titleHi": "जंगल की राह",
+        "duration": 58,
+        "isFree": false,
+        "watchUrl": "https://thegulel.com/watch/cmn2fhrca000704l2aer00gmc"
+      },
+      {
+        "id": "cmn2fhs4s000804l2ef3sx61v",
+        "number": 6,
+        "title": "The Truth Unveiled",
+        "titleHi": "सच का पर्दाफाश",
+        "duration": 44,
+        "isFree": false,
+        "watchUrl": "https://thegulel.com/watch/cmn2fhs4s000804l2ef3sx61v"
+      },
+      {
+        "id": "cmn2fhsxk000904l2a5ujpkxt",
+        "number": 7,
+        "title": "Raghu's Past",
+        "titleHi": "रघु का अतीत",
+        "duration": 54,
+        "isFree": false,
+        "watchUrl": "https://thegulel.com/watch/cmn2fhsxk000904l2a5ujpkxt"
+      },
+      {
+        "id": "cmn2fhtq3000a04l2igfirzri",
+        "number": 8,
+        "title": "The Offer",
+        "titleHi": "प्रस्ताव",
+        "duration": 44,
+        "isFree": false,
+        "watchUrl": "https://thegulel.com/watch/cmn2fhtq3000a04l2igfirzri"
+      },
+      {
+        "id": "cmn2fhuil000b04l20g5hymlc",
+        "number": 9,
+        "title": "The Deception",
+        "titleHi": "छल",
+        "duration": 46,
+        "isFree": false,
+        "watchUrl": "https://thegulel.com/watch/cmn2fhuil000b04l20g5hymlc"
+      },
+      {
+        "id": "cmn2fhvbp000c04l28rfasrkx",
+        "number": 10,
+        "title": "The Ritual Begins",
+        "titleHi": "अनुष्ठान की शुरुआत",
+        "duration": 48,
+        "isFree": false,
+        "watchUrl": "https://thegulel.com/watch/cmn2fhvbp000c04l28rfasrkx"
+      },
+      {
+        "id": "cmn2fhw49000d04l2i8686pyq",
+        "number": 11,
+        "title": "Breaking the Circle",
+        "titleHi": "चक्र टूटा",
+        "duration": 44,
+        "isFree": false,
+        "watchUrl": "https://thegulel.com/watch/cmn2fhw49000d04l2i8686pyq"
+      },
+      {
+        "id": "cmn2fhwwp000e04l2nfitcawf",
+        "number": 12,
+        "title": "Raghu's End",
+        "titleHi": "रघु का अंत",
+        "duration": 48,
+        "isFree": false,
+        "watchUrl": "https://thegulel.com/watch/cmn2fhwwp000e04l2nfitcawf"
+      },
+      {
+        "id": "cmn2fhxq8000f04l26gpu500h",
+        "number": 13,
+        "title": "The New Beginning",
+        "titleHi": "नई शुरुआत",
+        "duration": 44,
+        "isFree": false,
+        "watchUrl": "https://thegulel.com/watch/cmn2fhxq8000f04l26gpu500h"
+      },
+      {
+        "id": "cmn2fhyj1000g04l2s4urunp4",
+        "number": 14,
+        "title": "The Curse Awakens",
+        "titleHi": "श्राप जागा",
+        "duration": 44,
+        "isFree": false,
+        "watchUrl": "https://thegulel.com/watch/cmn2fhyj1000g04l2s4urunp4"
+      },
+      {
+        "id": "cmn2fhzbt000h04l2qjh1ccxj",
+        "number": 15,
+        "title": "The Binding",
+        "titleHi": "बंधन",
+        "duration": 44,
+        "isFree": false,
+        "watchUrl": "https://thegulel.com/watch/cmn2fhzbt000h04l2qjh1ccxj"
+      },
+      {
+        "id": "cmn2fi04a000i04l2o6mc5knb",
+        "number": 16,
+        "title": "The Struggle",
+        "titleHi": "संघर्ष",
+        "duration": 44,
+        "isFree": false,
+        "watchUrl": "https://thegulel.com/watch/cmn2fi04a000i04l2o6mc5knb"
+      },
+      {
+        "id": "cmn2fi0x0000j04l2nsuucfvd",
+        "number": 17,
+        "title": "The Burden",
+        "titleHi": "बोझ",
+        "duration": 40,
+        "isFree": false,
+        "watchUrl": "https://thegulel.com/watch/cmn2fi0x0000j04l2nsuucfvd"
+      },
+      {
+        "id": "cmn2fi1pg000k04l2lkei6pxp",
+        "number": 18,
+        "title": "The Possession",
+        "titleHi": "कब्ज़ा",
+        "duration": 38,
+        "isFree": false,
+        "watchUrl": "https://thegulel.com/watch/cmn2fi1pg000k04l2lkei6pxp"
+      },
+      {
+        "id": "cmn2fi2i5000l04l2y3rc5j4v",
+        "number": 19,
+        "title": "The Turning Point",
+        "titleHi": "मोड़",
+        "duration": 46,
+        "isFree": false,
+        "watchUrl": "https://thegulel.com/watch/cmn2fi2i5000l04l2y3rc5j4v"
+      },
+      {
+        "id": "cmn2fi3as000m04l2f4xy2dm5",
+        "number": 20,
+        "title": "The Final Choice",
+        "titleHi": "अंतिम चुनाव",
+        "duration": 52,
+        "isFree": false,
+        "watchUrl": "https://thegulel.com/watch/cmn2fi3as000m04l2f4xy2dm5"
+      }
+    ]
+  },
+  {
+    "id": "cmn1ugxhr0004z5nqux7yckcq",
+    "title": "Dragon's Blood",
+    "titleHi": "ड्रैगन का खून",
+    "genre": "Action",
+    "description": "After her martial arts master is murdered by a shadowy triad, a young fighter goes undercover in Hong Kong's criminal underworld to find the killer. But the deeper she goes, the more she discovers about her own bloodline.",
+    "tags": [
+      "Action",
+      "Martial Arts",
+      "Revenge",
+      "Hong Kong"
+    ],
+    "featured": true,
+    "totalEpisodes": 2,
+    "freeEpisodes": 1,
+    "coinPrice": 10,
+    "thumbnail": "/thumbnails/dragons-blood.png",
+    "seriesUrl": "https://thegulel.com/series/cmn1ugxhr0004z5nqux7yckcq",
+    "firstFreeWatchUrl": "https://thegulel.com/watch/cmugxg2150004pgkdekpic2iu",
+    "episodes": [
+      {
+        "id": "cmugxg2150004pgkdekpic2iu",
+        "number": 1,
+        "title": "Episode 1",
+        "titleHi": null,
+        "duration": 36,
+        "isFree": true,
+        "watchUrl": "https://thegulel.com/watch/cmugxg2150004pgkdekpic2iu"
+      },
+      {
+        "id": "cmuh31wu80004mmkdqeh0vm8f",
+        "number": 2,
+        "title": "Episode 2",
+        "titleHi": null,
+        "duration": 36,
+        "isFree": false,
+        "watchUrl": "https://thegulel.com/watch/cmuh31wu80004mmkdqeh0vm8f"
+      }
+    ]
+  },
+  {
+    "id": "cmn1ugx1m0001z5nqh9h0tphe",
+    "title": "The Last Empress",
+    "titleHi": "अंतिम महारानी",
+    "genre": "Period Drama",
+    "description": "In the twilight of a crumbling dynasty, the young empress must navigate palace conspiracies, poisoned alliances, and forbidden love to reclaim her stolen throne. Every smile hides a dagger.",
+    "tags": [
+      "Period Drama",
+      "Revenge",
+      "Palace",
+      "Chinese Drama"
+    ],
+    "featured": true,
+    "totalEpisodes": 2,
+    "freeEpisodes": 1,
+    "coinPrice": 12,
+    "thumbnail": "/thumbnails/the-last-empress.png",
+    "seriesUrl": "https://thegulel.com/series/cmn1ugx1m0001z5nqh9h0tphe",
+    "firstFreeWatchUrl": "https://thegulel.com/watch/cmugxhhpo000kpgkd2d3rzg7m",
+    "episodes": [
+      {
+        "id": "cmugxhhpo000kpgkd2d3rzg7m",
+        "number": 1,
+        "title": "Episode 1",
+        "titleHi": null,
+        "duration": 36,
+        "isFree": true,
+        "watchUrl": "https://thegulel.com/watch/cmugxhhpo000kpgkd2d3rzg7m"
+      },
+      {
+        "id": "cmuh39v5g000av2kd9zzjz9dp",
+        "number": 2,
+        "title": "Episode 2",
+        "titleHi": null,
+        "duration": 36,
+        "isFree": false,
+        "watchUrl": "https://thegulel.com/watch/cmuh39v5g000av2kd9zzjz9dp"
+      }
+    ]
+  },
+  {
+    "id": "cmn1ugwvx0000z5nqmq5rbozn",
+    "title": "Bound By Fate",
+    "titleHi": "किस्मत का बंधन",
+    "genre": "Romance",
+    "description": "When a chance encounter at a Mumbai gala brings together a fiery journalist and a powerful industrialist, neither expects the dangerous secrets that bind their families. Love, betrayal, and fate collide in this gripping romantic thriller.",
+    "tags": [
+      "Romance",
+      "Drama",
+      "Thriller",
+      "Mumbai"
+    ],
+    "featured": true,
+    "totalEpisodes": 2,
+    "freeEpisodes": 1,
+    "coinPrice": 10,
+    "thumbnail": "/thumbnails/bound-by-fate.png",
+    "seriesUrl": "https://thegulel.com/series/cmn1ugwvx0000z5nqmq5rbozn",
+    "firstFreeWatchUrl": "https://thegulel.com/watch/cmugpcn6f0000dokd10a377eb",
+    "episodes": [
+      {
+        "id": "cmugpcn6f0000dokd10a377eb",
+        "number": 1,
+        "title": "Episode 1",
+        "titleHi": null,
+        "duration": 36,
+        "isFree": true,
+        "watchUrl": "https://thegulel.com/watch/cmugpcn6f0000dokd10a377eb"
+      },
+      {
+        "id": "cmuh31egs0001mmkdy5yxa1q1",
+        "number": 2,
+        "title": "Episode 2",
+        "titleHi": null,
+        "duration": 36,
+        "isFree": false,
+        "watchUrl": "https://thegulel.com/watch/cmuh31egs0001mmkdy5yxa1q1"
+      }
+    ]
+  },
+  {
+    "id": "cmn2dj8kj000004l4nklj88fx",
+    "title": "Forbidden Love",
+    "titleHi": "वर्जित प्यार",
+    "genre": "Romance",
+    "description": "She married his enemy. He never forgot her. A storm of passion and betrayal across two powerful families.",
+    "tags": [
+      "__demo__"
+    ],
+    "featured": true,
+    "totalEpisodes": 2,
+    "freeEpisodes": 1,
+    "coinPrice": 8,
+    "thumbnail": "/thumbnails/forbidden-love.png",
+    "seriesUrl": "https://thegulel.com/series/cmn2dj8kj000004l4nklj88fx",
+    "firstFreeWatchUrl": "https://thegulel.com/watch/cmugxg2bu0005pgkdzu8v4yue",
+    "episodes": [
+      {
+        "id": "cmugxg2bu0005pgkdzu8v4yue",
+        "number": 1,
+        "title": "Episode 1",
+        "titleHi": null,
+        "duration": 36,
+        "isFree": true,
+        "watchUrl": "https://thegulel.com/watch/cmugxg2bu0005pgkdzu8v4yue"
+      },
+      {
+        "id": "cmuh31x8d0005mmkdezgm8my0",
+        "number": 2,
+        "title": "Episode 2",
+        "titleHi": null,
+        "duration": 36,
+        "isFree": false,
+        "watchUrl": "https://thegulel.com/watch/cmuh31x8d0005mmkdezgm8my0"
+      }
+    ]
+  },
+  {
+    "id": "cmn2djc7u000p04l4dhc166hs",
+    "title": "The CEO's Hidden Wife",
+    "titleHi": "सीईओ की छुपी पत्नी",
+    "genre": "Drama",
+    "description": "A contract marriage neither wanted — until they did. Power, desire, and secrets that can destroy everything.",
+    "tags": [
+      "__demo__"
+    ],
+    "featured": true,
+    "totalEpisodes": 2,
+    "freeEpisodes": 1,
+    "coinPrice": 10,
+    "thumbnail": "/thumbnails/ceos-hidden-wife.png",
+    "seriesUrl": "https://thegulel.com/series/cmn2djc7u000p04l4dhc166hs",
+    "firstFreeWatchUrl": "https://thegulel.com/watch/cmugxfk6o0001pgkd7gtzxuuw",
+    "episodes": [
+      {
+        "id": "cmugxfk6o0001pgkd7gtzxuuw",
+        "number": 1,
+        "title": "Episode 1",
+        "titleHi": null,
+        "duration": 36,
+        "isFree": true,
+        "watchUrl": "https://thegulel.com/watch/cmugxfk6o0001pgkd7gtzxuuw"
+      },
+      {
+        "id": "cmuh31ysn0007mmkd33loc7rm",
+        "number": 2,
+        "title": "Episode 2",
+        "titleHi": null,
+        "duration": 36,
+        "isFree": false,
+        "watchUrl": "https://thegulel.com/watch/cmuh31ysn0007mmkd33loc7rm"
+      }
+    ]
+  },
+  {
+    "id": "cmn2djv3o004b04l4f18wca5s",
+    "title": "The Billionaire's Revenge",
+    "titleHi": "अरबपति का बदला",
+    "genre": "Thriller",
+    "description": "Ten years ago, she destroyed his family. Now he has the power — and she has no idea who she just hired.",
+    "tags": [
+      "__demo__"
+    ],
+    "featured": true,
+    "totalEpisodes": 2,
+    "freeEpisodes": 1,
+    "coinPrice": 11,
+    "thumbnail": "/thumbnails/billionaires-revenge.png",
+    "seriesUrl": "https://thegulel.com/series/cmn2djv3o004b04l4f18wca5s",
+    "firstFreeWatchUrl": "https://thegulel.com/watch/cmugxfo6q0003pgkdxyr18dnc",
+    "episodes": [
+      {
+        "id": "cmugxfo6q0003pgkdxyr18dnc",
+        "number": 1,
+        "title": "Episode 1",
+        "titleHi": null,
+        "duration": 36,
+        "isFree": true,
+        "watchUrl": "https://thegulel.com/watch/cmugxfo6q0003pgkdxyr18dnc"
+      },
+      {
+        "id": "cmuh31efi0000mmkdf9k9v0yh",
+        "number": 2,
+        "title": "Episode 2",
+        "titleHi": null,
+        "duration": 36,
+        "isFree": false,
+        "watchUrl": "https://thegulel.com/watch/cmuh31efi0000mmkdf9k9v0yh"
+      }
+    ]
+  },
+  {
+    "id": "cmn2djhr0001r04l46bfk9th0",
+    "title": "The Mafia Lord's Bride",
+    "titleHi": "माफिया की दुल्हन",
+    "genre": "Crime Romance",
+    "description": "She ran from everything. He owned everything. Their collision was inevitable — and deadly.",
+    "tags": [
+      "__demo__"
+    ],
+    "featured": true,
+    "totalEpisodes": 2,
+    "freeEpisodes": 1,
+    "coinPrice": 9,
+    "thumbnail": "/thumbnails/mafia-lords-bride.png",
+    "seriesUrl": "https://thegulel.com/series/cmn2djhr0001r04l46bfk9th0",
+    "firstFreeWatchUrl": "https://thegulel.com/watch/cmugxglwk000dpgkdcm8koa92",
+    "episodes": [
+      {
+        "id": "cmugxglwk000dpgkdcm8koa92",
+        "number": 1,
+        "title": "Episode 1",
+        "titleHi": null,
+        "duration": 36,
+        "isFree": true,
+        "watchUrl": "https://thegulel.com/watch/cmugxglwk000dpgkdcm8koa92"
+      },
+      {
+        "id": "cmuh38oq20001v2kdqge1z9fb",
+        "number": 2,
+        "title": "Episode 2",
+        "titleHi": null,
+        "duration": 36,
+        "isFree": false,
+        "watchUrl": "https://thegulel.com/watch/cmuh38oq20001v2kdqge1z9fb"
+      }
+    ]
+  },
+  {
+    "id": "cmugxh41y000hpgkdz3cpv8bm",
+    "title": "Revenge of the Heir",
+    "titleHi": "वारिस का बदला",
+    "genre": "Drama",
+    "description": "Thrown out of the mansion as the servant's son. Ten years later, he walks back in — and buys it.",
+    "tags": [
+      "New",
+      "Seedance 2.5"
+    ],
+    "featured": false,
+    "totalEpisodes": 2,
+    "freeEpisodes": 1,
+    "coinPrice": 10,
+    "thumbnail": "https://videodelivery.net/950514a24254c179d2f82a44dbf33423/thumbnails/thumbnail.jpg?time=4s&height=1280",
+    "seriesUrl": "https://thegulel.com/series/cmugxh41y000hpgkdz3cpv8bm",
+    "firstFreeWatchUrl": "https://thegulel.com/watch/cmugxh45q000ipgkd5qshctdo",
+    "episodes": [
+      {
+        "id": "cmugxh45q000ipgkd5qshctdo",
+        "number": 1,
+        "title": "Episode 1",
+        "titleHi": null,
+        "duration": 36,
+        "isFree": true,
+        "watchUrl": "https://thegulel.com/watch/cmugxh45q000ipgkd5qshctdo"
+      },
+      {
+        "id": "cmuh39qco0009v2kdy1zq3om4",
+        "number": 2,
+        "title": "Episode 2",
+        "titleHi": null,
+        "duration": 36,
+        "isFree": false,
+        "watchUrl": "https://thegulel.com/watch/cmuh39qco0009v2kdy1zq3om4"
+      }
+    ]
+  },
+  {
+    "id": "cmugxgl1c000bpgkdf2ind6s5",
+    "title": "Love in Shanghai",
+    "titleHi": null,
+    "genre": "Romance",
+    "description": "A street violinist on the Bund. A billionaire heir who stops to listen. A wedding he forgot to mention.",
+    "tags": [
+      "New",
+      "Seedance 2.5"
+    ],
+    "featured": false,
+    "totalEpisodes": 2,
+    "freeEpisodes": 1,
+    "coinPrice": 10,
+    "thumbnail": "https://videodelivery.net/1f9df6fe3243e5ceda66ce6cf3966cf3/thumbnails/thumbnail.jpg?time=4s&height=1280",
+    "seriesUrl": "https://thegulel.com/series/cmugxgl1c000bpgkdf2ind6s5",
+    "firstFreeWatchUrl": "https://thegulel.com/watch/cmugxgl55000cpgkdzzgandpn",
+    "episodes": [
+      {
+        "id": "cmugxgl55000cpgkdzzgandpn",
+        "number": 1,
+        "title": "Episode 1",
+        "titleHi": null,
+        "duration": 36,
+        "isFree": true,
+        "watchUrl": "https://thegulel.com/watch/cmugxgl55000cpgkdzzgandpn"
+      },
+      {
+        "id": "cmuh38pqa0002v2kd6t59spwa",
+        "number": 2,
+        "title": "Episode 2",
+        "titleHi": null,
+        "duration": 36,
+        "isFree": false,
+        "watchUrl": "https://thegulel.com/watch/cmuh38pqa0002v2kd6t59spwa"
+      }
+    ]
+  },
+  {
+    "id": "cmugxgicf0009pgkd1x9wel34",
+    "title": "Mafia King's Heart",
+    "titleHi": null,
+    "genre": "Crime Romance",
+    "description": "She went undercover to bring him down. He knew from day one — and let her in anyway.",
+    "tags": [
+      "New",
+      "Seedance 2.5"
+    ],
+    "featured": false,
+    "totalEpisodes": 2,
+    "freeEpisodes": 1,
+    "coinPrice": 10,
+    "thumbnail": "https://videodelivery.net/ac3fc639e8f7f83ca0d818e990b7c4e1/thumbnails/thumbnail.jpg?time=4s&height=1280",
+    "seriesUrl": "https://thegulel.com/series/cmugxgicf0009pgkd1x9wel34",
+    "firstFreeWatchUrl": "https://thegulel.com/watch/cmugxgivc000apgkddqrno8uc",
+    "episodes": [
+      {
+        "id": "cmugxgivc000apgkddqrno8uc",
+        "number": 1,
+        "title": "Episode 1",
+        "titleHi": null,
+        "duration": 36,
+        "isFree": true,
+        "watchUrl": "https://thegulel.com/watch/cmugxgivc000apgkddqrno8uc"
+      },
+      {
+        "id": "cmuh38oah0000v2kd5himbb1d",
+        "number": 2,
+        "title": "Episode 2",
+        "titleHi": null,
+        "duration": 36,
+        "isFree": false,
+        "watchUrl": "https://thegulel.com/watch/cmuh38oah0000v2kd5himbb1d"
+      }
+    ]
+  },
+  {
+    "id": "cmugxg4dq0007pgkdzg5q9pkl",
+    "title": "Imperial Palace Secrets",
+    "titleHi": null,
+    "genre": "Historical",
+    "description": "She saved the Emperor from a poisoned cup — and was accused of treason for it. Intrigue, loyalty and betrayal inside the Forbidden City.",
+    "tags": [
+      "New",
+      "Seedance 2.5"
+    ],
+    "featured": false,
+    "totalEpisodes": 2,
+    "freeEpisodes": 1,
+    "coinPrice": 10,
+    "thumbnail": "https://videodelivery.net/b5698ead870f7112916ce2144c331250/thumbnails/thumbnail.jpg?time=4s&height=1280",
+    "seriesUrl": "https://thegulel.com/series/cmugxg4dq0007pgkdzg5q9pkl",
+    "firstFreeWatchUrl": "https://thegulel.com/watch/cmugxg4hi0008pgkdc1sm7vl6",
+    "episodes": [
+      {
+        "id": "cmugxg4hi0008pgkdc1sm7vl6",
+        "number": 1,
+        "title": "Episode 1",
+        "titleHi": null,
+        "duration": 36,
+        "isFree": true,
+        "watchUrl": "https://thegulel.com/watch/cmugxg4hi0008pgkdc1sm7vl6"
+      },
+      {
+        "id": "cmuh390180003v2kdk9qm9wb8",
+        "number": 2,
+        "title": "Episode 2",
+        "titleHi": null,
+        "duration": 36,
+        "isFree": false,
+        "watchUrl": "https://thegulel.com/watch/cmuh390180003v2kdk9qm9wb8"
+      }
+    ]
+  },
+  {
+    "id": "cmnsrbgwz000004kwk9n6jkay",
+    "title": "CEO's Hidden Identity",
+    "titleHi": null,
+    "genre": "Romance",
+    "description": "A powerful CEO conceals his true identity to win the heart of the woman he loves — but secrets have a way of surfacing.",
+    "tags": [
+      "CEO",
+      "romance",
+      "drama"
+    ],
+    "featured": false,
+    "totalEpisodes": 2,
+    "freeEpisodes": 1,
+    "coinPrice": 10,
+    "thumbnail": "/thumbnails/ceo-hidden-identity-poster.png",
+    "seriesUrl": "https://thegulel.com/series/cmnsrbgwz000004kwk9n6jkay",
+    "firstFreeWatchUrl": "https://thegulel.com/watch/cmugxfj6p0000pgkdk2vfspf3",
+    "episodes": [
+      {
+        "id": "cmugxfj6p0000pgkdk2vfspf3",
+        "number": 1,
+        "title": "Episode 1",
+        "titleHi": null,
+        "duration": 36,
+        "isFree": true,
+        "watchUrl": "https://thegulel.com/watch/cmugxfj6p0000pgkdk2vfspf3"
+      },
+      {
+        "id": "cmuh31eu50002mmkdd78czr3i",
+        "number": 2,
+        "title": "Episode 2",
+        "titleHi": null,
+        "duration": 36,
+        "isFree": false,
+        "watchUrl": "https://thegulel.com/watch/cmuh31eu50002mmkdd78czr3i"
+      }
+    ]
+  },
+  {
+    "id": "cmnsrbgu7000004i8t5zz7dkd",
+    "title": "Medical Genius",
+    "titleHi": null,
+    "genre": "Drama",
+    "description": "A brilliant doctor with a mysterious past navigates hospital politics, life-or-death surgeries, and a forbidden love.",
+    "tags": [
+      "medical",
+      "drama",
+      "genius"
+    ],
+    "featured": false,
+    "totalEpisodes": 2,
+    "freeEpisodes": 1,
+    "coinPrice": 10,
+    "thumbnail": "/thumbnails/medical-genius-poster.png",
+    "seriesUrl": "https://thegulel.com/series/cmnsrbgu7000004i8t5zz7dkd",
+    "firstFreeWatchUrl": "https://thegulel.com/watch/cmugxgnyb000epgkdbj94em8d",
+    "episodes": [
+      {
+        "id": "cmugxgnyb000epgkdbj94em8d",
+        "number": 1,
+        "title": "Episode 1",
+        "titleHi": null,
+        "duration": 36,
+        "isFree": true,
+        "watchUrl": "https://thegulel.com/watch/cmugxgnyb000epgkdbj94em8d"
+      },
+      {
+        "id": "cmuh397250004v2kdxrby8puh",
+        "number": 2,
+        "title": "Episode 2",
+        "titleHi": null,
+        "duration": 36,
+        "isFree": false,
+        "watchUrl": "https://thegulel.com/watch/cmuh397250004v2kdxrby8puh"
+      }
+    ]
+  },
+  {
+    "id": "cmn1ugxn60005z5nqgb8u338n",
+    "title": "Three Weddings",
+    "titleHi": "तीन शादियां",
+    "genre": "Family",
+    "description": "Three sisters. Three weddings. Three completely different love stories unfolding in one chaotic wedding season in Jaipur. From arranged marriages to forbidden love, this colorful family drama will make you laugh, cry, and believe in love again.",
+    "tags": [
+      "Family",
+      "Wedding",
+      "Comedy",
+      "Jaipur",
+      "Romance"
+    ],
+    "featured": false,
+    "totalEpisodes": 2,
+    "freeEpisodes": 1,
+    "coinPrice": 8,
+    "thumbnail": "/thumbnails/three-weddings.png",
+    "seriesUrl": "https://thegulel.com/series/cmn1ugxn60005z5nqgb8u338n",
+    "firstFreeWatchUrl": "https://thegulel.com/watch/cmugxhmqb000mpgkdfzdin7eq",
+    "episodes": [
+      {
+        "id": "cmugxhmqb000mpgkdfzdin7eq",
+        "number": 1,
+        "title": "Episode 1",
+        "titleHi": null,
+        "duration": 36,
+        "isFree": true,
+        "watchUrl": "https://thegulel.com/watch/cmugxhmqb000mpgkdfzdin7eq"
+      },
+      {
+        "id": "cmuh3a8ib000bv2kdxojhb5iv",
+        "number": 2,
+        "title": "Episode 2",
+        "titleHi": null,
+        "duration": 36,
+        "isFree": false,
+        "watchUrl": "https://thegulel.com/watch/cmuh3a8ib000bv2kdxojhb5iv"
+      }
+    ]
+  },
+  {
+    "id": "cmn1ugxce0003z5nqceusvlmh",
+    "title": "Whispers in the Dark",
+    "titleHi": "अंधेरे की फुसफुसाहट",
+    "genre": "Horror",
+    "description": "A young woman inherits her grandmother's ancestral haveli in Rajasthan, only to discover it harbors a 200-year-old curse. As the walls begin to whisper, she must uncover the truth before she becomes the next victim.",
+    "tags": [
+      "Horror",
+      "Supernatural",
+      "Mystery",
+      "Haveli"
+    ],
+    "featured": false,
+    "totalEpisodes": 2,
+    "freeEpisodes": 1,
+    "coinPrice": 8,
+    "thumbnail": "/thumbnails/whispers-in-the-dark.png",
+    "seriesUrl": "https://thegulel.com/series/cmn1ugxce0003z5nqceusvlmh",
+    "firstFreeWatchUrl": "https://thegulel.com/watch/cmugxhop0000npgkdevw5l1ej",
+    "episodes": [
+      {
+        "id": "cmugxhop0000npgkdevw5l1ej",
+        "number": 1,
+        "title": "Episode 1",
+        "titleHi": null,
+        "duration": 36,
+        "isFree": true,
+        "watchUrl": "https://thegulel.com/watch/cmugxhop0000npgkdevw5l1ej"
+      },
+      {
+        "id": "cmuh3a9jn000cv2kdqatw9wbe",
+        "number": 2,
+        "title": "Episode 2",
+        "titleHi": null,
+        "duration": 36,
+        "isFree": false,
+        "watchUrl": "https://thegulel.com/watch/cmuh3a9jn000cv2kdqatw9wbe"
+      }
+    ]
+  },
+  {
+    "id": "cmn1ugx710002z5nqytgnfi1d",
+    "title": "Million Dollar Heart",
+    "titleHi": "करोड़ों का दिल",
+    "genre": "Romance",
+    "description": "India's youngest tech billionaire has everything — except someone who loves him for who he really is. When he meets a small-town teacher who doesn't know his identity, he discovers what money can't buy.",
+    "tags": [
+      "Billionaire",
+      "Romance",
+      "Comedy",
+      "Bollywood"
+    ],
+    "featured": false,
+    "totalEpisodes": 2,
+    "freeEpisodes": 1,
+    "coinPrice": 10,
+    "thumbnail": "/thumbnails/million-dollar-heart.png",
+    "seriesUrl": "https://thegulel.com/series/cmn1ugx710002z5nqytgnfi1d",
+    "firstFreeWatchUrl": "https://thegulel.com/watch/cmugxh394000gpgkdo48dqypg",
+    "episodes": [
+      {
+        "id": "cmugxh394000gpgkdo48dqypg",
+        "number": 1,
+        "title": "Episode 1",
+        "titleHi": null,
+        "duration": 36,
+        "isFree": true,
+        "watchUrl": "https://thegulel.com/watch/cmugxh394000gpgkdo48dqypg"
+      },
+      {
+        "id": "cmuh397u60006v2kd0zevv1kg",
+        "number": 2,
+        "title": "Episode 2",
+        "titleHi": null,
+        "duration": 36,
+        "isFree": false,
+        "watchUrl": "https://thegulel.com/watch/cmuh397u60006v2kd0zevv1kg"
+      }
+    ]
+  },
+  {
+    "id": "cmn2djfa2001a04l4s0r71bns",
+    "title": "Midnight Obsession",
+    "titleHi": "आधी रात का जुनून",
+    "genre": "Thriller",
+    "description": "He watched her every move. She thought she was safe. A psychological thriller that will keep you breathless.",
+    "tags": [
+      "__demo__"
+    ],
+    "featured": false,
+    "totalEpisodes": 2,
+    "freeEpisodes": 1,
+    "coinPrice": 12,
+    "thumbnail": "/thumbnails/midnight-obsession.png",
+    "seriesUrl": "https://thegulel.com/series/cmn2djfa2001a04l4s0r71bns",
+    "firstFreeWatchUrl": "https://thegulel.com/watch/cmugxh15t000fpgkddzkhq898",
+    "episodes": [
+      {
+        "id": "cmugxh15t000fpgkddzkhq898",
+        "number": 1,
+        "title": "Episode 1",
+        "titleHi": null,
+        "duration": 36,
+        "isFree": true,
+        "watchUrl": "https://thegulel.com/watch/cmugxh15t000fpgkddzkhq898"
+      },
+      {
+        "id": "cmuh397aj0005v2kdjggyswkp",
+        "number": 2,
+        "title": "Episode 2",
+        "titleHi": null,
+        "duration": 36,
+        "isFree": false,
+        "watchUrl": "https://thegulel.com/watch/cmuh397aj0005v2kdjggyswkp"
+      }
+    ]
+  },
+  {
+    "id": "cmn2djpam003704l4gl4acmni",
+    "title": "Broken Vows",
+    "titleHi": "टूटे वादे",
+    "genre": "Drama",
+    "description": "He betrayed her on their wedding night. Three years later, she returned — as his boss.",
+    "tags": [
+      "__demo__"
+    ],
+    "featured": false,
+    "totalEpisodes": 2,
+    "freeEpisodes": 1,
+    "coinPrice": 10,
+    "thumbnail": "/thumbnails/broken-vows.png",
+    "seriesUrl": "https://thegulel.com/series/cmn2djpam003704l4gl4acmni",
+    "firstFreeWatchUrl": "https://thegulel.com/watch/cmugxfkad0002pgkdr91tj3lc",
+    "episodes": [
+      {
+        "id": "cmugxfkad0002pgkdr91tj3lc",
+        "number": 1,
+        "title": "Episode 1",
+        "titleHi": null,
+        "duration": 36,
+        "isFree": true,
+        "watchUrl": "https://thegulel.com/watch/cmugxfkad0002pgkdr91tj3lc"
+      },
+      {
+        "id": "cmuh31evz0003mmkdu9tdq3q1",
+        "number": 2,
+        "title": "Episode 2",
+        "titleHi": null,
+        "duration": 36,
+        "isFree": false,
+        "watchUrl": "https://thegulel.com/watch/cmuh31evz0003mmkdu9tdq3q1"
+      }
+    ]
+  },
+  {
+    "id": "cmn2djlyi002k04l4jrbni7cn",
+    "title": "Love in Beijing",
+    "titleHi": null,
+    "genre": "Romance",
+    "description": "A small-town girl arrives in Beijing and falls for the city — and the cold, brilliant man who hates distractions.",
+    "tags": [
+      "__demo__"
+    ],
+    "featured": false,
+    "totalEpisodes": 2,
+    "freeEpisodes": 1,
+    "coinPrice": 8,
+    "thumbnail": "/thumbnails/love-in-beijing.png",
+    "seriesUrl": "https://thegulel.com/series/cmn2djlyi002k04l4jrbni7cn",
+    "firstFreeWatchUrl": "https://thegulel.com/watch/cmugxg2zr0006pgkd67siclwl",
+    "episodes": [
+      {
+        "id": "cmugxg2zr0006pgkd67siclwl",
+        "number": 1,
+        "title": "Episode 1",
+        "titleHi": null,
+        "duration": 36,
+        "isFree": true,
+        "watchUrl": "https://thegulel.com/watch/cmugxg2zr0006pgkd67siclwl"
+      },
+      {
+        "id": "cmuh31y4v0006mmkd2c3mjx0a",
+        "number": 2,
+        "title": "Episode 2",
+        "titleHi": null,
+        "duration": 36,
+        "isFree": false,
+        "watchUrl": "https://thegulel.com/watch/cmuh31y4v0006mmkd2c3mjx0a"
+      }
+    ]
+  },
+  {
+    "id": "cmn2djs1y003q04l4180kgzuc",
+    "title": "My Stepmother's Lies",
+    "titleHi": "सौतेली माँ के झूठ",
+    "genre": "Drama",
+    "description": "She raised me to be invisible. But the man I'm falling for only sees me. A story of resilience and unexpected love.",
+    "tags": [
+      "__demo__"
+    ],
+    "featured": false,
+    "totalEpisodes": 2,
+    "freeEpisodes": 1,
+    "coinPrice": 9,
+    "thumbnail": "/thumbnails/stepmothers-lies.png",
+    "seriesUrl": "https://thegulel.com/series/cmn2djs1y003q04l4180kgzuc",
+    "firstFreeWatchUrl": "https://thegulel.com/watch/cmugxh5ri000jpgkdjnxtv4el",
+    "episodes": [
+      {
+        "id": "cmugxh5ri000jpgkdjnxtv4el",
+        "number": 1,
+        "title": "Episode 1",
+        "titleHi": null,
+        "duration": 36,
+        "isFree": true,
+        "watchUrl": "https://thegulel.com/watch/cmugxh5ri000jpgkdjnxtv4el"
+      },
+      {
+        "id": "cmuh39pqv0008v2kd2a0savvz",
+        "number": 2,
+        "title": "Episode 2",
+        "titleHi": null,
+        "duration": 36,
+        "isFree": false,
+        "watchUrl": "https://thegulel.com/watch/cmuh39pqv0008v2kd2a0savvz"
+      }
+    ]
+  }
+]

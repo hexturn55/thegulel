@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1920" width="1080" height="1920">
+  <!-- Teaser key art for "Revenge of the Heir" until episode frame grabs exist:
+       the servant's son, back-lit in the haveli doorway, face unseen. -->
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#04040a"/>
+      <stop offset="0.5" stop-color="#120b05"/>
+      <stop offset="1" stop-color="#1c1005"/>
+    </linearGradient>
+    <radialGradient id="moon" cx="0.8" cy="0.1" r="0.3">
+      <stop offset="0" stop-color="#f8e7b0" stop-opacity="0.28"/>
+      <stop offset="1" stop-color="#f8e7b0" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="door" cx="540" cy="1000" r="300" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff4d0"/>
+      <stop offset="0.35" stop-color="#f5c451"/>
+      <stop offset="0.75" stop-color="#b45309" stop-opacity="0.75"/>
+      <stop offset="1" stop-color="#7c2d12" stop-opacity="0.3"/>
+    </radialGradient>
+    <radialGradient id="spill" cx="540" cy="1060" r="520" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#f5c451" stop-opacity="0.42"/>
+      <stop offset="0.5" stop-color="#b45309" stop-opacity="0.14"/>
+      <stop offset="1" stop-color="#000" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="ground" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#1b1107"/>
+      <stop offset="1" stop-color="#040302"/>
+    </linearGradient>
+    <linearGradient id="fog" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f5c451" stop-opacity="0"/>
+      <stop offset="1" stop-color="#f5c451" stop-opacity="0.08"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1080" height="1920" fill="url(#sky)"/>
+  <rect width="1080" height="1920" fill="url(#moon)"/>
+  <circle cx="864" cy="200" r="46" fill="#f8e7b0" opacity="0.85"/>
+
+  <!-- Haveli facade -->
+  <g fill="#0b0805">
+    <rect x="60" y="560" width="960" height="640"/>
+    <polygon points="40,572 540,360 1040,572"/>
+    <rect x="130" y="492" width="80" height="90"/><rect x="870" y="492" width="80" height="90"/>
+    <path d="M462 452 q78 -104 156 0 z"/>
+    <rect x="100" y="560" width="26" height="640" fill="#140e08"/><rect x="954" y="560" width="26" height="640" fill="#140e08"/>
+  </g>
+  <g fill="#f5c451">
+    <rect x="160" y="640" width="64" height="104" rx="32" opacity="0.8"/>
+    <rect x="270" y="640" width="64" height="104" rx="32" opacity="0.2"/>
+    <rect x="746" y="640" width="64" height="104" rx="32" opacity="0.65"/>
+    <rect x="856" y="640" width="64" height="104" rx="32" opacity="0.18"/>
+    <rect x="160" y="820" width="64" height="104" rx="32" opacity="0.25"/>
+    <rect x="270" y="820" width="64" height="104" rx="32" opacity="0.55"/>
+    <rect x="746" y="820" width="64" height="104" rx="32" opacity="0.3"/>
+    <rect x="856" y="820" width="64" height="104" rx="32" opacity="0.85"/>
+  </g>
+
+  <!-- The open doorway, blazing -->
+  <path d="M372 1200 V890 Q540 610 708 890 V1200 Z" fill="url(#door)"/>
+  <path d="M372 1200 V890 Q540 610 708 890 V1200" fill="none" stroke="#2a1a0a" stroke-width="18"/>
+  <rect width="1080" height="1920" fill="url(#spill)"/>
+
+  <!-- Ground and steps -->
+  <rect y="1196" width="1080" height="724" fill="url(#ground)"/>
+  <rect x="330" y="1196" width="420" height="20" fill="#2b1c0c"/>
+  <rect x="300" y="1216" width="480" height="20" fill="#20150a"/>
+
+  <!-- The heir: back-lit head and shoulders -->
+  <path fill="#020202" d="M540 925
+    C585 925 612 955 614 1000 C616 1030 612 1050 606 1068
+    C618 1072 622 1090 612 1108 C606 1118 600 1120 596 1122
+    C588 1150 572 1170 560 1178 L562 1205
+    C640 1222 740 1250 790 1300 C830 1340 850 1400 858 1480
+    L900 1920 L180 1920 L222 1480
+    C230 1400 250 1340 290 1300 C340 1250 440 1222 518 1205
+    L520 1178 C508 1170 492 1150 484 1122
+    C480 1120 474 1118 468 1108 C458 1090 462 1072 474 1068
+    C468 1050 464 1030 466 1000 C468 955 495 925 540 925 Z"/>
+  <!-- rim light on hair and shoulders -->
+  <path d="M470 1000 C472 958 498 930 540 930 C582 930 608 958 610 1000" fill="none" stroke="#ffe7a3" stroke-width="5" opacity="0.9"/>
+  <path d="M522 1208 C444 1224 344 1252 294 1302" fill="none" stroke="#f5c451" stroke-width="5" opacity="0.8"/>
+  <path d="M558 1208 C636 1224 736 1252 786 1302" fill="none" stroke="#f5c451" stroke-width="5" opacity="0.8"/>
+  <!-- coat collar -->
+  <path d="M506 1212 L540 1330 L574 1212" fill="none" stroke="#3a2a14" stroke-width="6"/>
+
+  <rect y="1500" width="1080" height="420" fill="url(#fog)"/>
+</svg>
