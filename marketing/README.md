@@ -12,6 +12,7 @@ strategy, research, copy, graphics and tracking. Start with the master plan, the
 | [`05-tracking-and-funnel.md`](05-tracking-and-funnel.md) | Funnel map, `/go` short links, UTM taxonomy, event map, Meta + Google setup checklists, scoreboard, compliance |
 | [`content/series-kits.md`](content/series-kits.md) | Per-series hooks, captions, hashtags and a 5-hook cut list for every pilot |
 | [`content/calendar-30-days.csv`](content/calendar-30-days.csv) | Day-by-day posting calendar for the brand and character accounts (import into Sheets) |
+| [`content/account-setup-runbook.md`](content/account-setup-runbook.md) | **Create the accounts:** every field to paste and every image to upload, in order (Meta Portfolio → Pages → Instagram → YouTube → WhatsApp) |
 | [`content/outreach-and-messaging.md`](content/outreach-and-messaging.md) | Creator DMs and brief, WhatsApp Channel posts, WhatsApp templates, push copy, press pitch |
 | [`ads/meta-ads.csv`](ads/meta-ads.csv), [`ads/google-ads.csv`](ads/google-ads.csv) | Ready-to-paste ad copy per series, within each platform's character limits |
 | [`reports/Gulel social launch playbook.md`](reports/Gulel%20social%20launch%20playbook.md) | The deep-research report (sources cited), including a check of the investor-deck figures |
