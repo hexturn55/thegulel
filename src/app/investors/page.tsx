@@ -25,7 +25,7 @@ export const dynamic = 'force-dynamic';
 export const metadata: Metadata = {
   title: 'Investors',
   description:
-    "Gulel — India's vertical entertainment revolution. Market, model, economics and the ₹40 Cr Series A.",
+    "Gulel — India's vertical entertainment revolution. Market, model, economics and the $10M+ (≈ ₹96 Cr) Series A.",
   robots: { index: false, follow: false },
 };
 
@@ -313,7 +313,7 @@ export default async function InvestorsPage() {
               href="#ask"
               className="inline-flex items-center gap-2 rounded-full border border-zinc-600 px-6 py-3 font-semibold text-white hover:border-white"
             >
-              Raising ₹40 Cr · Series A <ArrowRight className="h-4 w-4" />
+              Raising $10M+ (≈ ₹96 Cr) · Series A <ArrowRight className="h-4 w-4" />
             </a>
             <Link
               href="/investors/dashboard"
@@ -993,11 +993,13 @@ export default async function InvestorsPage() {
 
         <div className="overflow-hidden rounded-3xl bg-gradient-to-br from-rose-600 via-rose-700 to-[#3b0a17] p-10 text-center md:p-16">
           <p className="text-xs font-semibold uppercase tracking-[0.3em] text-amber-300">The ask</p>
-          <p className="mt-3 text-5xl font-extrabold text-white md:text-7xl">₹40 Cr</p>
-          <p className="mt-1 text-xl text-rose-100">(~$5M) · Series A</p>
+          <p className="mt-3 text-5xl font-extrabold text-white md:text-7xl">$10M+</p>
+          <p className="mt-1 text-xl text-rose-100">≈ ₹96 Cr minimum · Series A</p>
           <p className="mx-auto mt-5 max-w-xl text-rose-50">
-            To fund the Year-1 content slate and launch — the steepest, highest-leverage point on the curve.
+            Funds the full three-year capital plan above — ₹95 Cr across content and marketing — carrying Gulel from
+            launch through to projected breakeven in Year 3.
           </p>
+          <p className="mt-4 text-xs text-rose-200/80">INR at ₹95.98 / US$ · figures rounded</p>
         </div>
       </Section>
 
@@ -1007,7 +1009,7 @@ export default async function InvestorsPage() {
           <p className="text-3xl font-bold text-white md:text-4xl">
             Let&apos;s build India&apos;s vertical entertainment revolution — <span className="text-rose-500">together.</span>
           </p>
-          <p className="mt-4 text-zinc-400">Raising ₹40 Cr (~$5M) · Series A</p>
+          <p className="mt-4 text-zinc-400">Raising $10M+ (≈ ₹96 Cr) · Series A</p>
           <div className="mt-8 flex flex-wrap justify-center gap-3">
             <a
               href="mailto:hello@thegulel.com?subject=Gulel%20Series%20A"
