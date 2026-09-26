@@ -1,11 +1,18 @@
-import type { Episode, SeriesCard } from '@gulel/shared';
+import type { Episode, PlaybackInfo, SeriesCard } from '@gulel/shared';
 
 /**
- * Demo catalog used as a fallback when the live API isn't reachable (e.g. no
- * EXPO_PUBLIC_API_URL configured, or the backend isn't running yet). This keeps
- * the app fully browsable for previews/demos. Real API data always takes
- * precedence — this only fills in when the fetch fails.
+ * DEVELOPMENT-ONLY demo catalog, used as a fallback when the live API isn't
+ * reachable in a __DEV__ build. Screens must load this module lazily inside an
+ * `if (__DEV__)` block (`require('@/lib/sampleData')`) so release bundles never
+ * show fake content. Demo ids always start with `demo-`.
  */
+
+const DEMO_PREFIX = 'demo-';
+
+/** True for ids that belong to the bundled demo catalog. */
+export function isDemoId(id: string | null | undefined): boolean {
+  return typeof id === 'string' && id.startsWith(DEMO_PREFIX);
+}
 
 function thumb(label: string): string {
   return `https://placehold.co/300x450/1a1a22/e11d48?text=${encodeURIComponent(label)}`;
@@ -50,11 +57,17 @@ export const SAMPLE_SERIES: SeriesCard[] = SEED.map((s) => ({
 /** Offline demo episode: carries its own public sample stream. */
 export type SampleEpisode = Episode & { sampleUrl?: string };
 
+const DEMO_EPISODE_COUNT = 8;
+const DEMO_COIN_PRICE = 10;
+
+/** Demo episodes for a `demo-` series id; [] for any other (real) id. */
 export function sampleEpisodes(seriesId: string): SampleEpisode[] {
+  if (!isDemoId(seriesId)) return [];
   const seed = SEED.find((s) => s.id === seriesId);
-  const count = Math.min(seed?.episodes ?? 8, 8);
+  const count = Math.min(seed?.episodes ?? DEMO_EPISODE_COUNT, DEMO_EPISODE_COUNT);
   return Array.from({ length: count }, (_, i) => {
     const n = i + 1;
+    const isFree = n <= 2;
     return {
       id: `${seriesId}-ep-${n}`,
       seriesId,
@@ -63,7 +76,32 @@ export function sampleEpisodes(seriesId: string): SampleEpisode[] {
       duration: 90 + i * 30,
       sampleUrl: SAMPLE_VIDEOS[i % SAMPLE_VIDEOS.length]!,
       thumbnail: thumb(`Ep ${n}`),
-      isFree: n <= 2,
+      isFree,
+      // Demo episodes are all playable so the offline player can be exercised.
+      isUnlocked: true,
+      ...(isFree ? {} : { coinPrice: DEMO_COIN_PRICE }),
     };
   });
+}
+
+/**
+ * Offline playback info for a demo episode id (`demo-<n>-ep-<k>`), or null
+ * for anything that is not a known demo episode.
+ */
+export function samplePlayback(episodeId: string): PlaybackInfo | null {
+  const match = /^(demo-.+?)-ep-(\d+)$/.exec(episodeId);
+  if (!match) return null;
+  const seriesId = match[1]!;
+  const n = Number(match[2]);
+  const episodes = sampleEpisodes(seriesId);
+  const ep = episodes.find((e) => e.episodeNumber === n);
+  if (!ep?.sampleUrl) return null;
+  const next = episodes.find((e) => e.episodeNumber === n + 1);
+  return {
+    url: ep.sampleUrl,
+    expiresAt: null,
+    progress: 0,
+    seriesId,
+    nextEpisodeId: next?.id ?? null,
+  };
 }

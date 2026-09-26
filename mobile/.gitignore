@@ -40,3 +40,6 @@ yarn-error.*
 # generated native folders
 /ios
 /android
+
+# EAS submit credentials (never commit)
+play-service-account.json

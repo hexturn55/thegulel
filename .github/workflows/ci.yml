@@ -26,6 +26,14 @@ jobs:
         with:
           node-version: 20
           cache: npm
+      - name: Guard — ad-reward stub must not grant coins
+        # Rewarded-ad coins come only from Google-verified SSV (/api/ads/ssv);
+        # the legacy client-trusted endpoint must stay a 410 stub.
+        run: |
+          if grep -q coinBalance src/app/api/coins/ad-reward/route.ts; then
+            echo "::error file=src/app/api/coins/ad-reward/route.ts::ad-reward must not touch coinBalance (use /api/ads/ssv)"
+            exit 1
+          fi
       - run: npm ci
       - name: Lint
         run: npm run lint

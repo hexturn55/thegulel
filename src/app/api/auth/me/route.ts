@@ -1,12 +1,16 @@
 import { NextResponse } from 'next/server';
 import { getSupabaseUser } from '@/lib/supabase-server';
-import prisma from '@/lib/prisma';
 import { hasActiveVip } from '@/lib/subscription';
+import { syncPrismaUser } from '@/lib/sync-user';
 
 /**
  * GET /api/auth/me
  * Returns the current user's Prisma record (coin balance, etc.)
  * Requires a valid Supabase session (cookie) or bearer token (mobile).
+ *
+ * A first sign-in that has no Prisma record yet (mobile never goes through the
+ * web /auth/callback) creates it here, with the welcome bonus unless the
+ * phone/email belongs to a previously deleted account.
  */
 export async function GET() {
   const supabaseUser = await getSupabaseUser();
@@ -16,30 +20,7 @@ export async function GET() {
   }
 
   try {
-    const user = await prisma.user.findFirst({
-      where: {
-        OR: [
-          { supabaseId: supabaseUser.id },
-          ...(supabaseUser.email ? [{ email: supabaseUser.email }] : []),
-          ...(supabaseUser.phone ? [{ phone: supabaseUser.phone }] : []),
-        ],
-      },
-      select: {
-        id: true,
-        phone: true,
-        email: true,
-        name: true,
-        avatar: true,
-        locale: true,
-        provider: true,
-        coinBalance: true,
-      },
-    });
-
-    if (!user) {
-      return NextResponse.json({ error: 'User not found' }, { status: 404 });
-    }
-
+    const user = await syncPrismaUser(supabaseUser);
     const isVip = await hasActiveVip(user.id);
 
     return NextResponse.json({ ...user, isVip });

@@ -109,26 +109,33 @@ export function resolveVideoUrl(episode: {
 }
 
 // Signed-token cache: minting a token is a Cloudflare API call, so reuse each
-// video's token until it has less than an hour left.
-const TOKEN_TTL_S = 6 * 3600;
+// video's token while it still has at least TOKEN_MIN_REMAINING_S left. A
+// token (and so any leaked stream URL) lives at most TOKEN_TTL_S, and every
+// URL handed out stays valid for at least TOKEN_MIN_REMAINING_S. The mobile
+// app refreshes via `expiresAt`, but the web watch page embeds the URL once in
+// server-rendered HTML with no refresh path, so keep that floor generous
+// enough for paused / backgrounded tabs.
+const TOKEN_TTL_S = 4 * 3600;
+const TOKEN_MIN_REMAINING_S = 2 * 3600;
 const tokenCache = new Map<string, { token: string; exp: number }>();
 
 /**
- * Mint (or reuse) a Cloudflare Stream signed token for a video (server-only).
- * Videos require signed URLs, so every manifest and thumbnail request goes
- * through a token: `https://{subdomain}/{token}/...`. Returns null if
- * Cloudflare isn't configured or the call fails.
+ * Mint (or reuse) a Cloudflare Stream signed token for a video (server-only),
+ * with its expiry (unix seconds). Returns null if Cloudflare isn't configured
+ * or the call fails.
  *
  * NEVER call from the client — it uses CLOUDFLARE_API_TOKEN.
  */
-export async function getStreamToken(videoId: string): Promise<string | null> {
+export async function getStreamTokenWithExpiry(
+  videoId: string
+): Promise<{ token: string; exp: number } | null> {
   const accountId = process.env.CLOUDFLARE_ACCOUNT_ID;
   const apiToken = process.env.CLOUDFLARE_API_TOKEN;
   if (!accountId || !apiToken || !videoId) return null;
 
   const now = Math.floor(Date.now() / 1000);
   const cached = tokenCache.get(videoId);
-  if (cached && cached.exp - now > 3600) return cached.token;
+  if (cached && cached.exp - now > TOKEN_MIN_REMAINING_S) return cached;
 
   try {
     const exp = now + TOKEN_TTL_S;
@@ -148,19 +155,47 @@ export async function getStreamToken(videoId: string): Promise<string | null> {
     const data = await res.json();
     const token: string | undefined = data?.result?.token;
     if (!token) return null;
-    tokenCache.set(videoId, { token, exp });
-    return token;
+    const entry = { token, exp };
+    tokenCache.set(videoId, entry);
+    return entry;
   } catch {
     return null;
   }
 }
 
-/** Signed HLS manifest URL for a video, or null if signing is unavailable. */
-export async function getSignedStreamUrl(videoId: string): Promise<string | null> {
+/**
+ * Mint (or reuse) a Cloudflare Stream signed token for a video (server-only).
+ * Videos require signed URLs, so every manifest and thumbnail request goes
+ * through a token: `https://{subdomain}/{token}/...`. Returns null if
+ * Cloudflare isn't configured or the call fails.
+ *
+ * NEVER call from the client — it uses CLOUDFLARE_API_TOKEN.
+ */
+export async function getStreamToken(videoId: string): Promise<string | null> {
+  return (await getStreamTokenWithExpiry(videoId))?.token ?? null;
+}
+
+/**
+ * Signed HLS (`.m3u8`, never DASH — iOS/AVPlayer and hls.js need HLS)
+ * manifest URL for a video plus when it stops working, or null if signing is
+ * unavailable.
+ */
+export async function getSignedStreamUrlWithExpiry(
+  videoId: string
+): Promise<{ url: string; expiresAt: Date } | null> {
   const subdomain = process.env.NEXT_PUBLIC_CLOUDFLARE_CUSTOMER_SUBDOMAIN;
   if (!subdomain) return null;
-  const token = await getStreamToken(videoId);
-  return token ? `https://${subdomain}/${token}/manifest/video.m3u8` : null;
+  const t = await getStreamTokenWithExpiry(videoId);
+  if (!t) return null;
+  return {
+    url: `https://${subdomain}/${t.token}/manifest/video.m3u8`,
+    expiresAt: new Date(t.exp * 1000),
+  };
+}
+
+/** Signed HLS manifest URL for a video, or null if signing is unavailable. */
+export async function getSignedStreamUrl(videoId: string): Promise<string | null> {
+  return (await getSignedStreamUrlWithExpiry(videoId))?.url ?? null;
 }
 
 /** Signed thumbnail URL for a video (server-side use only — see the proxy). */

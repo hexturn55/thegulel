@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { createServerSupabaseClient } from '@/lib/supabase-server';
-import prisma from '@/lib/prisma';
+import { syncPrismaUser } from '@/lib/sync-user';
 
 /**
  * POST /api/auth/otp/verify
@@ -37,54 +37,15 @@ export async function POST(request: NextRequest) {
       );
     }
 
-    const supabaseUser = data.user;
+    // Find or create the Prisma user (welcome bonus for new users unless the
+    // phone belongs to a deleted account; legacy phone-only records get their
+    // supabaseId backfilled).
+    const user = await syncPrismaUser(
+      { ...data.user, phone: data.user.phone || phone },
+      { provider: 'phone' }
+    );
 
-    // Find or create Prisma user
-    let user = await prisma.user.findFirst({
-      where: {
-        OR: [{ supabaseId: supabaseUser.id }, { phone }],
-      },
-    });
-
-    if (!user) {
-      user = await prisma.user.create({
-        data: {
-          supabaseId: supabaseUser.id,
-          phone,
-          provider: 'phone',
-          coinBalance: 50,
-        },
-      });
-
-      await prisma.coinTransaction.create({
-        data: {
-          userId: user.id,
-          amount: 50,
-          type: 'BONUS',
-          description: 'Welcome bonus',
-        },
-      });
-    } else if (!user.supabaseId) {
-      // Backfill supabaseId for legacy users
-      user = await prisma.user.update({
-        where: { id: user.id },
-        data: { supabaseId: supabaseUser.id, provider: 'phone' },
-      });
-    }
-
-    return NextResponse.json({
-      success: true,
-      user: {
-        id: user.id,
-        phone: user.phone,
-        email: user.email,
-        name: user.name,
-        avatar: user.avatar,
-        locale: user.locale,
-        provider: user.provider,
-        coinBalance: user.coinBalance,
-      },
-    });
+    return NextResponse.json({ success: true, user });
   } catch (error) {
     console.error('Verify OTP error:', error);
     return NextResponse.json({ error: 'Failed to verify OTP' }, { status: 500 });
