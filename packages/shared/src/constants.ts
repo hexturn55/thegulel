@@ -32,4 +32,7 @@ export const API_ROUTES = {
   userTransactions: '/api/user/transactions',
   userHistory: '/api/user/history',
   subscriptions: '/api/subscriptions',
+  userDelete: '/api/user/delete',
+  adsStatus: '/api/ads/status',
+  appleLink: '/api/auth/apple/link',
 } as const;

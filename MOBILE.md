@@ -99,6 +99,12 @@ dashboard configuration:
 2. Map them in RevenueCat; set the public SDK keys as
    `EXPO_PUBLIC_RC_IOS_KEY` / `EXPO_PUBLIC_RC_ANDROID_KEY` (mobile) and point the
    RevenueCat webhook at `/api/webhooks/revenuecat` with `REVENUECAT_WEBHOOK_SECRET`.
+   For store builds the keys must reach the EAS build: put them in
+   `eas.json` `build.production.env` (public keys, safe to commit), in `app.json`
+   `extra.revenueCatIosKey` / `extra.revenueCatAndroidKey`, or as EAS environment
+   variables (`eas env:create --environment production ...`). `mobile/.env` is
+   gitignored and is NOT used by EAS cloud builds. `mobile/app.config.js` fails a
+   `production` profile build when the key for the target platform is missing.
 
 ---
 

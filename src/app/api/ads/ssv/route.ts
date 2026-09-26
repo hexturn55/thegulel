@@ -1,11 +1,49 @@
 import { NextRequest, NextResponse } from 'next/server';
 import prisma from '@/lib/prisma';
-import { verifyAdSsv } from '@/lib/ads-ssv';
+import {
+  AD_REWARD_COINS,
+  getAdLimitState,
+  verifyAdSsv,
+} from '@/lib/ads-ssv';
 
 export const dynamic = 'force-dynamic';
 
-const AD_REWARD_COINS = 5;
-const AD_COOLDOWN_MS = 60 * 1000; // min seconds between rewarded grants per user
+let warnedNoAllowlist = false;
+
+/**
+ * Google's SSV callback sends only the numeric ad unit id (`ad_unit=6574059853`),
+ * while AdMob shows the full `ca-app-pub-XXXX/6574059853`. Compare the part
+ * after the last '/', so either form works in ADMOB_SSV_AD_UNITS.
+ */
+function normalizeAdUnit(s: string): string {
+  const t = s.trim();
+  return t.includes('/') ? t.slice(t.lastIndexOf('/') + 1) : t;
+}
+
+/**
+ * Rewarded ad units allowed to grant coins (env ADMOB_SSV_AD_UNITS,
+ * comma-separated; full `ca-app-pub-…/NNN` ids or the numeric `NNN` part).
+ * Empty = allow any (the live web rewarded ads predate the allowlist and must
+ * keep working on deploy); warns once per process.
+ */
+function adUnitAllowed(adUnit: string | null): boolean {
+  const allowed = (process.env.ADMOB_SSV_AD_UNITS ?? '')
+    .split(',')
+    .map(normalizeAdUnit)
+    .filter(Boolean);
+  if (allowed.length === 0) {
+    if (!warnedNoAllowlist) {
+      warnedNoAllowlist = true;
+      console.warn('ssv: ADMOB_SSV_AD_UNITS not set — accepting rewards from any ad unit');
+    }
+    return true;
+  }
+  if (!adUnit || !allowed.includes(normalizeAdUnit(adUnit))) {
+    console.warn('ssv: unknown ad_unit', adUnit);
+    return false;
+  }
+  return true;
+}
 
 /**
  * GET /api/ads/ssv
@@ -13,9 +51,10 @@ const AD_COOLDOWN_MS = 60 * 1000; // min seconds between rewarded grants per use
  * Google's rewarded-ads Server-Side Verification callback. Google calls this
  * (server-to-server) after a user *actually completes* a rewarded ad. We:
  *  1. verify Google's signature (so only Google can grant a reward),
- *  2. resolve our user from `custom_data` (the userId we sent with the ad),
- *  3. grant coins exactly once per `transaction_id` (idempotent),
- *  4. rate-limit per user via AdCooldown.
+ *  2. check the ad unit against ADMOB_SSV_AD_UNITS (when configured),
+ *  3. resolve our user from `custom_data` (the userId we sent with the ad),
+ *  4. grant coins exactly once per `transaction_id` (idempotent),
+ *  5. rate-limit per user via AdCooldown and a per-UTC-day cap (ADS_DAILY_CAP).
  *
  * Configure this URL as the SSV callback in your AdMob/Ad Manager rewarded
  * ad unit, and pass the Gulel userId as `custom_data`.
@@ -32,7 +71,13 @@ export async function GET(request: NextRequest) {
   }
 
   const p = url.searchParams;
-  const userId = p.get('custom_data') || p.get('user_id');
+  if (!adUnitAllowed(p.get('ad_unit'))) {
+    return new NextResponse('unknown ad unit', { status: 200 });
+  }
+
+  // Only custom_data carries our (server-issued) user id; `user_id` is
+  // client-settable SDK metadata, so it is never trusted.
+  const userId = p.get('custom_data');
   const transactionId = p.get('transaction_id');
   if (!userId || !transactionId) {
     return new NextResponse('missing data', { status: 200 });
@@ -41,10 +86,13 @@ export async function GET(request: NextRequest) {
   const user = await prisma.user.findUnique({ where: { id: userId } });
   if (!user) return new NextResponse('unknown user', { status: 200 });
 
-  // Rate limit per user.
-  const cooldown = await prisma.adCooldown.findUnique({ where: { userId } });
-  if (cooldown && Date.now() - cooldown.lastAdAt.getTime() < AD_COOLDOWN_MS) {
+  // Rate limit per user: cooldown between ads and a daily cap.
+  const limits = await getAdLimitState(userId);
+  if (limits.cooldownRemainingMs > 0) {
     return new NextResponse('cooldown', { status: 200 });
+  }
+  if (limits.todayCount >= limits.dailyCap) {
+    return new NextResponse('daily cap', { status: 200 });
   }
 
   // Idempotent grant: the unique providerRef makes a replayed callback a no-op.

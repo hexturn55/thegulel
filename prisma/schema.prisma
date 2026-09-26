@@ -231,3 +231,23 @@ model SearchLog {
 
   @@index([createdAt])
 }
+
+// Tombstones for deleted accounts: sha256 of "phone:<+digits>" / "email:<lower>".
+// Lets a re-registration with the same phone/email skip the welcome bonus
+// (prevents delete-and-re-sign-up coin farming). Stores no raw PII.
+// Standalone table: code touching it must tolerate the table being absent
+// (production migrations are applied by hand / via /api/admin/ops?action=migrate).
+model DeletedIdentity {
+  hash      String   @id
+  createdAt DateTime @default(now())
+}
+
+// Sign in with Apple refresh token, kept so account deletion can revoke the
+// Apple grant (App Store Guideline 5.1.1(v)). Standalone table (no FK / no User
+// column) so it can be deployed before the migration runs; code must tolerate
+// the table being absent.
+model AppleCredential {
+  userId       String   @id
+  refreshToken String
+  updatedAt    DateTime @updatedAt
+}

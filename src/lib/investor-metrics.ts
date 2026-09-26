@@ -186,13 +186,15 @@ export async function getInvestorMetrics(): Promise<InvestorMetrics> {
              COUNT(*) FILTER (WHERE completed)::int AS completions,
              COALESCE(SUM(progress), 0)::float AS seconds
       FROM "WatchHistory"`,
-    prisma.coinTransaction.groupBy({ by: ['amount'], where: { type: 'PURCHASE' }, _count: { _all: true } }),
+    // amount > 0: RevenueCat refunds are stored as PURCHASE rows with amount <= 0
+    // (audit trail); they are not purchases.
+    prisma.coinTransaction.groupBy({ by: ['amount'], where: { type: 'PURCHASE', amount: { gt: 0 } }, _count: { _all: true } }),
     prisma.coinTransaction.groupBy({
       by: ['amount'],
-      where: { type: 'PURCHASE', createdAt: { gte: d30 } },
+      where: { type: 'PURCHASE', amount: { gt: 0 }, createdAt: { gte: d30 } },
       _count: { _all: true },
     }),
-    prisma.coinTransaction.findMany({ where: { type: 'PURCHASE' }, distinct: ['userId'], select: { userId: true } }),
+    prisma.coinTransaction.findMany({ where: { type: 'PURCHASE', amount: { gt: 0 } }, distinct: ['userId'], select: { userId: true } }),
     prisma.coinPackage.findMany({ where: { active: true }, select: { coins: true, priceINR: true } }),
     prisma.episodePurchase.aggregate({ _count: { _all: true }, _sum: { coinsSpent: true } }),
     prisma.subscription.findMany({
@@ -271,7 +273,7 @@ export async function getInvestorMetrics(): Promise<InvestorMetrics> {
         (SELECT COUNT(*) FROM "EpisodePurchase" p
            WHERE p."createdAt" >= d AND p."createdAt" < d + interval '1 day')::int AS unlocks,
         (SELECT COALESCE(SUM(c.amount), 0) FROM "CoinTransaction" c
-           WHERE c.type = 'PURCHASE' AND c."createdAt" >= d AND c."createdAt" < d + interval '1 day')::int AS coins,
+           WHERE c.type = 'PURCHASE' AND c.amount > 0 AND c."createdAt" >= d AND c."createdAt" < d + interval '1 day')::int AS coins,
         (SELECT COUNT(*) FROM "CoinTransaction" c
            WHERE c.type = 'AD_REWARD' AND c."createdAt" >= d AND c."createdAt" < d + interval '1 day')::int AS ads
       FROM days ORDER BY d`,

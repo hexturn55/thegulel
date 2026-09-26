@@ -2,20 +2,20 @@
   "expo": {
     "name": "Gulel",
     "slug": "gulel",
-    "version": "0.1.0",
+    "owner": "hexturn",
+    "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "scheme": "gulel",
-    "userInterfaceStyle": "automatic",
-    "newArchEnabled": true,
-    "splash": {
-      "image": "./assets/splash-icon.png",
-      "resizeMode": "contain",
-      "backgroundColor": "#0B0B0F"
-    },
+    "userInterfaceStyle": "dark",
+    "backgroundColor": "#0B0B0F",
     "ios": {
-      "supportsTablet": true,
-      "bundleIdentifier": "com.gulel.app"
+      "supportsTablet": false,
+      "bundleIdentifier": "com.gulel.app",
+      "usesAppleSignIn": true,
+      "config": {
+        "usesNonExemptEncryption": false
+      }
     },
     "android": {
       "package": "com.gulel.app",
@@ -25,7 +25,13 @@
         "backgroundImage": "./assets/android-icon-background.png",
         "monochromeImage": "./assets/android-icon-monochrome.png"
       },
-      "predictiveBackGestureEnabled": false
+      "predictiveBackGestureEnabled": false,
+      "blockedPermissions": [
+        "android.permission.SYSTEM_ALERT_WINDOW",
+        "android.permission.READ_EXTERNAL_STORAGE",
+        "android.permission.WRITE_EXTERNAL_STORAGE",
+        "android.permission.VIBRATE"
+      ]
     },
     "web": {
       "favicon": "./assets/favicon.png",
@@ -34,7 +40,51 @@
     "plugins": [
       "expo-router",
       "expo-video",
-      "expo-secure-store"
-    ]
+      [
+        "expo-secure-store",
+        {
+          "faceIDPermission": false
+        }
+      ],
+      "expo-apple-authentication",
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/splash-icon.png",
+          "imageWidth": 200,
+          "resizeMode": "contain",
+          "backgroundColor": "#0B0B0F"
+        }
+      ],
+      [
+        "react-native-google-mobile-ads",
+        {
+          "androidAppId": "ca-app-pub-7686596859294513~6887639218",
+          "iosAppId": "ca-app-pub-3940256099942544~1458002511",
+          "delayAppMeasurementInit": true,
+          "skAdNetworkItems": [
+            "cstr6suwn9.skadnetwork"
+          ]
+        }
+      ],
+      "expo-image",
+      "expo-web-browser"
+    ],
+    "extra": {
+      "apiUrl": "https://thegulel.com",
+      "supabaseUrl": "https://tcjmjpbuoljrzhiltbzn.supabase.co",
+      "supabaseAnonKey": "sb_publishable_Q97GKtCApLHAfQgo3gzFTg_cj6Yq1_u",
+      "admobRewardedAdUnitIdAndroid": "ca-app-pub-7686596859294513/6574059853",
+      "admobRewardedAdUnitIdIos": "",
+      "revenueCatIosKey": "",
+      "revenueCatAndroidKey": "",
+      "privacyUrl": "https://thegulel.com/privacy",
+      "termsUrl": "https://thegulel.com/terms",
+      "deleteAccountUrl": "https://thegulel.com/delete-account",
+      "supportEmail": "support@thegulel.com",
+      "eas": {
+        "projectId": "17686faf-f20e-4234-822d-d15f8fc31374"
+      }
+    }
   }
 }

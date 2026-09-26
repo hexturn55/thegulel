@@ -4,13 +4,18 @@ import type { User } from '@supabase/supabase-js';
 import { cookies } from 'next/headers';
 import prisma from '@/lib/prisma';
 import { AUTH_EVENT_COOKIE } from '@/lib/analytics';
+import { supabaseUserWhere, syncPrismaUser } from '@/lib/sync-user';
 
 export async function GET(request: NextRequest) {
   const { searchParams, origin, protocol } = new URL(request.url);
   const code = searchParams.get('code');
-  // Same-origin paths only — never bounce to another host after sign-in.
+  // Only same-origin paths: "@evil.com" or "//evil.com" would otherwise turn
+  // `${origin}${redirectTo}` into an open redirect.
   const requested = searchParams.get('redirectTo') ?? '/';
-  const redirectTo = requested.startsWith('/') ? requested : '/';
+  const redirectTo =
+    requested.startsWith('/') && !requested.startsWith('//') && !requested.startsWith('/\\')
+      ? requested
+      : '/';
 
   const cookieStore = await cookies();
   let supabaseResponse = NextResponse.redirect(`${origin}${redirectTo}`);
@@ -56,77 +61,25 @@ export async function GET(request: NextRequest) {
     supabaseUser = data.user;
   }
   const provider = supabaseUser.app_metadata?.provider ?? 'unknown';
-  // Supabase reports a missing email/phone as "" — store null, or the second
-  // such user collides on the unique column.
-  const email = supabaseUser.email || null;
-  const name =
-    supabaseUser.user_metadata?.full_name ??
-    supabaseUser.user_metadata?.name ??
-    supabaseUser.user_metadata?.user_name ??
-    null;
-  const avatar =
-    supabaseUser.user_metadata?.avatar_url ??
-    supabaseUser.user_metadata?.picture ??
-    null;
 
-  // Sync Supabase auth user → Prisma User
+  // Sync Supabase auth user → Prisma User. New users get the welcome bonus
+  // (unless their phone/email belongs to a deleted account); existing users
+  // get their profile refreshed from the provider.
   let authEvent: 'sign_up' | 'login' | null = null;
   let userId: string | null = null;
   try {
-    const existingUser = await prisma.user.findFirst({
-      where: {
-        OR: [
-          { supabaseId: supabaseUser.id },
-          ...(email ? [{ email }] : []),
-          ...(supabaseUser.phone ? [{ phone: supabaseUser.phone }] : []),
-        ],
-      },
+    // This is the first server hit after sign-in, so "no record yet" means a
+    // brand-new account.
+    const existed = await prisma.user.findFirst({
+      where: supabaseUserWhere(supabaseUser),
+      select: { id: true },
     });
-
-    if (existingUser) {
-      // Update existing user with latest data from provider
-      await prisma.user.update({
-        where: { id: existingUser.id },
-        data: {
-          supabaseId: supabaseUser.id,
-          email: email ?? existingUser.email,
-          name: name ?? existingUser.name,
-          avatar: avatar ?? existingUser.avatar,
-          provider: provider,
-        },
-      });
-      authEvent = 'login';
-      userId = existingUser.id;
-    } else {
-      // New user — create with welcome bonus
-      const newUser = await prisma.user.create({
-        data: {
-          supabaseId: supabaseUser.id,
-          // phone is optional for OAuth users — use a placeholder scoped to provider
-          phone: supabaseUser.phone || null,
-          email,
-          name,
-          avatar,
-          locale: supabaseUser.user_metadata?.locale ?? 'en',
-          provider: provider,
-          coinBalance: 50, // Welcome bonus
-        },
-      });
-
-      // Log welcome bonus
-      await prisma.coinTransaction.create({
-        data: {
-          userId: newUser.id,
-          amount: 50,
-          type: 'BONUS',
-          description: 'Welcome bonus',
-        },
-      });
-      authEvent = 'sign_up';
-      userId = newUser.id;
-    }
+    const user = await syncPrismaUser(supabaseUser, { provider, refreshProfile: true });
+    authEvent = existed ? 'login' : 'sign_up';
+    userId = user.id;
   } catch (dbError) {
     // Non-fatal — user is authenticated with Supabase, Prisma sync can retry
+    // (GET /api/auth/me and getAuthUser() sync on demand).
     console.error('Prisma user sync error:', dbError);
   }
 

@@ -44,11 +44,11 @@ export async function GET(request: NextRequest) {
       GROUP BY day
       ORDER BY day ASC
     `,
-    // Revenue by day (PURCHASE transactions)
+    // Revenue by day (PURCHASE transactions; refunds are amount <= 0 rows)
     prisma.$queryRaw<Array<{ day: string; total: bigint }>>`
       SELECT DATE("createdAt") AS day, SUM(amount) AS total
       FROM "CoinTransaction"
-      WHERE "createdAt" >= ${since} AND type = 'PURCHASE'
+      WHERE "createdAt" >= ${since} AND type = 'PURCHASE' AND amount > 0
       GROUP BY day
       ORDER BY day ASC
     `,
