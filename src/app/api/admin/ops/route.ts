@@ -3,6 +3,7 @@ import { timingSafeEqual } from 'crypto';
 import prisma from '@/lib/prisma';
 import { BRAND_SHOWCASE_SERIES_ID } from '@/lib/investor-metrics';
 import { getSignedStreamUrl, setRequireSignedUrls } from '@/lib/cloudflare';
+import { isAppleAuthConfigured } from '@/lib/apple-auth';
 
 export const dynamic = 'force-dynamic';
 export const maxDuration = 60;
@@ -42,8 +43,9 @@ function tokenOk(request: NextRequest, url: URL): boolean {
  * Gated by OPS_TOKEN (unset = endpoint disabled, all requests 401).
  *
  * Actions:
- *  - dbcheck        read-only: has the billing/ads migration been applied?
- *  - migrate        apply the additive billing/ads migration (IF NOT EXISTS)
+ *  - dbcheck        read-only: have the billing/ads and mobile_hardening
+ *                   migrations been applied?
+ *  - migrate        apply those additive migrations (IF NOT EXISTS)
  *  - cleanup-demo   delete the hidden duplicate "demo-series" catalog entry
  *  - ingest         have Cloudflare Stream copy a video from an allowlisted
  *                   host and upsert it as an episode: &seriesId=&url=&title=&num=&duration=
@@ -82,20 +84,45 @@ export async function GET(request: NextRequest) {
         } catch {
           checks.adCooldown_table = false;
         }
+        // mobile_hardening migration (standalone tables; app degrades
+        // gracefully without them).
+        try {
+          await prisma.$queryRaw`SELECT "hash" FROM "DeletedIdentity" LIMIT 1`;
+          checks.deletedIdentity_table = true;
+        } catch {
+          checks.deletedIdentity_table = false;
+        }
+        try {
+          await prisma.$queryRaw`SELECT "userId" FROM "AppleCredential" LIMIT 1`;
+          checks.appleCredential_table = true;
+        } catch {
+          checks.appleCredential_table = false;
+        }
+        // Server configuration the store builds depend on (reported, but not
+        // part of `ok`, which is about the schema).
+        const config = {
+          apple_auth_configured: isAppleAuthConfigured(),
+          revenuecat_secret_configured: !!process.env.REVENUECAT_SECRET_API_KEY,
+          admob_ssv_allowlist_configured: !!process.env.ADMOB_SSV_AD_UNITS?.trim(),
+        };
         return NextResponse.json({
           ok: Object.values(checks).every(Boolean),
           checks,
+          config,
         });
       }
 
       case 'migrate': {
-        // The one pending migration, as fixed additive statements. Nothing
-        // here is caller-controlled; IF NOT EXISTS makes re-runs no-ops.
+        // The pending migrations, as fixed additive statements. Nothing here
+        // is caller-controlled; IF NOT EXISTS makes re-runs no-ops.
         await prisma.$executeRaw`ALTER TABLE "CoinTransaction" ADD COLUMN IF NOT EXISTS "providerRef" TEXT`;
         await prisma.$executeRaw`CREATE UNIQUE INDEX IF NOT EXISTS "CoinTransaction_providerRef_key" ON "CoinTransaction"("providerRef")`;
         await prisma.$executeRaw`ALTER TABLE "Subscription" ADD COLUMN IF NOT EXISTS "providerCustomerId" TEXT`;
         await prisma.$executeRaw`CREATE TABLE IF NOT EXISTS "AdCooldown" ("userId" TEXT PRIMARY KEY, "lastAdAt" TIMESTAMP(3) NOT NULL)`;
-        return NextResponse.json({ ok: true, applied: 4 });
+        // mobile_hardening (same statements as prisma/hotfix-mobile-hardening.sql).
+        await prisma.$executeRaw`CREATE TABLE IF NOT EXISTS "DeletedIdentity" ("hash" TEXT NOT NULL, "createdAt" TIMESTAMP(3) NOT NULL DEFAULT CURRENT_TIMESTAMP, CONSTRAINT "DeletedIdentity_pkey" PRIMARY KEY ("hash"))`;
+        await prisma.$executeRaw`CREATE TABLE IF NOT EXISTS "AppleCredential" ("userId" TEXT NOT NULL, "refreshToken" TEXT NOT NULL, "updatedAt" TIMESTAMP(3) NOT NULL, CONSTRAINT "AppleCredential_pkey" PRIMARY KEY ("userId"))`;
+        return NextResponse.json({ ok: true, applied: 6 });
       }
 
       case 'ssv-keys': {

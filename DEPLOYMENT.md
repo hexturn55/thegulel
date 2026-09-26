@@ -59,7 +59,16 @@ for logged-in users and breaks webhook idempotency. Apply it before anything els
      `NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY` (+ Razorpay keys if used).
    - Video: `CLOUDFLARE_ACCOUNT_ID`, `CLOUDFLARE_API_TOKEN`,
      `NEXT_PUBLIC_CLOUDFLARE_CUSTOMER_SUBDOMAIN`.
-   - Mobile IAP webhook: `REVENUECAT_WEBHOOK_SECRET`.
+   - Mobile IAP webhook: `REVENUECAT_WEBHOOK_SECRET` (+ optional
+     `REVENUECAT_SECRET_API_KEY`, deletes the RevenueCat customer on account
+     deletion).
+   - **Sign in with Apple revocation (required for App Store review, Guideline
+     5.1.1(v))**: `APPLE_TEAM_ID`, `APPLE_KEY_ID`, `APPLE_PRIVATE_KEY` (.p8
+     contents, newlines as `\n`), optional `APPLE_CLIENT_ID` (default
+     `com.gulel.app`). Without them account deletion does not revoke Apple
+     access. `GET /api/admin/ops?action=dbcheck` reports this under `config`.
+   - Rewarded ads (optional): `ADMOB_SSV_AD_UNITS` (allowlist; full AdMob id or
+     numeric part), `ADS_DAILY_CAP` (default 10).
    - `CRON_SECRET` (used by the scheduled audit in `vercel.json`).
    - `CORS_ALLOWED_ORIGINS` — only if a cross-origin web client calls the API.
 3. Deploy. The build runs `prisma generate && next build`.
@@ -74,8 +83,11 @@ for logged-in users and breaks webhook idempotency. Apply it before anything els
   a test purchase credits coins (idempotent via `CoinTransaction.providerRef`).
 - **RevenueCat** (mobile): create the products from `src/lib/revenuecat.ts`
   (e.g. `com.gulel.coins.500`, `com.gulel.vip.monthly`) in App Store Connect +
-  Play Console, map them in RevenueCat, and set the public SDK keys in the
-  mobile env (`EXPO_PUBLIC_RC_IOS_KEY` / `EXPO_PUBLIC_RC_ANDROID_KEY`).
+  Play Console, map them in RevenueCat, and set the public SDK keys
+  (`EXPO_PUBLIC_RC_IOS_KEY` / `EXPO_PUBLIC_RC_ANDROID_KEY`) in `mobile/eas.json`
+  `build.production.env`, `mobile/app.json` `extra`, or EAS environment
+  variables — not `mobile/.env` (gitignored, not used by EAS). A production EAS
+  build fails fast (`mobile/app.config.js`) if they are missing.
 
 ## 4. Mobile app (EAS)
 See `MOBILE.md` for detail. Summary:

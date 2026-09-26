@@ -61,7 +61,45 @@ export interface Episode {
    */
   thumbnail: string;
   isFree: boolean;
+  /**
+   * Whether the current viewer may watch this episode (free, VIP, or unlocked
+   * with coins). Only present when the API knows who is asking.
+   */
+  isUnlocked?: boolean;
+  /** Coin cost to unlock this episode (absent for free episodes). */
+  coinPrice?: number;
 }
+
+/**
+ * Shape returned by GET /api/episodes/:id/play for an entitled viewer.
+ * Older servers return only `url`; the other fields may then be missing.
+ */
+export interface PlaybackInfo {
+  /** Short-lived signed HLS (.m3u8) URL. */
+  url: string;
+  /** ISO timestamp when `url` stops working, or null if unknown. */
+  expiresAt: string | null;
+  /** Saved resume position in seconds (0 when none). */
+  progress: number;
+  seriesId: string;
+  /** Next episode in the series, or null when this is the last one. */
+  nextEpisodeId: string | null;
+}
+
+/** Shape returned by GET /api/ads/status (rewarded-ad eligibility). */
+export interface AdStatus {
+  canWatch: boolean;
+  /** Seconds until the next rewarded ad may be watched (0 when allowed now). */
+  retryInSeconds: number;
+  remainingToday: number;
+}
+
+/** Shape returned by POST /api/episodes/unlock. */
+export type UnlockResult = {
+  success: boolean;
+  newBalance: number;
+  alreadyUnlocked?: boolean;
+};
 
 /** Current user as returned by GET /api/auth/me. */
 export interface CurrentUser {
@@ -103,4 +141,6 @@ export interface WatchProgress {
 /** Standard error body the API returns on failure. */
 export interface ApiError {
   error: string;
+  /** Machine-readable error code (e.g. 'LOCKED'), when the route provides one. */
+  code?: string;
 }
