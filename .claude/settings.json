@@ -1,0 +1,45 @@
+{
+  "permissions": {
+    "allow": [
+      "ReadNotifications",
+
+      "mcp__Higgsfield__jobs_wait",
+      "mcp__Higgsfield__balance",
+      "mcp__Higgsfield__show_generation_by_ids",
+      "mcp__Higgsfield__show_generations",
+      "mcp__Higgsfield__job_display",
+      "mcp__Higgsfield__models_explore",
+      "mcp__Higgsfield__show_medias",
+      "mcp__Higgsfield__transactions",
+      "mcp__Higgsfield__show_plans_and_credits",
+
+      "mcp__Vercel__list_deployments",
+      "mcp__Vercel__get_deployment",
+      "mcp__Vercel__list_deployment_events",
+      "mcp__Vercel__get_runtime_logs",
+      "mcp__Vercel__get_runtime_errors",
+      "mcp__Vercel__get_project",
+      "mcp__Vercel__list_projects",
+      "mcp__Vercel__list_teams",
+      "mcp__Vercel__list_sessions",
+      "mcp__Vercel__get_session",
+      "mcp__Vercel__list_session_commands",
+      "mcp__Vercel__get_session_command_logs",
+      "mcp__Vercel__search_vercel_documentation",
+
+      "mcp__github__get_me",
+      "mcp__github__pull_request_read",
+      "mcp__github__list_pull_requests",
+      "mcp__github__search_pull_requests",
+      "mcp__github__get_file_contents",
+      "mcp__github__list_commits",
+      "mcp__github__get_commit",
+      "mcp__github__list_branches",
+      "mcp__github__search_code",
+      "mcp__github__get_check_run",
+      "mcp__github__actions_list",
+      "mcp__github__actions_get",
+      "mcp__github__get_job_logs"
+    ]
+  }
+}
