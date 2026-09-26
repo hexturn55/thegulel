@@ -7,7 +7,11 @@ class Insufficient extends Error {}
 
 export async function POST(request: NextRequest) {
   try {
-    const { episodeId } = await request.json();
+    const body = await request.json().catch(() => null);
+    const episodeId: unknown = body?.episodeId;
+    if (typeof episodeId !== 'string' || !episodeId) {
+      return NextResponse.json({ error: 'episodeId required' }, { status: 400 });
+    }
 
     const user = await getAuthUser();
     if (!user) {
@@ -17,7 +21,12 @@ export async function POST(request: NextRequest) {
 
     // VIP subscribers already have access — never charge coins.
     if (await hasActiveVip(userId)) {
-      return NextResponse.json({ success: true, vip: true, newBalance: user.coinBalance });
+      return NextResponse.json({
+        success: true,
+        vip: true,
+        alreadyUnlocked: true,
+        newBalance: user.coinBalance,
+      });
     }
 
     // Only catalog (published) episodes can be bought.
@@ -29,7 +38,25 @@ export async function POST(request: NextRequest) {
       return NextResponse.json({ error: 'Episode not found' }, { status: 404 });
     }
     if (episode.isFree) {
-      return NextResponse.json({ success: true, free: true, newBalance: user.coinBalance });
+      return NextResponse.json({
+        success: true,
+        free: true,
+        alreadyUnlocked: true,
+        newBalance: user.coinBalance,
+      });
+    }
+
+    // Already bought: succeed without charging again.
+    const existing = await prisma.episodePurchase.findUnique({
+      where: { userId_episodeId: { userId, episodeId: episode.id } },
+      select: { id: true },
+    });
+    if (existing) {
+      return NextResponse.json({
+        success: true,
+        alreadyUnlocked: true,
+        newBalance: user.coinBalance,
+      });
     }
 
     const coinPrice = episode.series.coinPrice;
@@ -45,7 +72,7 @@ export async function POST(request: NextRequest) {
         });
         if (debited.count === 0) throw new Insufficient();
         await tx.episodePurchase.create({
-          data: { userId, episodeId, coinsSpent: coinPrice },
+          data: { userId, episodeId: episode.id, coinsSpent: coinPrice },
         });
         await tx.coinTransaction.create({
           data: {
@@ -65,13 +92,29 @@ export async function POST(request: NextRequest) {
           where: { id: userId },
           select: { coinBalance: true },
         });
+        // 400 (not 402) because already-shipped clients key off it.
         return NextResponse.json(
-          { error: 'Insufficient coins', required: coinPrice, balance: fresh?.coinBalance ?? 0 },
+          {
+            error: 'Insufficient coins',
+            code: 'INSUFFICIENT_COINS',
+            required: coinPrice,
+            balance: fresh?.coinBalance ?? 0,
+          },
           { status: 400 }
         );
       }
       if ((err as { code?: string }).code === 'P2002') {
-        return NextResponse.json({ success: true, alreadyUnlocked: true, newBalance: user.coinBalance });
+        // A concurrent request bought it first (the transaction rolled back,
+        // so this one wasn't charged). Report the current balance.
+        const fresh = await prisma.user.findUnique({
+          where: { id: userId },
+          select: { coinBalance: true },
+        });
+        return NextResponse.json({
+          success: true,
+          alreadyUnlocked: true,
+          newBalance: fresh?.coinBalance ?? user.coinBalance,
+        });
       }
       throw err;
     }

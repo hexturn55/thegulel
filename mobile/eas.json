@@ -1,6 +1,6 @@
 {
   "cli": {
-    "version": ">= 12.0.0",
+    "version": ">= 16.0.0",
     "appVersionSource": "remote"
   },
   "build": {
@@ -10,28 +10,49 @@
       "env": {
         "EXPO_PUBLIC_API_URL": "https://thegulel.com",
         "EXPO_PUBLIC_SUPABASE_URL": "https://tcjmjpbuoljrzhiltbzn.supabase.co",
-        "EXPO_PUBLIC_SUPABASE_ANON_KEY": "sb_publishable_Q97GKtCApLHAfQgo3gzFTg_cj6Yq1_u"
+        "EXPO_PUBLIC_SUPABASE_ANON_KEY": "sb_publishable_Q97GKtCApLHAfQgo3gzFTg_cj6Yq1_u",
+        "EXPO_PUBLIC_ADMOB_TEST_ADS": "1",
+        "EXPO_PUBLIC_APP_ENV": "development"
       }
     },
     "preview": {
       "distribution": "internal",
-      "ios": { "simulator": true },
+      "android": { "buildType": "apk" },
       "env": {
         "EXPO_PUBLIC_API_URL": "https://thegulel.com",
         "EXPO_PUBLIC_SUPABASE_URL": "https://tcjmjpbuoljrzhiltbzn.supabase.co",
-        "EXPO_PUBLIC_SUPABASE_ANON_KEY": "sb_publishable_Q97GKtCApLHAfQgo3gzFTg_cj6Yq1_u"
+        "EXPO_PUBLIC_SUPABASE_ANON_KEY": "sb_publishable_Q97GKtCApLHAfQgo3gzFTg_cj6Yq1_u",
+        "EXPO_PUBLIC_ADMOB_TEST_ADS": "1",
+        "EXPO_PUBLIC_APP_ENV": "preview"
       }
+    },
+    "preview-simulator": {
+      "extends": "preview",
+      "ios": { "simulator": true }
     },
     "production": {
       "autoIncrement": true,
       "env": {
         "EXPO_PUBLIC_API_URL": "https://thegulel.com",
         "EXPO_PUBLIC_SUPABASE_URL": "https://tcjmjpbuoljrzhiltbzn.supabase.co",
-        "EXPO_PUBLIC_SUPABASE_ANON_KEY": "sb_publishable_Q97GKtCApLHAfQgo3gzFTg_cj6Yq1_u"
+        "EXPO_PUBLIC_SUPABASE_ANON_KEY": "sb_publishable_Q97GKtCApLHAfQgo3gzFTg_cj6Yq1_u",
+        "EXPO_PUBLIC_APP_ENV": "production"
       }
     }
   },
   "submit": {
-    "production": {}
+    "production": {
+      "android": {
+        "track": "internal",
+        "releaseStatus": "draft"
+      }
+    },
+    "closed": {
+      "extends": "production",
+      "android": {
+        "track": "alpha",
+        "releaseStatus": "draft"
+      }
+    }
   }
 }

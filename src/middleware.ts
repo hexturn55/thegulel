@@ -13,15 +13,26 @@ const ALLOWED_ORIGINS = (process.env.CORS_ALLOWED_ORIGINS ?? '')
   .map((s) => s.trim())
   .filter(Boolean);
 
+const ALLOW_ANY_ORIGIN = ALLOWED_ORIGINS.includes('*');
+
 function applyCors(origin: string | null, res: NextResponse): NextResponse {
-  if (origin && (ALLOWED_ORIGINS.includes('*') || ALLOWED_ORIGINS.includes(origin))) {
+  if (!origin) return res;
+  // The response depends on the Origin header either way.
+  res.headers.set('Vary', 'Origin');
+  if (ALLOWED_ORIGINS.includes(origin)) {
+    // Explicitly listed origin: reflect it and allow credentials (cookies).
     res.headers.set('Access-Control-Allow-Origin', origin);
-    res.headers.set('Vary', 'Origin');
     res.headers.set('Access-Control-Allow-Credentials', 'true');
-    res.headers.set('Access-Control-Allow-Methods', 'GET,POST,PATCH,DELETE,OPTIONS');
-    res.headers.set('Access-Control-Allow-Headers', 'Content-Type, Authorization');
-    res.headers.set('Access-Control-Max-Age', '86400');
+  } else if (ALLOW_ANY_ORIGIN) {
+    // "*" is a public wildcard: never pair it with credentials, or any site
+    // could make cookie-authenticated calls as the visitor.
+    res.headers.set('Access-Control-Allow-Origin', '*');
+  } else {
+    return res;
   }
+  res.headers.set('Access-Control-Allow-Methods', 'GET,POST,PATCH,DELETE,OPTIONS');
+  res.headers.set('Access-Control-Allow-Headers', 'Content-Type, Authorization');
+  res.headers.set('Access-Control-Max-Age', '86400');
   return res;
 }
 
@@ -96,8 +107,9 @@ export const config = {
      * - _next/static (static files)
      * - _next/image (image optimization)
      * - favicon.ico
-     * - public folder
+     * - public folder / static files (images, icons, .txt such as
+     *   app-ads.txt and robots.txt, .xml, .json manifests, .js service worker)
      */
-    '/((?!api|_next/static|_next/image|favicon.ico|.*\\.(?:svg|png|jpg|jpeg|gif|webp)$).*)',
+    '/((?!api|_next/static|_next/image|favicon.ico|.*\\.(?:svg|png|jpg|jpeg|gif|webp|ico|txt|xml|json|webmanifest|js|map)$).*)',
   ],
 };

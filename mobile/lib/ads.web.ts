@@ -1,16 +1,28 @@
 /**
  * Web stub for the rewarded-ads layer. AdMob is native-only; the web bundle
  * (used for previews and E2E checks) never loads a rewarded ad. These no-ops
- * let the shared UI compile and run under Expo web.
+ * mirror lib/ads.ts so the shared UI compiles and runs under Expo web without
+ * importing the native module.
  */
 
 export type RewardedResult = 'earned' | 'dismissed' | 'unavailable';
 
-export async function initAds(): Promise<void> {
+export function isRewardedAdSupported(): boolean {
+  return false;
+}
+
+export async function gatherAdsConsent(): Promise<boolean> {
+  return false;
+}
+
+export async function isPrivacyOptionsRequired(): Promise<boolean> {
+  return false;
+}
+
+export async function showPrivacyOptions(): Promise<void> {
   // no-op on web
 }
 
 export async function showRewardedAd(_userId: string): Promise<RewardedResult> {
-  console.warn('[ads] Rewarded ads are unavailable on web.');
   return 'unavailable';
 }
