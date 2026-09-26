@@ -400,6 +400,31 @@ export default async function InvestorsPage() {
         )}
       </Section>
 
+      {/* Live metrics dashboard */}
+      <Section id="metrics" className="py-8! md:py-12!">
+        <div className="flex flex-col items-start gap-6 rounded-2xl border border-emerald-500/40 bg-gradient-to-br from-emerald-500/10 via-zinc-900/70 to-zinc-900/70 p-6 md:flex-row md:items-center md:justify-between md:p-8">
+          <div className="max-w-2xl">
+            <Eyebrow>For review · live data</Eyebrow>
+            <h2 className="text-2xl font-bold text-white md:text-3xl">Review the live metrics dashboard</h2>
+            <p className="mt-3 text-sm text-zinc-300 md:text-base">
+              Viewership, completion, pilot-to-paid conversion and revenue for every series, read straight from the
+              production database — plus spec brand-integration episodes showing in-story product placement.
+              Access code required; request one at{' '}
+              <a href="mailto:hello@thegulel.com?subject=Gulel%20dashboard%20access" className="text-emerald-300 underline">
+                hello@thegulel.com
+              </a>
+              .
+            </p>
+          </div>
+          <Link
+            href="/investors/dashboard"
+            className="inline-flex shrink-0 items-center gap-2 rounded-full bg-emerald-500 px-6 py-3 font-semibold text-black hover:bg-emerald-400"
+          >
+            <TrendingUp className="h-5 w-5" /> Open dashboard <ArrowRight className="h-4 w-4" />
+          </Link>
+        </div>
+      </Section>
+
       {/* 02 · Vision & Mission */}
       <Section>
         <Eyebrow>Who we are</Eyebrow>
@@ -990,6 +1015,12 @@ export default async function InvestorsPage() {
             >
               Talk to the founders <ArrowRight className="h-4 w-4" />
             </a>
+            <Link
+              href="/investors/dashboard"
+              className="inline-flex items-center gap-2 rounded-full border border-emerald-500/60 px-6 py-3 font-semibold text-emerald-300 hover:border-emerald-300 hover:text-white"
+            >
+              <TrendingUp className="h-4 w-4" /> Review live metrics
+            </Link>
             <Link
               href="/"
               className="inline-flex items-center gap-2 rounded-full border border-zinc-600 px-6 py-3 font-semibold text-white hover:border-white"
