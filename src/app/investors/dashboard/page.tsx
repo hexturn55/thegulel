@@ -152,17 +152,17 @@ function Gate({ error, disabled }: { error: boolean; disabled: boolean }) {
           <p className="mt-2 text-sm text-zinc-400">The dashboard is not enabled yet. Contact hello@thegulel.com.</p>
         ) : (
           <>
-            <p className="mt-2 text-sm text-zinc-400">Live platform metrics. Enter the access code you were given.</p>
+            <p className="mt-2 text-sm text-zinc-400">Live platform metrics. Enter the password to continue.</p>
             <form action="/api/investors/access" method="post" className="mt-5 space-y-3">
               <input
                 name="code"
                 type="password"
                 autoComplete="off"
                 required
-                placeholder="Access code"
+                placeholder="Password"
                 className="w-full rounded-xl border border-zinc-700 bg-black px-4 py-3 text-white outline-none focus:border-rose-500"
               />
-              {error && <p className="text-sm text-rose-400">That code didn&apos;t work.</p>}
+              {error && <p className="text-sm text-rose-400">Wrong password — please try again.</p>}
               <button className="w-full rounded-xl bg-rose-500 py-3 font-semibold text-white hover:bg-rose-600">
                 View dashboard
               </button>

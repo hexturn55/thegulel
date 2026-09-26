@@ -1,19 +1,26 @@
-// Repair poster PNGs that were saved as raw generation-API responses.
+// Repair PNGs under public/ that were saved as raw generation-API responses.
 //
-// Some thumbnails in public/thumbnails were written as the JSON body the
+// Some images (posters, app icons, the social share card) were written as the JSON body the
 // image API returned — {"data":"<base64 png>"} — under a .png name, so
 // browsers render nothing and cards fall back to the generic placeholder.
 // The real artwork is intact inside the wrapper. Run before `next build`
 // so every deployment serves the decoded images; already-valid PNGs are
 // left untouched, making this a no-op once the repo carries real files.
 import { readdirSync, readFileSync, writeFileSync } from 'node:fs';
-import { join } from 'node:path';
+import { join, relative } from 'node:path';
 
-const dir = new URL('../public/thumbnails', import.meta.url).pathname;
+const root = new URL('../public', import.meta.url).pathname;
 
-for (const name of readdirSync(dir)) {
-  if (!name.endsWith('.png')) continue;
-  const path = join(dir, name);
+function* pngs(dir) {
+  for (const entry of readdirSync(dir, { withFileTypes: true })) {
+    const path = join(dir, entry.name);
+    if (entry.isDirectory()) yield* pngs(path);
+    else if (entry.name.endsWith('.png')) yield path;
+  }
+}
+
+for (const path of pngs(root)) {
+  const name = relative(root, path);
   const head = readFileSync(path).subarray(0, 2).toString('utf8');
   if (!head.startsWith('{')) continue; // real image, leave it alone
   try {
