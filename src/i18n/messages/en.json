@@ -31,13 +31,16 @@
   },
   "seriesCard": {
     "featured": "Featured",
-    "episodes": "{count} Episodes"
+    "episodes": "{count} Episodes",
+    "comingSoon": "Coming Soon"
   },
   "series": {
     "episodesCount": "{count} Episodes",
     "firstFree": "First {count} Free",
     "watchNow": "Watch Now",
-    "episodes": "Episodes"
+    "episodes": "Episodes",
+    "comingSoon": "Coming Soon",
+    "comingSoonBody": "New episodes are on the way. Stay tuned!"
   },
   "episode": {
     "label": "Episode {number}",
@@ -48,7 +51,19 @@
     "swipeNext": "Swipe down for next episode",
     "stayTuned": "Stay tuned for more",
     "moreSoon": "New episodes are coming soon.",
-    "replay": "Replay"
+    "replay": "Replay",
+    "next": "Next",
+    "tapForSound": "Tap for sound",
+    "episodes": "Episodes",
+    "episodesCount": "{count} episodes",
+    "share": "Share",
+    "copied": "Copied!",
+    "soundOn": "Sound",
+    "soundOff": "Muted",
+    "free": "Free",
+    "loadError": "This video could not be loaded.",
+    "retry": "Try again",
+    "moreSeries": "More series"
   },
   "search": {
     "placeholder": "Search series, genres...",
@@ -95,7 +110,8 @@
     "about": "About",
     "terms": "Terms",
     "privacy": "Privacy",
-    "contact": "Contact"
+    "contact": "Contact",
+    "investors": "Investors"
   },
   "share": {
     "share": "Share",
@@ -127,7 +143,22 @@
     "earned": "You earned {coins} coins!",
     "watchFull": "Watch the full ad to earn coins.",
     "pleaseWait": "Please wait {seconds}s before watching another ad.",
-    "adFailed": "Couldn't grant your reward. Please try again."
+    "adFailed": "Couldn't grant your reward. Please try again.",
+    "adUnavailable": "No ad is available right now. Please try again later.",
+    "rewardOnWay": "Thanks for watching! Your coins will appear shortly.",
+    "lockedTitle": "Episode {number} is locked",
+    "teaser": "the story continues",
+    "balanceLabel": "{balance} / {price} coins",
+    "adsNeeded": "{count, plural, one {# ad to unlock} other {# ads to unlock}}",
+    "unlockNow": "Unlock now · {price} coins",
+    "watchAdCta": "Watch an ad · +{coins} coins",
+    "signInToEarn": "Sign in to earn free coins",
+    "buyCoins": "Buy coins",
+    "vipShort": "Go VIP",
+    "earnedToast": "+{coins} coins!",
+    "cooldown": "Next ad available in {seconds}s",
+    "dailyLimit": "Daily ad limit reached — come back tomorrow or buy coins.",
+    "unlockFailed": "Couldn't unlock. Please try again."
   },
   "vip": {
     "title": "Gulel VIP",

@@ -7,10 +7,10 @@
  * `playRewardedAd()` loads the IMA HTML5 SDK on demand, plays a rewarded ad
  * from the configured VAST tag, and resolves once the ad finishes.
  *
- * Env-gated: if `NEXT_PUBLIC_IMA_REWARDED_AD_TAG_URL` is not set (or the SDK
- * fails to load / errors), it resolves with `{ played: false }` so the caller
- * can fall back to the simulated reward flow. This keeps the coin economy
- * working in dev/preview where no Ad Manager account is wired up.
+ * Uses `NEXT_PUBLIC_IMA_REWARDED_AD_TAG_URL` when set (live, SSV-verified
+ * rewards); otherwise Google's public sample ad (demo mode, see
+ * rewardedAdMode). Resolves `{ played: false }` if the SDK fails to load or
+ * errors.
  *
  * MUST be called from within a user gesture (e.g. a click handler) — the IMA
  * `AdDisplayContainer` requires that for autoplay with sound.
@@ -30,6 +30,21 @@ export interface RewardedAdResult {
 
 export function isRewardedAdConfigured(): boolean {
   return !!process.env.NEXT_PUBLIC_IMA_REWARDED_AD_TAG_URL;
+}
+
+/**
+ * Google's public IMA sample ad (a ~10s linear video). Used as the rewarded ad
+ * until a real ad unit is configured, so the earn-coins flow is fully
+ * demonstrable; rewards in this mode are granted by /api/ads/demo/* under
+ * strict limits instead of by Google's SSV callback.
+ */
+const DEMO_AD_TAG_URL =
+  'https://pubads.g.doubleclick.net/gampad/ads?iu=/21775744923/external/single_ad_samples&sz=640x480&cust_params=sample_ct%3Dlinear&ciu_szs=300x250%2C728x90&gdfp_req=1&output=vast&unviewed_position_start=1&env=vp&impl=s';
+
+export type RewardedAdMode = 'live' | 'demo';
+
+export function rewardedAdMode(): RewardedAdMode {
+  return isRewardedAdConfigured() ? 'live' : 'demo';
 }
 
 function loadImaSdk(): Promise<boolean> {
@@ -53,10 +68,18 @@ function loadImaSdk(): Promise<boolean> {
   });
 }
 
-export async function playRewardedAd(): Promise<RewardedAdResult> {
-  const tagUrl = process.env.NEXT_PUBLIC_IMA_REWARDED_AD_TAG_URL;
-  if (!tagUrl) return { played: false, rewarded: false };
+export async function playRewardedAd(userId?: string): Promise<RewardedAdResult> {
   if (typeof window === 'undefined') return { played: false, rewarded: false };
+  const liveTag = process.env.NEXT_PUBLIC_IMA_REWARDED_AD_TAG_URL;
+
+  // Live: attribute the reward to our user via SSV `custom_data`; coins are
+  // granted only when Google calls /api/ads/ssv after a verified completion.
+  // Demo: Google's sample ad, with a cache-busting correlator.
+  const requestUrl = liveTag
+    ? userId
+      ? `${liveTag}${liveTag.includes('?') ? '&' : '?'}custom_data=${encodeURIComponent(userId)}`
+      : liveTag
+    : `${DEMO_AD_TAG_URL}&correlator=${Date.now()}`;
 
   const sdkReady = await loadImaSdk();
   const ima = (window as ImaGlobal).google?.ima;
@@ -163,7 +186,7 @@ export async function playRewardedAd(): Promise<RewardedAdResult> {
       );
 
       const adsRequest = new ima.AdsRequest();
-      adsRequest.adTagUrl = tagUrl;
+      adsRequest.adTagUrl = requestUrl;
       adsRequest.linearAdSlotWidth = overlay.clientWidth || window.innerWidth;
       adsRequest.linearAdSlotHeight =
         overlay.clientHeight || window.innerHeight;

@@ -31,13 +31,16 @@
   },
   "seriesCard": {
     "featured": "Destacado",
-    "episodes": "{count} episodios"
+    "episodes": "{count} episodios",
+    "comingSoon": "Próximamente"
   },
   "series": {
     "episodesCount": "{count} episodios",
     "firstFree": "Primeros {count} gratis",
     "watchNow": "Ver ahora",
-    "episodes": "Episodios"
+    "episodes": "Episodios",
+    "comingSoon": "Próximamente",
+    "comingSoonBody": "Nuevos episodios están en camino. ¡Mantente atento!"
   },
   "episode": {
     "label": "Episodio {number}",
@@ -48,7 +51,19 @@
     "swipeNext": "Desliza hacia abajo para el siguiente episodio",
     "stayTuned": "Sigue atento para más",
     "moreSoon": "Pronto habrá nuevos episodios.",
-    "replay": "Volver a ver"
+    "replay": "Volver a ver",
+    "next": "Siguiente",
+    "tapForSound": "Toca para activar el sonido",
+    "episodes": "Episodios",
+    "episodesCount": "{count} episodios",
+    "share": "Compartir",
+    "copied": "¡Copiado!",
+    "soundOn": "Sonido",
+    "soundOff": "Silencio",
+    "free": "Gratis",
+    "loadError": "No se pudo cargar este video.",
+    "retry": "Reintentar",
+    "moreSeries": "Más series"
   },
   "search": {
     "placeholder": "Buscar series, géneros...",
@@ -95,7 +110,8 @@
     "about": "Acerca de",
     "terms": "Términos",
     "privacy": "Privacidad",
-    "contact": "Contacto"
+    "contact": "Contacto",
+    "investors": "Inversionistas"
   },
   "share": {
     "share": "Compartir",
@@ -127,7 +143,22 @@
     "earned": "¡Ganaste {coins} monedas!",
     "watchFull": "Mira el anuncio completo para ganar monedas.",
     "pleaseWait": "Espera {seconds} s antes de ver otro anuncio.",
-    "adFailed": "No se pudo otorgar tu recompensa. Inténtalo de nuevo."
+    "adFailed": "No se pudo otorgar tu recompensa. Inténtalo de nuevo.",
+    "adUnavailable": "No hay ningún anuncio disponible ahora. Inténtalo más tarde.",
+    "rewardOnWay": "¡Gracias por ver! Tus monedas aparecerán en breve.",
+    "lockedTitle": "El episodio {number} está bloqueado",
+    "teaser": "la historia continúa",
+    "balanceLabel": "{balance} / {price} monedas",
+    "adsNeeded": "{count, plural, one {# anuncio para desbloquear} other {# anuncios para desbloquear}}",
+    "unlockNow": "Desbloquear ahora · {price} monedas",
+    "watchAdCta": "Ver un anuncio · +{coins} monedas",
+    "signInToEarn": "Inicia sesión para ganar monedas gratis",
+    "buyCoins": "Comprar monedas",
+    "vipShort": "Hazte VIP",
+    "earnedToast": "¡+{coins} monedas!",
+    "cooldown": "Próximo anuncio en {seconds} s",
+    "dailyLimit": "Límite diario de anuncios alcanzado: vuelve mañana o compra monedas.",
+    "unlockFailed": "No se pudo desbloquear. Inténtalo de nuevo."
   },
   "vip": {
     "title": "Gulel VIP",

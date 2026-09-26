@@ -68,7 +68,11 @@ export default function SeriesCard({
               {tg.has(genre) ? tg(genre) : genre}
             </span>
             <span>•</span>
-            <span>{t('episodes', { count: totalEpisodes })}</span>
+            <span>
+              {totalEpisodes > 0
+                ? t('episodes', { count: totalEpisodes })
+                : t('comingSoon')}
+            </span>
           </div>
         </div>
       </div>

@@ -55,14 +55,11 @@ export interface Episode {
   titleZh?: string | null;
   /** Duration in seconds. */
   duration: number;
-  /** Cloudflare Stream playback URL (HLS). */
-  videoUrl: string;
-  /** Cloudflare Stream video ID. */
-  videoId: string;
+  /**
+   * Thumbnail URL (a server proxy path). Stream URLs are never part of the
+   * listing — request one with `getPlaybackUrl`, which checks entitlement.
+   */
   thumbnail: string;
-  subtitlesEn?: string | null;
-  subtitlesHi?: string | null;
-  subtitlesZh?: string | null;
   isFree: boolean;
 }
 

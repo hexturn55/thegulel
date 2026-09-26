@@ -108,25 +108,30 @@ export function resolveVideoUrl(episode: {
   return episode.videoId ? getStreamUrl(episode.videoId) : null;
 }
 
+// Signed-token cache: minting a token is a Cloudflare API call, so reuse each
+// video's token until it has less than an hour left.
+const TOKEN_TTL_S = 6 * 3600;
+const tokenCache = new Map<string, { token: string; exp: number }>();
+
 /**
- * Mint a Cloudflare Stream **signed** HLS URL for a video (server-only).
- *
- * A 403 on a Stream manifest means the video has "Require signed URLs" on, so
- * the plain `…/{videoId}/manifest/video.m3u8` is rejected. This requests a
- * short-lived token from the Stream API and returns the tokenized HLS URL
- * (`…/{token}/manifest/video.m3u8`), which plays whether or not signed URLs
- * are required. Returns null if Cloudflare isn't configured or the call fails,
- * so callers fall back to the plain URL.
+ * Mint (or reuse) a Cloudflare Stream signed token for a video (server-only).
+ * Videos require signed URLs, so every manifest and thumbnail request goes
+ * through a token: `https://{subdomain}/{token}/...`. Returns null if
+ * Cloudflare isn't configured or the call fails.
  *
  * NEVER call from the client — it uses CLOUDFLARE_API_TOKEN.
  */
-export async function getSignedStreamUrl(videoId: string): Promise<string | null> {
+export async function getStreamToken(videoId: string): Promise<string | null> {
   const accountId = process.env.CLOUDFLARE_ACCOUNT_ID;
   const apiToken = process.env.CLOUDFLARE_API_TOKEN;
-  const subdomain = process.env.NEXT_PUBLIC_CLOUDFLARE_CUSTOMER_SUBDOMAIN;
-  if (!accountId || !apiToken || !subdomain || !videoId) return null;
+  if (!accountId || !apiToken || !videoId) return null;
+
+  const now = Math.floor(Date.now() / 1000);
+  const cached = tokenCache.get(videoId);
+  if (cached && cached.exp - now > 3600) return cached.token;
 
   try {
+    const exp = now + TOKEN_TTL_S;
     const res = await fetch(
       `${CLOUDFLARE_API_BASE}/accounts/${accountId}/stream/${videoId}/token`,
       {
@@ -135,17 +140,61 @@ export async function getSignedStreamUrl(videoId: string): Promise<string | null
           Authorization: `Bearer ${apiToken}`,
           'Content-Type': 'application/json',
         },
-        // 6-hour window — long enough for any single episode, re-minted each load.
-        body: JSON.stringify({ exp: Math.floor(Date.now() / 1000) + 6 * 3600 }),
+        body: JSON.stringify({ exp }),
         cache: 'no-store',
       }
     );
     if (!res.ok) return null;
     const data = await res.json();
-    const token = data?.result?.token;
-    return token ? `https://${subdomain}/${token}/manifest/video.m3u8` : null;
+    const token: string | undefined = data?.result?.token;
+    if (!token) return null;
+    tokenCache.set(videoId, { token, exp });
+    return token;
   } catch {
     return null;
+  }
+}
+
+/** Signed HLS manifest URL for a video, or null if signing is unavailable. */
+export async function getSignedStreamUrl(videoId: string): Promise<string | null> {
+  const subdomain = process.env.NEXT_PUBLIC_CLOUDFLARE_CUSTOMER_SUBDOMAIN;
+  if (!subdomain) return null;
+  const token = await getStreamToken(videoId);
+  return token ? `https://${subdomain}/${token}/manifest/video.m3u8` : null;
+}
+
+/** Signed thumbnail URL for a video (server-side use only — see the proxy). */
+export async function getSignedThumbnailUrl(videoId: string): Promise<string | null> {
+  const subdomain = process.env.NEXT_PUBLIC_CLOUDFLARE_CUSTOMER_SUBDOMAIN;
+  if (!subdomain) return null;
+  const token = await getStreamToken(videoId);
+  return token ? `https://${subdomain}/${token}/thumbnails/thumbnail.jpg?height=640` : null;
+}
+
+/**
+ * Public URL for an episode's thumbnail. Served through our own proxy so the
+ * Cloudflare video ID never reaches the client (with signed URLs required,
+ * the raw Cloudflare thumbnail URL wouldn't load anyway).
+ */
+export function episodeThumbnailPath(episodeId: string): string {
+  return `/api/episodes/${episodeId}/thumbnail`;
+}
+
+/** Set (or clear) "require signed URLs" on a Cloudflare Stream video. */
+export async function setRequireSignedUrls(videoId: string, required: boolean): Promise<boolean> {
+  const accountId = process.env.CLOUDFLARE_ACCOUNT_ID;
+  const apiToken = process.env.CLOUDFLARE_API_TOKEN;
+  if (!accountId || !apiToken) return false;
+  try {
+    const res = await fetch(`${CLOUDFLARE_API_BASE}/accounts/${accountId}/stream/${videoId}`, {
+      method: 'POST',
+      headers: { Authorization: `Bearer ${apiToken}`, 'Content-Type': 'application/json' },
+      body: JSON.stringify({ uid: videoId, requireSignedURLs: required }),
+      cache: 'no-store',
+    });
+    return res.ok;
+  } catch {
+    return false;
   }
 }
 

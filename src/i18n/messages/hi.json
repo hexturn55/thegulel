@@ -31,13 +31,16 @@
   },
   "seriesCard": {
     "featured": "फ़ीचर्ड",
-    "episodes": "{count} एपिसोड"
+    "episodes": "{count} एपिसोड",
+    "comingSoon": "जल्द आ रहा है"
   },
   "series": {
     "episodesCount": "{count} एपिसोड",
     "firstFree": "पहले {count} मुफ़्त",
     "watchNow": "अभी देखें",
-    "episodes": "एपिसोड"
+    "episodes": "एपिसोड",
+    "comingSoon": "जल्द आ रहा है",
+    "comingSoonBody": "नए एपिसोड जल्द आ रहे हैं। जुड़े रहें!"
   },
   "episode": {
     "label": "एपिसोड {number}",
@@ -48,7 +51,19 @@
     "swipeNext": "अगले एपिसोड के लिए नीचे स्वाइप करें",
     "stayTuned": "और के लिए बने रहें",
     "moreSoon": "नए एपिसोड जल्द आ रहे हैं।",
-    "replay": "फिर से चलाएँ"
+    "replay": "फिर से चलाएँ",
+    "next": "अगला",
+    "tapForSound": "आवाज़ के लिए टैप करें",
+    "episodes": "एपिसोड",
+    "episodesCount": "{count} एपिसोड",
+    "share": "शेयर",
+    "copied": "कॉपी हुआ!",
+    "soundOn": "आवाज़",
+    "soundOff": "म्यूट",
+    "free": "मुफ़्त",
+    "loadError": "यह वीडियो लोड नहीं हो सका।",
+    "retry": "फिर कोशिश करें",
+    "moreSeries": "और सीरीज़"
   },
   "search": {
     "placeholder": "सीरीज़, शैलियाँ खोजें...",
@@ -95,7 +110,8 @@
     "about": "हमारे बारे में",
     "terms": "शर्तें",
     "privacy": "गोपनीयता",
-    "contact": "संपर्क"
+    "contact": "संपर्क",
+    "investors": "निवेशक"
   },
   "share": {
     "share": "शेयर करें",
@@ -127,7 +143,22 @@
     "earned": "आपने {coins} सिक्के कमाए!",
     "watchFull": "सिक्के पाने के लिए पूरा विज्ञापन देखें।",
     "pleaseWait": "दूसरा विज्ञापन देखने से पहले {seconds} सेकंड प्रतीक्षा करें।",
-    "adFailed": "आपका इनाम नहीं दिया जा सका। कृपया पुनः प्रयास करें।"
+    "adFailed": "आपका इनाम नहीं दिया जा सका। कृपया पुनः प्रयास करें।",
+    "adUnavailable": "अभी कोई विज्ञापन उपलब्ध नहीं है। कृपया बाद में प्रयास करें।",
+    "rewardOnWay": "देखने के लिए धन्यवाद! आपके सिक्के जल्द ही दिखाई देंगे।",
+    "lockedTitle": "एपिसोड {number} लॉक है",
+    "teaser": "कहानी जारी है",
+    "balanceLabel": "{balance} / {price} सिक्के",
+    "adsNeeded": "अनलॉक के लिए {count} विज्ञापन",
+    "unlockNow": "अभी अनलॉक करें · {price} सिक्के",
+    "watchAdCta": "विज्ञापन देखें · +{coins} सिक्के",
+    "signInToEarn": "मुफ़्त सिक्के कमाने के लिए साइन इन करें",
+    "buyCoins": "सिक्के खरीदें",
+    "vipShort": "वीआईपी बनें",
+    "earnedToast": "+{coins} सिक्के!",
+    "cooldown": "अगला विज्ञापन {seconds} सेकंड में",
+    "dailyLimit": "आज की विज्ञापन सीमा पूरी — कल आएँ या सिक्के खरीदें।",
+    "unlockFailed": "अनलॉक नहीं हो सका। कृपया फिर कोशिश करें।"
   },
   "vip": {
     "title": "गुलेल वीआईपी",

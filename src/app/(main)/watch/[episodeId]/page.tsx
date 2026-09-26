@@ -1,78 +1,76 @@
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
 import prisma from '@/lib/prisma';
-import { resolvePlayableUrl } from '@/lib/cloudflare';
+import { episodeThumbnailPath, resolvePlayableUrl } from '@/lib/cloudflare';
 import { getAuthUser } from '@/lib/auth';
 import { hasActiveVip } from '@/lib/subscription';
 import WatchClient from './WatchClient';
+
+export const dynamic = 'force-dynamic';
 
 interface PageProps {
   params: Promise<{ episodeId: string }>;
 }
 
 async function getEpisodeData(episodeId: string, userId?: string) {
-  const episode = await prisma.episode.findUnique({
-    where: { id: episodeId },
+  // Draft series (e.g. pitch-only showcases) are not part of the catalog.
+  const episode = await prisma.episode.findFirst({
+    where: { id: episodeId, series: { status: 'PUBLISHED' } },
     include: {
       series: {
-        include: {
+        select: {
+          id: true,
+          title: true,
+          thumbnail: true,
+          coinPrice: true,
           episodes: {
             orderBy: { episodeNumber: 'asc' },
-            select: { id: true, episodeNumber: true },
+            select: { id: true, episodeNumber: true, title: true, isFree: true },
           },
         },
       },
     },
   });
-
   if (!episode) return null;
 
-  let isUnlocked = episode.isFree;
-
-  if (!isUnlocked && userId) {
-    // VIP subscribers bypass the coin system entirely.
-    if (await hasActiveVip(userId)) {
-      isUnlocked = true;
-    } else {
-      const purchase = await prisma.episodePurchase.findUnique({
-        where: {
-          userId_episodeId: {
-            userId,
-            episodeId,
-          },
-        },
+  const all = episode.series.episodes;
+  let vip = false;
+  let purchased = new Set<string>();
+  if (userId) {
+    vip = await hasActiveVip(userId);
+    if (!vip) {
+      const purchases = await prisma.episodePurchase.findMany({
+        where: { userId, episodeId: { in: all.map((e) => e.id) } },
+        select: { episodeId: true },
       });
-      isUnlocked = !!purchase;
+      purchased = new Set(purchases.map((p) => p.episodeId));
     }
   }
+  const unlocked = (e: { id: string; isFree: boolean }) => e.isFree || vip || purchased.has(e.id);
 
-  const currentIndex = episode.series.episodes.findIndex((e) => e.id === episodeId);
-  const nextEpisode = episode.series.episodes[currentIndex + 1];
-  const prevEpisode = episode.series.episodes[currentIndex - 1];
-
+  const index = all.findIndex((e) => e.id === episodeId);
   return {
     episode,
-    isUnlocked,
-    nextEpisode,
-    prevEpisode,
+    isUnlocked: unlocked(episode),
+    episodes: all.map((e) => ({ ...e, unlocked: unlocked(e) })),
+    nextEpisodeId: all[index + 1]?.id,
+    prevEpisodeId: all[index - 1]?.id,
   };
 }
 
 export default async function WatchPage({ params }: PageProps) {
   const { episodeId } = await params;
   const user = await getAuthUser();
-
   const data = await getEpisodeData(episodeId, user?.id);
+  if (!data) notFound();
 
-  if (!data) {
-    notFound();
-  }
+  const { episode, isUnlocked, episodes, nextEpisodeId, prevEpisodeId } = data;
 
-  const { episode, isUnlocked, nextEpisode, prevEpisode } = data;
-  const videoUrl = await resolvePlayableUrl(episode);
+  // Never ship a stream URL for a locked episode — the client gets null and
+  // renders the unlock flow instead.
+  const videoUrl = isUnlocked ? await resolvePlayableUrl(episode) : null;
 
-  // No playable source configured — show a graceful message instead of a crash.
-  if (!videoUrl) {
+  if (isUnlocked && !videoUrl) {
     return (
       <div className="fixed inset-0 bg-black flex flex-col items-center justify-center px-6 text-center">
         <h1 className="text-white text-xl font-bold mb-2">Video coming soon</h1>
@@ -90,15 +88,25 @@ export default async function WatchPage({ params }: PageProps) {
   }
 
   return (
-    <div className="fixed inset-0 bg-black">
+    <div className="fixed inset-0 z-50 bg-black">
       <WatchClient
-        episodeId={episode.id}
+        key={episode.id}
+        series={{
+          id: episode.series.id,
+          title: episode.series.title,
+          thumbnail: episode.series.thumbnail,
+          coinPrice: episode.series.coinPrice,
+        }}
+        episode={{
+          id: episode.id,
+          episodeNumber: episode.episodeNumber,
+          title: episode.title,
+          thumbnail: episodeThumbnailPath(episode.id),
+        }}
         videoUrl={videoUrl}
-        videoId={episode.videoId}
-        isFree={episode.isFree}
-        isUnlocked={isUnlocked}
-        nextEpisodeId={nextEpisode?.id}
-        prevEpisodeId={prevEpisode?.id}
+        episodes={episodes}
+        nextEpisodeId={nextEpisodeId}
+        prevEpisodeId={prevEpisodeId}
       />
     </div>
   );

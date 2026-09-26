@@ -47,7 +47,10 @@ export const SAMPLE_SERIES: SeriesCard[] = SEED.map((s) => ({
   featured: Boolean(s.featured),
 }));
 
-export function sampleEpisodes(seriesId: string): Episode[] {
+/** Offline demo episode: carries its own public sample stream. */
+export type SampleEpisode = Episode & { sampleUrl?: string };
+
+export function sampleEpisodes(seriesId: string): SampleEpisode[] {
   const seed = SEED.find((s) => s.id === seriesId);
   const count = Math.min(seed?.episodes ?? 8, 8);
   return Array.from({ length: count }, (_, i) => {
@@ -58,8 +61,7 @@ export function sampleEpisodes(seriesId: string): Episode[] {
       episodeNumber: n,
       title: `Episode ${n}`,
       duration: 90 + i * 30,
-      videoUrl: SAMPLE_VIDEOS[i % SAMPLE_VIDEOS.length]!,
-      videoId: `${seriesId}-${n}`,
+      sampleUrl: SAMPLE_VIDEOS[i % SAMPLE_VIDEOS.length]!,
       thumbnail: thumb(`Ep ${n}`),
       isFree: n <= 2,
     };

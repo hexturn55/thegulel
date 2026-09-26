@@ -66,16 +66,19 @@ const TX_BADGE: Record<string, { label: string; className: string }> = {
 };
 
 function Avatar({ src, name }: { src?: string | null; name?: string | null }) {
-  if (src) {
+  const [errored, setErrored] = useState(false);
+  const initial = (name ?? '?')[0].toUpperCase();
+  if (src && !errored) {
     return (
       <img
         src={src}
         alt={name ?? 'avatar'}
+        referrerPolicy="no-referrer"
+        onError={() => setErrored(true)}
         className="w-20 h-20 rounded-full object-cover ring-2 ring-white/20"
       />
     );
   }
-  const initial = (name ?? '?')[0].toUpperCase();
   return (
     <div className="w-20 h-20 rounded-full bg-white/20 backdrop-blur-sm flex items-center justify-center ring-2 ring-white/20">
       <span className="text-white text-3xl font-bold">{initial}</span>
