@@ -409,7 +409,7 @@ export default async function InvestorsPage() {
             <p className="mt-3 text-sm text-zinc-300 md:text-base">
               Viewership, completion, pilot-to-paid conversion and revenue for every series, read straight from the
               production database — plus spec brand-integration episodes showing in-story product placement.
-              Access code required; request one at{' '}
+              Password required; request it at{' '}
               <a href="mailto:hello@thegulel.com?subject=Gulel%20dashboard%20access" className="text-emerald-300 underline">
                 hello@thegulel.com
               </a>
