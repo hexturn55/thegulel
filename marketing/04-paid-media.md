@@ -93,7 +93,7 @@ ranking stays valid through Navratri.
 | Ad | Hook rate, hold rate, link CTR, cost per Ep-1 start | Meta custom columns; Google Ads |
 | Product | Ep-1 completion, **Ep-1 → Ep-2 continuation**, D1/D3 return | GA4 funnel (`video_start` → `video_complete` → `paywall_view`) |
 | Money | **Ep-2 unlock by any method** (coins, rewarded ad, VIP), paid-unlock rate, revenue per Ep-1 viewer | Server ledger joined to first-touch UTM; investor dashboard |
-| Demand | "Notify me for Ep 3" opt-ins per 1,000 Ep-2 completions | First-party table (add a notify button on the last pilot episode) |
+| Demand | "Notify me" opt-ins as a share of viewers who reached Ep 2 | The end card's **Notify me** button → `SeriesAlert` table → "Notify me" column on `/investors/dashboard` |
 
 **Pricing confound.** Episode 2 costs 10 coins (≈ ₹15), but the smallest purchase is the ₹149 pack, so paid-unlock rate measures
 tolerance for a ₹149 ticket as much as love for the story. Rank mainly on **unlock by any method + notify-me opt-ins**.

@@ -340,7 +340,7 @@ export default async function InvestorDashboard({
         {/* Per-series table */}
         <Panel title="Series leaderboard" note="Viewership, retention and revenue per published series">
           <div className="-mx-5 overflow-x-auto">
-            <table className="w-full min-w-[860px] text-left text-sm">
+            <table className="w-full min-w-[940px] text-left text-sm">
               <thead className="border-b border-zinc-800 text-xs uppercase tracking-wider text-zinc-500">
                 <tr>
                   <th className="px-5 py-2 font-medium">Series</th>
@@ -350,6 +350,9 @@ export default async function InvestorDashboard({
                   <th className="px-3 py-2 text-right font-medium">Completion</th>
                   <th className="px-3 py-2 text-right font-medium">Watch h</th>
                   <th className="px-3 py-2 text-right font-medium">Pilot → Ep2</th>
+                  <th className="px-3 py-2 text-right font-medium" title="Notify-me opt-ins for the next episode, and their share of viewers who reached episode 2+">
+                    Notify me
+                  </th>
                   <th className="px-3 py-2 text-right font-medium">Unlocks</th>
                   <th className="px-3 py-2 text-right font-medium">Coins</th>
                   <th className="px-5 py-2 text-right font-medium">Revenue</th>
@@ -370,6 +373,10 @@ export default async function InvestorDashboard({
                     <td className="px-3 py-2.5 text-right text-zinc-300">{pct(s.completionRate)}</td>
                     <td className="px-3 py-2.5 text-right text-zinc-300">{hours(s.watchHours)}</td>
                     <td className="px-3 py-2.5 text-right text-zinc-300">{s.episodes > 1 ? pct(s.continuation) : '—'}</td>
+                    <td className="px-3 py-2.5 text-right text-zinc-300">
+                      {n(s.notifyOptIns)}
+                      {s.notifyRate != null && <span className="ml-1 text-xs text-zinc-500">{pct(s.notifyRate)}</span>}
+                    </td>
                     <td className="px-3 py-2.5 text-right text-zinc-300">{n(s.unlocks)}</td>
                     <td className="px-3 py-2.5 text-right text-zinc-300">{n(s.coinsSpent)}</td>
                     <td className="px-5 py-2.5 text-right font-semibold text-white">{inr(s.revenueINR)}</td>
@@ -377,7 +384,7 @@ export default async function InvestorDashboard({
                 ))}
                 {m.series.length === 0 && (
                   <tr>
-                    <td colSpan={10} className="px-5 py-6 text-center text-zinc-500">
+                    <td colSpan={11} className="px-5 py-6 text-center text-zinc-500">
                       No published series with episodes yet.
                     </td>
                   </tr>

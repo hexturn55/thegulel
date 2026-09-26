@@ -101,6 +101,7 @@ so the UTMs are the backbone.
 | VIP started | `purchase` + `vip_subscribe` | `Subscribe` | CAPI `Subscribe` from webhook; RevenueCat → CAPI for app |
 | Episode unlocked with coins | `spend_virtual_currency` | `UnlockEpisode` (custom) | — |
 | Rewarded ad completed | `earn_virtual_currency` | `AdReward` (custom) | Coins granted only by Google SSV (`/api/ads/ssv`) |
+| "Notify me when Episode N drops" (end card of the last available episode) | `notify_me` / `notify_me_cancel` | `NotifyMe` (custom) | Saved in the `SeriesAlert` table with the last-touch `utm_campaign`; counted on the investor dashboard |
 
 Event IDs: `stripe:<checkout session>`, `razorpay:<payment id>`, `revenuecat:<event id>`, `reg:<userId>`. The browser and server copies
 share the ID, so Meta counts each conversion once. Every GA4 funnel event also carries the last-touch `utm_source/medium/campaign/content`.

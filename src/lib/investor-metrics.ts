@@ -64,6 +64,10 @@ export interface SeriesMetrics {
   continuedViewers: number;
   /** Share of pilot viewers who went on to watch episode 2 or later. */
   continuation: number | null;
+  /** "Notify me when the next episode drops" opt-ins. */
+  notifyOptIns: number;
+  /** Opt-ins as a share of viewers who reached episode 2 or later (season demand). */
+  notifyRate: number | null;
   unlocks: number;
   buyers: number;
   coinsSpent: number;
@@ -301,6 +305,13 @@ export async function getInvestorMetrics(): Promise<InvestorMetrics> {
   const seriesPilot = seriesRows.reduce((s, r) => s + r.pilot_viewers, 0);
   const seriesContinued = seriesRows.reduce((s, r) => s + r.continued_viewers, 0);
 
+  // Separate from the batch above so the dashboard still loads before the
+  // SeriesAlert migration is applied (the table is then simply empty).
+  const alertCounts = await prisma.seriesAlert
+    .groupBy({ by: ['seriesId'], _count: { _all: true } })
+    .catch(() => []);
+  const optInsBySeries = new Map(alertCounts.map((a) => [a.seriesId, a._count._all]));
+
   const bySeriesPurchase = new Map(seriesPurchases.map((p) => [p.seriesId, p]));
   const series: SeriesMetrics[] = seriesRows
     .map((r) => {
@@ -321,6 +332,8 @@ export async function getInvestorMetrics(): Promise<InvestorMetrics> {
         pilotViewers: r.pilot_viewers,
         continuedViewers: r.continued_viewers,
         continuation: ratio(r.continued_viewers, r.pilot_viewers),
+        notifyOptIns: optInsBySeries.get(r.id) ?? 0,
+        notifyRate: ratio(optInsBySeries.get(r.id) ?? 0, r.continued_viewers),
         unlocks: p?.unlocks ?? 0,
         buyers: p?.buyers ?? 0,
         coinsSpent,

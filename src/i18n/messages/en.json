@@ -63,7 +63,11 @@
     "free": "Free",
     "loadError": "This video could not be loaded.",
     "retry": "Try again",
-    "moreSeries": "More series"
+    "moreSeries": "More series",
+    "notifyCta": "Notify me when Episode {number} drops",
+    "notifyOn": "We'll tell you when Episode {number} drops",
+    "notifyUndo": "Turn off",
+    "notifyError": "Couldn't save that. Try again."
   },
   "search": {
     "placeholder": "Search series, genres...",

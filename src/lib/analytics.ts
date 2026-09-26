@@ -413,4 +413,25 @@ export const analytics = {
       newEventId()
     );
   },
+
+  /** "Notify me when the next episode drops" — the pilot tournament's demand signal. */
+  notifyMe: (
+    ep: { seriesId: string; seriesTitle: string; episodeNumber: number },
+    subscribed: boolean
+  ) => {
+    if (typeof window === 'undefined') return;
+    ga4(subscribed ? 'notify_me' : 'notify_me_cancel', {
+      series_id: ep.seriesId,
+      series_title: ep.seriesTitle,
+      after_episode: ep.episodeNumber,
+    });
+    if (subscribed) {
+      fbqEvent(
+        'trackCustom',
+        'NotifyMe',
+        { content_ids: [ep.seriesId], content_name: ep.seriesTitle, after_episode: ep.episodeNumber },
+        newEventId()
+      );
+    }
+  },
 };

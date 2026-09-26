@@ -42,8 +42,8 @@ function tokenOk(request: NextRequest, url: URL): boolean {
  * Gated by OPS_TOKEN (unset = endpoint disabled, all requests 401).
  *
  * Actions:
- *  - dbcheck        read-only: has the billing/ads migration been applied?
- *  - migrate        apply the additive billing/ads migration (IF NOT EXISTS)
+ *  - dbcheck        read-only: have the billing/ads and series-alerts migrations been applied?
+ *  - migrate        apply the additive billing/ads + series-alerts migrations (IF NOT EXISTS)
  *  - cleanup-demo   delete the hidden duplicate "demo-series" catalog entry
  *  - ingest         have Cloudflare Stream copy a video from an allowlisted
  *                   host and upsert it as an episode: &seriesId=&url=&title=&num=&duration=
@@ -82,6 +82,12 @@ export async function GET(request: NextRequest) {
         } catch {
           checks.adCooldown_table = false;
         }
+        try {
+          await prisma.$queryRaw`SELECT "seriesId" FROM "SeriesAlert" LIMIT 1`;
+          checks.seriesAlert_table = true;
+        } catch {
+          checks.seriesAlert_table = false;
+        }
         return NextResponse.json({
           ok: Object.values(checks).every(Boolean),
           checks,
@@ -95,7 +101,21 @@ export async function GET(request: NextRequest) {
         await prisma.$executeRaw`CREATE UNIQUE INDEX IF NOT EXISTS "CoinTransaction_providerRef_key" ON "CoinTransaction"("providerRef")`;
         await prisma.$executeRaw`ALTER TABLE "Subscription" ADD COLUMN IF NOT EXISTS "providerCustomerId" TEXT`;
         await prisma.$executeRaw`CREATE TABLE IF NOT EXISTS "AdCooldown" ("userId" TEXT PRIMARY KEY, "lastAdAt" TIMESTAMP(3) NOT NULL)`;
-        return NextResponse.json({ ok: true, applied: 4 });
+        // 20260926130000_series_alerts ("notify me" opt-ins), same shape as the Prisma migration.
+        await prisma.$executeRaw`CREATE TABLE IF NOT EXISTS "SeriesAlert" (
+          "id" TEXT NOT NULL,
+          "userId" TEXT NOT NULL,
+          "seriesId" TEXT NOT NULL,
+          "afterEpisode" INTEGER NOT NULL,
+          "source" TEXT,
+          "createdAt" TIMESTAMP(3) NOT NULL DEFAULT CURRENT_TIMESTAMP,
+          CONSTRAINT "SeriesAlert_pkey" PRIMARY KEY ("id"),
+          CONSTRAINT "SeriesAlert_userId_fkey" FOREIGN KEY ("userId") REFERENCES "User"("id") ON DELETE CASCADE ON UPDATE CASCADE,
+          CONSTRAINT "SeriesAlert_seriesId_fkey" FOREIGN KEY ("seriesId") REFERENCES "Series"("id") ON DELETE CASCADE ON UPDATE CASCADE
+        )`;
+        await prisma.$executeRaw`CREATE UNIQUE INDEX IF NOT EXISTS "SeriesAlert_userId_seriesId_key" ON "SeriesAlert"("userId", "seriesId")`;
+        await prisma.$executeRaw`CREATE INDEX IF NOT EXISTS "SeriesAlert_seriesId_createdAt_idx" ON "SeriesAlert"("seriesId", "createdAt")`;
+        return NextResponse.json({ ok: true, applied: 7 });
       }
 
       case 'ssv-keys': {

@@ -63,7 +63,11 @@
     "free": "मुफ़्त",
     "loadError": "यह वीडियो लोड नहीं हो सका।",
     "retry": "फिर कोशिश करें",
-    "moreSeries": "और सीरीज़"
+    "moreSeries": "और सीरीज़",
+    "notifyCta": "Episode {number} आते ही मुझे बताएं",
+    "notifyOn": "Episode {number} आते ही हम आपको बताएंगे",
+    "notifyUndo": "बंद करें",
+    "notifyError": "सेव नहीं हुआ। फिर कोशिश करें।"
   },
   "search": {
     "placeholder": "सीरीज़, शैलियाँ खोजें...",

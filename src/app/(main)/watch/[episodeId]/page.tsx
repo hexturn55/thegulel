@@ -10,6 +10,7 @@ export const dynamic = 'force-dynamic';
 
 interface PageProps {
   params: Promise<{ episodeId: string }>;
+  searchParams: Promise<{ notify?: string }>;
 }
 
 async function getEpisodeData(episodeId: string, userId?: string) {
@@ -59,8 +60,10 @@ async function getEpisodeData(episodeId: string, userId?: string) {
   };
 }
 
-export default async function WatchPage({ params }: PageProps) {
+export default async function WatchPage({ params, searchParams }: PageProps) {
   const { episodeId } = await params;
+  // ?notify=1: back from signing in to "notify me" (see NotifyButton).
+  const notifyReturn = (await searchParams).notify === '1';
   const user = await getAuthUser();
   const data = await getEpisodeData(episodeId, user?.id);
   if (!data) notFound();
@@ -109,6 +112,7 @@ export default async function WatchPage({ params }: PageProps) {
         episodes={episodes}
         nextEpisodeId={nextEpisodeId}
         prevEpisodeId={prevEpisodeId}
+        notifyReturn={notifyReturn}
       />
     </div>
   );

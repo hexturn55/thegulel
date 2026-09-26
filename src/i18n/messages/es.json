@@ -63,7 +63,11 @@
     "free": "Gratis",
     "loadError": "No se pudo cargar este video.",
     "retry": "Reintentar",
-    "moreSeries": "Más series"
+    "moreSeries": "Más series",
+    "notifyCta": "Avísame cuando salga el episodio {number}",
+    "notifyOn": "Te avisaremos cuando salga el episodio {number}",
+    "notifyUndo": "Desactivar",
+    "notifyError": "No se pudo guardar. Inténtalo de nuevo."
   },
   "search": {
     "placeholder": "Buscar series, géneros...",
