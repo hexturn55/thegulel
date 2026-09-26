@@ -1,10 +1,11 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useSyncExternalStore } from 'react';
 import { useSearchParams, useRouter } from 'next/navigation';
 import { useTranslations } from 'next-intl';
 import { createClient } from '@/lib/supabase';
-import { Phone, ArrowRight, Loader2, CheckCircle } from 'lucide-react';
+import { isInAppBrowser } from '@/lib/in-app-browser';
+import { Phone, ArrowRight, Loader2, CheckCircle, Info } from 'lucide-react';
 import Image from 'next/image';
 import LanguageMenu from '@/components/LanguageMenu';
 
@@ -50,7 +51,27 @@ function LineIcon() {
   );
 }
 
+function InAppHint({ text }: { text: string }) {
+  return (
+    <p className="flex items-start gap-2 rounded-xl border border-amber-500/30 bg-amber-500/10 px-4 py-3 text-left text-sm text-amber-200">
+      <Info className="mt-0.5 h-4 w-4 flex-shrink-0" aria-hidden="true" />
+      <span>{text}</span>
+    </p>
+  );
+}
+
 type Step = 'providers' | 'phone' | 'otp';
+
+const noSubscribe = () => () => {};
+
+/** Instagram/Facebook/etc. WebView? (false during SSR and hydration). */
+function useInAppBrowser() {
+  return useSyncExternalStore(
+    noSubscribe,
+    () => isInAppBrowser(navigator.userAgent),
+    () => false
+  );
+}
 
 export default function LoginPage() {
   const searchParams = useSearchParams();
@@ -58,7 +79,11 @@ export default function LoginPage() {
   const t = useTranslations('auth');
   const redirectTo = searchParams.get('redirectTo') ?? '/';
 
-  const [step, setStep] = useState<Step>('providers');
+  // Google OAuth is blocked inside social in-app browsers, so there phone OTP
+  // is the default step until the viewer picks another one.
+  const inApp = useInAppBrowser();
+  const [chosenStep, setStep] = useState<Step | null>(null);
+  const step: Step = chosenStep ?? (inApp ? 'phone' : 'providers');
   const [phone, setPhone] = useState('');
   const [otp, setOtp] = useState('');
   const [loading, setLoading] = useState<string | null>(null); // which provider is loading
@@ -190,19 +215,23 @@ export default function LoginPage() {
                 {t('signInToContinue')}
               </h2>
 
-              {/* Google */}
-              <button
-                onClick={() => handleOAuth('google')}
-                disabled={!!loading}
-                className="w-full flex items-center justify-center gap-3 bg-white hover:bg-gray-100 disabled:opacity-60 disabled:cursor-not-allowed text-gray-900 font-semibold py-3.5 px-5 rounded-xl transition-all duration-150 shadow-sm"
-              >
-                {loading === 'google' ? (
-                  <Loader2 className="w-5 h-5 animate-spin text-gray-600" />
-                ) : (
-                  <GoogleIcon />
-                )}
-                <span>{t('continueGoogle')}</span>
-              </button>
+              {/* Google (blocked inside in-app browsers — explain instead) */}
+              {inApp ? (
+                <InAppHint text={t('inAppGoogleHint')} />
+              ) : (
+                <button
+                  onClick={() => handleOAuth('google')}
+                  disabled={!!loading}
+                  className="w-full flex items-center justify-center gap-3 bg-white hover:bg-gray-100 disabled:opacity-60 disabled:cursor-not-allowed text-gray-900 font-semibold py-3.5 px-5 rounded-xl transition-all duration-150 shadow-sm"
+                >
+                  {loading === 'google' ? (
+                    <Loader2 className="w-5 h-5 animate-spin text-gray-600" />
+                  ) : (
+                    <GoogleIcon />
+                  )}
+                  <span>{t('continueGoogle')}</span>
+                </button>
+              )}
 
               {/* Facebook */}
               <button
@@ -286,6 +315,7 @@ export default function LoginPage() {
               <p className="text-gray-400 text-sm">
                 {t('smsHint')}
               </p>
+              {inApp && <InAppHint text={t('inAppGoogleHint')} />}
 
               <div className="relative">
                 <Phone className="absolute left-3.5 top-1/2 -translate-y-1/2 w-4 h-4 text-gray-500" />

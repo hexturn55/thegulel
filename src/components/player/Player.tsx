@@ -18,6 +18,7 @@ import {
 import { useTranslations } from 'next-intl';
 import { useAuthStore } from '@/stores/useAuthStore';
 import { formatDuration } from '@/lib/utils';
+import { analytics, type EpisodeContext } from '@/lib/analytics';
 import UnlockSheet from './UnlockSheet';
 
 // Browsers only allow autoplay while muted, so playback starts muted until the
@@ -53,7 +54,7 @@ export interface PlayerEpisode {
 }
 
 export interface PlayerProps {
-  series: { id: string; title: string; thumbnail: string; coinPrice: number };
+  series: { id: string; title: string; thumbnail: string; coinPrice: number; genre?: string };
   episode: { id: string; episodeNumber: number; title: string; thumbnail: string };
   /** Signed stream URL, or null when the episode is locked for this viewer. */
   videoUrl: string | null;
@@ -84,6 +85,9 @@ export default function Player({
   const lastSavedRef = useRef(0);
   const touchRef = useRef<{ y: number; t: number } | null>(null);
   const hideTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
+  // Funnel events fire once per episode mount (the player remounts per episode).
+  const startedRef = useRef(false);
+  const completedRef = useRef(false);
 
   const [playing, setPlaying] = useState(false);
   const [muted, setMuted] = useState(true);
@@ -101,6 +105,15 @@ export default function Player({
   const [copied, setCopied] = useState(false);
 
   const locked = !videoUrl;
+
+  const trackingContext = (): EpisodeContext => ({
+    seriesId: series.id,
+    seriesTitle: series.title,
+    genre: series.genre,
+    episodeId: episode.id,
+    episodeNumber: episode.episodeNumber,
+    isFree: episodes.find((e) => e.id === episode.id)?.isFree ?? false,
+  });
 
   /* ── Stream setup ─────────────────────────────────────────────────────── */
   useEffect(() => {
@@ -364,12 +377,22 @@ export default function Player({
             onPlay={() => setPlaying(true)}
             onPause={() => setPlaying(false)}
             onWaiting={() => setBuffering(true)}
-            onPlaying={() => setBuffering(false)}
+            onPlaying={() => {
+              setBuffering(false);
+              if (!startedRef.current) {
+                startedRef.current = true;
+                analytics.videoStart(trackingContext());
+              }
+            }}
             onCanPlay={() => setBuffering(false)}
             onLoadedMetadata={(e) => setDuration(e.currentTarget.duration)}
             onTimeUpdate={(e) => {
               const v = e.currentTarget;
               setTime(v.currentTime);
+              if (!completedRef.current && v.duration && v.currentTime / v.duration >= 0.9) {
+                completedRef.current = true;
+                analytics.videoComplete(trackingContext());
+              }
               if (Math.abs(v.currentTime - lastSavedRef.current) >= 10) {
                 lastSavedRef.current = v.currentTime;
                 saveProgress(v.currentTime, v.duration);
@@ -573,6 +596,7 @@ export default function Player({
           <UnlockSheet
             episodeId={episode.id}
             episodeNumber={episode.episodeNumber}
+            seriesId={series.id}
             seriesTitle={series.title}
             coinPrice={series.coinPrice}
             onUnlocked={onUnlocked}

@@ -6,6 +6,7 @@ import { useTranslations } from 'next-intl';
 import { useAuthStore } from '@/stores/useAuthStore';
 import { useCoinStore } from '@/stores/useCoinStore';
 import { formatPrice } from '@/lib/utils';
+import { analytics } from '@/lib/analytics';
 
 interface CoinPackage {
   id: string;
@@ -18,6 +19,11 @@ interface CoinPackage {
 
 interface RazorpayInstance {
   open: () => void;
+}
+
+interface RazorpaySuccess {
+  razorpay_payment_id: string;
+  razorpay_order_id?: string;
 }
 
 declare global {
@@ -61,6 +67,31 @@ export default function CoinWallet() {
     fetchPackages();
   }, []);
 
+  // Back from checkout (`?success=true&session_id|payment_id=…&pkg=…&cur=…`):
+  // report the purchase once the package list is known, with the provider
+  // reference the webhook also uses, so Meta dedups it with the server event.
+  useEffect(() => {
+    if (!packages.length) return;
+    const q = new URLSearchParams(window.location.search);
+    if (q.get('success') !== 'true') return;
+    const sessionId = q.get('session_id');
+    const paymentId = q.get('payment_id');
+    const ref = sessionId ? `stripe:${sessionId}` : paymentId ? `razorpay:${paymentId}` : null;
+    const pkg = packages.find((p) => p.id === q.get('pkg'));
+    const cur = q.get('cur') === 'INR' ? 'INR' : 'USD';
+    if (ref && pkg) {
+      analytics.purchase({
+        transactionId: ref,
+        itemId: pkg.id,
+        itemName: pkg.name,
+        value: cur === 'INR' ? pkg.priceINR : pkg.priceUSD,
+        currency: cur,
+      });
+    }
+    // Drop the one-time checkout params from the address bar.
+    window.history.replaceState(null, '', window.location.pathname);
+  }, [packages]);
+
   const fetchPackages = async () => {
     try {
       const response = await fetch('/api/coins/packages');
@@ -77,6 +108,12 @@ export default function CoinWallet() {
     if (!user) return;
 
     setIsPurchasing(pkg.id);
+    analytics.beginCheckout({
+      itemId: pkg.id,
+      itemName: pkg.name,
+      value: currency === 'INR' ? pkg.priceINR : pkg.priceUSD,
+      currency,
+    });
 
     try {
       // India payments go through Razorpay when it's configured; everything
@@ -147,9 +184,16 @@ export default function CoinWallet() {
           contact: user?.phone ?? undefined,
         },
         theme: { color: '#ef4444' },
-        handler: () => {
-          // Coins are credited by the server webhook (payment.captured).
-          window.location.href = '/wallet?success=true';
+        handler: (response: RazorpaySuccess) => {
+          // Coins are credited by the server webhook (payment.captured); the
+          // wallet page reports the purchase from these params.
+          const q = new URLSearchParams({
+            success: 'true',
+            payment_id: response.razorpay_payment_id,
+            pkg: pkg.id,
+            cur: 'INR',
+          });
+          window.location.href = `/wallet?${q}`;
           resolve(true);
         },
         modal: {

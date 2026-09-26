@@ -205,7 +205,8 @@
     "codeSentTo": "{phone} पर भेजा गया 6-अंकीय कोड दर्ज करें",
     "verifyContinue": "सत्यापित करें और जारी रखें",
     "resend": "कोड फिर भेजें",
-    "back": "वापस"
+    "back": "वापस",
+    "inAppGoogleHint": "Instagram/Facebook के अंदर Google लॉगिन काम नहीं करता। फ़ोन नंबर से लॉगिन करें, या ⋯ → Open in browser दबाएँ।"
   },
   "settings": {
     "title": "सेटिंग्स",

@@ -2,6 +2,7 @@ import { NextRequest, NextResponse } from 'next/server';
 import { stripe } from '@/lib/stripe';
 import { getAuthUser } from '@/lib/auth';
 import { getVipPlan } from '@/lib/vip-plans';
+import { captureCheckoutSignals } from '@/lib/meta-capi';
 
 /**
  * POST /api/subscriptions/checkout
@@ -44,11 +45,20 @@ export async function POST(request: NextRequest) {
       ],
       // Carry identity on both the session and the subscription so later
       // subscription lifecycle webhooks can resolve the user and plan.
-      metadata: { userId: user.id, plan: plan.id, kind: 'vip' },
+      // Browser signals + last-touch UTMs (Conversions API) ride on the
+      // session only.
+      metadata: {
+        userId: user.id,
+        plan: plan.id,
+        kind: 'vip',
+        ...captureCheckoutSignals(request, 500),
+      },
       subscription_data: {
         metadata: { userId: user.id, plan: plan.id, kind: 'vip' },
       },
-      success_url: `${process.env.NEXT_PUBLIC_APP_URL}/vip?success=true`,
+      // session_id/plan/cur let the VIP page report the subscription with the
+      // same reference the webhook uses (Stripe fills in {CHECKOUT_SESSION_ID}).
+      success_url: `${process.env.NEXT_PUBLIC_APP_URL}/vip?success=true&session_id={CHECKOUT_SESSION_ID}&plan=${plan.id}&cur=${encodeURIComponent(currency)}`,
       cancel_url: `${process.env.NEXT_PUBLIC_APP_URL}/vip?canceled=true`,
     });
 

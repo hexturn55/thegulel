@@ -23,6 +23,7 @@ async function getEpisodeData(episodeId: string, userId?: string) {
           title: true,
           thumbnail: true,
           coinPrice: true,
+          genre: true,
           episodes: {
             orderBy: { episodeNumber: 'asc' },
             select: { id: true, episodeNumber: true, title: true, isFree: true },
@@ -96,6 +97,7 @@ export default async function WatchPage({ params }: PageProps) {
           title: episode.series.title,
           thumbnail: episode.series.thumbnail,
           coinPrice: episode.series.coinPrice,
+          genre: episode.series.genre,
         }}
         episode={{
           id: episode.id,

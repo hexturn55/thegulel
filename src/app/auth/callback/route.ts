@@ -1,16 +1,16 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { createServerClient } from '@supabase/ssr';
+import type { User } from '@supabase/supabase-js';
 import { cookies } from 'next/headers';
 import prisma from '@/lib/prisma';
+import { AUTH_EVENT_COOKIE } from '@/lib/analytics';
 
 export async function GET(request: NextRequest) {
-  const { searchParams, origin } = new URL(request.url);
+  const { searchParams, origin, protocol } = new URL(request.url);
   const code = searchParams.get('code');
-  const redirectTo = searchParams.get('redirectTo') ?? '/';
-
-  if (!code) {
-    return NextResponse.redirect(`${origin}/auth/login?error=no_code`);
-  }
+  // Same-origin paths only — never bounce to another host after sign-in.
+  const requested = searchParams.get('redirectTo') ?? '/';
+  const redirectTo = requested.startsWith('/') ? requested : '/';
 
   const cookieStore = await cookies();
   let supabaseResponse = NextResponse.redirect(`${origin}${redirectTo}`);
@@ -36,17 +36,29 @@ export async function GET(request: NextRequest) {
     }
   );
 
-  // Exchange auth code for session
-  const { data: sessionData, error } = await supabase.auth.exchangeCodeForSession(code);
+  let supabaseUser: User;
+  if (code) {
+    // OAuth: exchange auth code for session
+    const { data: sessionData, error } = await supabase.auth.exchangeCodeForSession(code);
 
-  if (error || !sessionData?.user) {
-    console.error('OAuth callback error:', error);
-    return NextResponse.redirect(`${origin}/auth/login?error=auth_failed`);
+    if (error || !sessionData?.user) {
+      console.error('OAuth callback error:', error);
+      return NextResponse.redirect(`${origin}/auth/login?error=auth_failed`);
+    }
+    supabaseUser = sessionData.user;
+  } else {
+    // Phone OTP is verified in the browser, which already holds the session;
+    // it comes here without a code just for the DB sync.
+    const { data } = await supabase.auth.getUser();
+    if (!data.user) {
+      return NextResponse.redirect(`${origin}/auth/login?error=no_code`);
+    }
+    supabaseUser = data.user;
   }
-
-  const supabaseUser = sessionData.user;
   const provider = supabaseUser.app_metadata?.provider ?? 'unknown';
-  const email = supabaseUser.email ?? null;
+  // Supabase reports a missing email/phone as "" — store null, or the second
+  // such user collides on the unique column.
+  const email = supabaseUser.email || null;
   const name =
     supabaseUser.user_metadata?.full_name ??
     supabaseUser.user_metadata?.name ??
@@ -58,12 +70,15 @@ export async function GET(request: NextRequest) {
     null;
 
   // Sync Supabase auth user → Prisma User
+  let authEvent: 'sign_up' | 'login' | null = null;
+  let userId: string | null = null;
   try {
     const existingUser = await prisma.user.findFirst({
       where: {
         OR: [
           { supabaseId: supabaseUser.id },
           ...(email ? [{ email }] : []),
+          ...(supabaseUser.phone ? [{ phone: supabaseUser.phone }] : []),
         ],
       },
     });
@@ -80,13 +95,15 @@ export async function GET(request: NextRequest) {
           provider: provider,
         },
       });
+      authEvent = 'login';
+      userId = existingUser.id;
     } else {
       // New user — create with welcome bonus
       const newUser = await prisma.user.create({
         data: {
           supabaseId: supabaseUser.id,
           // phone is optional for OAuth users — use a placeholder scoped to provider
-          phone: supabaseUser.phone ?? null,
+          phone: supabaseUser.phone || null,
           email,
           name,
           avatar,
@@ -105,10 +122,23 @@ export async function GET(request: NextRequest) {
           description: 'Welcome bonus',
         },
       });
+      authEvent = 'sign_up';
+      userId = newUser.id;
     }
   } catch (dbError) {
     // Non-fatal — user is authenticated with Supabase, Prisma sync can retry
     console.error('Prisma user sync error:', dbError);
+  }
+
+  // Hand "new vs returning" to the next page load, which reports GA4
+  // sign_up / login (+ Meta CompleteRegistration) and clears the cookie.
+  if (authEvent && userId) {
+    supabaseResponse.cookies.set(AUTH_EVENT_COOKIE, `${authEvent}.${provider}.${userId}`, {
+      path: '/',
+      maxAge: 300,
+      sameSite: 'lax',
+      secure: protocol === 'https:',
+    });
   }
 
   return supabaseResponse;

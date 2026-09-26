@@ -205,7 +205,8 @@
     "codeSentTo": "Enter the 6-digit code sent to {phone}",
     "verifyContinue": "Verify & Continue",
     "resend": "Resend code",
-    "back": "Back"
+    "back": "Back",
+    "inAppGoogleHint": "Google login doesn't work inside Instagram/Facebook. Use your phone number, or tap ⋯ → Open in browser."
   },
   "settings": {
     "title": "Settings",
